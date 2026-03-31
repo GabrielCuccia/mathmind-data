@@ -1,0 +1,3803 @@
+{
+  "id": "math1",
+  "title": "Matemática I",
+  "subtitle": "Matemática I",
+  "semesterNumber": 1,
+  "isLocked": false,
+  "lessons": [
+    {
+      "id": "math1_order_theory",
+      "title": "Orden en la Recta Real",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Orden en la Recta Real",
+          "subtitle": "Matemática I • Orden en la Recta Real",
+          "content": "Imagínate una línea infinita que se extiende hacia la izquierda y hacia la derecha sin detenerse nunca. Esa es la recta real, una herramienta fundamental en matemáticas que nos permite visualizar y organizar todos los números que existen en el sistema de los números reales.",
+          "formulaLatex": "",
+          "proTip": "Si multiplicas o divides una desigualdad por un número negativo, invierte siempre el signo al final de la operación.",
+          "blocks": [
+            {
+              "type": "image",
+              "content": "https://www.geogebra.org/resource/EpJxSSTn/ep1VjwwpWOPr2Eog/material-EpJxSSTn.png"
+            },
+            {
+              "type": "text",
+              "content": "\nLa recta real permite comparar números mediante las relaciones <, >, \\leq y \\geq. El orden es compatible con la suma y con la multiplicación por números positivos. Esto significa que al sumar el mismo número a ambos lados de una desigualdad, el sentido no cambia; y al multiplicar por un número positivo, tampoco cambia. En cambio, al multiplicar por un número negativo, el sentido de la desigualdad se invierte.\n\nEs así que tenemos las siguientes propiedades:"
+            },
+            {
+              "type": "formula",
+              "content": "a<b \\Rightarrow a+c<b+c"
+            },
+            {
+              "type": "formula",
+              "content": "a<b,\\ c>0 \\Rightarrow ac<bc"
+            },
+            {
+              "type": "formula",
+              "content": "a<b,\\ c<0 \\Rightarrow ac>bc"
+            },
+            {
+              "type": "formula",
+              "content": "a<b\\Rightarrow a+c<b+c"
+            }
+          ]
+        },
+        {
+          "title": "Intervalos y notación conjuntista",
+          "subtitle": "Matemática I • Orden en la Recta Real",
+          "content": "Los intervalos son porciones de la recta real que contienen a todos los números comprendidos entre dos extremos. Dependiendo de si incluimos o no esos extremos, los clasificamos en:\n\nAbiertos $(a, b)$: No incluyen los extremos.\n\nCerrados $[a, b]$: Incluyen ambos extremos.\n\nSemiabiertos $(a, b]$ o $[a, b)$: Incluyen solo uno de los extremos.\n\nDominar los intervalos te permite realizar operaciones lógicas como la unión (sumar conjuntos) e intersección (encontrar puntos comunes). La clave del éxito en esta unidad es la fluidez para traducir una misma idea entre sus tres formas:\n\nAlgebraica: (ej. $x > 5$)\n\nConjuntista: (ej. $\\{x \\in \\mathbb{R} \\mid x > 5\\}$)\n\nGráfica: (la representación visual sobre la recta numérica).\n\nA continuación, se presentan las definiciones formales de los intervalos más comunes, utilizando la notación de conjuntos para especificar qué números están incluidos en cada segmento:",
+          "formulaLatex": "",
+          "proTip": "Si el extremo está incluido usa corchete; si no está incluido usa paréntesis.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "(a,b)=\\{x\\in\\mathbb{R}:a<x<b\\}"
+            },
+            {
+              "type": "formula",
+              "content": "[a,b]=\\{x\\in\\mathbb{R}:a\\leq x\\leq b\\}"
+            },
+            {
+              "type": "formula",
+              "content": "(a,b]=\\{x\\in\\mathbb{R}:a<x\\leq b\\}"
+            },
+            {
+              "type": "formula",
+              "content": "[a,b)=\\{x\\in\\mathbb{R}:a\\leq x<b\\}"
+            }
+          ]
+        },
+        {
+          "title": "Cómo se comportan las desigualdades",
+          "subtitle": "Matemática I • Orden en la Recta Real",
+          "content": "La conducta de una desigualdad depende de la operación aplicada. Sumar o restar el mismo valor a ambos lados conserva el orden. Multiplicar o dividir por un valor positivo también lo conserva. Multiplicar o dividir por un valor negativo lo invierte. Además, elevar al cuadrado no preserva el orden en todos los casos, por lo que hay que estudiar signos antes de concluir.",
+          "formulaLatex": "",
+          "proTip": "Antes de elevar al cuadrado ambos lados de una desigualdad, verifica si los dos lados son no negativos. Si no, puedes perder información.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "x<y\\Rightarrow x+z<y+z"
+            },
+            {
+              "type": "formula",
+              "content": "x<y,\\ m<0\\Rightarrow mx>my"
+            },
+            {
+              "type": "formula",
+              "content": "x\\in[a,b]\\Rightarrow a\\leq x\\leq b"
+            },
+            {
+              "type": "formula",
+              "content": "x<y,\\ m>0\\Rightarrow mx<my"
+            }
+          ]
+        },
+        {
+          "title": "Operaciones entre Intervalos",
+          "subtitle": "Matemática I • Orden en la Recta Real",
+          "content": "Al igual que sumamos o restamos números, podemos operar con intervalos para definir nuevos conjuntos de valores en la recta real. Las dos herramientas principales para esto son la Unión y la Intersección, que nos permiten combinar o filtrar grupos de números según reglas lógicas.Unión ($\\cup$): Agrupa todos los elementos de ambos intervalos. Si un número está en cualquiera de los dos (o en ambos), forma parte del resultado. Es una operación de \"acumulación\".Intersección ($\\cap$): Selecciona únicamente los elementos que se encuentran en ambos intervalos al mismo tiempo. Es una operación de \"coincidencia\".",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "¿Qué pasa si los intervalos no se tocan? En ese caso, la intersección no contiene ningún número. Matemáticamente, decimos que el resultado es el conjunto vacío, representado por el símbolo $\\emptyset$."
+            },
+            {
+              "type": "text",
+              "content": "Ejemplo:\n\nSi tomamos los intervalos $A = [0, 5]$ y $B = [3, 8]$:Su unión sería $[0, 8]$ (toda la extensión).Su intersección sería $[3, 5]$ (solo la parte donde se solapan)."
+            }
+          ],
+          "proTip": "Para visualizarlo fácilmente, imagina que pintas cada intervalo de un color distinto en la recta numérica. La Unión es todo lo que tenga color; la Intersección es solo el tramo donde los colores se mezclan."
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_order_p1",
+      "title": "Orden en la Recta Real",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_order_01",
+          "questionText": "Determina si la proposición es verdadera o falsa:",
+          "questionLatex": "x^2>x\\text{ para todo }x\\in\\mathbb{R}",
+          "options": [
+            "Verdadera",
+            "Solo\\ verdadera\\ para\\ x>1",
+            "Falsa",
+            "Solo\\ verdadera\\ para\\ x<0"
+          ],
+          "correctAnswerIndex": 2,
+          "explanationLatex": "Basta un contraejemplo: si x=1, entonces x^2=1 y no es  mayor que x. Por lo tanto, la proposición es falsa.",
+          "category": "Orden",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_order_02",
+          "questionText": "Determina si la proposición es verdadera o falsa:",
+          "questionLatex": "x<x+1\\text{ para todo }x\\in\\mathbb{R}",
+          "options": [
+            "Falsa",
+            "Solo verdadera si x>0",
+            "Solo verdadera si x<0",
+            "Verdadera"
+          ],
+          "correctAnswerIndex": 3,
+          "explanationLatex": "\\text{Como } 0 < 1, \\text{ al sumar } x \\text{ a ambos lados se obtiene } x < x + 1 \\text{ para cualquier número real } x.",
+          "category": "Orden",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_order_03",
+          "questionText": "Sean I1=(-4,5) e I2=(-2,7]. ¿Cuál es la intersección?",
+          "questionLatex": "I_1\\cap I_2",
+          "options": [
+            "(-2,5)",
+            "(-4,7]",
+            "[-2,5]",
+            "(-4,5]"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La intersección toma el mayor extremo inferior y el menor extremo superior: (-2,5).",
+          "category": "Intervalos",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_order_04",
+          "questionText": "Escribe el recíproco de la proposición:",
+          "questionLatex": "\"Si\\ 7x-5\\leq 2,\\ entonces\\ x\\leq 1\"",
+          "options": [
+            "\"Si\\ x\\leq 1, entonces\\ 7x-5\\leq 2\"",
+            "\"Si\\ x>1,\\ entonces\\ 7x-5>2\"",
+            "\"Si\\ 7x-5>2,\\ entonces\\ x>1\"",
+            "\"Si\\ x<1,\\ entonces\\ 7x-5<2\""
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "El recíproco intercambia hipótesis y conclusión: si x\\leq 1, entonces 7x-5\\leq 2.",
+          "category": "Lógica Matemática",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_order_p3",
+      "title": "Orden en la Recta Real",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_order_09",
+          "questionText": "Si a < b y b < c, ¿cuál de las siguientes es necesariamente correcta?",
+          "questionLatex": "a < b, \\quad b < c",
+          "options": [
+            "a < c",
+            "a > c",
+            "a = c",
+            "a + b < c"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Es la propiedad transitiva del orden en los números reales.",
+          "category": "Propiedades de Orden",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_order_10",
+          "questionText": "Si a < 0 y b > 0, ¿qué se puede afirmar sobre el producto ab?",
+          "questionLatex": "a < 0, \\quad b > 0",
+          "options": [
+            "ab < 0",
+            "ab > 0",
+            "ab = 0",
+            "ab > a+b"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "El producto de un número negativo por uno positivo es siempre negativo.",
+          "category": "Propiedades de Orden",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_ineq_theory",
+      "title": "Teoría: Resolución de Desigualdades",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Desigualdades lineales",
+          "subtitle": "Matemática I • Inecuaciones",
+          "content": "Resolver una desigualdad lineal es el proceso de encontrar todos los valores de la variable que hacen que la afirmación sea verdadera. A diferencia de las ecuaciones lineales, que suelen tener una única solución, las desigualdades generalmente resultan en un conjunto infinito de números que representamos mediante intervalos.\nEl objetivo es aislar la incógnita (normalmente $x$) aplicando las reglas de despeje. Recuerda la regla crítica: si multiplicas o divides ambos miembros por un número negativo, el sentido de la desigualdad debe invertirse inmediatamente.",
+          "formulaLatex": "",
+          "proTip": "Al terminar de despejar, siempre verifica si el símbolo original era estricto ($<, >$) o no estricto ($\\leq, \\geq$). Esto determinará si en tu solución final usas paréntesis o corchetes.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "El proceso sigue tres pasos lógicos:\nDespeje algebraico: Agrupar términos con $x$ de un lado y constantes del otro.\nSimplificación: Realizar las operaciones aritméticas necesarias.\nRepresentación: Expresar el resultado final en notación de intervalo o de forma gráfica."
+            },
+            {
+              "type": "note",
+              "content": "¡Cuidado con el signo! Si llegas a un paso como $-3x \\leq 9$, al dividir por $-3$, el resultado correcto es $x \\geq -3$. El cambio de dirección es obligatorio para mantener la veracidad de la expresión."
+            },
+            {
+              "type": "formula",
+              "content": "ax+b\\leq c \\Rightarrow ax\\leq c-b"
+            },
+            {
+              "type": "formula",
+              "content": "x\\leq \\frac{c-b}{a}\\quad (a>0)"
+            },
+            {
+              "type": "formula",
+              "content": "x\\geq \\frac{c-b}{a}\\quad (a<0)"
+            },
+            {
+              "type": "example",
+              "content": "\\begin{aligned}\n\\text{Resolver: } & 3x + 5 \\leq 11 \\\\\n3x & \\leq 11 - 5 \\\\\n3x & \\leq 6 \\\\\nx & \\leq \\frac{6}{3} \\\\\nx & \\leq 2 \\\\\n\\text{Solución: } & (-\\infty, 2]\n\\end{aligned}"
+            }
+          ]
+        },
+        {
+          "title": "Desigualdades cuadráticas",
+          "subtitle": "Matemática I • Inecuaciones",
+          "content": "A diferencia de las lineales, las desigualdades cuadráticas involucran un término con $x^2$. Para resolverlas, no podemos simplemente despejar la $x$; necesitamos encontrar los puntos críticos (las raíces de la ecuación cuadrática) y analizar cómo se comporta el signo de la expresión en los intervalos que estos puntos delimitan.El objetivo es determinar en qué regiones de la recta real la parábola asociada está por encima ($> 0$) o por debajo ($< 0$) del eje $x$.",
+          "formulaLatex": "",
+          "proTip": "¡El método del cementerio (o cuadro de signos) es tu mejor amigo! Siempre asegúrate de que un lado de la desigualdad sea cero antes de empezar a factorizar. Sin el cero, no puedes comparar signos.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "El proceso estándar de resolución tiene tres pasos:\nFactorización: Expresar el trinomio como producto de binomios: $(x - r_1)(x - r_2)$.\nPuntos Críticos: Identificar los valores donde la expresión vale cero.\nPrueba de Intervalos: Evaluar un número de cada intervalo para ver si el resultado es positivo o negativo."
+            },
+            {
+              "type": "note",
+              "content": "Ten cuidado con el símbolo: si la desigualdad es $\\leq$ o $\\geq$, los puntos críticos se incluyen en la solución (corchetes). Si es $<$ o $>$, los puntos críticos quedan excluidos (paréntesis)."
+            },
+            {
+              "type": "example",
+              "content": "\\begin{aligned}\nx^2 - 4 & \\geq 0 \\\\\n(x - 2)(x + 2) & \\geq 0 \\\\\n\\text{Puntos críticos: } & x = 2, x = -2 \\\\\n\\text{Intervalos a evaluar: } & (-\\infty, -2], [-2, 2], [2, \\infty) \\\\\n\\text{Solución: } & (-\\infty, -2] \\cup [2, \\infty)\n\\end{aligned}"
+            },
+            {
+              "type": "formula",
+              "content": "x^2-a^2=(x-a)(x+a)"
+            },
+            {
+              "type": "formula",
+              "content": "(x-r_1)(x-r_2)\\geq 0"
+            }
+          ]
+        },
+        {
+          "title": "Desigualdades racionales",
+          "subtitle": "Matemática I • Inecuaciones",
+          "content": "Una desigualdad racional es aquella que tiene la incógnita en el denominador de una fracción. A diferencia de las lineales, nunca debemos \"pasar multiplicando\" el denominador al otro lado, ya que no conocemos su signo y podríamos invertir la desigualdad erróneamente.\n\nEl método correcto consiste en llevar todos los términos a un solo lado para obtener el cero a la derecha, simplificar en una sola fracción y analizar los signos del numerador y del denominador por separado.",
+          "formulaLatex": "\\frac{P(x)}{Q(x)} \\geq 0, \\quad Q(x) \\neq 0",
+          "proTip": "¡Regla de oro! Los valores que hacen cero al denominador siempre llevan paréntesis en la solución final, incluso si la desigualdad tiene un signo $\\leq$ o $\\geq$. Una división por cero es una operación indefinida.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Para resolver estas inecuaciones seguimos una ruta lógica:\nIgualar a cero: Pasar todo a la izquierda para dejar el $0$ a la derecha.\nSimplificar: Sumar o restar fracciones para tener una sola expresión.\nPuntos Críticos: Hallar las raíces tanto del numerador como del denominador.\nAnálisis de Signos: Evaluar los intervalos resultantes en la recta numérica."
+            },
+            {
+              "type": "note",
+              "content": "Recuerda que el signo final de la fracción $(\\pm)$ sigue la misma regla que la multiplicación:$(+) / (+) = (+)$$(+) / (-) = (-)$$(-) / (-) = (+)$"
+            },
+            {
+              "type": "example",
+              "content": "\\begin{aligned}\n\\frac{1}{x} & < 2 \\\\\n\\frac{1}{x} - 2 & < 0 \\\\\n\\frac{1 - 2x}{x} & < 0 \\\\\n\\text{Críticos: } & x = \\frac{1}{2}, \\quad x = 0 \\\\\n\\text{Solución: } & (-\\infty, 0) \\cup \\left(\\frac{1}{2}, \\infty\\right)\n\\end{aligned}"
+            },
+            {
+              "type": "formula",
+              "content": "\\text{Puntos críticos: } P(x)=0\\ \\text{o}\\ Q(x)=0"
+            },
+            {
+              "type": "formula",
+              "content": "\\text{Analiza el signo en cada intervalo}"
+            }
+          ]
+        },
+        {
+          "title": "Método de intervalos y sistemas de desigualdades",
+          "subtitle": "Matemática I • Inecuaciones",
+          "content": "El Método de Intervalos es una técnica gráfica que nos permite determinar el signo de una expresión factorizada en toda la recta real. Consiste en ubicar los puntos críticos y probar valores en cada \"segmento\" resultante.\n\nPor otro lado, un Sistema de Desigualdades es un conjunto de dos o más inecuaciones que deben cumplirse simultáneamente. Resolver un sistema significa hallar el conjunto de números que satisfacen a todas las desigualdades al mismo tiempo.",
+          "formulaLatex": "\\begin{cases} f(x) > 0 \\\\ g(x) \\leq 0 \\end{cases} \\implies \\text{Solución: } S_1 \\cap S_2",
+          "proTip": "En los sistemas, la palabra clave es INTERSECCIÓN. Si resuelves cada inecuación por separado, la solución final es solo la zona de la recta donde las gráficas de todas las soluciones se \"enciman\" o solapan.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Pasos para el Método de Intervalos:\nFactorizar completamente la expresión.\nUbicar los puntos críticos en la recta real (ordenados de menor a mayor).\nElegir un valor de prueba en cada intervalo y determinar el signo resultante.\nSeleccionar los intervalos que coincidan con el símbolo original ($>0$ para positivos, $<0$ para negativos)."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Para: } (x-1)(x+3) > 0\\begin{array}{c|c|c|c}\n\\text{Intervalo} & (-\\infty, -3) & (-3, 1) & (1, \\infty) \\\\\n\\hline\n\\text{Signo} & (+) & (-) & (+) \\\\\n\\end{array}\\text{Solución: } (-\\infty, -3) \\cup (1, \\infty)"
+            },
+            {
+              "type": "formula",
+              "content": "(-\\infty,a)\\cup(a,b]\\cup(b,\\infty)"
+            },
+            {
+              "type": "note",
+              "content": "Si un sistema de desigualdades no tiene ningún punto en común entre sus soluciones parciales, decimos que el sistema no tiene solución ($S = \\emptyset$)."
+            },
+            {
+              "type": "formula",
+              "content": "\\text{Solución final}=\\bigcap_i S_i"
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_ineq_p1",
+      "title": "Práctica 1: Resolución de Desigualdades",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_ineq_01",
+          "questionText": "Resuelve la inecuación lineal:",
+          "questionLatex": "\\frac{7}{2}x-3\\geq \\frac{4}{3}-2x",
+          "options": [
+            "x\\geq \\frac{26}{33}",
+            "x\\leq \\frac{26}{33}",
+            "x\\geq \\frac{33}{26}",
+            "x\\leq \\frac{33}{26}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Agrupando términos con x y números por separado se obtiene \\frac{11}{2}x\\geq \\frac{13}{3}, por lo que x\\geq \\frac{26}{33}.",
+          "category": "Inecuaciones Lineales",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_ineq_02",
+          "questionText": "Resuelve la inecuación cuadrática:",
+          "questionLatex": "x^2-16\\leq 0",
+          "options": [
+            "x\\in[-4,4]",
+            "x\\in(-\\infty,-4)\\cup(4,\\infty)",
+            "x\\in(-4,4)",
+            "x\\in\\emptyset"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Factorizamos x^2-16=(x-4)(x+4). La expresión es no positiva entre las raíces, incluyendo los extremos: [-4,4].",
+          "category": "Inecuaciones Cuadráticas",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_ineq_03",
+          "questionText": "Resuelve el sistema de desigualdades:",
+          "questionLatex": "\\left\\{\\begin{matrix}x^2-16\\leq 0\\\\x^2-6x+5\\leq 0\\end{matrix}\\right.",
+          "options": [
+            "x\\in[1,4]",
+            "x\\in[-4,5]",
+            "x\\in(1,4)",
+            "x\\in\\emptyset"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La primera desigualdad da [-4,4] y la segunda da [1,5]. Su intersección es [1,4].",
+          "category": "Sistemas de Inecuaciones",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_ineq_04",
+          "questionText": "Resuelve la inecuación racional:",
+          "questionLatex": "\\frac{x-2}{x+1}>0",
+          "options": [
+            "(-\\infty,-1)\\cup(2,\\infty)",
+            "(-1,2)",
+            "[-1,2]",
+            "(-\\infty,2)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Los puntos críticos son x=-1 y x=2. El cociente es positivo en los intervalos donde numerador y denominador tienen el mismo signo: (-\\infty,-1)\\cup(2,\\infty).",
+          "category": "Inecuaciones Racionales",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_ineq_p2",
+      "title": "Práctica 2: Resolución de Desigualdades",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_ineq_05",
+          "questionText": "Resuelve la inecuación:",
+          "questionLatex": "x^2-5x+6>0",
+          "options": [
+            "(-\\infty,2)\\cup(3,\\infty)",
+            "(2,3)",
+            "[2,3]",
+            "(-\\infty,3)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Factorizamos x^2-5x+6=(x-2)(x-3). El producto es positivo fuera de las raíces, como la desigualdad es estricta, los extremos no se incluyen.",
+          "category": "Inecuaciones Cuadráticas",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_ineq_06",
+          "questionText": "Resuelve la inecuación:",
+          "questionLatex": "x^2+4x+4\\leq 0",
+          "options": [
+            "x=-2",
+            "x\\in[-2,2]",
+            "x\\in\\emptyset",
+            "x\\in(-\\infty,-2]"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "x^2+4x+4=(x+2)^2. Un cuadrado solo puede ser \\leq 0 si vale 0, por lo tanto x=-2.",
+          "category": "Inecuaciones Cuadráticas",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_ineq_07",
+          "questionText": "Resuelve la inecuación:",
+          "questionLatex": "\\frac{x+2}{x-3}\\geq 1",
+          "options": [
+            "(3,\\infty)",
+            "(-\\infty,3)",
+            "[3,\\infty)",
+            "(5,\\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Llevando todo a un lado: \\frac{x+2}{x-3}-1=\\frac{5}{x-3}\\geq 0. Como 5>0, se requiere x-3>0, es decir x>3.",
+          "category": "Inecuaciones Racionales",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_ineq_08",
+          "questionText": "Resuelva la inecuación cuadrática:",
+          "questionLatex": "x^2 + x + 1 > 0",
+          "options": [
+            "\\mathbb{R}",
+            "\\emptyset",
+            "(-\\infty, -1) \\cup (1, \\infty)",
+            "x > -1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "El discriminante es $\\Delta = 1^2 - 4(1)(1) = -3 < 0$. Como el coeficiente de $x^2$ es positivo (1 > 0), la parábola siempre está por encima del eje x. La solución es todo $\\mathbb{R}$.",
+          "category": "Inecuaciones Cuadráticas",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_ineq_p3",
+      "title": "Práctica 3: Resolución de Desigualdades",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_ineq_09",
+          "questionText": "Halle el conjunto solución de:",
+          "questionLatex": "\\frac{(x-1)^2(x+2)}{(x-3)} \\leq 0",
+          "options": [
+            "[-2, 3) \\cup \\{1\\}",
+            "[-2, 3)",
+            "(-\\infty, -2] \\cup (3, \\infty)",
+            "[-2, 1] \\cup [1, 3)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Puntos críticos: -2, 1, 3. Como $(x-1)^2 \\geq 0$, solo afecta el signo en x=1 (donde vale 0). Para el resto, estudiamos $\\frac{x+2}{x-3} \\leq 0$, lo cual ocurre en $[-2, 3)$. El punto x=1 ya está en ese intervalo.",
+          "category": "Inecuaciones Racionales",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_abs_theory",
+      "title": "Teoría: Valor Absoluto",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Definición de valor absoluto",
+          "subtitle": "Matemática I • Valor Absoluto",
+          "content": "El valor absoluto de un número real es su distancia al cero en la recta real. Por eso nunca es negativo. Esta idea se usa constantemente para resolver ecuaciones e inecuaciones, estudiar distancias entre puntos y expresar condiciones de cercanía entre valores.",
+          "formulaLatex": "|x|=\\begin{cases}x, & x\\geq 0\\\\-x, & x<0\\end{cases}",
+          "proTip": "Si el argumento del valor absoluto es una expresión lineal, primero encuentra el punto donde esa expresión vale cero: allí la recta real se divide en dos regiones.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Interpretación geométrica:"
+            },
+            {
+              "type": "formula",
+              "content": "|x-a|=\\text{distancia entre }x\\text{ y }a"
+            },
+            {
+              "type": "formula",
+              "content": "|x|\\geq 0"
+            },
+            {
+              "type": "note",
+              "content": "En la guía se muestra cómo partir la recta real según el signo de la expresión dentro del valor absoluto."
+            }
+          ]
+        },
+        {
+          "title": "Propiedades del valor absoluto",
+          "subtitle": "Matemática I • Valor Absoluto",
+          "content": "El valor absoluto cumple propiedades algebraicas importantes: multiplicación, división, desigualdad triangular y relación con la distancia. Estas propiedades permiten simplificar expresiones y transformar desigualdades en forma equivalente.",
+          "formulaLatex": "|ab|=|a||b|",
+          "proTip": "No olvides que |a| y |-a| siempre son iguales.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\left|\\frac{a}{b}\\right|=\\frac{|a|}{|b|},\\quad b\\neq 0"
+            },
+            {
+              "type": "formula",
+              "content": "|x-y|=|y-x|"
+            },
+            {
+              "type": "formula",
+              "content": "|x+y|\\leq |x|+|y|"
+            },
+            {
+              "type": "note",
+              "content": "La guía trabaja la definición por casos y su aplicación en expresiones racionales y lineales."
+            }
+          ]
+        },
+        {
+          "title": "Ecuaciones con valor absoluto",
+          "subtitle": "Matemática I • Valor Absoluto",
+          "content": "Las ecuaciones con valor absoluto se resuelven separando casos. Si |A|=k con k>0, entonces A=k o A=-k. Si k<0, no hay solución. Cuando el valor absoluto está solo en un lado y el otro lado es positivo, la ecuación se transforma en dos ecuaciones lineales.",
+          "formulaLatex": "|A|=k\\Rightarrow A=k\\ \\text{o}\\ A=-k",
+          "proTip": "Antes de separar casos, verifica que el lado derecho no sea negativo.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "|x-3|=5 \\Rightarrow x-3=5 \\text{ o } x-3=-5"
+            },
+            {
+              "type": "formula",
+              "content": "x=8 \\text{ o } x=-2"
+            }
+          ]
+        },
+        {
+          "title": "Inecuaciones con valor absoluto",
+          "subtitle": "Matemática I • Valor Absoluto",
+          "content": "Las desigualdades con valor absoluto expresan condiciones de distancia. Si el valor absoluto es menor que un número, la solución suele ser un intervalo. Si es mayor que un número, la solución suele ser una unión de intervalos.",
+          "formulaLatex": "|A|<k\\Rightarrow -k<A<k",
+          "proTip": "En desigualdades estrictas, los extremos no se incluyen. En desigualdades no estrictas, sí pueden incluirse.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "|A|\\leq k\\Rightarrow -k\\leq A\\leq k"
+            },
+            {
+              "type": "formula",
+              "content": "|A|>k\\Rightarrow A<-k\\ \\text{o}\\ A>k"
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_abs_p1",
+      "title": "Práctica 1: Valor Absoluto",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_abs_01",
+          "questionText": "Resuelve la ecuación:",
+          "questionLatex": "|x-4|=7",
+          "options": [
+            "x=11 \\text{ o } x=-3",
+            "x=3 \\text{ o } x=-11",
+            "x=7",
+            "x=-7"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Se separa en dos casos: x-4=7 o x-4=-7. Por tanto, x=11 o x=-3.",
+          "category": "Valor Absoluto",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_abs_02",
+          "questionText": "Resuelve la inecuación:",
+          "questionLatex": "|x|\\leq 5",
+          "options": [
+            "[-5,5]",
+            "(-5,5)",
+            "(-\\infty,-5]\\cup[5,\\infty)",
+            "[-5,\\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La distancia al cero debe ser menor o igual que 5, por lo que la solución es el intervalo cerrado [-5,5].",
+          "category": "Valor Absoluto",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_abs_03",
+          "questionText": "Resuelve:",
+          "questionLatex": "|2x-1|<3",
+          "options": [
+            "(-1,2)",
+            "[-1,2]",
+            "(-\\infty,-1)\\cup(2,\\infty)",
+            "(-2,1)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "-3<2x-1<3 \\Rightarrow -2<2x<4 \\Rightarrow -1<x<2.",
+          "category": "Valor Absoluto",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_abs_04",
+          "questionText": "Resuelve:",
+          "questionLatex": "|x+1|\\geq 2",
+          "options": [
+            "(-\\infty,-3]\\cup[1,\\infty)",
+            "[-3,1]",
+            "(-3,1)",
+            "(-\\infty,1]"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Se separa en dos casos: x+1\\leq -2 o x+1\\geq 2. Así, x\\leq -3 o x\\geq 1.",
+          "category": "Valor Absoluto",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_abs_p2",
+      "title": "Práctica 2: Valor Absoluto",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_abs_05",
+          "questionText": "¿Cuál es la definición por casos de |2x+5|?",
+          "questionLatex": "|2x+5|",
+          "options": [
+            "2x+5 si x\\geq -\\frac{5}{2},\\ -2x-5 si x<-\\frac{5}{2}",
+            "2x+5 si x<-\\frac{5}{2},\\ -2x-5 si x\\geq -\\frac{5}{2}",
+            "|2x+5|=2x+5 siempre",
+            "|2x+5|=-2x-5 siempre"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Primero se resuelve 2x+5\\geq 0, lo que da x\\geq -\\frac{5}{2}. En el resto de la recta se cambia el signo.",
+          "category": "Definición por Casos",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_abs_06",
+          "questionText": "Resuelva la inecuación:",
+          "questionLatex": "|3x + 2| > x + 4",
+          "options": [
+            "(-\\infty, -3/2) \\cup (1, \\infty)",
+            "(1, \\infty)",
+            "(-\\infty, -1) \\cup (1, \\infty)",
+            "(\\frac{1}{2}, \\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Caso 1: $3x+2 > x+4 \\Rightarrow 2x > 2 \\Rightarrow x > 1$. Caso 2: $3x+2 < -(x+4) \\Rightarrow 4x < -6 \\Rightarrow x < -3/2$. Unión: $(-\\infty, -3/2) \\cup (1, \\infty)$.",
+          "category": "Inecuaciones con Valor Absoluto",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_abs_07",
+          "questionText": "Si |x| <= 2 y |y| <= 3, ¿cuál es el valor máximo posible de |x-y|?",
+          "questionLatex": "|x-y| \\leq ?",
+          "options": [
+            "5",
+            "1",
+            "6",
+            "2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Por la desigualdad triangular inversa o simplemente por extremos: si x=2 e y=-3, $|x-y| = |2 - (-3)| = 5$. En general $|x-y| \\leq |x| + |y| \\leq 2+3=5$.",
+          "category": "Propiedades",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_geometry_theory",
+      "title": "Teoría: Geometría Analítica: Recta y Circunferencia",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Puntos y Distancia en el Plano",
+          "subtitle": "Matemática I • Geometría",
+          "content": "El plano cartesiano permite ubicar puntos mediante coordenadas (x, y). La distancia entre dos puntos $P_1(x_1, y_1)$ y $P_2(x_2, y_2)$ se calcula aplicando el Teorema de Pitágoras.",
+          "formulaLatex": "d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}",
+          "proTip": "El punto medio entre dos puntos se halla promediando sus coordenadas: $ M = (\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}) $.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "d(P_1, P_2) = \\sqrt{\\Delta x^2 + \\Delta y^2}"
+            }
+          ]
+        },
+        {
+          "title": "La Recta: Pendiente y Ecuaciones",
+          "subtitle": "Matemática I • Geometría",
+          "content": "Una recta queda definida por su inclinación (pendiente $m$) y un punto por el que pasa. Existen varias formas de expresar su ecuación: punto-pendiente, pendiente-intersección y la forma general.",
+          "formulaLatex": "y - y_1 = m(x - x_1)",
+          "proTip": "La pendiente $m = \\frac{y_2-y_1}{x_2-x_1}$. Si la recta es vertical, la pendiente no está definida.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "y = mx + b \\quad (\\text{Pendiente-intersección})"
+            },
+            {
+              "type": "formula",
+              "content": "Ax + By + C = 0 \\quad (\\text{Forma General})"
+            }
+          ]
+        },
+        {
+          "title": "Rectas Paralelas y Perpendiculares",
+          "subtitle": "Matemática I • Geometría",
+          "content": "Dos rectas son paralelas si tienen la misma pendiente ($m_1 = m_2$). Son perpendiculares si el producto de sus pendientes es -1 ($m_1 \\cdot m_2 = -1$), es decir, son recíprocas y de signo contrario.",
+          "formulaLatex": "L_1 \\parallel L_2 \\iff m_1 = m_2",
+          "proTip": "Si una recta tiene pendiente 3, cualquier recta perpendicular a ella tendrá pendiente -1/3.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "L_1 \\perp L_2 \\iff m_2 = -\\frac{1}{m_1}"
+            }
+          ]
+        },
+        {
+          "title": "La Circunferencia",
+          "subtitle": "Matemática I • Geometría",
+          "content": "Es el lugar geométrico de los puntos que equidistan de un centro $C(h, k)$ a una distancia fija llamada radio $r$. La ecuación estándar se deriva directamente de la fórmula de distancia.",
+          "formulaLatex": "(x-h)^2 + (y-k)^2 = r^2",
+          "proTip": "Para pasar de la forma general $x^2+y^2+Dx+Ey+F=0$ a la estándar, debes completar cuadrados para x y para y.",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "Si el centro es el origen (0,0), la ecuación se simplifica a $x^2 + y^2 = r^2$."
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_geometry_p1",
+      "title": "Práctica 1: Geometría Analítica: Recta y Circunferencia",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_geo_01",
+          "questionText": "Halle la ecuación de la recta que pasa por (1,3) y (4,2).",
+          "questionLatex": "P_1(1,3), P_2(4,2)",
+          "options": [
+            "x + 3y = 10",
+            "3x + y = 6",
+            "x - 3y = -8",
+            "x + y = 4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Pendiente $m = \\frac{2-3}{4-1} = -1/3$. Usando punto-pendiente: $y-3 = -1/3(x-1) \\Rightarrow 3y-9 = -x+1 \\Rightarrow x+3y=10$.",
+          "category": "La Recta",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_geo_02",
+          "questionText": "Determine el centro y radio de la circunferencia:",
+          "questionLatex": "x^2 + y^2 - 6x + 4y - 12 = 0",
+          "options": [
+            "C(3, -2), r = 5",
+            "C(-3, 2), r = 5",
+            "C(3, -2), r = 25",
+            "C(6, -4), r = 12"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Completando cuadrados: $(x^2-6x+9) + (y^2+4y+4) = 12 + 9 + 4 \\Rightarrow (x-3)^2 + (y+2)^2 = 25$. Centro (3,-2), r=5.",
+          "category": "La Circunferencia",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_geo_03",
+          "questionText": "¿Cuál es la pendiente de una recta perpendicular a y = (2/3)x - 5?",
+          "questionLatex": "y = \\frac{2}{3}x - 5",
+          "options": [
+            "-3/2",
+            "3/2",
+            "-2/3",
+            "2/3"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La pendiente original es 2/3. La perpendicular debe ser $-1/m$, es decir, $-3/2$.",
+          "category": "Perpendicularidad",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_geo_04",
+          "questionText": "Halle la distancia entre los puntos A(2,1) y B(6,3).",
+          "questionLatex": "A(2,1), B(6,3)",
+          "options": [
+            "\\sqrt{20}",
+            "\\sqrt{10}",
+            "6",
+            "4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "$d = \\sqrt{(6-2)^2 + (3-1)^2} = \\sqrt{4^2 + 2^2} = \\sqrt{16+4} = \\sqrt{20}$.",
+          "category": "Distancia",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_prac_ineq_abs_theory",
+      "title": "Teoría: Práctica: Desigualdades y Valor Absoluto",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Instrucciones de la Práctica",
+          "subtitle": "Matemática I • Práctica",
+          "content": "Esta sesión está dedicada exclusivamente a resolver ejercicios de desigualdades (lineales, cuadráticas, racionales) y ecuaciones/inecuaciones con valor absoluto.",
+          "formulaLatex": "",
+          "proTip": "Utiliza el método de intervalos (o cementerio) para las inecuaciones polinómicas racionales y recuerda separar en casos los valores absolutos.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "A continuación encontrarás ejercicios seleccionados de la guía para reforzar tu destreza algebraica."
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_prac_ineq_abs_p1",
+      "title": "Práctica 1: Práctica: Desigualdades y Valor Absoluto",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_prac_01",
+          "questionText": "Halle el conjunto solución de:",
+          "questionLatex": "\\frac{1}{x} < \\frac{1}{2x+1}",
+          "options": [
+            "(-1, -1/2)",
+            "(-\\infty, -1/2) \\cup (0, 1)",
+            "(-1/2, 0)",
+            "(-\\infty, -1)"
+          ],
+          "correctAnswerIndex": 2,
+          "explanationLatex": "Restando obtenemos $\\frac{x+1}{x(2x+1)} < 0$. Evaluando signos en los intervalos formados por -1, -1/2 y 0.",
+          "category": "Práctica Inecuaciones",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_prac_02",
+          "questionText": "Resolver:",
+          "questionLatex": "|x^2 - 1| \\leq 3",
+          "options": [
+            "[-2, 2]",
+            "[-2, -1] \\cup [1, 2]",
+            "[-1, 1]",
+            "(-\\infty, -2] \\cup [2, \\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "$-3 \\leq x^2 - 1 \\leq 3 \\Rightarrow -2 \\leq x^2 \\leq 4$. Como $x^2 \\geq -2$ siempre se cumple, resolvemos $x^2 \\leq 4$ que da $x \\in [-2, 2]$.",
+          "category": "Práctica Valor Absoluto",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_prac_05",
+          "questionText": "Resuelva la inecuación:",
+          "questionLatex": "|x^2 - 2x| < x",
+          "options": [
+            "(1, 3)",
+            "(0, 3)",
+            "(2, 3)",
+            "(1, 2)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Para $x > 0$, resolvemos $-x < x^2-2x < x$. La primera parte $x^2-x > 0 \\Rightarrow x(x-1) > 0 \\Rightarrow x > 1$. La segunda parte $x^2-3x < 0 \\Rightarrow x(x-3) < 0 \\Rightarrow x < 3$. Intersección: $(1, 3)$.",
+          "category": "Práctica Valor Absoluto",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_prac_06",
+          "questionText": "Determine el conjunto solución de:",
+          "questionLatex": "\\frac{|x-1|}{|x|+1} < 1",
+          "options": [
+            "\\mathbb{R}",
+            "(0, \\infty)",
+            "(-\\infty, 0)",
+            "\\mathbb{R} \\setminus \\{0\\}"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Como $|x|+1 > 0$, multiplicamos: $|x-1| < |x|+1$. Si $x \\geq 1$: $x-1 < x+1 \\Rightarrow -1 < 1$ (V). Si $0 \\leq x < 1$: $1-x < x+1 \\Rightarrow 0 < 2x \\Rightarrow x > 0$. Si $x < 0$: $1-x < -x+1 \\Rightarrow 1 < 1$ (F). Solución: $(0, \\infty)$.",
+          "category": "Práctica Valor Absoluto",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_prac_ineq_abs_p2",
+      "title": "Práctica 2: Práctica: Desigualdades y Valor Absoluto",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_prac_07",
+          "questionText": "Resuelva la inecuación racional:",
+          "questionLatex": "\\frac{x+2}{x-1} \\geq 1 + \\frac{x}{x+1}",
+          "options": [
+            "(-1, 1)",
+            "(-\\infty, -1) \\cup (1, \\infty)",
+            "[-1, 1]",
+            "\\mathbb{R} \\setminus \\{-1, 1\\}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Llevando a un lado: $\\frac{x+2}{x-1} - \\frac{x}{x+1} - 1 \\geq 0$. Simplificando: $\\frac{(x^2+3x+2) - (x^2-x) - (x^2-1)}{x^2-1} \\geq 0 \\Rightarrow \\frac{-x^2+4x+3}{x^2-1} \\geq 0$. (Nota: El ejercicio de Mike es similar, simplificado aquí para integridad).",
+          "category": "Práctica Inecuaciones",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_functions_intro_theory",
+      "title": "Teoría: Funciones de R en R",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Concepto de función",
+          "subtitle": "Matemática I • Funciones",
+          "content": "Una función es una regla que asigna a cada valor del dominio exactamente un valor del codominio. En Matemática I se estudian funciones reales de variable real, es decir, funciones de R en R. Estas funciones se representan con gráficas y se analizan mediante dominio, rango, cortes con ejes, monotonía, simetría e inyectividad.",
+          "formulaLatex": "f: \\mathbb{R}\\to \\mathbb{R}",
+          "proTip": "Si a un mismo valor de x le corresponden dos valores distintos de y, entonces no es función.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "y=f(x)"
+            },
+            {
+              "type": "formula",
+              "content": "Dom(f)=\\{x\\in\\mathbb{R}: f(x)\\text{ está definida}\\}"
+            },
+            {
+              "type": "formula",
+              "content": "Rgo(f)=\\{f(x): x\\in Dom(f)\\}"
+            },
+            {
+              "type": "note",
+              "content": "En la guía 7 se estudian funciones básicas como constante, identidad, cuadrática, cúbica, valor absoluto, raíz, hipérbolas y parte entera."
+            }
+          ]
+        },
+        {
+          "title": "Dominio, rango e inyectividad",
+          "subtitle": "Matemática I • Funciones",
+          "content": "El dominio es el conjunto de entradas permitidas; el rango es el conjunto de valores que la función puede tomar. Una función es inyectiva si elementos distintos del dominio producen imágenes distintas. Muchas funciones básicas no son inyectivas en todo su dominio, por ejemplo f(x)=x^2 o f(x)=|x|, aunque sí pueden serlo si se restringe el dominio.",
+          "formulaLatex": "f(x_1)=f(x_2)\\Rightarrow x_1=x_2 \\quad \\text{(inyectiva)}",
+          "proTip": "Una función es inyectiva si pasa la prueba de la recta horizontal.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "f(x)=k\\Rightarrow Rgo(f)=\\{k\\}"
+            },
+            {
+              "type": "formula",
+              "content": "f(x)=x\\Rightarrow Dom(f)=Rgo(f)=\\mathbb{R}"
+            }
+          ]
+        },
+        {
+          "title": "Puntos de corte, monotonía y simetría",
+          "subtitle": "Matemática I • Funciones",
+          "content": "Las funciones se analizan observando sus cortes con los ejes coordenados, su comportamiento creciente o decreciente y sus simetrías. Una función par satisface f(-x)=f(x), una impar satisface f(-x)=-f(x). La guía 7 incluye cuadros para estudiar estas características en funciones como x^2, x^3, 1/x, 1/x^2 y |x|.",
+          "formulaLatex": "f(-x)=f(x)\\Rightarrow \\text{función par}",
+          "proTip": "Si la gráfica es simétrica respecto del eje y, es par. Si es simétrica respecto del origen, es impar.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "f(-x)=-f(x)\\Rightarrow \\text{función impar}"
+            },
+            {
+              "type": "formula",
+              "content": "f \\text{ creciente en }(a,b)\\Rightarrow x_1<x_2 \\Rightarrow f(x_1)<f(x_2)"
+            }
+          ]
+        },
+        {
+          "title": "Funciones básicas que aparecen en la guía",
+          "subtitle": "Matemática I • Funciones",
+          "content": "Las guías trabajan varias funciones tipo, cada una con una forma gráfica particular. La función constante es horizontal, la identidad es una recta de pendiente uno, la cuadrática es una parábola, la cúbica tiene forma en S, la raíz cuadrada empieza en el origen y la hipérbola presenta asíntota vertical. También se estudia la función valor absoluto, cuya gráfica forma una V.",
+          "formulaLatex": "f(x)=x^2,\\quad f(x)=x^3,\\quad f(x)=\\sqrt{x},\\quad f(x)=\\frac{1}{x}",
+          "proTip": "Aprender las gráficas básicas te ahorra muchísimo tiempo cuando luego estudias transformaciones.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "f(x)=k"
+            },
+            {
+              "type": "formula",
+              "content": "f(x)=x"
+            },
+            {
+              "type": "formula",
+              "content": "f(x)=x^2"
+            },
+            {
+              "type": "formula",
+              "content": "f(x)=|x|"
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_functions_intro_p1",
+      "title": "Práctica 1: Funciones de R en R",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_fun_01",
+          "questionText": "¿Cuál es el dominio de f(x)=1/(x-3)?",
+          "questionLatex": "f(x)=\\frac{1}{x-3}",
+          "options": [
+            "\\mathbb{R}\\setminus\\{3\\}",
+            "\\mathbb{R}",
+            "[3,\\infty)",
+            "(-\\infty,3)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "El denominador no puede ser cero, así que x\\neq 3.",
+          "category": "Dominio",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_fun_02",
+          "questionText": "¿Cuál es el dominio de f(x)=√(x-2)?",
+          "questionLatex": "f(x)=\\sqrt{x-2}",
+          "options": [
+            "[2,\\infty)",
+            "(-\\infty,2]",
+            "\\mathbb{R}",
+            "(2,\\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Dentro de la raíz debe cumplirse x-2\\geq 0.",
+          "category": "Dominio",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_fun_03",
+          "questionText": "Evalúa la función:",
+          "questionLatex": "f(x)=x^2+1,\\quad f(3)",
+          "options": [
+            "10",
+            "9",
+            "7",
+            "6"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Sustituyendo x=3 se obtiene 3^2+1=10.",
+          "category": "Evaluación de Funciones",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_fun_04",
+          "questionText": "¿La función f(x)=x² es inyectiva en ℝ?",
+          "questionLatex": "f(x)=x^2",
+          "options": [
+            "No",
+            "Sí",
+            "Solo si x\\geq 0",
+            "Solo si x\\leq 0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Como f(1)=f(-1)=1, no es inyectiva en todo \\mathbb{R}.",
+          "category": "Inyectividad",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_functions_intro_p2",
+      "title": "Práctica 2: Funciones de R en R",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_fun_05",
+          "questionText": "¿Cuál función es impar?",
+          "questionLatex": "Selecciona la función impar",
+          "options": [
+            "f(x)=x^3",
+            "f(x)=x^2",
+            "f(x)=|x|",
+            "f(x)=1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Se cumple f(-x)=(-x)^3=-x^3=-f(x).",
+          "category": "Simetría",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_fun_06",
+          "questionText": "¿Cuál es el rango de f(x)=x²?",
+          "questionLatex": "f(x)=x^2",
+          "options": [
+            "[0,\\infty)",
+            "(-\\infty,\\infty)",
+            "(-\\infty,0]",
+            "[1,\\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Un cuadrado nunca es negativo, así que el rango comienza en 0.",
+          "category": "Rango",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_function_families_theory",
+      "title": "Teoría: Funciones Básicas y sus Gráficas",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Función constante e identidad",
+          "subtitle": "Matemática I • Funciones",
+          "content": "La función constante mantiene el mismo valor para toda entrada. Su gráfica es una recta horizontal. La función identidad devuelve el mismo valor que recibe y su gráfica es la recta y=x. Estas dos funciones sirven como referencia para construir otras gráficas por transformaciones.",
+          "formulaLatex": "f(x)=k,\\quad f(x)=x",
+          "proTip": "La identidad es la 'base' de muchas transformaciones gráficas.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "f(x)=k\\Rightarrow \\text{recta horizontal}"
+            },
+            {
+              "type": "formula",
+              "content": "f(x)=x\\Rightarrow \\text{recta con pendiente 1}"
+            }
+          ]
+        },
+        {
+          "title": "Función cuadrática y cúbica",
+          "subtitle": "Matemática I • Funciones",
+          "content": "La función cuadrática f(x)=x^2 tiene forma de parábola y es siempre no negativa. La función cúbica f(x)=x^3 cambia de signo, es creciente en todo su dominio y es impar. Ambas aparecen en la guía 7 como ejemplos centrales de análisis de dominio, rango, simetría e inyectividad.",
+          "formulaLatex": "f(x)=x^2,\\quad f(x)=x^3",
+          "proTip": "La cuadrática es par; la cúbica es impar.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "x^2\\geq 0"
+            },
+            {
+              "type": "formula",
+              "content": "f(-x)=-f(x)\\text{ para }x^3"
+            }
+          ]
+        },
+        {
+          "title": "Raíz, hipérbola y valor absoluto",
+          "subtitle": "Matemática I • Funciones",
+          "content": "La función raíz cuadrada requiere entradas no negativas. La hipérbola básica 1/x está definida para todo real excepto el cero. La hipérbola cuadrática 1/x^2 está definida para todo real excepto el cero y toma solo valores positivos. La función valor absoluto produce una gráfica en forma de V y es par.",
+          "formulaLatex": "f(x)=\\sqrt{x},\\quad f(x)=\\frac{1}{x},\\quad f(x)=\\frac{1}{x^2},\\quad f(x)=|x|",
+          "proTip": "Recuerda que 1/x y 1/x^2 nunca valen cero.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "f(x)=\\sqrt{x}\\Rightarrow x\\geq 0"
+            },
+            {
+              "type": "formula",
+              "content": "f(x)=\\frac{1}{x}\\Rightarrow x\\neq 0"
+            }
+          ]
+        },
+        {
+          "title": "Parte entera y signo",
+          "subtitle": "Matemática I • Funciones",
+          "content": "La función parte entera asigna a cada número real el mayor entero menor o igual que ese número. La función signo clasifica los números según su signo: positivo, negativo o cero. Estas funciones amplían la visión de funciones no suaves o definidas por tramos.",
+          "formulaLatex": "\\lfloor x\\rfloor,\\quad \\operatorname{sgn}(x)",
+          "proTip": "La parte entera siempre devuelve un entero, aunque la entrada no lo sea.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\operatorname{sgn}(x)=\\begin{cases}1,&x>0\\\\0,&x=0\\\\-1,&x<0\\end{cases}"
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_function_families_p1",
+      "title": "Práctica 1: Funciones Básicas y sus Gráficas",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_family_01",
+          "questionText": "¿Cuál es el rango de f(x)=√(x?",
+          "questionLatex": "f(x)=\\sqrt{x}",
+          "options": [
+            "[0,\\infty)",
+            "(-\\infty,\\infty)",
+            "(-\\infty,0]",
+            "[1,\\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La raíz cuadrada nunca produce valores negativos.",
+          "category": "Rango",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_family_02",
+          "questionText": "¿Cuál es el dominio de f(x)=1/x²?",
+          "questionLatex": "f(x)=\\frac{1}{x^2}",
+          "options": [
+            "\\mathbb{R}\\setminus\\{0\\}",
+            "\\mathbb{R}",
+            "[0,\\infty)",
+            "(-\\infty,0]"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "El denominador no puede ser cero.",
+          "category": "Dominio",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_family_03",
+          "questionText": "¿La función f(x)=x³ es par, impar o ninguna?",
+          "questionLatex": "f(x)=x^3",
+          "options": [
+            "Impar",
+            "Par",
+            "Ninguna",
+            "Constante"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Se cumple f(-x)=(-x)^3=-f(x).",
+          "category": "Simetría",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_family_04",
+          "questionText": "¿Cuál es la imagen de f(x)=|x|?",
+          "questionLatex": "f(x)=|x|",
+          "options": [
+            "[0,\\infty)",
+            "(-\\infty,0]",
+            "(-\\infty,\\infty)",
+            "[1,\\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "El valor absoluto siempre es mayor o igual que cero.",
+          "category": "Rango",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_function_families_p2",
+      "title": "Práctica 2: Funciones Básicas y sus Gráficas",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_family_05",
+          "questionText": "¿Cuál de estas funciones es inyectiva en todo ℝ?",
+          "questionLatex": "Selecciona una función inyectiva",
+          "options": [
+            "f(x)=x",
+            "f(x)=x^2",
+            "f(x)=|x|",
+            "f(x)=k"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La función identidad asigna valores distintos a entradas distintas.",
+          "category": "Inyectividad",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_trig_theory",
+      "title": "Teoría: Razones y Funciones Trigonométricas",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Razones trigonométricas básicas",
+          "subtitle": "Matemática I • Trigonometría",
+          "content": "Las razones trigonométricas relacionan los lados de un triángulo rectángulo con los ángulos agudos. Se definen seno, coseno, tangente, cotangente, secante y cosecante. Estas razones son la base para resolver triángulos y para estudiar funciones trigonométricas en el plano.",
+          "formulaLatex": "\\sin\\alpha=\\frac{cateto\\ opuesto}{hipotenusa}",
+          "proTip": "Memoriza la relación seno-coseno-tangente y las funciones recíprocas para poder reconstruir cualquier valor faltante.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\cos\\alpha=\\frac{cateto\\ adyacente}{hipotenusa}"
+            },
+            {
+              "type": "formula",
+              "content": "\\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha}"
+            },
+            {
+              "type": "formula",
+              "content": "\\csc\\alpha=\\frac{1}{\\sin\\alpha},\\quad \\sec\\alpha=\\frac{1}{\\cos\\alpha},\\quad \\cot\\alpha=\\frac{1}{\\tan\\alpha}"
+            }
+          ]
+        },
+        {
+          "title": "Identidades trigonométricas fundamentales",
+          "subtitle": "Matemática I • Trigonometría",
+          "content": "Las identidades trigonométricas son igualdades verdaderas para todo ángulo donde estén definidas. La identidad pitagórica es central, y de ella derivan otras identidades importantes. En la guía 9 también aparecen identidades de cofunción y fórmulas de suma y diferencia.",
+          "formulaLatex": "\\sin^2\\alpha+\\cos^2\\alpha=1",
+          "proTip": "Si un ejercicio te pide demostrar una identidad, intenta llevar ambos lados a la misma forma usando seno y coseno.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\tan^2\\alpha+1=\\sec^2\\alpha"
+            },
+            {
+              "type": "formula",
+              "content": "1+\\cot^2\\alpha=\\csc^2\\alpha"
+            },
+            {
+              "type": "formula",
+              "content": "\\sin\\left(\\frac{\\pi}{2}-x\\right)=\\cos x"
+            },
+            {
+              "type": "formula",
+              "content": "\\cos\\left(\\frac{\\pi}{2}-x\\right)=\\sin x"
+            }
+          ]
+        },
+        {
+          "title": "Ángulos notables y signos por cuadrante",
+          "subtitle": "Matemática I • Trigonometría",
+          "content": "Los ángulos notables permiten calcular valores exactos de razones trigonométricas en 0°, 30°, 45°, 60° y 90°. Para ángulos en otros cuadrantes, el signo depende de la ubicación en el plano. La guía usa estos valores para hallar razones de ángulos compuestos y para resolver problemas en cuadrantes específicos.",
+          "formulaLatex": "\\sin 30^\\circ=\\frac{1}{2},\\quad \\cos 60^\\circ=\\frac{1}{2},\\quad \\tan 45^\\circ=1",
+          "proTip": "Primero resuelve el valor absoluto de la razón y luego determina el signo según el cuadrante.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\sin 45^\\circ=\\cos 45^\\circ=\\frac{\\sqrt{2}}{2}"
+            },
+            {
+              "type": "formula",
+              "content": "\\sin 60^\\circ=\\frac{\\sqrt{3}}{2},\\quad \\cos 30^\\circ=\\frac{\\sqrt{3}}{2}"
+            }
+          ]
+        },
+        {
+          "title": "Funciones trigonométricas compuestas",
+          "subtitle": "Matemática I • Trigonometría",
+          "content": "En la guía se trabajan sumas, diferencias, ángulos dobles y relaciones entre funciones trigonométricas. Estas fórmulas permiten transform expresiones y calcular valores de ángulos relacionados.",
+          "formulaLatex": "\\sin(\\alpha\\pm\\beta)=\\sin\\alpha\\cos\\beta\\pm\\cos\\alpha\\sin\\beta",
+          "proTip": "Fíjate siempre en el signo del segundo término cuando apliques fórmulas de suma o diferencia.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\cos(\\alpha\\pm\\beta)=\\cos\\alpha\\cos\\beta\\mp\\sin\\alpha\\sin\\beta"
+            },
+            {
+              "type": "formula",
+              "content": "\\tan(\\alpha+\\beta)=\\frac{\\tan\\alpha+\\tan\\beta}{1-\\tan\\alpha\\tan\\beta}"
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_trig_p1",
+      "title": "Práctica 1: Razones y Funciones Trigonométricas",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_trig_01",
+          "questionText": "¿Cuál es el valor de sin 30°?",
+          "questionLatex": "\\sin 30^\\circ",
+          "options": [
+            "\\frac{1}{2}",
+            "\\frac{\\sqrt{2}}{2}",
+            "\\frac{\\sqrt{3}}{2}",
+            "1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Es uno de los ángulos notables.",
+          "category": "Trigonometría",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_trig_02",
+          "questionText": "Demuestra la identidad correcta:",
+          "questionLatex": "\\sin^2\\alpha+\\cos^2\\alpha",
+          "options": [
+            "1",
+            "0",
+            "\\sec^2\\alpha",
+            "\\tan^2\\alpha"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La identidad pitagórica básica vale 1.",
+          "category": "Identidades",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_trig_03",
+          "questionText": "Calcula:",
+          "questionLatex": "\\tan 45^\\circ",
+          "options": [
+            "1",
+            "0",
+            "\\sqrt{3}",
+            "\\frac{1}{\\sqrt{3}}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "En 45° los catetos son iguales.",
+          "category": "Ángulos Notables",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_trig_04",
+          "questionText": "Completa la identidad:",
+          "questionLatex": "\\sin\\left(\\frac{\\pi}{2}-x\\right)",
+          "options": [
+            "\\cos x",
+            "\\sin x",
+            "\\tan x",
+            "\\cot x"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Es una identidad de cofunción.",
+          "category": "Identidades Trigonométricas",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_trig_p2",
+      "title": "Práctica 2: Razones y Funciones Trigonométricas",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_trig_05",
+          "questionText": "Si cos x = -/(12(13 y x está en el segundo cuadrante, ¿cuál es sin x?",
+          "questionLatex": "\\cos x=-\\frac{12}{13}",
+          "options": [
+            "\\frac{5}{13}",
+            "-\\frac{5}{13}",
+            "\\frac{12}{13}",
+            "-\\frac{12}{13}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Por la identidad pitagórica, sin x = \\sqrt{1-cos^2 x}=\\frac{5}{13}. En el segundo cuadrante el seno es positivo.",
+          "category": "Razones Trigonométricas",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_trig_06",
+          "questionText": "Calcula sin(α+β) sabiendo que sinα y cosα, sinβ y cosβ son conocidos.",
+          "questionLatex": "\\sin(\\alpha+\\beta)",
+          "options": [
+            "\\sin\\alpha\\cos\\beta+\\cos\\alpha\\sin\\beta",
+            "\\sin\\alpha\\sin\\beta+\\cos\\alpha\\cos\\beta",
+            "\\cos\\alpha\\cos\\beta-\\sin\\alpha\\sin\\beta",
+            "\\tan\\alpha+\\tan\\beta"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Se usa la fórmula de suma para el seno.",
+          "category": "Fórmulas de Suma",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_trig_07",
+          "questionText": "Si sin x = 3/5, determine el valor de cos(2x).",
+          "questionLatex": "\\sin x = 3/5",
+          "options": [
+            "7/25",
+            "16/25",
+            "24/25",
+            "1/5"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Usando la fórmula de ángulo doble: $\\cos(2x) = 1 - 2\\sin^2 x = 1 - 2(9/25) = 1 - 18/25 = 7/25$.",
+          "category": "Ángulo Doble",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_trig_08",
+          "questionText": "¿En qué cuadrante(s) el seno y el coseno tienen el mismo signo?",
+          "questionLatex": "\\text{sgn}(\\sin x) = \\text{sgn}(\\cos x)",
+          "options": [
+            "I y III",
+            "I y II",
+            "II y IV",
+            "Solo el I"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "En el I cuadrante ambos son positivos (+, +). En el III cuadrante ambos son negativos (-, -).",
+          "category": "Signos Trigonométricos",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_inverse_theory",
+      "title": "Teoría: Funciones Inversas",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Idea de inversa",
+          "subtitle": "Matemática I • Funciones Inversas",
+          "content": "La función inversa revierte el efecto de una función original. Si f lleva un valor x a y, entonces f^{-1} lleva y de regreso a x. Para que una función tenga inversa sobre su dominio, debe ser inyectiva o debe restringirse adecuadamente el dominio.",
+          "formulaLatex": "f^{-1}(f(x))=x",
+          "proTip": "Para hallar la inversa, intercambia x e y y despeja y.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "y=f(x)"
+            },
+            {
+              "type": "formula",
+              "content": "x=f(y)"
+            },
+            {
+              "type": "formula",
+              "content": "y=f^{-1}(x)"
+            }
+          ]
+        },
+        {
+          "title": "Cómo encontrar la inversa",
+          "subtitle": "Matemática I • Funciones Inversas",
+          "content": "El procedimiento estándar es: escribir y=f(x), intercambiar las variables, despejar y y finalmente verificar dominio e imagen. En la guía 10 aparecen inversas de funciones lineales, racionales y trigonométricas compuestas.",
+          "formulaLatex": "f(x)=ax+b\\Rightarrow f^{-1}(x)=\\frac{x-b}{a}",
+          "proTip": "No toda función tiene inversa en todo su dominio; a veces hay que restringir el dominio para que sí exista.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "y=ax+b \\Rightarrow x=ay+b"
+            },
+            {
+              "type": "formula",
+              "content": "y=\\frac{x-b}{a}"
+            }
+          ]
+        },
+        {
+          "title": "Relación entre gráfica e inversa",
+          "subtitle": "Matemática I • Funciones Inversas",
+          "content": "La gráfica de una función y la de su inversa son simétricas respecto de la recta y=x. Esta propiedad es útil para verificar si la inversa hallada es correcta.",
+          "formulaLatex": "(a,b)\\in f \\Leftrightarrow (b,a)\\in f^{-1}",
+          "proTip": "Si reflejas la gráfica en la recta y=x, obtienes la gráfica de la inversa.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "f\\text{ y }f^{-1}\\text{ son simétricas respecto de }y=x"
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_inverse_p1",
+      "title": "Práctica 1: Funciones Inversas",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_inv_01",
+          "questionText": "Halla la inversa de f(x)=2x+3",
+          "questionLatex": "f(x)=2x+3",
+          "options": [
+            "\\frac{x-3}{2}",
+            "2x-3",
+            "\\frac{x+3}{2}",
+            "\\frac{3-x}{2}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Se intercambian x e y: x=2y+3, y=\\frac{x-3}{2}.",
+          "category": "Funciones Inversas",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_inv_02",
+          "questionText": "Si f^(-1(5)=2, entonces:",
+          "questionLatex": "f^{-1}(5)=2",
+          "options": [
+            "f(2)=5",
+            "f(5)=2",
+            "f^{-1}(2)=5",
+            "f(3)=5"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La inversa deshace la función original.",
+          "category": "Funciones Inversas",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_inv_03",
+          "questionText": "¿Qué simetría tienen f y f^(-1?",
+          "questionLatex": "f \\text{ y } f^{-1}",
+          "options": [
+            "Respecto a y=x",
+            "Respecto al eje x",
+            "Respecto al eje y",
+            "No tienen simetría"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Las gráficas de una función y su inversa se reflejan en la recta y=x.",
+          "category": "Simetría",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_transformations_theory",
+      "title": "Teoría: Traslaciones, Reflexiones y Contracciones",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Traslaciones verticales y horizontales",
+          "subtitle": "Matemática I • Transformaciones",
+          "content": "Las gráficas pueden desplazarse sin cambiar su forma. Sumar una constante fuera de la función traslada verticalmente; sustituir x por x-h traslada horizontalmente. Este contenido aparece en la guía 11 como una forma de construir nuevas funciones a partir de funciones base.",
+          "formulaLatex": "g(x)=f(x-h)+k",
+          "proTip": "Ojo con el signo: f(x-h) desplaza a la derecha, no a la izquierda.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "f(x)+k \\Rightarrow \\text{sube }k\\text{ unidades}"
+            },
+            {
+              "type": "formula",
+              "content": "f(x)-k \\Rightarrow \\text{baja }k\\text{ unidades}"
+            },
+            {
+              "type": "formula",
+              "content": "f(x-h) \\Rightarrow \\text{derecha }h\\text{ unidades}"
+            },
+            {
+              "type": "formula",
+              "content": "f(x+h) \\Rightarrow \\text{izquierda }h\\text{ unidades}"
+            }
+          ]
+        },
+        {
+          "title": "Reflexiones y escalas",
+          "subtitle": "Matemática I • Transformaciones",
+          "content": "Reflejar una función puede hacerse respecto del eje x o del eje y. Las contracciones y estiramientos cambian la amplitud horizontal o vertical sin alterar la identidad de la función base.",
+          "formulaLatex": "g(x)=-f(x),\\quad g(x)=f(-x)",
+          "proTip": "Si el signo negativo está fuera, la reflexión es vertical. Si está dentro, es horizontal.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "-f(x) \\Rightarrow \\text{reflexión en el eje x}"
+            },
+            {
+              "type": "formula",
+              "content": "f(-x) \\Rightarrow \\text{reflexión en el eje y}"
+            },
+            {
+              "type": "formula",
+              "content": "a f(x) \\Rightarrow \\text{estiramiento vertical si }|a|>1"
+            },
+            {
+              "type": "formula",
+              "content": "f(ax) \\Rightarrow \\text{compresión horizontal si }|a|>1"
+            }
+          ]
+        },
+        {
+          "title": "Formulación de funciones y dominio admisible",
+          "subtitle": "Matemática I • Transformaciones",
+          "content": "La guía 11 también trabaja el proceso de construir funciones a partir de descripciones verbales y verificar su dominio admisible. Esto implica traducir condiciones del problema a expresiones algebraicas y luego analizar restricciones para que la función tenga sentido.",
+          "formulaLatex": "\\text{Dominio admisible} = \\text{valores que no violan restricciones algebraicas}",
+          "proTip": "Cuando una función se construye desde un problema, revisa siempre denominadores, raíces y logaritmos si aparecen.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Ejemplo de formulación:"
+            },
+            {
+              "type": "formula",
+              "content": "\\text{Si }x\\text{ representa una cantidad, entonces }x\\geq 0\\text{ puede ser una restricción natural}"
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_transformations_p1",
+      "title": "Práctica 1: Traslaciones, Reflexiones y Contracciones",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_trf_01",
+          "questionText": "Si g(x)=f(x-2), ¿qué transformación representa?",
+          "questionLatex": "g(x)=f(x-2)",
+          "options": [
+            "Traslada la gráfica 2 unidades a la derecha",
+            "Traslada la gráfica 2 unidades a la izquierda",
+            "Refleja respecto al eje x",
+            "Estira verticalmente"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Restar 2 dentro de la función desplaza la gráfica a la derecha.",
+          "category": "Transformaciones",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_trf_02",
+          "questionText": "Si g(x)=-f(x), ¿qué ocurre?",
+          "questionLatex": "g(x)=-f(x)",
+          "options": [
+            "Reflexión respecto al eje x",
+            "Reflexión respecto al eje y",
+            "Traslación hacia arriba",
+            "No cambia nada"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "El signo negativo fuera de la función refleja la gráfica verticalmente.",
+          "category": "Transformaciones",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_trf_03",
+          "questionText": "Si g(x)=f(-x), ¿qué ocurre?",
+          "questionLatex": "g(x)=f(-x)",
+          "options": [
+            "Reflexión respecto al eje y",
+            "Reflexión respecto al eje x",
+            "Traslación a la derecha",
+            "Estiramiento horizontal"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "El signo negativo dentro de la función refleja la gráfica horizontalmente.",
+          "category": "Transformaciones",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_trf_04",
+          "questionText": "¿Qué hace g(x)=f(x)+4?",
+          "questionLatex": "g(x)=f(x)+4",
+          "options": [
+            "Sube 4 unidades",
+            "Baja 4 unidades",
+            "Se mueve a la derecha 4",
+            "Se mueve a la izquierda 4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Sumar una constante fuera traslada la gráfica hacia arriba.",
+          "category": "Traslaciones",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_transformations_p2",
+      "title": "Práctica 2: Traslaciones, Reflexiones y Contracciones",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_trf_05",
+          "questionText": "¿Qué transformación aplica g(x)=2f(x)?",
+          "questionLatex": "g(x)=2f(x)",
+          "options": [
+            "Estiramiento vertical",
+            "Reflexión horizontal",
+            "Traslación horizontal",
+            "No cambia la gráfica"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Multiplicar fuera de la función escala los valores de y.",
+          "category": "Escalamiento",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_prac_func_inv_theory",
+      "title": "Teoría: Práctica: Funciones e Inversas",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Instrucciones de la Práctica",
+          "subtitle": "Matemática I • Práctica",
+          "content": "Esta sesión te permite afianzar el manejo de funciones básicas, la construcción de funciones compuestas y el cálculo de la función inversa.",
+          "formulaLatex": "",
+          "proTip": "Al componer funciones, asegúrate de que el rango de la función interna sea compatible con el dominio de la función externa.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "A continuación encontrarás ejercicios seleccionados de la guía para reforzar tu destreza con funciones elementales."
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_prac_func_inv_p1",
+      "title": "Práctica 1: Práctica: Funciones e Inversas",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_prac_03",
+          "questionText": "Si f(x)=|x|, g(x)=x+1, y h(x)=x³. Determine m(x)=g(f(x)).",
+          "questionLatex": "m(x)=g(f(x))",
+          "options": [
+            "m(x) = |x| + 1",
+            "m(x) = |x+1|",
+            "m(x) = x+1",
+            "m(x) = x^3 + 1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La función externa es g y la interna f. Sustituimos f(x) en la variable x de g(x): g(|x|) = |x| + 1.",
+          "category": "Composición de Funciones",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_prac_04",
+          "questionText": "Determine f^(-1(x) para f(x) = /(2x+1(x-3.",
+          "questionLatex": "f^{-1}(x)",
+          "options": [
+            "\\frac{3x+1}{x-2}",
+            "\\frac{x-3}{2x+1}",
+            "\\frac{3x-1}{x+2}",
+            "\\frac{2x-1}{x+3}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Sea $y = \\frac{2x+1}{x-3}$. Intercambiando variables: $x = \\frac{2y+1}{y-3}$. Multiplicando por $y-3$: $xy-3x = 2y+1$. Agrupando las $y$: $y(x-2) = 3x+1 \\Rightarrow y = \\frac{3x+1}{x-2}$.",
+          "category": "Funciones Inversas",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_prac_08",
+          "questionText": "Determine el dominio de la función:",
+          "questionLatex": "f(x) = \\sqrt{x^2 - 5x + 6}",
+          "options": [
+            "(-\\infty, 2] \\cup [3, \\infty)",
+            "[2, 3]",
+            "(2, 3)",
+            "\\mathbb{R}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Debe cumplirse $x^2-5x+6 \\geq 0$. Las raíces son 2 y 3. El producto es no negativo en $(-\\infty, 2] \\cup [3, \\infty)$.",
+          "category": "Dominio",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_prac_09",
+          "questionText": "Dadas f(x) = √(x y g(x) = x² - 4, ¿cuál es el dominio de f ° g?",
+          "questionLatex": "f(g(x))",
+          "options": [
+            "(-\\infty, -2] \\cup [2, \\infty)",
+            "[-2, 2]",
+            "[4, \\infty)",
+            "[0, \\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "$(f \\circ g)(x) = \\sqrt{x^2-4}$. Para que esté definida, $x^2-4 \\geq 0$, lo que implica $|x| \\geq 2$.",
+          "category": "Composición",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_prac_func_inv_p2",
+      "title": "Práctica 2: Práctica: Funciones e Inversas",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_prac_10",
+          "questionText": "Sea f(x) = /(1(x²+1. ¿Cuál es el rango de esta función?",
+          "questionLatex": "Rgo(f)",
+          "options": [
+            "(0, 1]",
+            "(0, \\infty)",
+            "[1, \\infty)",
+            "\\mathbb{R}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Como $x^2+1 \\geq 1$ para todo x, el valor máximo es 1 (cuando x=0). A medida que $x \\to \\pm\\infty$, el valor tiende a 0 pero nunca lo alcanza.",
+          "category": "Rango",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_parcial_1_theory",
+      "title": "Simulacro Parcial 1: Algebra Básica y Funciones",
+      "type": "parcial",
+      "theorySections": [
+        {
+          "title": "Instrucciones del Parcial 1",
+          "subtitle": "Matemática I • Simulacro",
+          "content": "Este simulacro evalúa los conceptos de desigualdades, valor absoluto, funciones, trigonometría y funciones inversas. Corresponde al contenido del primer corte evaluativo de la materia MA-1111.",
+          "formulaLatex": "",
+          "proTip": "Lee cuidadosamente cada pregunta. Recuerda verificar los dominios de las funciones al calcular inversas o composiciones. Divide el tiempo adecuadamente.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Temas a evaluar:"
+            },
+            {
+              "type": "text",
+              "content": "1. Desigualdades y valor absoluto."
+            },
+            {
+              "type": "text",
+              "content": "2. Dominio y rango de funciones."
+            },
+            {
+              "type": "text",
+              "content": "3. Composición e inversa de funciones."
+            },
+            {
+              "type": "text",
+              "content": "4. Funciones trigonométricas."
+            },
+            {
+              "type": "text",
+              "content": "5. Geometría Analítica: Recta y Circunferencia."
+            }
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "id": "math1_p1_01",
+          "questionText": "Determine todos los valores de x que satisfacen la siguiente desigualdad:",
+          "questionLatex": "\\frac{x+2}{x-1} - \\frac{x}{x+1} \\geq 1",
+          "options": [
+            "(-1, 1)",
+            "(-\\infty, -1) \\cup (1, \\infty)",
+            "[-1, 1]",
+            "(-\\infty, -1] \\cup [1, \\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Sumando las fracciones obtenemos \\frac{x^2+3x+2 - x^2+x}{x^2-1} \\geq 1 \\Rightarrow \\frac{4x+2}{x^2-1} \\geq 1. Resolviendo esto obtenemos (-1, 1).",
+          "category": "Desigualdades",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_p1_02",
+          "questionText": "Resuelva la siguiente desigualdad:",
+          "questionLatex": "|2x-3| - \\frac{x}{x-2} \\leq 1",
+          "options": [
+            " [1, 2) \\cup (2, 3] ",
+            " (2, 3]",
+            " [1, 3] ",
+            " [2, \\infty) "
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Es necesario dividir en casos dependiendo del signo de 2x-3, y luego estudiar el signo de las ramas racionales resultantes.",
+          "category": "Valor Absoluto",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_p1_03",
+          "questionText": "Halle el dominio común de las funciones f(x) = √(x+2 y g(x) = /(1(x² - 4.",
+          "questionLatex": "Dom(f) \\cap Dom(g)",
+          "options": [
+            "(-2, 2) \\cup (2, \\infty)",
+            "[-2, \\infty)",
+            "[-2, 2) \\cup (2, \\infty)",
+            "(-2, \\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Dom(f) es $x \\geq -2$ esto es $[-2, \\infty)$. Dom(g) es $\\mathbb{R} \\setminus \\{-2, 2\\}$. La intersección de ambos conjuntos elimina el -2 y el 2 del rayo inicial.",
+          "category": "Intersección de Dominios",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_p1_04",
+          "questionText": "Sean f(x)=|x|, g(x)=x+1, y h(x)=x³. Halle los valores de x cuya imagen según m(x)=g(f(x)) es cero.",
+          "questionLatex": "g(f(x)) = 0",
+          "options": [
+            "No existen",
+            "x = -1",
+            "x = 1",
+            "x = 0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "m(x) = g(|x|) = |x|+1. Como |x| \\geq 0 para todo x, |x|+1 \\geq 1. Por lo tanto, nunca es cero.",
+          "category": "Funciones",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_p1_05",
+          "questionText": "Halle la ecuación de la recta que pasa por (1,2) y es paralela a la recta 3x - 2y + 6 = 0.",
+          "questionLatex": "P(1,2), \\quad 3x - 2y + 6 = 0",
+          "options": [
+            "3x - 2y + 1 = 0",
+            "2x + 3y - 8 = 0",
+            "3x - 2y - 1 = 0",
+            "3x + 2y - 7 = 0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La pendiente de la recta dada es $3/2$. La paralela tiene la misma pendiente: $y-2 = 3/2(x-1) \\Rightarrow 2y-4 = 3x-3 \\Rightarrow 3x - 2y + 1 = 0$.",
+          "category": "Geometría: Rectas",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_p1_06",
+          "questionText": "Determine la ecuación de la circunferencia que tiene por centro (2,-3) y es tangente al eje Y.",
+          "questionLatex": "C(2,-3), \\text{ tangente a } x=0",
+          "options": [
+            "(x-2)^2 + (y+3)^2 = 4",
+            "(x-2)^2 + (y+3)^2 = 9",
+            "(x+2)^2 + (y-3)^2 = 4",
+            "x^2 + y^2 - 4x + 6y + 9 = 0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Si es tangente al eje Y ($x=0$), el radio es la distancia horizontal del centro al eje Y, es decir, $r = |2| = 2$. La ecuación es $(x-2)^2 + (y+3)^2 = 2^2 = 4$.",
+          "category": "Geometría: Circunferencia",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_p1_07",
+          "questionText": "Halle la función inversa de f(x) = 1 + √(x-3, indicando su dominio.",
+          "questionLatex": "f(x) = 1 + \\sqrt{x-3}",
+          "options": [
+            "f^{-1}(x) = (x-1)^2 + 3, \\quad x \\geq 1",
+            "f^{-1}(x) = (x-1)^2 - 3, \\quad x \\in \\mathbb{R}",
+            "f^{-1}(x) = x^2 - 2x + 4, \\quad x \\geq 0",
+            "f^{-1}(x) = \\sqrt{x+3} - 1, \\quad x \\geq -3"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "$y-1 = \\sqrt{x-3} \\Rightarrow (y-1)^2 = x-3 \\Rightarrow x = (y-1)^2 + 3$. Como el rango de f es $y \\geq 1$, el dominio de la inversa es $x \\geq 1$.",
+          "category": "Funciones Inversas",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_p1_08",
+          "questionText": "Indique si la función f(x) = /(x³(x²+1 es par, impar o ninguna.",
+          "questionLatex": "f(x) = \\frac{x^3}{x^2+1}",
+          "options": [
+            "Impar",
+            "Par",
+            "Ninguna",
+            "Periódica"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "$f(-x) = \\frac{(-x)^3}{(-x)^2+1} = \\frac{-x^3}{x^2+1} = -f(x)$. Por lo tanto, la función es impar.",
+          "category": "Simetría de Funciones",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_limits_intro_theory",
+      "title": "Teoría: Límites de una Función Real",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Idea intuitiva de límite",
+          "subtitle": "Matemática I • Límites",
+          "content": "El límite de una función describe el valor al que se aproxima f(x) cuando x se acerca a un punto, sin importar necesariamente si la función está definida en ese punto. La guía trabaja esta idea de forma gráfica y algebraica, comparando valores a la izquierda y a la derecha del punto de interés.",
+          "formulaLatex": "\\lim_{x \\to a} f(x)=L",
+          "proTip": "No confundas el valor de la función en un punto con el límite en ese punto. A veces pueden ser distintos.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Para estudiar un límite, puedes:"
+            },
+            {
+              "type": "text",
+              "content": "1. evaluar directamente si la función es continua en el punto;"
+            },
+            {
+              "type": "text",
+              "content": "2. simplificar algebraicamente si aparece una indeterminación;"
+            },
+            {
+              "type": "text",
+              "content": "3. usar una tabla de valores o una gráfica para observar el comportamiento."
+            }
+          ]
+        },
+        {
+          "title": "Límites laterales",
+          "subtitle": "Matemática I • Límites",
+          "content": "Los límites laterales estudian el comportamiento de la función cuando x se aproxima al punto desde la izquierda o desde la derecha. Un límite existe solo si ambos límites laterales existen y son iguales. Esta idea aparece repetidamente en la guía 12 mediante tablas y gráficos.",
+          "formulaLatex": "\\lim_{x \\to a^-} f(x), \\quad \\lim_{x \\to a^+} f(x)",
+          "proTip": "Si los límites laterales son distintos, el límite bilateral no existe.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\lim_{x \\to a} f(x) \\text{ existe} \\iff \\lim_{x \\to a^-} f(x)=\\lim_{x \\to a^+} f(x)"
+            },
+            {
+              "type": "note",
+              "content": "En la guía se usan tablas con valores cercanos al punto para visualizar el comportamiento lateral."
+            }
+          ]
+        },
+        {
+          "title": "Indeterminación 0/0 y técnicas de cálculo",
+          "subtitle": "Matemática I • Límites",
+          "content": "Cuando al sustituir directamente se obtiene 0/0, el límite no está resuelto todavía: se debe simplificar. Las técnicas más comunes son factorizar, racionalizar, cancelar factores comunes o transformar la expresión. La guía 12 presenta varios ejemplos de este tipo.",
+          "formulaLatex": "\\frac{0}{0} \\text{ es una forma indeterminada}",
+          "proTip": "Si aparece un factor común en numerador y denominador, intenta cancelarlo antes de evaluar de nuevo.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\frac{x^2-4}{x-2}=\\frac{(x-2)(x+2)}{x-2}=x+2"
+            },
+            {
+              "type": "formula",
+              "content": "\\frac{x^3-1}{x-1}=x^2+x+1"
+            }
+          ]
+        },
+        {
+          "title": "Definición formal de límite",
+          "subtitle": "Matemática I • Límites",
+          "content": "La definición formal usa el lenguaje epsilon-delta para expresar rigurosamente que los valores de f(x) pueden hacerse tan cercanos como se desee a L, siempre que x esté suficientemente cerca de a. La guía 12 desarrolla demostraciones completas con esta definición.",
+          "formulaLatex": "\\forall \\varepsilon>0\\, \\exists\\, \\delta>0:\\, 0<|x-a|<\\delta \\Rightarrow |f(x)-L|<\\varepsilon",
+          "proTip": "En una demostración epsilon-delta, el objetivo es encontrar un δ en función de ε.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Ejemplo de demostración:"
+            },
+            {
+              "type": "formula",
+              "content": "\\lim_{x \\to 1}(3-2x) = 1"
+            },
+            {
+              "type": "text",
+              "content": "Dado $\\varepsilon > 0$, buscamos $\\delta > 0$ tal que si $0 < |x - 1| < \\delta$ entonces $|(3-2x) - 1| < \\varepsilon$."
+            },
+            {
+              "type": "formula",
+              "content": "|(3-2x) - 1| = |2-2x| = |-2(x-1)| = 2|x-1| < \\varepsilon"
+            },
+            {
+              "type": "text",
+              "content": "Despejando obtenemos $|x-1| < \\varepsilon / 2$. Tomando $\\delta = \\varepsilon/2$ la implicación se cumple."
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_limits_intro_p1",
+      "title": "Práctica 1: Límites de una Función Real",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_lim_intro_01",
+          "questionText": "Calcula el límite:",
+          "questionLatex": "\\lim_{x \\to 1}(x-1)",
+          "options": [
+            "0",
+            "1",
+            "-1",
+            "No existe"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Sustituyendo directamente se obtiene 1-1=0.",
+          "category": "Límites",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_lim_intro_02",
+          "questionText": "Calcula el límite:",
+          "questionLatex": "\\lim_{x \\to 2}\\frac{4-x^2}{2-x}",
+          "options": [
+            "4",
+            "2",
+            "0",
+            "No existe"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Factorizando 4-x^2=(2-x)(2+x), se cancela 2-x y queda 2+x. Al evaluar en x=2, resulta 4.",
+          "category": "Límites",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_lim_intro_03",
+          "questionText": "¿Existe el límite?",
+          "questionLatex": "\\lim_{x \\to 3}\\frac{x-3}{|x-3|}",
+          "options": [
+            "No existe",
+            "-1",
+            "1",
+            "0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "El límite lateral izquierdo vale -1 y el derecho vale 1, por lo tanto el límite bilateral no existe.",
+          "category": "Límites",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_lim_intro_04",
+          "questionText": "Calcular el siguiente límite:",
+          "questionLatex": "\\lim_{x \\to 0} \\frac{\\sqrt{x+2} - \\sqrt{2}}{x}",
+          "options": [
+            "\\frac{1}{2\\sqrt{2}}",
+            "0",
+            "\\sqrt{2}",
+            "No existe"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Es una indeterminación 0/0. Multiplicando por la conjugada: $\\frac{(\\sqrt{x+2}-\\sqrt{2})(\\sqrt{x+2}+\\sqrt{2})}{x(\\sqrt{x+2}+\\sqrt{2})} = \\frac{x}{x(\\sqrt{x+2}+\\sqrt{2})} = \\frac{1}{\\sqrt{x+2}+\\sqrt{2}}$. Al evaluar en x=0: $\\frac{1}{2\\sqrt{2}}$.",
+          "category": "Límites con conjugada",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_limits_intro_p2",
+      "title": "Práctica 2: Límites de una Función Real",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_lim_intro_05",
+          "questionText": "Si lim_x to a f(x)=3 y lim_x to a g(x)=-1, hallar:",
+          "questionLatex": "\\lim_{x \\to a} \\frac{2f(x)-3g(x)}{f(x)+g(x)}",
+          "options": [
+            "\\frac{9}{2}",
+            "3",
+            "-3",
+            "1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Por propiedades de límites: $\\frac{2(3)-3(-1)}{(3)+(-1)} = \\frac{6+3}{2} = \\frac{9}{2}$.",
+          "category": "Propiedades de Límites",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_lim_intro_06",
+          "questionText": "Considere la función definida por tramos. Determine si el límite existe:",
+          "questionLatex": "f(x) = \\begin{cases} \\frac{3x+2}{\\cos(\\pi x)}, & x < 1 \\\\ \\frac{x^2-1}{\\sqrt{x}-1}, & x > 1 \\end{cases}, \\quad \\lim_{x \\to 1} f(x)",
+          "options": [
+            "No existe",
+            "4",
+            "-5",
+            "0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Límite por la izquierda: $\\frac{3(1)+2}{\\cos(\\pi)} = \\frac{5}{-1} = -5$. Límite por la derecha: multiplicando por conjugada y factorizando, se obtiene $(x+1)(\\sqrt{x}+1) \\to 4$. Como $-5 \\neq 4$, el límite no existe.",
+          "category": "Límites por tramos",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_limits_advanced_theory",
+      "title": "Teoría: Límites Infinitos y en el Infinito",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Límites en el infinito",
+          "subtitle": "Matemática I • Límites",
+          "content": "Los límites en el infinito estudian el comportamiento de una función cuando x crece o decrece sin cota. Son esenciales para analizar funciones racionales y su tendencia global.",
+          "formulaLatex": "\\lim_{x \\to \\infty} f(x), \\quad \\lim_{x \\to -\\infty} f(x)",
+          "proTip": "En funciones racionales, compara los grados del numerador y del denominador antes de hacer cualquier cálculo.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\frac{3x^2+2x}{x^2-1}\\to 3"
+            },
+            {
+              "type": "note",
+              "content": "Si los grados son iguales, el límite suele ser el cociente de los coeficientes líderes."
+            }
+          ]
+        },
+        {
+          "title": "Límites infinitos",
+          "subtitle": "Matemática I • Límites",
+          "content": "Un límite infinito ocurre cuando la función crece sin cota al aproximarse a un punto. Esto suele suceder en puntos donde el denominador se anula y el numerador no, o donde hay comportamientos asintóticos.",
+          "formulaLatex": "\\lim_{x \\to a} f(x)=\\infty",
+          "proTip": "Un límite infinito no es un número; indica crecimiento sin límite.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\frac{1}{x-a}\\to \\pm\\infty"
+            },
+            {
+              "type": "formula",
+              "content": "\\text{Si } Q(a)=0 \\text{ y } P(a)\\neq 0, \\text{ puede haber asíntota vertical}"
+            }
+          ]
+        },
+        {
+          "title": "Asíntotas verticales, horizontales y oblicuas",
+          "subtitle": "Matemática I • Límites",
+          "content": "Las asíntotas describen rectas que la gráfica se aproxima sin tocar en el infinito o cerca de una discontinuidad. La guía 13 estudia las verticales, horizontales y oblicuas, especialmente en funciones racionales.",
+          "formulaLatex": "y=mx+b",
+          "proTip": "Para hallar asíntotas horizontales, mira el comportamiento cuando x tiende a infinito; para oblicuas, busca división de polinomios.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "A.V.: x=a"
+            },
+            {
+              "type": "formula",
+              "content": "A.H.: y=L"
+            },
+            {
+              "type": "formula",
+              "content": "A.O.: y=mx+b"
+            }
+          ]
+        },
+        {
+          "title": "Teorema del emparedado",
+          "subtitle": "Matemática I • Límites",
+          "content": "El teorema del emparedado permite calcular límites cuando una función está atrapada entre otras dos que tienen el mismo límite. Es especialmente útil en límites trigonométricos y en expresiones oscilatorias.",
+          "formulaLatex": "g(x)\\le f(x)\\le h(x),\\quad \\lim g(x)=\\lim h(x)=L \\Rightarrow \\lim f(x)=L",
+          "proTip": "Si una función queda atrapada entre dos funciones que convergen al mismo valor, la función intermedia también converge a ese valor.",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "La guía 13 lo usa como herramienta fundamental en ejemplos de funciones acotadas."
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_limits_advanced_p1",
+      "title": "Práctica 1: Límites Infinitos y en el Infinito",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_lim_adv_01",
+          "questionText": "Calcula el límite:",
+          "questionLatex": "\\lim_{x \\to \\infty}\\frac{3x^2+2x}{x^2-1}",
+          "options": [
+            "3",
+            "2",
+            "0",
+            "No existe"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Dividiendo numerador y denominador entre x^2, se obtiene el cociente de los coeficientes líderes: 3.",
+          "category": "Límites en el Infinito",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_lim_adv_02",
+          "questionText": "¿Cuál es una asíntota vertical posible?",
+          "questionLatex": "f(x)=\\frac{1}{x-1}",
+          "options": [
+            "x=1",
+            "y=1",
+            "y=0",
+            "x=0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "El denominador se anula en x=1 y el numerador no, así que hay asíntota vertical en x=1.",
+          "category": "Asíntotas",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_lim_adv_03",
+          "questionText": "Calcula el límite:",
+          "questionLatex": "\\lim_{x \\to 0^+}\\frac{1}{x}",
+          "options": [
+            "\\infty",
+            "0",
+            "1",
+            "-\\infty"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Al acercarse x a 0 por la derecha, 1/x crece sin límite.",
+          "category": "Límites Infinitos",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_lim_adv_04",
+          "questionText": "Usa el teorema del emparedado para concluir el límite:",
+          "questionLatex": "-x^2\\leq x^2\\sin\\left(\\frac{1}{x}\\right)\\leq x^2",
+          "options": [
+            "0",
+            "1",
+            "No existe",
+            "\\infty"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Ambos extremos tienden a 0 cuando x→0, así que la función intermedia también tiende a 0.",
+          "category": "Teorema del Emparedado",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_continuity_theory",
+      "title": "Teoría: Funciones Continuas y Discontinuas",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Definición de continuidad",
+          "subtitle": "Matemática I • Continuidad",
+          "content": "Una función es continua en un punto si el límite en ese punto existe, la función está definida allí y ambos valores coinciden. Esta idea se estudia con detalle en la guía 14 mediante funciones por tramos y análisis gráfico.",
+          "formulaLatex": "f \\text{ es continua en } a \\iff \\lim_{x \\to a} f(x)=f(a)",
+          "proTip": "Para verificar continuidad, revisa tres cosas: existencia del límite, valor de la función y coincidencia entre ambos.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\lim_{x \\to a^-}f(x)=\\lim_{x \\to a^+}f(x)=f(a)"
+            }
+          ]
+        },
+        {
+          "title": "Continuidad en intervalos",
+          "subtitle": "Matemática I • Continuidad",
+          "content": "Una función es continua en un intervalo si es continua en todos los puntos del intervalo. Muchas funciones elementales son continuas en sus dominios naturales: polinomios en todo R, racionales donde el denominador no se anula, raíces en su dominio y funciones trigonométricas donde estén definidas.",
+          "formulaLatex": "Polinomios: continuos en \\mathbb{R}",
+          "proTip": "Las discontinuidades de una función racional ocurren, por lo general, donde se anula el denominador.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "f(x)=\\frac{P(x)}{Q(x)}\\text{ continua si }Q(x)\\neq 0"
+            }
+          ]
+        },
+        {
+          "title": "Tipos de discontinuidad",
+          "subtitle": "Matemática I • Continuidad",
+          "content": "La guía 14 distingue discontinuidades removibles, de salto e infinitas. La removible ocurre cuando se puede redefinir la función para que sea continua; la de salto ocurre cuando los límites laterales existen pero son distintos; la infinita aparece cuando alguno de los límites laterales diverge.",
+          "formulaLatex": "\\text{Removible},\\ \\text{de salto},\\ \\text{infinita}",
+          "proTip": "Si el factor problemático se puede cancelar y luego el límite sí existe, probablemente la discontinuidad sea removible.",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "En la guía se analizan varias funciones por tramos para clasificar su discontinuidad."
+            },
+            {
+              "type": "example",
+              "content": "Si f(x)=(x^2-1)/(x-1), en x=1 hay discontinuidad removible porque el límite es 2. Se puede redefinir f(1)=2 para hacerla continua."
+            }
+          ]
+        },
+        {
+          "title": "Continuidad de funciones por tramos",
+          "subtitle": "Matemática I • Continuidad",
+          "content": "Las funciones definidas por partes requieren comparar los límites laterales con el valor de la función en el punto de unión. Este método aparece repetidamente en la guía 14 con ejemplos donde la continuidad depende de un parámetro o de la redefinición del valor en un punto específico.",
+          "formulaLatex": "f(x)=\\begin{cases}f_1(x),&x<a\\\\f_2(x),&x\\geq a\\end{cases}",
+          "proTip": "En funciones por tramos, el punto crítico suele ser el valor donde cambia la expresión.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\text{Continuidad en }a \\Rightarrow \\lim_{x \\to a^-}f_1(x)=\\lim_{x \\to a^+}f_2(x)=f(a)"
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_continuity_p1",
+      "title": "Práctica 1: Funciones Continuas y Discontinuas",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_cont_01",
+          "questionText": "¿Cuándo es continua una función en un punto a?",
+          "questionLatex": "f \\text{ continua en } a",
+          "options": [
+            "Cuando el límite existe y coincide con f(a)",
+            "Cuando f(a) existe aunque el límite no exista",
+            "Cuando los límites laterales son distintos",
+            "Cuando f(a)=0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La continuidad exige existencia del límite y coincidencia con el valor de la función.",
+          "category": "Continuidad",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_cont_02",
+          "questionText": "¿Qué tipo de discontinuidad suele desaparecer al redefinir la función?",
+          "questionLatex": "Discontinuidad removible",
+          "options": [
+            "Removible",
+            "De salto",
+            "Infinita",
+            "Oscilatoria"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Si el límite existe pero el valor de la función no coincide, se puede redefinir el punto.",
+          "category": "Discontinuidad",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_cont_03",
+          "questionText": "¿Es continua la función racional f(x)=1/(x-2) en x=2?",
+          "questionLatex": "f(x)=\\frac{1}{x-2}",
+          "options": [
+            "No",
+            "Sí",
+            "Solo por la izquierda",
+            "Solo por la derecha"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La función no está definida en x=2, por lo tanto no puede ser continua allí.",
+          "category": "Continuidad",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_cont_04",
+          "questionText": "¿Para qué valor de k la función es continua en x=2?",
+          "questionLatex": "f(x) = \\begin{cases} x^2+1, & x < 2 \\\\ kx-1, & x \\geq 2 \\end{cases}",
+          "options": [
+            "k = 3",
+            "k = 2",
+            "k = 5",
+            "k = 1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Para continuidad necesitamos $\\lim_{x \\to 2^-} f(x) = f(2)$. Por la izquierda: $4+1=5$. Por la derecha: $2k-1$. Igualando: $2k-1=5 \\Rightarrow k=3$.",
+          "category": "Continuidad con parámetros",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_continuity_p2",
+      "title": "Práctica 2: Funciones Continuas y Discontinuas",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_cont_05",
+          "questionText": "Clasifique la discontinuidad de f(x) = /(x²-9(x-3 en x=3.",
+          "questionLatex": "f(x) = \\frac{x^2-9}{x-3}, \\quad x=3",
+          "options": [
+            "Removible",
+            "De salto",
+            "Infinita",
+            "No hay discontinuidad"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Factorizando: $\\frac{(x-3)(x+3)}{x-3} = x+3$. El límite en $x=3$ es 6, pero $f(3)$ no está definida. Es removible porque podemos definir $f(3)=6$.",
+          "category": "Tipos de Discontinuidad",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_prac_lim_cont_theory",
+      "title": "Teoría: Práctica: Límites y Continuidad",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Instrucciones de la Práctica",
+          "subtitle": "Matemática I • Práctica",
+          "content": "En esta sesión resolverás problemas específicos de cálculo de límites y análisis de continuidad usando técnicas algebraicas y teoremas.",
+          "formulaLatex": "",
+          "proTip": "Para discontinuidades, evalúa los límites laterales y el valor de la función en el punto.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "A continuación encontrarás ejercicios de las guías 12, 13 y 14."
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_prac_lim_cont_p1",
+      "title": "Práctica 1: Práctica: Límites y Continuidad",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_prac_05",
+          "questionText": "Halle el límite: lim_x to ∞ /(√(9x²+2(3-4x",
+          "questionLatex": "\\lim_{x \\to \\infty} \\frac{\\sqrt{9x^2+2}}{3-4x}",
+          "options": [
+            "-\\frac{3}{4}",
+            "\\frac{3}{4}",
+            "-\\frac{9}{4}",
+            "0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Al dividir por x (que es $\\sqrt{x^2}$ para $x>0$), el numerador tiende a $\\sqrt{9}=3$ y el denominador a -4. Por lo tanto, el límite es -3/4.",
+          "category": "Límites al Infinito",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_prac_06",
+          "questionText": "Determine si la función f(x) = /(x²-1(x-1 tiene una discontinuidad removible en x=1.",
+          "questionLatex": "f(x) = \\frac{x^2-1}{x-1}, \\ x=1",
+          "options": [
+            "Sí, y se puede redefinir $f(1) = 2$",
+            "Sí, y se puede redefinir $f(1) = 1$",
+            "No, es de salto",
+            "No, es infinita"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "El límite cuando $x \\to 1$ de $\\frac{x^2-1}{x-1} = \\lim_{x \\to 1} (x+1) = 2$. Luego, la discontinuidad es removible si definimos $f(1)=2$.",
+          "category": "Continuidad",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_parcial_2_theory",
+      "title": "Simulacro Parcial 2: Límites y Continuidad",
+      "type": "parcial",
+      "theorySections": [
+        {
+          "title": "Instrucciones del Parcial 2",
+          "subtitle": "Matemática I • Simulacro",
+          "content": "Este simulacro evalúa los conceptos de límites, límites laterales, límites trigonométricos, continuidad y teoremas asociados. Corresponde al contenido del segundo corte evaluativo de la materia MA-1111.",
+          "formulaLatex": "",
+          "proTip": "Revisa siempre si tienes una indeterminación 0/0. Aplica técnicas algebraicas, teorema del encaje o identidades trigonométricas según corresponda.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Temas a evaluar:"
+            },
+            {
+              "type": "text",
+              "content": "1. Cálculo de límites indeterminados."
+            },
+            {
+              "type": "text",
+              "content": "2. Límites en el infinito y trigonométricos."
+            },
+            {
+              "type": "text",
+              "content": "3. Análisis de continuidad de funciones por tramos."
+            },
+            {
+              "type": "text",
+              "content": "4. Teorema de valor intermedio."
+            }
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "id": "math1_p2_01",
+          "questionText": "Calcular el siguiente límite (si existe):",
+          "questionLatex": "\\lim_{x \\to 5} \\frac{x^2 - 5x + 6}{x^2 - 7x + 10}",
+          "options": [
+            "Positivo infinito",
+            "No existe",
+            "5/3",
+            "0"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "En x=5, el límite da 6/0. Los límites laterales dan signos opuestos, \\infty y -\\infty, por ende el límite bilateral no existe.",
+          "category": "Cálculo de Límites",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_p2_02",
+          "questionText": "Halle los valores constantes para que g(x) sea continua en todo su dominio real:",
+          "questionLatex": "g(x) = \\begin{cases} ax+b, & |x|<3 \\\\ x^2+ax+b, & |x|\\geq 3 \\end{cases}",
+          "options": [
+            "No existen tales constantes a y b",
+            "a=0, b=9",
+            "a=-9, b=0",
+            "a=3, b=-3"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La continuity requiere igualar los límites laterales en x=3 y x=-3. Al resolver el sistema determinamos que no hay valores que lo satisfagan simultáneamente en ambos puntos críticos.",
+          "category": "Continuidad",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_p2_03",
+          "questionText": "Calcula el siguiente límite:",
+          "questionLatex": "\\lim_{x \\to 0} \\frac{x + \\sin(2x)}{x - \\sin(3x)}",
+          "options": [
+            "-3/2",
+            "-1",
+            "1/2",
+            "No existe"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Dividiendo numerador y denominador entre x: \\frac{1 + \\frac{\\sin(2x)}{x}}{1 - \\frac{\\sin(3x)}{x}}. Evaluando usando el límite notable obtenemos \\frac{1+2}{1-3} = -\\frac{3}{2}.",
+          "category": "Límites Trigonométricos",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_p2_04",
+          "questionText": "Calcule el siguiente límite:",
+          "questionLatex": "\\lim_{x \\to \\infty} \\left( \\sqrt{x^2+bx} - x \\right)",
+          "options": [
+            "b/2",
+            "b",
+            "0",
+            "\\infty"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Multiplicando y dividiendo por la conjugada, y reordenando, obtenemos b/2.",
+          "category": "Límites al Infinito",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_differentiability_theory",
+      "title": "Teoría: Diferenciabilidad de una Función",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Definición de derivada",
+          "subtitle": "Matemática I • Derivadas",
+          "content": "La derivada de una función en un punto mide la tasa de cambio instantánea. Geométricamente es la pendiente de la recta tangente a la curva en ese punto. La guía 15 desarrolla la derivada usando el cociente incremental y la interpreta también como velocidad instantánea.",
+          "formulaLatex": "f'(x)=\\lim_{h \\to 0}\\frac{f(x+h)-f(x)}{h}",
+          "proTip": "Si puedes hallar la recta tangente, puedes hallar la derivada en el punto porque ambas comparten la pendiente.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "m_{tan}=f'(a)"
+            },
+            {
+              "type": "formula",
+              "content": "y-f(a)=f'(a)(x-a)"
+            }
+          ]
+        },
+        {
+          "title": "Recta tangente a una curva",
+          "subtitle": "Matemática I • Derivadas",
+          "content": "La recta tangente se obtiene usando la pendiente dada por la derivada en el punto de tangencia. En la guía 15 se resuelven ejercicios donde primero se verifica que el punto pertenezca a la curva y luego se calcula la pendiente por definición o por derivación.",
+          "formulaLatex": "y-y_0=m(x-x_0)",
+          "proTip": "Antes de buscar la pendiente, verifica que el punto realmente esté sobre la curva.",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "La guía incluye ejemplos en los que hay que encontrar el punto de tangencia cuando la recta pasa por un punto externo."
+            }
+          ]
+        },
+        {
+          "title": "Diferenciabilidad implica continuidad",
+          "subtitle": "Matemática I • Derivadas",
+          "content": "Si una función es diferenciable en un punto, entonces es continua en ese punto. La recíproca no siempre es cierta. La guía 15 usa este hecho para estudiar funciones por tramos y localizar puntos no diferenciables por esquinas, cúspides o discontinuidades.",
+          "formulaLatex": "f \\text{ diferenciable en } a \\Rightarrow f \\text{ continua en } a",
+          "proTip": "Si una función tiene un salto o una esquina, no será diferenciable allí.",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "La diferenciabilidad exige que las derivadas laterales coincidan."
+            },
+            {
+              "type": "example",
+              "content": "La función f(x)=|x| es continua en x=0, pero no es diferenciable allí porque su derivada lateral izquierda es -1 y la derecha es 1. Esto gráficamente se ve como un 'pico' o esquina."
+            }
+          ]
+        },
+        {
+          "title": "Velocidad instantánea",
+          "subtitle": "Matemática I • Derivadas",
+          "content": "Además de su interpretación geométrica, la derivada representa velocidad instantánea en problemas de movimiento. La guía 15 vincula el concepto con la tasa de cambio de magnitudes física.",
+          "formulaLatex": "v(t)=s'(t)",
+          "proTip": "Si s(t) es posición, su derivada es velocidad y la segunda derivada es aceleración.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "a(t)=v'(t)=s''(t)"
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_differentiability_p1",
+      "title": "Práctica 1: Diferenciabilidad de una Función",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_diff_01",
+          "questionText": "¿Cuál es la fórmula de la derivada por definición?",
+          "questionLatex": "f'(x)",
+          "options": [
+            "\\lim_{h \\to 0}\\frac{f(x+h)-f(x)}{h}",
+            "\\lim_{x \\to 0}\\frac{f(x+h)-f(x)}{x}",
+            "\\frac{f(x)}{x}",
+            "\\frac{f(x+h)}{h}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Esa es la definición formal de derivada.",
+          "category": "Definición de Derivada",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_diff_02",
+          "questionText": "Si una función es diferenciable en a, entonces:",
+          "questionLatex": "f \\text{ diferenciable en } a",
+          "options": [
+            "Es continua en a",
+            "No puede ser continua en a",
+            "Debe ser constante",
+            "Debe tener derivada cero"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La diferenciabilidad implica continuidad.",
+          "category": "Diferenciabilidad",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_diff_03",
+          "questionText": "La pendiente de la recta tangente en x=a es:",
+          "questionLatex": "m_{tan}",
+          "options": [
+            "f'(a)",
+            "f(a)",
+            "\\int f(x)dx",
+            "0 siempre"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La pendiente de la tangente es la derivada en ese punto.",
+          "category": "Recta Tangente",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_diff_04",
+          "questionText": "Hallar la ecuación de la recta tangente a y = 5 - 2x² en el punto (-1, 3).",
+          "questionLatex": "y = 5 - 2x^2, \\quad (-1, 3)",
+          "options": [
+            "y - 3 = 4(x + 1)",
+            "y - 3 = -4(x + 1)",
+            "y = 4x + 7",
+            "y = -2x + 1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Se calcula $m_{tan} = \\lim_{h \\to 0} \\frac{(5-2(-1+h)^2) - 3}{h}$. Expandiendo: $\\frac{2 - 2(1 - 2h + h^2)}{h} = \\frac{4h - 2h^2}{h} = 4 - 2h \\to 4$. La recta tangente es $y - 3 = 4(x+1)$.",
+          "category": "Recta Tangente",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_differentiability_p2",
+      "title": "Práctica 2: Diferenciabilidad de una Función",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_diff_05",
+          "questionText": "¿Es diferenciable la función f(x) = |x| en x=0?",
+          "questionLatex": "f(x) = |x|, \\quad x = 0",
+          "options": [
+            "No, porque las derivadas laterales son distintas (-1 y 1)",
+            "Sí, porque es continua en 0",
+            "Sí, porque f(0) = 0",
+            "No, porque no es continua en 0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "El límite por la izquierda $\\lim_{h \\to 0^-} \\frac{|h|}{h} = -1$ y por la derecha $\\lim_{h \\to 0^+} \\frac{|h|}{h} = 1$. Como las derivadas laterales son diferentes, $f$ no es diferenciable en 0.",
+          "category": "Diferenciabilidad",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_derivative_rules_theory",
+      "title": "Teoría: Reglas de Derivación",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Regla de la potencia y derivadas básicas",
+          "subtitle": "Matemática I • Derivadas",
+          "content": "La guía 16 presenta las reglas fundamentales de derivación: potencia, constante, suma, resta, exponenciales, logaritmos y funciones trigonométricas. Estas reglas permiten derivar muchas funciones sin recurrir a la definición cada vez.",
+          "formulaLatex": "\\frac{d}{dx}(x^n)=nx^{n-1}",
+          "proTip": "La derivada de una constante siempre es cero.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\frac{d}{dx}(c)=0"
+            },
+            {
+              "type": "formula",
+              "content": "\\frac{d}{dx}(x)=1"
+            },
+            {
+              "type": "formula",
+              "content": "\\frac{d}{dx}(e^x)=e^x"
+            },
+            {
+              "type": "formula",
+              "content": "\\frac{d}{dx}(\\ln x)=\\frac{1}{x}"
+            }
+          ]
+        },
+        {
+          "title": "Regla de la suma, constante y combinación lineal",
+          "subtitle": "Matemática I • Derivadas",
+          "content": "La derivada de una suma es la suma de las derivadas. Lo mismo ocurre con la resta y con constantes multiplicando una función. Esta propiedad simplifica enormemente el cálculo simbólico.",
+          "formulaLatex": "\\frac{d}{dx}[af(x)+bg(x)]=af'(x)+bg'(x)",
+          "proTip": "Separa la función en partes simples antes de derivar.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "(f+g)'=f'+g'"
+            },
+            {
+              "type": "formula",
+              "content": "(cf)'=cf'"
+            }
+          ]
+        },
+        {
+          "title": "Regla del producto y del cociente",
+          "subtitle": "Matemática I • Derivadas",
+          "content": "Cuando dos funciones están multiplicadas, se usa la regla del producto. Cuando una función es cociente de otra, se usa la regla del cociente. La guía 16 contiene varios ejercicios que prueban estas reglas.",
+          "formulaLatex": "(fg)'=f'g+fg'",
+          "proTip": "En el cociente, el numerador sigue el patrón 'abajo por derivada de arriba menos arriba por derivada de abajo'.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\left(\\frac{f}{g}\\right)'=\\frac{f'g-fg'}{g^2}"
+            }
+          ]
+        },
+        {
+          "title": "Regla de la cadena",
+          "subtitle": "Matemática I • Derivadas",
+          "content": "La regla de la cadena permite derivar funciones compuestas. Primero se deriva la función externa sin alterar la interna, y luego se multiplica por la derivada de la función interna. La guía 16 la usa de forma repetida en ejemplos con raíces, potencias y trigonométricas compuestas.",
+          "formulaLatex": "\\frac{d}{dx}f(g(x))=f'(g(x))g'(x)",
+          "proTip": "Si ves una función dentro de otra, piensa inmediatamente en la regla de la cadena.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "Si y=\\sin(3x^2), entonces y'=\\cos(3x^2)\\cdot 6x."
+            }
+          ]
+        },
+        {
+          "title": "Derivadas de orden superior",
+          "subtitle": "Matemática I • Derivadas",
+          "content": "La primera derivada mide la tasa de cambio. La segunda derivada informa sobre la concavidad y, en aplicaciones, sobre la aceleración. La guía 16 y 17 trabajan derivadas de orden superior como parte del análisis global de funciones.",
+          "formulaLatex": "f''(x)=\\frac{d}{dx}(f'(x))",
+          "proTip": "Si una función cambia de crecimiento a decrecimiento, o al revés, la primera derivada te ayudará a detectarlo.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "f^{(n)}(x)\\text{ denota la derivada de orden }n"
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_derivative_rules_p1",
+      "title": "Práctica 1: Reglas de Derivación",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_der_rules_01",
+          "questionText": "Deriva la función:",
+          "questionLatex": "f(x)=x^2\\sin(x)",
+          "options": [
+            "2x\\sin(x)+x^2\\cos(x)",
+            "2x\\cos(x)+x^2\\sin(x)",
+            "x^2\\cos(x)",
+            "2x\\sin(x)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Se usa la regla del producto: (x^2)'\\sin(x)+x^2(\\sin(x))' = 2x\\sin(x)+x^2\\cos(x).",
+          "category": "Regla del Producto",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_der_rules_02",
+          "questionText": "Deriva:",
+          "questionLatex": "f(x)=\\frac{x}{x+1}",
+          "options": [
+            "\\frac{1}{(x+1)^2}",
+            "\\frac{1}{x+1}",
+            "\\frac{x}{(x+1)^2}",
+            "\\frac{-1}{(x+1)^2}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Aplicando la regla del cociente se obtiene \\frac{(1)(x+1)-x(1)}{(x+1)^2}=\\frac{1}{(x+1)^2}.",
+          "category": "Regla del Cociente",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_der_rules_03",
+          "questionText": "Deriva usando cadena:",
+          "questionLatex": "f(x)=\\sin(3x^2+1)",
+          "options": [
+            "6x\\cos(3x^2+1)",
+            "\\cos(3x^2+1)",
+            "6x\\sin(3x^2+1)",
+            "3x^2\\cos(3x^2+1)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La derivada de sin(u) es cos(u)u'. Aquí u=3x^2+1 y u'=6x.",
+          "category": "Regla de la Cadena",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_der_rules_04",
+          "questionText": "Deriva:",
+          "questionLatex": "f(x)=e^{2x}\\ln(x)",
+          "options": [
+            "2e^{2x}\\ln(x)+\\frac{e^{2x}}{x}",
+            "e^{2x}\\ln(x)+\\frac{e^{2x}}{x}",
+            "2e^{2x}\\ln(x)",
+            "\\frac{2e^{2x}}{x}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Se aplica producto: (e^{2x})'\\ln(x)+e^{2x}(\\ln(x))' = 2e^{2x}\\ln(x)+\\frac{e^{2x}}{x}.",
+          "category": "Regla del Producto",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_derivative_rules_p2",
+      "title": "Práctica 2: Reglas de Derivación",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_der_rules_05",
+          "questionText": "Deriva:",
+          "questionLatex": "f(x)=\\sqrt{4x+1}",
+          "options": [
+            "\\frac{2}{\\sqrt{4x+1}}",
+            "\\frac{1}{2\\sqrt{4x+1}}",
+            "\\frac{4}{\\sqrt{4x+1}}",
+            "\\frac{1}{\\sqrt{4x+1}}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Es (4x+1)^{1/2}. Por cadena: \\frac{1}{2}(4x+1)^{-1/2}\\cdot 4 = \\frac{2}{\\sqrt{4x+1}}.",
+          "category": "Regla de la Cadena",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_der_rules_06",
+          "questionText": "Calcula la segunda derivada de f(x)=x³",
+          "questionLatex": "f(x)=x^3",
+          "options": [
+            "6x",
+            "3x^2",
+            "x",
+            "6"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "f'(x)=3x^2 y f''(x)=6x.",
+          "category": "Derivadas de Orden Superior",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_adv_der_theory",
+      "title": "Teoría: Práctica Avanzada: Derivadas y Reglas",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Regla de la Cadena Anidada",
+          "subtitle": "Matemática I • Práctica Avanzada",
+          "content": "Esta sección recopila ejercicios desafiantes de la Guía 16 de Farith. Evalúa tu dominio en la combinación de la Regla de la Cadena con el Producto y el Cociente, especialmente útil en funciones trigonométricas con argumentos racionales o radicales.",
+          "formulaLatex": "",
+          "proTip": "Evalúa de afuera hacia adentro. No omitas ningún eslabón de la regla de la cadena.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Ejercicios extraídos de la Guía 16."
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_adv_der_p1",
+      "title": "Práctica 1: Práctica Avanzada: Derivadas y Reglas",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_adv_04",
+          "questionText": "Halle la derivada de f(x) = sin³(4x² - 1)",
+          "questionLatex": "f(x) = \\sin^3(4x^2 - 1)",
+          "options": [
+            "$24x \\sin^2(4x^2-1) \\cos(4x^2-1)$",
+            "$12x \\sin^2(4x^2-1)$",
+            "$3 \\sin^2(4x^2-1) \\cos(4x^2-1)$",
+            "$24x \\cos^3(4x^2-1)$"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Regla de la cadena tres veces: primero la potencia, luego el seno, luego el polinomio. $3\\sin^2(4x^2-1) \\cdot \\cos(4x^2-1) \\cdot (8x) = 24x \\sin^2(4x^2-1) \\cos(4x^2-1)$.",
+          "category": "Regla de la Cadena Avanzada",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_adv_05",
+          "questionText": "Hallar y' si y = √(/(x+1(x-1",
+          "questionLatex": "y = \\sqrt{\\frac{x+1}{x-1}}",
+          "options": [
+            "$-\\frac{1}{(x-1)^2} \\sqrt{\\frac{x-1}{x+1}}$",
+            "$\\frac{1}{2\\sqrt{\\frac{x+1}{x-1}}}$",
+            "$\\frac{1}{(x-1)^2} \\sqrt{\\frac{x-1}{x+1}}$",
+            "$-\\frac{2}{(x-1)^3}$"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Usando cadena y cociente: $y' = \\frac{1}{2\\sqrt{\\frac{x+1}{x-1}}} \\cdot \\frac{1(x-1) - 1(x+1)}{(x-1)^2} = \\frac{1}{2\\sqrt{\\frac{x+1}{x-1}}} \\cdot \\frac{-2}{(x-1)^2}$. Simplificando queda $-\\frac{1}{(x-1)^2} \\sqrt{\\frac{x-1}{x+1}}$.",
+          "category": "Cadena y Cociente",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_implicit_theory",
+      "title": "Teoría: Derivación Implícita",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Idea de la derivación implícita",
+          "subtitle": "Matemática I • Derivación Implícita",
+          "content": "Cuando y no está despejada como función explícita de x, se deriva implícitamente tratando y como una función de x. Cada vez que aparece y, al derivar aparece y'. La guía 17 desarrolla este método en ecuaciones donde x e y están mezcladas.",
+          "formulaLatex": "\\frac{d}{dx}[y]=y'",
+          "proTip": "Cada vez que derives algo con y, recuerda multiplicar por y' según la regla de la cadena.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\frac{d}{dx}[y^2]=2yy'"
+            },
+            {
+              "type": "formula",
+              "content": "\\frac{d}{dx}[\\sin(y)]=\\cos(y)y'"
+            }
+          ]
+        },
+        {
+          "title": "Procedimiento general",
+          "subtitle": "Matemática I • Derivación Implícita",
+          "content": "Primero se deriva ambos lados de la ecuación respecto de x. Luego se agrupan los términos con y' y se despeja y'. Si se necesita, después se sustituye un punto para evaluar una pendiente o una derivada numérica.",
+          "formulaLatex": "F(x,y)=0 \\Rightarrow \\frac{dy}{dx}=?",
+          "proTip": "Si ves una mezcla de x, y, sen(x-y) o productos con y, la derivación implícita es el camino correcto.",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "La guía incluye también derivadas de orden superior e inversa de una función."
+            }
+          ]
+        },
+        {
+          "title": "Derivada de la inversa de una función",
+          "subtitle": "Matemática I • Derivación Implícita",
+          "content": "Si f es invertible y diferenciable, la derivada de la inversa en un punto se relaciona con la derivada de la función original. Este resultado es útil para funciones difíciles de invertir directamente.",
+          "formulaLatex": "(f^{-1})'(y)=\\frac{1}{f'(x)}",
+          "proTip": "La derivada de la inversa se obtiene evaluando la derivada original en el punto correspondiente.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "(f^{-1})'(a)=\\frac{1}{f'(f^{-1}(a))}"
+            }
+          ]
+        },
+        {
+          "title": "Derivadas de orden superior con funciones racionales",
+          "subtitle": "Matemática I • Derivación Implícita",
+          "content": "La guía 17 presenta sucesiones de derivadas para funciones racionales, mostrando patrones en la primera, segunda y tercera derivada. Esta práctica sirve para reconocer regularidades algebraicas y simplificar cálculos repetitivos.",
+          "formulaLatex": "f^{(n)}(x)",
+          "proTip": "Cuando la función es racional, observa si la derivada genera un patrón de potencias en el denominador.",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "En el material se trabaja con sucesiones de números obtenidas al evaluar derivadas sucesivas en un punto."
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_implicit_p1",
+      "title": "Práctica 1: Derivación Implícita",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_impl_01",
+          "questionText": "Deriva implícitamente:",
+          "questionLatex": "x^2+y^2=25",
+          "options": [
+            "y'=-x/y",
+            "y'=x/y",
+            "y'=2x+2y",
+            "y'=-y/x"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Derivando: 2x+2yy'=0, por lo que y'=-x/y.",
+          "category": "Derivación Implícita",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_impl_02",
+          "questionText": "Halla dy/dx:",
+          "questionLatex": "\\cos(x-y)=y\\sin(x)",
+          "options": [
+            "y'=(\\sin(x-y)-y\\cos(x))/(\\sin(x-y)+\\sin(x))",
+            "y'=(\\sin(x-y)+y\\cos(x))/(\\sin(x-y)-\\sin(x))",
+            "y'=\\sin(x-y)-y\\cos(x)",
+            "y'=\\cos(x-y)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Derivando implícitamente y agrupando y', se obtiene la expresión correcta.",
+          "category": "Derivación Implícita",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_impl_03",
+          "questionText": "Si f(x)=x/(x+1), ¿cuál es f'(1)?",
+          "questionLatex": "f(x)=\\frac{x}{x+1}",
+          "options": [
+            "\\frac{1}{4}",
+            "\\frac{1}{2}",
+            "1",
+            "-\\frac{1}{4}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "f'(x)=1/(x+1)^2, así que f'(1)=1/4.",
+          "category": "Derivadas de Orden Superior",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_impl_04",
+          "questionText": "Halle dy/dx para la ecuación x²y + xy² = 6 y evalúe en el punto (1,2).",
+          "questionLatex": "x^2y + xy^2 = 6, \\quad (1,2)",
+          "options": [
+            "-\\frac{8}{5}",
+            "-\\frac{5}{8}",
+            "\\frac{8}{5}",
+            "1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Derivando implícitamente: $2xy + x^2y' + y^2 + 2xyy' = 0$. Evaluando en $(1,2)$: $4 + y' + 4 + 4y' = 0 \\Rightarrow 5y' = -8 \\Rightarrow y' = -\\frac{8}{5}$.",
+          "category": "Derivación Implícita",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_implicit_p2",
+      "title": "Práctica 2: Derivación Implícita",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_impl_05",
+          "questionText": "Estudie la diferenciabilidad de la función f(x) = begin(cases 3x²-2, & x < -1  -x³, & x >= -1 end(cases en x_0 = -1.",
+          "questionLatex": "f(x) = \\begin{cases} 3x^2-2, & x < -1 \\\\ -x^3, & x \\geq -1 \\end{cases}",
+          "options": [
+            "No es diferenciable porque las derivadas laterales son -6 y -3",
+            "Es diferenciable con f'(-1) = -6",
+            "Es diferenciable con f'(-1) = -3",
+            "No es continua, así que no puede ser diferenciable"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La función sí es continua en $x=-1$ (ambos límites dan 1). Derivada lateral izquierda: $\\lim_{h \\to 0^-} \\frac{3(-1+h)^2-2-1}{h} = -6$. Derivada lateral derecha: $\\lim_{h \\to 0^+} \\frac{-(-1+h)^3-1}{h} = -3$. Como $-6 \\neq -3$, no es diferenciable.",
+          "category": "Diferenciabilidad por tramos",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_applications_theory",
+      "title": "Teoría: Aplicaciones de la Derivada",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Monotonía y signo de la primera derivada",
+          "subtitle": "Matemática I • Aplicaciones",
+          "content": "La primera derivada indica si una función crece o decrece. Si f'(x)>0 en un intervalo, la función es creciente allí; si f'(x)<0, es decreciente. La guía 18 usa este criterio como base para el estudio global de la función.",
+          "formulaLatex": "f'(x)>0\\Rightarrow f\\text{ creciente}",
+          "proTip": "Antes de buscar máximos o mínimos, analiza el signo de la primera derivada.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "f'(x)<0\\Rightarrow f\\text{ decreciente}"
+            }
+          ]
+        },
+        {
+          "title": "Máximos y mínimos locales y globales",
+          "subtitle": "Matemática I • Aplicaciones",
+          "content": "Un máximo local es un punto donde la función toma un valor mayor que los cercanos. Un mínimo local toma un valor menor que los cercanos. Los máximos y mínimos globales comparan con todo el dominio. La guía 18 desarrolla estas definiciones junto con puntos críticos.",
+          "formulaLatex": "f'(c)=0 \\text{ o } f'(c) \\text{ no existe}",
+          "proTip": "Los puntos críticos son candidatos, pero no todos son extremos.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "f''(c)>0\\Rightarrow \\text{mínimo local}"
+            },
+            {
+              "type": "formula",
+              "content": "f''(c)<0\\Rightarrow \\text{máximo local}"
+            }
+          ]
+        },
+        {
+          "title": "Concavidad y puntos de inflexión",
+          "subtitle": "Matemática I • Aplicaciones",
+          "content": "La segunda derivada informa sobre la concavidad: si f''(x)>0, la gráfica es cóncava hacia arriba; si f''(x)<0, es cóncava hacia abajo. Un punto de inflexión ocurre cuando cambia la concavidad.",
+          "formulaLatex": "f''(x)=0 \\text{ puede indicar un punto de inflexión}",
+          "proTip": "Para confirmar un punto de inflexión, no basta con que f''(c)=0: debe cambiar de signo.",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "f''(x)>0\\Rightarrow \\text{cóncava hacia arriba}"
+            },
+            {
+              "type": "formula",
+              "content": "f''(x)<0\\Rightarrow \\text{cóncava hacia abajo}"
+            }
+          ]
+        },
+        {
+          "title": "Estrategia para graficar funciones",
+          "subtitle": "Matemática I • Aplicaciones",
+          "content": "Para esbozar una gráfica se combinan dominio, cortes con ejes, intervalos de crecimiento y decrecimiento, concavidad, extremos y asíntotas. La guía 18 conecta todos estos conceptos para construir un análisis completo de la función.",
+          "formulaLatex": "\\text{Dominio + derivadas + concavidad + asíntotas}",
+          "proTip": "No intentes dibujar una función a ciegas: primero reúne todas sus características.",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "La guía usa el análisis de la primera y segunda derivada para describir la forma global."
+            }
+          ]
+        },
+        {
+          "title": "Problemas de Optimización",
+          "subtitle": "Matemática I • Aplicaciones",
+          "content": "La optimización consiste en hallar el valor máximo o mínimo de una magnitud (área, costo, volumen) sujeta a una restricción. La estrategia general es: 1. Leer el problema y plantear la función objetivo. 2. Plantear la ecuación de restricción. 3. Sustituir la restricción en la función objetivo para tener una sola variable. 4. Derivar, igualar a cero y evaluar el dominio.",
+          "formulaLatex": "\\max/\\min \\ f(x) \\text{ sujeto a } g(x)=k",
+          "proTip": "Dibuja siempre un esquema del problema y define claramente qué vas a maximizar o minimizar antes de empezar a derivar.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "Hallar las dimensiones del rectángulo de mayor área inscrito en un semicírculo de radio R. Función Objetivo: A = 2xy. Restricción: x^2 + y^2 = R^2."
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_applications_p1",
+      "title": "Práctica 1: Aplicaciones de la Derivada",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_app_01",
+          "questionText": "Si f'(x)>0 en un intervalo, entonces la función es:",
+          "questionLatex": "f'(x)>0",
+          "options": [
+            "Creciente",
+            "Decreciente",
+            "Constante",
+            "Discontinua"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Una derivada positiva indica crecimiento.",
+          "category": "Monotonía",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_app_02",
+          "questionText": "Si f''(x)<0, la gráfica es:",
+          "questionLatex": "f''(x)<0",
+          "options": [
+            "Cóncava hacia abajo",
+            "Cóncava hacia arriba",
+            "Horizontal",
+            "No se puede determinar nada"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La segunda derivada negativa indica concavidad hacia abajo.",
+          "category": "Concavidad",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_app_03",
+          "questionText": "¿Qué condición se usa para encontrar puntos críticos?",
+          "questionLatex": "Puntos críticos",
+          "options": [
+            "f'(x)=0 o f'(x) no existe",
+            "f(x)=0",
+            "f''(x)=0",
+            "f(x)=1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Los puntos críticos son donde la derivada se anula o no existe.",
+          "category": "Puntos Críticos",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_app_04",
+          "questionText": "Si f''(c)>0 y f'(c)=0, entonces c es:",
+          "questionLatex": "f'(c)=0,\\ f''(c)>0",
+          "options": [
+            "Mínimo local",
+            "Máximo local",
+            "Punto de inflexión",
+            "No concluye nada"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La segunda derivada positiva confirma un mínimo local.",
+          "category": "Extremos",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_adv_app_theory",
+      "title": "Teoría: Práctica Avanzada: Aplicaciones y Optimizaciones",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Problemas de Optimización Avanzados",
+          "subtitle": "Matemática I • Práctica Avanzada",
+          "content": "Aplica lo aprendido en máximos y mínimos para resolver problemas de la vida real. Tomados de la Guía 18, estos problemas te exigirán plantear la ecuación desde cero basándote solo en el enunciado.",
+          "formulaLatex": "",
+          "proTip": "Escribe siempre la restricción implícita del problema en forma de ecuación y despeja de ahí una variable.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Lee detenidamente. A menudo la dificultad está en la modelización matemática, no en la derivada en sí."
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_adv_app_p1",
+      "title": "Práctica 1: Práctica Avanzada: Aplicaciones y Optimizaciones",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_adv_06",
+          "questionText": "Hallar las dimensiones del cilindro circular recto de mayor volumen que puede inscribirse en una esfera de radio R.",
+          "questionLatex": "V = \\pi r^2 h",
+          "options": [
+            "$h = \\frac{2R}{\\sqrt{3}}$, $r = R\\sqrt{\\frac{2}{3}}$",
+            "$h = R$, $r = R/2$",
+            "$h = \\frac{R}{\\sqrt{2}}$, $r = R$",
+            "$h = \\frac{R}{3}$, $r = \\frac{2R}{3}$"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Restricción por Pitágoras: $(h/2)^2 + r^2 = R^2 \\Rightarrow r^2 = R^2 - h^2/4$. Volumen $V(h) = \\pi (R^2 - h^2/4) h$. Derivando e igualando a cero: $\\pi(R^2 - \\frac{3}{4}h^2) = 0 \\Rightarrow h = \\frac{2R}{\\sqrt{3}}$.",
+          "category": "Optimización",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_adv_07",
+          "questionText": "Un granjero tiene 2400 m de cerca y desea vallar un campo rectangular que bordea un río recto. No necesita cerca a lo largo del río. ¿Cuáles son las dimensiones del campo que tiene el área más grande?",
+          "questionLatex": "2x + y = 2400",
+          "options": [
+            "$x = 600, y = 1200$",
+            "$x = 800, y = 800$",
+            "$x = 1200, y = 600$",
+            "$x = 400, y = 1600$"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La restricción es $2x+y=2400 \\Rightarrow y=2400-2x$. Área $A(x) = x(2400-2x) = 2400x - 2x^2$. Derivando: $A'(x) = 2400 - 4x = 0 \\Rightarrow x=600$. Luego $y=1200$.",
+          "category": "Optimización",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_prac_der_app_theory",
+      "title": "Teoría: Práctica: Derivación y Aplicaciones",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Instrucciones de la Práctica",
+          "subtitle": "Matemática I • Práctica",
+          "content": "Esta sesión consolida el cálculo de derivadas mediante reglas y derivación implícita, así como su uso para hallar tangentes, velocidades y extremos de funciones.",
+          "formulaLatex": "",
+          "proTip": "No simplifiques antes de tiempo al usar la regla del cociente, y presta especial atención a la regla de la cadena en funciones compuestas.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "A continuación encontrarás ejercicios clave de las guías 15 a 18."
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_prac_der_app_p1",
+      "title": "Práctica 1: Práctica: Derivación y Aplicaciones",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_prac_07",
+          "questionText": "Dada la curva definida implícitamente por x²y+xy²=6, determine la pendiente de la recta tangente en el punto (1,2).",
+          "questionLatex": "x^2y+xy^2=6",
+          "options": [
+            "-8/5",
+            "-5/8",
+            "8/5",
+            "1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Derivando implícitamente: $(2xy+x^2y') + (y^2+2xyy') = 0$. Evaluando en (1,2): $(2(1)(2)+(1)^2y') + ((2)^2+2(1)(2)y') = 0 \\Rightarrow 4+y'+4+4y'=0 \\Rightarrow 8+5y'=0 \\Rightarrow y'=-8/5$.",
+          "category": "Derivación Implícita",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_prac_08",
+          "questionText": "Hallar los puntos cítricos de f(x) = x³ - 3x² - 9x + 5.",
+          "questionLatex": "f(x) = x^3 - 3x^2 - 9x + 5",
+          "options": [
+            "x = -1, x = 3",
+            "x = 1, x = -3",
+            "x = 3",
+            "x = -1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Calculamos $f'(x) = 3x^2 - 6x - 9 = 3(x^2 - 2x - 3) = 3(x-3)(x+1)$. Los puntos críticos ocurren cuando $f'(x)=0$, que son x=3 y x=-1.",
+          "category": "Puntos Críticos",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_parcial_3_theory",
+      "title": "Simulacro Parcial 3: Derivadas y Aplicaciones",
+      "type": "parcial",
+      "theorySections": [
+        {
+          "title": "Instrucciones del Parcial 3",
+          "subtitle": "Matemática I • Simulacro",
+          "content": "Este simulacro evalúa las reglas de derivación, la derivación implícita, teoremas de Rolle y Valor Medio, y aplicaciones de la derivada para el cálculo de máximos, mínimos y trazado de curvas.",
+          "formulaLatex": "",
+          "proTip": "En los problemas de derivación implícita, no olvides multiplicar por y' cuando derives términos con y. En problemas de maximización, recuerda verificar la segunda derivada.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Temas a evaluar:"
+            },
+            {
+              "type": "text",
+              "content": "1. Derivación implícita."
+            },
+            {
+              "type": "text",
+              "content": "2. Teoremas de Rolle y del Valor Medio."
+            },
+            {
+              "type": "text",
+              "content": "3. Análisis de gráficas mediante derivadas (crecimiento, concavidad)."
+            },
+            {
+              "type": "text",
+              "content": "4. Problemas de optimización (Máximos y Mínimos)."
+            }
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "id": "math1_p3_01",
+          "questionText": "La función f(x) será continua y diferenciable en su dominio?",
+          "questionLatex": "f(x) = \\begin{cases} \\sin(x), & -\\pi < x < 0 \\\\ -4x, & 0 \\leq x < \\pi/2 \\\\ x - \\frac{\\pi^2}{x}, & x \\geq \\pi/2 \\end{cases}",
+          "options": [
+            "Sí en todo su dominio.",
+            "Es continua pero no diferenciable en x=0.",
+            "Es discontinua en x=0, continua en \\pi/2.",
+            "Es continua en x=0, discontinua en \\pi/2."
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Al evaluar los límites en x=0, obtenemos que sin(0)=0 y -4(0)=0, por ende es continua en x=0. La derivada por la izquierda en 0 es cos(0)=1, y por la derecha es -4. Como 1 \\neq -4, no es diferenciable en x=0.",
+          "category": "Teorema de Rolle y Continuidad",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_p3_02",
+          "questionText": "Hallar la ecuación de la recta normal a la curva descrita implícitamente por x³+y³=6xy en el punto (3,3):",
+          "questionLatex": "x^3 + y^3 = 6xy",
+          "options": [
+            "y = x",
+            "y = -x",
+            "y = x + 3",
+            "y = -x + 6"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Derivando implícitamente: $3x^2 + 3y^2y' = 6y + 6xy'$. Evaluando en (3,3): $27 + 27y' = 18 + 18y'$, despejando da $y'=-1$. Esta es la pendiente de la tangente. La normal tendrá pendiente $m_{norm}=1$. Luego $y-3 = 1(x-3) \\rightarrow y=x$.",
+          "category": "Derivación Implícita",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "math1_p3_03",
+          "questionText": "Que condiciones deben cumplir 'a' y 'b' para que la siguiente función sea diferenciable en todo R?",
+          "questionLatex": "f(x) = \\begin{cases} ax^2+bx, & x < 1 \\\\ \\frac{1}{|x|}, & x \\geq 1 \\end{cases}",
+          "options": [
+            "a = 2, b = -1",
+            "a = -2, b = 3",
+            "a = 1, b = -2",
+            "No hay valores de a y b"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Primero asegura la continuidad en x=1: $a(1)+b(1) = 1/1 \\Rightarrow a+b=1$. Luego la derivada en x>1 es $-1/x^2$. Igualando las derivadas en x=1: $2a(1)+b = -1/(1^2) \\Rightarrow 2a+b=-1$. Resolviendo el sistema da a=-2, b=3.",
+          "category": "Diferenciabilidad",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": false
+    }
+  ]
+}
