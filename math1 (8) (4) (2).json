@@ -514,6 +514,21 @@
           "explanationLatex": "Puntos críticos: -2, 1, 3. Como $(x-1)^2 \\geq 0$, solo afecta el signo en x=1 (donde vale 0). Para el resto, estudiamos $\\frac{x+2}{x-3} \\leq 0$, lo cual ocurre en $[-2, 3)$. El punto x=1 ya está en ese intervalo.",
           "category": "Inecuaciones Racionales",
           "moduleName": "Matemática I"
+        },
+        {
+          "id": "challenge_1775081055692",
+          "questionText": "Halle el conjunto solución de:",
+          "options": [
+            "(-1, 1) \\cup (1, \\infty)",
+            "(-1, \\infty)",
+            "(-\\infty, -2) \\cup (1, \\infty)",
+            "(-2, 1)"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "Inecuaciones Racionales",
+          "moduleName": "Matemática I",
+          "questionLatex": "\\frac{x^2 + x - 2}{x - 1} > 1",
+          "explanationLatex": "$$\\text{Factorizamos el numerador: } \\frac{(x + 2)(x - 1)}{x - 1} > 1$$$$\\text{Si } x \\neq 1, \\text{ podemos simplificar: } x + 2 > 1$$$$x > -1$$$$\\text{Pero como } x \\text{ no puede ser } 1 \\text{ (indefinición original):}$$$$\\text{Solución: } (-1, \\infty) \\setminus \\{1\\} \\text{ o } (-1, 1) \\cup (1, \\infty)$$"
         }
       ],
       "isCompleted": false,
