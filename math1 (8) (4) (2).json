@@ -496,7 +496,7 @@
     },
     {
       "id": "math1_ineq_p3",
-      "title": "Práctica 3: Resolución de Desigualdades",
+      "title": "Resolución de Desigualdades",
       "type": "practice",
       "theorySections": [],
       "challenges": [
@@ -529,10 +529,65 @@
           "moduleName": "Matemática I",
           "questionLatex": "\\frac{x^2 + x - 2}{x - 1} > 1",
           "explanationLatex": "$$\\text{Factorizamos el numerador: } \\frac{(x + 2)(x - 1)}{x - 1} > 1$$$$\\text{Si } x \\neq 1, \\text{ podemos simplificar: } x + 2 > 1$$$$x > -1$$$$\\text{Pero como } x \\text{ no puede ser } 1 \\text{ (indefinición original):}$$$$\\text{Solución: } (-1, \\infty) \\setminus \\{1\\} \\text{ o } (-1, 1) \\cup (1, \\infty)$$"
+        },
+        {
+          "id": "challenge_1775081300672",
+          "questionText": "Halla el intervalo de $x$ que cumple:",
+          "options": [
+            "(1, 2) \\cup (2, \\infty)",
+            "(1, \\infty)",
+            "(-\\infty, 1) \\cup (2, \\infty)",
+            "(2, \\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "Inecuaciones Racionales",
+          "moduleName": "Matemática I",
+          "questionLatex": "$$\\frac{x^3 - 6x^2 + 11x - 6}{x^2 - 3x + 2} > -2$$",
+          "explanationLatex": "$$\\text{Factorizamos numerador y denominador:}$$$$\\frac{(x - 1)(x - 2)(x - 3)}{(x - 1)(x - 2)} > -2$$$$\\text{Simplificando para } x \\neq 1 \\text{ y } x \\neq 2:$$$$x - 3 > -2 \\implies x > 1$$$$\\text{Debemos excluir las restricciones del denominador original:}$$$$\\text{Solución: } (1, 2) \\cup (2, \\infty)$$"
+        },
+        {
+          "id": "challenge_1775081419601",
+          "questionText": "Determine el conjunto solución para la siguiente inecuación racional:",
+          "options": [
+            "(-\\infty, -1] \\cup (1, \\infty)",
+            "[-1, 1)",
+            "(-\\infty, -1] \\cup [1, \\infty)",
+            "(-\\infty, 1)"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "Inecuaciones Racionales",
+          "moduleName": "Matemática I",
+          "questionLatex": "\\frac{2x^3 - x + 1}{x^3 + 2x^2 + x - 4} \\geq 0",
+          "explanationLatex": "\\begin{aligned}\n\\text{1. Raíces del Numerador: } & x = -1 \\\\\n\\text{2. Raíces del Denominador: } & x = 1 \\text{ (Restricción)} \\\\\n\\text{3. Inecuación simplificada: } & \\frac{x + 1}{x - 1} \\geq 0 \\\\\n\\text{4. Análisis de signos: } & \\\\\nx \\in (-\\infty, -1] & \\implies \\text{Positivo (+)} \\\\\nx \\in (-1, 1) & \\implies \\text{Negativo (-)} \\\\\nx \\in (1, \\infty) & \\implies \\text{Positivo (+)} \\\\\n\\text{Solución Final: } & (-\\infty, -1] \\cup (1, \\infty)\n\\end{aligned}"
         }
       ],
       "isCompleted": false,
       "isLocked": true
+    },
+    {
+      "id": "lesson_1775083864823",
+      "title": "Resolución de Desigualdades",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1775083896895",
+          "questionText": "Nueva Pregunta",
+          "options": [
+            "[-\\frac{1}{2}, 0)",
+            "(-\\infty, -1)",
+            "(-\\frac{1}{2}, 1)",
+            "No tiene solución real."
+          ],
+          "correctAnswerIndex": 0,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "\\sqrt{\\frac{2x + 1}{x}} < 1",
+          "explanationLatex": "$$\\begin{aligned}\n\\text{1. Dominio: } & \\frac{2x + 1}{x} \\geq 0 \\implies x \\in (-\\infty, -\\frac{1}{2}] \\cup (0, \\infty) \\\\\n\\text{2. Resolver: } & \\left( \\sqrt{\\frac{2x + 1}{x}} \\right)^2 < 1^2 \\\\\n& \\frac{2x + 1}{x} < 1 \\implies \\frac{2x + 1}{x} - 1 < 0 \\\\\n& \\frac{2x + 1 - x}{x} < 0 \\implies \\frac{x + 1}{x} < 0 \\\\\n\\text{Solución de la inecuación: } & (-1, 0) \\\\\n\\text{3. Intersección con Dominio: } & (-1, 0) \\cap ((-\\infty, -\\frac{1}{2}] \\cup (0, \\infty)) \\\\\n\\text{Solución Final: } & [-\\frac{1}{2}, 0)\n\\end{aligned}$$"
+        }
+      ]
     },
     {
       "id": "math1_abs_theory",
