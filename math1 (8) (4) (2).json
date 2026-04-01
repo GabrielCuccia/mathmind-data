@@ -459,6 +459,21 @@
           "moduleName": "Matemática I",
           "questionLatex": "\\frac{1}{x - 3} < 1",
           "explanationLatex": "Primero, igualamos a cero pasando el 1 a la izquierda: $$\\begin{aligned}\n\\frac{1}{x - 3} - 1 & < 0 \\\\\n\\frac{1 - (x - 3)}{x - 3} & < 0 \\\\\n\\frac{4 - x}{x - 3} & < 0\n\\end{aligned}$$Puntos críticos: $x = 4$ y $x = 3$. Al probar intervalos, la fracción es negativa fuera del rango $[3, 4]$."
+        },
+        {
+          "id": "challenge_1775077004414",
+          "questionText": "Halla el conjunto solución de la siguiente inecuación:",
+          "options": [
+            "\\{2\\}",
+            "(-\\infty, 2]",
+            "\\emptyset",
+            "(-\\infty, \\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "Inecuaciones Racionales",
+          "moduleName": "Matemática I",
+          "questionLatex": "x^2 - 4x + 4 \\leq 0",
+          "explanationLatex": "Factorizamos el trinomio cuadrado perfecto:$$(x - 2)^2 \\leq 0$$Sabemos que cualquier número real elevado al cuadrado es siempre $\\geq 0$. La única forma de que sea $\\leq 0$ es que la expresión sea exactamente igual a cero.$x - 2 = 0 \\implies x = 2$"
         }
       ],
       "isCompleted": false,
