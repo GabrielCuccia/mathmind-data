@@ -474,6 +474,21 @@
           "moduleName": "Matemática I",
           "questionLatex": "x^2 - 4x + 4 \\leq 0",
           "explanationLatex": "Factorizamos el trinomio cuadrado perfecto:$$(x - 2)^2 \\leq 0$$Sabemos que cualquier número real elevado al cuadrado es siempre $\\geq 0$. La única forma de que sea $\\leq 0$ es que la expresión sea exactamente igual a cero.$x - 2 = 0 \\implies x = 2$"
+        },
+        {
+          "id": "challenge_1775077906463",
+          "questionText": "Resuelve la inecuación:",
+          "options": [
+            "(-\\infty, -4) \\cup (2, \\infty)",
+            "[-4, 2]",
+            "(-4, 2)",
+            "(-2, 4)"
+          ],
+          "correctAnswerIndex": 2,
+          "category": "Inecuaciones Racionales",
+          "moduleName": "Matemática I",
+          "questionLatex": "x^2 + 2x - 8 < 0",
+          "explanationLatex": "Primero factorizamos el trinomio buscando dos números que multiplicados den $-8$ y sumados $+2$:$$(x + 4)(x - 2) < 0$$Puntos críticos: $x = -4$ y $x = 2$.Al evaluar los signos en la recta real:Para $x < -4$: $(-)(-) = (+)$Entre $-4$ y $2$: $(+)(-) = (-)$Para $x > 2$: $(+)(+) = (+)$Buscamos los negativos ($<0$)"
         }
       ],
       "isCompleted": false,
