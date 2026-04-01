@@ -123,22 +123,22 @@
         {
           "id": "math1_order_01",
           "questionText": "Determina si la proposición es verdadera o falsa:",
-          "questionLatex": "x^2>x\\text{ para todo }x\\in\\mathbb{R}",
+          "questionLatex": "x^2>x para todo x\\in\\mathbb{R}",
           "options": [
             "Verdadera",
-            "Solo\\ verdadera\\ para\\ x>1",
+            "Solo verdadera para x>1",
             "Falsa",
-            "Solo\\ verdadera\\ para\\ x<0"
+            "Solo verdadera para x<0"
           ],
           "correctAnswerIndex": 2,
-          "explanationLatex": "Basta un contraejemplo: si x=1, entonces x^2=1 y no es  mayor que x. Por lo tanto, la proposición es falsa.",
+          "explanationLatex": "Basta un contraejemplo: si x=1, entonces x^2=1 y no es mayor que x. Por lo tanto, la proposición es falsa.",
           "category": "Orden",
           "moduleName": "Matemática I"
         },
         {
           "id": "math1_order_02",
           "questionText": "Determina si la proposición es verdadera o falsa:",
-          "questionLatex": "x<x+1\\text{ para todo }x\\in\\mathbb{R}",
+          "questionLatex": "x<x+1 para todo x\\in\\mathbb{R}",
           "options": [
             "Falsa",
             "Solo verdadera si x>0",
@@ -146,7 +146,7 @@
             "Verdadera"
           ],
           "correctAnswerIndex": 3,
-          "explanationLatex": "\\text{Como } 0 < 1, \\text{ al sumar } x \\text{ a ambos lados se obtiene } x < x + 1 \\text{ para cualquier número real } x.",
+          "explanationLatex": "Como 0 < 1, al sumar x a ambos lados se obtiene x < x + 1 para cualquier número real x.",
           "category": "Orden",
           "moduleName": "Matemática I"
         },
@@ -168,12 +168,12 @@
         {
           "id": "math1_order_04",
           "questionText": "Escribe el recíproco de la proposición:",
-          "questionLatex": "\"Si\\ 7x-5\\leq 2,\\ entonces\\ x\\leq 1\"",
+          "questionLatex": "Si 7x-5\\leq 2, entonces x\\leq 1",
           "options": [
-            "\"Si\\ x\\leq 1, entonces\\ 7x-5\\leq 2\"",
-            "\"Si\\ x>1,\\ entonces\\ 7x-5>2\"",
-            "\"Si\\ 7x-5>2,\\ entonces\\ x>1\"",
-            "\"Si\\ x<1,\\ entonces\\ 7x-5<2\""
+            "Si x\\leq 1, entonces 7x-5\\leq 2",
+            "Si x>1, entonces 7x-5>2",
+            "Si 7x-5>2, entonces x>1",
+            "Si x<1, entonces 7x-5<2"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "El recíproco intercambia hipótesis y conclusión: si x\\leq 1, entonces 7x-5\\leq 2.",
@@ -185,7 +185,7 @@
       "isLocked": true
     },
     {
-      "id": "math1_order_p3",
+      "id": "math1_order_p2",
       "title": "Orden en la Recta Real",
       "type": "practice",
       "theorySections": [],
@@ -225,8 +225,8 @@
       "isLocked": true
     },
     {
-      "id": "math1_ineq_theory",
-      "title": "Teoría: Resolución de Desigualdades",
+      "id": "math1_ineq_theory_1",
+      "title": "Teoría: Inecuaciones Lineales y Cuadráticas",
       "type": "theory",
       "theorySections": [
         {
@@ -290,7 +290,87 @@
               "content": "(x-r_1)(x-r_2)\\geq 0"
             }
           ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_ineq_p1",
+      "title": "Resolución de Desigualdades",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_ineq_01",
+          "questionText": "Resuelve la inecuación:",
+          "questionLatex": "\\frac{7}{2}x-3\\geq \\frac{4}{3}-2x",
+          "options": [
+            "x\\geq \\frac{26}{33}",
+            "x\\leq \\frac{26}{33}",
+            "x\\geq \\frac{33}{26}",
+            "x\\leq \\frac{33}{26}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Agrupando términos con x y números por separado se obtiene \\frac{11}{2}x\\geq \\frac{13}{3}, por lo que x\\geq \\frac{26}{33}.",
+          "category": "Inecuaciones Lineales",
+          "moduleName": "Matemática I"
         },
+        {
+          "id": "challenge_1775069906239",
+          "questionText": "Resuelve la inecuación:",
+          "options": [
+            "x > -4",
+            "x < 4",
+            "x < -4",
+            "x > 4"
+          ],
+          "correctAnswerIndex": 2,
+          "category": "Inecuaciones Lineales",
+          "moduleName": "Matemática I",
+          "questionLatex": "3x - 7 > 5x + 1",
+          "explanationLatex": "\\begin{aligned}\n3x - 7 & > 5x + 1 \\\\\n3x - 5x & > 1 + 7 \\\\\n-2x & > 8 \\\\\nx & < \\frac{8}{-2} \\quad (El signo se invierte al dividir por negativo) \\\\\nx & < -4\n\\end{aligned}"
+        },
+        {
+          "id": "challenge_1775070171282",
+          "questionText": "Halla el intervalo solución para la inecuación:",
+          "options": [
+            "(-\\infty, 14)",
+            "[14, \\infty)",
+            "(-\\infty, 10]",
+            "(-\\infty, 14]"
+          ],
+          "correctAnswerIndex": 3,
+          "category": "Inecuaciones Lineales",
+          "moduleName": "Matemática I",
+          "questionLatex": "\\frac{x - 2}{3} \\leq 4",
+          "explanationLatex": "\\begin{aligned}\n\\frac{x - 2}{3} & \\leq 4 \\\\\nx - 2 & \\leq 12 \\\\\nx & \\leq 12 + 2 \\\\\nx & \\leq 14 \\\\\nSolución: & (-\\infty, 14]\n\\end{aligned}"
+        },
+        {
+          "id": "challenge_1775070325860",
+          "questionText": "Determine el intervalo de $x$ que cumple con la siguiente desigualdad:",
+          "options": [
+            "(-\\infty, \\frac{1}{2})",
+            "(-\\infty, \\frac{1}{10})",
+            "(\\frac{1}{2}, \\infty)",
+            "(-\\infty, \\frac{5}{11})"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "Inecuaciones Lineales",
+          "moduleName": "Matemática I",
+          "questionLatex": "\\frac{2}{3}(x - 1) + \\frac{1}{4}(x + 1) < \\frac{1}{12}x",
+          "explanationLatex": "\\begin{aligned}\n12 \\cdot \\left[ \\frac{2}{3}(x - 1) + \\frac{1}{4}(x + 1) \\right] & < 12 \\cdot \\left[ \\frac{1}{12}x \\right] \\\\\n8(x - 1) + 3(x + 1) & < x \\\\\n8x - 8 + 3x + 3 & < x \\\\\n11x - 5 & < x \\\\\n10x & < 5 \\\\\nx & < \\frac{5}{10} \\\\\nx & < \\frac{1}{2} \\\\\nSolución: & \\left(-\\infty, \\frac{1}{2}\\right)\n\\end{aligned}"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_ineq_theory_2",
+      "title": "Teoría: Inecuaciones Racionales y Sistemas",
+      "type": "theory",
+      "theorySections": [
         {
           "title": "Desigualdades racionales",
           "subtitle": "Matemática I • Inecuaciones",
@@ -353,76 +433,6 @@
       "challenges": [],
       "isCompleted": false,
       "isLocked": false
-    },
-    {
-      "id": "math1_ineq_p1",
-      "title": "Resolución de Desigualdades",
-      "type": "practice",
-      "theorySections": [],
-      "challenges": [
-        {
-          "id": "math1_ineq_01",
-          "questionText": "Resuelve la inecuación:",
-          "questionLatex": "\\frac{7}{2}x-3\\geq \\frac{4}{3}-2x",
-          "options": [
-            "x\\geq \\frac{26}{33}",
-            "x\\leq \\frac{26}{33}",
-            "x\\geq \\frac{33}{26}",
-            "x\\leq \\frac{33}{26}"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Agrupando términos con x y números por separado se obtiene \\frac{11}{2}x\\geq \\frac{13}{3}, por lo que x\\geq \\frac{26}{33}.",
-          "category": "Inecuaciones Lineales",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "challenge_1775069906239",
-          "questionText": "Resuelve la inecuación:",
-          "options": [
-            "x > -4",
-            "x < 4",
-            "x < -4",
-            "x > 4"
-          ],
-          "correctAnswerIndex": 2,
-          "category": "Inecuaciones Lineales",
-          "moduleName": "Matemática I",
-          "questionLatex": "3x - 7 > 5x + 1",
-          "explanationLatex": "\\begin{aligned}\n3x - 7 & > 5x + 1 \\\\\n3x - 5x & > 1 + 7 \\\\\n-2x & > 8 \\\\\nx & < \\frac{8}{-2} \\quad \\text{(El signo se invierte al dividir por negativo)} \\\\\nx & < -4\n\\end{aligned}"
-        },
-        {
-          "id": "challenge_1775070171282",
-          "questionText": "Halla el intervalo solución para la inecuación:",
-          "options": [
-            "(-\\infty, 14)",
-            "[14, \\infty)",
-            "(-\\infty, 10]",
-            "(-\\infty, 14]"
-          ],
-          "correctAnswerIndex": 3,
-          "category": "Inecuaciones Lineales",
-          "moduleName": "Matemática I",
-          "questionLatex": "\\frac{x - 2}{3} \\leq 4",
-          "explanationLatex": "\\begin{aligned}\n\\frac{x - 2}{3} & \\leq 4 \\\\\nx - 2 & \\leq 12 \\\\\nx & \\leq 12 + 2 \\\\\nx & \\leq 14 \\\\\n\\text{Solución: } & (-\\infty, 14]\n\\end{aligned}"
-        },
-        {
-          "id": "challenge_1775070325860",
-          "questionText": "Determine el intervalo de $x$ que cumple con la siguiente desigualdad:",
-          "options": [
-            "(-\\infty, \\frac{1}{2})",
-            "(-\\infty, \\frac{1}{10})",
-            "(\\frac{1}{2}, \\infty)",
-            "(-\\infty, \\frac{5}{11})"
-          ],
-          "correctAnswerIndex": 0,
-          "category": "Inecuaciones Lineales",
-          "moduleName": "Matemática I",
-          "questionLatex": "\\frac{2}{3}(x - 1) + \\frac{1}{4}(x + 1) < \\frac{1}{12}x",
-          "explanationLatex": "\\begin{aligned}\n12 \\cdot \\left[ \\frac{2}{3}(x - 1) + \\frac{1}{4}(x + 1) \\right] & < 12 \\cdot \\left[ \\frac{1}{12}x \\right] \\\\\n8(x - 1) + 3(x + 1) & < x \\\\\n8x - 8 + 3x + 3 & < x \\\\\n11x - 5 & < x \\\\\n10x & < 5 \\\\\nx & < \\frac{5}{10} \\\\\nx & < \\frac{1}{2} \\\\\n\\text{Solución: } & \\left(-\\infty, \\frac{1}{2}\\right)\n\\end{aligned}"
-        }
-      ],
-      "isCompleted": false,
-      "isLocked": true
     },
     {
       "id": "math1_ineq_p2",
@@ -528,7 +538,7 @@
           "category": "Inecuaciones Racionales",
           "moduleName": "Matemática I",
           "questionLatex": "\\frac{x^2 + x - 2}{x - 1} > 1",
-          "explanationLatex": "$$\\text{Factorizamos el numerador: } \\frac{(x + 2)(x - 1)}{x - 1} > 1$$$$\\text{Si } x \\neq 1, \\text{ podemos simplificar: } x + 2 > 1$$$$x > -1$$$$\\text{Pero como } x \\text{ no puede ser } 1 \\text{ (indefinición original):}$$$$\\text{Solución: } (-1, \\infty) \\setminus \\{1\\} \\text{ o } (-1, 1) \\cup (1, \\infty)$$"
+          "explanationLatex": "$$Factorizamos el numerador: \\frac{(x + 2)(x - 1)}{x - 1} > 1$$$$Si x \\neq 1, podemos simplificar: x + 2 > 1$$$$x > -1$$$$Pero como x no puede ser 1 (indefinición original):$$$$Solución: (-1, \\infty) \\setminus \\{1\\} o (-1, 1) \\cup (1, \\infty)$$"
         },
         {
           "id": "challenge_1775081300672",
@@ -543,7 +553,7 @@
           "category": "Inecuaciones Racionales",
           "moduleName": "Matemática I",
           "questionLatex": "$$\\frac{x^3 - 6x^2 + 11x - 6}{x^2 - 3x + 2} > -2$$",
-          "explanationLatex": "$$\\text{Factorizamos numerador y denominador:}$$$$\\frac{(x - 1)(x - 2)(x - 3)}{(x - 1)(x - 2)} > -2$$$$\\text{Simplificando para } x \\neq 1 \\text{ y } x \\neq 2:$$$$x - 3 > -2 \\implies x > 1$$$$\\text{Debemos excluir las restricciones del denominador original:}$$$$\\text{Solución: } (1, 2) \\cup (2, \\infty)$$"
+          "explanationLatex": "$$Factorizamos numerador y denominador:$$$$\\frac{(x - 1)(x - 2)(x - 3)}{(x - 1)(x - 2)} > -2$$$$Simplificando para x \\neq 1 y x \\neq 2:$$$$x - 3 > -2 \\implies x > 1$$$$Debemos excluir las restricciones del denominador original:$$$$Solución: (1, 2) \\cup (2, \\infty)$$"
         },
         {
           "id": "challenge_1775081419601",
@@ -558,15 +568,40 @@
           "category": "Inecuaciones Racionales",
           "moduleName": "Matemática I",
           "questionLatex": "\\frac{2x^3 - x + 1}{x^3 + 2x^2 + x - 4} \\geq 0",
-          "explanationLatex": "\\begin{aligned}\n\\text{1. Raíces del Numerador: } & x = -1 \\\\\n\\text{2. Raíces del Denominador: } & x = 1 \\text{ (Restricción)} \\\\\n\\text{3. Inecuación simplificada: } & \\frac{x + 1}{x - 1} \\geq 0 \\\\\n\\text{4. Análisis de signos: } & \\\\\nx \\in (-\\infty, -1] & \\implies \\text{Positivo (+)} \\\\\nx \\in (-1, 1) & \\implies \\text{Negativo (-)} \\\\\nx \\in (1, \\infty) & \\implies \\text{Positivo (+)} \\\\\n\\text{Solución Final: } & (-\\infty, -1] \\cup (1, \\infty)\n\\end{aligned}"
+          "explanationLatex": "\\begin{aligned}\n1. Raíces del Numerador: & x = -1 \\\\\n2. Raíces del Denominador: & x = 1 (Restricción) \\\\\n3. Inecuación simplificada: & \\frac{x + 1}{x - 1} \\geq 0 \\\\\n4. Análisis de signos: & \\\\\nx \\in (-\\infty, -1] & \\implies Positivo (+) \\\\\nx \\in (-1, 1) & \\implies Negativo (-) \\\\\nx \\in (1, \\infty) & \\implies Positivo (+) \\\\\nSolución Final: & (-\\infty, -1] \\cup (1, \\infty)\n\\end{aligned}"
         }
       ],
       "isCompleted": false,
       "isLocked": true
     },
     {
-      "id": "lesson_1775083864823",
-      "title": "Resolución de Desigualdades",
+      "id": "math1_irrational_theory",
+      "title": "Teoría: Inecuaciones Irracionales",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Inecuaciones con Raíces (Irracionales)",
+          "subtitle": "Matemática I • Inecuaciones",
+          "content": "Las inecuaciones irracionales son aquellas donde la incógnita se encuentra dentro de una raíz. El paso más crítico al resolverlas no es despejar, sino determinar el **Dominio** (o Universo). Recuerda que, en los números reales, no existen las raíces de índice par (como las raíces cuadradas o cuartas) de números negativos.",
+          "proTip": "Antes de elevar al cuadrado para eliminar la raíz, SIEMPRE calcula el dominio. La solución final será la intersección entre tu respuesta despejada y el dominio original.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Pasos para resolver inecuaciones irracionales de índice par:\n1. **Restricción del Dominio:** Todo lo que esté dentro de una raíz par debe ser mayor o igual a cero (ej. $\\sqrt{A} \\implies A \\geq 0$).\n2. **Aislar la raíz:** Deja la raíz sola en un lado de la desigualdad.\n3. **Elevar al cuadrado:** Eleva ambos miembros a la potencia de la raíz para eliminarla (solo si tienes certeza de los signos).\n4. **Resolver la nueva inecuación:** Resuelve la inecuación lineal o cuadrática resultante.\n5. **Intersecar:** Tu solución final es la intersección entre el Dominio (Paso 1) y la solución del Paso 4."
+            },
+            {
+              "type": "example",
+              "content": "\\begin{aligned}\n\\text{Resolver: } & \\sqrt{x - 3} < 4 \\\\\n\\text{1. Dominio: } & x - 3 \\geq 0 \\implies x \\geq 3 \\\\\n\\text{2. Elevar al cuadrado: } & (\\sqrt{x - 3})^2 < 4^2 \\\\\n& x - 3 < 16 \\\\\n& x < 19 \\\\\n\\text{3. Intersecar: } & x \\geq 3 \\text{ y } x < 19 \\\\\n\\text{Solución Final: } & [3, 19)\n\\end{aligned}"
+            }
+          ]
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": false
+    },
+    {
+      "id": "math1_ineq_irrational_p1",
+      "title": "Práctica: Inecuaciones Irracionales",
       "type": "practice",
       "isCompleted": false,
       "isLocked": false,
@@ -585,7 +620,7 @@
           "category": "Inecuaciones irracionales",
           "moduleName": "Matemática I",
           "questionLatex": "\\sqrt{\\frac{2x + 1}{x}} < 1",
-          "explanationLatex": "$$\\begin{aligned}\n\\text{1. Dominio: } & \\frac{2x + 1}{x} \\geq 0 \\implies x \\in (-\\infty, -\\frac{1}{2}] \\cup (0, \\infty) \\\\\n\\text{2. Resolver: } & \\left( \\sqrt{\\frac{2x + 1}{x}} \\right)^2 < 1^2 \\\\\n& \\frac{2x + 1}{x} < 1 \\implies \\frac{2x + 1}{x} - 1 < 0 \\\\\n& \\frac{2x + 1 - x}{x} < 0 \\implies \\frac{x + 1}{x} < 0 \\\\\n\\text{Solución de la inecuación: } & (-1, 0) \\\\\n\\text{3. Intersección con Dominio: } & (-1, 0) \\cap ((-\\infty, -\\frac{1}{2}] \\cup (0, \\infty)) \\\\\n\\text{Solución Final: } & [-\\frac{1}{2}, 0)\n\\end{aligned}$$"
+          "explanationLatex": "$$\\begin{aligned}\n1. Dominio: & \\frac{2x + 1}{x} \\geq 0 \\implies x \\in (-\\infty, -\\frac{1}{2}] \\cup (0, \\infty) \\\\\n2. Resolver: & \\left( \\sqrt{\\frac{2x + 1}{x}} \\right)^2 < 1^2 \\\\\n& \\frac{2x + 1}{x} < 1 \\implies \\frac{2x + 1}{x} - 1 < 0 \\\\\n& \\frac{2x + 1 - x}{x} < 0 \\implies \\frac{x + 1}{x} < 0 \\\\\nSolución de la inecuación: & (-1, 0) \\\\\n3. Intersección con Dominio: & (-1, 0) \\cap ((-\\infty, -\\frac{1}{2}] \\cup (0, \\infty)) \\\\\nSolución Final: & [-\\frac{1}{2}, 0)\n\\end{aligned}$$"
         },
         {
           "id": "challenge_1775084022616",
@@ -600,7 +635,7 @@
           "category": "Inecuaciones irracionales",
           "moduleName": "Matemática I",
           "questionLatex": "\\sqrt{4x^2 - 9x + 2} < 2x + 1",
-          "explanationLatex": "$$\\begin{aligned}\n\\text{1. Dominio: } & 4x^2 - 9x + 2 \\geq 0 \\implies (4x - 1)(x - 2) \\geq 0 \\\\\n\\text{Intervalo Dominio: } & (-\\infty, \\frac{1}{4}] \\cup [2, \\infty) \\\\\n\\text{2. Elevando al cuadrado: } & 4x^2 - 9x + 2 < (2x + 1)^2 \\\\\n& 4x^2 - 9x + 2 < 4x^2 + 4x + 1 \\\\\n& -9x - 4x < 1 - 2 \\implies -13x < -1 \\\\\n\\text{Inecuación: } & x > \\frac{1}{13} \\\\\n\\text{3. Solución Final: } & (x > \\frac{1}{13}) \\cap \\text{Dominio} \\\\\n\\text{Resultado: } & [\\frac{1}{13}, \\frac{1}{4}] \\cup [2, \\infty)\n\\end{aligned}$$"
+          "explanationLatex": "$$\\begin{aligned}\n1. Dominio: & 4x^2 - 9x + 2 \\geq 0 \\implies (4x - 1)(x - 2) \\geq 0 \\\\\nIntervalo Dominio: & (-\\infty, \\frac{1}{4}] \\cup [2, \\infty) \\\\\n2. Elevando al cuadrado: & 4x^2 - 9x + 2 < (2x + 1)^2 \\\\\n& 4x^2 - 9x + 2 < 4x^2 + 4x + 1 \\\\\n& -9x - 4x < 1 - 2 \\implies -13x < -1 \\\\\nInecuación: & x > \\frac{1}{13} \\\\\n3. Solución Final: & (x > \\frac{1}{13}) \\cap Dominio \\\\\nResultado: & [\\frac{1}{13}, \\frac{1}{4}] \\cup [2, \\infty)\n\\end{aligned}$$"
         },
         {
           "id": "challenge_1775084402181",
@@ -615,7 +650,7 @@
           "category": "Inecuaciones irracionales",
           "moduleName": "Matemática I",
           "questionLatex": "\\sqrt[4]{x} < \\sqrt{3x - 44}",
-          "explanationLatex": "$$\\begin{aligned}\n\\text{1. Dominio: } & x \\geq 0 \\text{ y } 3x - 44 \\geq 0 \\implies x \\geq \\frac{44}{3} \\approx 14.6 \\\\\n\\text{2. Elevando a la cuarta: } & (\\sqrt[4]{x})^4 < (\\sqrt{3x - 44})^4 \\\\\n& x < (3x - 44)^2 \\\\\n& x < 9x^2 - 264x + 1936 \\\\\n& 9x^2 - 265x + 1936 > 0 \\\\\n\\text{Factorizando: } & (x - 16)(9x - 121) > 0 \\\\\n\\text{Críticos de inecuación: } & x = 16, \\; x = \\frac{121}{9} \\approx 13.4 \\\\\n\\text{Solución inecuación: } & (-\\infty, \\frac{121}{9}) \\cup (16, \\infty) \\\\\n\\text{3. Intersección con Dominio: } & (x \\geq 14.6) \\cap \\text{Solución inecuación} \\\\\n\\text{Solución Final: } & (16, \\infty)\n\\end{aligned}$$"
+          "explanationLatex": "$$\\begin{aligned}\n1. Dominio: & x \\geq 0 y 3x - 44 \\geq 0 \\implies x \\geq \\frac{44}{3} \\approx 14.6 \\\\\n2. Elevando a la cuarta: & (\\sqrt[4]{x})^4 < (\\sqrt{3x - 44})^4 \\\\\n& x < (3x - 44)^2 \\\\\n& x < 9x^2 - 264x + 1936 \\\\\n& 9x^2 - 265x + 1936 > 0 \\\\\nFactorizando: & (x - 16)(9x - 121) > 0 \\\\\nCríticos de inecuación: & x = 16, \\; x = \\frac{121}{9} \\approx 13.4 \\\\\nSolución inecuación: & (-\\infty, \\frac{121}{9}) \\cup (16, \\infty) \\\\\n3. Intersección con Dominio: & (x \\geq 14.6) \\cap Solución inecuación \\\\\nSolución Final: & (16, \\infty)\n\\end{aligned}$$"
         }
       ]
     },
