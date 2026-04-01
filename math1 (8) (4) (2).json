@@ -426,40 +426,10 @@
     },
     {
       "id": "math1_ineq_p2",
-      "title": "Práctica 2: Resolución de Desigualdades",
+      "title": "Resolución de Desigualdades",
       "type": "practice",
       "theorySections": [],
       "challenges": [
-        {
-          "id": "math1_ineq_05",
-          "questionText": "Resuelve la inecuación:",
-          "questionLatex": "x^2-5x+6>0",
-          "options": [
-            "(-\\infty,2)\\cup(3,\\infty)",
-            "(2,3)",
-            "[2,3]",
-            "(-\\infty,3)"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Factorizamos x^2-5x+6=(x-2)(x-3). El producto es positivo fuera de las raíces, como la desigualdad es estricta, los extremos no se incluyen.",
-          "category": "Inecuaciones Cuadráticas",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_ineq_06",
-          "questionText": "Resuelve la inecuación:",
-          "questionLatex": "x^2+4x+4\\leq 0",
-          "options": [
-            "x=-2",
-            "x\\in[-2,2]",
-            "x\\in\\emptyset",
-            "x\\in(-\\infty,-2]"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "x^2+4x+4=(x+2)^2. Un cuadrado solo puede ser \\leq 0 si vale 0, por lo tanto x=-2.",
-          "category": "Inecuaciones Cuadráticas",
-          "moduleName": "Matemática I"
-        },
         {
           "id": "math1_ineq_07",
           "questionText": "Resuelve la inecuación:",
@@ -476,19 +446,19 @@
           "moduleName": "Matemática I"
         },
         {
-          "id": "math1_ineq_08",
-          "questionText": "Resuelva la inecuación cuadrática:",
-          "questionLatex": "x^2 + x + 1 > 0",
+          "id": "challenge_1775071371042",
+          "questionText": "Resuelve la inecuación:",
           "options": [
-            "\\mathbb{R}",
-            "\\emptyset",
-            "(-\\infty, -1) \\cup (1, \\infty)",
-            "x > -1"
+            "(-\\infty, 3) \\cup (4, \\infty)",
+            "(-\\infty, 4)",
+            "(3, 4)",
+            "(4, \\infty)"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "El discriminante es $\\Delta = 1^2 - 4(1)(1) = -3 < 0$. Como el coeficiente de $x^2$ es positivo (1 > 0), la parábola siempre está por encima del eje x. La solución es todo $\\mathbb{R}$.",
-          "category": "Inecuaciones Cuadráticas",
-          "moduleName": "Matemática I"
+          "category": "Inecuaciones Racionales",
+          "moduleName": "Matemática I",
+          "questionLatex": "\\frac{1}{x - 3} < 1",
+          "explanationLatex": "Primero, igualamos a cero pasando el 1 a la izquierda: $$\\begin{aligned}\n\\frac{1}{x - 3} - 1 & < 0 \\\\\n\\frac{1 - (x - 3)}{x - 3} & < 0 \\\\\n\\frac{4 - x}{x - 3} & < 0\n\\end{aligned}$$Puntos críticos: $x = 4$ y $x = 3$. Al probar intervalos, la fracción es negativa fuera del rango $[3, 4]$."
         }
       ],
       "isCompleted": false,
