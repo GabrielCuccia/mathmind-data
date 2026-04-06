@@ -13,7 +13,7 @@
         {
           "title": "Introduccion",
           "subtitle": "Matemática I • Inecuaciones",
-          "content": "En toda inecuación trabajaremos con una idea constante: encontrar los valores de x que hacen\nverdadera una afirmación. Esos valores pueden formar un intervalo, una unión de intervalos, un\nconjunto finito o incluso el conjunto vacío. Por eso aprenderás a leer soluciones en notación de\nintervalos, en recta numérica y también en lenguaje algebraico.\n\nSi dominas tres ideas, ya tienes gran parte del camino resuelto:\n  despejar con cuidado,\n  analizar signos,\n  e interpretar intervalos.\n",
+          "content": "En toda inecuación trabajaremos con una idea constante: encontrar los valores de x que hacen\nverdadera una afirmación. Esos valores pueden formar un intervalo, una unión de intervalos, un\nconjunto finito o incluso el conjunto vacío. Por eso aprenderás a leer soluciones en notación de\nintervalos, en recta numérica y también en lenguaje algebraico.\n\nSi dominas tres ideas, ya tienes gran parte del camino resuelto:\n  Despejar con cuidado,\n  Analizar signos,\n  Interpretar intervalos.\n",
           "formulaLatex": "",
           "proTip": "Al terminar de despejar, siempre verifica si el símbolo original era estricto ($<, >$) o no estricto ($\\leq, \\geq$). Esto determinará si en tu solución final usas paréntesis o corchetes.",
           "blocks": []
@@ -32,7 +32,7 @@
         {
           "title": "La recta real y el orden",
           "subtitle": "Matemática I • Inecuaciones",
-          "content": "Una desigualdad compara dos cantidades. Si escribimos a < b, estamos diciendo que a está a la\nizquierda de b en la recta real. Este criterio geométrico es muy importante, porque nos ayuda a\ninterpretar visualmente soluciones y a detectar errores de signo.\nLa propiedad central es que las desigualdades se comportan casi como ecuaciones: podemos sumar o restar el mismo número en ambos lados sin cambiar el conjunto solución. Sin embargo, si\nmultiplicamos o dividimos por un número negativo, el orden se invierte.\n",
+          "content": "Una desigualdad compara dos cantidades. Si escribimos a < b, estamos diciendo que a está a la\nizquierda de b en la recta real. Este criterio geométrico es muy importante, porque nos ayuda a\ninterpretar visualmente soluciones y a detectar errores de signo.\n\nLa propiedad central es que las desigualdades se comportan casi como ecuaciones: podemos sumar o restar el mismo número en ambos lados sin cambiar el conjunto solución. Sin embargo, si\nmultiplicamos o dividimos por un número negativo, el orden se invierte.\n",
           "blocks": [
             {
               "type": "example",
