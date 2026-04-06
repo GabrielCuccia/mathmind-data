@@ -36,7 +36,7 @@
           "blocks": [
             {
               "type": "example",
-              "content": "Resolver −2x > 6. \\\\[2ex]\n−2x > 6 ⇒ x < −3.\\\\[2ex]\n\nAl\\ dividir\\ entre −2,\\\\[2ex] el\\ signo\\ cambia\\ de\\ sentido.\\\\[2ex] La\\ solución\\ es\\\n(−∞, −3).\n"
+              "content": "Resolver −2x > 6. \\\\[2ex]\n−2x > 6 ⇒ x < −3.\\\\[2ex]\n\nAl\\ dividir\\ entre −2, el\\ signo\\ cambia\\ de\\ sentido.\\\\[2ex] La\\ solución\\ es\\\n(−∞, −3).\n"
             }
           ]
         },
@@ -60,6 +60,10 @@
             {
               "type": "formula",
               "content": "a < b\\ y\\ c < 0 ⇒ ac > bc"
+            },
+            {
+              "type": "text",
+              "content": "Estas propiedades son la base de todo el modulo. No importa si el ejercicio parece largo: al final siempre\nse reduce a una combinación de estas reglas."
             }
           ],
           "proTip": "No trabajes nunca “cambiando cosas” sin justificar. Si pasas un término al otro lado, piensa\nen la operación que estás haciendo. Eso te ayuda a no perder signos.",
