@@ -43,9 +43,27 @@
         {
           "title": "Propiedades básicas de las desigualdades",
           "subtitle": "Matemática I • Inecuaciones",
-          "content": "Sean a, b, c ∈ R.\na < b ⇒ a + c < b + c,\na < b ⇒ a − c < b − c,\na < b y c > 0 ⇒ ac < bc,\na < b y c < 0 ⇒ ac > bc.\nEstas propiedades son la base de toda la guía. No importa si el ejercicio parece largo: al final siempre\nse reduce a una combinación de estas reglas.\n",
-          "blocks": [],
-          "proTip": "No trabajes nunca “cambiando cosas” sin justificar. Si pasas un término al otro lado, piensa\nen la operación que estás haciendo. Eso te ayuda a no perder signos."
+          "content": "Sean a, b, c ∈ R.\n\n",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "a < b ⇒ a + c < b + c"
+            },
+            {
+              "type": "formula",
+              "content": "a < b ⇒ a − c < b − c"
+            },
+            {
+              "type": "formula",
+              "content": "a < b\\ y\\ c > 0 ⇒ ac < bc"
+            },
+            {
+              "type": "formula",
+              "content": "a < b\\ y\\ c < 0 ⇒ ac > bc"
+            }
+          ],
+          "proTip": "No trabajes nunca “cambiando cosas” sin justificar. Si pasas un término al otro lado, piensa\nen la operación que estás haciendo. Eso te ayuda a no perder signos.",
+          "formulaLatex": "\n"
         },
         {
           "title": "Notación de intervalos",
@@ -67,11 +85,18 @@
     },
     {
       "id": "lesson_1775500172270",
-      "title": "Nueva Lección",
-      "type": "practice",
+      "title": "Desigualdades lineales",
+      "type": "theory",
       "isCompleted": false,
       "isLocked": false,
-      "theorySections": [],
+      "theorySections": [
+        {
+          "title": "Idea central",
+          "subtitle": "Desigualdades lineales",
+          "content": "Una desigualdad lineal es una desigualdad donde la incógnita aparece con exponente uno. Su forma\ngeneral puede ser\nax + b < c, ax + b ≥ c,\ncon a ̸= 0. Este es el caso más simple, pero también el más importante, porque aquí se aprende el\nmanejo correcto de signos.\n",
+          "blocks": []
+        }
+      ],
       "challenges": []
     },
     {
