@@ -241,16 +241,16 @@
           "id": "challenge_1775077906463",
           "questionText": "Resuelve la inecuación:",
           "options": [
-            "(-\\infty, -4) \\cup (2, \\infty)",
-            "[-4, 2]",
-            "(-4, 2)",
-            "(-2, 4)"
+            "[-2, \\infty)",
+            "(-\\infty, -2]",
+            "[2, \\infty)",
+            "(-\\infty, 2]"
           ],
-          "correctAnswerIndex": 2,
+          "correctAnswerIndex": 0,
           "category": "Inecuaciones Racionales",
           "moduleName": "Matemática I",
-          "questionLatex": "x^2 + 2x - 8 < 0",
-          "explanationLatex": "Primero factorizamos el trinomio buscando dos números que multiplicados den $-8$ y sumados $+2$:$$(x + 4)(x - 2) < 0$$Puntos críticos: $x = -4$ y $x = 2$.Al evaluar los signos en la recta real:Para $x < -4$: $(-)(-) = (+)$Entre $-4$ y $2$: $(+)(-) = (-)$Para $x > 2$: $(+)(+) = (+)$Buscamos los negativos ($<0$)"
+          "questionLatex": "5 - 3x \\leq 11",
+          "explanationLatex": "\\begin{aligned}\n5 - 3x & \\leq 11 \\\\\n-3x & \\leq 11 - 5 \\\\\n-3x & \\leq 6\n\\end{aligned}\\text{¡Atención aquí! Al pasar el } -3 \\text{ dividiendo, la desigualdad se invierte:}\\begin{aligned}\nx & \\geq \\frac{6}{-3} \\\\\nx & \\geq -2\n\\end{aligned}\\text{Solución: } [-2, \\infty)"
         }
       ],
       "isCompleted": false,
