@@ -94,7 +94,13 @@
           "title": "Idea central",
           "subtitle": "Desigualdades lineales",
           "content": "Una desigualdad lineal es una desigualdad donde la incógnita aparece con exponente uno. Su forma\ngeneral puede ser\nax + b < c, ax + b ≥ c,\ncon a ̸= 0. Este es el caso más simple, pero también el más importante, porque aquí se aprende el\nmanejo correcto de signos.\n",
-          "blocks": []
+          "blocks": [
+            {
+              "type": "example",
+              "content": "Resolver\\ 3x − 7 ≤ 11. \\\\[2ex]\nPrimero\\ sumamos\\ 7\\ en\\ ambos\\ lados: \\\\[2ex]\n3x ≤ 18. \\\\[2ex]\nLuego\\ dividimos\\ entre\\ 3: \\\\[2ex]\nx ≤ 6. \\\\[2ex]\nLa\\ solución\\ es\\\n(−∞, 6]"
+            }
+          ],
+          "proTip": "Antes de resolver, elimina paréntesis y fracciones si puedes. Entre menos ruido tenga la\ndesigualdad, más fácil será detectar errores."
         }
       ],
       "challenges": []
