@@ -53,6 +53,12 @@
           "content": "La notación de intervalos resume de forma compacta una solución. Por ejemplo:\n−1 ≤ x < 4 ⇐⇒ x ∈ [−1, 4).\nSi la desigualdad es estricta, el extremo no se incluye. Si es no estricta, sí se incluye.\nEn resumen:\n\\begin{array}{lll}\n\\hline\n\\text{Forma algebraica} & \\text{Tipo de extremo} & \\text{Notación} \\\\\n\\hline\nx < a \\text{ o } x > a & \\text{abierto} & \\text{paréntesis} \\\\\nx \\leq a \\text{ o } x \\geq a & \\text{cerrado} & \\text{corchete} \\\\\n\\hline\n\\end{array}",
           "blocks": [],
           "formulaLatex": ""
+        },
+        {
+          "title": "Método general de trabajo",
+          "subtitle": "",
+          "content": "Para casi cualquier inecuación, conviene seguir esta secuencia:\n  Simplificar la expresión.\n  Llevar todo a un solo lado si es posible.\n  Factorizar o unificar en una sola fracción.\n  Hallar puntos críticos.\n  Analizar el signo por intervalos.\n  Escribir la solución en intervalos.\nMás adelante verás que este método aparece una y otra vez.",
+          "blocks": []
         }
       ],
       "challenges": [],
