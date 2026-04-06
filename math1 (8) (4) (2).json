@@ -224,18 +224,18 @@
         },
         {
           "id": "challenge_1775077004414",
-          "questionText": "Halla el conjunto solución de la siguiente inecuación:",
+          "questionText": "Resuelve:",
           "options": [
-            "\\{2\\}",
-            "(-\\infty, 2]",
-            "\\emptyset",
-            "(-\\infty, \\infty)"
+            "(-\\infty, 12]",
+            "(12, \\infty)",
+            "(-\\infty, -4)",
+            "(-\\infty, 12)"
           ],
-          "correctAnswerIndex": 0,
+          "correctAnswerIndex": 3,
           "category": "Inecuaciones Racionales",
           "moduleName": "Matemática I",
-          "questionLatex": "x^2 - 4x + 4 \\leq 0",
-          "explanationLatex": "Factorizamos el trinomio cuadrado perfecto:$$(x - 2)^2 \\leq 0$$Sabemos que cualquier número real elevado al cuadrado es siempre $\\geq 0$. La única forma de que sea $\\leq 0$ es que la expresión sea exactamente igual a cero.$x - 2 = 0 \\implies x = 2$"
+          "questionLatex": "\\frac{x}{4} - 2 < 1",
+          "explanationLatex": "\\text{Primero pasamos el término independiente y luego el denominador:}\\begin{aligned}\n\\frac{x}{4} - 2 & < 1 \\\\\n\\frac{x}{4} & < 1 + 2 \\\\\n\\frac{x}{4} & < 3 \\\\\nx & < 3 \\cdot 4 \\\\\nx & < 12\n\\end{aligned}\\text{Al ser estrictamente \"menor que\" (} < \\text{), usamos paréntesis. Solución: } (-\\infty, 12)"
         },
         {
           "id": "challenge_1775077906463",
