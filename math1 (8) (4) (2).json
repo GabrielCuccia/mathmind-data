@@ -186,16 +186,16 @@
           "id": "challenge_1775070171282",
           "questionText": "Halla el intervalo solución para la inecuación:",
           "options": [
-            "(-\\infty, 14)",
-            "[14, \\infty)",
-            "(-\\infty, 10]",
+            "(-\\infty, 3)",
+            "(-\\infty, 3]",
+            "[3, \\infty)",
             "(-\\infty, 14]"
           ],
-          "correctAnswerIndex": 3,
+          "correctAnswerIndex": 1,
           "category": "Inecuaciones Lineales",
           "moduleName": "Matemática I",
-          "questionLatex": "\\frac{x - 2}{3} \\leq 4",
-          "explanationLatex": "\\begin{aligned}\n\\frac{x - 2}{3} & \\leq 4 \\\\\nx - 2 & \\leq 12 \\\\\nx & \\leq 12 + 2 \\\\\nx & \\leq 14 \\\\\nSolución: & (-\\infty, 14]\n\\end{aligned}"
+          "questionLatex": "7x \\leq 21",
+          "explanationLatex": "\\begin{aligned}\n7x & \\leq 21 \\\\\nx & \\leq \\frac{21}{7} \\\\\nx & \\leq 3\n\\end{aligned}\\text{El símbolo \"menor o igual que\" indica que el 3 está incluido: } (-\\infty, 3]"
         },
         {
           "id": "challenge_1775070325860",
