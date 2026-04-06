@@ -180,7 +180,7 @@
           "category": "Inecuaciones Lineales",
           "moduleName": "Matemática I",
           "questionLatex": "-x < 4",
-          "explanationLatex": "\\text{Para despejar la } x \\text{, debemos multiplicar (o dividir) ambos lados por } -1.$$$$\\text{¡Ojo! Al multiplicar por un número negativo, la dirección de la desigualdad se invierte:}\n$$\\begin{aligned}\n(-1)(-x) & > (-1)(4) \\\\\nx & > -4\n\\end{aligned}$$$$\\text{Solución: } (-4, \\infty)$$"
+          "explanationLatex": "\\text{Para despejar la } x \\text{, debemos multiplicar (o dividir) ambos lados por } -1.\\text{¡Ojo! Al multiplicar por un número negativo, la dirección de la desigualdad se invierte:}\n\\begin{aligned}\n(-1)(-x) & > (-1)(4) \\\\\nx & > -4\n\\end{aligned}\\text{Solución: } (-4, \\infty)"
         },
         {
           "id": "challenge_1775070171282",
@@ -196,93 +196,10 @@
           "moduleName": "Matemática I",
           "questionLatex": "7x \\leq 21",
           "explanationLatex": "\\begin{aligned}\n7x & \\leq 21 \\\\\nx & \\leq \\frac{21}{7} \\\\\nx & \\leq 3\n\\end{aligned}\\text{El símbolo \"menor o igual que\" indica que el 3 está incluido: } (-\\infty, 3]"
-        },
-        {
-          "id": "challenge_1775070325860",
-          "questionText": "Determine el intervalo de $x$ que cumple con la siguiente desigualdad:",
-          "options": [
-            "(-\\infty, \\frac{1}{2})",
-            "(-\\infty, \\frac{1}{10})",
-            "(\\frac{1}{2}, \\infty)",
-            "(-\\infty, \\frac{5}{11})"
-          ],
-          "correctAnswerIndex": 0,
-          "category": "Inecuaciones Lineales",
-          "moduleName": "Matemática I",
-          "questionLatex": "\\frac{2}{3}(x - 1) + \\frac{1}{4}(x + 1) < \\frac{1}{12}x",
-          "explanationLatex": "\\begin{aligned}\n12 \\cdot \\left[ \\frac{2}{3}(x - 1) + \\frac{1}{4}(x + 1) \\right] & < 12 \\cdot \\left[ \\frac{1}{12}x \\right] \\\\\n8(x - 1) + 3(x + 1) & < x \\\\\n8x - 8 + 3x + 3 & < x \\\\\n11x - 5 & < x \\\\\n10x & < 5 \\\\\nx & < \\frac{5}{10} \\\\\nx & < \\frac{1}{2} \\\\\nSolución: & \\left(-\\infty, \\frac{1}{2}\\right)\n\\end{aligned}"
         }
       ],
       "isCompleted": false,
       "isLocked": true
-    },
-    {
-      "id": "math1_ineq_theory_2",
-      "title": "Teoría: Inecuaciones Racionales y Sistemas",
-      "type": "theory",
-      "theorySections": [
-        {
-          "title": "Desigualdades racionales",
-          "subtitle": "Matemática I • Inecuaciones",
-          "content": "Una desigualdad racional es aquella que tiene la incógnita en el denominador de una fracción. A diferencia de las lineales, nunca debemos \"pasar multiplicando\" el denominador al otro lado, ya que no conocemos su signo y podríamos invertir la desigualdad erróneamente.\n\nEl método correcto consiste en llevar todos los términos a un solo lado para obtener el cero a la derecha, simplificar en una sola fracción y analizar los signos del numerador y del denominador por separado.",
-          "formulaLatex": "\\frac{P(x)}{Q(x)} \\geq 0, \\quad Q(x) \\neq 0",
-          "proTip": "¡Regla de oro! Los valores que hacen cero al denominador siempre llevan paréntesis en la solución final, incluso si la desigualdad tiene un signo $\\leq$ o $\\geq$. Una división por cero es una operación indefinida.",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "Para resolver estas inecuaciones seguimos una ruta lógica:\nIgualar a cero: Pasar todo a la izquierda para dejar el $0$ a la derecha.\nSimplificar: Sumar o restar fracciones para tener una sola expresión.\nPuntos Críticos: Hallar las raíces tanto del numerador como del denominador.\nAnálisis de Signos: Evaluar los intervalos resultantes en la recta numérica."
-            },
-            {
-              "type": "note",
-              "content": "Recuerda que el signo final de la fracción $(\\pm)$ sigue la misma regla que la multiplicación:$(+) / (+) = (+)$$(+) / (-) = (-)$$(-) / (-) = (+)$"
-            },
-            {
-              "type": "example",
-              "content": "\\begin{aligned}\n\\frac{1}{x} & < 2 \\\\\n\\frac{1}{x} - 2 & < 0 \\\\\n\\frac{1 - 2x}{x} & < 0 \\\\\n\\text{Críticos: } & x = \\frac{1}{2}, \\quad x = 0 \\\\\n\\text{Solución: } & (-\\infty, 0) \\cup \\left(\\frac{1}{2}, \\infty\\right)\n\\end{aligned}"
-            },
-            {
-              "type": "formula",
-              "content": "\\text{Puntos críticos: } P(x)=0\\ \\text{o}\\ Q(x)=0"
-            },
-            {
-              "type": "formula",
-              "content": "\\text{Analiza el signo en cada intervalo}"
-            }
-          ]
-        },
-        {
-          "title": "Método de intervalos y sistemas de desigualdades",
-          "subtitle": "Matemática I • Inecuaciones",
-          "content": "El Método de Intervalos es una técnica gráfica que nos permite determinar el signo de una expresión factorizada en toda la recta real. Consiste en ubicar los puntos críticos y probar valores en cada \"segmento\" resultante.\n\nPor otro lado, un Sistema de Desigualdades es un conjunto de dos o más inecuaciones que deben cumplirse simultáneamente. Resolver un sistema significa hallar el conjunto de números que satisfacen a todas las desigualdades al mismo tiempo.",
-          "formulaLatex": "\\begin{cases} f(x) > 0 \\\\ g(x) \\leq 0 \\end{cases} \\implies \\text{Solución: } S_1 \\cap S_2",
-          "proTip": "En los sistemas, la palabra clave es INTERSECCIÓN. Si resuelves cada inecuación por separado, la solución final es solo la zona de la recta donde las gráficas de todas las soluciones se \"enciman\" o solapan.",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "Pasos para el Método de Intervalos:\nFactorizar completamente la expresión.\nUbicar los puntos críticos en la recta real (ordenados de menor a mayor).\nElegir un valor de prueba en cada intervalo y determinar el signo resultante.\nSeleccionar los intervalos que coincidan con el símbolo original ($>0$ para positivos, $<0$ para negativos)."
-            },
-            {
-              "type": "example",
-              "content": "\\text{Para: } (x-1)(x+3) > 0\\begin{array}{c|c|c|c}\n\\text{Intervalo} & (-\\infty, -3) & (-3, 1) & (1, \\infty) \\\\\n\\hline\n\\text{Signo} & (+) & (-) & (+) \\\\\n\\end{array}\\text{Solución: } (-\\infty, -3) \\cup (1, \\infty)"
-            },
-            {
-              "type": "formula",
-              "content": "(-\\infty,a)\\cup(a,b]\\cup(b,\\infty)"
-            },
-            {
-              "type": "note",
-              "content": "Si un sistema de desigualdades no tiene ningún punto en común entre sus soluciones parciales, decimos que el sistema no tiene solución ($S = \\emptyset$)."
-            },
-            {
-              "type": "formula",
-              "content": "\\text{Solución final}=\\bigcap_i S_i"
-            }
-          ]
-        }
-      ],
-      "challenges": [],
-      "isCompleted": false,
-      "isLocked": false
     },
     {
       "id": "math1_ineq_p2",
@@ -423,6 +340,74 @@
       ],
       "isCompleted": false,
       "isLocked": true
+    },
+    {
+      "id": "math1_ineq_theory_2",
+      "title": "Teoría: Inecuaciones Racionales y Sistemas",
+      "type": "theory",
+      "theorySections": [
+        {
+          "title": "Desigualdades racionales",
+          "subtitle": "Matemática I • Inecuaciones",
+          "content": "Una desigualdad racional es aquella que tiene la incógnita en el denominador de una fracción. A diferencia de las lineales, nunca debemos \"pasar multiplicando\" el denominador al otro lado, ya que no conocemos su signo y podríamos invertir la desigualdad erróneamente.\n\nEl método correcto consiste en llevar todos los términos a un solo lado para obtener el cero a la derecha, simplificar en una sola fracción y analizar los signos del numerador y del denominador por separado.",
+          "formulaLatex": "\\frac{P(x)}{Q(x)} \\geq 0, \\quad Q(x) \\neq 0",
+          "proTip": "¡Regla de oro! Los valores que hacen cero al denominador siempre llevan paréntesis en la solución final, incluso si la desigualdad tiene un signo $\\leq$ o $\\geq$. Una división por cero es una operación indefinida.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Para resolver estas inecuaciones seguimos una ruta lógica:\nIgualar a cero: Pasar todo a la izquierda para dejar el $0$ a la derecha.\nSimplificar: Sumar o restar fracciones para tener una sola expresión.\nPuntos Críticos: Hallar las raíces tanto del numerador como del denominador.\nAnálisis de Signos: Evaluar los intervalos resultantes en la recta numérica."
+            },
+            {
+              "type": "note",
+              "content": "Recuerda que el signo final de la fracción $(\\pm)$ sigue la misma regla que la multiplicación:$(+) / (+) = (+)$$(+) / (-) = (-)$$(-) / (-) = (+)$"
+            },
+            {
+              "type": "example",
+              "content": "\\begin{aligned}\n\\frac{1}{x} & < 2 \\\\\n\\frac{1}{x} - 2 & < 0 \\\\\n\\frac{1 - 2x}{x} & < 0 \\\\\n\\text{Críticos: } & x = \\frac{1}{2}, \\quad x = 0 \\\\\n\\text{Solución: } & (-\\infty, 0) \\cup \\left(\\frac{1}{2}, \\infty\\right)\n\\end{aligned}"
+            },
+            {
+              "type": "formula",
+              "content": "\\text{Puntos críticos: } P(x)=0\\ \\text{o}\\ Q(x)=0"
+            },
+            {
+              "type": "formula",
+              "content": "\\text{Analiza el signo en cada intervalo}"
+            }
+          ]
+        },
+        {
+          "title": "Método de intervalos y sistemas de desigualdades",
+          "subtitle": "Matemática I • Inecuaciones",
+          "content": "El Método de Intervalos es una técnica gráfica que nos permite determinar el signo de una expresión factorizada en toda la recta real. Consiste en ubicar los puntos críticos y probar valores en cada \"segmento\" resultante.\n\nPor otro lado, un Sistema de Desigualdades es un conjunto de dos o más inecuaciones que deben cumplirse simultáneamente. Resolver un sistema significa hallar el conjunto de números que satisfacen a todas las desigualdades al mismo tiempo.",
+          "formulaLatex": "\\begin{cases} f(x) > 0 \\\\ g(x) \\leq 0 \\end{cases} \\implies \\text{Solución: } S_1 \\cap S_2",
+          "proTip": "En los sistemas, la palabra clave es INTERSECCIÓN. Si resuelves cada inecuación por separado, la solución final es solo la zona de la recta donde las gráficas de todas las soluciones se \"enciman\" o solapan.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Pasos para el Método de Intervalos:\nFactorizar completamente la expresión.\nUbicar los puntos críticos en la recta real (ordenados de menor a mayor).\nElegir un valor de prueba en cada intervalo y determinar el signo resultante.\nSeleccionar los intervalos que coincidan con el símbolo original ($>0$ para positivos, $<0$ para negativos)."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Para: } (x-1)(x+3) > 0\\begin{array}{c|c|c|c}\n\\text{Intervalo} & (-\\infty, -3) & (-3, 1) & (1, \\infty) \\\\\n\\hline\n\\text{Signo} & (+) & (-) & (+) \\\\\n\\end{array}\\text{Solución: } (-\\infty, -3) \\cup (1, \\infty)"
+            },
+            {
+              "type": "formula",
+              "content": "(-\\infty,a)\\cup(a,b]\\cup(b,\\infty)"
+            },
+            {
+              "type": "note",
+              "content": "Si un sistema de desigualdades no tiene ningún punto en común entre sus soluciones parciales, decimos que el sistema no tiene solución ($S = \\emptyset$)."
+            },
+            {
+              "type": "formula",
+              "content": "\\text{Solución final}=\\bigcap_i S_i"
+            }
+          ]
+        }
+      ],
+      "challenges": [],
+      "isCompleted": false,
+      "isLocked": false
     },
     {
       "id": "math1_irrational_theory",
