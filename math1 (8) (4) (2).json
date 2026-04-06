@@ -208,34 +208,19 @@
       "theorySections": [],
       "challenges": [
         {
-          "id": "math1_ineq_07",
-          "questionText": "Resuelve la inecuación:",
-          "questionLatex": "\\frac{x+2}{x-3}\\geq 1",
-          "options": [
-            "(3,\\infty)",
-            "(-\\infty,3)",
-            "[3,\\infty)",
-            "(5,\\infty)"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Llevando todo a un lado: \\frac{x+2}{x-3}-1=\\frac{5}{x-3}\\geq 0. Como 5>0, se requiere x-3>0, es decir x>3.",
-          "category": "Inecuaciones Racionales",
-          "moduleName": "Matemática I"
-        },
-        {
           "id": "challenge_1775071371042",
           "questionText": "Resuelve la inecuación:",
           "options": [
-            "(-\\infty, 3) \\cup (4, \\infty)",
-            "(-\\infty, 4)",
-            "(3, 4)",
-            "(4, \\infty)"
+            "[6, \\infty)",
+            "(6, \\infty)",
+            "(-\\infty, 6]",
+            "[3, \\infty)"
           ],
           "correctAnswerIndex": 0,
           "category": "Inecuaciones Racionales",
           "moduleName": "Matemática I",
-          "questionLatex": "\\frac{1}{x - 3} < 1",
-          "explanationLatex": "Primero, igualamos a cero pasando el 1 a la izquierda: $$\\begin{aligned}\n\\frac{1}{x - 3} - 1 & < 0 \\\\\n\\frac{1 - (x - 3)}{x - 3} & < 0 \\\\\n\\frac{4 - x}{x - 3} & < 0\n\\end{aligned}$$Puntos críticos: $x = 4$ y $x = 3$. Al probar intervalos, la fracción es negativa fuera del rango $[3, 4]$."
+          "questionLatex": "2x - 3 \\geq 9",
+          "explanationLatex": "\\begin{aligned}\n2x - 3 & \\geq 9 \\\\\n2x & \\geq 9 + 3 \\\\\n2x & \\geq 12 \\\\\nx & \\geq \\frac{12}{2} \\\\\nx & \\geq 6\n\\end{aligned}\\text{Como incluye el \"igual\" (} \\geq \\text{), el extremo es cerrado. Solución: } [6, \\infty)"
         },
         {
           "id": "challenge_1775077004414",
