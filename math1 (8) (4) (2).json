@@ -116,6 +116,17 @@
               "content": "Resolver −4x + 1 > 9. \\\\[2ex]\n−4x > 8. \\\\[2ex]\nDividimos\\ entre\\ −4\\ e\\ invertimos\\ el\\ signo: \\\\[2ex]\nx < −2. \\\\[2ex]\nPor\\ tanto, \\\\[2ex]\n(−∞, −2)"
             }
           ]
+        },
+        {
+          "title": "Desigualdades con fracciones y decimales",
+          "subtitle": "",
+          "content": "Cuando aparecen fracciones o decimales, muchas veces conviene eliminar denominadores. Esto no\ncambia la lógica del ejercicio; solo lo vuelve más limpio.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\begin{aligned}\n&\\text{Resolver} \\\\\n&\\qquad \\qquad \\frac{x}{3} - \\frac{1}{2} \\geq \\frac{5}{6} \\\\[10pt]\n&\\text{Multiplicamos todo por 6:} \\\\\n&\\qquad \\qquad 2x - 3 \\geq 5 \\\\[10pt]\n&\\text{Luego:} \\\\\n&\\qquad \\qquad 2x \\geq 8 \\implies x \\geq 4\n\\end{aligned}."
+            }
+          ]
         }
       ],
       "challenges": []
