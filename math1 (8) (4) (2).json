@@ -125,6 +125,21 @@
             {
               "type": "example",
               "content": "\\begin{aligned}\n&\\text{Resolver} \\\\\n&\\qquad \\qquad \\frac{x}{3} - \\frac{1}{2} \\geq \\frac{5}{6} \\\\[10pt]\n&\\text{Multiplicamos todo por 6:} \\\\\n&\\qquad \\qquad 2x - 3 \\geq 5 \\\\[10pt]\n&\\text{Luego:} \\\\\n&\\qquad \\qquad 2x \\geq 8 \\implies x \\geq 4\n\\end{aligned}."
+            },
+            {
+              "type": "note",
+              "content": "Si multiplicas por un número negativo para quitar denominadores, recuerda invertir la desigualdad. Ese detalle arruina muchos parciales."
+            }
+          ]
+        },
+        {
+          "title": "Desigualdades compuestas",
+          "subtitle": "",
+          "content": "A veces se estudia una condición doble, como\n−2 < 3x + 1 ≤ 7.\nEso significa que la expresión debe cumplir ambas condiciones al mismo tiempo. Se resuelve operando en los tres miembros a la vez.\n",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "Resolver  \n−2 < 3x + 1 ≤ 7.  \\\\[2ex]\nRestamos\\ 1: \\\\[2ex]\n−3 < 3x ≤ 6.\\\\[2ex]\nDividimos\\ entre\\ 3:\\\\[2ex]\n−1 < x ≤ 2.\\\\[2ex]\nSolución:\n(−1, 2].\n"
             }
           ]
         }
