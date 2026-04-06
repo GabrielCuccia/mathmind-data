@@ -101,6 +101,17 @@
             }
           ],
           "proTip": "Antes de resolver, elimina paréntesis y fracciones si puedes. Entre menos ruido tenga la\ndesigualdad, más fácil será detectar errores."
+        },
+        {
+          "title": "Cuando aparece un número negativo",
+          "subtitle": "",
+          "content": "Este es uno de los puntos más delicados. Si en algún paso multiplicas o divides por un\nnúmero negativo, la desigualdad cambia de sentido.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "Resolver −4x + 1 > 9. \\\\[2ex]\n−4x > 8. \\\\[2ex]\nDividimos\\ entre\\ −4\\ e\\ invertimos\\ el\\ signo: \\\\[2ex]\nx < −2. \\\\[2ex]\nPor\\ tanto, \\\\[2ex]\n(−∞, −2)"
+            }
+          ]
         }
       ],
       "challenges": []
