@@ -155,15 +155,15 @@
         {
           "id": "math1_ineq_01",
           "questionText": "Resuelve la inecuación:",
-          "questionLatex": "\\frac{7}{2}x-3\\geq \\frac{4}{3}-2x",
+          "questionLatex": "x + 5 > 12",
           "options": [
-            "x\\geq \\frac{26}{33}",
-            "x\\leq \\frac{26}{33}",
-            "x\\geq \\frac{33}{26}",
-            "x\\leq \\frac{33}{26}"
+            "[7, \\infty)",
+            "(-\\infty, 7)",
+            "(17, \\infty)",
+            "(7, \\infty)"
           ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Agrupando términos con x y números por separado se obtiene \\frac{11}{2}x\\geq \\frac{13}{3}, por lo que x\\geq \\frac{26}{33}.",
+          "correctAnswerIndex": 3,
+          "explanationLatex": "\\begin{aligned}\nx + 5 & > 12 \\\\\nx & > 12 - 5 \\\\\nx & > 7 \n\\end{aligned}\\text{Como el símbolo es \"mayor que\" (sin el igual), el intervalo es abierto: } (7, \\infty)",
           "category": "Inecuaciones Lineales",
           "moduleName": "Matemática I"
         },
