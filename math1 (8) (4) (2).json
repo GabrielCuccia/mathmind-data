@@ -333,7 +333,7 @@
           "blocks": [
             {
               "type": "example",
-              "content": "Resolver:\n\\[ x^2 + x - 6 \\ge 0 \\]\n\nFactorizamos:\n\\[ (x + 3)(x - 2) \\ge 0 \\]\n\nLos puntos críticos son \\(-3\\) y \\(2\\). Probamos signos:\n\nSi \\(x < -3\\), el producto es positivo.\nSi \\(-3 < x < 2\\), el producto es negativo.\nSi \\(x > 2\\), el producto es positivo.\n\nComo la desigualdad es \\(\\ge 0\\), incluimos los ceros. La solución es:\n\\[ (-\\infty, -3] \\cup [2, \\infty) \\]"
+              "content": "\\begin{aligned}\nx^2 + x - 6 & \\geq 0 \\\\\n(x + 3)(x - 2) & \\geq 0\n\\end{aligned}\\text{ Los puntos críticos son } -3 \\text{ y } 2\\text{. Probamos signos: Si } x < -3\\text{, el producto es positivo. Si } -3 < x < 2\\text{, el producto es negativo. Si } x > 2\\text{, el producto es positivo. Como la desigualdad es } \\geq 0\\text{, incluimos los ceros. Solución: } (-\\infty, -3] \\cup [2, \\infty)"
             }
           ]
         }
