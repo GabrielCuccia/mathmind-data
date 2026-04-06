@@ -336,6 +336,12 @@
               "content": "\\begin{aligned}\nx^2 + x - 6 & \\geq 0 \\\\\n(x + 3)(x - 2) & \\geq 0\n\\end{aligned}\\text{ Los puntos críticos son } -3 \\text{ y } 2\\text{. Probamos signos: Si } x < -3\\text{, el producto es positivo. Si } -3 < x < 2\\text{, el producto es negativo. Si } x > 2\\text{, el producto es positivo. Como la desigualdad es } \\geq 0\\text{, incluimos los ceros. Solución: } (-\\infty, -3] \\cup [2, \\infty)"
             }
           ]
+        },
+        {
+          "title": "Cuadráticas no factorizables a simple vista",
+          "subtitle": "",
+          "content": "Cuando el polinomio no factoriza fácilmente, puedes usar la fórmula general para encontrar raíces\no completar el cuadrado. Después se aplica el mismo análisis de signos.",
+          "blocks": []
         }
       ],
       "challenges": [],
