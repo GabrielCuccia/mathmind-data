@@ -6,295 +6,67 @@
   "isLocked": false,
   "lessons": [
     {
-      "id": "math1_order_theory",
-      "title": "Orden en la Recta Real",
-      "type": "theory",
-      "theorySections": [
-        {
-          "title": "Orden en la Recta Real",
-          "subtitle": "Matemática I • Orden en la Recta Real",
-          "content": "Imagínate una línea infinita que se extiende hacia la izquierda y hacia la derecha sin detenerse nunca. Esa es la recta real, una herramienta fundamental en matemáticas que nos permite visualizar y organizar todos los números que existen en el sistema de los números reales.",
-          "formulaLatex": "",
-          "proTip": "Si multiplicas o divides una desigualdad por un número negativo, invierte siempre el signo al final de la operación.",
-          "blocks": [
-            {
-              "type": "image",
-              "content": "https://www.geogebra.org/resource/EpJxSSTn/ep1VjwwpWOPr2Eog/material-EpJxSSTn.png"
-            },
-            {
-              "type": "text",
-              "content": "\nLa recta real permite comparar números mediante las relaciones <, >, \\leq y \\geq. El orden es compatible con la suma y con la multiplicación por números positivos. Esto significa que al sumar el mismo número a ambos lados de una desigualdad, el sentido no cambia; y al multiplicar por un número positivo, tampoco cambia. En cambio, al multiplicar por un número negativo, el sentido de la desigualdad se invierte.\n\nEs así que tenemos las siguientes propiedades:"
-            },
-            {
-              "type": "formula",
-              "content": "a<b \\Rightarrow a+c<b+c"
-            },
-            {
-              "type": "formula",
-              "content": "a<b,\\ c>0 \\Rightarrow ac<bc"
-            },
-            {
-              "type": "formula",
-              "content": "a<b,\\ c<0 \\Rightarrow ac>bc"
-            },
-            {
-              "type": "formula",
-              "content": "a<b\\Rightarrow a+c<b+c"
-            }
-          ]
-        },
-        {
-          "title": "Intervalos y notación conjuntista",
-          "subtitle": "Matemática I • Orden en la Recta Real",
-          "content": "Los intervalos son porciones de la recta real que contienen a todos los números comprendidos entre dos extremos. Dependiendo de si incluimos o no esos extremos, los clasificamos en:\n\n  Abiertos $(a, b)$: No incluyen los extremos.\n\n  Cerrados $[a, b]$: Incluyen ambos extremos.\n\n  Semiabiertos $(a, b]$ o $[a, b)$: Incluyen solo uno de los extremos.\n\nDominar los intervalos te permite realizar operaciones lógicas como la unión (sumar conjuntos) e intersección (encontrar puntos comunes). La clave del éxito en esta unidad es la fluidez para traducir una misma idea entre sus tres formas:\n\n  Algebraica: (ej. $x > 5$)\n\n  Conjuntista: (ej. $\\{x \\in \\mathbb{R} \\mid x > 5\\}$)\n\n  Gráfica: (la representación visual sobre la recta numérica).\n\nA continuación, se presentan las definiciones formales de los intervalos más comunes, utilizando la notación de conjuntos para especificar qué números están incluidos en cada segmento:",
-          "formulaLatex": "",
-          "proTip": "Si el extremo está incluido usa corchete; si no está incluido usa paréntesis.",
-          "blocks": [
-            {
-              "type": "formula",
-              "content": "(a,b)=\\{x\\in\\mathbb{R}:a<x<b\\}"
-            },
-            {
-              "type": "formula",
-              "content": "[a,b]=\\{x\\in\\mathbb{R}:a\\leq x\\leq b\\}"
-            },
-            {
-              "type": "formula",
-              "content": "(a,b]=\\{x\\in\\mathbb{R}:a<x\\leq b\\}"
-            },
-            {
-              "type": "formula",
-              "content": "[a,b)=\\{x\\in\\mathbb{R}:a\\leq x<b\\}"
-            }
-          ]
-        },
-        {
-          "title": "Cómo se comportan las desigualdades",
-          "subtitle": "Matemática I • Orden en la Recta Real",
-          "content": "La conducta de una desigualdad depende de la operación aplicada. Sumar o restar el mismo valor a ambos lados conserva el orden. Multiplicar o dividir por un valor positivo también lo conserva. Multiplicar o dividir por un valor negativo lo invierte. Además, elevar al cuadrado no preserva el orden en todos los casos, por lo que hay que estudiar signos antes de concluir.",
-          "formulaLatex": "",
-          "proTip": "Antes de elevar al cuadrado ambos lados de una desigualdad, verifica si los dos lados son no negativos. Si no, puedes perder información.",
-          "blocks": [
-            {
-              "type": "formula",
-              "content": "x<y\\Rightarrow x+z<y+z"
-            },
-            {
-              "type": "formula",
-              "content": "x<y,\\ m<0\\Rightarrow mx>my"
-            },
-            {
-              "type": "formula",
-              "content": "x\\in[a,b]\\Rightarrow a\\leq x\\leq b"
-            },
-            {
-              "type": "formula",
-              "content": "x<y,\\ m>0\\Rightarrow mx<my"
-            }
-          ]
-        },
-        {
-          "title": "Operaciones entre Intervalos",
-          "subtitle": "Matemática I • Orden en la Recta Real",
-          "content": "Al igual que sumamos o restamos números, podemos operar con intervalos para definir nuevos conjuntos de valores en la recta real. Las dos herramientas principales para esto son la Unión y la Intersección, que nos permiten combinar o filtrar grupos de números según reglas lógicas.Unión ($\\cup$): Agrupa todos los elementos de ambos intervalos. Si un número está en cualquiera de los dos (o en ambos), forma parte del resultado. Es una operación de \"acumulación\".Intersección ($\\cap$): Selecciona únicamente los elementos que se encuentran en ambos intervalos al mismo tiempo. Es una operación de \"coincidencia\".",
-          "blocks": [
-            {
-              "type": "note",
-              "content": "¿Qué pasa si los intervalos no se tocan? En ese caso, la intersección no contiene ningún número. Matemáticamente, decimos que el resultado es el conjunto vacío, representado por el símbolo $\\emptyset$."
-            },
-            {
-              "type": "text",
-              "content": "Ejemplo:\n\nSi tomamos los intervalos $A = [0, 5]$ y $B = [3, 8]$:Su unión sería $[0, 8]$ (toda la extensión).Su intersección sería $[3, 5]$ (solo la parte donde se solapan)."
-            }
-          ],
-          "proTip": "Para visualizarlo fácilmente, imagina que pintas cada intervalo de un color distinto en la recta numérica. La Unión es todo lo que tenga color; la Intersección es solo el tramo donde los colores se mezclan."
-        }
-      ],
-      "challenges": [],
-      "isCompleted": false,
-      "isLocked": false
-    },
-    {
-      "id": "math1_order_p1",
-      "title": "Orden en la Recta Real",
-      "type": "practice",
-      "theorySections": [],
-      "challenges": [
-        {
-          "id": "math1_order_01",
-          "questionText": "Determina si la proposición es verdadera o falsa:",
-          "questionLatex": "x^2>x para todo x\\in\\mathbb{R}",
-          "options": [
-            "Verdadera",
-            "Solo verdadera para x>1",
-            "Falsa",
-            "Solo verdadera para x<0"
-          ],
-          "correctAnswerIndex": 2,
-          "explanationLatex": "Basta un contraejemplo: si x=1, entonces x^2=1 y no es mayor que x. Por lo tanto, la proposición es falsa.",
-          "category": "Orden",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_order_02",
-          "questionText": "Determina si la proposición es verdadera o falsa:",
-          "questionLatex": "x<x+1 para todo x\\in\\mathbb{R}",
-          "options": [
-            "Falsa",
-            "Solo verdadera si x>0",
-            "Solo verdadera si x<0",
-            "Verdadera"
-          ],
-          "correctAnswerIndex": 3,
-          "explanationLatex": "Como 0 < 1, al sumar x a ambos lados se obtiene x < x + 1 para cualquier número real x.",
-          "category": "Orden",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_order_03",
-          "questionText": "Sean I1=(-4,5) e I2=(-2,7]. ¿Cuál es la intersección?",
-          "questionLatex": "I_1\\cap I_2",
-          "options": [
-            "(-2,5)",
-            "(-4,7]",
-            "[-2,5]",
-            "(-4,5]"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "La intersección toma el mayor extremo inferior y el menor extremo superior: (-2,5).",
-          "category": "Intervalos",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_order_04",
-          "questionText": "Escribe el recíproco de la proposición:",
-          "questionLatex": "Si 7x-5\\leq 2, entonces x\\leq 1",
-          "options": [
-            "Si x\\leq 1, entonces 7x-5\\leq 2",
-            "Si x>1, entonces 7x-5>2",
-            "Si 7x-5>2, entonces x>1",
-            "Si x<1, entonces 7x-5<2"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "El recíproco intercambia hipótesis y conclusión: si x\\leq 1, entonces 7x-5\\leq 2.",
-          "category": "Lógica Matemática",
-          "moduleName": "Matemática I"
-        }
-      ],
-      "isCompleted": false,
-      "isLocked": true
-    },
-    {
-      "id": "math1_order_p2",
-      "title": "Orden en la Recta Real",
-      "type": "practice",
-      "theorySections": [],
-      "challenges": [
-        {
-          "id": "math1_order_09",
-          "questionText": "Si a < b y b < c, ¿cuál de las siguientes es necesariamente correcta?",
-          "questionLatex": "a < b, \\quad b < c",
-          "options": [
-            "a < c",
-            "a > c",
-            "a = c",
-            "a + b < c"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Es la propiedad transitiva del orden en los números reales.",
-          "category": "Propiedades de Orden",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_order_10",
-          "questionText": "Si a < 0 y b > 0, ¿qué se puede afirmar sobre el producto ab?",
-          "questionLatex": "a < 0, \\quad b > 0",
-          "options": [
-            "ab < 0",
-            "ab > 0",
-            "ab = 0",
-            "ab > a+b"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "El producto de un número negativo por uno positivo es siempre negativo.",
-          "category": "Propiedades de Orden",
-          "moduleName": "Matemática I"
-        }
-      ],
-      "isCompleted": false,
-      "isLocked": true
-    },
-    {
       "id": "math1_ineq_theory_1",
-      "title": "Teoría: Inecuaciones Lineales y Cuadráticas",
+      "title": "Inecuaciones: Introduccion",
       "type": "theory",
       "theorySections": [
         {
-          "title": "Desigualdades lineales",
+          "title": "Introduccion",
           "subtitle": "Matemática I • Inecuaciones",
-          "content": "Resolver una desigualdad lineal es el proceso de encontrar todos los valores de la variable que hacen que la afirmación sea verdadera. A diferencia de las ecuaciones lineales, que suelen tener una única solución, las desigualdades generalmente resultan en un conjunto infinito de números que representamos mediante intervalos.\nEl objetivo es aislar la incógnita (normalmente $x$) aplicando las reglas de despeje. Recuerda la regla crítica: si multiplicas o divides ambos miembros por un número negativo, el sentido de la desigualdad debe invertirse inmediatamente.",
+          "content": "En toda inecuación trabajaremos con una idea constante: encontrar los valores de x que hacen\nverdadera una afirmación. Esos valores pueden formar un intervalo, una unión de intervalos, un\nconjunto finito o incluso el conjunto vacío. Por eso aprenderás a leer soluciones en notación de\nintervalos, en recta numérica y también en lenguaje algebraico.\n\nSi dominas tres ideas, ya tienes gran parte del camino resuelto:\n  despejar con cuidado,\n  analizar signos,\n  e interpretar intervalos.\n",
           "formulaLatex": "",
           "proTip": "Al terminar de despejar, siempre verifica si el símbolo original era estricto ($<, >$) o no estricto ($\\leq, \\geq$). Esto determinará si en tu solución final usas paréntesis o corchetes.",
+          "blocks": []
+        },
+        {
+          "title": "Lenguaje y notación",
+          "subtitle": "Matemática I • Inecuaciones",
+          "content": "Usaremos la notación estándar:\n<, >, ≤, ≥ .\nLas soluciones se expresan con intervalos como\n(a, b), [a, b], (a, b], [a, b),\ny también con uniones:\n(−∞, −2) ∪ (3, ∞).\nEl símbolo ∞ no es un número real; por eso nunca se escribe con corchete. Siempre va acompañado\nde paréntesis.",
           "blocks": [
             {
-              "type": "text",
-              "content": "El proceso sigue tres pasos lógicos:\nDespeje algebraico: Agrupar términos con $x$ de un lado y constantes del otro.\nSimplificación: Realizar las operaciones aritméticas necesarias.\nRepresentación: Expresar el resultado final en notación de intervalo o de forma gráfica."
-            },
-            {
               "type": "note",
-              "content": "¡Cuidado con el signo! Si llegas a un paso como $-3x \\leq 9$, al dividir por $-3$, el resultado correcto es $x \\geq -3$. El cambio de dirección es obligatorio para mantener la veracidad de la expresión."
-            },
-            {
-              "type": "formula",
-              "content": "ax+b\\leq c \\Rightarrow ax\\leq c-b"
-            },
-            {
-              "type": "formula",
-              "content": "x\\leq \\frac{c-b}{a}\\quad (a>0)"
-            },
-            {
-              "type": "formula",
-              "content": "x\\geq \\frac{c-b}{a}\\quad (a<0)"
-            },
-            {
-              "type": "example",
-              "content": "\\begin{aligned}\n\\text{Resolver: } & 3x + 5 \\leq 11 \\\\\n3x & \\leq 11 - 5 \\\\\n3x & \\leq 6 \\\\\nx & \\leq \\frac{6}{3} \\\\\nx & \\leq 2 \\\\\n\\text{Solución: } & (-\\infty, 2]\n\\end{aligned}"
+              "content": "Un error clásico es escribir x ∈ [2, ∞]. Eso es incorrecto. Lo correcto es x ∈ [2, ∞)"
             }
           ]
         },
         {
-          "title": "Desigualdades cuadráticas",
+          "title": "La recta real y el orden",
           "subtitle": "Matemática I • Inecuaciones",
-          "content": "A diferencia de las lineales, las desigualdades cuadráticas involucran un término con $x^2$. Para resolverlas, no podemos simplemente despejar la $x$; necesitamos encontrar los puntos críticos (las raíces de la ecuación cuadrática) y analizar cómo se comporta el signo de la expresión en los intervalos que estos puntos delimitan.El objetivo es determinar en qué regiones de la recta real la parábola asociada está por encima ($> 0$) o por debajo ($< 0$) del eje $x$.",
-          "formulaLatex": "",
-          "proTip": "¡El método del cementerio (o cuadro de signos) es tu mejor amigo! Siempre asegúrate de que un lado de la desigualdad sea cero antes de empezar a factorizar. Sin el cero, no puedes comparar signos.",
+          "content": "Una desigualdad compara dos cantidades. Si escribimos a < b, estamos diciendo que a está a la\nizquierda de b en la recta real. Este criterio geométrico es muy importante, porque nos ayuda a\ninterpretar visualmente soluciones y a detectar errores de signo.\nLa propiedad central es que las desigualdades se comportan casi como ecuaciones: podemos sumar o restar el mismo número en ambos lados sin cambiar el conjunto solución. Sin embargo, si\nmultiplicamos o dividimos por un número negativo, el orden se invierte.\n",
           "blocks": [
             {
-              "type": "text",
-              "content": "El proceso estándar de resolución tiene tres pasos:\nFactorización: Expresar el trinomio como producto de binomios: $(x - r_1)(x - r_2)$.\nPuntos Críticos: Identificar los valores donde la expresión vale cero.\nPrueba de Intervalos: Evaluar un número de cada intervalo para ver si el resultado es positivo o negativo."
-            },
-            {
-              "type": "note",
-              "content": "Ten cuidado con el símbolo: si la desigualdad es $\\leq$ o $\\geq$, los puntos críticos se incluyen en la solución (corchetes). Si es $<$ o $>$, los puntos críticos quedan excluidos (paréntesis)."
-            },
-            {
               "type": "example",
-              "content": "\\begin{aligned}\nx^2 - 4 & \\geq 0 \\\\\n(x - 2)(x + 2) & \\geq 0 \\\\\n\\text{Puntos críticos: } & x = 2, x = -2 \\\\\n\\text{Intervalos a evaluar: } & (-\\infty, -2], [-2, 2], [2, \\infty) \\\\\n\\text{Solución: } & (-\\infty, -2] \\cup [2, \\infty)\n\\end{aligned}"
-            },
-            {
-              "type": "formula",
-              "content": "x^2-a^2=(x-a)(x+a)"
-            },
-            {
-              "type": "formula",
-              "content": "(x-r_1)(x-r_2)\\geq 0"
+              "content": "Resolver −2x > 6. \\\\[2ex]\n−2x > 6 ⇒ x < −3.\\\\[2ex]\n\nAl\\ dividir\\ entre −2,\\\\[2ex] el\\ signo\\ cambia\\ de\\ sentido.\\\\[2ex] La\\ solución\\ es\\\n(−∞, −3).\n"
             }
           ]
+        },
+        {
+          "title": "Propiedades básicas de las desigualdades",
+          "subtitle": "Matemática I • Inecuaciones",
+          "content": "Sean a, b, c ∈ R.\na < b ⇒ a + c < b + c,\na < b ⇒ a − c < b − c,\na < b y c > 0 ⇒ ac < bc,\na < b y c < 0 ⇒ ac > bc.\nEstas propiedades son la base de toda la guía. No importa si el ejercicio parece largo: al final siempre\nse reduce a una combinación de estas reglas.\n",
+          "blocks": [],
+          "proTip": "No trabajes nunca “cambiando cosas” sin justificar. Si pasas un término al otro lado, piensa\nen la operación que estás haciendo. Eso te ayuda a no perder signos."
+        },
+        {
+          "title": "Notación de intervalos",
+          "subtitle": "Matemática I • Inecuaciones",
+          "content": "La notación de intervalos resume de forma compacta una solución. Por ejemplo:\n−1 ≤ x < 4 ⇐⇒ x ∈ [−1, 4).\nSi la desigualdad es estricta, el extremo no se incluye. Si es no estricta, sí se incluye.\nEn resumen:\n\\begin{array}{lll}\n\\hline\n\\text{Forma algebraica} & \\text{Tipo de extremo} & \\text{Notación} \\\\\n\\hline\nx < a \\text{ o } x > a & \\text{abierto} & \\text{paréntesis} \\\\\nx \\leq a \\text{ o } x \\geq a & \\text{cerrado} & \\text{corchete} \\\\\n\\hline\n\\end{array}",
+          "blocks": [],
+          "formulaLatex": ""
         }
       ],
       "challenges": [],
       "isCompleted": false,
       "isLocked": false
+    },
+    {
+      "id": "lesson_1775500172270",
+      "title": "Nueva Lección",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [],
+      "challenges": []
     },
     {
       "id": "math1_ineq_p1",
