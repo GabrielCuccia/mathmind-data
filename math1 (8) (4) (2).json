@@ -631,6 +631,31 @@
       "isLocked": true
     },
     {
+      "id": "math1_prac_ineq_abs_p1",
+      "title": "Desigualdades racionales",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_prac_02",
+          "questionText": "Resuelve la inecuación racional:",
+          "questionLatex": "\\frac{x^2 - 4}{x - 1} < 0",
+          "options": [
+            "(-2, 1) \\cup (2, \\infty)",
+            "(-\\infty, -2] \\cup [1, 2]",
+            "(-\\infty, -2) \\cup (1, 2)",
+            "(-2, 2)"
+          ],
+          "correctAnswerIndex": 2,
+          "explanationLatex": "\\text{Factorizamos el numerador como una diferencia de cuadrados:}\\frac{(x - 2)(x + 2)}{x - 1} < 0\\text{Puntos críticos: } x = 2, \\; x = -2, \\; x = 1 \\text{ (Todos abiertos).}\\text{Al realizar el análisis de signos, los intervalos que hacen negativa la expresión son:}\\text{Solución: } (-\\infty, -2) \\cup (1, 2)",
+          "category": "Práctica Valor Absoluto",
+          "moduleName": "Matemática I"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
       "id": "math1_geometry_theory",
       "title": "Teoría: Geometría Analítica: Recta y Circunferencia",
       "type": "theory",
@@ -718,76 +743,6 @@
       "challenges": [],
       "isCompleted": false,
       "isLocked": false
-    },
-    {
-      "id": "math1_prac_ineq_abs_p1",
-      "title": "Práctica 1: Práctica: Desigualdades y Valor Absoluto",
-      "type": "practice",
-      "theorySections": [],
-      "challenges": [
-        {
-          "id": "math1_prac_01",
-          "questionText": "Halle el conjunto solución de:",
-          "questionLatex": "\\frac{1}{x} < \\frac{1}{2x+1}",
-          "options": [
-            "(-1, -1/2)",
-            "(-\\infty, -1/2) \\cup (0, 1)",
-            "(-1/2, 0)",
-            "(-\\infty, -1)"
-          ],
-          "correctAnswerIndex": 2,
-          "explanationLatex": "Restando obtenemos $\\frac{x+1}{x(2x+1)} < 0$. Evaluando signos en los intervalos formados por -1, -1/2 y 0.",
-          "category": "Práctica Inecuaciones",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_prac_02",
-          "questionText": "Resolver:",
-          "questionLatex": "|x^2 - 1| \\leq 3",
-          "options": [
-            "[-2, 2]",
-            "[-2, -1] \\cup [1, 2]",
-            "[-1, 1]",
-            "(-\\infty, -2] \\cup [2, \\infty)"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "$-3 \\leq x^2 - 1 \\leq 3 \\Rightarrow -2 \\leq x^2 \\leq 4$. Como $x^2 \\geq -2$ siempre se cumple, resolvemos $x^2 \\leq 4$ que da $x \\in [-2, 2]$.",
-          "category": "Práctica Valor Absoluto",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_prac_05",
-          "questionText": "Resuelva la inecuación:",
-          "questionLatex": "|x^2 - 2x| < x",
-          "options": [
-            "(1, 3)",
-            "(0, 3)",
-            "(2, 3)",
-            "(1, 2)"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Para $x > 0$, resolvemos $-x < x^2-2x < x$. La primera parte $x^2-x > 0 \\Rightarrow x(x-1) > 0 \\Rightarrow x > 1$. La segunda parte $x^2-3x < 0 \\Rightarrow x(x-3) < 0 \\Rightarrow x < 3$. Intersección: $(1, 3)$.",
-          "category": "Práctica Valor Absoluto",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_prac_06",
-          "questionText": "Determine el conjunto solución de:",
-          "questionLatex": "\\frac{|x-1|}{|x|+1} < 1",
-          "options": [
-            "\\mathbb{R}",
-            "(0, \\infty)",
-            "(-\\infty, 0)",
-            "\\mathbb{R} \\setminus \\{0\\}"
-          ],
-          "correctAnswerIndex": 1,
-          "explanationLatex": "Como $|x|+1 > 0$, multiplicamos: $|x-1| < |x|+1$. Si $x \\geq 1$: $x-1 < x+1 \\Rightarrow -1 < 1$ (V). Si $0 \\leq x < 1$: $1-x < x+1 \\Rightarrow 0 < 2x \\Rightarrow x > 0$. Si $x < 0$: $1-x < -x+1 \\Rightarrow 1 < 1$ (F). Solución: $(0, \\infty)$.",
-          "category": "Práctica Valor Absoluto",
-          "moduleName": "Matemática I"
-        }
-      ],
-      "isCompleted": false,
-      "isLocked": true
     },
     {
       "id": "math1_prac_ineq_abs_p2",
