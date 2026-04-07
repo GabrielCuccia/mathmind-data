@@ -421,7 +421,7 @@
     },
     {
       "id": "math1_abs_p1",
-      "title": "Práctica 1: Valor Absoluto",
+      "title": "Desigualdades Cuadráticas",
       "type": "practice",
       "theorySections": [],
       "challenges": [
@@ -469,6 +469,61 @@
           "moduleName": "Matemática I",
           "questionLatex": "x^2 + 5x + 6 < 0",
           "explanationLatex": "\\text{Buscamos dos números que multiplicados den } 6 \\text{ y sumados den } 5:\\begin{aligned}\nx^2 + 5x + 6 & < 0 \\\\\n(x + 3)(x + 2) & < 0\n\\end{aligned}\\text{Puntos críticos: } x = -3, \\; x = -2 \\text{ (Abiertos por el símbolo } < \\text{)}\\text{Evaluando un valor intermedio, por ejemplo } x = -2.5:(-2.5 + 3)(-2.5 + 2) = (0.5)(-0.5) = -0.25 \\text{ (Negativo)}\\text{Como nos piden dónde la expresión es } < 0 \\text{, la solución es el intervalo central.}\\text{Solución: } (-3, -2)"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_abs_p2",
+      "title": "Práctica 2: Valor Absoluto",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_abs_07",
+          "questionText": "Resuelve la inecuación:",
+          "questionLatex": "(x - 1)^2(x + 2) \\leq 0",
+          "options": [
+            "(-\\infty, -2]",
+            "(-\\infty, -2] \\cup \\{1\\}",
+            "[-2, 1]",
+            "(-\\infty, 2]"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "\\text{Identificamos los puntos críticos: } x = 1 \\text{ y } x = -2.\\text{Analizamos los signos considerando que } (x - 1)^2 \\text{ siempre es } \\geq 0 \\text{ por ser una potencia par:}\\text{Si } x < -2 \\text{, entonces } (x+2) \\text{ es negativo } \\implies \\text{Resultado negativo.}\\text{Si } x > -2 \\text{, entonces } (x+2) \\text{ es positivo } \\implies \\text{Resultado positivo.}\\text{En } x = 1 \\text{, la expresión es igual a } 0 \\text{, por lo que cumple con el } \\leq.\\text{Solución: } (-\\infty, -2] \\cup \\{1\\}",
+          "category": "Propiedades",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "challenge_1775589043652",
+          "questionText": "Halla el conjunto solución de:",
+          "options": [
+            "(-4, \\frac{1}{2}) \\cup (3, \\infty)",
+            "(-\\infty, -4) \\cup (\\frac{1}{2}, 3)",
+            "(-4, 3)",
+            "(\\frac{1}{2}, \\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "Propiedades",
+          "moduleName": "Matemática I",
+          "questionLatex": "(2x - 1)(x + 4)(x - 3) > 0",
+          "explanationLatex": "\\text{Puntos críticos: } x = \\frac{1}{2}, \\; x = -4, \\; x = 3.\\text{Ubicamos los puntos en la recta y probamos signos en cada intervalo:}(-\\infty, -4) \\to (-)(-)(-) = \\text{Negativo}(-4, \\frac{1}{2}) \\to (-)(+)(-) = \\text{Positivo}(\\frac{1}{2}, 3) \\to (+)(+)(-) = \\text{Negativo}(3, \\infty) \\to (+)(+)(+) = \\text{Positivo}\\text{Buscamos los intervalos positivos } (> 0).\\text{Solución: } (-4, \\frac{1}{2}) \\cup (3, \\infty)"
+        },
+        {
+          "id": "challenge_1775589141285",
+          "questionText": "Determina el intervalo solución para:",
+          "options": [
+            "[-2, -1] \\cup [1, 2]",
+            "(-\\infty, -4] \\cup [-1, 1] \\cup [4, \\infty)",
+            "(-\\infty, -2] \\cup [-1, 1] \\cup [2, \\infty)",
+            "[-2, 2]"
+          ],
+          "correctAnswerIndex": 2,
+          "category": "Propiedades",
+          "moduleName": "Matemática I",
+          "questionLatex": "x^4 - 5x^2 + 4 \\geq 0",
+          "explanationLatex": "\\text{Primero factorizamos como si fuera un trinomio de segundo grado:}\\begin{aligned}\n(x^2 - 4)(x^2 - 1) & \\geq 0 \\\\\n(x - 2)(x + 2)(x - 1)(x + 1) & \\geq 0\n\\end{aligned}\\text{Puntos críticos: } x = \\pm 2, \\; x = \\pm 1.\\text{Al ser cuatro factores lineales y buscar } \\geq 0 \\text{, la solución alterna desde los extremos:}\\text{Solución: } (-\\infty, -2] \\cup [-1, 1] \\cup [2, \\infty)"
         }
       ],
       "isCompleted": false,
@@ -563,61 +618,6 @@
       "challenges": [],
       "isCompleted": false,
       "isLocked": false
-    },
-    {
-      "id": "math1_abs_p2",
-      "title": "Práctica 2: Valor Absoluto",
-      "type": "practice",
-      "theorySections": [],
-      "challenges": [
-        {
-          "id": "math1_abs_05",
-          "questionText": "¿Cuál es la definición por casos de |2x+5|?",
-          "questionLatex": "|2x+5|",
-          "options": [
-            "2x+5 si x\\geq -\\frac{5}{2},\\ -2x-5 si x<-\\frac{5}{2}",
-            "2x+5 si x<-\\frac{5}{2},\\ -2x-5 si x\\geq -\\frac{5}{2}",
-            "|2x+5|=2x+5 siempre",
-            "|2x+5|=-2x-5 siempre"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Primero se resuelve 2x+5\\geq 0, lo que da x\\geq -\\frac{5}{2}. En el resto de la recta se cambia el signo.",
-          "category": "Definición por Casos",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_abs_06",
-          "questionText": "Resuelva la inecuación:",
-          "questionLatex": "|3x + 2| > x + 4",
-          "options": [
-            "(-\\infty, -3/2) \\cup (1, \\infty)",
-            "(1, \\infty)",
-            "(-\\infty, -1) \\cup (1, \\infty)",
-            "(\\frac{1}{2}, \\infty)"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Caso 1: $3x+2 > x+4 \\Rightarrow 2x > 2 \\Rightarrow x > 1$. Caso 2: $3x+2 < -(x+4) \\Rightarrow 4x < -6 \\Rightarrow x < -3/2$. Unión: $(-\\infty, -3/2) \\cup (1, \\infty)$.",
-          "category": "Inecuaciones con Valor Absoluto",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_abs_07",
-          "questionText": "Si |x| <= 2 y |y| <= 3, ¿cuál es el valor máximo posible de |x-y|?",
-          "questionLatex": "|x-y| \\leq ?",
-          "options": [
-            "5",
-            "1",
-            "6",
-            "2"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Por la desigualdad triangular inversa o simplemente por extremos: si x=2 e y=-3, $|x-y| = |2 - (-3)| = 5$. En general $|x-y| \\leq |x| + |y| \\leq 2+3=5$.",
-          "category": "Propiedades",
-          "moduleName": "Matemática I"
-        }
-      ],
-      "isCompleted": false,
-      "isLocked": true
     },
     {
       "id": "math1_geometry_theory",
