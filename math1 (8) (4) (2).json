@@ -650,6 +650,36 @@
           "explanationLatex": "\\text{Factorizamos el numerador como una diferencia de cuadrados:}\\frac{(x - 2)(x + 2)}{x - 1} < 0\\text{Puntos críticos: } x = 2, \\; x = -2, \\; x = 1 \\text{ (Todos abiertos).}\\text{Al realizar el análisis de signos, los intervalos que hacen negativa la expresión son:}\\text{Solución: } (-\\infty, -2) \\cup (1, 2)",
           "category": "Práctica Valor Absoluto",
           "moduleName": "Matemática I"
+        },
+        {
+          "id": "challenge_1775590485272",
+          "questionText": "Halla el conjunto solución de:",
+          "options": [
+            "[-4, -1) \\cup [2, \\infty)",
+            "[-4, -1] \\cup [2, \\infty)",
+            "(-\\infty, -4] \\cup (-1, 2]",
+            "[-4, 2]"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "Práctica Valor Absoluto",
+          "moduleName": "Matemática I",
+          "questionLatex": "\\frac{(x - 2)(x + 4)}{x + 1} \\geq 0",
+          "explanationLatex": "\\text{Puntos críticos: } x = 2, \\; x = -4 \\text{ (numerador) y } x = -1 \\text{ (denominador).}\\text{¡Recordatorio! El } -1 \\text{ debe ser abierto porque está en el denominador.}\\text{Evaluando signos en los intervalos:}\\text{En } [-4, -1) \\text{ la expresión es positiva.}\\text{En } [2, \\infty) \\text{ la expresión es positiva.}\\text{Solución: } [-4, -1) \\cup [2, \\infty)"
+        },
+        {
+          "id": "challenge_1775590590314",
+          "questionText": "Determina el intervalo solución para:",
+          "options": [
+            "(-\\infty, 3) \\cup [7, \\infty)",
+            "[3, 7]",
+            "(-\\infty, 3] \\cup [7, \\infty)",
+            "(3, 7]"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "Práctica Valor Absoluto",
+          "moduleName": "Matemática I",
+          "questionLatex": "\\frac{x + 1}{x - 3} \\leq 2",
+          "explanationLatex": "\\text{Primero debemos pasar el 2 restando para comparar contra cero:}\\frac{x + 1}{x - 3} - 2 \\leq 0 \\implies \\frac{x + 1 - 2(x - 3)}{x - 3} \\leq 0\\frac{x + 1 - 2x + 6}{x - 3} \\leq 0 \\implies \\frac{-x + 7}{x - 3} \\leq 0\\text{Puntos críticos: } x = 7 \\text{ (cerrado) y } x = 3 \\text{ (abierto).}\\text{Al probar valores, la expresión es negativa en los extremos de estos puntos.}\\text{Solución: } (-\\infty, 3) \\cup [7, \\infty)"
         }
       ],
       "isCompleted": false,
