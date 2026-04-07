@@ -610,6 +610,21 @@
           "moduleName": "Módulo",
           "questionLatex": "\\frac{x}{x + 1} < 0",
           "explanationLatex": "\\text{Identificamos los valores que hacen cero al numerador y al denominador (puntos críticos):}\n\\text{Numerador: } x = 0\\text{Denominador: } x + 1 = 0 \\implies x = -1\\text{Analizamos los signos en la recta real. La fracción es negativa solo entre estos puntos:}\\text{Si } x < -1 \\text{, ambos son negativos } (-/-) \\to \\text{Positivo.}\\text{Si } -1 < x < 0 \\text{, uno es negativo y otro positivo } (-/+) \\to \\text{Negativo.}\\text{Si } x > 0 \\text{, ambos son positivos } (+/+) \\to \\text{Positivo.}\\text{Solución: } (-1, 0)"
+        },
+        {
+          "id": "challenge_1775590075938",
+          "questionText": "Halla el conjunto solución de:",
+          "options": [
+            "(-\\infty, -5] \\cup [3, \\infty)",
+            "(-5, 3]",
+            "(-\\infty, -3] \\cup [5, \\infty)",
+            "(-\\infty, -5) \\cup [3, \\infty)"
+          ],
+          "correctAnswerIndex": 3,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "\\frac{x - 3}{x + 5} \\geq 0",
+          "explanationLatex": "\\text{Puntos críticos: } x = 3 \\text{ (numerador) y } x = -5 \\text{ (denominador).}\\text{¡Importante! El punto del denominador } (-5) \\text{ siempre debe ir abierto, mientras que el del numerador } (3) \\text{ va cerrado por el } \\geq.\\text{Probando intervalos:}\\text{En } (-\\infty, -5) \\text{ y } [3, \\infty) \\text{ la fracción es positiva o cero.}\\text{En el intervalo medio } (-5, 3) \\text{ la fracción es negativa.}\\text{Solución: } (-\\infty, -5) \\cup [3, \\infty)"
         }
       ],
       "isCompleted": false,
