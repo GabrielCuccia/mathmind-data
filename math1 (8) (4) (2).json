@@ -352,7 +352,12 @@
           "title": "Multiplicidad y cambio de signo",
           "subtitle": "",
           "content": "Si una raíz aparece dos veces, el signo no necesariamente cambia al cruzarla. Eso es importante en\npolinomios de grado mayor.",
-          "blocks": []
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Resolver} \\\\\n(x - 1)^2(x + 2) < 0. \\\\\n\\text{Los puntos críticos son } x = 1 \\text{ y } x = -2\\text{. El factor } (x - 1)^2 \\text{ no cambia de signo porque siempre es no negativo. El signo lo decide } (x + 2)\\text{.} \\\\\n\\text{La expresión es negativa cuando } x < -2\\text{. Por tanto, la solución es:} \\\\\n(-\\infty, -2)."
+            }
+          ]
         }
       ],
       "challenges": [],
