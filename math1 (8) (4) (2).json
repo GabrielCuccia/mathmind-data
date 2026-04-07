@@ -391,31 +391,31 @@
           "id": "challenge_1775084022616",
           "questionText": "Halle el conjunto solución de:",
           "options": [
-            "[\\frac{1}{13}, \\infty) \\setminus (\\frac{1}{4}, 2)",
-            "(-\\infty, 2]",
-            "(\\frac{1}{13}, 2)",
-            "[2, \\infty)"
+            "(-1, 4)",
+            "(-\\infty, -1] \\cup [4, \\infty)",
+            "[-1, 4]",
+            "[-4, 1]"
           ],
-          "correctAnswerIndex": 0,
+          "correctAnswerIndex": 2,
           "category": "Inecuaciones irracionales",
           "moduleName": "Matemática I",
-          "questionLatex": "\\sqrt{4x^2 - 9x + 2} < 2x + 1",
-          "explanationLatex": "$$\\begin{aligned}\n1. Dominio: & 4x^2 - 9x + 2 \\geq 0 \\implies (4x - 1)(x - 2) \\geq 0 \\\\\nIntervalo Dominio: & (-\\infty, \\frac{1}{4}] \\cup [2, \\infty) \\\\\n2. Elevando al cuadrado: & 4x^2 - 9x + 2 < (2x + 1)^2 \\\\\n& 4x^2 - 9x + 2 < 4x^2 + 4x + 1 \\\\\n& -9x - 4x < 1 - 2 \\implies -13x < -1 \\\\\nInecuación: & x > \\frac{1}{13} \\\\\n3. Solución Final: & (x > \\frac{1}{13}) \\cap Dominio \\\\\nResultado: & [\\frac{1}{13}, \\frac{1}{4}] \\cup [2, \\infty)\n\\end{aligned}$$"
+          "questionLatex": "(x - 4)(x + 1) \\leq 0",
+          "explanationLatex": "\\text{La expresión ya está factorizada. Identificamos los puntos críticos igualando cada factor a cero:}\nx - 4 = 0 \\implies x = 4x + 1 = 0 \\implies x = -1\\text{Los puntos son cerrados (usamos corchetes) porque la desigualdad incluye el igual } (\\leq).\\text{Evaluamos un número entre -1 y 4 (por ejemplo, el 0):}(0 - 4)(0 + 1) = (-4)(1) = -4 \\text{ (Negativo)}\\text{Como buscamos dónde la expresión es } \\leq 0 \\text{ (negativa o cero), tomamos este intervalo central.}\\text{Solución: } [-1, 4]"
         },
         {
           "id": "challenge_1775084402181",
           "questionText": "Determine el valor de $x$ que cumple:",
           "options": [
-            "(16, \\infty)",
-            "[ \\frac{44}{3}, \\infty)",
-            "(0, 16)",
-            "\\emptyset"
+            "(-\\infty, -2] \\cup [4, \\infty)",
+            "[-2, 4]",
+            "(-\\infty, -4] \\cup [2, \\infty)",
+            "(-2, 4)"
           ],
           "correctAnswerIndex": 0,
           "category": "Inecuaciones irracionales",
           "moduleName": "Matemática I",
-          "questionLatex": "\\sqrt[4]{x} < \\sqrt{3x - 44}",
-          "explanationLatex": "$$\\begin{aligned}\n1. Dominio: & x \\geq 0 y 3x - 44 \\geq 0 \\implies x \\geq \\frac{44}{3} \\approx 14.6 \\\\\n2. Elevando a la cuarta: & (\\sqrt[4]{x})^4 < (\\sqrt{3x - 44})^4 \\\\\n& x < (3x - 44)^2 \\\\\n& x < 9x^2 - 264x + 1936 \\\\\n& 9x^2 - 265x + 1936 > 0 \\\\\nFactorizando: & (x - 16)(9x - 121) > 0 \\\\\nCríticos de inecuación: & x = 16, \\; x = \\frac{121}{9} \\approx 13.4 \\\\\nSolución inecuación: & (-\\infty, \\frac{121}{9}) \\cup (16, \\infty) \\\\\n3. Intersección con Dominio: & (x \\geq 14.6) \\cap Solución inecuación \\\\\nSolución Final: & (16, \\infty)\n\\end{aligned}$$"
+          "questionLatex": "x^2 - 2x - 8 \\geq 0",
+          "explanationLatex": "\\text{Primero factorizamos el trinomio buscando dos números que multiplicados den } -8 \\text{ y sumados } -2:\n\\begin{aligned}\nx^2 - 2x - 8 & \\geq 0 \\\\\n(x - 4)(x + 2) & \\geq 0\n\\end{aligned}\n\\text{Puntos críticos: } x = 4, \\; x = -2 \\text{ (Cerrados por el símbolo } \\geq \\text{)}\n\\text{Al hacer el análisis de signos en la recta real, los intervalos exteriores nos dan un producto positivo:}\n\\text{Para } x < -2 \\text{ y para } x > 4, \\text{ el resultado es positivo } (\\geq 0).\\text{Solución: } (-\\infty, -2] \\cup [4, \\infty)"
         }
       ]
     },
