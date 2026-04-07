@@ -1154,6 +1154,61 @@
       ]
     },
     {
+      "id": "lesson_1775601878953",
+      "title": "Desigualdades con valor absoluto",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1775601893890",
+          "questionText": "Resuelve la siguiente inecuación:",
+          "options": [
+            "(-3, 3)",
+            "[-3, 3]",
+            "(-\\infty, -3) \\cup (3, \\infty)",
+            "(-1, 9)"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "|x^2 - 4| < 5",
+          "explanationLatex": "\\text{Paso 1: Aplicamos la regla del sándwich para el \"menor que\" } (|A| < k \\implies -k < A < k)\\text{:}-5 < x^2 - 4 < 5\\text{Paso 2: Sumamos } 4 \\text{ en todas las partes para despejar } x^2\\text{:}\\begin{aligned}\n-5 + 4 & < x^2 < 5 + 4 \\\\\n-1 & < x^2 < 9\n\\end{aligned}\\text{Paso 3: Esta es una inecuación doble. La dividimos en dos condiciones que deben cumplirse simultáneamente:}\\text{Condición 1: } -1 < x^2 \\implies x^2 > -1. \\text{ Como cualquier número real al cuadrado es positivo o cero, esto se cumple para TODOS los números reales } (\\mathbb{R}).\\text{Condición 2: } x^2 < 9. \\text{ Aplicamos raíz cuadrada a ambos lados recordando que } \\sqrt{x^2} = |x|\\text{:}|x| < 3 \\implies -3 < x < 3\\text{Paso 4: La intersección de \"todos los reales\" con el intervalo } (-3, 3) \\text{ es simplemente } (-3, 3).\\text{Solución: } (-3, 3)"
+        },
+        {
+          "id": "challenge_1775602602913",
+          "questionText": "Determina el conjunto solución para:",
+          "options": [
+            "[0, 3]",
+            "(-\\infty, 0) \\cup (3, \\infty)",
+            "[3, \\infty)",
+            "(-\\infty, 0] \\cup [3, \\infty)"
+          ],
+          "correctAnswerIndex": 3,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "|2x - 3| + 1 \\geq 4",
+          "explanationLatex": "\\text{Paso 1: Antes de aplicar cualquier propiedad del valor absoluto, debemos aislarlo. Restamos } 1 \\text{ a ambos lados:}|2x - 3| \\geq 4 - 1|2x - 3| \\geq 3\\text{Paso 2: Ahora aplicamos la propiedad para el \"mayor o igual que\" } (|A| \\geq k \\implies A \\leq -k \\text{ ó } A \\geq k)\\text{:}2x - 3 \\leq -3 \\quad \\text{ó} \\quad 2x - 3 \\geq 3\\text{Paso 3: Resolvemos cada caso de forma independiente:}\\text{Caso 1: } 2x \\leq -3 + 3 \\implies 2x \\leq 0 \\implies x \\leq 0\\text{Caso 2: } 2x \\geq 3 + 3 \\implies 2x \\geq 6 \\implies x \\geq 3\\text{Paso 4: Unimos ambas soluciones usando corchetes porque la desigualdad incluye el igual (}\\geq\\text{).}\\text{Solución: } (-\\infty, 0] \\cup [3, \\infty)"
+        },
+        {
+          "id": "challenge_1775602710082",
+          "questionText": "Halla el intervalo solución de la inecuación:",
+          "options": [
+            "\\left[\\frac{1}{2}, \\infty\\right)",
+            "\\left(-\\infty, \\frac{1}{2}\\right]",
+            "\\left[-\\frac{1}{2}, \\infty\\right)",
+            "\\left(-\\infty, -\\frac{1}{2}\\right]"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "|x - 2| \\leq |x + 1|",
+          "explanationLatex": "\\text{Paso 1: Cuando tenemos un valor absoluto a cada lado de la desigualdad, sabemos con certeza que ambos lados son positivos o cero. Por lo tanto, podemos elevar ambos lados al cuadrado sin alterar el sentido de la desigualdad. Recordemos que } |A|^2 = A^2.(x - 2)^2 \\leq (x + 1)^2\\text{Paso 2: Desarrollamos los binomios al cuadrado perfectos } ((a \\pm b)^2 = a^2 \\pm 2ab + b^2)\\text{:}x^2 - 4x + 4 \\leq x^2 + 2x + 1\\text{Paso 3: Simplificamos. Notamos que } x^2 \\text{ se cancela a ambos lados:}-4x + 4 \\leq 2x + 1\\text{Paso 4: Agrupamos las } x \\text{ de un lado y los números del otro:}\\begin{aligned}\n4 - 1 & \\leq 2x + 4x \\\\\n3 & \\leq 6x \\\\\n\\frac{3}{6} & \\leq x \\\\\n\\frac{1}{2} & \\leq x \\quad \\text{(que es lo mismo que } x \\geq \\frac{1}{2}\\text{)}\n\\end{aligned}\\text{Solución: } \\left[\\frac{1}{2}, \\infty\\right)"
+        }
+      ]
+    },
+    {
       "id": "math1_geometry_theory",
       "title": "Teoría: Geometría Analítica: Recta y Circunferencia",
       "type": "theory",
