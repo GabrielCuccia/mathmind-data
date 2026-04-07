@@ -341,7 +341,12 @@
           "title": "Cuadráticas no factorizables a simple vista",
           "subtitle": "",
           "content": "Cuando el polinomio no factoriza fácilmente, puedes usar la fórmula general para encontrar raíces\no completar el cuadrado. Después se aplica el mismo análisis de signos.",
-          "blocks": []
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\begin{aligned}\nx^2 + x - 6 & \\geq 0 \\\\\n(x + 3)(x - 2) & \\geq 0\n\\end{aligned} \\\\[2ex]\n\\text{Los puntos críticos son } -3 \\text{ y } 2\\text{. Probamos signos:} \\\\[2ex]\n\\text{Si } x < -3\\text{, el producto es positivo.} \\\\[2ex]\n\\text{Si } -3 < x < 2\\text{, el producto es negativo.} \\\\[2ex]\n\\text{Si } x > 2\\text{, el producto es positivo.} \\\\[2ex]\n\\text{Como la desigualdad es } \\geq 0\\text{, incluimos los ceros.} \\\\[2ex]\n\\text{Solución: } (-\\infty, -3] \\cup [2, \\infty)"
+            }
+          ]
         }
       ],
       "challenges": [],
