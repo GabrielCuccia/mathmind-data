@@ -344,7 +344,7 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver} \\\\[2ex]\nx^2 - 4x + 1 < 0. \\\\[2ex]\n\\text{Hallamos las raíces:} \\\\[2ex]\nx = \\frac{4 \\pm \\sqrt{16 - 4}}{2} = 2 \\pm \\sqrt{3}. \\\\[2ex]\n\\text{Como la parábola abre hacia arriba, es negativa entre las raíces. Por tanto:} \\\\[2ex]\n2 - \\sqrt{3} < x < 2 + \\sqrt{3}."
+              "content": "\\text{Resolver} \\\\\nx^2 - 4x + 1 < 0. \\\\\n\\text{Hallamos las raíces:} \\\\\nx = \\frac{4 \\pm \\sqrt{16 - 4}}{2} = 2 \\pm \\sqrt{3}. \\\\\n\\text{Como la parábola abre hacia arriba, es negativa entre las raíces. Por tanto:} \\\\\n2 - \\sqrt{3} < x < 2 + \\sqrt{3}."
             }
           ]
         },
