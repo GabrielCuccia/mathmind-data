@@ -339,7 +339,7 @@
         },
         {
           "title": "Cuadráticas no factorizables a simple vista",
-          "subtitle": "",
+          "subtitle": "Matemática I • Inecuaciones",
           "content": "Cuando el polinomio no factoriza fácilmente, puedes usar la fórmula general para encontrar raíces\no completar el cuadrado. Después se aplica el mismo análisis de signos.",
           "blocks": [
             {
@@ -350,7 +350,7 @@
         },
         {
           "title": "Multiplicidad y cambio de signo",
-          "subtitle": "",
+          "subtitle": "Matemática I • Inecuaciones",
           "content": "Si una raíz aparece dos veces, el signo no necesariamente cambia al cruzarla. Eso es importante en\npolinomios de grado mayor.",
           "blocks": [
             {
@@ -365,33 +365,8 @@
       "isLocked": false
     },
     {
-      "id": "math1_irrational_theory",
-      "title": "Teoría: Inecuaciones Irracionales",
-      "type": "theory",
-      "theorySections": [
-        {
-          "title": "Inecuaciones con Raíces (Irracionales)",
-          "subtitle": "Matemática I • Inecuaciones",
-          "content": "Las inecuaciones irracionales son aquellas donde la incógnita se encuentra dentro de una raíz. El paso más crítico al resolverlas no es despejar, sino determinar el **Dominio** (o Universo). Recuerda que, en los números reales, no existen las raíces de índice par (como las raíces cuadradas o cuartas) de números negativos.",
-          "proTip": "Antes de elevar al cuadrado para eliminar la raíz, SIEMPRE calcula el dominio. La solución final será la intersección entre tu respuesta despejada y el dominio original.",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "Pasos para resolver inecuaciones irracionales de índice par:\n1. **Restricción del Dominio:** Todo lo que esté dentro de una raíz par debe ser mayor o igual a cero (ej. $\\sqrt{A} \\implies A \\geq 0$).\n2. **Aislar la raíz:** Deja la raíz sola en un lado de la desigualdad.\n3. **Elevar al cuadrado:** Eleva ambos miembros a la potencia de la raíz para eliminarla (solo si tienes certeza de los signos).\n4. **Resolver la nueva inecuación:** Resuelve la inecuación lineal o cuadrática resultante.\n5. **Intersecar:** Tu solución final es la intersección entre el Dominio (Paso 1) y la solución del Paso 4."
-            },
-            {
-              "type": "example",
-              "content": "\\begin{aligned}\n\\text{Resolver: } & \\sqrt{x - 3} < 4 \\\\\n\\text{1. Dominio: } & x - 3 \\geq 0 \\implies x \\geq 3 \\\\\n\\text{2. Elevar al cuadrado: } & (\\sqrt{x - 3})^2 < 4^2 \\\\\n& x - 3 < 16 \\\\\n& x < 19 \\\\\n\\text{3. Intersecar: } & x \\geq 3 \\text{ y } x < 19 \\\\\n\\text{Solución Final: } & [3, 19)\n\\end{aligned}"
-            }
-          ]
-        }
-      ],
-      "isCompleted": false,
-      "isLocked": false
-    },
-    {
       "id": "math1_ineq_irrational_p1",
-      "title": "Práctica: Inecuaciones Irracionales",
+      "title": "Desigualdades Cuadráticas",
       "type": "practice",
       "isCompleted": false,
       "isLocked": false,
@@ -399,18 +374,18 @@
       "challenges": [
         {
           "id": "challenge_1775083896895",
-          "questionText": "Nueva Pregunta",
+          "questionText": "Halla el conjunto solución de la inecuación:",
           "options": [
-            "[-\\frac{1}{2}, 0)",
-            "(-\\infty, -1)",
-            "(-\\frac{1}{2}, 1)",
-            "No tiene solución real."
+            "(-\\infty, -3) \\cup (3, \\infty)",
+            "(-3, 3)",
+            "[-3, 3]",
+            "(-\\infty, -3] \\cup [3, \\infty)"
           ],
           "correctAnswerIndex": 0,
           "category": "Inecuaciones irracionales",
           "moduleName": "Matemática I",
-          "questionLatex": "\\sqrt{\\frac{2x + 1}{x}} < 1",
-          "explanationLatex": "$$\\begin{aligned}\n1. Dominio: & \\frac{2x + 1}{x} \\geq 0 \\implies x \\in (-\\infty, -\\frac{1}{2}] \\cup (0, \\infty) \\\\\n2. Resolver: & \\left( \\sqrt{\\frac{2x + 1}{x}} \\right)^2 < 1^2 \\\\\n& \\frac{2x + 1}{x} < 1 \\implies \\frac{2x + 1}{x} - 1 < 0 \\\\\n& \\frac{2x + 1 - x}{x} < 0 \\implies \\frac{x + 1}{x} < 0 \\\\\nSolución de la inecuación: & (-1, 0) \\\\\n3. Intersección con Dominio: & (-1, 0) \\cap ((-\\infty, -\\frac{1}{2}] \\cup (0, \\infty)) \\\\\nSolución Final: & [-\\frac{1}{2}, 0)\n\\end{aligned}$$"
+          "questionLatex": "x^2 - 9 > 0",
+          "explanationLatex": "\\text{Factorizamos la diferencia de cuadrados:}\\begin{aligned}\nx^2 - 9 & > 0 \\\\\n(x - 3)(x + 3) & > 0\n\\end{aligned}\\text{Puntos críticos: } x = 3, \\; x = -3 \\text{ (Ambos abiertos por el símbolo } > \\text{)}\\text{Evaluando signos en los intervalos } (-\\infty, -3), (-3, 3) \\text{ y } (3, \\infty):\\text{Al ser } > 0 \\text{, buscamos los intervalos positivos.}\\text{Solución: } (-\\infty, -3) \\cup (3, \\infty)"
         },
         {
           "id": "challenge_1775084022616",
