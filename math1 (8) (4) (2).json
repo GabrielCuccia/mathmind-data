@@ -454,6 +454,21 @@
           "moduleName": "Matemática I",
           "questionLatex": "x^2 - 4x + 3 > 0",
           "explanationLatex": "\\text{Factorizamos el trinomio buscando números que multipliquen } 3 \\text{ y sumen } -4:\n\\begin{aligned}\nx^2 - 4x + 3 & > 0 \\\\\n(x - 3)(x - 1) & > 0\n\\end{aligned}\\text{Puntos críticos: } x = 3, \\; x = 1 \\text{ (Abiertos por el símbolo } > \\text{)}\\text{Como el símbolo es } > 0 \\text{, buscamos los intervalos donde el producto es positivo.}\\text{Tomando valores de prueba en los extremos } (x = 0 \\text{ y } x = 4) \\text{ obtenemos resultados positivos.}\\text{Solución: } (-\\infty, 1) \\cup (3, \\infty)"
+        },
+        {
+          "id": "challenge_1775588701744",
+          "questionText": "Determina el intervalo solución de la inecuación:",
+          "options": [
+            "(-3, -2)",
+            "(-\\infty, -3) \\cup (-2, \\infty)",
+            "[-3, -2]",
+            "(-2, 3)"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "Valor Absoluto",
+          "moduleName": "Matemática I",
+          "questionLatex": "x^2 + 5x + 6 < 0",
+          "explanationLatex": "\\text{Buscamos dos números que multiplicados den } 6 \\text{ y sumados den } 5:\\begin{aligned}\nx^2 + 5x + 6 & < 0 \\\\\n(x + 3)(x + 2) & < 0\n\\end{aligned}\\text{Puntos críticos: } x = -3, \\; x = -2 \\text{ (Abiertos por el símbolo } < \\text{)}\\text{Evaluando un valor intermedio, por ejemplo } x = -2.5:(-2.5 + 3)(-2.5 + 2) = (0.5)(-0.5) = -0.25 \\text{ (Negativo)}\\text{Como nos piden dónde la expresión es } < 0 \\text{, la solución es el intervalo central.}\\text{Solución: } (-3, -2)"
         }
       ],
       "isCompleted": false,
