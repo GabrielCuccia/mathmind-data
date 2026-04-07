@@ -327,7 +327,7 @@
         {
           "title": "Método del intervalo",
           "subtitle": "Matemática I • Inecuaciones",
-          "content": "Si tienes\n(x − 2)(x + 3) > 0,\nentonces los puntos críticos son x = 2 y x = −3. Esos puntos dividen la recta en tres intervalos.\nLuego pruebas el signo del producto en cada uno.",
+          "content": "Si tienes\n(x − 2)(x + 3) > 0,\nentonces los puntos críticos son x = 2\\ y x = −3. Esos puntos dividen la recta en tres intervalos.\nLuego pruebas el signo del producto en cada uno.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
