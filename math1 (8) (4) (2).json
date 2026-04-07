@@ -953,6 +953,207 @@
       "isLocked": true
     },
     {
+      "id": "lesson_1775596909833",
+      "title": "Desigualdades con valor absoluto",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "Definición y significado geométrico",
+          "subtitle": "",
+          "content": "El valor absoluto de un número es su distancia al cero en la recta real. Por eso siempre es no\nnegativo. Si escribimos\n|x|,\nestamos midiendo la distancia entre x y el origen.\nPara una expresión como |x − a|, la interpretación es aún más importante: representa la distancia\nentre x y el número a.",
+          "blocks": [],
+          "formulaLatex": "\n"
+        },
+        {
+          "title": "Definición por casos",
+          "subtitle": "",
+          "content": "",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\[ |u| = \\begin{cases} \nu, & u \\geq 0, \\\\ \n-u, & u < 0. \n\\end{cases} \\]"
+            },
+            {
+              "type": "text",
+              "content": "Esta definición es la base de todo el modulo. También explica por qué |u| ≥ 0 siempre."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } |x - 5| \\text{ por casos:} \\\\\n|x - 5| = \\begin{cases} \nx - 5, & x \\geq 5, \\\\ \n5 - x, & x < 5. \n\\end{cases}"
+            }
+          ]
+        },
+        {
+          "title": "Ecuaciones con valor absoluto",
+          "subtitle": "",
+          "content": "Si\n|u| = a,\nentonces:\nsi a < 0, no hay solución;\nsi a ≥ 0, las soluciones son u = a y u = −a.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Resolver} \\\\\n|2x - 3| = 7. \\\\\n\\text{Se obtienen dos ecuaciones:} \\\\\n2x - 3 = 7 \\Rightarrow x = 5, \\\\\n\\text{y} \\\\\n2x - 3 = -7 \\Rightarrow x = -2. \\\\[2ex]\n\\text{Solución:} \\\\\n\\{-2, 5\\}."
+            }
+          ]
+        },
+        {
+          "title": "Inecuaciones con valor absoluto del tipo menor que",
+          "subtitle": "",
+          "content": "Si a > 0, entonces\n|u| < a ⇐⇒ −a < u < a,\ny\n|u| ≤ a ⇐⇒ −a ≤ u ≤ a.\nGeométricamente, esto significa que u está dentro de una distancia a del cero.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Resolver} \\\\\n|x - 4| < 3. \\\\\n\\text{Equivale a} \\\\\n-3 < x - 4 < 3. \\\\\n\\text{Sumamos 4:} \\\\\n1 < x < 7. \\\\\n\\text{Solución:} \\\\\n(1, 7)."
+            }
+          ]
+        },
+        {
+          "title": "Inecuaciones con valor absoluto del tipo mayor que",
+          "subtitle": "",
+          "content": "Si a > 0, entonces\n|u| > a ⇐⇒ u < −a o u > a,\ny de manera análoga para ≥.\n",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Resolver} \\\\\n|3x + 1| \\geq 5. \\\\\n\\text{Se separa en dos casos:} \\\\\n3x + 1 \\geq 5 \\Rightarrow x \\geq \\frac{4}{3}, \\\\\n\\text{y} \\\\\n3x + 1 \\leq -5 \\Rightarrow x \\leq -2. \\\\\n\\text{Por tanto:} \\\\\n(-\\infty, -2] \\cup \\left[ \\frac{4}{3}, \\infty \\right)."
+            }
+          ]
+        },
+        {
+          "title": "Casos especiales con valor absoluto",
+          "subtitle": "",
+          "content": "Si aparece algo como |u| < a con a < 0, la solución es vacía. Si aparece |u| > a con a < 0, la\ndesigualdad es verdadera para todo u real.",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "Estas observaciones parecen pequeñas, pero permiten resolver rápido varios ejercicios del\nexamen sin hacer trabajo de más."
+            }
+          ]
+        },
+        {
+          "title": "Desigualdades más largas",
+          "subtitle": "",
+          "content": "A veces el valor absoluto no aparece aislado. Entonces primero hay que despejarlo.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Resolver} \\\\\n\\frac{|x - 2|}{3} + 1 \\leq 4. \\\\\n\\text{Restamos 1:} \\\\\n\\frac{|x - 2|}{3} \\leq 3. \\\\\n\\text{Multiplicamos por 3:} \\\\\n|x - 2| \\leq 9. \\\\\n\\text{Pasamos a desigualdad compuesta:} \\\\\n-9 \\leq x - 2 \\leq 9. \\\\\n\\text{Sumamos 2:} \\\\\n-7 \\leq x \\leq 11. \\\\\n\\text{Solución:} \\\\\n[-7, 11]."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "lesson_1775599039233",
+      "title": "Desigualdades con valor absoluto",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1775599070545",
+          "questionText": "Halla el conjunto solución de la siguiente ecuación:",
+          "options": [
+            "\\{4\\}",
+            "[-4, 4]",
+            "\\{-4, 4\\}",
+            "(-\\infty, 4]"
+          ],
+          "correctAnswerIndex": 2,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "|x| = 4",
+          "explanationLatex": "\\text{Paso 1: Por definición, el valor absoluto de } x \\text{ es la distancia de } x \\text{ al origen (cero).}\\text{Paso 2: Si la distancia es } 4\\text{, podemos movernos } 4 \\text{ unidades a la derecha o } 4 \\text{ unidades a la izquierda en la recta numérica.}\\text{Paso 3: Desdoblamos la ecuación en dos casos posibles:}x = 4 \\quad \\text{ó} \\quad x = -4\\text{Solución: Como son valores específicos y no un intervalo, se escriben entre llaves: } \\{-4, 4\\}"
+        },
+        {
+          "id": "challenge_1775600225142",
+          "questionText": "Determina el intervalo solución para la inecuación:",
+          "options": [
+            "[-3, 7]",
+            "(-\\infty, -3) \\cup (7, \\infty)",
+            "(-7, 3)",
+            "(-3, 7)"
+          ],
+          "correctAnswerIndex": 3,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "|x - 2| < 5",
+          "explanationLatex": "\\text{Paso 1: Aplicamos la propiedad fundamental para inecuaciones con \"menor que\": } |A| < k \\implies -k < A < k \\text{ (asumiendo } k > 0\\text{).}\\text{Paso 2: Desdoblamos nuestra inecuación según esta regla:}-5 < x - 2 < 5\\text{Paso 3: Despejamos la } x \\text{ sumando } 2 \\text{ en las tres partes de la inecuación para mantener el equilibrio:}\\begin{aligned}\n-5 + 2 & < x - 2 + 2 < 5 + 2 \\\\\n-3 & < x < 7\n\\end{aligned}\\text{Solución: Como los signos son estrictamente \"menor que\", usamos paréntesis. El intervalo es } (-3, 7)"
+        },
+        {
+          "id": "challenge_1775600319199",
+          "questionText": "Resuelve la siguiente inecuación:",
+          "options": [
+            "[-2, 1]",
+            "(-2, 1)",
+            "(-\\infty, -2] \\cup [1, \\infty)",
+            "[-1, 2]"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "|2x + 1| \\leq 3",
+          "explanationLatex": "\\text{Paso 1: Usamos la misma propiedad que en el ejercicio anterior, adaptada para el \"menor o igual\": } |A| \\leq k \\implies -k \\leq A \\leq k.-3 \\leq 2x + 1 \\leq 3\\text{Paso 2: Restamos } 1 \\text{ a los tres miembros para empezar a aislar la } x\\text{:}\\begin{aligned}\n-3 - 1 & \\leq 2x \\leq 3 - 1 \\\\\n-4 & \\leq 2x \\leq 2\n\\end{aligned}\\text{Paso 3: Dividimos todo entre } 2 \\text{ (como es un número positivo, los signos de desigualdad no cambian de sentido):}\\begin{aligned}\n-\\frac{4}{2} & \\leq \\frac{2x}{2} \\leq \\frac{2}{2} \\\\\n-2 & \\leq x \\leq 1\n\\end{aligned}\\text{Solución: Al ser desigualdades inclusivas (}\\leq\\text{), usamos corchetes. La respuesta es } [-2, 1]"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1775601304267",
+      "title": "Desigualdades con valor absoluto",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1775601344203",
+          "questionText": "Resuelve la siguiente inecuación:",
+          "options": [
+            "(-6, -2)",
+            "(-\\infty, -6) \\cup (-2, \\infty)",
+            "[-6, -2]",
+            "(-\\infty, -6] \\cup [-2, \\infty)"
+          ],
+          "correctAnswerIndex": 1,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "|x + 4| > 2",
+          "explanationLatex": "\\text{Paso 1: Aplicamos la propiedad para inecuaciones con \"mayor que\". Si } |A| > k \\text{ (con } k > 0\\text{), entonces los valores escapan hacia los extremos: } A < -k \\text{ ó } A > k.\\text{Paso 2: Desdoblamos nuestra inecuación en dos caminos independientes:}x + 4 < -2 \\quad \\text{ó} \\quad x + 4 > 2\\text{Paso 3: Despejamos } x \\text{ en ambas inecuaciones:}\\text{Camino 1: } x < -2 - 4 \\implies x < -6\\text{Camino 2: } x > 2 - 4 \\implies x > -2\\text{Solución: Como es un \"o\" lógico, unimos ambos intervalos. Al ser desigualdad estricta (}>\\text{), usamos paréntesis. El resultado es } (-\\infty, -6) \\cup (-2, \\infty)."
+        },
+        {
+          "id": "challenge_1775601570493",
+          "questionText": "Determina el conjunto solución para:",
+          "options": [
+            "\\left(-\\infty, \\frac{4}{3}\\right] \\cup [2, \\infty)",
+            "\\left[\\frac{4}{3}, 2\\right]",
+            "\\left(-\\infty, \\frac{4}{3}\\right) \\cup (2, \\infty)",
+            "\\left[-2, \\frac{4}{3}\\right]"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "|3x - 5| \\geq 1",
+          "explanationLatex": "\\text{Paso 1: Usamos la misma lógica de los extremos que en el ejercicio anterior, pero incluyendo los bordes (}\\geq\\text{).}|A| \\geq k \\implies A \\leq -k \\quad \\text{ó} \\quad A \\geq k\\text{Paso 2: Separamos en dos casos:}3x - 5 \\leq -1 \\quad \\text{ó} \\quad 3x - 5 \\geq 1\\text{Paso 3: Resolvemos cada caso por separado:}\\text{Caso 1: } 3x \\leq -1 + 5 \\implies 3x \\leq 4 \\implies x \\leq \\frac{4}{3}\\text{Caso 2: } 3x \\geq 1 + 5 \\implies 3x \\geq 6 \\implies x \\geq \\frac{6}{3} \\implies x \\geq 2\\text{Solución: Unimos ambos resultados usando corchetes para los números. } \\left(-\\infty, \\frac{4}{3}\\right] \\cup [2, \\infty)."
+        },
+        {
+          "id": "challenge_1775601709055",
+          "questionText": "Halla el intervalo solución de la inecuación:",
+          "options": [
+            "\\left[-4, -\\frac{2}{3}\\right]",
+            "\\left(-\\infty, -\\frac{2}{3}\\right]",
+            "[-4, \\infty)",
+            "\\left[-\\frac{2}{3}, \\infty\\right)"
+          ],
+          "correctAnswerIndex": 3,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "|x - 1| \\leq 2x + 3",
+          "explanationLatex": "\\text{Paso 1: Aquí tenemos una variable fuera del valor absoluto. La regla } |A| \\leq B \\implies -B \\leq A \\leq B \\text{ solo funciona si garantizamos que } B \\geq 0 \\text{ (un valor absoluto nunca es menor a un número negativo).}\\text{Condición inicial: } 2x + 3 \\geq 0 \\implies 2x \\geq -3 \\implies x \\geq -\\frac{3}{2}\\text{Paso 2: Aplicamos la regla del sándwich (}-B \\leq A \\leq B\\text{) asumiendo nuestra condición inicial:}-(2x + 3) \\leq x - 1 \\leq 2x + 3\\text{Paso 3: Rompemos esta inecuación doble en dos partes y las resolvemos simultáneamente:}\\text{Parte Izquierda: } -2x - 3 \\leq x - 1 \\implies -2 \\leq 3x \\implies -\\frac{2}{3} \\leq x \\quad \\text{(que es lo mismo que } x \\geq -\\frac{2}{3}\\text{)}\\text{Parte Derecha: } x - 1 \\leq 2x + 3 \\implies -4 \\leq x \\quad \\text{(que es lo mismo que } x \\geq -4\\text{)}\\text{Paso 4: Intersecamos todas nuestras condiciones. Necesitamos que } x \\geq -\\frac{3}{2}, \\text{ y además } x \\geq -\\frac{2}{3}, \\text{ y además } x \\geq -4.\\text{La condición más restrictiva que cumple las tres al mismo tiempo es } x \\geq -\\frac{2}{3}.\\text{Solución: } \\left[-\\frac{2}{3}, \\infty\\right)"
+        }
+      ]
+    },
+    {
       "id": "math1_geometry_theory",
       "title": "Teoría: Geometría Analítica: Recta y Circunferencia",
       "type": "theory",
