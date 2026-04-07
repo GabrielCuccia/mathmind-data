@@ -476,7 +476,7 @@
     },
     {
       "id": "math1_abs_p2",
-      "title": "Práctica 2: Valor Absoluto",
+      "title": "Desigualdades Cuadráticas",
       "type": "practice",
       "theorySections": [],
       "challenges": [
@@ -531,88 +531,44 @@
     },
     {
       "id": "math1_abs_theory",
-      "title": "Teoría: Valor Absoluto",
+      "title": "Desigualdades racionales",
       "type": "theory",
       "theorySections": [
         {
-          "title": "Definición de valor absoluto",
-          "subtitle": "Matemática I • Valor Absoluto",
-          "content": "El error más común es pensar que el valor absoluto simplemente \"borra el signo negativo\". En matemáticas superiores, el valor absoluto se define rigurosamente como una función por partes (o a tramos) que garantiza que el resultado final sea siempre positivo o cero:\n\n$$|x| = \n\\begin{cases} \nx, & \\text{si } x \\geq 0 \\\\ \n-x, & \\text{si } x < 0 \n\\end{cases}$$\n\n¿Qué significa esto en lenguaje sencillo?\n\n  Si lo que está dentro de las barras ya es positivo o cero (ej. $5$), sale exactamente igual: $|5| = 5$.\n  Si lo que está dentro de las barras es negativo (ej. $-5$), la definición le multiplica un signo menos extra para volverlo positivo: $|-5| = -(-5) = 5$.\n\nEsta definición formal es fundamental para resolver ejercicios donde hay variables tanto dentro como fuera del valor absoluto ya que te obliga a separar el problema en dos casos o \"escenarios\" posibles.\n\nInterpretación Geométrica (Distancia al Origen)\nGeométricamente, el valor absoluto $|x|$ representa la distancia exacta que hay desde el número $x$ hasta el número $0$ en la recta real. Como las distancias no pueden ser negativas, el resultado nunca es menor a cero.Asimismo, la expresión $|x - a|$ representa la distancia entre el número $x$ y el número $a$.\n\nInecuaciones con Valor Absoluto (El \"Por qué\" de las reglas)\nBasándonos en el concepto de distancia, surgen las dos reglas maestras para resolver desigualdades:\nA. Inecuaciones de tipo \"Menor que\" ($<$ o $\\leq$)\nSi decimos que $|x| \\leq a$ (donde $a > 0$), estamos buscando todos los números $x$ cuya distancia al origen sea menor o igual a $a$. Esto \"atrapa\" a la variable en un intervalo central.\nRegla de traducción:\n$$|x| \\leq a \\iff -a \\leq x \\leq a$$\nEjemplo:\nSi $|x| \\leq 3$, significa que $x$ está atrapado entre $-3$ y $3$.\nB. Inecuaciones de tipo \"Mayor que\" ($>$ o $\\geq$)\nSi decimos que $|x| \\geq a$ (donde $a > 0$), buscamos los números $x$ cuya distancia al origen sea mayor o igual a $a$. Esto expulsa a la variable hacia los extremos de la recta, creando dos intervalos separados por un vacío central.\nRegla de traducción:$$|x| \\geq a \\iff x \\geq a \\quad \\text{o} \\quad x \\leq -a$$Ejemplo: Si $|x| \\geq 3$, significa que $x$ es mayor que $3$ (hacia el infinito positivo) o $x$ es menor que $-3$ (hacia el infinito negativo).",
+          "title": "Idea general",
+          "subtitle": "Matemática I • Desigualdades racionales",
+          "content": "Una desigualdad racional tiene variables en el numerador, en el denominador o en ambos. Su forma\ntípica es\nP(x)\nQ(x)\n≷ 0.\nLa estrategia es llevar todo a un solo cociente, hallar ceros del numerador y del denominador, y\nanalizar signos por intervalos. Los ceros del denominador nunca pertenecen a la solución, porque\nallí la expresión no existe.\n",
           "formulaLatex": "",
           "proTip": "Si el argumento del valor absoluto es una expresión lineal, primero encuentra el punto donde esa expresión vale cero: allí la recta real se divide en dos regiones.",
           "blocks": [
             {
-              "type": "text",
-              "content": "Interpretación geométrica:"
-            },
-            {
-              "type": "formula",
-              "content": "|x-a|=\\text{distancia entre }x\\text{ y }a"
-            },
-            {
-              "type": "formula",
-              "content": "|x|\\geq 0"
-            }
-          ]
-        },
-        {
-          "title": "Propiedades del valor absoluto",
-          "subtitle": "Matemática I • Valor Absoluto",
-          "content": "El valor absoluto cumple propiedades algebraicas importantes: multiplicación, división, desigualdad triangular y relación con la distancia. Estas propiedades permiten simplificar expresiones y transformar desigualdades en forma equivalente.",
-          "formulaLatex": "|ab|=|a||b|",
-          "proTip": "No olvides que |a| y |-a| siempre son iguales.",
-          "blocks": [
-            {
-              "type": "formula",
-              "content": "\\left|\\frac{a}{b}\\right|=\\frac{|a|}{|b|},\\quad b\\neq 0"
-            },
-            {
-              "type": "formula",
-              "content": "|x-y|=|y-x|"
-            },
-            {
-              "type": "formula",
-              "content": "|x+y|\\leq |x|+|y|"
-            },
-            {
               "type": "note",
-              "content": "La guía trabaja la definición por casos y su aplicación en expresiones racionales y lineales."
+              "content": "Los puntos críticos en una desigualdad racional son de dos tipos: ceros del numerador y ceros\ndel denominador. Los primeros pueden pertenecer a la solución si la desigualdad incluye\nigualdad; los segundos jamás."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Resolver} \\\\\n\\frac{x - 1}{x + 2} > 0. \\\\\n\\text{Puntos críticos:} \\\\\nx = 1 \\quad \\text{(cero del numerador)}, \\qquad x = -2 \\quad \\text{(cero del denominador)}. \\\\\n\\text{Dividimos la recta en tres intervalos:} \\\\\n(-\\infty, -2), \\quad (-2, 1), \\quad (1, \\infty). \\\\\n\\text{Probando signos, la fracción es positiva en los dos extremos y negativa en el centro. Por tanto:} \\\\\n(-\\infty, -2) \\cup (1, \\infty)."
             }
           ]
         },
         {
-          "title": "Ecuaciones con valor absoluto",
-          "subtitle": "Matemática I • Valor Absoluto",
-          "content": "Las ecuaciones con valor absoluto se resuelven separando casos. Si |A|=k con k>0, entonces A=k o A=-k. Si k<0, no hay solución. Cuando el valor absoluto está solo en un lado y el otro lado es positivo, la ecuación se transforma en dos ecuaciones lineales.",
-          "formulaLatex": "|A|=k\\Rightarrow A=k\\ \\text{o}\\ A=-k",
-          "proTip": "Antes de separar casos, verifica que el lado derecho no sea negativo.",
+          "title": "Pasos sistemáticos",
+          "subtitle": "Matemática I • Desigualdades racionales",
+          "content": "  Llevar todo a un lado.\n  Unificar en una sola fracción.\n  Factorizar numerador y denominador.\n  Hallar puntos críticos.\n  Hacer tabla de signos.\n  Elegir los intervalos que satisfacen la desigualdad",
           "blocks": [
             {
-              "type": "formula",
-              "content": "|x-3|=5 \\Rightarrow x-3=5 \\text{ o } x-3=-5"
-            },
-            {
-              "type": "formula",
-              "content": "x=8 \\text{ o } x=-2"
+              "type": "example",
+              "content": "\\text{Resolver} \\\\\n\\frac{(x - 2)(x + 1)}{x - 3} \\leq 0. \\\\\n\\text{Puntos críticos:} \\\\\n-1, 2, 3. \\\\\n\\text{Organizamos los intervalos:} \\\\\n(-\\infty, -1), (-1, 2), (2, 3), (3, \\infty). \\\\\n\\text{Al analizar signos se obtiene que la expresión es no positiva en} \\\\\n(-\\infty, -1] \\cup [2, 3). \\\\\n\\text{El punto 3 no se incluye porque anula el denominador.}"
             }
-          ]
+          ],
+          "proTip": "Si el numerador o denominador se pueden factorizar, hazlo siempre. El análisis de signos se\nvuelve mucho más claro.\n"
         },
         {
-          "title": "Inecuaciones con valor absoluto",
-          "subtitle": "Matemática I • Valor Absoluto",
-          "content": "Las desigualdades con valor absoluto expresan condiciones de distancia. Si el valor absoluto es menor que un número, la solución suele ser un intervalo. Si es mayor que un número, la solución suele ser una unión de intervalos.",
-          "formulaLatex": "|A|<k\\Rightarrow -k<A<k",
-          "proTip": "En desigualdades estrictas, los extremos no se incluyen. En desigualdades no estrictas, sí pueden incluirse.",
-          "blocks": [
-            {
-              "type": "formula",
-              "content": "|A|\\leq k\\Rightarrow -k\\leq A\\leq k"
-            },
-            {
-              "type": "formula",
-              "content": "|A|>k\\Rightarrow A<-k\\ \\text{o}\\ A>k"
-            }
-          ]
+          "title": "Casos con cancelación aparente",
+          "subtitle": "Matemática I • Desigualdades racionales",
+          "content": "A veces una fracción parece simplificarse y eso puede hacerte perder información. Debes mantener\nsiempre las restricciones del dominio original.\n",
+          "blocks": [],
+          "formulaLatex": "\\text{Resolver} \\\\\n\\frac{x^2 - 1}{x - 1} \\geq 0. \\\\\n\\text{Factorizamos:} \\\\\n\\frac{(x - 1)(x + 1)}{x - 1} \\geq 0. \\\\\n\\text{Aunque se cancele formalmente el factor } x - 1\\text{, el valor } x = 1 \\text{ sigue prohibido porque anula el denominador original. La desigualdad equivalente para } x \\neq 1 \\text{ queda} \\\\\nx + 1 \\geq 0. \\\\\n\\text{Entonces } x \\geq -1\\text{, pero excluyendo } x = 1\\text{. La solución es} \\\\\n[-1, 1) \\cup (1, \\infty)."
         }
       ],
       "challenges": [],
