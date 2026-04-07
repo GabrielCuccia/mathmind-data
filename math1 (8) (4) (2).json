@@ -1209,6 +1209,55 @@
       ]
     },
     {
+      "id": "lesson_1775602849668",
+      "title": "Estrategias combinadas y problemas tipo parcial",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "Por qué estos problemas son más difíciles",
+          "subtitle": "",
+          "content": "En un parcial real, muchas veces no se pregunta por un tipo puro de desigualdad, sino por una\nmezcla: una fracción con raíz, un polinomio con valor absoluto, o una expresión con varios cambios\nde signo. En esos casos, el secreto no es inventar una técnica nueva, sino combinar las técnicas ya\nvistas en el orden correcto.\n\nOrden sugerido para resolver problemas mixtos:\n  Dominio\n  simplificación,\n  Puntos críticos,\n  Análisis de signos,\n  Verificación final.",
+          "blocks": []
+        },
+        {
+          "title": "Ejemplo mixto 1",
+          "subtitle": "",
+          "content": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Resolver} \\\\\n\\frac{x^2 - 9}{x - 2} \\geq 0. \\\\\n\\text{Factorizamos el numerador:} \\\\\n\\frac{(x - 3)(x + 3)}{x - 2} \\geq 0. \\\\\n\\text{Puntos críticos: } -3, 2, 3\\text{. Analizamos signos por intervalos y obtenemos:} \\\\\n[-3, 2) \\cup [3, \\infty)."
+            }
+          ]
+        },
+        {
+          "title": "Ejemplo mixto 2",
+          "subtitle": "",
+          "content": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Resolver} \\\\\n\\sqrt{x - 1} > \\frac{x - 1}{2}. \\\\\n\\text{Sea } t = x - 1\\text{, con } t \\geq 0\\text{. Entonces} \\\\\n\\sqrt{t} > \\frac{t}{2}. \\\\\n\\text{Si elevamos al cuadrado con cuidado, obtenemos} \\\\\n4t > t^2 \\quad \\Rightarrow \\quad t(4 - t) > 0. \\\\\n\\text{Por tanto, } 0 < t < 4\\text{. Volviendo a } x\\text{:} \\\\\n1 < x < 5."
+            }
+          ]
+        },
+        {
+          "title": " Ejemplo mixto 3",
+          "subtitle": "",
+          "content": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Resolver} \\\\\n|x - 3| \\leq x. \\\\\n\\text{Primero observamos que el lado derecho debe ser no negativo, así que } x \\geq 0\\text{. Luego usamos casos:} \\\\\n\\bullet \\text{ si } x \\geq 3\\text{, entonces } |x - 3| = x - 3 \\text{ y la inecuación queda } x - 3 \\leq x\\text{, verdadera siempre;} \\\\\n\\bullet \\text{ si } 0 \\leq x < 3\\text{, entonces } |x - 3| = 3 - x \\text{ y queda } 3 - x \\leq x\\text{, es decir } 3 \\leq 2x\\text{, por lo que } x \\geq \\frac{3}{2}\\text{.} \\\\\n\\text{Juntando ambas partes:} \\\\\n\\left[ \\frac{3}{2}, \\infty \\right)."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
       "id": "math1_geometry_theory",
       "title": "Teoría: Geometría Analítica: Recta y Circunferencia",
       "type": "theory",
