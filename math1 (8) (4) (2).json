@@ -333,7 +333,7 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\begin{aligned}\nx^2 + x - 6 & \\geq 0 \\\\\n(x + 3)(x - 2) & \\geq 0\n\\end{aligned} \\\\[2ex]\n\\text{Los puntos críticos son } -3 \\text{ y } 2\\text{. Probamos signos:} \\\\[2ex]\n\\text{Si } x < -3\\text{, el producto es positivo.} \\\\[2ex]\n\\text{Si } -3 < x < 2\\text{, el producto es negativo.} \\\\[2ex]\n\\text{Si } x > 2\\text{, el producto es positivo.} \\\\[2ex]\n\\text{Como la desigualdad es } \\geq 0\\text{, incluimos los ceros.} \\\\[2ex]\n\\text{Solución: } (-\\infty, -3] \\cup [2, \\infty)"
+              "content": "\\begin{aligned}\nx^2 + x - 6 & \\geq 0 \\\\\n(x + 3)(x - 2) & \\geq 0\n\\end{aligned} \\\\\n\\text{Los puntos críticos son } -3 \\text{ y } 2\\text{. Probamos signos:} \\\\\n\\text{Si } x < -3\\text{, el producto es positivo.} \\\\\n\\text{Si } -3 < x < 2\\text{, el producto es negativo.} \\\\\n\\text{Si } x > 2\\text{, el producto es positivo.} \\\\\n\\text{Como la desigualdad es } \\geq 0\\text{, incluimos los ceros.} \\\\\n\\text{Solución: } (-\\infty, -3] \\cup [2, \\infty)"
             }
           ]
         },
@@ -347,6 +347,12 @@
               "content": "\\begin{aligned}\nx^2 + x - 6 & \\geq 0 \\\\\n(x + 3)(x - 2) & \\geq 0\n\\end{aligned} \\\\[2ex]\n\\text{Los puntos críticos son } -3 \\text{ y } 2\\text{. Probamos signos:} \\\\[2ex]\n\\text{Si } x < -3\\text{, el producto es positivo.} \\\\[2ex]\n\\text{Si } -3 < x < 2\\text{, el producto es negativo.} \\\\[2ex]\n\\text{Si } x > 2\\text{, el producto es positivo.} \\\\[2ex]\n\\text{Como la desigualdad es } \\geq 0\\text{, incluimos los ceros.} \\\\[2ex]\n\\text{Solución: } (-\\infty, -3] \\cup [2, \\infty)"
             }
           ]
+        },
+        {
+          "title": "Multiplicidad y cambio de signo",
+          "subtitle": "",
+          "content": "Si una raíz aparece dos veces, el signo no necesariamente cambia al cruzarla. Eso es importante en\npolinomios de grado mayor.",
+          "blocks": []
         }
       ],
       "challenges": [],
