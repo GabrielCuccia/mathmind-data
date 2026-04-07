@@ -344,7 +344,7 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\begin{aligned}\nx^2 + x - 6 & \\geq 0 \\\\\n(x + 3)(x - 2) & \\geq 0\n\\end{aligned} \\\\[2ex]\n\\text{Los puntos críticos son } -3 \\text{ y } 2\\text{. Probamos signos:} \\\\[2ex]\n\\text{Si } x < -3\\text{, el producto es positivo.} \\\\[2ex]\n\\text{Si } -3 < x < 2\\text{, el producto es negativo.} \\\\[2ex]\n\\text{Si } x > 2\\text{, el producto es positivo.} \\\\[2ex]\n\\text{Como la desigualdad es } \\geq 0\\text{, incluimos los ceros.} \\\\[2ex]\n\\text{Solución: } (-\\infty, -3] \\cup [2, \\infty)"
+              "content": "Resolver\n\\[ x^2 - 4x + 1 < 0. \\]\n\nHallamos las raíces:\n\\[ x = \\frac{4 \\pm \\sqrt{16 - 4}}{2} = 2 \\pm \\sqrt{3}. \\]\n\nComo la parábola abre hacia arriba, es negativa entre las raíces. Por tanto:\n\\[ 2 - \\sqrt{3} < x < 2 + \\sqrt{3}. \\]"
             }
           ]
         },
