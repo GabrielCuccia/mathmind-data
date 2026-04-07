@@ -686,6 +686,218 @@
       "isLocked": true
     },
     {
+      "id": "math1_prac_ineq_abs_p2",
+      "title": "Desigualdades racionales",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_prac_07",
+          "questionText": "Resuelva la inecuación racional:",
+          "questionLatex": "\\frac{x^2 + x - 6}{x^2 - 4} \\geq 0",
+          "options": [
+            "(-\\infty, -3] \\cup (-2, \\infty)",
+            "[-3, -2)",
+            "(-\\infty, -3] \\cup (-2, 2) \\cup (2, \\infty)",
+            "(-\\infty, -2) \\cup [2, \\infty)"
+          ],
+          "correctAnswerIndex": 2,
+          "explanationLatex": "\\text{Primero, factorizamos tanto el numerador como el denominador:}\\begin{aligned}\n\\frac{(x + 3)(x - 2)}{(x - 2)(x + 2)} & \\geq 0\n\\end{aligned}\\text{Podemos simplificar el término } (x - 2) \\text{, pero debemos recordar la restricción vital: el denominador original no puede ser cero, por lo que } x \\neq 2.\\text{La inecuación simplificada queda: } \\frac{x + 3}{x + 2} \\geq 0 \\quad \\text{con } x \\neq 2.\\text{Puntos críticos: } x = -3 \\text{ (cerrado por el } \\geq \\text{) y } x = -2 \\text{ (abierto por estar en el denominador).}\n\\text{Evaluando signos, la expresión es positiva en } (-\\infty, -3] \\text{ y en } (-2, \\infty).\\text{Sin embargo, debemos excluir el } 2 \\text{ del intervalo derecho.}\\text{Solución: } (-\\infty, -3] \\cup (-2, 2) \\cup (2, \\infty)",
+          "category": "Práctica Inecuaciones",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "challenge_1775593528795",
+          "questionText": "Determina el conjunto solución de:",
+          "options": [
+            "(-\\infty, -2) \\cup \\left(\\frac{5 - 3\\sqrt{5}}{2}, \\frac{5 + 3\\sqrt{5}}{2}\\right)",
+            "\\left(-2, \\frac{5 - 3\\sqrt{5}}{2}\\right) \\cup \\left(\\frac{5 + 3\\sqrt{5}}{2}, \\infty\\right)",
+            "(-\\infty, -2) \\cup (-1, 5)",
+            "\\left(-\\infty, \\frac{5 - 3\\sqrt{5}}{2}\\right)"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "Práctica Inecuaciones",
+          "moduleName": "Matemática I",
+          "questionLatex": "\\frac{(x - 1)^2}{x + 2} < 3",
+          "explanationLatex": "\\text{Pasamos el 3 restando para comparar con cero y desarrollamos el binomio:}\\begin{aligned}\n\\frac{x^2 - 2x + 1}{x + 2} - 3 & < 0 \\\\\n\\frac{x^2 - 2x + 1 - 3(x + 2)}{x + 2} & < 0 \\\\\n\\frac{x^2 - 5x - 5}{x + 2} & < 0\n\\end{aligned}\\text{Punto crítico del denominador: } x = -2.\\text{Para el numerador, no es factorizable fácilmente, usamos la fórmula general } \\left( x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\right):x = \\frac{5 \\pm \\sqrt{25 - 4(1)(-5)}}{2} = \\frac{5 \\pm \\sqrt{45}}{2} = \\frac{5 \\pm 3\\sqrt{5}}{2}\\text{Aproximando los valores } (x_1 \\approx -0.85, \\; x_2 \\approx 5.85) \\text{ y evaluando los intervalos en la recta numérica, la expresión es negativa (} < 0 \\text{) en los intervalos alternos:}\\text{Solución: } (-\\infty, -2) \\cup \\left(\\frac{5 - 3\\sqrt{5}}{2}, \\frac{5 + 3\\sqrt{5}}{2}\\right)"
+        },
+        {
+          "id": "challenge_1775593668021",
+          "questionText": "Halla el intervalo solución para la inecuación:",
+          "options": [
+            "(-3, -1) \\cup (1, 3)",
+            "(-\\infty, -3] \\cup [-1, 1] \\cup [3, \\infty)",
+            "$(-\\infty, -1) \\cup (1, \\infty)$",
+            "(-\\infty, -3) \\cup (-1, 1) \\cup (3, \\infty)"
+          ],
+          "correctAnswerIndex": 3,
+          "category": "Práctica Inecuaciones",
+          "moduleName": "Matemática I",
+          "questionLatex": "\\frac{x^2 - 9}{x^2 - 1} > 0",
+          "explanationLatex": "\\text{Factorizamos ambos polinomios como diferencias de cuadrados:}\\frac{(x - 3)(x + 3)}{(x - 1)(x + 1)} > 0\\text{Tenemos cuatro puntos críticos, todos abiertos por el símbolo } > \\text{ :}x = 3, \\quad x = -3, \\quad x = 1, \\quad x = -1\\text{Ordenamos en la recta: } -3, -1, 1, 3.\\text{Al haber puros factores lineales (potencias impares), los signos se alternan en la recta numérica comenzando con positivo desde la derecha (porque todas las } x \\text{ son positivas).}\n\\text{Buscamos los intervalos positivos } (> 0):\\text{Solución: } (-\\infty, -3) \\cup (-1, 1) \\cup (3, \\infty)"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "lesson_1775593791286",
+      "title": "Desigualdades con radicales",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "Idea general",
+          "subtitle": "",
+          "content": "Las desigualdades con radicales introducen una dificultad adicional: el dominio. Antes de resolver,\ndebes asegurarte de que la raíz esté definida en los números reales. Por ejemplo, si aparece √\nx − 3,\nentonces se requiere\nx − 3 ≥ 0.\nAdemás, al aislar un radical, hay que ser cuidadoso al elevar al cuadrado, porque esa operación\npuede introducir soluciones falsas si no se verifica al final.",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "No eleves al cuadrado una expresión sin revisar el signo de ambos lados. En radicales, el\ndominio y la verificación final son obligatorios."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Resolver} \\\\\n\\sqrt{x + 1} \\geq 3. \\\\\n\\text{Primero el dominio exige } x + 1 \\geq 0\\text{, es decir } x \\geq -1\\text{. Como ambos lados son no negativos, podemos elevar al cuadrado:} \\\\\nx + 1 \\geq 9. \\\\\n\\text{Entonces} \\\\\nx \\geq 8. \\\\\n\\text{Verificación con el dominio: la solución final es} \\\\\n[8, \\infty)."
+            }
+          ]
+        },
+        {
+          "title": "Radicales en ambos lados",
+          "subtitle": "",
+          "content": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Resolver} \\\\\n\\sqrt{2x - 1} < x. \\\\\n\\text{Dominio: } 2x - 1 \\geq 0\\text{, o sea } x \\geq \\frac{1}{2}\\text{. Además, para que la desigualdad tenga sentido útil, conviene considerar } x \\geq 0\\text{. Como ambos lados son no negativos en el dominio, elevamos al cuadrado:} \\\\\n2x - 1 < x^2. \\\\\n\\text{Reordenamos:} \\\\\nx^2 - 2x + 1 > 0 \\quad \\Rightarrow \\quad (x - 1)^2 > 0. \\\\\n\\text{Esto se cumple para todo } x \\neq 1\\text{, junto con el dominio } x \\geq \\frac{1}{2}\\text{. Por tanto, la solución es} \\\\\n\\left[ \\frac{1}{2}, 1 \\right) \\cup (1, \\infty)."
+            }
+          ]
+        },
+        {
+          "title": "Radicales y desigualdades no estrictas",
+          "subtitle": "",
+          "content": "Cuando la desigualdad es ≤ o ≥, al elevar al cuadrado aún debemos comprobar las soluciones\nobtenidas.\n",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Resolver} \\\\\n\\sqrt{x - 2} \\leq x - 4. \\\\\n\\text{Primero observamos el dominio: } x - 2 \\geq 0\\text{, así que } x \\geq 2\\text{. Además, como el lado izquierdo es siempre no negativo, para que la desigualdad tenga sentido útil necesitamos } x - 4 \\geq 0\\text{, es decir, } x \\geq 4\\text{. Con } x \\geq 4 \\text{ podemos elevar al cuadrado sin perder equivalencia:} \\\\\nx - 2 \\leq (x - 4)^2. \\\\\n\\text{Desarrollando:} \\\\\n0 \\leq x^2 - 9x + 18 = (x - 3)(x - 6). \\\\\n\\text{Como la parábola abre hacia arriba, esta expresión es no negativa fuera del intervalo entre raíces:} \\\\\nx \\leq 3 \\quad \\text{o} \\quad x \\geq 6. \\\\\n\\text{Pero además debemos respetar } x \\geq 4\\text{. Entonces la solución final es} \\\\\n[6, \\infty)."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "math1_functions_intro_p1",
+      "title": "Desigualdades con radicales",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_fun_04",
+          "questionText": "Resuelve la siguiente inecuación:",
+          "questionLatex": "\\sqrt{x} \\geq 2",
+          "options": [
+            "(4, \\infty)",
+            "[0, 4]",
+            "[4, \\infty)",
+            "(-\\infty, 4]"
+          ],
+          "correctAnswerIndex": 2,
+          "explanationLatex": "\\text{Paso 1: Restricción del dominio (Universo). Lo que está dentro de la raíz debe ser mayor o igual a cero:}x \\geq 0\\text{Paso 2: Como ambos lados de la inecuación original son positivos, elevamos al cuadrado para eliminar la raíz:}(\\sqrt{x})^2 \\geq 2^2 \\implies x \\geq 4\\text{Paso 3: Intersecamos la restricción con la solución obtenida. Los números que son al mismo tiempo } \\geq 0 \\text{ y } \\geq 4 \\text{ son los que van del 4 en adelante.}\\text{Solución: } [4, \\infty)",
+          "category": "Desigualdades con radicales",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "challenge_1775595444217",
+          "questionText": "Determina el intervalo solución de:",
+          "options": [
+            "[3, 19)",
+            "(3, 19)",
+            "(-\\infty, 19)",
+            "[3, \\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "Inyectividad",
+          "moduleName": "Matemática I",
+          "questionLatex": "\\sqrt{x - 3} < 4",
+          "explanationLatex": "\\text{Paso 1: Restricción del dominio. Garantizamos que el radicando no sea negativo:}x - 3 \\geq 0 \\implies x \\geq 3\\text{Paso 2: Elevamos ambos miembros al cuadrado para despejar la } x:\\begin{aligned}\n(\\sqrt{x - 3})^2 & < 4^2 \\\\\nx - 3 & < 16 \\\\\nx & < 16 + 3 \\\\\nx & < 19\n\\end{aligned}\\text{Paso 3: Intersecamos el dominio } (x \\geq 3) \\text{ con la solución } (x < 19). \\text{ La } x \\text{ debe estar atrapada entre esos dos valores.}3 \\leq x < 19\\text{Solución: } [3, 19)"
+        },
+        {
+          "id": "challenge_1775595568698",
+          "questionText": "Halla el conjunto solución para:",
+          "options": [
+            "\\left[-\\frac{1}{2}, 12\\right]",
+            "(-\\infty, 12]",
+            "\\left[-\\frac{1}{2}, \\infty\\right)",
+            "\\left(-\\frac{1}{2}, 12\\right)"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "Inyectividad",
+          "moduleName": "Matemática I",
+          "questionLatex": "\\sqrt{2x + 1} \\leq 5",
+          "explanationLatex": "\\text{Paso 1: Calculamos el dominio de la raíz:}\\begin{aligned}\n2x + 1 & \\geq 0 \\\\\n2x & \\geq -1 \\\\\nx & \\geq -\\frac{1}{2}\n\\end{aligned}\\text{Paso 2: Elevamos al cuadrado a ambos lados y despejamos:}\\begin{aligned}\n(\\sqrt{2x + 1})^2 & \\leq 5^2 \\\\\n2x + 1 & \\leq 25 \\\\\n2x & \\leq 24 \\\\\nx & \\leq 12\n\\end{aligned}\\text{Paso 3: Intersecamos los dos resultados. La } x \\text{ arranca obligatoriamente desde } -\\frac{1}{2} \\text{ (incluido) y llega como máximo hasta el } 12 \\text{ (incluido).}-\\frac{1}{2} \\leq x \\leq 12\\text{Solución: } \\left[-\\frac{1}{2}, 12\\right]"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
+      "id": "math1_functions_intro_p2",
+      "title": "Desigualdades con radicales",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "math1_fun_05",
+          "questionText": "Resuelve la inecuación irracional:",
+          "questionLatex": "\\sqrt{x + 2} > x",
+          "options": [
+            "[-2, 2)",
+            "(-1, 2)",
+            "[-2, \\infty)",
+            "(-2, 2]"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Paso 1: Calculamos el dominio (lo de adentro de la raíz debe ser } \\geq 0\\text{):}x + 2 \\geq 0 \\implies x \\geq -2\\text{Paso 2: Analizamos por casos, ya que } x \\text{ puede ser negativo o positivo.}\\text{Caso A (Si } x < 0\\text{): Una raíz (positiva o cero) siempre es mayor que un número negativo. Esto se cumple para el intervalo } [-2, 0).\\text{Caso B (Si } x \\geq 0\\text{): Ambos lados son } \\geq 0. \\text{ Elevamos al cuadrado:}\\begin{aligned}\nx + 2 & > x^2 \\\\\n0 & > x^2 - x - 2 \\\\\n0 & > (x - 2)(x + 1)\n\\end{aligned}\\text{La parábola es menor a cero entre sus raíces } (-1 \\text{ y } 2). \\text{ Intersecando } (-1, 2) \\text{ con nuestra condición } x \\geq 0, \\text{ obtenemos } [0, 2).\\text{Paso 3: Unimos las soluciones de ambos casos: } [-2, 0) \\cup [0, 2) = [-2, 2).",
+          "category": "Desigualdades con radicales",
+          "moduleName": "Matemática I"
+        },
+        {
+          "id": "challenge_1775595987951",
+          "questionText": "Determina el intervalo solución para:",
+          "options": [
+            "\\left[\\frac{1}{3}, \\infty\\right)",
+            "\\mathbb{R}",
+            "\\left(-\\infty, \\frac{1}{3}\\right]",
+            "[1, \\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "Simetría",
+          "moduleName": "Matemática I",
+          "questionLatex": "\\sqrt{3x - 1} \\leq x + 1",
+          "explanationLatex": "\\text{Paso 1: Calculamos el dominio de la raíz:}3x - 1 \\geq 0 \\implies x \\geq \\frac{1}{3}\\text{Paso 2: Si } x \\geq \\frac{1}{3}, \\text{ el lado derecho } (x + 1) \\text{ siempre será positivo. Elevamos al cuadrado con seguridad:}\\begin{aligned}\n3x - 1 & \\leq (x + 1)^2 \\\\\n3x - 1 & \\leq x^2 + 2x + 1 \\\\\n0 & \\leq x^2 - x + 2\n\\end{aligned}\\text{Paso 3: Analizamos la cuadrática } x^2 - x + 2. \\text{ Su discriminante es negativo } (\\Delta = 1^2 - 4(1)(2) = -7). \\text{ Al ser una parábola cóncava hacia arriba sin raíces, siempre flota por encima del eje } x.\\text{Por lo tanto, } 0 \\leq x^2 - x + 2 \\text{ es verdadero para cualquier número real.}\\text{Paso 4: Intersecamos esta verdad absoluta con nuestro dominio inicial.}\\text{Solución: } \\left[\\frac{1}{3}, \\infty\\right)"
+        },
+        {
+          "id": "challenge_1775596126264",
+          "questionText": "Halla el conjunto solución de:",
+          "options": [
+            "[4, 8]",
+            "[5, 8]",
+            "[4, \\infty)",
+            "[6, 8]"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "Simetría",
+          "moduleName": "Matemática I",
+          "questionLatex": "\\sqrt{x - 4} \\geq x - 6",
+          "explanationLatex": "\\text{Paso 1: Calculamos el dominio:}x - 4 \\geq 0 \\implies x \\geq 4\\text{Paso 2: Análisis por casos para el lado derecho } (x - 6).\\text{Caso A (Lado derecho negativo): } x - 6 < 0 \\implies x < 6.\\text{En el dominio } [4, 6), \\text{ tenemos \"Positivo } \\geq \\text{ Negativo\", lo cual es siempre cierto. La solución aquí es } [4, 6).\\text{Caso B (Lado derecho positivo o cero): } x - 6 \\geq 0 \\implies x \\geq 6.\\text{Elevamos al cuadrado al estar seguros de que ambos lados son no negativos:}\\begin{aligned}\nx - 4 & \\geq (x - 6)^2 \\\\\nx - 4 & \\geq x^2 - 12x + 36 \\\\\n0 & \\geq x^2 - 13x + 40 \\\\\nx^2 - 13x + 40 & \\leq 0 \\implies (x - 8)(x - 5) \\leq 0\n\\end{aligned}\\text{Esta inecuación se cumple en } [5, 8]. \\text{ Pero como estamos en el Caso B } (x \\geq 6), \\text{ la solución válida de este caso es } [6, 8].\\text{Paso 3: Unimos las partes. } [4, 6) \\cup [6, 8] = [4, 8]."
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
       "id": "math1_geometry_theory",
       "title": "Teoría: Geometría Analítica: Recta y Circunferencia",
       "type": "theory",
@@ -773,31 +985,6 @@
       "challenges": [],
       "isCompleted": false,
       "isLocked": false
-    },
-    {
-      "id": "math1_prac_ineq_abs_p2",
-      "title": "Práctica 2: Práctica: Desigualdades y Valor Absoluto",
-      "type": "practice",
-      "theorySections": [],
-      "challenges": [
-        {
-          "id": "math1_prac_07",
-          "questionText": "Resuelva la inecuación racional:",
-          "questionLatex": "\\frac{x+2}{x-1} \\geq 1 + \\frac{x}{x+1}",
-          "options": [
-            "(-1, 1)",
-            "(-\\infty, -1) \\cup (1, \\infty)",
-            "[-1, 1]",
-            "\\mathbb{R} \\setminus \\{-1, 1\\}"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Llevando a un lado: $\\frac{x+2}{x-1} - \\frac{x}{x+1} - 1 \\geq 0$. Simplificando: $\\frac{(x^2+3x+2) - (x^2-x) - (x^2-1)}{x^2-1} \\geq 0 \\Rightarrow \\frac{-x^2+4x+3}{x^2-1} \\geq 0$. (Nota: El ejercicio de Mike es similar, simplificado aquí para integridad).",
-          "category": "Práctica Inecuaciones",
-          "moduleName": "Matemática I"
-        }
-      ],
-      "isCompleted": false,
-      "isLocked": true
     },
     {
       "id": "math1_functions_intro_theory",
@@ -892,116 +1079,6 @@
       "challenges": [],
       "isCompleted": false,
       "isLocked": false
-    },
-    {
-      "id": "math1_functions_intro_p1",
-      "title": "Práctica 1: Funciones de R en R",
-      "type": "practice",
-      "theorySections": [],
-      "challenges": [
-        {
-          "id": "math1_fun_01",
-          "questionText": "¿Cuál es el dominio de f(x)=1/(x-3)?",
-          "questionLatex": "f(x)=\\frac{1}{x-3}",
-          "options": [
-            "\\mathbb{R}\\setminus\\{3\\}",
-            "\\mathbb{R}",
-            "[3,\\infty)",
-            "(-\\infty,3)"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "El denominador no puede ser cero, así que x\\neq 3.",
-          "category": "Dominio",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_fun_02",
-          "questionText": "¿Cuál es el dominio de f(x)=√(x-2)?",
-          "questionLatex": "f(x)=\\sqrt{x-2}",
-          "options": [
-            "[2,\\infty)",
-            "(-\\infty,2]",
-            "\\mathbb{R}",
-            "(2,\\infty)"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Dentro de la raíz debe cumplirse x-2\\geq 0.",
-          "category": "Dominio",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_fun_03",
-          "questionText": "Evalúa la función:",
-          "questionLatex": "f(x)=x^2+1,\\quad f(3)",
-          "options": [
-            "10",
-            "9",
-            "7",
-            "6"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Sustituyendo x=3 se obtiene 3^2+1=10.",
-          "category": "Evaluación de Funciones",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_fun_04",
-          "questionText": "¿La función f(x)=x² es inyectiva en ℝ?",
-          "questionLatex": "f(x)=x^2",
-          "options": [
-            "No",
-            "Sí",
-            "Solo si x\\geq 0",
-            "Solo si x\\leq 0"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Como f(1)=f(-1)=1, no es inyectiva en todo \\mathbb{R}.",
-          "category": "Inyectividad",
-          "moduleName": "Matemática I"
-        }
-      ],
-      "isCompleted": false,
-      "isLocked": true
-    },
-    {
-      "id": "math1_functions_intro_p2",
-      "title": "Práctica 2: Funciones de R en R",
-      "type": "practice",
-      "theorySections": [],
-      "challenges": [
-        {
-          "id": "math1_fun_05",
-          "questionText": "¿Cuál función es impar?",
-          "questionLatex": "Selecciona la función impar",
-          "options": [
-            "f(x)=x^3",
-            "f(x)=x^2",
-            "f(x)=|x|",
-            "f(x)=1"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Se cumple f(-x)=(-x)^3=-x^3=-f(x).",
-          "category": "Simetría",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_fun_06",
-          "questionText": "¿Cuál es el rango de f(x)=x²?",
-          "questionLatex": "f(x)=x^2",
-          "options": [
-            "[0,\\infty)",
-            "(-\\infty,\\infty)",
-            "(-\\infty,0]",
-            "[1,\\infty)"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Un cuadrado nunca es negativo, así que el rango comienza en 0.",
-          "category": "Rango",
-          "moduleName": "Matemática I"
-        }
-      ],
-      "isCompleted": false,
-      "isLocked": true
     },
     {
       "id": "math1_function_families_theory",
