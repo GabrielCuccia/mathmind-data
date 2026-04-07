@@ -576,6 +576,46 @@
       "isLocked": false
     },
     {
+      "id": "math1_geometry_p1",
+      "title": "Desigualdades racionales",
+      "type": "practice",
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1775589794463",
+          "questionText": "Resuelve la inecuación racional:",
+          "options": [
+            "(2, \\infty)",
+            "(-\\infty, 2)",
+            "[2, \\infty)",
+            "\\mathbb{R} - \\{2\\}"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "\\frac{1}{x - 2} > 0",
+          "explanationLatex": "\\text{Para que una fracción sea positiva (} > 0 \\text{), el numerador y el denominador deben tener el mismo signo.}\n\\text{Como el numerador es } 1 \\text{ (positivo), obligatoriamente el denominador debe ser positivo:}\n\\begin{aligned}\nx - 2 & > 0 \\\\\nx & > 2\n\\end{aligned}\\text{El } 2 \\text{ no se incluye porque haría que el denominador fuera cero. Solución: } (2, \\infty)"
+        },
+        {
+          "id": "challenge_1775589965185",
+          "questionText": "Determina el intervalo solución para:",
+          "options": [
+            "(-1, 0)",
+            "(-\\infty, -1) \\cup (0, \\infty)",
+            "[-1, 0]",
+            "(-\\infty, -1)"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "\\frac{x}{x + 1} < 0",
+          "explanationLatex": "\\text{Identificamos los valores que hacen cero al numerador y al denominador (puntos críticos):}\n\\text{Numerador: } x = 0\\text{Denominador: } x + 1 = 0 \\implies x = -1\\text{Analizamos los signos en la recta real. La fracción es negativa solo entre estos puntos:}\\text{Si } x < -1 \\text{, ambos son negativos } (-/-) \\to \\text{Positivo.}\\text{Si } -1 < x < 0 \\text{, uno es negativo y otro positivo } (-/+) \\to \\text{Negativo.}\\text{Si } x > 0 \\text{, ambos son positivos } (+/+) \\to \\text{Positivo.}\\text{Solución: } (-1, 0)"
+        }
+      ],
+      "isCompleted": false,
+      "isLocked": true
+    },
+    {
       "id": "math1_geometry_theory",
       "title": "Teoría: Geometría Analítica: Recta y Circunferencia",
       "type": "theory",
@@ -640,76 +680,6 @@
       "challenges": [],
       "isCompleted": false,
       "isLocked": false
-    },
-    {
-      "id": "math1_geometry_p1",
-      "title": "Práctica 1: Geometría Analítica: Recta y Circunferencia",
-      "type": "practice",
-      "theorySections": [],
-      "challenges": [
-        {
-          "id": "math1_geo_01",
-          "questionText": "Halle la ecuación de la recta que pasa por (1,3) y (4,2).",
-          "questionLatex": "P_1(1,3), P_2(4,2)",
-          "options": [
-            "x + 3y = 10",
-            "3x + y = 6",
-            "x - 3y = -8",
-            "x + y = 4"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Pendiente $m = \\frac{2-3}{4-1} = -1/3$. Usando punto-pendiente: $y-3 = -1/3(x-1) \\Rightarrow 3y-9 = -x+1 \\Rightarrow x+3y=10$.",
-          "category": "La Recta",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_geo_02",
-          "questionText": "Determine el centro y radio de la circunferencia:",
-          "questionLatex": "x^2 + y^2 - 6x + 4y - 12 = 0",
-          "options": [
-            "C(3, -2), r = 5",
-            "C(-3, 2), r = 5",
-            "C(3, -2), r = 25",
-            "C(6, -4), r = 12"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Completando cuadrados: $(x^2-6x+9) + (y^2+4y+4) = 12 + 9 + 4 \\Rightarrow (x-3)^2 + (y+2)^2 = 25$. Centro (3,-2), r=5.",
-          "category": "La Circunferencia",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_geo_03",
-          "questionText": "¿Cuál es la pendiente de una recta perpendicular a y = (2/3)x - 5?",
-          "questionLatex": "y = \\frac{2}{3}x - 5",
-          "options": [
-            "-3/2",
-            "3/2",
-            "-2/3",
-            "2/3"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "La pendiente original es 2/3. La perpendicular debe ser $-1/m$, es decir, $-3/2$.",
-          "category": "Perpendicularidad",
-          "moduleName": "Matemática I"
-        },
-        {
-          "id": "math1_geo_04",
-          "questionText": "Halle la distancia entre los puntos A(2,1) y B(6,3).",
-          "questionLatex": "A(2,1), B(6,3)",
-          "options": [
-            "\\sqrt{20}",
-            "\\sqrt{10}",
-            "6",
-            "4"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "$d = \\sqrt{(6-2)^2 + (3-1)^2} = \\sqrt{4^2 + 2^2} = \\sqrt{16+4} = \\sqrt{20}$.",
-          "category": "Distancia",
-          "moduleName": "Matemática I"
-        }
-      ],
-      "isCompleted": false,
-      "isLocked": true
     },
     {
       "id": "math1_prac_ineq_abs_theory",
