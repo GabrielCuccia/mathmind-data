@@ -2262,7 +2262,7 @@
         {
           "title": "Por qué estos problemas son más difíciles",
           "subtitle": "Estrategias combinadas y problemas tipo parcial",
-          "content": "En un parcial real, muchas veces no se pregunta por un tipo puro de desigualdad, sino por una\nmezcla: una fracción con raíz, un polinomio con valor absoluto, o una expresión con varios cambios\nde signo. En esos casos, el secreto no es inventar una técnica nueva, sino combinar las técnicas ya\nvistas en el orden correcto.\n\nOrden sugerido para resolver problemas mixtos:\n  Dominio\n  simplificación,\n  Puntos críticos,\n  Análisis de signos,\n  Verificación final.",
+          "content": "En un parcial real, muchas veces no se pregunta por un tipo puro de desigualdad, sino por una mezcla: una fracción con raíz, un polinomio con valor absoluto, o una expresión con varios cambios de signo. En esos casos, el secreto no es inventar una técnica nueva, sino combinar las técnicas ya vistas en el orden correcto.\n\nOrden sugerido para resolver problemas mixtos:\n  Dominio\n  simplificación,\n  Puntos críticos,\n  Análisis de signos,\n  Verificación final.",
           "blocks": []
         },
         {
