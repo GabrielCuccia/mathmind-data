@@ -7,12 +7,12 @@
   "lessons": [
     {
       "id": "math1_ineq_theory_1",
-      "title": "Inecuaciones: Introduccion",
+      "title": "Desigualdades",
       "type": "theory",
       "theorySections": [
         {
           "title": "Introduccion",
-          "subtitle": "Matemática I • Inecuaciones",
+          "subtitle": "Desigualdades",
           "content": "En toda inecuación trabajaremos con una idea constante: encontrar los valores de x que hacen\nverdadera una afirmación. Esos valores pueden formar un intervalo, una unión de intervalos, un\nconjunto finito o incluso el conjunto vacío. Por eso aprenderás a leer soluciones en notación de\nintervalos, en recta numérica y también en lenguaje algebraico.\n\nSi dominas tres ideas, ya tienes gran parte del camino resuelto:\n  Despejar con cuidado,\n  Analizar signos,\n  Interpretar intervalos.\n",
           "formulaLatex": "",
           "proTip": "Al terminar de despejar, siempre verifica si el símbolo original era estricto ($<, >$) o no estricto ($\\leq, \\geq$). Esto determinará si en tu solución final usas paréntesis o corchetes.",
@@ -20,7 +20,7 @@
         },
         {
           "title": "Lenguaje y notación",
-          "subtitle": "Matemática I • Inecuaciones",
+          "subtitle": "Desigualdades",
           "content": "Usaremos la notación estándar:\n<, >, ≤, ≥ .\nLas soluciones se expresan con intervalos como\n(a, b), [a, b], (a, b], [a, b),\ny también con uniones:\n(−∞, −2) ∪ (3, ∞).\nEl símbolo ∞ no es un número real; por eso nunca se escribe con corchete. Siempre va acompañado\nde paréntesis.",
           "blocks": [
             {
@@ -31,7 +31,7 @@
         },
         {
           "title": "La recta real y el orden",
-          "subtitle": "Matemática I • Inecuaciones",
+          "subtitle": "Desigualdades",
           "content": "Una desigualdad compara dos cantidades. Si escribimos a < b, estamos diciendo que a está a la\nizquierda de b en la recta real. Este criterio geométrico es muy importante, porque nos ayuda a\ninterpretar visualmente soluciones y a detectar errores de signo.\n\nLa propiedad central es que las desigualdades se comportan casi como ecuaciones: podemos sumar o restar el mismo número en ambos lados sin cambiar el conjunto solución. Sin embargo, si\nmultiplicamos o dividimos por un número negativo, el orden se invierte.\n",
           "blocks": [
             {
@@ -42,7 +42,7 @@
         },
         {
           "title": "Propiedades básicas de las desigualdades",
-          "subtitle": "Matemática I • Inecuaciones",
+          "subtitle": "Desigualdades",
           "content": "Sean a, b, c ∈ R.",
           "blocks": [
             {
@@ -71,14 +71,14 @@
         },
         {
           "title": "Notación de intervalos",
-          "subtitle": "Matemática I • Inecuaciones",
+          "subtitle": "Desigualdades",
           "content": "La notación de intervalos resume de forma compacta una solución. Por ejemplo:\n−1 ≤ x < 4 ⇐⇒ x ∈ [−1, 4).\nSi la desigualdad es estricta, el extremo no se incluye. Si es no estricta, sí se incluye.\nEn resumen:\n\\begin{array}{lll}\n\\hline\n\\text{Forma algebraica} & \\text{Tipo de extremo} & \\text{Notación} \\\\\n\\hline\nx < a \\text{ o } x > a & \\text{abierto} & \\text{paréntesis} \\\\\nx \\leq a \\text{ o } x \\geq a & \\text{cerrado} & \\text{corchete} \\\\\n\\hline\n\\end{array}",
           "blocks": [],
           "formulaLatex": ""
         },
         {
           "title": "Método general de trabajo",
-          "subtitle": "",
+          "subtitle": "Desigualdades",
           "content": "Para casi cualquier inecuación, conviene seguir esta secuencia:\n  Simplificar la expresión.\n  Llevar todo a un solo lado si es posible.\n  Factorizar o unificar en una sola fracción.\n  Hallar puntos críticos.\n  Analizar el signo por intervalos.\n  Escribir la solución en intervalos.\nMás adelante verás que este método aparece una y otra vez.",
           "blocks": []
         }
@@ -108,7 +108,7 @@
         },
         {
           "title": "Cuando aparece un número negativo",
-          "subtitle": "",
+          "subtitle": "Desigualdades lineales",
           "content": "Este es uno de los puntos más delicados. Si en algún paso multiplicas o divides por un\nnúmero negativo, la desigualdad cambia de sentido.",
           "blocks": [
             {
@@ -119,7 +119,7 @@
         },
         {
           "title": "Desigualdades con fracciones y decimales",
-          "subtitle": "",
+          "subtitle": "Desigualdades lineales",
           "content": "Cuando aparecen fracciones o decimales, muchas veces conviene eliminar denominadores. Esto no cambia la lógica del ejercicio; solo lo vuelve más limpio.",
           "blocks": [
             {
@@ -134,7 +134,7 @@
         },
         {
           "title": "Desigualdades compuestas",
-          "subtitle": "",
+          "subtitle": "Desigualdades lineales",
           "content": "A veces se estudia una condición doble, como\n−2 < 3x + 1 ≤ 7.\nEso significa que la expresión debe cumplir ambas condiciones al mismo tiempo. Se resuelve operando en los tres miembros a la vez.\n",
           "blocks": [
             {
@@ -522,7 +522,7 @@
       "theorySections": [
         {
           "title": "Idea general",
-          "subtitle": "Matemática I • Inecuaciones",
+          "subtitle": "Desigualdades cuadráticas y polinómicas",
           "content": "Una desigualdad cuadrática tiene la forma\nax2 + bx + c ≷ 0.\nEl corazón del método es factorizar el polinomio, hallar sus ceros y estudiar el signo en cada\nintervalo. La razón es simple: un polinomio cambia de signo al cruzar una raíz simple, pero no\nsiempre cambia si la raíz tiene multiplicidad par.\n",
           "formulaLatex": "",
           "proTip": "No te quedes solo con “encontrar raíces”. En desigualdades, las raíces son puntos de corte,\nno la solución final en sí mismas.",
@@ -530,7 +530,7 @@
         },
         {
           "title": "Método del intervalo",
-          "subtitle": "Matemática I • Inecuaciones",
+          "subtitle": "Desigualdades cuadráticas y polinómicas",
           "content": "Si tienes\n(x − 2)(x + 3) > 0,\nentonces los puntos críticos son x = 2\\ y x = −3. Esos puntos dividen la recta en tres intervalos.\nLuego pruebas el signo del producto en cada uno.",
           "formulaLatex": "",
           "proTip": "",
@@ -543,7 +543,7 @@
         },
         {
           "title": "Cuadráticas no factorizables a simple vista",
-          "subtitle": "Matemática I • Inecuaciones",
+          "subtitle": "Desigualdades cuadráticas y polinómicas",
           "content": "Cuando el polinomio no factoriza fácilmente, puedes usar la fórmula general para encontrar raíces\no completar el cuadrado. Después se aplica el mismo análisis de signos.",
           "blocks": [
             {
@@ -554,7 +554,7 @@
         },
         {
           "title": "Multiplicidad y cambio de signo",
-          "subtitle": "Matemática I • Inecuaciones",
+          "subtitle": "Desigualdades cuadráticas y polinómicas",
           "content": "Si una raíz aparece dos veces, el signo no necesariamente cambia al cruzarla. Eso es importante en\npolinomios de grado mayor.",
           "blocks": [
             {
@@ -956,7 +956,7 @@
       "theorySections": [
         {
           "title": "Idea general",
-          "subtitle": "Matemática I • Desigualdades racionales",
+          "subtitle": "Desigualdades racionales",
           "content": "Una desigualdad racional tiene variables en el numerador, en el denominador o en ambos. Su forma\ntípica es\nP(x)\nQ(x)\n≷ 0.\nLa estrategia es llevar todo a un solo cociente, hallar ceros del numerador y del denominador, y\nanalizar signos por intervalos. Los ceros del denominador nunca pertenecen a la solución, porque\nallí la expresión no existe.\n",
           "formulaLatex": "",
           "proTip": "Si el argumento del valor absoluto es una expresión lineal, primero encuentra el punto donde esa expresión vale cero: allí la recta real se divide en dos regiones.",
@@ -973,7 +973,7 @@
         },
         {
           "title": "Pasos sistemáticos",
-          "subtitle": "Matemática I • Desigualdades racionales",
+          "subtitle": "Desigualdades racionales",
           "content": "  Llevar todo a un lado.\n  Unificar en una sola fracción.\n  Factorizar numerador y denominador.\n  Hallar puntos críticos.\n  Hacer tabla de signos.\n  Elegir los intervalos que satisfacen la desigualdad",
           "blocks": [
             {
@@ -985,7 +985,7 @@
         },
         {
           "title": "Casos con cancelación aparente",
-          "subtitle": "Matemática I • Desigualdades racionales",
+          "subtitle": "Desigualdades racionales",
           "content": "A veces una fracción parece simplificarse y eso puede hacerte perder información. Debes mantener\nsiempre las restricciones del dominio original.\n",
           "blocks": [],
           "formulaLatex": "\\text{Resolver} \\\\\n\\frac{x^2 - 1}{x - 1} \\geq 0. \\\\\n\\text{Factorizamos:} \\\\\n\\frac{(x - 1)(x + 1)}{x - 1} \\geq 0. \\\\\n\\text{Aunque se cancele formalmente el factor } x - 1\\text{, el valor } x = 1 \\text{ sigue prohibido porque anula el denominador original. La desigualdad equivalente para } x \\neq 1 \\text{ queda} \\\\\nx + 1 \\geq 0. \\\\\n\\text{Entonces } x \\geq -1\\text{, pero excluyendo } x = 1\\text{. La solución es} \\\\\n[-1, 1) \\cup (1, \\infty)."
@@ -1379,7 +1379,7 @@
       "theorySections": [
         {
           "title": "Idea general",
-          "subtitle": "",
+          "subtitle": "Desigualdades con radicales",
           "content": "Las desigualdades con radicales introducen una dificultad adicional: el dominio. Antes de resolver,\ndebes asegurarte de que la raíz esté definida en los números reales. Por ejemplo, si aparece √\nx − 3,\nentonces se requiere\nx − 3 ≥ 0.\nAdemás, al aislar un radical, hay que ser cuidadoso al elevar al cuadrado, porque esa operación\npuede introducir soluciones falsas si no se verifica al final.",
           "blocks": [
             {
@@ -1394,7 +1394,7 @@
         },
         {
           "title": "Radicales en ambos lados",
-          "subtitle": "",
+          "subtitle": "Desigualdades con radicales",
           "content": "",
           "blocks": [
             {
@@ -1405,7 +1405,7 @@
         },
         {
           "title": "Radicales y desigualdades no estrictas",
-          "subtitle": "",
+          "subtitle": "Desigualdades con radicales",
           "content": "Cuando la desigualdad es ≤ o ≥, al elevar al cuadrado aún debemos comprobar las soluciones\nobtenidas.\n",
           "blocks": [
             {
@@ -1801,14 +1801,14 @@
       "theorySections": [
         {
           "title": "Definición y significado geométrico",
-          "subtitle": "",
+          "subtitle": "Desigualdades con valor absoluto",
           "content": "El valor absoluto de un número es su distancia al cero en la recta real. Por eso siempre es no\nnegativo. Si escribimos\n|x|,\nestamos midiendo la distancia entre x y el origen.\nPara una expresión como |x − a|, la interpretación es aún más importante: representa la distancia\nentre x y el número a.",
           "blocks": [],
           "formulaLatex": "\n"
         },
         {
           "title": "Definición por casos",
-          "subtitle": "",
+          "subtitle": "Desigualdades con valor absoluto",
           "content": "",
           "blocks": [
             {
@@ -1827,7 +1827,7 @@
         },
         {
           "title": "Ecuaciones con valor absoluto",
-          "subtitle": "",
+          "subtitle": "Desigualdades con valor absoluto",
           "content": "Si\n|u| = a,\nentonces:\nsi a < 0, no hay solución;\nsi a ≥ 0, las soluciones son u = a y u = −a.",
           "blocks": [
             {
@@ -1838,7 +1838,7 @@
         },
         {
           "title": "Inecuaciones con valor absoluto del tipo menor que",
-          "subtitle": "",
+          "subtitle": "Desigualdades con valor absoluto",
           "content": "Si a > 0, entonces\n|u| < a ⇐⇒ −a < u < a,\ny\n|u| ≤ a ⇐⇒ −a ≤ u ≤ a.\nGeométricamente, esto significa que u está dentro de una distancia a del cero.",
           "blocks": [
             {
@@ -1849,7 +1849,7 @@
         },
         {
           "title": "Inecuaciones con valor absoluto del tipo mayor que",
-          "subtitle": "",
+          "subtitle": "Desigualdades con valor absoluto",
           "content": "Si a > 0, entonces\n|u| > a ⇐⇒ u < −a o u > a,\ny de manera análoga para ≥.\n",
           "blocks": [
             {
@@ -1860,7 +1860,7 @@
         },
         {
           "title": "Casos especiales con valor absoluto",
-          "subtitle": "",
+          "subtitle": "Desigualdades con valor absoluto",
           "content": "Si aparece algo como |u| < a con a < 0, la solución es vacía. Si aparece |u| > a con a < 0, la\ndesigualdad es verdadera para todo u real.",
           "blocks": [
             {
@@ -1871,7 +1871,7 @@
         },
         {
           "title": "Desigualdades más largas",
-          "subtitle": "",
+          "subtitle": "Desigualdades con valor absoluto",
           "content": "A veces el valor absoluto no aparece aislado. Entonces primero hay que despejarlo.",
           "blocks": [
             {
@@ -2261,13 +2261,13 @@
       "theorySections": [
         {
           "title": "Por qué estos problemas son más difíciles",
-          "subtitle": "",
+          "subtitle": "Estrategias combinadas y problemas tipo parcial",
           "content": "En un parcial real, muchas veces no se pregunta por un tipo puro de desigualdad, sino por una\nmezcla: una fracción con raíz, un polinomio con valor absoluto, o una expresión con varios cambios\nde signo. En esos casos, el secreto no es inventar una técnica nueva, sino combinar las técnicas ya\nvistas en el orden correcto.\n\nOrden sugerido para resolver problemas mixtos:\n  Dominio\n  simplificación,\n  Puntos críticos,\n  Análisis de signos,\n  Verificación final.",
           "blocks": []
         },
         {
           "title": "Ejemplo mixto 1",
-          "subtitle": "",
+          "subtitle": "Estrategias combinadas y problemas tipo parcial",
           "content": "",
           "blocks": [
             {
@@ -2278,7 +2278,7 @@
         },
         {
           "title": "Ejemplo mixto 2",
-          "subtitle": "",
+          "subtitle": "Estrategias combinadas y problemas tipo parcial",
           "content": "",
           "blocks": [
             {
@@ -2289,7 +2289,7 @@
         },
         {
           "title": " Ejemplo mixto 3",
-          "subtitle": "",
+          "subtitle": "Estrategias combinadas y problemas tipo parcial",
           "content": "",
           "blocks": [
             {
