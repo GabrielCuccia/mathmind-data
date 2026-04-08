@@ -36,7 +36,7 @@
           "blocks": [
             {
               "type": "example",
-              "content": "Resolver\\ −2x > 6. \\\\[2ex]\n−2x > 6 ⇒ x < −3.\\\\[2ex]\n\nAl\\ dividir\\ entre\\ −2, el\\ signo\\ cambia\\ de\\ sentido.\\\\[2ex] La\\ solución\\ es\\\n(−∞, −3).\n"
+              "content": "Resolver\\ −2x > 6. \\\\\n−2x > 6 ⇒ x < −3.\\\\\nAl\\ dividir\\ entre\\ −2, el\\ signo\\ cambia\\ de\\ sentido.\\\\ La\\ solución\\ es\\\n(−∞, −3).\n"
             }
           ]
         },
@@ -139,7 +139,7 @@
           "blocks": [
             {
               "type": "example",
-              "content": "Resolver  \n−2 < 3x + 1 ≤ 7.  \\\\[2ex]\nRestamos\\ 1: \\\\[2ex]\n−3 < 3x ≤ 6.\\\\[2ex]\nDividimos\\ entre\\ 3:\\\\[2ex]\n−1 < x ≤ 2.\\\\[2ex]\nSolución:\n(−1, 2].\n"
+              "content": "Resolver  \n−2 < 3x + 1 ≤ 7.  \\\\\nRestamos\\ 1: \\\\\n−3 < 3x ≤ 6.\\\\\nDividimos\\ entre\\ 3:\\\\\n−1 < x ≤ 2.\\\\\nSolución:\n(−1, 2].\n"
             }
           ]
         }
