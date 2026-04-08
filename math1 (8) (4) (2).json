@@ -200,7 +200,27 @@
           "category": "Inecuaciones Lineales",
           "moduleName": "Matemática I",
           "questionLatex": "-x < 4",
-          "explanationLatex": "\\text{Para despejar la } x \\text{, debemos multiplicar (o dividir) ambos lados por } -1.\\text{¡Ojo! Al multiplicar por un número negativo, la dirección de la desigualdad se invierte:}\n\\begin{aligned}\n(-1)(-x) & > (-1)(4) \\\\\nx & > -4\n\\end{aligned}\\text{Solución: } (-4, \\infty)"
+          "explanationLatex": "\\text{Para despejar la } x \\text{, debemos multiplicar (o dividir) ambos lados por } -1.\\text{¡Ojo! Al multiplicar por un número negativo, la dirección de la desigualdad se invierte:}\n\\begin{aligned}\n(-1)(-x) & > (-1)(4) \\\\\nx & > -4\n\\end{aligned}\\text{Solución: } (-4, \\infty)",
+          "explanationSteps": [
+            {
+              "title": "Multiplicar por -1",
+              "text": "Para despejar la variable $x$ y eliminar su signo negativo, multiplicamos (o dividimos) ambos lados de la desigualdad por $-1$.",
+              "mathContent": "(-1)(-x) \\quad \\text{y} \\quad (4)(-1)",
+              "icon": "fx"
+            },
+            {
+              "title": "Inversión de la Desigualdad",
+              "text": "¡Propiedad fundamental! Siempre que multiplicamos o dividimos una desigualdad por un número negativo, el sentido de la desigualdad debe invertirse obligatoriamente. El símbolo de menor que ($<$) cambia a mayor que ($>$).",
+              "mathContent": "x > -4",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Obtenemos el conjunto solución final. Esto indica que la desigualdad se cumple para cualquier valor estrictamente mayor a $-4$.",
+              "mathContent": "x \\in (-4, \\infty)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775070171282",
@@ -215,7 +235,27 @@
           "category": "Inecuaciones Lineales",
           "moduleName": "Matemática I",
           "questionLatex": "7x \\leq 21",
-          "explanationLatex": "\\begin{aligned}\n7x & \\leq 21 \\\\\nx & \\leq \\frac{21}{7} \\\\\nx & \\leq 3\n\\end{aligned}\\text{El símbolo \"menor o igual que\" indica que el 3 está incluido: } (-\\infty, 3]"
+          "explanationLatex": "\\begin{aligned}\n7x & \\leq 21 \\\\\nx & \\leq \\frac{21}{7} \\\\\nx & \\leq 3\n\\end{aligned}\\text{El símbolo \"menor o igual que\" indica que el 3 está incluido: } (-\\infty, 3]",
+          "explanationSteps": [
+            {
+              "title": "Propiedad de la División",
+              "text": "Para despejar la variable $x$, dividimos ambos lados de la desigualdad entre 7. Como estamos dividiendo por un número positivo, el símbolo de la desigualdad se mantiene igual.",
+              "mathContent": "\\frac{7x}{7} \\leq \\frac{21}{7}",
+              "icon": "fx"
+            },
+            {
+              "title": "Simplificación",
+              "text": "Realizamos la división en ambos lados para obtener el resultado final.",
+              "mathContent": "x \\leq 3",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "El conjunto solución incluye al 3 y a todos los números menores que él. Usamos un corchete cerrado en la notación de intervalo para indicar que el 3 está incluido (menor o igual).",
+              "mathContent": "x \\in (-\\infty, 3]",
+              "icon": "star"
+            }
+          ]
         }
       ],
       "isCompleted": false,
@@ -240,7 +280,33 @@
           "category": "Inecuaciones Racionales",
           "moduleName": "Matemática I",
           "questionLatex": "2x - 3 \\geq 9",
-          "explanationLatex": "\\begin{aligned}\n2x - 3 & \\geq 9 \\\\\n2x & \\geq 9 + 3 \\\\\n2x & \\geq 12 \\\\\nx & \\geq \\frac{12}{2} \\\\\nx & \\geq 6\n\\end{aligned}\\text{Como incluye el \"igual\" (} \\geq \\text{), el extremo es cerrado. Solución: } [6, \\infty)"
+          "explanationLatex": "\\begin{aligned}\n2x - 3 & \\geq 9 \\\\\n2x & \\geq 9 + 3 \\\\\n2x & \\geq 12 \\\\\nx & \\geq \\frac{12}{2} \\\\\nx & \\geq 6\n\\end{aligned}\\text{Como incluye el \"igual\" (} \\geq \\text{), el extremo es cerrado. Solución: } [6, \\infty)",
+          "explanationSteps": [
+            {
+              "title": "Propiedad de la Suma",
+              "text": "Para comenzar a despejar la variable x, aplicamos la operación inversa restada sumando 3 en ambos lados de la desigualdad.",
+              "mathContent": "2x - 3 + 3 \\geq 9 + 3",
+              "icon": "fx"
+            },
+            {
+              "title": "Simplificación",
+              "text": "Realizamos la suma correspondiente para reducir la expresión y dejar el término con x aislado de un lado.",
+              "mathContent": "2x \\geq 12",
+              "icon": "chart"
+            },
+            {
+              "title": "Propiedad de la División",
+              "text": "Ahora dividimos ambos lados entre 2 para despejar completamente la x. Como estamos dividiendo entre un número positivo, el símbolo de la desigualdad se mantiene en la misma dirección.",
+              "mathContent": "\\frac{2x}{2} \\geq \\frac{12}{2} \\quad \\rightarrow \\quad x \\geq 6",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "El resultado final nos indica que la desigualdad se cumple para el 6 y todos los números mayores a él. Utilizamos un corchete cerrado para representar que el 6 está incluido (mayor o igual).",
+              "mathContent": "x \\in [6, \\infty)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775077004414",
@@ -255,7 +321,33 @@
           "category": "Inecuaciones Racionales",
           "moduleName": "Matemática I",
           "questionLatex": "\\frac{x}{4} - 2 < 1",
-          "explanationLatex": "\\text{Primero pasamos el término independiente y luego el denominador:}\\begin{aligned}\n\\frac{x}{4} - 2 & < 1 \\\\\n\\frac{x}{4} & < 1 + 2 \\\\\n\\frac{x}{4} & < 3 \\\\\nx & < 3 \\cdot 4 \\\\\nx & < 12\n\\end{aligned}\\text{Al ser estrictamente \"menor que\" (} < \\text{), usamos paréntesis. Solución: } (-\\infty, 12)"
+          "explanationLatex": "\\text{Primero pasamos el término independiente y luego el denominador:}\\begin{aligned}\n\\frac{x}{4} - 2 & < 1 \\\\\n\\frac{x}{4} & < 1 + 2 \\\\\n\\frac{x}{4} & < 3 \\\\\nx & < 3 \\cdot 4 \\\\\nx & < 12\n\\end{aligned}\\text{Al ser estrictamente \"menor que\" (} < \\text{), usamos paréntesis. Solución: } (-\\infty, 12)",
+          "explanationSteps": [
+            {
+              "title": "Propiedad de la Suma",
+              "text": "Primero, aislamos el término que contiene la variable $x$. Para ello, sumamos 2 en ambos lados de la desigualdad.",
+              "mathContent": "\\frac{x}{4} - 2 + 2 < 1 + 2",
+              "icon": "fx"
+            },
+            {
+              "title": "Simplificación",
+              "text": "Realizamos la suma en el lado derecho para simplificar la expresión.",
+              "mathContent": "\\frac{x}{4} < 3",
+              "icon": "chart"
+            },
+            {
+              "title": "Propiedad de la Multiplicación",
+              "text": "Para despejar completamente la $x$, multiplicamos ambos lados de la desigualdad por 4. Al multiplicar por un número positivo, la dirección del símbolo se mantiene inalterada.",
+              "mathContent": "4 \\cdot \\left(\\frac{x}{4}\\right) < 3 \\cdot 4 \\quad \\rightarrow \\quad x < 12",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Llegamos al resultado final. La desigualdad se cumple para cualquier número estrictamente menor a 12. En notación de intervalo, utilizamos paréntesis para indicar que el 12 no está incluido.",
+              "mathContent": "x \\in (-\\infty, 12)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775077906463",
@@ -270,7 +362,27 @@
           "category": "Inecuaciones Racionales",
           "moduleName": "Matemática I",
           "questionLatex": "5 - 3x \\leq 11",
-          "explanationLatex": "\\begin{aligned}\n5 - 3x & \\leq 11 \\\\\n-3x & \\leq 11 - 5 \\\\\n-3x & \\leq 6\n\\end{aligned}\\text{¡Atención aquí! Al pasar el } -3 \\text{ dividiendo, la desigualdad se invierte:}\\begin{aligned}\nx & \\geq \\frac{6}{-3} \\\\\nx & \\geq -2\n\\end{aligned}\\text{Solución: } [-2, \\infty)"
+          "explanationLatex": "\\begin{aligned}\n5 - 3x & \\leq 11 \\\\\n-3x & \\leq 11 - 5 \\\\\n-3x & \\leq 6\n\\end{aligned}\\text{¡Atención aquí! Al pasar el } -3 \\text{ dividiendo, la desigualdad se invierte:}\\begin{aligned}\nx & \\geq \\frac{6}{-3} \\\\\nx & \\geq -2\n\\end{aligned}\\text{Solución: } [-2, \\infty)",
+          "explanationSteps": [
+            {
+              "title": "Aislar el término con variable",
+              "text": "Primero, restamos 5 en ambos lados de la desigualdad para empezar a despejar el término que contiene la $x$.",
+              "mathContent": "5 - 3x - 5 \\leq 11 - 5 \\quad \\rightarrow \\quad -3x \\leq 6",
+              "icon": "fx"
+            },
+            {
+              "title": "Inversión de la Desigualdad",
+              "text": "Para despejar la $x$, dividimos ambos lados entre $-3$. ¡Atención aquí! Como estamos dividiendo por un número negativo, debemos invertir obligatoriamente el sentido de la desigualdad (el símbolo $\\leq$ cambia a $\\geq$).",
+              "mathContent": "\\frac{-3x}{-3} \\geq \\frac{6}{-3} \\quad \\rightarrow \\quad x \\geq -2",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "El resultado nos indica que la solución incluye al $-2$ y a todos los números mayores que él. Al expresarlo como intervalo, usamos un corchete cerrado para indicar que el $-2$ está incluido (mayor o igual).",
+              "mathContent": "x \\in [-2, \\infty)",
+              "icon": "star"
+            }
+          ]
         }
       ],
       "isCompleted": false,
@@ -295,7 +407,33 @@
           "correctAnswerIndex": 0,
           "explanationLatex": "\\text{Podemos resolverlo pasando el } -2 \\text{ a dividir primero. ¡Recuerda invertir el símbolo!}\n\\begin{aligned}\n-2(3x - 1) & > 8 \\\\\n3x - 1 & < \\frac{8}{-2} \\\\\n3x - 1 & < -4 \\\\\n3x & < -4 + 1 \\\\\n3x & < -3 \\\\\nx & < \\frac{-3}{3} \\\\\nx & < -1\n\\end{aligned}\\text{Solución: } (-\\infty, -1)",
           "category": "Inecuaciones Racionales",
-          "moduleName": "Matemática I"
+          "moduleName": "Matemática I",
+          "explanationSteps": [
+            {
+              "title": "Propiedad Distributiva",
+              "text": "Primero, eliminamos los paréntesis multiplicando el factor externo ($-2$) por cada uno de los términos que están adentro.",
+              "mathContent": "-6x + 2 > 8",
+              "icon": "fx"
+            },
+            {
+              "title": "Aislar el término con variable",
+              "text": "Ahora, restamos 2 en ambos lados de la desigualdad para empezar a despejar el término que contiene la $x$.",
+              "mathContent": "-6x + 2 - 2 > 8 - 2 \\quad \\rightarrow \\quad -6x > 6",
+              "icon": "chart"
+            },
+            {
+              "title": "Inversión de la Desigualdad",
+              "text": "Para despejar la $x$, dividimos ambos lados entre $-6$. Como estamos dividiendo por un número negativo, es obligatorio invertir el sentido de la desigualdad (el símbolo $>$ cambia a $<$ ).",
+              "mathContent": "\\frac{-6x}{-6} < \\frac{6}{-6} \\quad \\rightarrow \\quad x < -1",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "El resultado final indica que la solución incluye a todos los números estrictamente menores a $-1$. En notación de intervalo, usamos paréntesis porque el $-1$ no está incluido.",
+              "mathContent": "x \\in (-\\infty, -1)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775081055692",
@@ -310,7 +448,33 @@
           "category": "Inecuaciones Racionales",
           "moduleName": "Matemática I",
           "questionLatex": "\\frac{2x - 1}{3} \\leq \\frac{x + 4}{2}",
-          "explanationLatex": "\\begin{aligned}\n6 \\cdot \\left( \\frac{2x - 1}{3} \\right) & \\leq 6 \\cdot \\left( \\frac{x + 4}{2} \\right) \\\\\n2(2x - 1) & \\leq 3(x + 4) \\\\\n4x - 2 & \\leq 3x + 12 \\\\\n4x - 3x & \\leq 12 + 2 \\\\\nx & \\leq 14\n\\end{aligned}\\text{Como el símbolo es } \\leq \\text{, el intervalo es cerrado a la derecha. Solución: } (-\\infty, 14]"
+          "explanationLatex": "\\begin{aligned}\n6 \\cdot \\left( \\frac{2x - 1}{3} \\right) & \\leq 6 \\cdot \\left( \\frac{x + 4}{2} \\right) \\\\\n2(2x - 1) & \\leq 3(x + 4) \\\\\n4x - 2 & \\leq 3x + 12 \\\\\n4x - 3x & \\leq 12 + 2 \\\\\nx & \\leq 14\n\\end{aligned}\\text{Como el símbolo es } \\leq \\text{, el intervalo es cerrado a la derecha. Solución: } (-\\infty, 14]",
+          "explanationSteps": [
+            {
+              "title": "Eliminar Denominadores",
+              "text": "Para deshacernos de las fracciones, multiplicamos en cruz. Como ambos denominadores (3 y 2) son números positivos, el sentido de la desigualdad se mantiene igual.",
+              "mathContent": "2(2x - 1) \\leq 3(x + 4)",
+              "icon": "fx"
+            },
+            {
+              "title": "Propiedad Distributiva",
+              "text": "Eliminamos los paréntesis multiplicando los números de afuera por cada uno de los términos que están adentro en ambos lados de la desigualdad.",
+              "mathContent": "4x - 2 \\leq 3x + 12",
+              "icon": "chart"
+            },
+            {
+              "title": "Agrupar Términos",
+              "text": "Agrupamos los términos con $x$ del lado izquierdo restando $3x$ en ambos lados, y movemos las constantes al lado derecho sumando 2.",
+              "mathContent": "4x - 3x \\leq 12 + 2 \\quad \\rightarrow \\quad x \\leq 14",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "La desigualdad se cumple para el 14 y todos los números menores que él. En notación de intervalo, usamos un corchete para indicar que el 14 está incluido (menor o igual).",
+              "mathContent": "x \\in (-\\infty, 14]",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775081300672",
@@ -325,7 +489,27 @@
           "category": "Inecuaciones Racionales",
           "moduleName": "Matemática I",
           "questionLatex": "-1 < 2x + 3 \\leq 9",
-          "explanationLatex": "\\text{El objetivo es despejar la } x \\text{ en el centro. Lo que hagamos en el centro, debemos hacerlo en los extremos:}\n\\begin{aligned}\n-1 & < 2x + 3 \\leq 9 \\\\\n-1 - 3 & < 2x \\leq 9 - 3 \\quad \\text{(Restamos 3 en todas partes)} \\\\\n-4 & < 2x \\leq 6 \\\\\n\\frac{-4}{2} & < x \\leq \\frac{6}{2} \\quad \\text{(Dividimos todo entre 2)} \\\\\n-2 & < x \\leq 3\n\\end{aligned}\\text{El lado izquierdo es abierto (} < \\text{) y el derecho es cerrado (} \\leq \\text{). Solución: } (-2, 3]"
+          "explanationLatex": "\\text{El objetivo es despejar la } x \\text{ en el centro. Lo que hagamos en el centro, debemos hacerlo en los extremos:}\n\\begin{aligned}\n-1 & < 2x + 3 \\leq 9 \\\\\n-1 - 3 & < 2x \\leq 9 - 3 \\quad \\text{(Restamos 3 en todas partes)} \\\\\n-4 & < 2x \\leq 6 \\\\\n\\frac{-4}{2} & < x \\leq \\frac{6}{2} \\quad \\text{(Dividimos todo entre 2)} \\\\\n-2 & < x \\leq 3\n\\end{aligned}\\text{El lado izquierdo es abierto (} < \\text{) y el derecho es cerrado (} \\leq \\text{). Solución: } (-2, 3]",
+          "explanationSteps": [
+            {
+              "title": "Aislar el término central",
+              "text": "En una desigualdad compuesta, debemos realizar la misma operación en las tres partes. Para empezar a despejar la variable $x$, restamos 3 en cada lado.",
+              "mathContent": "-1 - 3 < 2x + 3 - 3 \\leq 9 - 3 \\quad \\rightarrow \\quad -4 < 2x \\leq 6",
+              "icon": "fx"
+            },
+            {
+              "title": "Propiedad de la División",
+              "text": "Ahora, para dejar a la $x$ completamente sola, dividimos las tres partes entre 2. Al dividir entre un número positivo, la dirección de los símbolos se mantiene inalterada.",
+              "mathContent": "\\frac{-4}{2} < \\frac{2x}{2} \\leq \\frac{6}{2} \\quad \\rightarrow \\quad -2 < x \\leq 3",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "La solución nos indica que la $x$ está comprendida entre $-2$ y $3$. Como el primer símbolo es estricto ($<$), usamos paréntesis para el $-2$ (no incluido), y como el segundo es menor o igual ($\\leq$), usamos corchete para el $3$ (incluido).",
+              "mathContent": "x \\in (-2, 3]",
+              "icon": "star"
+            }
+          ]
         }
       ],
       "isCompleted": false,
@@ -405,7 +589,33 @@
           "category": "Inecuaciones irracionales",
           "moduleName": "Matemática I",
           "questionLatex": "x^2 - 9 > 0",
-          "explanationLatex": "\\text{Factorizamos la diferencia de cuadrados:}\\begin{aligned}\nx^2 - 9 & > 0 \\\\\n(x - 3)(x + 3) & > 0\n\\end{aligned}\\text{Puntos críticos: } x = 3, \\; x = -3 \\text{ (Ambos abiertos por el símbolo } > \\text{)}\\text{Evaluando signos en los intervalos } (-\\infty, -3), (-3, 3) \\text{ y } (3, \\infty):\\text{Al ser } > 0 \\text{, buscamos los intervalos positivos.}\\text{Solución: } (-\\infty, -3) \\cup (3, \\infty)"
+          "explanationLatex": "\\text{Factorizamos la diferencia de cuadrados:}\\begin{aligned}\nx^2 - 9 & > 0 \\\\\n(x - 3)(x + 3) & > 0\n\\end{aligned}\\text{Puntos críticos: } x = 3, \\; x = -3 \\text{ (Ambos abiertos por el símbolo } > \\text{)}\\text{Evaluando signos en los intervalos } (-\\infty, -3), (-3, 3) \\text{ y } (3, \\infty):\\text{Al ser } > 0 \\text{, buscamos los intervalos positivos.}\\text{Solución: } (-\\infty, -3) \\cup (3, \\infty)",
+          "explanationSteps": [
+            {
+              "title": "Factorización",
+              "text": "Reconocemos una diferencia de cuadrados en la expresión original.",
+              "mathContent": "(x - 3)(x + 3) > 0",
+              "icon": "fx"
+            },
+            {
+              "title": "Puntos Críticos",
+              "text": "Igualamos cada factor a cero para encontrar los valores donde la expresión cambia de signo.",
+              "mathContent": "x = 3 \\quad \\text{y} \\quad x = -3",
+              "icon": "pin"
+            },
+            {
+              "title": "Análisis de Signos",
+              "text": "Evaluamos los intervalos en la recta numérica. Al probar valores, observamos que los intervalos externos resultan en un producto positivo (+), mientras que el intervalo central es negativo (-).",
+              "mathContent": "+ \\quad | \\quad - \\quad | \\quad +",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Como buscamos valores $> 0$, la solución es la unión de los intervalos donde el signo es positivo. Usamos paréntesis porque la desigualdad es estricta.",
+              "mathContent": "x \\in (-\\infty, -3) \\cup (3, \\infty)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775084022616",
@@ -420,7 +630,27 @@
           "category": "Inecuaciones irracionales",
           "moduleName": "Matemática I",
           "questionLatex": "(x - 4)(x + 1) \\leq 0",
-          "explanationLatex": "\\text{La expresión ya está factorizada. Identificamos los puntos críticos igualando cada factor a cero:}\nx - 4 = 0 \\implies x = 4x + 1 = 0 \\implies x = -1\\text{Los puntos son cerrados (usamos corchetes) porque la desigualdad incluye el igual } (\\leq).\\text{Evaluamos un número entre -1 y 4 (por ejemplo, el 0):}(0 - 4)(0 + 1) = (-4)(1) = -4 \\text{ (Negativo)}\\text{Como buscamos dónde la expresión es } \\leq 0 \\text{ (negativa o cero), tomamos este intervalo central.}\\text{Solución: } [-1, 4]"
+          "explanationLatex": "\\text{La expresión ya está factorizada. Identificamos los puntos críticos igualando cada factor a cero:}\nx - 4 = 0 \\implies x = 4x + 1 = 0 \\implies x = -1\\text{Los puntos son cerrados (usamos corchetes) porque la desigualdad incluye el igual } (\\leq).\\text{Evaluamos un número entre -1 y 4 (por ejemplo, el 0):}(0 - 4)(0 + 1) = (-4)(1) = -4 \\text{ (Negativo)}\\text{Como buscamos dónde la expresión es } \\leq 0 \\text{ (negativa o cero), tomamos este intervalo central.}\\text{Solución: } [-1, 4]",
+          "explanationSteps": [
+            {
+              "title": "Puntos Críticos",
+              "text": "Como la expresión ya está factorizada, igualamos directamente cada factor a cero para encontrar los valores clave en la recta numérica.",
+              "mathContent": "x = 4 \\quad \\text{y} \\quad x = -1",
+              "icon": "pin"
+            },
+            {
+              "title": "Análisis de Signos",
+              "text": "Evaluamos los intervalos formados en la recta numérica. Al probar valores, notamos que el intervalo central da un resultado negativo (-), mientras que los externos son positivos (+).",
+              "mathContent": "+ \\quad | \\quad - \\quad | \\quad +",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Como buscamos valores $\\leq 0$ (menores o iguales a cero), la solución es el intervalo con signo negativo. Utilizamos corchetes porque los puntos críticos sí están incluidos.",
+              "mathContent": "x \\in [-1, 4]",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775084402181",
@@ -435,7 +665,33 @@
           "category": "Inecuaciones irracionales",
           "moduleName": "Matemática I",
           "questionLatex": "x^2 - 2x - 8 \\geq 0",
-          "explanationLatex": "\\text{Primero factorizamos el trinomio buscando dos números que multiplicados den } -8 \\text{ y sumados } -2:\n\\begin{aligned}\nx^2 - 2x - 8 & \\geq 0 \\\\\n(x - 4)(x + 2) & \\geq 0\n\\end{aligned}\n\\text{Puntos críticos: } x = 4, \\; x = -2 \\text{ (Cerrados por el símbolo } \\geq \\text{)}\n\\text{Al hacer el análisis de signos en la recta real, los intervalos exteriores nos dan un producto positivo:}\n\\text{Para } x < -2 \\text{ y para } x > 4, \\text{ el resultado es positivo } (\\geq 0).\\text{Solución: } (-\\infty, -2] \\cup [4, \\infty)"
+          "explanationLatex": "\\text{Primero factorizamos el trinomio buscando dos números que multiplicados den } -8 \\text{ y sumados } -2:\n\\begin{aligned}\nx^2 - 2x - 8 & \\geq 0 \\\\\n(x - 4)(x + 2) & \\geq 0\n\\end{aligned}\n\\text{Puntos críticos: } x = 4, \\; x = -2 \\text{ (Cerrados por el símbolo } \\geq \\text{)}\n\\text{Al hacer el análisis de signos en la recta real, los intervalos exteriores nos dan un producto positivo:}\n\\text{Para } x < -2 \\text{ y para } x > 4, \\text{ el resultado es positivo } (\\geq 0).\\text{Solución: } (-\\infty, -2] \\cup [4, \\infty)",
+          "explanationSteps": [
+            {
+              "title": "Factorización",
+              "text": "Primero, factorizamos la expresión cuadrática buscando dos números que multiplicados den -8 y sumados den -2.",
+              "mathContent": "(x - 4)(x + 2) \\geq 0",
+              "icon": "fx"
+            },
+            {
+              "title": "Puntos Críticos",
+              "text": "Igualamos cada factor a cero para encontrar los valores exactos donde la expresión puede cambiar de signo en la recta numérica.",
+              "mathContent": "x = 4 \\quad \\text{y} \\quad x = -2",
+              "icon": "pin"
+            },
+            {
+              "title": "Análisis de Signos",
+              "text": "Evaluamos los intervalos resultantes. Al probar valores, notamos que los intervalos externos dan un resultado positivo (+), y el intervalo central da negativo (-).",
+              "mathContent": "+ \\quad | \\quad - \\quad | \\quad +",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Como buscamos valores $\\geq 0$, la solución es la unión de los intervalos con signo positivo. Usamos corchetes para indicar que los puntos críticos sí están incluidos.",
+              "mathContent": "x \\in (-\\infty, -2] \\cup [4, \\infty)",
+              "icon": "star"
+            }
+          ]
         }
       ]
     },
