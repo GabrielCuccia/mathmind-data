@@ -72,7 +72,7 @@
         {
           "title": "Notación de intervalos",
           "subtitle": "Desigualdades",
-          "content": "La notación de intervalos resume de forma compacta una solución. Por ejemplo:\n$-1 \\le x < 4 \\iff x \\in [-1, 4)$.\nSi la desigualdad es estricta, el extremo no se incluye. Si es no estricta, sí se incluye.\nEn resumen:\n$$\\begin{array}{lll}\n\\hline\n\\text{Forma algebraica} & \\text{Tipo de extremo} & \\text{Notación} \\\\\n\\hline\nx < a \\text{ o } x > a & \\text{abierto} & \\text{paréntesis} \\\\\nx \\leq a \\text{ o } x \\geq a & \\text{cerrado} & \\text{corchete} \\\\\n\\hline\n\\end{array}$$",
+          "content": "La notación de intervalos resume de forma compacta una solución. Por ejemplo:\n$-1 \\le x < 4 \\iff x \\in [-1, 4)$.\nSi la desigualdad es estricta, el extremo no se incluye. Si es no estricta, sí se incluye.\nEn resumen:\n\\begin{array}{lll}\n\\hline\n\\text{Forma algebraica} & \\text{Tipo de extremo} & \\text{Notación} \\\\\n\\hline\nx < a \\text{ o } x > a & \\text{abierto} & \\text{paréntesis} \\\\\nx \\leq a \\text{ o } x \\geq a & \\text{cerrado} & \\text{corchete} \\\\\n\\hline\n\\end{array}",
           "blocks": [],
           "formulaLatex": ""
         },
@@ -97,7 +97,7 @@
         {
           "title": "Idea central",
           "subtitle": "Desigualdades lineales",
-          "content": "Una desigualdad lineal es una desigualdad donde la incógnita aparece con exponente uno. Su forma\ngeneral puede ser\nax + b < c, ax + b ≥ c,\ncon a ̸= 0. Este es el caso más simple, pero también el más importante, porque aquí se aprende el\nmanejo correcto de signos.\n",
+          "content": "Una desigualdad lineal es una desigualdad donde la incógnita aparece con exponente uno. Su forma general puede ser\n$$ax + b < c, \\quad ax + b \\geq c,$$\ncon $a \\neq 0$. Este es el caso más simple, pero también el más importante, porque aquí se aprende el manejo correcto de signos.\n\n",
           "blocks": [
             {
               "type": "example",
@@ -135,7 +135,7 @@
         {
           "title": "Desigualdades compuestas",
           "subtitle": "Desigualdades lineales",
-          "content": "A veces se estudia una condición doble, como\n−2 < 3x + 1 ≤ 7.\nEso significa que la expresión debe cumplir ambas condiciones al mismo tiempo. Se resuelve operando en los tres miembros a la vez.\n",
+          "content": "A veces se estudia una condición doble, como\n$$-2 < 3x + 1 \\le 7$$\nEso significa que la expresión debe cumplir ambas condiciones al mismo tiempo. Se resuelve operando en los tres miembros a la vez.\n",
           "blocks": [
             {
               "type": "example",
@@ -523,7 +523,7 @@
         {
           "title": "Idea general",
           "subtitle": "Desigualdades cuadráticas y polinómicas",
-          "content": "Una desigualdad cuadrática tiene la forma\nax2 + bx + c ≷ 0.\nEl corazón del método es factorizar el polinomio, hallar sus ceros y estudiar el signo en cada\nintervalo. La razón es simple: un polinomio cambia de signo al cruzar una raíz simple, pero no\nsiempre cambia si la raíz tiene multiplicidad par.\n",
+          "content": "Una desigualdad cuadrática tiene la forma\n$$ax^2 + bx + c \\gtrless 0$$\nEl corazón del método es factorizar el polinomio, hallar sus ceros y estudiar el signo en cada\nintervalo. La razón es simple: un polinomio cambia de signo al cruzar una raíz simple, pero no\nsiempre cambia si la raíz tiene multiplicidad par.\n",
           "formulaLatex": "",
           "proTip": "No te quedes solo con “encontrar raíces”. En desigualdades, las raíces son puntos de corte,\nno la solución final en sí mismas.",
           "blocks": []
@@ -531,7 +531,7 @@
         {
           "title": "Método del intervalo",
           "subtitle": "Desigualdades cuadráticas y polinómicas",
-          "content": "Si tienes\n(x − 2)(x + 3) > 0,\nentonces los puntos críticos son x = 2\\ y x = −3. Esos puntos dividen la recta en tres intervalos.\nLuego pruebas el signo del producto en cada uno.",
+          "content": "Si tienes\n$$(x - 2)(x + 3) > 0,$$\nentonces los puntos críticos son $x = 2$ y $x = -3$. Esos puntos dividen la recta en tres intervalos.\nLuego pruebas el signo del producto en cada uno.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
@@ -957,7 +957,7 @@
         {
           "title": "Idea general",
           "subtitle": "Desigualdades racionales",
-          "content": "Una desigualdad racional tiene variables en el numerador, en el denominador o en ambos. Su forma\ntípica es\nP(x)\nQ(x)\n≷ 0.\nLa estrategia es llevar todo a un solo cociente, hallar ceros del numerador y del denominador, y\nanalizar signos por intervalos. Los ceros del denominador nunca pertenecen a la solución, porque\nallí la expresión no existe.\n",
+          "content": "Una desigualdad racional tiene variables en el numerador, en el denominador o en ambos. Su forma\ntípica es\n$$\\frac{P(x)}{Q(x)} \\gtrless 0$$\nLa estrategia es llevar todo a un solo cociente, hallar ceros del numerador y del denominador, y\nanalizar signos por intervalos. Los ceros del denominador nunca pertenecen a la solución, porque\nallí la expresión no existe.\n",
           "formulaLatex": "",
           "proTip": "Si el argumento del valor absoluto es una expresión lineal, primero encuentra el punto donde esa expresión vale cero: allí la recta real se divide en dos regiones.",
           "blocks": [
@@ -1380,7 +1380,7 @@
         {
           "title": "Idea general",
           "subtitle": "Desigualdades con radicales",
-          "content": "Las desigualdades con radicales introducen una dificultad adicional: el dominio. Antes de resolver,\ndebes asegurarte de que la raíz esté definida en los números reales. Por ejemplo, si aparece √\nx − 3,\nentonces se requiere\nx − 3 ≥ 0.\nAdemás, al aislar un radical, hay que ser cuidadoso al elevar al cuadrado, porque esa operación\npuede introducir soluciones falsas si no se verifica al final.",
+          "content": "Las desigualdades con radicales introducen una dificultad adicional: el dominio. Antes de resolver, debes asegurarte de que la raíz esté definida en los números reales. Por ejemplo, si aparece $\\sqrt{x - 3}$ entonces se requiere\n$$x - 3 \\ge 0$$\nAdemás, al aislar un radical, hay que ser cuidadoso al elevar al cuadrado, porque esa operación puede introducir soluciones falsas si no se verifica al final.",
           "blocks": [
             {
               "type": "note",
@@ -1802,7 +1802,7 @@
         {
           "title": "Definición y significado geométrico",
           "subtitle": "Desigualdades con valor absoluto",
-          "content": "El valor absoluto de un número es su distancia al cero en la recta real. Por eso siempre es no\nnegativo. Si escribimos\n|x|,\nestamos midiendo la distancia entre x y el origen.\nPara una expresión como |x − a|, la interpretación es aún más importante: representa la distancia\nentre x y el número a.",
+          "content": "El valor absoluto de un número es su distancia al cero en la recta real. Por eso siempre es no negativo. Si escribimos\n$$|x|,$$\nestamos midiendo la distancia entre $x$ y el origen.\nPara una expresión como $|x - a|$, la interpretación es aún más importante: representa la distancia entre $x$ y el número $a$.",
           "blocks": [],
           "formulaLatex": "\n"
         },
@@ -1839,7 +1839,7 @@
         {
           "title": "Inecuaciones con valor absoluto del tipo menor que",
           "subtitle": "Desigualdades con valor absoluto",
-          "content": "Si a > 0, entonces\n|u| < a ⇐⇒ −a < u < a,\ny\n|u| ≤ a ⇐⇒ −a ≤ u ≤ a.\nGeométricamente, esto significa que u está dentro de una distancia a del cero.",
+          "content": "Si $a > 0$, entonces\n$$|u| < a \\iff -a < u < a,$$\ny\n$$|u| \\le a \\iff -a \\le u \\le a.$$\nGeométricamente, esto significa que $u$ está dentro de una distancia $a$ del cero.",
           "blocks": [
             {
               "type": "example",
