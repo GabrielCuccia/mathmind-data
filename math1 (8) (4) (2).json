@@ -714,7 +714,33 @@
           "correctAnswerIndex": 0,
           "explanationLatex": "\\text{Podemos resolverlo desarrollando el binomio o usando raíces. Usaremos el desarrollo:}\n\\begin{aligned}\nx^2 - 6x + 9 & \\geq 4 \\\\\nx^2 - 6x + 9 - 4 & \\geq 0 \\\\\nx^2 - 6x + 5 & \\geq 0\n\\end{aligned}\\text{Factorizamos buscando números que multiplicados den } 5 \\text{ y sumados } -6:(x - 5)(x - 1) \\geq 0\\text{Puntos críticos: } x = 5, \\; x = 1 \\text{ (Cerrados por el } \\geq \\text{)}\\text{Al pedirnos } \\geq 0 \\text{ (positivo), tomamos los intervalos exteriores de la parábola.}\\text{Solución: } (-\\infty, 1] \\cup [5, \\infty)",
           "category": "Valor Absoluto",
-          "moduleName": "Matemática I"
+          "moduleName": "Matemática I",
+          "explanationSteps": [
+            {
+              "title": "Raíz Cuadrada",
+              "text": "Aplicamos la raíz cuadrada en ambos lados de la desigualdad para eliminar el exponente. Recuerda que la raíz cuadrada de un término al cuadrado nos da su valor absoluto.",
+              "mathContent": "|x - 3| \\geq 2",
+              "icon": "fx"
+            },
+            {
+              "title": "Propiedad del Valor Absoluto",
+              "text": "Una desigualdad de valor absoluto con el símbolo $\\geq$ se divide en dos condiciones: el término es mayor o igual al lado positivo, o es menor o igual al lado negativo.",
+              "mathContent": "x - 3 \\geq 2 \\quad \\text{o} \\quad x - 3 \\leq -2",
+              "icon": "pin"
+            },
+            {
+              "title": "Aislar la variable",
+              "text": "Despejamos la $x$ en ambas desigualdades sumando 3 en cada lado.",
+              "mathContent": "x \\geq 5 \\quad \\text{o} \\quad x \\leq 1",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "La solución completa es la unión de ambas condiciones. Usamos corchetes porque el símbolo original es mayor o igual ($\\geq$), por lo que los valores están incluidos.",
+              "mathContent": "x \\in (-\\infty, 1] \\cup [5, \\infty)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775588567678",
@@ -729,7 +755,33 @@
           "category": "Valor Absoluto",
           "moduleName": "Matemática I",
           "questionLatex": "x^2 - 4x + 3 > 0",
-          "explanationLatex": "\\text{Factorizamos el trinomio buscando números que multipliquen } 3 \\text{ y sumen } -4:\n\\begin{aligned}\nx^2 - 4x + 3 & > 0 \\\\\n(x - 3)(x - 1) & > 0\n\\end{aligned}\\text{Puntos críticos: } x = 3, \\; x = 1 \\text{ (Abiertos por el símbolo } > \\text{)}\\text{Como el símbolo es } > 0 \\text{, buscamos los intervalos donde el producto es positivo.}\\text{Tomando valores de prueba en los extremos } (x = 0 \\text{ y } x = 4) \\text{ obtenemos resultados positivos.}\\text{Solución: } (-\\infty, 1) \\cup (3, \\infty)"
+          "explanationLatex": "\\text{Factorizamos el trinomio buscando números que multipliquen } 3 \\text{ y sumen } -4:\n\\begin{aligned}\nx^2 - 4x + 3 & > 0 \\\\\n(x - 3)(x - 1) & > 0\n\\end{aligned}\\text{Puntos críticos: } x = 3, \\; x = 1 \\text{ (Abiertos por el símbolo } > \\text{)}\\text{Como el símbolo es } > 0 \\text{, buscamos los intervalos donde el producto es positivo.}\\text{Tomando valores de prueba en los extremos } (x = 0 \\text{ y } x = 4) \\text{ obtenemos resultados positivos.}\\text{Solución: } (-\\infty, 1) \\cup (3, \\infty)",
+          "explanationSteps": [
+            {
+              "title": "Factorización",
+              "text": "Factorizamos la expresión cuadrática buscando dos números que multiplicados den 3 positivo y sumados den -4.",
+              "mathContent": "(x - 3)(x - 1) > 0",
+              "icon": "fx"
+            },
+            {
+              "title": "Puntos Críticos",
+              "text": "Igualamos cada factor a cero para determinar los valores exactos donde la expresión cambia de signo en la recta numérica.",
+              "mathContent": "x = 1 \\quad \\text{y} \\quad x = 3",
+              "icon": "pin"
+            },
+            {
+              "title": "Análisis de Signos",
+              "text": "Evaluamos los intervalos formados. Al probar valores, comprobamos que los intervalos exteriores resultan positivos (+), mientras que el intervalo central es negativo (-).",
+              "mathContent": "+ \\quad | \\quad - \\quad | \\quad +",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Como la desigualdad busca valores estrictamente mayores a cero ($> 0$), la solución es la unión de los intervalos positivos. Usamos paréntesis porque los puntos críticos no están incluidos.",
+              "mathContent": "x \\in (-\\infty, 1) \\cup (3, \\infty)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775588701744",
@@ -744,7 +796,33 @@
           "category": "Valor Absoluto",
           "moduleName": "Matemática I",
           "questionLatex": "x^2 + 5x + 6 < 0",
-          "explanationLatex": "\\text{Buscamos dos números que multiplicados den } 6 \\text{ y sumados den } 5:\\begin{aligned}\nx^2 + 5x + 6 & < 0 \\\\\n(x + 3)(x + 2) & < 0\n\\end{aligned}\\text{Puntos críticos: } x = -3, \\; x = -2 \\text{ (Abiertos por el símbolo } < \\text{)}\\text{Evaluando un valor intermedio, por ejemplo } x = -2.5:(-2.5 + 3)(-2.5 + 2) = (0.5)(-0.5) = -0.25 \\text{ (Negativo)}\\text{Como nos piden dónde la expresión es } < 0 \\text{, la solución es el intervalo central.}\\text{Solución: } (-3, -2)"
+          "explanationLatex": "\\text{Buscamos dos números que multiplicados den } 6 \\text{ y sumados den } 5:\\begin{aligned}\nx^2 + 5x + 6 & < 0 \\\\\n(x + 3)(x + 2) & < 0\n\\end{aligned}\\text{Puntos críticos: } x = -3, \\; x = -2 \\text{ (Abiertos por el símbolo } < \\text{)}\\text{Evaluando un valor intermedio, por ejemplo } x = -2.5:(-2.5 + 3)(-2.5 + 2) = (0.5)(-0.5) = -0.25 \\text{ (Negativo)}\\text{Como nos piden dónde la expresión es } < 0 \\text{, la solución es el intervalo central.}\\text{Solución: } (-3, -2)",
+          "explanationSteps": [
+            {
+              "title": "Factorización",
+              "text": "Factorizamos la expresión cuadrática buscando dos números que multiplicados den 6 y sumados den 5.",
+              "mathContent": "(x + 3)(x + 2) < 0",
+              "icon": "fx"
+            },
+            {
+              "title": "Puntos Críticos",
+              "text": "Igualamos cada factor a cero para determinar los valores exactos donde la expresión cambia de signo en la recta numérica.",
+              "mathContent": "x = -3 \\quad \\text{y} \\quad x = -2",
+              "icon": "pin"
+            },
+            {
+              "title": "Análisis de Signos",
+              "text": "Evaluamos los intervalos formados. Al probar valores, comprobamos que el intervalo central da un resultado negativo (-), mientras que los intervalos exteriores son positivos (+).",
+              "mathContent": "+ \\quad | \\quad - \\quad | \\quad +",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Como la desigualdad busca valores estrictamente menores a cero ($< 0$), la solución es el intervalo con signo negativo. Usamos paréntesis porque los puntos críticos no están incluidos.",
+              "mathContent": "x \\in (-3, -2)",
+              "icon": "star"
+            }
+          ]
         }
       ],
       "isCompleted": false,
@@ -769,7 +847,27 @@
           "correctAnswerIndex": 1,
           "explanationLatex": "\\text{Identificamos los puntos críticos: } x = 1 \\text{ y } x = -2.\\text{Analizamos los signos considerando que } (x - 1)^2 \\text{ siempre es } \\geq 0 \\text{ por ser una potencia par:}\\text{Si } x < -2 \\text{, entonces } (x+2) \\text{ es negativo } \\implies \\text{Resultado negativo.}\\text{Si } x > -2 \\text{, entonces } (x+2) \\text{ es positivo } \\implies \\text{Resultado positivo.}\\text{En } x = 1 \\text{, la expresión es igual a } 0 \\text{, por lo que cumple con el } \\leq.\\text{Solución: } (-\\infty, -2] \\cup \\{1\\}",
           "category": "Propiedades",
-          "moduleName": "Matemática I"
+          "moduleName": "Matemática I",
+          "explanationSteps": [
+            {
+              "title": "Puntos Críticos",
+              "text": "La expresión ya está factorizada. Igualamos cada factor a cero para encontrar los puntos críticos. Toma en cuenta que el término $(x - 1)^2$ siempre será positivo o cero, sin importar el valor de $x$.",
+              "mathContent": "x = 1 \\quad \\text{y} \\quad x = -2",
+              "icon": "pin"
+            },
+            {
+              "title": "Análisis de Signos",
+              "text": "Evaluamos los intervalos en la recta numérica. A diferencia de otros casos, como el término en $x = 1$ está al cuadrado, la gráfica \"rebota\" y el signo no cambia al pasar por ese punto.",
+              "mathContent": "- \\quad | \\quad + \\quad | \\quad +",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Buscamos los valores donde la expresión es menor o igual a cero ($\\leq 0$). La solución incluye el intervalo negativo y los puntos donde la expresión es exactamente cero, por lo que debemos incluir el punto aislado $x = 1$.",
+              "mathContent": "x \\in (-\\infty, -2] \\cup \\{1\\}",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775589043652",
@@ -784,7 +882,27 @@
           "category": "Propiedades",
           "moduleName": "Matemática I",
           "questionLatex": "(2x - 1)(x + 4)(x - 3) > 0",
-          "explanationLatex": "\\text{Puntos críticos: } x = \\frac{1}{2}, \\; x = -4, \\; x = 3.\\text{Ubicamos los puntos en la recta y probamos signos en cada intervalo:}(-\\infty, -4) \\to (-)(-)(-) = \\text{Negativo}(-4, \\frac{1}{2}) \\to (-)(+)(-) = \\text{Positivo}(\\frac{1}{2}, 3) \\to (+)(+)(-) = \\text{Negativo}(3, \\infty) \\to (+)(+)(+) = \\text{Positivo}\\text{Buscamos los intervalos positivos } (> 0).\\text{Solución: } (-4, \\frac{1}{2}) \\cup (3, \\infty)"
+          "explanationLatex": "\\text{Puntos críticos: } x = \\frac{1}{2}, \\; x = -4, \\; x = 3.\\text{Ubicamos los puntos en la recta y probamos signos en cada intervalo:}(-\\infty, -4) \\to (-)(-)(-) = \\text{Negativo}(-4, \\frac{1}{2}) \\to (-)(+)(-) = \\text{Positivo}(\\frac{1}{2}, 3) \\to (+)(+)(-) = \\text{Negativo}(3, \\infty) \\to (+)(+)(+) = \\text{Positivo}\\text{Buscamos los intervalos positivos } (> 0).\\text{Solución: } (-4, \\frac{1}{2}) \\cup (3, \\infty)",
+          "explanationSteps": [
+            {
+              "title": "Puntos Críticos",
+              "text": "La expresión ya está factorizada. Igualamos cada uno de los tres factores a cero y despejamos para encontrar los puntos donde la gráfica cruza el eje y cambia de signo.",
+              "mathContent": "x = \\frac{1}{2}, \\quad x = -4, \\quad x = 3",
+              "icon": "pin"
+            },
+            {
+              "title": "Análisis de Signos",
+              "text": "Ubicamos los tres puntos en orden en la recta numérica ($-4$, $1/2$, $3$), lo que divide la recta en cuatro intervalos. Al probar un valor en cada intervalo, notamos que los signos se alternan.",
+              "mathContent": "- \\quad | \\quad + \\quad | \\quad - \\quad | \\quad +",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Como la desigualdad busca valores estrictamente mayores a cero ($> 0$), la solución es la unión de los dos intervalos con signo positivo (+). Usamos paréntesis porque los extremos no están incluidos.",
+              "mathContent": "x \\in \\left(-4, \\frac{1}{2}\\right) \\cup (3, \\infty)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775589141285",
@@ -799,7 +917,33 @@
           "category": "Propiedades",
           "moduleName": "Matemática I",
           "questionLatex": "x^4 - 5x^2 + 4 \\geq 0",
-          "explanationLatex": "\\text{Primero factorizamos como si fuera un trinomio de segundo grado:}\\begin{aligned}\n(x^2 - 4)(x^2 - 1) & \\geq 0 \\\\\n(x - 2)(x + 2)(x - 1)(x + 1) & \\geq 0\n\\end{aligned}\\text{Puntos críticos: } x = \\pm 2, \\; x = \\pm 1.\\text{Al ser cuatro factores lineales y buscar } \\geq 0 \\text{, la solución alterna desde los extremos:}\\text{Solución: } (-\\infty, -2] \\cup [-1, 1] \\cup [2, \\infty)"
+          "explanationLatex": "\\text{Primero factorizamos como si fuera un trinomio de segundo grado:}\\begin{aligned}\n(x^2 - 4)(x^2 - 1) & \\geq 0 \\\\\n(x - 2)(x + 2)(x - 1)(x + 1) & \\geq 0\n\\end{aligned}\\text{Puntos críticos: } x = \\pm 2, \\; x = \\pm 1.\\text{Al ser cuatro factores lineales y buscar } \\geq 0 \\text{, la solución alterna desde los extremos:}\\text{Solución: } (-\\infty, -2] \\cup [-1, 1] \\cup [2, \\infty)",
+          "explanationSteps": [
+            {
+              "title": "Factorización",
+              "text": "Esta expresión es un polinomio de grado 4 pero tiene forma cuadrática. Primero factorizamos el trinomio y luego aplicamos diferencia de cuadrados a cada factor resultante para descomponerlo totalmente.",
+              "mathContent": "(x^2 - 4)(x^2 - 1) \\geq 0 \\quad \\rightarrow \\quad (x - 2)(x + 2)(x - 1)(x + 1) \\geq 0",
+              "icon": "fx"
+            },
+            {
+              "title": "Puntos Críticos",
+              "text": "Igualamos cada uno de los cuatro factores lineales a cero para encontrar los valores exactos donde la gráfica cruza el eje y la expresión cambia de signo.",
+              "mathContent": "x = -2, \\quad x = -1, \\quad x = 1, \\quad x = 2",
+              "icon": "pin"
+            },
+            {
+              "title": "Análisis de Signos",
+              "text": "Ubicamos los cuatro puntos críticos en orden en la recta numérica, lo que la divide en cinco intervalos. Al evaluar un valor de prueba en cada uno, observamos que los signos se alternan.",
+              "mathContent": "+ \\quad | \\quad - \\quad | \\quad + \\quad | \\quad - \\quad | \\quad +",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Como la desigualdad busca valores mayores o iguales a cero ($\\geq 0$), la solución es la unión de todos los intervalos con signo positivo. Usamos corchetes porque los puntos críticos sí están incluidos.",
+              "mathContent": "x \\in (-\\infty, -2] \\cup [-1, 1] \\cup [2, \\infty)",
+              "icon": "star"
+            }
+          ]
         }
       ],
       "isCompleted": false,
