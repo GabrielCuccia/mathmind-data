@@ -1939,7 +1939,27 @@
           "category": "General",
           "moduleName": "Módulo",
           "questionLatex": "|x - 2| < 5",
-          "explanationLatex": "\\text{Paso 1: Aplicamos la propiedad fundamental para inecuaciones con \"menor que\": } |A| < k \\implies -k < A < k \\text{ (asumiendo } k > 0\\text{).}\\text{Paso 2: Desdoblamos nuestra inecuación según esta regla:}-5 < x - 2 < 5\\text{Paso 3: Despejamos la } x \\text{ sumando } 2 \\text{ en las tres partes de la inecuación para mantener el equilibrio:}\\begin{aligned}\n-5 + 2 & < x - 2 + 2 < 5 + 2 \\\\\n-3 & < x < 7\n\\end{aligned}\\text{Solución: Como los signos son estrictamente \"menor que\", usamos paréntesis. El intervalo es } (-3, 7)"
+          "explanationLatex": "\\text{Paso 1: Aplicamos la propiedad fundamental para inecuaciones con \"menor que\": } |A| < k \\implies -k < A < k \\text{ (asumiendo } k > 0\\text{).}\\text{Paso 2: Desdoblamos nuestra inecuación según esta regla:}-5 < x - 2 < 5\\text{Paso 3: Despejamos la } x \\text{ sumando } 2 \\text{ en las tres partes de la inecuación para mantener el equilibrio:}\\begin{aligned}\n-5 + 2 & < x - 2 + 2 < 5 + 2 \\\\\n-3 & < x < 7\n\\end{aligned}\\text{Solución: Como los signos son estrictamente \"menor que\", usamos paréntesis. El intervalo es } (-3, 7)",
+          "explanationSteps": [
+            {
+              "title": "Propiedad de Acotación",
+              "text": "Cuando un valor absoluto es estrictamente menor que un número positivo, significa que la expresión en su interior debe estar atrapada entre el negativo y el positivo de dicho número. Planteamos esto como una doble desigualdad.",
+              "mathContent": "-5 < x - 2 < 5",
+              "icon": "pin"
+            },
+            {
+              "title": "Despeje Simultáneo",
+              "text": "Para aislar la variable en el centro de la inecuación, aplicamos la misma operación en las tres partes. En este caso, sumamos $2$ en todos los lados para cancelar la constante que acompaña a la incógnita.",
+              "mathContent": "-5 + 2 < x < 5 + 2 \\quad \\rightarrow \\quad -3 < x < 7",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "El resultado nos indica que cualquier número mayor a $-3$ y menor a $7$ es una solución válida. Como la desigualdad es estricta y no incluye el igual, empleamos paréntesis en ambos extremos para denotar un intervalo abierto.",
+              "mathContent": "x \\in (-3, 7)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775600319199",
@@ -1954,7 +1974,27 @@
           "category": "General",
           "moduleName": "Módulo",
           "questionLatex": "|2x + 1| \\leq 3",
-          "explanationLatex": "\\text{Paso 1: Usamos la misma propiedad que en el ejercicio anterior, adaptada para el \"menor o igual\": } |A| \\leq k \\implies -k \\leq A \\leq k.-3 \\leq 2x + 1 \\leq 3\\text{Paso 2: Restamos } 1 \\text{ a los tres miembros para empezar a aislar la } x\\text{:}\\begin{aligned}\n-3 - 1 & \\leq 2x \\leq 3 - 1 \\\\\n-4 & \\leq 2x \\leq 2\n\\end{aligned}\\text{Paso 3: Dividimos todo entre } 2 \\text{ (como es un número positivo, los signos de desigualdad no cambian de sentido):}\\begin{aligned}\n-\\frac{4}{2} & \\leq \\frac{2x}{2} \\leq \\frac{2}{2} \\\\\n-2 & \\leq x \\leq 1\n\\end{aligned}\\text{Solución: Al ser desigualdades inclusivas (}\\leq\\text{), usamos corchetes. La respuesta es } [-2, 1]"
+          "explanationLatex": "\\text{Paso 1: Usamos la misma propiedad que en el ejercicio anterior, adaptada para el \"menor o igual\": } |A| \\leq k \\implies -k \\leq A \\leq k.-3 \\leq 2x + 1 \\leq 3\\text{Paso 2: Restamos } 1 \\text{ a los tres miembros para empezar a aislar la } x\\text{:}\\begin{aligned}\n-3 - 1 & \\leq 2x \\leq 3 - 1 \\\\\n-4 & \\leq 2x \\leq 2\n\\end{aligned}\\text{Paso 3: Dividimos todo entre } 2 \\text{ (como es un número positivo, los signos de desigualdad no cambian de sentido):}\\begin{aligned}\n-\\frac{4}{2} & \\leq \\frac{2x}{2} \\leq \\frac{2}{2} \\\\\n-2 & \\leq x \\leq 1\n\\end{aligned}\\text{Solución: Al ser desigualdades inclusivas (}\\leq\\text{), usamos corchetes. La respuesta es } [-2, 1]",
+          "explanationSteps": [
+            {
+              "title": "Propiedad de Acotación",
+              "text": "Cuando un valor absoluto es menor o igual a un número positivo, significa que la expresión en su interior debe estar atrapada entre el negativo y el positivo de dicho número. Planteamos esta condición como una inecuación doble.",
+              "mathContent": "-3 \\leq 2x + 1 \\leq 3",
+              "icon": "pin"
+            },
+            {
+              "title": "Despeje Simultáneo",
+              "text": "Para aislar la variable en el centro, aplicamos las mismas operaciones aritméticas en las tres partes de la desigualdad. Primero restamos $1$ en todos los lados para eliminar la constante, y luego dividimos todo entre $2$.",
+              "mathContent": "-4 \\leq 2x \\leq 2 \\quad \\rightarrow \\quad -2 \\leq x \\leq 1",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "El resultado indica que cualquier número desde el $-2$ hasta el $1$, incluyendo ambos extremos, satisface la inecuación. Como la desigualdad incluye el igual ($\\leq$), empleamos corchetes para denotar un intervalo cerrado.",
+              "mathContent": "x \\in [-2, 1]",
+              "icon": "star"
+            }
+          ]
         }
       ]
     },
@@ -1979,7 +2019,33 @@
           "category": "General",
           "moduleName": "Módulo",
           "questionLatex": "|x + 4| > 2",
-          "explanationLatex": "\\text{Paso 1: Aplicamos la propiedad para inecuaciones con \"mayor que\". Si } |A| > k \\text{ (con } k > 0\\text{), entonces los valores escapan hacia los extremos: } A < -k \\text{ ó } A > k.\\text{Paso 2: Desdoblamos nuestra inecuación en dos caminos independientes:}x + 4 < -2 \\quad \\text{ó} \\quad x + 4 > 2\\text{Paso 3: Despejamos } x \\text{ en ambas inecuaciones:}\\text{Camino 1: } x < -2 - 4 \\implies x < -6\\text{Camino 2: } x > 2 - 4 \\implies x > -2\\text{Solución: Como es un \"o\" lógico, unimos ambos intervalos. Al ser desigualdad estricta (}>\\text{), usamos paréntesis. El resultado es } (-\\infty, -6) \\cup (-2, \\infty)."
+          "explanationLatex": "\\text{Paso 1: Aplicamos la propiedad para inecuaciones con \"mayor que\". Si } |A| > k \\text{ (con } k > 0\\text{), entonces los valores escapan hacia los extremos: } A < -k \\text{ ó } A > k.\\text{Paso 2: Desdoblamos nuestra inecuación en dos caminos independientes:}x + 4 < -2 \\quad \\text{ó} \\quad x + 4 > 2\\text{Paso 3: Despejamos } x \\text{ en ambas inecuaciones:}\\text{Camino 1: } x < -2 - 4 \\implies x < -6\\text{Camino 2: } x > 2 - 4 \\implies x > -2\\text{Solución: Como es un \"o\" lógico, unimos ambos intervalos. Al ser desigualdad estricta (}>\\text{), usamos paréntesis. El resultado es } (-\\infty, -6) \\cup (-2, \\infty).",
+          "explanationSteps": [
+            {
+              "title": "Propiedad de Divergencia",
+              "text": "Cuando un valor absoluto es estrictamente mayor que un número positivo, la expresión en su interior debe ser menor que el negativo de ese número o mayor que su positivo. Esto divide el problema en dos caminos independientes unidos por una «o» lógica.",
+              "mathContent": "x + 4 < -2 \\quad \\text{o} \\quad x + 4 > 2",
+              "icon": "pin"
+            },
+            {
+              "title": "Resolución del Primer Caso",
+              "text": "Evaluamos el escenario donde la expresión toma un valor menor que el negativo. Despejamos la variable restando $4$ en ambos lados de la inecuación para encontrar nuestro primer límite.",
+              "mathContent": "x + 4 < -2 \\quad \\rightarrow \\quad x < -6",
+              "icon": "fx"
+            },
+            {
+              "title": "Resolución del Segundo Caso",
+              "text": "Ahora evaluamos el escenario donde la expresión es mayor que el valor positivo. Procedemos a despejar la variable de la misma forma, restando $4$ en ambos lados para hallar el segundo límite.",
+              "mathContent": "x + 4 > 2 \\quad \\rightarrow \\quad x > -2",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "La solución final es la unión de los dos intervalos resultantes. Como la desigualdad original es estricta ($>$), usamos paréntesis en todos los extremos, indicando que ni el $-6$ ni el $-2$ están incluidos en la solución.",
+              "mathContent": "x \\in (-\\infty, -6) \\cup (-2, \\infty)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775601570493",
@@ -1994,7 +2060,33 @@
           "category": "General",
           "moduleName": "Módulo",
           "questionLatex": "|3x - 5| \\geq 1",
-          "explanationLatex": "\\text{Paso 1: Usamos la misma lógica de los extremos que en el ejercicio anterior, pero incluyendo los bordes (}\\geq\\text{).}|A| \\geq k \\implies A \\leq -k \\quad \\text{ó} \\quad A \\geq k\\text{Paso 2: Separamos en dos casos:}3x - 5 \\leq -1 \\quad \\text{ó} \\quad 3x - 5 \\geq 1\\text{Paso 3: Resolvemos cada caso por separado:}\\text{Caso 1: } 3x \\leq -1 + 5 \\implies 3x \\leq 4 \\implies x \\leq \\frac{4}{3}\\text{Caso 2: } 3x \\geq 1 + 5 \\implies 3x \\geq 6 \\implies x \\geq \\frac{6}{3} \\implies x \\geq 2\\text{Solución: Unimos ambos resultados usando corchetes para los números. } \\left(-\\infty, \\frac{4}{3}\\right] \\cup [2, \\infty)."
+          "explanationLatex": "\\text{Paso 1: Usamos la misma lógica de los extremos que en el ejercicio anterior, pero incluyendo los bordes (}\\geq\\text{).}|A| \\geq k \\implies A \\leq -k \\quad \\text{ó} \\quad A \\geq k\\text{Paso 2: Separamos en dos casos:}3x - 5 \\leq -1 \\quad \\text{ó} \\quad 3x - 5 \\geq 1\\text{Paso 3: Resolvemos cada caso por separado:}\\text{Caso 1: } 3x \\leq -1 + 5 \\implies 3x \\leq 4 \\implies x \\leq \\frac{4}{3}\\text{Caso 2: } 3x \\geq 1 + 5 \\implies 3x \\geq 6 \\implies x \\geq \\frac{6}{3} \\implies x \\geq 2\\text{Solución: Unimos ambos resultados usando corchetes para los números. } \\left(-\\infty, \\frac{4}{3}\\right] \\cup [2, \\infty).",
+          "explanationSteps": [
+            {
+              "title": "Propiedad de Divergencia",
+              "text": "Cuando un valor absoluto es mayor o igual a un número positivo, significa que la expresión en su interior debe ser menor o igual al negativo de dicho número, o bien, mayor o igual a su positivo. Esto nos divide el problema en dos inecuaciones separadas por una unión.",
+              "mathContent": "3x - 5 \\leq -1 \\quad \\text{o} \\quad 3x - 5 \\geq 1",
+              "icon": "pin"
+            },
+            {
+              "title": "Resolución del Primer Caso",
+              "text": "Tomamos la primera inecuación, donde la expresión es menor o igual al valor negativo, y despejamos la variable sumando $5$ en ambos lados y luego dividiendo todo entre $3$.",
+              "mathContent": "3x - 5 \\leq -1 \\quad \\rightarrow \\quad 3x \\leq 4 \\quad \\rightarrow \\quad x \\leq \\frac{4}{3}",
+              "icon": "fx"
+            },
+            {
+              "title": "Resolución del Segundo Caso",
+              "text": "Tomamos la segunda inecuación, donde la expresión es mayor o igual al valor positivo, y procedemos a despejar la variable de la misma manera exacta para encontrar nuestro segundo límite.",
+              "mathContent": "3x - 5 \\geq 1 \\quad \\rightarrow \\quad 3x \\geq 6 \\quad \\rightarrow \\quad x \\geq 2",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "La solución final es la unión de los dos intervalos que acabamos de obtener. Cualquier número que cumpla con alguna de las dos condiciones será una respuesta válida. Empleamos corchetes en los números porque la desigualdad original incluye el igual ($\\geq$).",
+              "mathContent": "x \\in \\left(-\\infty, \\frac{4}{3}\\right] \\cup [2, \\infty)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775601709055",
@@ -2009,7 +2101,33 @@
           "category": "General",
           "moduleName": "Módulo",
           "questionLatex": "|x - 1| \\leq 2x + 3",
-          "explanationLatex": "\\text{Paso 1: Aquí tenemos una variable fuera del valor absoluto. La regla } |A| \\leq B \\implies -B \\leq A \\leq B \\text{ solo funciona si garantizamos que } B \\geq 0 \\text{ (un valor absoluto nunca es menor a un número negativo).}\\text{Condición inicial: } 2x + 3 \\geq 0 \\implies 2x \\geq -3 \\implies x \\geq -\\frac{3}{2}\\text{Paso 2: Aplicamos la regla del sándwich (}-B \\leq A \\leq B\\text{) asumiendo nuestra condición inicial:}-(2x + 3) \\leq x - 1 \\leq 2x + 3\\text{Paso 3: Rompemos esta inecuación doble en dos partes y las resolvemos simultáneamente:}\\text{Parte Izquierda: } -2x - 3 \\leq x - 1 \\implies -2 \\leq 3x \\implies -\\frac{2}{3} \\leq x \\quad \\text{(que es lo mismo que } x \\geq -\\frac{2}{3}\\text{)}\\text{Parte Derecha: } x - 1 \\leq 2x + 3 \\implies -4 \\leq x \\quad \\text{(que es lo mismo que } x \\geq -4\\text{)}\\text{Paso 4: Intersecamos todas nuestras condiciones. Necesitamos que } x \\geq -\\frac{3}{2}, \\text{ y además } x \\geq -\\frac{2}{3}, \\text{ y además } x \\geq -4.\\text{La condición más restrictiva que cumple las tres al mismo tiempo es } x \\geq -\\frac{2}{3}.\\text{Solución: } \\left[-\\frac{2}{3}, \\infty\\right)"
+          "explanationLatex": "\\text{Paso 1: Aquí tenemos una variable fuera del valor absoluto. La regla } |A| \\leq B \\implies -B \\leq A \\leq B \\text{ solo funciona si garantizamos que } B \\geq 0 \\text{ (un valor absoluto nunca es menor a un número negativo).}\\text{Condición inicial: } 2x + 3 \\geq 0 \\implies 2x \\geq -3 \\implies x \\geq -\\frac{3}{2}\\text{Paso 2: Aplicamos la regla del sándwich (}-B \\leq A \\leq B\\text{) asumiendo nuestra condición inicial:}-(2x + 3) \\leq x - 1 \\leq 2x + 3\\text{Paso 3: Rompemos esta inecuación doble en dos partes y las resolvemos simultáneamente:}\\text{Parte Izquierda: } -2x - 3 \\leq x - 1 \\implies -2 \\leq 3x \\implies -\\frac{2}{3} \\leq x \\quad \\text{(que es lo mismo que } x \\geq -\\frac{2}{3}\\text{)}\\text{Parte Derecha: } x - 1 \\leq 2x + 3 \\implies -4 \\leq x \\quad \\text{(que es lo mismo que } x \\geq -4\\text{)}\\text{Paso 4: Intersecamos todas nuestras condiciones. Necesitamos que } x \\geq -\\frac{3}{2}, \\text{ y además } x \\geq -\\frac{2}{3}, \\text{ y además } x \\geq -4.\\text{La condición más restrictiva que cumple las tres al mismo tiempo es } x \\geq -\\frac{2}{3}.\\text{Solución: } \\left[-\\frac{2}{3}, \\infty\\right)",
+          "explanationSteps": [
+            {
+              "title": "Desdoblamiento",
+              "text": "Aplicamos la propiedad del valor absoluto para inecuaciones menores o iguales. La expresión en el interior debe estar atrapada entre el negativo y el positivo de la expresión del lado derecho.",
+              "mathContent": "-(2x + 3) \\leq x - 1 \\leq 2x + 3",
+              "icon": "pin"
+            },
+            {
+              "title": "Resolución del Límite Inferior",
+              "text": "Separamos la inecuación doble en dos partes. Primero, tomamos la parte izquierda y despejamos la variable, agrupando las $x$ de un lado y las constantes del otro.",
+              "mathContent": "-2x - 3 \\leq x - 1 \\quad \\rightarrow \\quad -2 \\leq 3x \\quad \\rightarrow \\quad x \\geq -\\frac{2}{3}",
+              "icon": "fx"
+            },
+            {
+              "title": "Resolución del Límite Superior",
+              "text": "Luego, tomamos la parte derecha de la inecuación doble original y procedemos a despejar la variable para obtener nuestra segunda condición, la cual debe cumplirse al mismo tiempo que la primera.",
+              "mathContent": "x - 1 \\leq 2x + 3 \\quad \\rightarrow \\quad -4 \\leq x \\quad \\rightarrow \\quad x \\geq -4",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "La solución definitiva es la intersección de ambas condiciones (los valores que cumplen ambas simultáneamente). Como todos los números mayores o iguales a $-2/3$ automáticamente son mayores que $-4$, la restricción más exigente define nuestro intervalo cerrado por la izquierda.",
+              "mathContent": "x \\in \\left[-\\frac{2}{3}, \\infty\\right)",
+              "icon": "star"
+            }
+          ]
         }
       ]
     },
@@ -2034,7 +2152,27 @@
           "category": "General",
           "moduleName": "Módulo",
           "questionLatex": "|x^2 - 4| < 5",
-          "explanationLatex": "\\text{Paso 1: Aplicamos la regla del sándwich para el \"menor que\" } (|A| < k \\implies -k < A < k)\\text{:}-5 < x^2 - 4 < 5\\text{Paso 2: Sumamos } 4 \\text{ en todas las partes para despejar } x^2\\text{:}\\begin{aligned}\n-5 + 4 & < x^2 < 5 + 4 \\\\\n-1 & < x^2 < 9\n\\end{aligned}\\text{Paso 3: Esta es una inecuación doble. La dividimos en dos condiciones que deben cumplirse simultáneamente:}\\text{Condición 1: } -1 < x^2 \\implies x^2 > -1. \\text{ Como cualquier número real al cuadrado es positivo o cero, esto se cumple para TODOS los números reales } (\\mathbb{R}).\\text{Condición 2: } x^2 < 9. \\text{ Aplicamos raíz cuadrada a ambos lados recordando que } \\sqrt{x^2} = |x|\\text{:}|x| < 3 \\implies -3 < x < 3\\text{Paso 4: La intersección de \"todos los reales\" con el intervalo } (-3, 3) \\text{ es simplemente } (-3, 3).\\text{Solución: } (-3, 3)"
+          "explanationLatex": "\\text{Paso 1: Aplicamos la regla del sándwich para el \"menor que\" } (|A| < k \\implies -k < A < k)\\text{:}-5 < x^2 - 4 < 5\\text{Paso 2: Sumamos } 4 \\text{ en todas las partes para despejar } x^2\\text{:}\\begin{aligned}\n-5 + 4 & < x^2 < 5 + 4 \\\\\n-1 & < x^2 < 9\n\\end{aligned}\\text{Paso 3: Esta es una inecuación doble. La dividimos en dos condiciones que deben cumplirse simultáneamente:}\\text{Condición 1: } -1 < x^2 \\implies x^2 > -1. \\text{ Como cualquier número real al cuadrado es positivo o cero, esto se cumple para TODOS los números reales } (\\mathbb{R}).\\text{Condición 2: } x^2 < 9. \\text{ Aplicamos raíz cuadrada a ambos lados recordando que } \\sqrt{x^2} = |x|\\text{:}|x| < 3 \\implies -3 < x < 3\\text{Paso 4: La intersección de \"todos los reales\" con el intervalo } (-3, 3) \\text{ es simplemente } (-3, 3).\\text{Solución: } (-3, 3)",
+          "explanationSteps": [
+            {
+              "title": "Propiedad de Acotación",
+              "text": "Al ser un valor absoluto estrictamente menor que un número positivo, la expresión en su interior debe estar comprendida entre el negativo y el positivo de dicho número. Planteamos esto como una inecuación doble.",
+              "mathContent": "-5 < x^2 - 4 < 5",
+              "icon": "pin"
+            },
+            {
+              "title": "Despeje y Análisis Lógico",
+              "text": "Sumamos $4$ en todas las partes para despejar el término cuadrático, obteniendo $-1 < x^2 < 9$. Como el cuadrado de cualquier número real siempre es positivo o cero, la parte izquierda ($-1 < x^2$) se cumple automáticamente para cualquier número real. Por lo tanto, nuestro problema se reduce a resolver únicamente la parte derecha ($x^2 < 9$).",
+              "mathContent": "-1 < x^2 < 9 \\quad \\rightarrow \\quad x^2 < 9",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Para resolver $x^2 < 9$, aplicamos raíz cuadrada a ambos lados. Recordando que $\\sqrt{x^2} = |x|$, esto nos devuelve una nueva inecuación de valor absoluto: $|x| < 3$. Al desdoblarla, determinamos que la solución final es un intervalo abierto.",
+              "mathContent": "x \\in (-3, 3)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775602602913",
@@ -2049,7 +2187,33 @@
           "category": "General",
           "moduleName": "Módulo",
           "questionLatex": "|2x - 3| + 1 \\geq 4",
-          "explanationLatex": "\\text{Paso 1: Antes de aplicar cualquier propiedad del valor absoluto, debemos aislarlo. Restamos } 1 \\text{ a ambos lados:}|2x - 3| \\geq 4 - 1|2x - 3| \\geq 3\\text{Paso 2: Ahora aplicamos la propiedad para el \"mayor o igual que\" } (|A| \\geq k \\implies A \\leq -k \\text{ ó } A \\geq k)\\text{:}2x - 3 \\leq -3 \\quad \\text{ó} \\quad 2x - 3 \\geq 3\\text{Paso 3: Resolvemos cada caso de forma independiente:}\\text{Caso 1: } 2x \\leq -3 + 3 \\implies 2x \\leq 0 \\implies x \\leq 0\\text{Caso 2: } 2x \\geq 3 + 3 \\implies 2x \\geq 6 \\implies x \\geq 3\\text{Paso 4: Unimos ambas soluciones usando corchetes porque la desigualdad incluye el igual (}\\geq\\text{).}\\text{Solución: } (-\\infty, 0] \\cup [3, \\infty)"
+          "explanationLatex": "\\text{Paso 1: Antes de aplicar cualquier propiedad del valor absoluto, debemos aislarlo. Restamos } 1 \\text{ a ambos lados:}|2x - 3| \\geq 4 - 1|2x - 3| \\geq 3\\text{Paso 2: Ahora aplicamos la propiedad para el \"mayor o igual que\" } (|A| \\geq k \\implies A \\leq -k \\text{ ó } A \\geq k)\\text{:}2x - 3 \\leq -3 \\quad \\text{ó} \\quad 2x - 3 \\geq 3\\text{Paso 3: Resolvemos cada caso de forma independiente:}\\text{Caso 1: } 2x \\leq -3 + 3 \\implies 2x \\leq 0 \\implies x \\leq 0\\text{Caso 2: } 2x \\geq 3 + 3 \\implies 2x \\geq 6 \\implies x \\geq 3\\text{Paso 4: Unimos ambas soluciones usando corchetes porque la desigualdad incluye el igual (}\\geq\\text{).}\\text{Solución: } (-\\infty, 0] \\cup [3, \\infty)",
+          "explanationSteps": [
+            {
+              "title": "Aislamiento del Valor Absoluto",
+              "text": "Antes de separar la inecuación en casos, necesitamos dejar las barras de valor absoluto completamente solas en el lado izquierdo. Para lograrlo, restamos $1$ en ambos lados de la desigualdad.",
+              "mathContent": "|2x - 3| + 1 \\geq 4 \\quad \\rightarrow \\quad |2x - 3| \\geq 3",
+              "icon": "pin"
+            },
+            {
+              "title": "Propiedad de Divergencia y Primer Caso",
+              "text": "Con el valor absoluto aislado y mayor o igual a $3$, la expresión interior debe ser menor o igual a $-3$, o bien, mayor o igual a $3$. Tomamos la primera inecuación (la parte negativa) y despejamos la variable restando $3$ en ambos lados y dividiendo entre $2$.",
+              "mathContent": "2x - 3 \\leq -3 \\quad \\rightarrow \\quad 2x \\leq 0 \\quad \\rightarrow \\quad x \\leq 0",
+              "icon": "fx"
+            },
+            {
+              "title": "Resolución del Segundo Caso",
+              "text": "Hacemos exactamente el mismo procedimiento de despeje con la segunda inecuación (la parte positiva). Sumamos $3$ en ambos lados y dividimos entre $2$ para encontrar nuestro segundo límite.",
+              "mathContent": "2x - 3 \\geq 3 \\quad \\rightarrow \\quad 2x \\geq 6 \\quad \\rightarrow \\quad x \\geq 3",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "La solución definitiva es la unión de los dos intervalos que encontramos. Como la desigualdad original incluye el signo de igual ($\\geq$), utilizamos corchetes para indicar que tanto el $0$ como el $3$ están incluidos en el conjunto solución.",
+              "mathContent": "x \\in (-\\infty, 0] \\cup [3, \\infty)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775602710082",
@@ -2064,7 +2228,27 @@
           "category": "General",
           "moduleName": "Módulo",
           "questionLatex": "|x - 2| \\leq |x + 1|",
-          "explanationLatex": "\\text{Paso 1: Cuando tenemos un valor absoluto a cada lado de la desigualdad, sabemos con certeza que ambos lados son positivos o cero. Por lo tanto, podemos elevar ambos lados al cuadrado sin alterar el sentido de la desigualdad. Recordemos que } |A|^2 = A^2.(x - 2)^2 \\leq (x + 1)^2\\text{Paso 2: Desarrollamos los binomios al cuadrado perfectos } ((a \\pm b)^2 = a^2 \\pm 2ab + b^2)\\text{:}x^2 - 4x + 4 \\leq x^2 + 2x + 1\\text{Paso 3: Simplificamos. Notamos que } x^2 \\text{ se cancela a ambos lados:}-4x + 4 \\leq 2x + 1\\text{Paso 4: Agrupamos las } x \\text{ de un lado y los números del otro:}\\begin{aligned}\n4 - 1 & \\leq 2x + 4x \\\\\n3 & \\leq 6x \\\\\n\\frac{3}{6} & \\leq x \\\\\n\\frac{1}{2} & \\leq x \\quad \\text{(que es lo mismo que } x \\geq \\frac{1}{2}\\text{)}\n\\end{aligned}\\text{Solución: } \\left[\\frac{1}{2}, \\infty\\right)"
+          "explanationLatex": "\\text{Paso 1: Cuando tenemos un valor absoluto a cada lado de la desigualdad, sabemos con certeza que ambos lados son positivos o cero. Por lo tanto, podemos elevar ambos lados al cuadrado sin alterar el sentido de la desigualdad. Recordemos que } |A|^2 = A^2.(x - 2)^2 \\leq (x + 1)^2\\text{Paso 2: Desarrollamos los binomios al cuadrado perfectos } ((a \\pm b)^2 = a^2 \\pm 2ab + b^2)\\text{:}x^2 - 4x + 4 \\leq x^2 + 2x + 1\\text{Paso 3: Simplificamos. Notamos que } x^2 \\text{ se cancela a ambos lados:}-4x + 4 \\leq 2x + 1\\text{Paso 4: Agrupamos las } x \\text{ de un lado y los números del otro:}\\begin{aligned}\n4 - 1 & \\leq 2x + 4x \\\\\n3 & \\leq 6x \\\\\n\\frac{3}{6} & \\leq x \\\\\n\\frac{1}{2} & \\leq x \\quad \\text{(que es lo mismo que } x \\geq \\frac{1}{2}\\text{)}\n\\end{aligned}\\text{Solución: } \\left[\\frac{1}{2}, \\infty\\right)",
+          "explanationSteps": [
+            {
+              "title": "Elevación al Cuadrado",
+              "text": "Como ambos lados de la desigualdad tienen valores absolutos (y por lo tanto, sabemos que son positivos o cero), podemos elevar al cuadrado ambos lados de forma completamente segura. Esto elimina las barras de valor absoluto por la propiedad $|a|^2 = a^2$.",
+              "mathContent": "(|x - 2|)^2 \\leq (|x + 1|)^2 \\quad \\rightarrow \\quad (x - 2)^2 \\leq (x + 1)^2",
+              "icon": "pin"
+            },
+            {
+              "title": "Expansión y Simplificación",
+              "text": "Desarrollamos los binomios al cuadrado en ambos lados de la inecuación. Al hacerlo, observamos que los términos cuadráticos ($x^2$) son idénticos en ambos lados, por lo que se cancelan entre sí, reduciendo el problema a una inecuación lineal.",
+              "mathContent": "x^2 - 4x + 4 \\leq x^2 + 2x + 1 \\quad \\rightarrow \\quad -4x + 4 \\leq 2x + 1",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Agrupamos las incógnitas de un lado y las constantes del otro para despejar $x$. La solución nos indica que cualquier número mayor o igual a $1/2$ cumple con la condición original. Empleamos un corchete en el extremo inferior porque la desigualdad no es estricta.",
+              "mathContent": "3 \\leq 6x \\quad \\rightarrow \\quad x \\geq \\frac{1}{2} \\quad \\rightarrow \\quad x \\in \\left[\\frac{1}{2}, \\infty\\right)",
+              "icon": "star"
+            }
+          ]
         }
       ]
     },
@@ -2153,7 +2337,33 @@
           "category": "General",
           "moduleName": "Módulo",
           "questionLatex": "\\frac{x^2 - 5x + 6}{x - 4} \\leq 0",
-          "explanationLatex": "\\text{Paso 1: Factorizamos el numerador y anotamos la restricción del denominador } (x \\neq 4)\\text{:}\n\\frac{(x - 3)(x - 2)}{x - 4} \\leq 0\n\\text{Paso 2: Puntos críticos: } x = 3 \\text{ (cerrado), } x = 2 \\text{ (cerrado) y } x = 4 \\text{ (abierto por el denominador).}\n\\text{Paso 3: Evaluamos signos en los intervalos formados por } (-\\infty, 2], [2, 3], [3, 4) \\text{ y } (4, \\infty):\n\\text{Para } x = 0: (-)(-)/(-) = \\text{Negativo}\\text{Para } x = 2.5: (+)(-)/(-) = \\text{Positivo}\\text{Para } x = 3.5: (+)(+)/(-) = \\text{Negativo}\\text{Para } x = 5: (+)(+)/(+) = \\text{Positivo}\\text{Como nos piden los valores } \\leq 0\\text{, tomamos los intervalos negativos.}\\text{Solución: } (-\\infty, 2] \\cup [3, 4)"
+          "explanationLatex": "\\text{Paso 1: Factorizamos el numerador y anotamos la restricción del denominador } (x \\neq 4)\\text{:}\n\\frac{(x - 3)(x - 2)}{x - 4} \\leq 0\n\\text{Paso 2: Puntos críticos: } x = 3 \\text{ (cerrado), } x = 2 \\text{ (cerrado) y } x = 4 \\text{ (abierto por el denominador).}\n\\text{Paso 3: Evaluamos signos en los intervalos formados por } (-\\infty, 2], [2, 3], [3, 4) \\text{ y } (4, \\infty):\n\\text{Para } x = 0: (-)(-)/(-) = \\text{Negativo}\\text{Para } x = 2.5: (+)(-)/(-) = \\text{Positivo}\\text{Para } x = 3.5: (+)(+)/(-) = \\text{Negativo}\\text{Para } x = 5: (+)(+)/(+) = \\text{Positivo}\\text{Como nos piden los valores } \\leq 0\\text{, tomamos los intervalos negativos.}\\text{Solución: } (-\\infty, 2] \\cup [3, 4)",
+          "explanationSteps": [
+            {
+              "title": "Factorización del Numerador",
+              "text": "El primer paso para resolver una inecuación racional es factorizar las expresiones polinómicas. En el numerador, buscamos dos números que multiplicados den $6$ y sumados den $-5$. Esto nos permite visualizar mejor los puntos de cambio de signo.",
+              "mathContent": "x^2 - 5x + 6 = (x - 2)(x - 3) \\quad \\rightarrow \\quad \\frac{(x - 2)(x - 3)}{x - 4} \\leq 0",
+              "icon": "pin"
+            },
+            {
+              "title": "Puntos Críticos y Dominio",
+              "text": "Identificamos los valores que anulan el numerador ($x=2, x=3$) y el valor que anula el denominador ($x=4$). Es fundamental recordar que el denominador nunca puede ser cero, por lo que el número $4$ debe quedar excluido de cualquier posible solución.",
+              "mathContent": "\\text{Raíces: } x = 2, x = 3 \\quad \\text{Restricción: } x \\neq 4",
+              "icon": "chart"
+            },
+            {
+              "title": "Análisis de Signos",
+              "text": "Dividimos la recta real en intervalos usando los puntos críticos encontrados y evaluamos el signo de la fracción en cada región. Buscamos los intervalos donde el resultado sea negativo o cero (cumpliendo el símbolo $\\leq 0$).",
+              "mathContent": "x \\in (-\\infty, 2] \\quad (-) \\\\ x \\in [2, 3] \\quad (+) \\\\ x \\in [3, 4) \\quad (-) \\\\ x \\in (4, \\infty) \\quad (+)",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "La solución final es la unión de los intervalos que resultaron negativos. Incluimos los puntos del numerador ($2$ y $3$) con corchetes porque la desigualdad permite la igualdad a cero, pero usamos un paréntesis en el $4$ debido a la restricción del denominador.",
+              "mathContent": "x \\in (-\\infty, 2] \\cup [3, 4)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775606094289",
@@ -2168,7 +2378,33 @@
           "category": "General",
           "moduleName": "Módulo",
           "questionLatex": "\\sqrt{3x - 2} \\geq x - 1",
-          "explanationLatex": "\\text{Paso 1: Dominio de la raíz: } 3x - 2 \\geq 0 \\implies x \\geq \\frac{2}{3}.\\text{Paso 2: Separamos en Casos analizando el lado derecho } (x - 1)\\text{:}\\text{Caso A (Lado derecho negativo): } x - 1 < 0 \\implies x < 1.\\text{Una raíz positiva siempre es } \\geq \\text{ un negativo. Se cumple en todo el dominio disponible: } \\left[\\frac{2}{3}, 1\\right).\\text{Caso B (Lado derecho positivo o cero): } x - 1 \\geq 0 \\implies x \\geq 1.\\text{Elevamos al cuadrado con seguridad:}\\begin{aligned}\n3x - 2 & \\geq (x - 1)^2 \\\\\n3x - 2 & \\geq x^2 - 2x + 1 \\\\\n0 & \\geq x^2 - 5x + 3\n\\end{aligned}\\text{Usando la resolvente para las raíces: } x = \\frac{5 \\pm \\sqrt{25 - 12}}{2} = \\frac{5 \\pm \\sqrt{13}}{2}.\\text{La parábola es } \\leq 0 \\text{ entre las raíces: } \\left[\\frac{5 - \\sqrt{13}}{2}, \\frac{5 + \\sqrt{13}}{2}\\right].\\text{Intersecando con la condición del Caso B } (x \\geq 1), \\text{ obtenemos: } \\left[1, \\frac{5 + \\sqrt{13}}{2}\\right].\\text{Paso 3: Unimos las soluciones de los Casos A y B.}\\text{Solución: } \\left[\\frac{2}{3}, 1\\right) \\cup \\left[1, \\frac{5 + \\sqrt{13}}{2}\\right] = \\left[\\frac{2}{3}, \\frac{5 + \\sqrt{13}}{2}\\right]"
+          "explanationLatex": "\\text{Paso 1: Dominio de la raíz: } 3x - 2 \\geq 0 \\implies x \\geq \\frac{2}{3}.\\text{Paso 2: Separamos en Casos analizando el lado derecho } (x - 1)\\text{:}\\text{Caso A (Lado derecho negativo): } x - 1 < 0 \\implies x < 1.\\text{Una raíz positiva siempre es } \\geq \\text{ un negativo. Se cumple en todo el dominio disponible: } \\left[\\frac{2}{3}, 1\\right).\\text{Caso B (Lado derecho positivo o cero): } x - 1 \\geq 0 \\implies x \\geq 1.\\text{Elevamos al cuadrado con seguridad:}\\begin{aligned}\n3x - 2 & \\geq (x - 1)^2 \\\\\n3x - 2 & \\geq x^2 - 2x + 1 \\\\\n0 & \\geq x^2 - 5x + 3\n\\end{aligned}\\text{Usando la resolvente para las raíces: } x = \\frac{5 \\pm \\sqrt{25 - 12}}{2} = \\frac{5 \\pm \\sqrt{13}}{2}.\\text{La parábola es } \\leq 0 \\text{ entre las raíces: } \\left[\\frac{5 - \\sqrt{13}}{2}, \\frac{5 + \\sqrt{13}}{2}\\right].\\text{Intersecando con la condición del Caso B } (x \\geq 1), \\text{ obtenemos: } \\left[1, \\frac{5 + \\sqrt{13}}{2}\\right].\\text{Paso 3: Unimos las soluciones de los Casos A y B.}\\text{Solución: } \\left[\\frac{2}{3}, 1\\right) \\cup \\left[1, \\frac{5 + \\sqrt{13}}{2}\\right] = \\left[\\frac{2}{3}, \\frac{5 + \\sqrt{13}}{2}\\right]",
+          "explanationSteps": [
+            {
+              "title": "Restricción del Dominio",
+              "text": "Para que la raíz cuadrada exista en el campo de los números reales, el radicando debe ser mayor o igual a cero. Esto define el intervalo base sobre el cual trabajaremos.",
+              "mathContent": "3x - 2 \\geq 0 \\quad \\rightarrow \\quad x \\geq \\frac{2}{3}",
+              "icon": "pin"
+            },
+            {
+              "title": "Caso 1: Lado Derecho Negativo",
+              "text": "Si el lado derecho ($x - 1$) es negativo, la desigualdad se cumple siempre, ya que una raíz (positiva o cero) siempre es mayor que un número negativo. Al intersectar $x < 1$ con el dominio, obtenemos la primera parte de la solución.",
+              "mathContent": "x - 1 < 0 \\quad \\rightarrow \\quad x < 1 \\quad \\text{Solución 1: } x \\in \\left[\\frac{2}{3}, 1\\right)",
+              "icon": "chart"
+            },
+            {
+              "title": "Caso 2: Lado Derecho Positivo y Elevación",
+              "text": "Si $x - 1 \\geq 0$ (es decir, $x \\geq 1$), ambos lados son no negativos y podemos elevar al cuadrado. Esto nos lleva a una inecuación cuadrática que resolvemos buscando sus raíces ($1$ y $2$) y analizando la parábola.",
+              "mathContent": "3x - 2 \\geq (x - 1)^2 \\quad \\rightarrow \\quad x^2 - 5x + 3 \\leq 0 \\quad \\rightarrow \\quad x \\in \\left[\\frac{5-\\sqrt{13}}{2}, \\frac{5+\\sqrt{13}}{2}\\right]",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Al combinar los valores del Caso 2 que cumplen $x \\geq 1$ con la solución del Caso 1, unimos los intervalos. El resultado final abarca desde el límite del dominio hasta la raíz superior de la cuadrática.",
+              "mathContent": "x \\in \\left[\\frac{2}{3}, \\frac{5 + \\sqrt{13}}{2}\\right]",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775606261618",
@@ -2183,7 +2419,33 @@
           "category": "General",
           "moduleName": "Módulo",
           "questionLatex": "|x^2 - 4x| > 3",
-          "explanationLatex": "\\text{Paso 1: Aplicamos la propiedad } |A| > k \\implies A > k \\quad \\text{ó} \\quad A < -k.\\text{Camino 1: } x^2 - 4x > 3 \\implies x^2 - 4x - 3 > 0.\\text{Fórmula cuadrática: } x = \\frac{4 \\pm \\sqrt{16 - 4(1)(-3)}}{2} = \\frac{4 \\pm \\sqrt{28}}{2} = 2 \\pm \\sqrt{7}.\\text{Al ser } > 0, \\text{ la solución son los extremos: } (-\\infty, 2 - \\sqrt{7}) \\cup (2 + \\sqrt{7}, \\infty).\\text{Camino 2: } x^2 - 4x < -3 \\implies x^2 - 4x + 3 < 0.\\text{Factorizando: } (x - 3)(x - 1) < 0.\\text{Al ser } < 0, \\text{ la solución es el centro: } (1, 3).\\text{Paso 2: Unimos todos los intervalos obtenidos.}\\text{Solución: } (-\\infty, 2 - \\sqrt{7}) \\cup (1, 3) \\cup (2 + \\sqrt{7}, \\infty)"
+          "explanationLatex": "\\text{Paso 1: Aplicamos la propiedad } |A| > k \\implies A > k \\quad \\text{ó} \\quad A < -k.\\text{Camino 1: } x^2 - 4x > 3 \\implies x^2 - 4x - 3 > 0.\\text{Fórmula cuadrática: } x = \\frac{4 \\pm \\sqrt{16 - 4(1)(-3)}}{2} = \\frac{4 \\pm \\sqrt{28}}{2} = 2 \\pm \\sqrt{7}.\\text{Al ser } > 0, \\text{ la solución son los extremos: } (-\\infty, 2 - \\sqrt{7}) \\cup (2 + \\sqrt{7}, \\infty).\\text{Camino 2: } x^2 - 4x < -3 \\implies x^2 - 4x + 3 < 0.\\text{Factorizando: } (x - 3)(x - 1) < 0.\\text{Al ser } < 0, \\text{ la solución es el centro: } (1, 3).\\text{Paso 2: Unimos todos los intervalos obtenidos.}\\text{Solución: } (-\\infty, 2 - \\sqrt{7}) \\cup (1, 3) \\cup (2 + \\sqrt{7}, \\infty)",
+          "explanationSteps": [
+            {
+              "title": "Propiedad de Divergencia",
+              "text": "Al ser un valor absoluto estrictamente mayor que un número positivo, la expresión interna debe ser menor que el negativo de ese número o mayor que su positivo. Esto genera dos escenarios independientes que debemos resolver por separado.",
+              "mathContent": "x^2 - 4x < -3 \\quad \\text{o} \\quad x^2 - 4x > 3",
+              "icon": "pin"
+            },
+            {
+              "title": "Resolución del Primer Caso",
+              "text": "Analizamos $x^2 - 4x + 3 < 0$. Al factorizar como $(x-1)(x-3) < 0$, buscamos el intervalo donde la parábola es negativa (entre sus raíces). Esto nos da una primera parte de la solución.",
+              "mathContent": "x \\in (1, 3)",
+              "icon": "fx"
+            },
+            {
+              "title": "Resolución del Segundo Caso",
+              "text": "Analizamos $x^2 - 4x - 3 > 0$. Usamos la fórmula general para hallar las raíces: $x = 2 \\pm \\sqrt{7}$. Como buscamos donde la parábola es positiva ($> 0$), tomamos los intervalos exteriores a dichas raíces.",
+              "mathContent": "x \\in (-\\infty, 2 - \\sqrt{7}) \\cup (2 + \\sqrt{7}, \\infty)",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "La solución final es la unión de todos los intervalos obtenidos en ambos casos. Esto describe todas las regiones en la recta numérica donde la distancia de $x^2 - 4x$ al origen es mayor a $3$.",
+              "mathContent": "x \\in (-\\infty, 2 - \\sqrt{7}) \\cup (1, 3) \\cup (2 + \\sqrt{7}, \\infty)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775606381988",
@@ -2198,7 +2460,33 @@
           "category": "General",
           "moduleName": "Módulo",
           "questionLatex": "\\frac{|x - 2|}{x - 1} \\geq 0",
-          "explanationLatex": "\\text{Paso 1: Analizamos la fracción. El numerador } |x - 2| \\text{ siempre arroja un resultado POSITIVO o CERO.}\\text{Paso 2: Para que la división completa sea mayor o igual a cero } (\\geq 0)\\text{, el denominador debe tener obligatoriamente el mismo signo que el numerador. Es decir, debe ser positivo.}\\text{No puede ser cero porque no se puede dividir entre cero. Por lo tanto:}x - 1 > 0 \\implies x > 1\\text{Paso 3: Verificamos qué pasa si el numerador es cero } (x = 2)\\text{. Si } x = 2\\text{, la inecuación queda } 0 \\geq 0\\text{, lo cual es verdadero. Como } x = 2 \\text{ ya está incluido dentro de nuestro intervalo } (x > 1)\\text{, no hay que hacer ajustes extras.}\\text{Solución: } (1, \\infty)"
+          "explanationLatex": "\\text{Paso 1: Analizamos la fracción. El numerador } |x - 2| \\text{ siempre arroja un resultado POSITIVO o CERO.}\\text{Paso 2: Para que la división completa sea mayor o igual a cero } (\\geq 0)\\text{, el denominador debe tener obligatoriamente el mismo signo que el numerador. Es decir, debe ser positivo.}\\text{No puede ser cero porque no se puede dividir entre cero. Por lo tanto:}x - 1 > 0 \\implies x > 1\\text{Paso 3: Verificamos qué pasa si el numerador es cero } (x = 2)\\text{. Si } x = 2\\text{, la inecuación queda } 0 \\geq 0\\text{, lo cual es verdadero. Como } x = 2 \\text{ ya está incluido dentro de nuestro intervalo } (x > 1)\\text{, no hay que hacer ajustes extras.}\\text{Solución: } (1, \\infty)",
+          "explanationSteps": [
+            {
+              "title": "Análisis del Numerador",
+              "text": "Observamos el numerador $|x - 2|$. Por definición, un valor absoluto siempre es mayor o igual a cero para cualquier número real. Esto significa que el numerador nunca será negativo, por lo que no afectará al cambio de signo de la fracción, aunque sí puede hacerla igual a cero.",
+              "mathContent": "|x - 2| \\geq 0 \\quad \\forall x \\in \\mathbb{R}",
+              "icon": "pin"
+            },
+            {
+              "title": "Restricción del Denominador",
+              "text": "El denominador de una fracción nunca puede ser cero. Por lo tanto, debemos excluir el valor que anula la parte inferior. Además, como el numerador es siempre no negativo, el signo de la fracción dependerá exclusivamente de que el denominador sea positivo.",
+              "mathContent": "x - 1 \\neq 0 \\quad \\rightarrow \\quad x \\neq 1",
+              "icon": "chart"
+            },
+            {
+              "title": "Condición de Positividad",
+              "text": "Para que la fracción sea $\\geq 0$, dado que el numerador ya es $\\geq 0$, solo necesitamos que el denominador sea estrictamente mayor que cero. Si el denominador fuera negativo, la fracción entera sería negativa.",
+              "mathContent": "x - 1 > 0 \\quad \\rightarrow \\quad x > 1",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "La solución son todos los números mayores que $1$. Notemos que si $x = 2$, el numerador es $0$ y la desigualdad se cumple ($0 \\geq 0$), pero como $2$ ya está incluido en el intervalo $x > 1$, no necesitamos añadirlo por separado.",
+              "mathContent": "x \\in (1, \\infty)",
+              "icon": "star"
+            }
+          ]
         }
       ]
     },
