@@ -165,7 +165,27 @@
           "correctAnswerIndex": 3,
           "explanationLatex": "\\begin{aligned}\nx + 5 & > 12 \\\\\nx & > 12 - 5 \\\\\nx & > 7 \n\\end{aligned}\\text{Como el símbolo es \"mayor que\" (sin el igual), el intervalo es abierto: } (7, \\infty)",
           "category": "Inecuaciones Lineales",
-          "moduleName": "Matemática I"
+          "moduleName": "Matemática I",
+          "explanationSteps": [
+            {
+              "title": "Propiedad de la Resta",
+              "text": "Para aislar la variable $x$, aplicamos la propiedad de la resta en las desigualdades: restamos 5 en ambos lados para mantener el equilibrio.",
+              "mathContent": "x + 5 - 5 > 12 - 5",
+              "icon": "fx"
+            },
+            {
+              "title": "Simplificación",
+              "text": "Realizamos la operación aritmética elemental en ambos lados de la desigualdad.",
+              "mathContent": "x > 7",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Obtenemos el conjunto solución. Esto significa que la desigualdad se cumple para cualquier número mayor a 7.",
+              "mathContent": "x \\in (7, \\infty)",
+              "icon": "star"
+            }
+          ]
         },
         {
           "id": "challenge_1775069906239",
