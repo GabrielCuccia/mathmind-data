@@ -21,7 +21,7 @@
         {
           "title": "Lenguaje y notación",
           "subtitle": "Desigualdades",
-          "content": "Usaremos la notación estándar:$<, >, \\le, \\ge$.Las soluciones se expresan con intervalos como:$(a, b)$, $[a, b]$, $(a, b]$, $[a, b)$,y también con uniones:$$(-\\infty, -2) \\cup (3, \\infty)$$El símbolo $\\infty$ no es un número real; por eso nunca se escribe con corchete. Siempre va acompañado de paréntesis.",
+          "content": "Usaremos la notación estándar:\n$<, >, \\le, \\ge$. \nLas soluciones se expresan con intervalos como:\n$(a, b)$, $[a, b]$, $(a, b]$, $[a, b)$, y también con uniones: $$(-\\infty, -2) \\cup (3, \\infty)$$El símbolo $\\infty$ no es un número real; por eso nunca se escribe con corchete. Siempre va acompañado de paréntesis.",
           "blocks": [
             {
               "type": "note",
@@ -32,7 +32,7 @@
         {
           "title": "La recta real y el orden",
           "subtitle": "Desigualdades",
-          "content": "Una desigualdad compara dos cantidades. Si escribimos a < b, estamos diciendo que a está a la\nizquierda de b en la recta real. Este criterio geométrico es muy importante, porque nos ayuda a\ninterpretar visualmente soluciones y a detectar errores de signo.\n\nLa propiedad central es que las desigualdades se comportan casi como ecuaciones: podemos sumar o restar el mismo número en ambos lados sin cambiar el conjunto solución. Sin embargo, si\nmultiplicamos o dividimos por un número negativo, el orden se invierte.\n",
+          "content": "Una desigualdad compara dos cantidades. Si escribimos $a < b$, estamos diciendo que $a$ está a la izquierda de $b$ en la recta real. Este criterio geométrico es muy importante, porque nos ayuda a interpretar visualmente soluciones y a detectar errores de signo.\nLa propiedad central es que las desigualdades se comportan casi como ecuaciones: podemos sumar o restar el mismo número en ambos lados sin cambiar el conjunto solución. Sin embargo, si multiplicamos o dividimos por un número negativo, el orden se invierte.\n",
           "blocks": [
             {
               "type": "example",
@@ -43,7 +43,7 @@
         {
           "title": "Propiedades básicas de las desigualdades",
           "subtitle": "Desigualdades",
-          "content": "Sean a, b, c ∈ R.",
+          "content": "Sean $a, b, c \\in \\mathbb{R}$.",
           "blocks": [
             {
               "type": "formula",
@@ -72,7 +72,7 @@
         {
           "title": "Notación de intervalos",
           "subtitle": "Desigualdades",
-          "content": "La notación de intervalos resume de forma compacta una solución. Por ejemplo:\n−1 ≤ x < 4 ⇐⇒ x ∈ [−1, 4).\nSi la desigualdad es estricta, el extremo no se incluye. Si es no estricta, sí se incluye.\nEn resumen:\n\\begin{array}{lll}\n\\hline\n\\text{Forma algebraica} & \\text{Tipo de extremo} & \\text{Notación} \\\\\n\\hline\nx < a \\text{ o } x > a & \\text{abierto} & \\text{paréntesis} \\\\\nx \\leq a \\text{ o } x \\geq a & \\text{cerrado} & \\text{corchete} \\\\\n\\hline\n\\end{array}",
+          "content": "La notación de intervalos resume de forma compacta una solución. Por ejemplo:\n$-1 \\le x < 4 \\iff x \\in [-1, 4)$.\nSi la desigualdad es estricta, el extremo no se incluye. Si es no estricta, sí se incluye.\nEn resumen:\n$$\\begin{array}{lll}\n\\hline\n\\text{Forma algebraica} & \\text{Tipo de extremo} & \\text{Notación} \\\\\n\\hline\nx < a \\text{ o } x > a & \\text{abierto} & \\text{paréntesis} \\\\\nx \\leq a \\text{ o } x \\geq a & \\text{cerrado} & \\text{corchete} \\\\\n\\hline\n\\end{array}$$",
           "blocks": [],
           "formulaLatex": ""
         },
