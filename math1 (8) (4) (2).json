@@ -21,7 +21,7 @@
         {
           "title": "Lenguaje y notación",
           "subtitle": "Desigualdades",
-          "content": "Usaremos la notación estándar:\n<, >, ≤, ≥ .\nLas soluciones se expresan con intervalos como\n(a, b), [a, b], (a, b], [a, b),\ny también con uniones:\n(−∞, −2) ∪ (3, ∞).\nEl símbolo ∞ no es un número real; por eso nunca se escribe con corchete. Siempre va acompañado\nde paréntesis.",
+          "content": "Usaremos la notación estándar:$<, >, \\le, \\ge$.Las soluciones se expresan con intervalos como:$(a, b)$, $[a, b]$, $(a, b]$, $[a, b)$,y también con uniones:$$(-\\infty, -2) \\cup (3, \\infty)$$El símbolo $\\infty$ no es un número real; por eso nunca se escribe con corchete. Siempre va acompañado de paréntesis.",
           "blocks": [
             {
               "type": "note",
