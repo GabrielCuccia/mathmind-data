@@ -957,7 +957,7 @@
         {
           "title": "Idea general",
           "subtitle": "Desigualdades racionales",
-          "content": "Una desigualdad racional tiene variables en el numerador, en el denominador o en ambos. Su forma típica es\n$$\\frac{P(x)}{Q(x)} \\gtrless 0$$\nLa estrategia es llevar todo a un solo cociente, hallar ceros del numerador y del denominador, y analizar signos por intervalos. Los ceros del denominador nunca pertenecen a la solución, porque allí la expresión no existe.\n",
+          "content": "Una desigualdad racional tiene variables en el numerador, en el denominador o en ambos. Su forma típica es$$\\frac{P(x)}{Q(x)} \\gtrless 0$$ La estrategia es llevar todo a un solo cociente, hallar ceros del numerador y del denominador, y analizar signos por intervalos. Los ceros del denominador nunca pertenecen a la solución, porque allí la expresión no existe.\n",
           "formulaLatex": "",
           "proTip": "Si el argumento del valor absoluto es una expresión lineal, primero encuentra el punto donde esa expresión vale cero: allí la recta real se divide en dos regiones.",
           "blocks": [
