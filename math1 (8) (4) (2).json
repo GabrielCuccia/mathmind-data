@@ -97,7 +97,7 @@
         {
           "title": "Idea central",
           "subtitle": "Desigualdades lineales",
-          "content": "Una desigualdad lineal es una desigualdad donde la incógnita aparece con exponente uno. Su forma general puede ser\n$$ax + b < c, \\quad ax + b \\geq c,$$\ncon $a \\neq 0$. Este es el caso más simple, pero también el más importante, porque aquí se aprende el manejo correcto de signos.\n\n",
+          "content": "Una desigualdad lineal es una desigualdad donde la incógnita aparece con exponente uno. Su forma general puede ser\n$$ax + b < c, \\quad ax + b \\geq c,$$\ncon $a \\neq 0$. Este es el caso más simple, pero también el más importante, porque aquí se aprende el manejo correcto de signos.\n",
           "blocks": [
             {
               "type": "example",
@@ -135,7 +135,7 @@
         {
           "title": "Desigualdades compuestas",
           "subtitle": "Desigualdades lineales",
-          "content": "A veces se estudia una condición doble, como\n$$-2 < 3x + 1 \\le 7$$\nEso significa que la expresión debe cumplir ambas condiciones al mismo tiempo. Se resuelve operando en los tres miembros a la vez.\n",
+          "content": "A veces se estudia una condición doble, como\n$$-2 < 3x + 1 \\le 7$$\nEso significa que la expresión debe cumplir ambas condiciones al mismo tiempo. Se resuelve operando en los tres miembros a la vez.",
           "blocks": [
             {
               "type": "example",
