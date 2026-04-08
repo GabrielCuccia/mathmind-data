@@ -13,7 +13,7 @@
         {
           "title": "Introduccion",
           "subtitle": "Desigualdades",
-          "content": "En toda inecuación trabajaremos con una idea constante: encontrar los valores de x que hacen\nverdadera una afirmación. Esos valores pueden formar un intervalo, una unión de intervalos, un\nconjunto finito o incluso el conjunto vacío. Por eso aprenderás a leer soluciones en notación de\nintervalos, en recta numérica y también en lenguaje algebraico.\n\nSi dominas tres ideas, ya tienes gran parte del camino resuelto:\n  Despejar con cuidado,\n  Analizar signos,\n  Interpretar intervalos.\n",
+          "content": "En toda inecuación trabajaremos con una idea constante: encontrar los valores de x que hacen verdadera una afirmación. Esos valores pueden formar un intervalo, una unión de intervalos, un conjunto finito o incluso el conjunto vacío. Por eso aprenderás a leer soluciones en notación de intervalos, en recta numérica y también en lenguaje algebraico.\n\nSi dominas tres ideas, ya tienes gran parte del camino resuelto:\n  Despejar con cuidado,\n  Analizar signos,\n  Interpretar intervalos.\n",
           "formulaLatex": "",
           "proTip": "Al terminar de despejar, siempre verifica si el símbolo original era estricto ($<, >$) o no estricto ($\\leq, \\geq$). Esto determinará si en tu solución final usas paréntesis o corchetes.",
           "blocks": []
@@ -66,7 +66,7 @@
               "content": "Estas propiedades son la base de todo el modulo. No importa si el ejercicio parece largo, al final siempre se reduce a una combinación de estas reglas."
             }
           ],
-          "proTip": "No trabajes nunca “cambiando cosas” sin justificar. Si pasas un término al otro lado, piensa\nen la operación que estás haciendo. Eso te ayuda a no perder signos.",
+          "proTip": "No trabajes nunca “cambiando cosas” sin justificar. Si pasas un término al otro lado, piensa en la operación que estás haciendo. Eso te ayuda a no perder signos.",
           "formulaLatex": ""
         },
         {
@@ -104,12 +104,12 @@
               "content": "Resolver\\ 3x − 7 ≤ 11. \\\\[2ex]\nPrimero\\ sumamos\\ 7\\ en\\ ambos\\ lados: \\\\[2ex]\n3x ≤ 18. \\\\[2ex]\nLuego\\ dividimos\\ entre\\ 3: \\\\[2ex]\nx ≤ 6. \\\\[2ex]\nLa\\ solución\\ es\\\n(−∞, 6]"
             }
           ],
-          "proTip": "Antes de resolver, elimina paréntesis y fracciones si puedes. Entre menos ruido tenga la\ndesigualdad, más fácil será detectar errores."
+          "proTip": "Antes de resolver, elimina paréntesis y fracciones si puedes. Entre menos ruido tenga la desigualdad, más fácil será detectar errores."
         },
         {
           "title": "Cuando aparece un número negativo",
           "subtitle": "Desigualdades lineales",
-          "content": "Este es uno de los puntos más delicados. Si en algún paso multiplicas o divides por un\nnúmero negativo, la desigualdad cambia de sentido.",
+          "content": "Este es uno de los puntos más delicados. Si en algún paso multiplicas o divides por un número negativo, la desigualdad cambia de sentido.",
           "blocks": [
             {
               "type": "example",
@@ -523,9 +523,9 @@
         {
           "title": "Idea general",
           "subtitle": "Desigualdades cuadráticas y polinómicas",
-          "content": "Una desigualdad cuadrática tiene la forma\n$$ax^2 + bx + c \\gtrless 0$$\nEl corazón del método es factorizar el polinomio, hallar sus ceros y estudiar el signo en cada\nintervalo. La razón es simple: un polinomio cambia de signo al cruzar una raíz simple, pero no\nsiempre cambia si la raíz tiene multiplicidad par.\n",
+          "content": "Una desigualdad cuadrática tiene la forma\n$$ax^2 + bx + c \\gtrless 0$$\nEl corazón del método es factorizar el polinomio, hallar sus ceros y estudiar el signo en cada intervalo. La razón es simple: un polinomio cambia de signo al cruzar una raíz simple, pero no siempre cambia si la raíz tiene multiplicidad par.\n",
           "formulaLatex": "",
-          "proTip": "No te quedes solo con “encontrar raíces”. En desigualdades, las raíces son puntos de corte,\nno la solución final en sí mismas.",
+          "proTip": "No te quedes solo con “encontrar raíces”. En desigualdades, las raíces son puntos de corte, no la solución final en sí mismas.",
           "blocks": []
         },
         {
@@ -544,7 +544,7 @@
         {
           "title": "Cuadráticas no factorizables a simple vista",
           "subtitle": "Desigualdades cuadráticas y polinómicas",
-          "content": "Cuando el polinomio no factoriza fácilmente, puedes usar la fórmula general para encontrar raíces\no completar el cuadrado. Después se aplica el mismo análisis de signos.",
+          "content": "Cuando el polinomio no factoriza fácilmente, puedes usar la fórmula general para encontrar raíces o completar el cuadrado. Después se aplica el mismo análisis de signos.",
           "blocks": [
             {
               "type": "example",
@@ -555,7 +555,7 @@
         {
           "title": "Multiplicidad y cambio de signo",
           "subtitle": "Desigualdades cuadráticas y polinómicas",
-          "content": "Si una raíz aparece dos veces, el signo no necesariamente cambia al cruzarla. Eso es importante en\npolinomios de grado mayor.",
+          "content": "Si una raíz aparece dos veces, el signo no necesariamente cambia al cruzarla. Eso es importante en polinomios de grado mayor.",
           "blocks": [
             {
               "type": "example",
@@ -957,13 +957,13 @@
         {
           "title": "Idea general",
           "subtitle": "Desigualdades racionales",
-          "content": "Una desigualdad racional tiene variables en el numerador, en el denominador o en ambos. Su forma\ntípica es\n$$\\frac{P(x)}{Q(x)} \\gtrless 0$$\nLa estrategia es llevar todo a un solo cociente, hallar ceros del numerador y del denominador, y\nanalizar signos por intervalos. Los ceros del denominador nunca pertenecen a la solución, porque\nallí la expresión no existe.\n",
+          "content": "Una desigualdad racional tiene variables en el numerador, en el denominador o en ambos. Su forma típica es\n$$\\frac{P(x)}{Q(x)} \\gtrless 0$$\nLa estrategia es llevar todo a un solo cociente, hallar ceros del numerador y del denominador, y analizar signos por intervalos. Los ceros del denominador nunca pertenecen a la solución, porque allí la expresión no existe.\n",
           "formulaLatex": "",
           "proTip": "Si el argumento del valor absoluto es una expresión lineal, primero encuentra el punto donde esa expresión vale cero: allí la recta real se divide en dos regiones.",
           "blocks": [
             {
               "type": "note",
-              "content": "Los puntos críticos en una desigualdad racional son de dos tipos: ceros del numerador y ceros\ndel denominador. Los primeros pueden pertenecer a la solución si la desigualdad incluye\nigualdad; los segundos jamás."
+              "content": "Los puntos críticos en una desigualdad racional son de dos tipos: ceros del numerador y ceros del denominador. Los primeros pueden pertenecer a la solución si la desigualdad incluye igualdad; los segundos jamás."
             },
             {
               "type": "example",
@@ -981,12 +981,12 @@
               "content": "\\text{Resolver} \\\\\n\\frac{(x - 2)(x + 1)}{x - 3} \\leq 0. \\\\\n\\text{Puntos críticos:} \\\\\n-1, 2, 3. \\\\\n\\text{Organizamos los intervalos:} \\\\\n(-\\infty, -1), (-1, 2), (2, 3), (3, \\infty). \\\\\n\\text{Al analizar signos se obtiene que la expresión es no positiva en} \\\\\n(-\\infty, -1] \\cup [2, 3). \\\\\n\\text{El punto 3 no se incluye porque anula el denominador.}"
             }
           ],
-          "proTip": "Si el numerador o denominador se pueden factorizar, hazlo siempre. El análisis de signos se\nvuelve mucho más claro.\n"
+          "proTip": "Si el numerador o denominador se pueden factorizar, hazlo siempre. El análisis de signos se vuelve mucho más claro.\n"
         },
         {
           "title": "Casos con cancelación aparente",
           "subtitle": "Desigualdades racionales",
-          "content": "A veces una fracción parece simplificarse y eso puede hacerte perder información. Debes mantener\nsiempre las restricciones del dominio original.\n",
+          "content": "A veces una fracción parece simplificarse y eso puede hacerte perder información. Debes mantener siempre las restricciones del dominio original.\n",
           "blocks": [],
           "formulaLatex": "\\text{Resolver} \\\\\n\\frac{x^2 - 1}{x - 1} \\geq 0. \\\\\n\\text{Factorizamos:} \\\\\n\\frac{(x - 1)(x + 1)}{x - 1} \\geq 0. \\\\\n\\text{Aunque se cancele formalmente el factor } x - 1\\text{, el valor } x = 1 \\text{ sigue prohibido porque anula el denominador original. La desigualdad equivalente para } x \\neq 1 \\text{ queda} \\\\\nx + 1 \\geq 0. \\\\\n\\text{Entonces } x \\geq -1\\text{, pero excluyendo } x = 1\\text{. La solución es} \\\\\n[-1, 1) \\cup (1, \\infty)."
         }
@@ -1384,7 +1384,7 @@
           "blocks": [
             {
               "type": "note",
-              "content": "No eleves al cuadrado una expresión sin revisar el signo de ambos lados. En radicales, el\ndominio y la verificación final son obligatorios."
+              "content": "No eleves al cuadrado una expresión sin revisar el signo de ambos lados. En radicales, el dominio y la verificación final son obligatorios."
             },
             {
               "type": "example",
@@ -1406,7 +1406,7 @@
         {
           "title": "Radicales y desigualdades no estrictas",
           "subtitle": "Desigualdades con radicales",
-          "content": "Cuando la desigualdad es ≤ o ≥, al elevar al cuadrado aún debemos comprobar las soluciones\nobtenidas.\n",
+          "content": "Cuando la desigualdad es ≤ o ≥, al elevar al cuadrado aún debemos comprobar las soluciones obtenidas.\n",
           "blocks": [
             {
               "type": "example",
@@ -1850,7 +1850,7 @@
         {
           "title": "Inecuaciones con valor absoluto del tipo mayor que",
           "subtitle": "Desigualdades con valor absoluto",
-          "content": "Si a > 0, entonces\n|u| > a ⇐⇒ u < −a o u > a,\ny de manera análoga para ≥.\n",
+          "content": "Si $a > 0$, entonces\n$$|u| > a \\iff u < -a \\text{ o } u > a,$$\ny de manera análoga para $\\ge$.\n",
           "blocks": [
             {
               "type": "example",
@@ -1861,7 +1861,7 @@
         {
           "title": "Casos especiales con valor absoluto",
           "subtitle": "Desigualdades con valor absoluto",
-          "content": "Si aparece algo como |u| < a con a < 0, la solución es vacía. Si aparece |u| > a con a < 0, la\ndesigualdad es verdadera para todo u real.",
+          "content": "Si aparece algo como  $|u| < a$ con $a < 0$, la solución es vacía. Si aparece $|u| > a$ con $a < 0$, la desigualdad es verdadera para todo $u \\in \\mathbb{R}$.",
           "blocks": [
             {
               "type": "note",
