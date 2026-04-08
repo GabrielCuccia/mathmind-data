@@ -1258,6 +1258,91 @@
       "challenges": []
     },
     {
+      "id": "lesson_1775603440795",
+      "title": "Estrategias combinadas y problemas tipo parcial",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1775603458355",
+          "questionText": "Encuentra el conjunto solución para la siguiente inecuación:",
+          "options": [
+            "(-\\infty, -3) \\cup (4, \\infty)",
+            "(-3, 4)",
+            "(-\\infty, -3] \\cup [4, \\infty)",
+            "(-4, 3)"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "\\frac{2x - 1}{x + 3} > 1",
+          "explanationLatex": "\\text{Paso 1: Identificamos la restricción del denominador. La división entre cero no existe, así que } x + 3 \\neq 0 \\implies x \\neq -3.\\text{Paso 2: ¡Regla de oro! En inecuaciones, NO podemos pasar multiplicando el denominador porque no conocemos su signo (y si fuera negativo, invertiría la desigualdad). En su lugar, pasamos el } 1 \\text{ restando para igualar a cero:}\n\\frac{2x - 1}{x + 3} - 1 > 0\\text{Paso 3: Buscamos denominador común para agrupar todo en una sola fracción:}\\begin{aligned}\n\\frac{(2x - 1) - 1(x + 3)}{x + 3} & > 0 \\\\\n\\frac{2x - 1 - x - 3}{x + 3} & > 0 \\\\\n\\frac{x - 4}{x + 3} & > 0\n\\end{aligned}\n\\text{Paso 4: Hallamos los puntos críticos igualando numerador y denominador a cero: } x = 4 \\text{ y } x = -3.\\text{Paso 5: Al evaluar los intervalos en la recta real } ((-\\infty, -3), (-3, 4) \\text{ y } (4, \\infty))\\text{, buscamos dónde la división da un resultado positivo } (> 0)\\text{. Vemos que se cumple en los extremos.}\\text{Solución: } (-\\infty, -3) \\cup (4, \\infty)"
+        },
+        {
+          "id": "challenge_1775603467003",
+          "questionText": "Resuelve la siguiente inecuación:",
+          "options": [
+            "(-\\infty, 2] \\cup [3, 4)",
+            "(-\\infty, 2] \\cup [3, 4]",
+            "[2, 3] \\cup (4, \\infty)",
+            "(-\\infty, 2) \\cup (3, 4)"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "\\frac{x^2 - 5x + 6}{x - 4} \\leq 0",
+          "explanationLatex": "\\text{Paso 1: Factorizamos el numerador y anotamos la restricción del denominador } (x \\neq 4)\\text{:}\n\\frac{(x - 3)(x - 2)}{x - 4} \\leq 0\n\\text{Paso 2: Puntos críticos: } x = 3 \\text{ (cerrado), } x = 2 \\text{ (cerrado) y } x = 4 \\text{ (abierto por el denominador).}\n\\text{Paso 3: Evaluamos signos en los intervalos formados por } (-\\infty, 2], [2, 3], [3, 4) \\text{ y } (4, \\infty):\n\\text{Para } x = 0: (-)(-)/(-) = \\text{Negativo}\\text{Para } x = 2.5: (+)(-)/(-) = \\text{Positivo}\\text{Para } x = 3.5: (+)(+)/(-) = \\text{Negativo}\\text{Para } x = 5: (+)(+)/(+) = \\text{Positivo}\\text{Como nos piden los valores } \\leq 0\\text{, tomamos los intervalos negativos.}\\text{Solución: } (-\\infty, 2] \\cup [3, 4)"
+        },
+        {
+          "id": "challenge_1775606094289",
+          "questionText": "Determina el intervalo solución para:",
+          "options": [
+            "\\left[1, \\frac{5 + \\sqrt{13}}{2}\\right]",
+            "\\left(-\\infty, \\frac{5 + \\sqrt{13}}{2}\\right]",
+            "\\left[\\frac{2}{3}, \\frac{5 + \\sqrt{13}}{2}\\right]",
+            "\\left[\\frac{2}{3}, \\infty\\right)"
+          ],
+          "correctAnswerIndex": 2,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "\\sqrt{3x - 2} \\geq x - 1",
+          "explanationLatex": "\\text{Paso 1: Dominio de la raíz: } 3x - 2 \\geq 0 \\implies x \\geq \\frac{2}{3}.\\text{Paso 2: Separamos en Casos analizando el lado derecho } (x - 1)\\text{:}\\text{Caso A (Lado derecho negativo): } x - 1 < 0 \\implies x < 1.\\text{Una raíz positiva siempre es } \\geq \\text{ un negativo. Se cumple en todo el dominio disponible: } \\left[\\frac{2}{3}, 1\\right).\\text{Caso B (Lado derecho positivo o cero): } x - 1 \\geq 0 \\implies x \\geq 1.\\text{Elevamos al cuadrado con seguridad:}\\begin{aligned}\n3x - 2 & \\geq (x - 1)^2 \\\\\n3x - 2 & \\geq x^2 - 2x + 1 \\\\\n0 & \\geq x^2 - 5x + 3\n\\end{aligned}\\text{Usando la resolvente para las raíces: } x = \\frac{5 \\pm \\sqrt{25 - 12}}{2} = \\frac{5 \\pm \\sqrt{13}}{2}.\\text{La parábola es } \\leq 0 \\text{ entre las raíces: } \\left[\\frac{5 - \\sqrt{13}}{2}, \\frac{5 + \\sqrt{13}}{2}\\right].\\text{Intersecando con la condición del Caso B } (x \\geq 1), \\text{ obtenemos: } \\left[1, \\frac{5 + \\sqrt{13}}{2}\\right].\\text{Paso 3: Unimos las soluciones de los Casos A y B.}\\text{Solución: } \\left[\\frac{2}{3}, 1\\right) \\cup \\left[1, \\frac{5 + \\sqrt{13}}{2}\\right] = \\left[\\frac{2}{3}, \\frac{5 + \\sqrt{13}}{2}\\right]"
+        },
+        {
+          "id": "challenge_1775606261618",
+          "questionText": "Halla el conjunto solución de:",
+          "options": [
+            "(2 - \\sqrt{7}, 1) \\cup (3, 2 + \\sqrt{7})",
+            "(-\\infty, 2 - \\sqrt{7}) \\cup (1, 3) \\cup (2 + \\sqrt{7}, \\infty)",
+            "(-\\infty, 1) \\cup (3, \\infty)",
+            "(1, 3)"
+          ],
+          "correctAnswerIndex": 1,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "|x^2 - 4x| > 3",
+          "explanationLatex": "\\text{Paso 1: Aplicamos la propiedad } |A| > k \\implies A > k \\quad \\text{ó} \\quad A < -k.\\text{Camino 1: } x^2 - 4x > 3 \\implies x^2 - 4x - 3 > 0.\\text{Fórmula cuadrática: } x = \\frac{4 \\pm \\sqrt{16 - 4(1)(-3)}}{2} = \\frac{4 \\pm \\sqrt{28}}{2} = 2 \\pm \\sqrt{7}.\\text{Al ser } > 0, \\text{ la solución son los extremos: } (-\\infty, 2 - \\sqrt{7}) \\cup (2 + \\sqrt{7}, \\infty).\\text{Camino 2: } x^2 - 4x < -3 \\implies x^2 - 4x + 3 < 0.\\text{Factorizando: } (x - 3)(x - 1) < 0.\\text{Al ser } < 0, \\text{ la solución es el centro: } (1, 3).\\text{Paso 2: Unimos todos los intervalos obtenidos.}\\text{Solución: } (-\\infty, 2 - \\sqrt{7}) \\cup (1, 3) \\cup (2 + \\sqrt{7}, \\infty)"
+        },
+        {
+          "id": "challenge_1775606381988",
+          "questionText": "Resuelve la siguiente inecuación:",
+          "options": [
+            "(1, \\infty)",
+            "[2, \\infty)",
+            "(-\\infty, 1) \\cup [2, \\infty)",
+            "\\mathbb{R} - \\{1\\}"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "General",
+          "moduleName": "Módulo",
+          "questionLatex": "\\frac{|x - 2|}{x - 1} \\geq 0",
+          "explanationLatex": "\\text{Paso 1: Analizamos la fracción. El numerador } |x - 2| \\text{ siempre arroja un resultado POSITIVO o CERO.}\\text{Paso 2: Para que la división completa sea mayor o igual a cero } (\\geq 0)\\text{, el denominador debe tener obligatoriamente el mismo signo que el numerador. Es decir, debe ser positivo.}\\text{No puede ser cero porque no se puede dividir entre cero. Por lo tanto:}x - 1 > 0 \\implies x > 1\\text{Paso 3: Verificamos qué pasa si el numerador es cero } (x = 2)\\text{. Si } x = 2\\text{, la inecuación queda } 0 \\geq 0\\text{, lo cual es verdadero. Como } x = 2 \\text{ ya está incluido dentro de nuestro intervalo } (x > 1)\\text{, no hay que hacer ajustes extras.}\\text{Solución: } (1, \\infty)"
+        }
+      ]
+    },
+    {
       "id": "math1_geometry_theory",
       "title": "Teoría: Geometría Analítica: Recta y Circunferencia",
       "type": "theory",
