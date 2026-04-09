@@ -331,6 +331,30 @@
       "challenges": []
     },
     {
+      "id": "lesson_1775776794243",
+      "title": "Nueva Lección",
+      "type": "flashcards",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1775776811843",
+          "questionText": "Nueva Pregunta",
+          "options": [
+            "Opción A",
+            "Opción B",
+            "Opción C",
+            "Opción D"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "General",
+          "moduleName": "Módulo",
+          "explanationSteps": []
+        }
+      ]
+    },
+    {
       "id": "math1_ineq_p1",
       "title": "Resolución de Desigualdades",
       "type": "practice",
