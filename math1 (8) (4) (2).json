@@ -1361,8 +1361,51 @@
           "title": "Casos con cancelación aparente",
           "subtitle": "Desigualdades racionales",
           "content": "A veces una fracción parece simplificarse y eso puede hacerte perder información. Debes mantener siempre las restricciones del dominio original.\n",
-          "blocks": [],
-          "formulaLatex": "\\text{Resolver} \\\\\n\\frac{x^2 - 1}{x - 1} \\geq 0. \\\\\n\\text{Factorizamos:} \\\\\n\\frac{(x - 1)(x + 1)}{x - 1} \\geq 0. \\\\\n\\text{Aunque se cancele formalmente el factor } x - 1\\text{, el valor } x = 1 \\text{ sigue prohibido porque anula el denominador original. La desigualdad equivalente para } x \\neq 1 \\text{ queda} \\\\\nx + 1 \\geq 0. \\\\\n\\text{Entonces } x \\geq -1\\text{, pero excluyendo } x = 1\\text{. La solución es} \\\\\n[-1, 1) \\cup (1, \\infty)."
+          "blocks": [
+            {
+              "type": "example",
+              "content": "",
+              "steps": [
+                {
+                  "title": "Paso 1: Identificar la inecuación y su restricción",
+                  "text": "Escribimos la inecuación original. Es fundamental identificar inmediatamente que el denominador no puede ser cero, lo que establece una restricción para el valor de $x$.",
+                  "mathContent": "x - 1 \\neq 0 \\implies x \\neq 1",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Factorizar el numerador",
+                  "text": "Observamos que $x^2 - 1$ es una diferencia de cuadrados. Al factorizarla, podemos ver con claridad los términos que componen la fracción.",
+                  "mathContent": "\\frac{(x - 1)(x + 1)}{x - 1} \\geq 0",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Simplificar la expresión",
+                  "text": "Cancelamos el factor común $(x - 1)$ en el numerador y el denominador. Es vital recordar que esta simplificación solo es válida bajo la premisa de que $x \\neq 1$.",
+                  "mathContent": "x + 1 \\geq 0 \\quad \\text{para } x \\neq 1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Resolver la inecuación lineal resultante",
+                  "text": "Despejamos la variable $x$ restando 1 en ambos lados de la desigualdad.",
+                  "mathContent": "x \\geq -1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Aplicar la restricción del dominio",
+                  "text": "El resultado $x \\geq -1$ incluye al número $1$. Sin embargo, como determinamos en el Paso 1, la función original no está definida en $x = 1$. Por lo tanto, debemos extraer ese punto de nuestra solución.",
+                  "mathContent": "x \\in [-1, \\infty) \\setminus \\{1\\}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 6: Expresar el resultado final",
+                  "text": "Dividimos la solución en dos intervalos para representar el 'hueco' en el número 1. Usamos un corchete para el $-1$ (incluido) y paréntesis para el $1$ (excluido).",
+                  "mathContent": "S = [-1, 1) \\cup (1, \\infty)",
+                  "icon": "star"
+                }
+              ]
+            }
+          ],
+          "formulaLatex": ""
         }
       ],
       "challenges": [],
