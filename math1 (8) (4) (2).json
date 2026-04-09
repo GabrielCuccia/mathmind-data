@@ -127,7 +127,45 @@
           "blocks": [
             {
               "type": "example",
-              "content": "Resolver\\ 3x − 7 ≤ 11. \\\\\nPrimero\\ sumamos\\ 7\\ en\\ ambos\\ lados: \\\\\n3x ≤ 18. \\\\\nLuego\\ dividimos\\ entre\\ 3: \\\\\nx ≤ 6. \\\\\nLa\\ solución\\ es\\\n(−∞, 6]"
+              "content": "Resolver\\ 3x − 7 ≤ 11. \\\\\nPrimero\\ sumamos\\ 7\\ en\\ ambos\\ lados: \\\\\n3x ≤ 18. \\\\\nLuego\\ dividimos\\ entre\\ 3: \\\\\nx ≤ 6. \\\\\nLa\\ solución\\ es\\\n(−∞, 6]",
+              "steps": [
+                {
+                  "title": "Paso 1: Plantear la inecuación",
+                  "text": "Escribimos la inecuación inicial para identificar los términos que acompañan a la variable $x$.",
+                  "mathContent": "3x - 7 \\le 11",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Aislar el término con x",
+                  "text": "Para dejar el término $3x$ solo, sumamos $7$ en ambos lados de la desigualdad. Esto cancela el $-7$ del lado izquierdo.",
+                  "mathContent": "3x - 7 + 7 \\le 11 + 7",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Simplificar la suma",
+                  "text": "Realizamos las operaciones aritméticas en ambos lados para obtener una expresión más sencilla.",
+                  "mathContent": "3x \\le 18",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Despejar la variable x",
+                  "text": "Dividimos ambos lados entre $3$. Como el $3$ es un número positivo, el signo de la desigualdad no cambia de sentido.",
+                  "mathContent": "\\frac{3x}{3} \\le \\frac{18}{3}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Resultado final",
+                  "text": "Obtenemos el valor simplificado que define nuestra solución para $x$.",
+                  "mathContent": "x \\le 6",
+                  "icon": "star"
+                },
+                {
+                  "title": "Paso 6: Expresar en intervalo",
+                  "text": "Como $x$ es menor o igual a $6$, la solución incluye todos los números desde el infinito negativo hasta el $6$, cerrando con un corchete para indicar inclusión.",
+                  "mathContent": "S = (-\\infty, 6]",
+                  "icon": "star"
+                }
+              ]
             }
           ],
           "proTip": "Antes de resolver, elimina paréntesis y fracciones si puedes. Entre menos ruido tenga la desigualdad, más fácil será detectar errores."
@@ -139,7 +177,45 @@
           "blocks": [
             {
               "type": "example",
-              "content": "Resolver −4x + 1 > 9. \\\\\n−4x > 8. \\\\\nDividimos\\ entre\\ −4\\ e\\ invertimos\\ el\\ signo: \\\\\nx < −2. \\\\\nPor\\ tanto, \\\\\n(−∞, −2)"
+              "content": "Resolver −4x + 1 > 9. \\\\\n−4x > 8. \\\\\nDividimos\\ entre\\ −4\\ e\\ invertimos\\ el\\ signo: \\\\\nx < −2. \\\\\nPor\\ tanto, \\\\\n(−∞, −2)",
+              "steps": [
+                {
+                  "title": "Paso 1: Plantear la inecuación",
+                  "text": "Comenzamos con la expresión original dada en el ejercicio.",
+                  "mathContent": "-4x + 1 > 9",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Aislar el término con la variable",
+                  "text": "Restamos $1$ en ambos lados de la desigualdad para comenzar a despejar la $x$.",
+                  "mathContent": "-4x + 1 - 1 > 9 - 1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Simplificar los términos",
+                  "text": "Realizamos las operaciones aritméticas para simplificar la expresión.",
+                  "mathContent": "-4x > 8",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Aplicar la regla de números negativos",
+                  "text": "Dividimos ambos lados entre $-4$. Al dividir por un número negativo, debemos invertir el sentido del signo de desigualdad (de mayor que a menor que).",
+                  "mathContent": "\\frac{-4x}{-4} < \\frac{8}{-4}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Obtener la solución de x",
+                  "text": "Calculamos el resultado final de la división para encontrar el límite de nuestra variable.",
+                  "mathContent": "x < -2",
+                  "icon": "star"
+                },
+                {
+                  "title": "Paso 6: Definir el intervalo",
+                  "text": "Dado que $x$ es estrictamente menor que $-2$, representamos la solución desde el infinito negativo hasta el $-2$ usando paréntesis (intervalo abierto).",
+                  "mathContent": "S = (-\\infty, -2)",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         },
@@ -150,7 +226,51 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\begin{aligned}\n&\\text{Resolver} \\\\\n&\\qquad \\qquad \\frac{x}{3} - \\frac{1}{2} \\geq \\frac{5}{6} \\\\[10pt]\n&\\text{Multiplicamos todo por 6:} \\\\\n&\\qquad \\qquad 2x - 3 \\geq 5 \\\\[10pt]\n&\\text{Luego:} \\\\\n&\\qquad \\qquad 2x \\geq 8 \\implies x \\geq 4\n\\end{aligned}."
+              "content": "\\begin{aligned}\n&\\text{Resolver} \\\\\n&\\qquad \\qquad \\frac{x}{3} - \\frac{1}{2} \\geq \\frac{5}{6} \\\\[10pt]\n&\\text{Multiplicamos todo por 6:} \\\\\n&\\qquad \\qquad 2x - 3 \\geq 5 \\\\[10pt]\n&\\text{Luego:} \\\\\n&\\qquad \\qquad 2x \\geq 8 \\implies x \\geq 4\n\\end{aligned}.",
+              "steps": [
+                {
+                  "title": "Paso 1: Plantear la inecuación",
+                  "text": "Escribimos la inecuación con sus términos fraccionarios originales.",
+                  "mathContent": "\\frac{x}{3} - \\frac{1}{2} \\geq \\frac{5}{6}",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Encontrar el mínimo común múltiplo (mcm)",
+                  "text": "Para eliminar los denominadores, identificamos el mcm de $3, 2$ y $6$, que es $6$. Multiplicaremos toda la inecuación por este número.",
+                  "mathContent": "6 \\cdot \\left( \\frac{x}{3} - \\frac{1}{2} \\right) \\geq 6 \\cdot \\left( \\frac{5}{6} \\right)",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Eliminar denominadores",
+                  "text": "Distribuimos el multiplicador: $6/3 = 2$, $6/2 = 3$ y $6/6 = 1$. Obtenemos una inecuación lineal entera.",
+                  "mathContent": "2x - 3 \\geq 5",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Aislar el término con x",
+                  "text": "Sumamos $3$ en ambos lados de la desigualdad para despejar el término que contiene la incógnita.",
+                  "mathContent": "2x \\geq 5 + 3",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Simplificar la suma",
+                  "text": "Realizamos la operación en el lado derecho.",
+                  "mathContent": "2x \\geq 8",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 6: Despejar x",
+                  "text": "Dividimos ambos lados entre $2$. Al ser un número positivo, el signo de la desigualdad se mantiene igual.",
+                  "mathContent": "x \\geq \\frac{8}{2} \\implies x \\geq 4",
+                  "icon": "star"
+                },
+                {
+                  "title": "Paso 7: Expresar en intervalo",
+                  "text": "Dado que $x$ es mayor o igual a $4$, la solución comienza en $4$ (incluido) y se extiende hasta el infinito.",
+                  "mathContent": "S = [4, \\infty)",
+                  "icon": "star"
+                }
+              ]
             },
             {
               "type": "note",
@@ -165,7 +285,45 @@
           "blocks": [
             {
               "type": "example",
-              "content": "Resolver  \n−2 < 3x + 1 ≤ 7.  \\\\\nRestamos\\ 1: \\\\\n−3 < 3x ≤ 6.\\\\\nDividimos\\ entre\\ 3:\\\\\n−1 < x ≤ 2.\\\\\nSolución:\n(−1, 2].\n"
+              "content": "Resolver  \n−2 < 3x + 1 ≤ 7.  \\\\\nRestamos\\ 1: \\\\\n−3 < 3x ≤ 6.\\\\\nDividimos\\ entre\\ 3:\\\\\n−1 < x ≤ 2.\\\\\nSolución:\n(−1, 2].\n",
+              "steps": [
+                {
+                  "title": "Paso 1: Plantear la inecuación compuesta",
+                  "text": "Escribimos la inecuación de dos partes. El objetivo es despejar la variable $x$ en el centro de la expresión.",
+                  "mathContent": "-2 < 3x + 1 \\le 7",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Restar 1 en todas las partes",
+                  "text": "Para aislar el término con $x$, restamos $1$ en los tres miembros de la inecuación.",
+                  "mathContent": "-2 - 1 < 3x + 1 - 1 \\le 7 - 1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Simplificar los resultados",
+                  "text": "Realizamos las operaciones aritméticas correspondientes en cada sección.",
+                  "mathContent": "-3 < 3x \\le 6",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Dividir entre 3",
+                  "text": "Dividimos todos los términos entre $3$ para despejar totalmente la $x$. Al ser un número positivo, los signos de desigualdad mantienen su dirección.",
+                  "mathContent": "\\frac{-3}{3} < \\frac{3x}{3} \\le \\frac{6}{3}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Obtener los límites de x",
+                  "text": "Simplificamos las fracciones para encontrar el rango de valores permitidos para nuestra variable.",
+                  "mathContent": "-1 < x \\le 2",
+                  "icon": "star"
+                },
+                {
+                  "title": "Paso 6: Expresar en notación de intervalo",
+                  "text": "Dado que $x$ es mayor que $-1$ (abierto) y menor o igual a $2$ (cerrado), representamos la solución con paréntesis y corchete.",
+                  "mathContent": "S = (-1, 2]",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         }
@@ -563,7 +721,39 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\begin{aligned}\nx^2 + x - 6 & \\geq 0 \\\\\n(x + 3)(x - 2) & \\geq 0\n\\end{aligned} \\\\\n\\text{Los puntos críticos son } -3 \\text{ y } 2\\text{. Probamos signos:} \\\\\n\\text{Si } x < -3\\text{, el producto es positivo.} \\\\\n\\text{Si } -3 < x < 2\\text{, el producto es negativo.} \\\\\n\\text{Si } x > 2\\text{, el producto es positivo.} \\\\\n\\text{Como la desigualdad es } \\geq 0\\text{, incluimos los ceros.} \\\\\n\\text{Solución: } (-\\infty, -3] \\cup [2, \\infty)"
+              "content": "\\begin{aligned}\nx^2 + x - 6 & \\geq 0 \\\\\n(x + 3)(x - 2) & \\geq 0\n\\end{aligned} \\\\\n\\text{Los puntos críticos son } -3 \\text{ y } 2\\text{. Probamos signos:} \\\\\n\\text{Si } x < -3\\text{, el producto es positivo.} \\\\\n\\text{Si } -3 < x < 2\\text{, el producto es negativo.} \\\\\n\\text{Si } x > 2\\text{, el producto es positivo.} \\\\\n\\text{Como la desigualdad es } \\geq 0\\text{, incluimos los ceros.} \\\\\n\\text{Solución: } (-\\infty, -3] \\cup [2, \\infty)",
+              "steps": [
+                {
+                  "title": "Paso 1: Plantear la inecuación",
+                  "text": "Escribimos la inecuación cuadrática original. Buscamos los valores de $x$ que hacen que la expresión sea mayor o igual a cero.",
+                  "mathContent": "x^2 + x - 6 \\geq 0",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Factorizar el trinomio",
+                  "text": "Buscamos dos números que multiplicados den $-6$ y sumados den $1$. Estos números son $3$ y $-2$.",
+                  "mathContent": "(x + 3)(x - 2) \\geq 0",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Identificar puntos críticos",
+                  "text": "Igualamos cada factor a cero para encontrar los puntos donde la expresión cambia de signo.",
+                  "mathContent": "x + 3 = 0 \\implies x = -3, \\quad x - 2 = 0 \\implies x = 2",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 4: Análisis de intervalos (Cementerio)",
+                  "text": "Evaluamos el signo del producto $(x+3)(x-2)$ en los tres intervalos generados por los puntos críticos.",
+                  "mathContent": "\\text{Si } x < -3 \\implies (-) \\cdot (-) = (+)\\\\ \\text{Si } -3 < x < 2 \\implies (+) \\cdot (-) = (-)\\\\ \\text{Si } x > 2 \\implies (+) \\cdot (+) = (+)",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Selección de la solución",
+                  "text": "Como la inecuación pide valores $\\geq 0$, seleccionamos los intervalos positivos e incluimos los puntos críticos (intervalos cerrados).",
+                  "mathContent": "x \\in (-\\infty, -3] \\cup [2, \\infty)",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         },
@@ -574,7 +764,51 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver} \\\\\nx^2 - 4x + 1 < 0. \\\\\n\\text{Hallamos las raíces:} \\\\\nx = \\frac{4 \\pm \\sqrt{16 - 4}}{2} = 2 \\pm \\sqrt{3}. \\\\\n\\text{Como la parábola abre hacia arriba, es negativa entre las raíces. Por tanto:} \\\\\n2 - \\sqrt{3} < x < 2 + \\sqrt{3}."
+              "content": "\\text{Resolver} \\\\\nx^2 - 4x + 1 < 0. \\\\\n\\text{Hallamos las raíces:} \\\\\nx = \\frac{4 \\pm \\sqrt{16 - 4}}{2} = 2 \\pm \\sqrt{3}. \\\\\n\\text{Como la parábola abre hacia arriba, es negativa entre las raíces. Por tanto:} \\\\\n2 - \\sqrt{3} < x < 2 + \\sqrt{3}.",
+              "steps": [
+                {
+                  "title": "Paso 1: Plantear la inecuación",
+                  "text": "Escribimos la inecuación original. Buscamos los valores de $x$ para los cuales la parábola se encuentra por debajo del eje $x$ (valores negativos).",
+                  "mathContent": "x^2 - 4x + 1 < 0",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Identificar coeficientes",
+                  "text": "Para usar la fórmula general, identificamos los valores de $a$, $b$ y $c$.",
+                  "mathContent": "a = 1, \\quad b = -4, \\quad c = 1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Aplicar la fórmula general",
+                  "text": "Sustituimos los valores en la fórmula cuadrática para encontrar las raíces o puntos críticos.",
+                  "mathContent": "x = \\frac{-(-4) \\pm \\sqrt{(-4)^2 - 4(1)(1)}}{2(1)}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Resolver el discriminante",
+                  "text": "Calculamos el valor dentro de la raíz y simplificamos.",
+                  "mathContent": "x = \\frac{4 \\pm \\sqrt{16 - 4}}{2} = \\frac{4 \\pm \\sqrt{12}}{2}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Simplificar las raíces",
+                  "text": "Simplificamos $\\sqrt{12}$ como $2\\sqrt{3}$ y dividimos cada término entre $2$.",
+                  "mathContent": "x = \\frac{4 \\pm 2\\sqrt{3}}{2} = 2 \\pm \\sqrt{3}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 6: Análisis de la parábola",
+                  "text": "Como el coeficiente de $x^2$ es positivo ($a=1$), la parábola abre hacia arriba. Esto significa que los valores negativos ($< 0$) se encuentran en el intervalo entre las dos raíces.",
+                  "mathContent": "x_1 = 2 - \\sqrt{3}, \\quad x_2 = 2 + \\sqrt{3}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 7: Resultado final en intervalo",
+                  "text": "La solución es el conjunto de números entre las raíces, sin incluirlas (intervalo abierto).",
+                  "mathContent": "S = (2 - \\sqrt{3}, 2 + \\sqrt{3})",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         },
@@ -585,7 +819,51 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver} \\\\\n(x - 1)^2(x + 2) < 0. \\\\\n\\text{Los puntos críticos son } x = 1 \\text{ y } x = -2\\text{. El factor } (x - 1)^2 \\text{ no cambia de signo porque siempre es no negativo. El signo lo decide } (x + 2)\\text{.} \\\\\n\\text{La expresión es negativa cuando } x < -2\\text{. Por tanto, la solución es:} \\\\\n(-\\infty, -2)."
+              "content": "\\text{Resolver} \\\\\n(x - 1)^2(x + 2) < 0. \\\\\n\\text{Los puntos críticos son } x = 1 \\text{ y } x = -2\\text{. El factor } (x - 1)^2 \\text{ no cambia de signo porque siempre es no negativo. El signo lo decide } (x + 2)\\text{.} \\\\\n\\text{La expresión es negativa cuando } x < -2\\text{. Por tanto, la solución es:} \\\\\n(-\\infty, -2).",
+              "steps": [
+                {
+                  "title": "Paso 1: Plantear la inecuación",
+                  "text": "Partimos de la expresión ya factorizada e identificamos que buscamos los valores donde el producto es estrictamente menor que cero (negativo).",
+                  "mathContent": "(x - 1)^2(x + 2) < 0",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Hallar los puntos críticos",
+                  "text": "Igualamos cada factor a cero para encontrar los valores donde la expresión podría cambiar de signo.",
+                  "mathContent": "(x - 1)^2 = 0 \\implies x = 1, \\quad x + 2 = 0 \\implies x = -2",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 3: Analizar la multiplicidad",
+                  "text": "Observamos que el factor $(x - 1)$ tiene exponente par ($2$). Esto significa que $(x - 1)^2$ siempre será positivo o cero para cualquier número real, por lo que no influye en el cambio de signo de la inecuación.",
+                  "mathContent": "(x - 1)^2 \\geq 0 \\quad \\forall x \\in \\mathbb{R}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Determinar el factor decisivo",
+                  "text": "Dado que $(x - 1)^2$ es siempre positivo (excepto en $x=1$), el signo de toda la expresión depende exclusivamente del factor $(x + 2)$.",
+                  "mathContent": "x + 2 < 0",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Resolver la inecuación resultante",
+                  "text": "Despejamos $x$ para encontrar el intervalo donde la expresión es negativa.",
+                  "mathContent": "x < -2",
+                  "icon": "star"
+                },
+                {
+                  "title": "Paso 6: Verificar el punto crítico x = 1",
+                  "text": "Debemos asegurarnos de que $x = 1$ no sea parte de la solución, ya que en ese punto la expresión vale $0$ y buscamos valores estrictamente menores que $0$. Como $1$ no es menor que $-2$, no hay conflicto.",
+                  "mathContent": "x \\in (-\\infty, -2)",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 7: Expresar la solución final",
+                  "text": "La solución comprende todos los números desde el infinito negativo hasta el $-2$.",
+                  "mathContent": "S = (-\\infty, -2)",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         }
@@ -993,7 +1271,39 @@
             },
             {
               "type": "example",
-              "content": "\\text{Resolver} \\\\\n\\frac{x - 1}{x + 2} > 0. \\\\\n\\text{Puntos críticos:} \\\\\nx = 1 \\quad \\text{(cero del numerador)}, \\qquad x = -2 \\quad \\text{(cero del denominador)}. \\\\\n\\text{Dividimos la recta en tres intervalos:} \\\\\n(-\\infty, -2), \\quad (-2, 1), \\quad (1, \\infty). \\\\\n\\text{Probando signos, la fracción es positiva en los dos extremos y negativa en el centro. Por tanto:} \\\\\n(-\\infty, -2) \\cup (1, \\infty)."
+              "content": "\\text{Resolver} \\\\\n\\frac{x - 1}{x + 2} > 0. \\\\\n\\text{Puntos críticos:} \\\\\nx = 1 \\quad \\text{(cero del numerador)}, \\qquad x = -2 \\quad \\text{(cero del denominador)}. \\\\\n\\text{Dividimos la recta en tres intervalos:} \\\\\n(-\\infty, -2), \\quad (-2, 1), \\quad (1, \\infty). \\\\\n\\text{Probando signos, la fracción es positiva en los dos extremos y negativa en el centro. Por tanto:} \\\\\n(-\\infty, -2) \\cup (1, \\infty).",
+              "steps": [
+                {
+                  "title": "Paso 1: Identificar la inecuación",
+                  "text": "Escribimos la inecuación racional. Buscamos los valores de $x$ que hacen que el cociente sea estrictamente positivo.",
+                  "mathContent": "\\frac{x - 1}{x + 2} > 0",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Hallar los puntos críticos",
+                  "text": "Determinamos los valores donde el numerador y el denominador se anulan. Estos puntos dividen la recta numérica.",
+                  "mathContent": "x - 1 = 0 \\implies x = 1, \\quad x + 2 = 0 \\implies x = -2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Definir los intervalos de prueba",
+                  "text": "Ubicamos los puntos $-2$ y $1$ en la recta real, lo que genera tres intervalos distintos para analizar.",
+                  "mathContent": "I_1: (-\\infty, -2), \\quad I_2: (-2, 1), \\quad I_3: (1, \\infty)",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Análisis de signos por intervalo",
+                  "text": "Evaluamos un número de prueba en cada intervalo para conocer el signo resultante de la fracción.",
+                  "mathContent": "\\begin{aligned} &x = -3 \\in I_1 \\implies \\frac{(-)}{(-)} = (+) \\\\ &x = 0 \\in I_2 \\implies \\frac{(-)}{(+)} = (-) \\\\ &x = 2 \\in I_3 \\implies \\frac{(+)}{(+)} = (+) \\end{aligned}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Seleccionar la solución",
+                  "text": "Como buscamos valores mayores a cero ($>0$), tomamos los intervalos con signo positivo. No incluimos los puntos críticos porque la desigualdad es estricta.",
+                  "mathContent": "x \\in (-\\infty, -2) \\cup (1, \\infty)",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         },
@@ -1004,7 +1314,45 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver} \\\\\n\\frac{(x - 2)(x + 1)}{x - 3} \\leq 0. \\\\\n\\text{Puntos críticos:} \\\\\n-1, 2, 3. \\\\\n\\text{Organizamos los intervalos:} \\\\\n(-\\infty, -1), (-1, 2), (2, 3), (3, \\infty). \\\\\n\\text{Al analizar signos se obtiene que la expresión es no positiva en} \\\\\n(-\\infty, -1] \\cup [2, 3). \\\\\n\\text{El punto 3 no se incluye porque anula el denominador.}"
+              "content": "\\text{Resolver} \\\\\n\\frac{(x - 2)(x + 1)}{x - 3} \\leq 0. \\\\\n\\text{Puntos críticos:} \\\\\n-1, 2, 3. \\\\\n\\text{Organizamos los intervalos:} \\\\\n(-\\infty, -1), (-1, 2), (2, 3), (3, \\infty). \\\\\n\\text{Al analizar signos se obtiene que la expresión es no positiva en} \\\\\n(-\\infty, -1] \\cup [2, 3). \\\\\n\\text{El punto 3 no se incluye porque anula el denominador.}",
+              "steps": [
+                {
+                  "title": "Paso 1: Identificar la inecuación",
+                  "text": "Escribimos la inecuación racional. Buscamos los intervalos donde el resultado de la expresión sea negativo o igual a cero.",
+                  "mathContent": "\\frac{(x - 2)(x + 1)}{x - 3} \\leq 0",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Hallar los puntos críticos",
+                  "text": "Identificamos los valores que hacen que el numerador o el denominador sean cero. Estos puntos dividen la recta real.",
+                  "mathContent": "x - 2 = 0 \\implies x = 2, \\quad x + 1 = 0 \\implies x = -1, \\quad x - 3 = 0 \\implies x = 3",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Definir los intervalos de prueba",
+                  "text": "Ubicamos $-1, 2$ y $3$ en la recta numérica para establecer los cuatro posibles intervalos de solución.",
+                  "mathContent": "I_1: (-\\infty, -1), \\quad I_2: (-1, 2), \\quad I_3: (2, 3), \\quad I_4: (3, \\infty)",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Análisis de signos",
+                  "text": "Evaluamos el signo de la fracción $\\frac{(x - 2)(x + 1)}{x - 3}$ en cada intervalo seleccionando un valor de prueba.",
+                  "mathContent": "\\begin{aligned} &x = -2 \\implies \\frac{(-)(-)}{(-)} = (-) \\\\ &x = 0 \\implies \\frac{(-)(+)}{(-)} = (+) \\\\ &x = 2.5 \\implies \\frac{(+)(+)}{(-)} = (-) \\\\ &x = 4 \\implies \\frac{(+)(+)}{(+)} = (+) \\end{aligned}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Determinar la inclusión de puntos críticos",
+                  "text": "Debido al signo $\\leq$, incluimos los ceros del numerador ($-1$ y $2$). Sin embargo, el $3$ nunca se incluye porque el denominador no puede ser cero.",
+                  "mathContent": "x = -1 \\text{ (incluido)}, \\quad x = 2 \\text{ (incluido)}, \\quad x = 3 \\text{ (excluido)}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 6: Resultado final",
+                  "text": "Unimos los intervalos donde obtuvimos un signo negativo, respetando la inclusión y exclusión de los puntos críticos.",
+                  "mathContent": "S = (-\\infty, -1] \\cup [2, 3)",
+                  "icon": "star"
+                }
+              ]
             }
           ],
           "proTip": "Si el numerador o denominador se pueden factorizar, hazlo siempre. El análisis de signos se vuelve mucho más claro.\n"
@@ -1414,7 +1762,51 @@
             },
             {
               "type": "example",
-              "content": "\\text{Resolver} \\\\\n\\sqrt{x + 1} \\geq 3. \\\\\n\\text{Primero el dominio exige } x + 1 \\geq 0\\text{, es decir } x \\geq -1\\text{. Como ambos lados son no negativos, podemos elevar al cuadrado:} \\\\\nx + 1 \\geq 9. \\\\\n\\text{Entonces} \\\\\nx \\geq 8. \\\\\n\\text{Verificación con el dominio: la solución final es} \\\\\n[8, \\infty)."
+              "content": "\\text{Resolver} \\\\\n\\sqrt{x + 1} \\geq 3. \\\\\n\\text{Primero el dominio exige } x + 1 \\geq 0\\text{, es decir } x \\geq -1\\text{. Como ambos lados son no negativos, podemos elevar al cuadrado:} \\\\\nx + 1 \\geq 9. \\\\\n\\text{Entonces} \\\\\nx \\geq 8. \\\\\n\\text{Verificación con el dominio: la solución final es} \\\\\n[8, \\infty).",
+              "steps": [
+                {
+                  "title": "Paso 1: Determinar el dominio",
+                  "text": "Para que la raíz cuadrada esté definida en los números reales, la expresión dentro de la raíz (el radicando) debe ser mayor o igual a cero.",
+                  "mathContent": "x + 1 \\geq 0 \\implies x \\geq -1",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Plantear la inecuación original",
+                  "text": "Escribimos la inecuación a resolver. Como ambos lados son no negativos (una raíz principal es $\\geq 0$ y $3 > 0$), podemos elevar al cuadrado sin alterar la desigualdad.",
+                  "mathContent": "\\sqrt{x + 1} \\geq 3",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Elevar al cuadrado ambos miembros",
+                  "text": "Aplicamos la potencia cuadrada en ambos lados para eliminar el radical.",
+                  "mathContent": "(\\sqrt{x + 1})^2 \\geq 3^2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Simplificar la expresión",
+                  "text": "Al elevar la raíz al cuadrado obtenemos el radicando, y calculamos el cuadrado de 3.",
+                  "mathContent": "x + 1 \\geq 9",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Despejar la variable x",
+                  "text": "Restamos 1 en ambos lados para obtener el valor de $x$.",
+                  "mathContent": "x \\geq 9 - 1 \\implies x \\geq 8",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 6: Intersección con el dominio",
+                  "text": "Comparamos nuestro resultado ($x \\geq 8$) con la restricción inicial del dominio ($x \\geq -1$). Como $8$ es mayor que $-1$, el intervalo $[8, \\infty)$ cumple con ambas condiciones.",
+                  "mathContent": "S = [8, \\infty) \\cap [-1, \\infty) = [8, \\infty)",
+                  "icon": "star"
+                },
+                {
+                  "title": "Paso 7: Resultado final",
+                  "text": "La solución consiste en todos los números reales desde el 8 inclusive hasta el infinito positivo.",
+                  "mathContent": "S = [8, \\infty)",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         },
@@ -1425,7 +1817,51 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver} \\\\\n\\sqrt{2x - 1} < x. \\\\\n\\text{Dominio: } 2x - 1 \\geq 0\\text{, o sea } x \\geq \\frac{1}{2}\\text{. Además, para que la desigualdad tenga sentido útil, conviene considerar } x \\geq 0\\text{. Como ambos lados son no negativos en el dominio, elevamos al cuadrado:} \\\\\n2x - 1 < x^2. \\\\\n\\text{Reordenamos:} \\\\\nx^2 - 2x + 1 > 0 \\quad \\Rightarrow \\quad (x - 1)^2 > 0. \\\\\n\\text{Esto se cumple para todo } x \\neq 1\\text{, junto con el dominio } x \\geq \\frac{1}{2}\\text{. Por tanto, la solución es} \\\\\n\\left[ \\frac{1}{2}, 1 \\right) \\cup (1, \\infty)."
+              "content": "\\text{Resolver} \\\\\n\\sqrt{2x - 1} < x. \\\\\n\\text{Dominio: } 2x - 1 \\geq 0\\text{, o sea } x \\geq \\frac{1}{2}\\text{. Además, para que la desigualdad tenga sentido útil, conviene considerar } x \\geq 0\\text{. Como ambos lados son no negativos en el dominio, elevamos al cuadrado:} \\\\\n2x - 1 < x^2. \\\\\n\\text{Reordenamos:} \\\\\nx^2 - 2x + 1 > 0 \\quad \\Rightarrow \\quad (x - 1)^2 > 0. \\\\\n\\text{Esto se cumple para todo } x \\neq 1\\text{, junto con el dominio } x \\geq \\frac{1}{2}\\text{. Por tanto, la solución es} \\\\\n\\left[ \\frac{1}{2}, 1 \\right) \\cup (1, \\infty).",
+              "steps": [
+                {
+                  "title": "Paso 1: Determinar el dominio de la raíz",
+                  "text": "Para que la raíz cuadrada esté definida en los números reales, el radicando debe ser mayor o igual a cero.",
+                  "mathContent": "2x - 1 \\geq 0 \\implies 2x \\geq 1 \\implies x \\geq \\frac{1}{2}",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Analizar el sentido de la desigualdad",
+                  "text": "Dado que una raíz cuadrada principal siempre es no negativa ($\\geq 0$), para que $x$ sea mayor que la raíz, $x$ debe ser estrictamente positivo. Como nuestro dominio ya pide $x \\geq 1/2$, ambos lados de la inecuación son positivos.",
+                  "mathContent": "x > \\sqrt{2x - 1} \\geq 0",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Elevar al cuadrado para eliminar el radical",
+                  "text": "Al ser ambos miembros positivos, podemos elevar al cuadrado ambos lados sin alterar el sentido de la desigualdad.",
+                  "mathContent": "(\\sqrt{2x - 1})^2 < x^2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Simplificar y reordenar",
+                  "text": "Eliminamos la raíz y movemos todos los términos a un solo lado para formar una expresión cuadrática igualada a cero.",
+                  "mathContent": "2x - 1 < x^2 \\implies 0 < x^2 - 2x + 1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Factorizar el trinomio",
+                  "text": "Observamos que $x^2 - 2x + 1$ es un trinomio cuadrado perfecto.",
+                  "mathContent": "(x - 1)^2 > 0",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 6: Analizar la solución cuadrática",
+                  "text": "Cualquier número real elevado al cuadrado es mayor que cero, excepto cuando la base es cero. Por lo tanto, $(x-1)^2 > 0$ se cumple para todos los valores excepto $x = 1$.",
+                  "mathContent": "x \\in \\mathbb{R}, \\quad x \\neq 1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 7: Intersección con el dominio y resultado final",
+                  "text": "Cruzamos la condición del dominio ($x \\geq 1/2$) con la restricción de la solución ($x \\neq 1$). Esto divide nuestra solución en dos intervalos.",
+                  "mathContent": "S = [\\frac{1}{2}, 1) \\cup (1, \\infty)",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         },
@@ -1436,7 +1872,69 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver} \\\\\n\\sqrt{x - 2} \\leq x - 4. \\\\\n\\text{Primero observamos el dominio: } x - 2 \\geq 0\\text{, así que } x \\geq 2\\text{. Además, como el lado izquierdo es siempre no negativo, para que la desigualdad tenga sentido útil necesitamos } x - 4 \\geq 0\\text{, es decir, } x \\geq 4\\text{. Con } x \\geq 4 \\text{ podemos elevar al cuadrado sin perder equivalencia:} \\\\\nx - 2 \\leq (x - 4)^2. \\\\\n\\text{Desarrollando:} \\\\\n0 \\leq x^2 - 9x + 18 = (x - 3)(x - 6). \\\\\n\\text{Como la parábola abre hacia arriba, esta expresión es no negativa fuera del intervalo entre raíces:} \\\\\nx \\leq 3 \\quad \\text{o} \\quad x \\geq 6. \\\\\n\\text{Pero además debemos respetar } x \\geq 4\\text{. Entonces la solución final es} \\\\\n[6, \\infty)."
+              "content": "\\text{Resolver} \\\\\n\\sqrt{x - 2} \\leq x - 4. \\\\\n\\text{Primero observamos el dominio: } x - 2 \\geq 0\\text{, así que } x \\geq 2\\text{. Además, como el lado izquierdo es siempre no negativo, para que la desigualdad tenga sentido útil necesitamos } x - 4 \\geq 0\\text{, es decir, } x \\geq 4\\text{. Con } x \\geq 4 \\text{ podemos elevar al cuadrado sin perder equivalencia:} \\\\\nx - 2 \\leq (x - 4)^2. \\\\\n\\text{Desarrollando:} \\\\\n0 \\leq x^2 - 9x + 18 = (x - 3)(x - 6). \\\\\n\\text{Como la parábola abre hacia arriba, esta expresión es no negativa fuera del intervalo entre raíces:} \\\\\nx \\leq 3 \\quad \\text{o} \\quad x \\geq 6. \\\\\n\\text{Pero además debemos respetar } x \\geq 4\\text{. Entonces la solución final es} \\\\\n[6, \\infty).",
+              "steps": [
+                {
+                  "title": "Paso 1: Determinar el dominio de la raíz",
+                  "text": "Para que la raíz cuadrada exista en el conjunto de los números reales, el radicando debe ser mayor o igual a cero.",
+                  "mathContent": "x - 2 \\geq 0 \\implies x \\geq 2",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Analizar la restricción del lado derecho",
+                  "text": "Sabemos que una raíz cuadrada siempre devuelve un valor no negativo ($\\geq 0$). Para que el lado derecho sea mayor o igual a la raíz, este también debe ser obligatoriamente mayor o igual a cero.",
+                  "mathContent": "x - 4 \\geq 0 \\implies x \\geq 4",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Establecer el dominio de validez",
+                  "text": "Combinamos ambas restricciones ($x \\geq 2$ y $x \\geq 4$). Para que la inecuación tenga sentido y podamos operar, debemos trabajar con valores de $x$ mayores o iguales a 4.",
+                  "mathContent": "D: x \\in [4, \\infty)",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 4: Elevar al cuadrado ambos miembros",
+                  "text": "Como ambos lados son no negativos en nuestro dominio de validez, elevamos al cuadrado para eliminar la raíz cuadrada.",
+                  "mathContent": "(\\sqrt{x - 2})^2 \\leq (x - 4)^2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Desarrollar y simplificar",
+                  "text": "Eliminamos la raíz y aplicamos el producto notable $(a - b)^2 = a^2 - 2ab + b^2$ en el lado derecho.",
+                  "mathContent": "x - 2 \\leq x^2 - 8x + 16",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 6: Formar la inecuación cuadrática",
+                  "text": "Pasamos todos los términos a un solo lado para obtener una expresión comparada con cero.",
+                  "mathContent": "0 \\leq x^2 - 8x - x + 16 + 2 \\implies 0 \\leq x^2 - 9x + 18",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 7: Factorizar el trinomio",
+                  "text": "Buscamos dos números que multiplicados den $18$ y sumados den $-9$. Estos son $-3$ y $-6$.",
+                  "mathContent": "(x - 3)(x - 6) \\geq 0",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 8: Hallar los puntos críticos de la parábola",
+                  "text": "Los ceros de la expresión son $x = 3$ y $x = 6$. Al ser una parábola que abre hacia arriba, los valores positivos se encuentran en los extremos.",
+                  "mathContent": "x \\leq 3 \\quad \\text{o} \\quad x \\geq 6",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 9: Intersección con el dominio de validez",
+                  "text": "Debemos cruzar nuestra solución ($x \\leq 3$ o $x \\geq 6$) con la condición inicial obligatoria ($x \\geq 4$). El intervalo $x \\leq 3$ queda descartado.",
+                  "mathContent": "S = \\{x \\leq 3 \\cup x \\geq 6\\} \\cap \\{x \\geq 4\\}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 10: Resultado final",
+                  "text": "La única parte de la solución que cumple con todas las restricciones es el intervalo que comienza en 6.",
+                  "mathContent": "S = [6, \\infty)",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         }
@@ -1847,7 +2345,39 @@
             },
             {
               "type": "example",
-              "content": "\\text{Calcular } |x - 5| \\text{ por casos:} \\\\\n|x - 5| = \\begin{cases} \nx - 5, & x \\geq 5, \\\\ \n5 - x, & x < 5. \n\\end{cases}"
+              "content": "\\text{Calcular } |x - 5| \\text{ por casos:} \\\\\n|x - 5| = \\begin{cases} \nx - 5, & x \\geq 5, \\\\ \n5 - x, & x < 5. \n\\end{cases}",
+              "steps": [
+                {
+                  "title": "Paso 1: Identificar la definición de valor absoluto",
+                  "text": "Recordamos que el valor absoluto de cualquier expresión $|u|$ es igual a $u$ si el contenido es no negativo, y es igual a $-u$ si el contenido es negativo.",
+                  "mathContent": "|u| = \\begin{cases} u, & u \\geq 0 \\\\ -u, & u < 0 \\end{cases}",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Aplicar la definición al argumento",
+                  "text": "En este caso, nuestro argumento $u$ es la expresión $x - 5$. Planteamos los dos escenarios posibles basados en esta expresión.",
+                  "mathContent": "|x - 5| = \\begin{cases} x - 5, & x - 5 \\geq 0 \\\\ -(x - 5), & x - 5 < 0 \\end{cases}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Resolver las desigualdades para x",
+                  "text": "Despejamos $x$ en las condiciones de cada caso sumando $5$ en ambos lados de las desigualdades.",
+                  "mathContent": "\\begin{aligned} x - 5 \\geq 0 &\\implies x \\geq 5 \\\\ x - 5 < 0 &\\implies x < 5 \\end{aligned}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Simplificar la expresión negativa",
+                  "text": "En el segundo caso, distribuimos el signo menos dentro del paréntesis: $-(x - 5)$ se convierte en $-x + 5$, lo cual escribimos como $5 - x$ para mayor claridad.",
+                  "mathContent": "-(x - 5) = -x + 5 = 5 - x",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Resultado final por casos",
+                  "text": "Combinamos los resultados para obtener la definición final de la función por partes.",
+                  "mathContent": "|x - 5| = \\begin{cases} x - 5, & x \\geq 5 \\\\ 5 - x, & x < 5 \\end{cases}",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         },
@@ -1858,7 +2388,45 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver} \\\\\n|2x - 3| = 7. \\\\\n\\text{Se obtienen dos ecuaciones:} \\\\\n2x - 3 = 7 \\Rightarrow x = 5, \\\\\n\\text{y} \\\\\n2x - 3 = -7 \\Rightarrow x = -2. \\\\[2ex]\n\\text{Solución:} \\\\\n\\{-2, 5\\}."
+              "content": "\\text{Resolver} \\\\\n|2x - 3| = 7. \\\\\n\\text{Se obtienen dos ecuaciones:} \\\\\n2x - 3 = 7 \\Rightarrow x = 5, \\\\\n\\text{y} \\\\\n2x - 3 = -7 \\Rightarrow x = -2. \\\\[2ex]\n\\text{Solución:} \\\\\n\\{-2, 5\\}.",
+              "steps": [
+                {
+                  "title": "Paso 1: Aplicar la definición de valor absoluto",
+                  "text": "Recordamos que si $|u| = a$ (donde $a > 0$), entonces existen dos posibilidades: $u = a$ o $u = -a$. Esto sucede porque tanto el valor positivo como el negativo tienen la misma distancia al origen.",
+                  "mathContent": "|2x - 3| = 7 \\implies 2x - 3 = 7 \\quad \\text{ó} \\quad 2x - 3 = -7",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Resolver la primera ecuación",
+                  "text": "Tomamos la opción positiva y despejamos $x$. Primero sumamos $3$ en ambos lados.",
+                  "mathContent": "2x - 3 = 7 \\implies 2x = 7 + 3",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Calcular el primer valor de x",
+                  "text": "Sumamos los términos y dividimos entre $2$ para obtener nuestra primera solución.",
+                  "mathContent": "2x = 10 \\implies x = \\frac{10}{2} \\implies x = 5",
+                  "icon": "star"
+                },
+                {
+                  "title": "Paso 4: Resolver la segunda ecuación",
+                  "text": "Tomamos la opción negativa y procedemos de la misma manera, sumando $3$ en ambos lados.",
+                  "mathContent": "2x - 3 = -7 \\implies 2x = -7 + 3",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Calcular el segundo valor de x",
+                  "text": "Realizamos la resta en el lado derecho y dividimos entre $2$ para obtener la segunda solución.",
+                  "mathContent": "2x = -4 \\implies x = \\frac{-4}{2} \\implies x = -2",
+                  "icon": "star"
+                },
+                {
+                  "title": "Paso 6: Expresar el conjunto solución",
+                  "text": "Escribimos ambos valores encontrados como la solución final de la ecuación.",
+                  "mathContent": "S = \\{-2, 5\\}",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         },
@@ -1869,7 +2437,33 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver} \\\\\n|x - 4| < 3. \\\\\n\\text{Equivale a} \\\\\n-3 < x - 4 < 3. \\\\\n\\text{Sumamos 4:} \\\\\n1 < x < 7. \\\\\n\\text{Solución:} \\\\\n(1, 7)."
+              "content": "\\text{Resolver} \\\\\n|x - 4| < 3. \\\\\n\\text{Equivale a} \\\\\n-3 < x - 4 < 3. \\\\\n\\text{Sumamos 4:} \\\\\n1 < x < 7. \\\\\n\\text{Solución:} \\\\\n(1, 7).",
+              "steps": [
+                {
+                  "title": "Paso 1: Aplicar la propiedad de desigualdad",
+                  "text": "Cuando tenemos un valor absoluto menor que un número ($|u| < a$), esto significa que la expresión dentro del valor absoluto se encuentra a una distancia menor a $a$ del origen. Por lo tanto, planteamos una inecuación compuesta.",
+                  "mathContent": "|x - 4| < 3 \\implies -3 < x - 4 < 3",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Aislar la variable x",
+                  "text": "Para despejar $x$, debemos eliminar el $-4$ del centro. Lo hacemos sumando $4$ en los tres miembros de la inecuación simultáneamente.",
+                  "mathContent": "-3 + 4 < x - 4 + 4 < 3 + 4",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Realizar las operaciones aritméticas",
+                  "text": "Calculamos los valores resultantes en los extremos para definir el intervalo de la variable.",
+                  "mathContent": "1 < x < 7",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Expresar la solución final",
+                  "text": "Como la desigualdad es estricta (menor que), los extremos no se incluyen. Representamos la solución como un intervalo abierto.",
+                  "mathContent": "S = (1, 7)",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         },
@@ -1880,7 +2474,39 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver} \\\\\n|3x + 1| \\geq 5. \\\\\n\\text{Se separa en dos casos:} \\\\\n3x + 1 \\geq 5 \\Rightarrow x \\geq \\frac{4}{3}, \\\\\n\\text{y} \\\\\n3x + 1 \\leq -5 \\Rightarrow x \\leq -2. \\\\\n\\text{Por tanto:} \\\\\n(-\\infty, -2] \\cup \\left[ \\frac{4}{3}, \\infty \\right)."
+              "content": "\\text{Resolver} \\\\\n|3x + 1| \\geq 5. \\\\\n\\text{Se separa en dos casos:} \\\\\n3x + 1 \\geq 5 \\Rightarrow x \\geq \\frac{4}{3}, \\\\\n\\text{y} \\\\\n3x + 1 \\leq -5 \\Rightarrow x \\leq -2. \\\\\n\\text{Por tanto:} \\\\\n(-\\infty, -2] \\cup \\left[ \\frac{4}{3}, \\infty \\right).",
+              "steps": [
+                {
+                  "title": "Paso 1: Aplicar la propiedad de desigualdad",
+                  "text": "Cuando el valor absoluto de una expresión es mayor o igual a un número ($|u| \\geq a$), significa que la expresión se encuentra a una distancia de $a$ o más unidades del origen. Esto genera dos casos separados: hacia la derecha o hacia la izquierda.",
+                  "mathContent": "|3x + 1| \\geq 5 \\implies 3x + 1 \\geq 5 \\quad \\text{ó} \\quad 3x + 1 \\leq -5",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Resolver el primer caso (Derecho)",
+                  "text": "Despejamos $x$ en la primera inecuación. Restamos $1$ en ambos lados y luego dividimos entre $3$.",
+                  "mathContent": "3x \\geq 5 - 1 \\implies 3x \\geq 4 \\implies x \\geq \\frac{4}{3}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Resolver el segundo caso (Izquierdo)",
+                  "text": "Ahora despejamos $x$ en la segunda inecuación. Restamos $1$ en ambos lados (recordando que $-5 - 1 = -6$) y dividimos entre $3$.",
+                  "mathContent": "3x \\leq -5 - 1 \\implies 3x \\leq -6 \\implies x \\leq -2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Representar gráficamente los intervalos",
+                  "text": "Obtenemos dos regiones en la recta real: los valores menores o iguales a $-2$ y los valores mayores o iguales a $4/3$.",
+                  "mathContent": "x \\in (-\\infty, -2] \\cup [\\frac{4}{3}, \\infty)",
+                  "icon": "star"
+                },
+                {
+                  "title": "Paso 5: Solución final",
+                  "text": "La solución es la unión de ambos intervalos, utilizando corchetes para indicar que los puntos extremos están incluidos.",
+                  "mathContent": "S = (-\\infty, -2] \\cup [\\frac{4}{3}, \\infty)",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         },
@@ -1902,7 +2528,51 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver} \\\\\n\\frac{|x - 2|}{3} + 1 \\leq 4. \\\\\n\\text{Restamos 1:} \\\\\n\\frac{|x - 2|}{3} \\leq 3. \\\\\n\\text{Multiplicamos por 3:} \\\\\n|x - 2| \\leq 9. \\\\\n\\text{Pasamos a desigualdad compuesta:} \\\\\n-9 \\leq x - 2 \\leq 9. \\\\\n\\text{Sumamos 2:} \\\\\n-7 \\leq x \\leq 11. \\\\\n\\text{Solución:} \\\\\n[-7, 11]."
+              "content": "\\text{Resolver} \\\\\n\\frac{|x - 2|}{3} + 1 \\leq 4. \\\\\n\\text{Restamos 1:} \\\\\n\\frac{|x - 2|}{3} \\leq 3. \\\\\n\\text{Multiplicamos por 3:} \\\\\n|x - 2| \\leq 9. \\\\\n\\text{Pasamos a desigualdad compuesta:} \\\\\n-9 \\leq x - 2 \\leq 9. \\\\\n\\text{Sumamos 2:} \\\\\n-7 \\leq x \\leq 11. \\\\\n\\text{Solución:} \\\\\n[-7, 11].",
+              "steps": [
+                {
+                  "title": "Paso 1: Identificar la inecuación",
+                  "text": "Escribimos la inecuación original. El primer objetivo es aislar el término que contiene el valor absoluto.",
+                  "mathContent": "\\frac{|x - 2|}{3} + 1 \\leq 4",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Restar 1 en ambos lados",
+                  "text": "Comenzamos a despejar restando 1 en ambos miembros de la desigualdad para simplificar el lado izquierdo.",
+                  "mathContent": "\\frac{|x - 2|}{3} \\leq 4 - 1 \\implies \\frac{|x - 2|}{3} \\leq 3",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Eliminar el denominador",
+                  "text": "Multiplicamos ambos lados por 3. Como el 3 es positivo, el sentido de la desigualdad se mantiene igual.",
+                  "mathContent": "|x - 2| \\leq 3 \\cdot 3 \\implies |x - 2| \\leq 9",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Transformar a desigualdad compuesta",
+                  "text": "Aplicamos la propiedad $|u| \\leq a \\iff -a \\leq u \\leq a$. Esto elimina las barras de valor absoluto y nos permite trabajar con una inecuación lineal doble.",
+                  "mathContent": "-9 \\leq x - 2 \\leq 9",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Despejar la variable x",
+                  "text": "Sumamos 2 en los tres miembros de la desigualdad para dejar a la $x$ completamente sola en el centro.",
+                  "mathContent": "-9 + 2 \\leq x - 2 + 2 \\leq 9 + 2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 6: Calcular los límites finales",
+                  "text": "Realizamos las operaciones de suma para encontrar el rango de valores que satisfacen la inecuación.",
+                  "mathContent": "-7 \\leq x \\leq 11",
+                  "icon": "star"
+                },
+                {
+                  "title": "Paso 7: Representación en intervalo",
+                  "text": "Dado que se incluyen ambos extremos (menor o igual), la solución se expresa como un intervalo cerrado utilizando corchetes.",
+                  "mathContent": "S = [-7, 11]",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         }
@@ -2298,7 +2968,51 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver} \\\\\n\\frac{x^2 - 9}{x - 2} \\geq 0. \\\\\n\\text{Factorizamos el numerador:} \\\\\n\\frac{(x - 3)(x + 3)}{x - 2} \\geq 0. \\\\\n\\text{Puntos críticos: } -3, 2, 3\\text{. Analizamos signos por intervalos y obtenemos:} \\\\\n[-3, 2) \\cup [3, \\infty)."
+              "content": "\\text{Resolver} \\\\\n\\frac{x^2 - 9}{x - 2} \\geq 0. \\\\\n\\text{Factorizamos el numerador:} \\\\\n\\frac{(x - 3)(x + 3)}{x - 2} \\geq 0. \\\\\n\\text{Puntos críticos: } -3, 2, 3\\text{. Analizamos signos por intervalos y obtenemos:} \\\\\n[-3, 2) \\cup [3, \\infty).",
+              "steps": [
+                {
+                  "title": "Paso 1: Identificar la inecuación",
+                  "text": "Escribimos la inecuación original. Buscamos los valores de $x$ que hacen que el cociente sea positivo o igual a cero.",
+                  "mathContent": "\\frac{x^2 - 9}{x - 2} \\geq 0",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Factorizar el numerador",
+                  "text": "Observamos que $x^2 - 9$ es una diferencia de cuadrados ($a^2 - b^2 = (a - b)(a + b)$). Lo factorizamos para encontrar sus ceros.",
+                  "mathContent": "\\frac{(x - 3)(x + 3)}{x - 2} \\geq 0",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Hallar los puntos críticos",
+                  "text": "Determinamos los valores que anulan cada factor del numerador y del denominador. Estos puntos dividen la recta real en intervalos.",
+                  "mathContent": "x - 3 = 0 \\Rightarrow x = 3, \\quad x + 3 = 0 \\Rightarrow x = -3, \\quad x - 2 = 0 \\Rightarrow x = 2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Definir los intervalos de prueba",
+                  "text": "Ubicamos los puntos $-3$, $2$ y $3$ en la recta numérica. El punto $x=2$ es una restricción porque anula el denominador.",
+                  "mathContent": "I_1: (-\\infty, -3], \\quad I_2: [-3, 2), \\quad I_3: (2, 3], \\quad I_4: [3, \\infty)",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Análisis de signos por intervalo",
+                  "text": "Probamos un valor de cada intervalo en la expresión $\\frac{(x - 3)(x + 3)}{x - 2}$ para determinar su signo.",
+                  "mathContent": "\\begin{aligned} &x = -4 \\Rightarrow \\frac{(-)(-)}{(-)} = (-) \\\\ &x = 0 \\Rightarrow \\frac{(-)(+)}{(-)} = (+) \\\\ &x = 2.5 \\Rightarrow \\frac{(-)(+)}{(+)} = (-) \\\\ &x = 4 \\Rightarrow \\frac{(+)(+)}{(+)} = (+) \\end{aligned}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 6: Seleccionar los intervalos válidos",
+                  "text": "Como buscamos valores $\\geq 0$, seleccionamos los intervalos positivos. Incluimos los ceros del numerador ($-3$ y $3$) pero excluimos el del denominador ($2$).",
+                  "mathContent": "x \\in [-3, 2) \\cup [3, \\infty)",
+                  "icon": "star"
+                },
+                {
+                  "title": "Paso 7: Resultado final",
+                  "text": "La solución consiste en la unión de los intervalos donde la expresión es no negativa.",
+                  "mathContent": "S = [-3, 2) \\cup [3, \\infty)",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         },
