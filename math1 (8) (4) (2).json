@@ -339,18 +339,82 @@
       "theorySections": [],
       "challenges": [
         {
-          "id": "challenge_1775776811843",
-          "questionText": "Nueva Pregunta",
+          "id": "tf_ineq_01",
+          "questionText": "Si se multiplica o divide ambos lados de una desigualdad por un número negativo, el sentido de la desigualdad se mantiene.",
+          "questionLatex": "",
           "options": [
-            "Opción A",
-            "Opción B",
-            "Opción C",
-            "Opción D"
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Al multiplicar o dividir por un número negativo, el signo de la desigualdad debe invertirse. Por ejemplo, si $-2x < 4$, entonces $x > -2$.",
+          "category": "Desigualdades",
+          "moduleName": "Álgebra Básica"
+        },
+        {
+          "id": "tf_ineq_02",
+          "questionText": "Sumar o restar el mismo número real en ambos lados de una desigualdad no altera el sentido de la misma.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
           ],
           "correctAnswerIndex": 0,
-          "category": "General",
-          "moduleName": "Módulo",
-          "explanationSteps": []
+          "explanationLatex": "Esta es la propiedad aditiva. Si $a < b$, entonces $a + c < b + c$ para cualquier número real $c$.",
+          "category": "Desigualdades",
+          "moduleName": "Álgebra Básica"
+        },
+        {
+          "id": "tf_ineq_03",
+          "questionText": "Una desigualdad estricta se representa en la notación de intervalos usando corchetes.",
+          "questionLatex": "< \\text{ o } >",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Las desigualdades estrictas ($<$ o $>$) indican que el extremo no está incluido, por lo que se representan con paréntesis $( )$ o intervalos abiertos.",
+          "category": "Desigualdades",
+          "moduleName": "Álgebra Básica"
+        },
+        {
+          "id": "tf_ineq_04",
+          "questionText": "El cuadrado de cualquier número real siempre es estrictamente mayor que cero.",
+          "questionLatex": "x^2 > 0 \\text{ para todo } x \\in \\mathbb{R}",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "El cuadrado de un número real es mayor **o igual** a cero ($x^2 \\geq 0$). Si $x = 0$, entonces $0^2 = 0$, por lo que no cumple la condición de ser estrictamente mayor.",
+          "category": "Desigualdades",
+          "moduleName": "Álgebra Básica"
+        },
+        {
+          "id": "tf_ineq_05",
+          "questionText": "La propiedad transitiva establece que si el primer número es menor que un segundo, y el segundo es menor que un tercero, el primero es menor que el tercero.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Correcto. En notación matemática: si $a < b$ y $b < c$, entonces se concluye necesariamente que $a < c$.",
+          "category": "Desigualdades",
+          "moduleName": "Álgebra Básica"
+        },
+        {
+          "id": "tf_ineq_06",
+          "questionText": "Una desigualdad con valor absoluto de la forma menor que un número positivo representa la distancia al origen.",
+          "questionLatex": "|x| < a",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "La expresión $|x| < a$ significa que la distancia del número $x$ al cero es menor que $a$, lo cual se traduce en la desigualdad compuesta $-a < x < a$.",
+          "category": "Desigualdades",
+          "moduleName": "Álgebra Básica"
         }
       ]
     },
