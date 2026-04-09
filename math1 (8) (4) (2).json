@@ -3,7 +3,7 @@
   "title": "Matemática I",
   "subtitle": "Matemática I",
   "semesterNumber": 1,
-  "isLocked": false,
+  "isLocked": true,
   "lessons": [
     {
       "id": "math1_ineq_theory_1",
