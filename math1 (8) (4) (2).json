@@ -3023,7 +3023,57 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver} \\\\\n\\sqrt{x - 1} > \\frac{x - 1}{2}. \\\\\n\\text{Sea } t = x - 1\\text{, con } t \\geq 0\\text{. Entonces} \\\\\n\\sqrt{t} > \\frac{t}{2}. \\\\\n\\text{Si elevamos al cuadrado con cuidado, obtenemos} \\\\\n4t > t^2 \\quad \\Rightarrow \\quad t(4 - t) > 0. \\\\\n\\text{Por tanto, } 0 < t < 4\\text{. Volviendo a } x\\text{:} \\\\\n1 < x < 5."
+              "content": "\\text{Resolver} \\\\\n\\sqrt{x - 1} > \\frac{x - 1}{2}. \\\\\n\\text{Sea } t = x - 1\\text{, con } t \\geq 0\\text{. Entonces} \\\\\n\\sqrt{t} > \\frac{t}{2}. \\\\\n\\text{Si elevamos al cuadrado con cuidado, obtenemos} \\\\\n4t > t^2 \\quad \\Rightarrow \\quad t(4 - t) > 0. \\\\\n\\text{Por tanto, } 0 < t < 4\\text{. Volviendo a } x\\text{:} \\\\\n1 < x < 5.",
+              "steps": [
+                {
+                  "title": "Paso 1: Determinar el dominio y restricción",
+                  "text": "Para que la raíz cuadrada esté definida, el radicando debe ser no negativo. Además, observamos que si $x-1 = 0$, la desigualdad $0 > 0$ sería falsa, por lo que $x-1$ debe ser estrictamente mayor que cero para que haya una solución.",
+                  "mathContent": "x - 1 \\geq 0 \\implies x \\geq 1",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Aplicar cambio de variable",
+                  "text": "Para facilitar el cálculo, definimos una nueva variable $t$. Esto simplifica visualmente la inecuación.",
+                  "mathContent": "\\text{Sea } t = x - 1, \\quad \\text{con } t > 0",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Plantear la inecuación en términos de t",
+                  "text": "Sustituimos $x-1$ por $t$ en la inecuación original.",
+                  "mathContent": "\\sqrt{t} > \\frac{t}{2}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Elevar al cuadrado",
+                  "text": "Como ambos lados son positivos ($t > 0$), elevamos al cuadrado para eliminar la raíz. Luego, multiplicamos por 4 para despejar los denominadores.",
+                  "mathContent": "t > \\frac{t^2}{4} \\implies 4t > t^2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Resolver la inecuación cuadrática",
+                  "text": "Reordenamos los términos para obtener una expresión comparada con cero y factorizamos.",
+                  "mathContent": "t^2 - 4t < 0 \\implies t(t - 4) < 0",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 6: Hallar los límites de t",
+                  "text": "Los puntos críticos son $0$ y $4$. Al ser una parábola que abre hacia arriba, los valores menores a cero están entre las raíces.",
+                  "mathContent": "0 < t < 4",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 7: Volver a la variable original x",
+                  "text": "Sustituimos nuevamente $t$ por $x-1$ para encontrar el intervalo de la solución final.",
+                  "mathContent": "0 < x - 1 < 4",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 8: Resultado final",
+                  "text": "Sumamos 1 en todos los miembros de la inecuación.",
+                  "mathContent": "1 < x < 5 \\implies S = (1, 5)",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         },
@@ -3034,7 +3084,51 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver} \\\\\n|x - 3| \\leq x. \\\\\n\\text{Primero observamos que el lado derecho debe ser no negativo, así que } x \\geq 0\\text{. Luego usamos casos:} \\\\\n\\bullet \\text{ si } x \\geq 3\\text{, entonces } |x - 3| = x - 3 \\text{ y la inecuación queda } x - 3 \\leq x\\text{, verdadera siempre;} \\\\\n\\bullet \\text{ si } 0 \\leq x < 3\\text{, entonces } |x - 3| = 3 - x \\text{ y queda } 3 - x \\leq x\\text{, es decir } 3 \\leq 2x\\text{, por lo que } x \\geq \\frac{3}{2}\\text{.} \\\\\n\\text{Juntando ambas partes:} \\\\\n\\left[ \\frac{3}{2}, \\infty \\right)."
+              "content": "\\text{Resolver} \\\\\n|x - 3| \\leq x. \\\\\n\\text{Primero observamos que el lado derecho debe ser no negativo, así que } x \\geq 0\\text{. Luego usamos casos:} \\\\\n\\bullet \\text{ si } x \\geq 3\\text{, entonces } |x - 3| = x - 3 \\text{ y la inecuación queda } x - 3 \\leq x\\text{, verdadera siempre;} \\\\\n\\bullet \\text{ si } 0 \\leq x < 3\\text{, entonces } |x - 3| = 3 - x \\text{ y queda } 3 - x \\leq x\\text{, es decir } 3 \\leq 2x\\text{, por lo que } x \\geq \\frac{3}{2}\\text{.} \\\\\n\\text{Juntando ambas partes:} \\\\\n\\left[ \\frac{3}{2}, \\infty \\right).",
+              "steps": [
+                {
+                  "title": "Paso 1: Establecer la restricción inicial",
+                  "text": "Dado que un valor absoluto siempre es mayor o igual a cero, para que la inecuación tenga solución, el lado derecho ($x$) debe ser obligatoriamente no negativo.",
+                  "mathContent": "x \\geq 0",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Analizar el primer caso (x ≥ 3)",
+                  "text": "Si el argumento del valor absoluto es positivo o cero, las barras se eliminan sin cambiar el signo.",
+                  "mathContent": "x - 3 \\leq x \\implies -3 \\leq 0",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Interpretar el resultado del primer caso",
+                  "text": "Como $-3 \\leq 0$ es una verdad absoluta, todos los valores de este caso ($x \\geq 3$) forman parte de la solución.",
+                  "mathContent": "S_1: [3, \\infty)",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Analizar el segundo caso (0 ≤ x < 3)",
+                  "text": "Si el argumento es negativo, el valor absoluto cambia los signos de la expresión interior al quitar las barras.",
+                  "mathContent": "-(x - 3) \\leq x \\implies 3 - x \\leq x",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Resolver la inecuación del segundo caso",
+                  "text": "Despejamos $x$ sumando la variable en ambos lados y dividiendo entre 2.",
+                  "mathContent": "3 \\leq 2x \\implies x \\geq \\frac{3}{2}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 6: Delimitar el intervalo del segundo caso",
+                  "text": "Cruzamos el resultado $x \\geq 1.5$ con la condición de este caso ($x < 3$).",
+                  "mathContent": "S_2: [\\frac{3}{2}, 3)",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 7: Unión de soluciones y resultado final",
+                  "text": "Unimos los intervalos obtenidos en ambos casos para obtener el conjunto solución total.",
+                  "mathContent": "S = [\\frac{3}{2}, 3) \\cup [3, \\infty) \\implies S = [\\frac{3}{2}, \\infty)",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         }
