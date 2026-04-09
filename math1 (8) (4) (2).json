@@ -36,7 +36,33 @@
           "blocks": [
             {
               "type": "example",
-              "content": "Resolver\\ −2x > 6. \\\\\n−2x > 6 ⇒ x < −3.\\\\\nAl\\ dividir\\ entre\\ −2, el\\ signo\\ cambia\\ de\\ sentido.\\\\ La\\ solución\\ es\\\n(−∞, −3).\n"
+              "content": "Resolver\\ −2x > 6. \\\\\n−2x > 6 ⇒ x < −3.\\\\\nAl\\ dividir\\ entre\\ −2, el\\ signo\\ cambia\\ de\\ sentido.\\\\ La\\ solución\\ es\\\n(−∞, −3).\n",
+              "steps": [
+                {
+                  "title": "Paso 1: Identificar la inecuación",
+                  "text": "Escribimos la expresión original. Nuestro objetivo es despejar la variable $x$.",
+                  "mathContent": "-2x > 6",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Aplicar la propiedad de desigualdad",
+                  "text": "Para despejar $x$, debemos dividir ambos lados entre $-2$. Al dividir o multiplicar una inecuación por un número negativo, el sentido del signo de desigualdad debe invertirse.",
+                  "mathContent": "\\frac{-2x}{-2} < \\frac{6}{-2}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Simplificar los términos",
+                  "text": "Realizamos las divisiones. En el lado izquierdo $-2/-2$ es $1$, y en el derecho $6/-2$ es $-3$.",
+                  "mathContent": "x < -3",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Representación en intervalo",
+                  "text": "Como $x$ debe ser menor que $-3$ (sin incluirlo), la solución se extiende desde el infinito negativo hasta el $-3$.",
+                  "mathContent": "S = (-\\infty, -3)",
+                  "icon": "star"
+                }
+              ]
             }
           ]
         },
