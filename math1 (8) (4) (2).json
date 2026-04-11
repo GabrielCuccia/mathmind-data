@@ -331,94 +331,6 @@
       "challenges": []
     },
     {
-      "id": "lesson_1775776794243",
-      "title": "Nueva Lección",
-      "type": "flashcards",
-      "isCompleted": false,
-      "isLocked": false,
-      "theorySections": [],
-      "challenges": [
-        {
-          "id": "tf_ineq_01",
-          "questionText": "Si se multiplica o divide ambos lados de una desigualdad por un número negativo, el sentido de la desigualdad se mantiene.",
-          "questionLatex": "",
-          "options": [
-            "Verdadero",
-            "Falso"
-          ],
-          "correctAnswerIndex": 1,
-          "explanationLatex": "Al multiplicar o dividir por un número negativo, el signo de la desigualdad debe invertirse. Por ejemplo, si $-2x < 4$, entonces $x > -2$.",
-          "category": "Desigualdades",
-          "moduleName": "Álgebra Básica"
-        },
-        {
-          "id": "tf_ineq_02",
-          "questionText": "Sumar o restar el mismo número real en ambos lados de una desigualdad no altera el sentido de la misma.",
-          "questionLatex": "",
-          "options": [
-            "Verdadero",
-            "Falso"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Esta es la propiedad aditiva. Si $a < b$, entonces $a + c < b + c$ para cualquier número real $c$.",
-          "category": "Desigualdades",
-          "moduleName": "Álgebra Básica"
-        },
-        {
-          "id": "tf_ineq_03",
-          "questionText": "Una desigualdad estricta se representa en la notación de intervalos usando corchetes.",
-          "questionLatex": "< \\text{ o } >",
-          "options": [
-            "Verdadero",
-            "Falso"
-          ],
-          "correctAnswerIndex": 1,
-          "explanationLatex": "Las desigualdades estrictas ($<$ o $>$) indican que el extremo no está incluido, por lo que se representan con paréntesis $( )$ o intervalos abiertos.",
-          "category": "Desigualdades",
-          "moduleName": "Álgebra Básica"
-        },
-        {
-          "id": "tf_ineq_04",
-          "questionText": "El cuadrado de cualquier número real siempre es estrictamente mayor que cero.",
-          "questionLatex": "x^2 > 0 \\text{ para todo } x \\in \\mathbb{R}",
-          "options": [
-            "Verdadero",
-            "Falso"
-          ],
-          "correctAnswerIndex": 1,
-          "explanationLatex": "El cuadrado de un número real es mayor **o igual** a cero ($x^2 \\geq 0$). Si $x = 0$, entonces $0^2 = 0$, por lo que no cumple la condición de ser estrictamente mayor.",
-          "category": "Desigualdades",
-          "moduleName": "Álgebra Básica"
-        },
-        {
-          "id": "tf_ineq_05",
-          "questionText": "La propiedad transitiva establece que si el primer número es menor que un segundo, y el segundo es menor que un tercero, el primero es menor que el tercero.",
-          "questionLatex": "",
-          "options": [
-            "Verdadero",
-            "Falso"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "Correcto. En notación matemática: si $a < b$ y $b < c$, entonces se concluye necesariamente que $a < c$.",
-          "category": "Desigualdades",
-          "moduleName": "Álgebra Básica"
-        },
-        {
-          "id": "tf_ineq_06",
-          "questionText": "Una desigualdad con valor absoluto de la forma menor que un número positivo representa la distancia al origen.",
-          "questionLatex": "|x| < a",
-          "options": [
-            "Verdadero",
-            "Falso"
-          ],
-          "correctAnswerIndex": 0,
-          "explanationLatex": "La expresión $|x| < a$ significa que la distancia del número $x$ al cero es menor que $a$, lo cual se traduce en la desigualdad compuesta $-a < x < a$.",
-          "category": "Desigualdades",
-          "moduleName": "Álgebra Básica"
-        }
-      ]
-    },
-    {
       "id": "math1_ineq_p1",
       "title": "Resolución de Desigualdades",
       "type": "practice",
@@ -3454,6 +3366,77 @@
           ]
         }
       ]
+    },
+    {
+      "id": "lesson_1775848613469",
+      "title": "Puntos, distancia y punto medio",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "El plano cartesiano y la lectura de un punto",
+          "subtitle": "Puntos, distancia y punto medio",
+          "content": "El plano cartesiano está formado por dos ejes perpendiculares: el eje x, horizontal, y el eje y, vertical. Su intersección se llama origen y se escribe O(0, 0). Cada punto del plano se identifica mediante un par ordenado. El primer número indica cuánto nos movemos a la derecha o a la izquierda; el segundo indica cuánto subimos o bajamos. Esta convención parece simple, pero es esencial. Si cambias el orden de las coordenadas, cambias el punto. Por ejemplo, P(2, −3) y Q(−3, 2) no representan la misma posición. En problemas combinados, un error de signo o un intercambio entre coordenadas puede arruinar una conclusión\ncompleta, por lo que conviene leer cada dato con calma.",
+          "blocks": []
+        },
+        {
+          "title": "Distancia entre dos puntos",
+          "subtitle": "Puntos, distancia y punto medio",
+          "content": "La distancia entre dos puntos P1(x1, y1) y P2(x2, y2) se obtiene aplicando el teorema de Pitágoras al triángulo que se forma con las proyecciones horizontales y verticales. Por eso la fórmula es $$d(P_1, P_2) = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}.$$ El cuadrado de cada diferencia elimina el problema del signo: la distancia siempre es no negativa. Esta fórmula también revela una idea importante: la geometría analítica convierte una figura en una operación algebraica.\n",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "|(3,4)| = \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5",
+              "steps": [
+                {
+                  "title": "Paso 1: Identificar las coordenadas",
+                  "text": "Extraemos los valores de las coordenadas de cada punto. Llamaremos $(x_1, y_1)$ al punto $A$ y $(x_2, y_2)$ al punto $B$.",
+                  "mathContent": "A(1, 2) \\implies x_1 = 1, y_1 = 2 \\\\ B(5, 5) \\implies x_2 = 5, y_2 = 5",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Plantear la fórmula de la distancia",
+                  "text": "Utilizamos la fórmula general de la distancia entre dos puntos en el plano.",
+                  "mathContent": "d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Sustituir los valores",
+                  "text": "Reemplazamos las variables de la fórmula con los números correspondientes de nuestros puntos $A$ y $B$.",
+                  "mathContent": "d = \\sqrt{(5 - 1)^2 + (5 - 2)^2}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Calcular las diferencias",
+                  "text": "Restamos los valores dentro de los paréntesis para hallar la longitud de los catetos horizontal y vertical.",
+                  "mathContent": "d = \\sqrt{(4)^2 + (3)^2}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Elevar al cuadrado",
+                  "text": "Calculamos el cuadrado de cada diferencia. Notamos que el resultado siempre será positivo.",
+                  "mathContent": "d = \\sqrt{16 + 9}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 6: Sumar y calcular la raíz",
+                  "text": "Sumamos los resultados y extraemos la raíz cuadrada para obtener la distancia final.",
+                  "mathContent": "d = \\sqrt{25} = 5",
+                  "icon": "star"
+                },
+                {
+                  "title": "Resultado final",
+                  "text": "La distancia medida en línea recta entre los puntos $A$ y $B$ es exactamente de 5 unidades.",
+                  "mathContent": "d = 5",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
     }
   ]
 }
