@@ -3387,7 +3387,7 @@
           "blocks": [
             {
               "type": "example",
-              "content": "|(3,4)| = \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5",
+              "content": "",
               "steps": [
                 {
                   "title": "Paso 1: Identificar las coordenadas",
@@ -3429,6 +3429,62 @@
                   "title": "Resultado final",
                   "text": "La distancia medida en línea recta entre los puntos $A$ y $B$ es exactamente de 5 unidades.",
                   "mathContent": "d = 5",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Segmentos especiales y simetría",
+          "subtitle": "",
+          "content": "La distancia permite detectar segmentos horizontales y verticales. Si dos puntos tienen la misma ordenada, el segmento es horizontal y la distancia coincide con la diferencia de abscisas. Si tienen la misma abscisa, el segmento es vertical y la distancia coincide con la diferencia de ordenadas. Esta observación simplifica muchos ejercicios porque evita\ndesarrollos innecesarios.\nAdemás, dos puntos pueden ser simétricos respecto del origen si sus coordenadas son opuestas, es decir, si uno es (a, b) y el otro es (−a, −b). También pueden ser simétricos respecto de los ejes. Estas simetrías son útiles cuando se revisan figuras construidas a partir de datos algebraicos. $$Si y1 = y2, d = |x2 − x1| y si x1 = x2, d = |y2 − y1|.$$\n",
+          "blocks": [],
+          "proTip": ""
+        },
+        {
+          "title": "Punto medio",
+          "subtitle": "",
+          "content": "El punto medio de un segmento une las ideas de posición y promedio. Si $A(x1, y1)$ y $B(x2, y2)$ son los extremos de un segmento, su punto medio es $$M \\left( \\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2} \\right).$$\nEsto significa que el punto medio divide el segmento en dos partes iguales, tanto en la horizontal como en la vertical. La fórmula no es arbitraria: cada coordenada se promedia porque el plano está separado en dos direcciones independientes.\n",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "",
+              "steps": [
+                {
+                  "title": "Paso 1: Identificar las coordenadas de los extremos",
+                  "text": "Definimos los componentes de cada punto. Llamaremos $(x_1, y_1)$ al punto $A$ y $(x_2, y_2)$ al punto $B$.",
+                  "mathContent": "A(-2, 4) \\implies x_1 = -2, y_1 = 4 \\\\ B(6, 0) \\implies x_2 = 6, y_2 = 0",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Paso 2: Aplicar la fórmula del punto medio",
+                  "text": "El punto medio es el promedio aritmético de las coordenadas de los extremos. La fórmula es la siguiente:",
+                  "mathContent": "M = \\left( \\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2} \\right)",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 3: Sustituir los valores en la fórmula",
+                  "text": "Reemplazamos las variables con los números correspondientes, manteniendo los signos originales de cada coordenada.",
+                  "mathContent": "M = \\left( \\frac{-2 + 6}{2}, \\frac{4 + 0}{2} \\right)",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 4: Realizar las sumas en el numerador",
+                  "text": "Operamos algebraicamente cada componente. Para el eje $x$, sumamos $-2 + 6$, y para el eje $y$, sumamos $4 + 0$.",
+                  "mathContent": "M = \\left( \\frac{4}{2}, \\frac{4}{2} \\right)",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Paso 5: Dividir para hallar el punto final",
+                  "text": "Efectuamos las divisiones para obtener las coordenadas exactas del centro del segmento.",
+                  "mathContent": "M = (2, 2)",
+                  "icon": "star"
+                },
+                {
+                  "title": "Resultado final",
+                  "text": "El centro del segmento de recta que une los puntos $A$ y $B$ es el punto $M(2, 2)$.",
+                  "mathContent": "M(2, 2)",
                   "icon": "star"
                 }
               ]
