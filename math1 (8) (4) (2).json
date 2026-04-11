@@ -3500,7 +3500,7 @@
     },
     {
       "id": "lesson_1775872549333",
-      "title": "Nueva Lección",
+      "title": "Puntos, distancia y punto medio",
       "type": "practice",
       "isCompleted": false,
       "isLocked": false,
@@ -3644,7 +3644,156 @@
       "isCompleted": false,
       "isLocked": false,
       "theorySections": [],
-      "challenges": []
+      "challenges": [
+        {
+          "id": "challenge_1775873520351",
+          "questionText": "Calcula la distancia entre $(-1, 2)$ y $(5, -2)$.",
+          "options": [
+            "$2\\sqrt{13}$ ",
+            "$10$",
+            "$4\\sqrt{2}$",
+            "52"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "General",
+          "moduleName": "Módulo",
+          "explanationSteps": [
+            {
+              "title": "Paso 1: Identificar las coordenadas",
+              "text": "Asignamos los valores de las coordenadas de cada punto. Llamaremos $(x_1, y_1)$ al primer punto y $(x_2, y_2)$ al segundo.",
+              "mathContent": "x_1 = -1, y_1 = 2 \\\\ x_2 = 5, y_2 = -2",
+              "icon": "pin"
+            },
+            {
+              "title": "Paso 2: Plantear la fórmula de la distancia",
+              "text": "Utilizamos la fórmula de distancia entre dos puntos, que es una aplicación directa del teorema de Pitágoras.",
+              "mathContent": "d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 3: Sustitución de valores",
+              "text": "Reemplazamos las variables con nuestros números. Es crucial colocar paréntesis para manejar correctamente los signos negativos.",
+              "mathContent": "d = \\sqrt{(5 - (-1))^2 + (-2 - 2)^2}",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 4: Resolver las operaciones internas",
+              "text": "Simplificamos los paréntesis. Note que $5 - (-1) = 5 + 1 = 6$, y $-2 - 2 = -4$.",
+              "mathContent": "d = \\sqrt{(6)^2 + (-4)^2}",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 5: Elevar al cuadrado",
+              "text": "Calculamos las potencias. Ambos resultados deben ser positivos, ya que cualquier número real al cuadrado es no negativo.",
+              "mathContent": "d = \\sqrt{36 + 16}",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 6: Simplificar el radical",
+              "text": "Sumamos los términos y simplificamos la raíz de 52 buscando factores que sean cuadrados perfectos (en este caso, 4).",
+              "mathContent": "d = \\sqrt{52} = \\sqrt{4 \\cdot 13} = 2\\sqrt{13}",
+              "icon": "star"
+            },
+            {
+              "title": "Resultado final",
+              "text": "La distancia exacta entre los puntos es $2\\sqrt{13}$ unidades, lo que equivale aproximadamente a 7.21 unidades.",
+              "mathContent": "d = 2\\sqrt{13} \\approx 7.21",
+              "icon": "star"
+            }
+          ],
+          "questionLatex": ""
+        },
+        {
+          "id": "challenge_1775873709609",
+          "questionText": "Calcula la longitud de un segmento horizontal de extremos $(-3, 6)$ y $(5, 6)$.",
+          "options": [
+            "$2$",
+            "$12$",
+            "$-8$",
+            "$8$ "
+          ],
+          "correctAnswerIndex": 3,
+          "category": "General",
+          "moduleName": "Módulo",
+          "explanationSteps": [
+            {
+              "title": "Paso 1: Identificar las coordenadas",
+              "text": "Observamos los puntos dados. Notamos que ambos tienen la misma ordenada ($y = 6$), lo que confirma que el segmento es completamente horizontal.",
+              "mathContent": "P_1(-3, 6) \\implies x_1 = -3, y_1 = 6 \\\\ P_2(5, 6) \\implies x_2 = 5, y_2 = 6",
+              "icon": "pin"
+            },
+            {
+              "title": "Paso 2: Aplicar la fórmula de distancia horizontal",
+              "text": "Para puntos con la misma ordenada, la distancia es simplemente el valor absoluto de la diferencia entre sus abscisas ($x$).",
+              "mathContent": "d = |x_2 - x_1|",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 3: Sustituir los valores de x",
+              "text": "Reemplazamos $x_1$ y $x_2$ en la fórmula. Es importante mantener el signo negativo del primer punto.",
+              "mathContent": "d = |5 - (-3)|",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 4: Resolver la operación",
+              "text": "Simplificamos la expresión dentro del valor absoluto. Restar un número negativo es equivalente a sumar.",
+              "mathContent": "d = |5 + 3| = |8|",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 5: Resultado final",
+              "text": "La longitud del segmento es de 8 unidades.",
+              "mathContent": "d = 8",
+              "icon": "star"
+            }
+          ]
+        },
+        {
+          "id": "challenge_1775873776554",
+          "questionText": "Calcula el punto medio de $(4, 7)$ y $(-2, 1)$.",
+          "options": [
+            "$(2, 8)$",
+            "$(1, 4)$",
+            "$(3, 3)$",
+            "$(1, 3)$"
+          ],
+          "correctAnswerIndex": 1,
+          "category": "General",
+          "moduleName": "Módulo",
+          "explanationSteps": [
+            {
+              "title": "Paso 1: Identificar las coordenadas de los extremos",
+              "text": "Asignamos los valores de las coordenadas de cada punto. Llamaremos $(x_1, y_1)$ al primer punto y $(x_2, y_2)$ al segundo.",
+              "mathContent": "P_1(4, 7) \\implies x_1 = 4, y_1 = 7 \\\\ P_2(-2, 1) \\implies x_2 = -2, y_2 = 1",
+              "icon": "pin"
+            },
+            {
+              "title": "Paso 2: Aplicar la fórmula del punto medio",
+              "text": "El punto medio se obtiene calculando el promedio de las coordenadas de los extremos.",
+              "mathContent": "M = \\left( \\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2} \\right)",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 3: Sustituir los valores",
+              "text": "Reemplazamos las variables con los números correspondientes, respetando los signos negativos.",
+              "mathContent": "M = \\left( \\frac{4 + (-2)}{2}, \\frac{7 + 1}{2} \\right)",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 4: Realizar las operaciones aritméticas",
+              "text": "Resolvemos las sumas en los numeradores: $4 - 2 = 2$ y $7 + 1 = 8$.",
+              "mathContent": "M = \\left( \\frac{2}{2}, \\frac{8}{2} \\right)",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 5: Resultado final",
+              "text": "Dividimos entre 2 para obtener las coordenadas exactas del punto central del segmento.",
+              "mathContent": "M = (1, 4)",
+              "icon": "star"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
