@@ -3497,6 +3497,154 @@
         }
       ],
       "challenges": []
+    },
+    {
+      "id": "lesson_1775872549333",
+      "title": "Nueva Lección",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1775872551925",
+          "questionText": "Calcula la distancia entre los puntos $(0,0)$ y $(3,4)$.",
+          "options": [
+            "25",
+            "7",
+            "5",
+            "\\sqrt{7}"
+          ],
+          "correctAnswerIndex": 2,
+          "category": "General",
+          "moduleName": "Módulo",
+          "explanationSteps": [
+            {
+              "title": "Paso 1: Identificar las coordenadas",
+              "text": "Asignamos los valores de los puntos dados. El primer punto es el origen $P_1(0, 0)$ y el segundo es $P_2(3, 4)$.",
+              "mathContent": "x_1 = 0, y_1 = 0 \\\\ x_2 = 3, y_2 = 4",
+              "icon": "pin"
+            },
+            {
+              "title": "Paso 2: Aplicar la fórmula de la distancia",
+              "text": "La distancia $d$ entre dos puntos se define como la raíz cuadrada de la suma de los cuadrados de las diferencias de sus coordenadas.",
+              "mathContent": "d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 3: Sustituir y simplificar",
+              "text": "Sustituimos los valores. Al restar cero, las coordenadas del segundo punto permanecen iguales.",
+              "mathContent": "d = \\sqrt{(3 - 0)^2 + (4 - 0)^2} \\implies d = \\sqrt{3^2 + 4^2}",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 4: Elevar al cuadrado y sumar",
+              "text": "Calculamos los cuadrados de 3 y 4, y luego sumamos los resultados.",
+              "mathContent": "d = \\sqrt{9 + 16} \\implies d = \\sqrt{25}",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 5: Resultado final",
+              "text": "Extraemos la raíz cuadrada de 25 para obtener la distancia exacta.",
+              "mathContent": "d = 5",
+              "icon": "star"
+            }
+          ]
+        },
+        {
+          "id": "challenge_1775872782569",
+          "questionText": "Calcula el punto medio entre las coordenadas $(2,1)$ y $(8,5)$.",
+          "options": [
+            "(5, 3)",
+            "$(6, 4)$",
+            "$(10, 6)$",
+            "$(3, 2)$"
+          ],
+          "correctAnswerIndex": 0,
+          "category": "General",
+          "moduleName": "Módulo",
+          "explanationSteps": [
+            {
+              "title": "Paso 1: Identificar las coordenadas",
+              "text": "Definimos los componentes de cada punto dado. Llamaremos $(x_1, y_1)$ al primer punto y $(x_2, y_2)$ al segundo.",
+              "mathContent": "P_1(2, 1) \\implies x_1 = 2, y_1 = 1 \\\\ P_2(8, 5) \\implies x_2 = 8, y_2 = 5",
+              "icon": "pin"
+            },
+            {
+              "title": "Paso 2: Aplicar la fórmula del punto medio",
+              "text": "La fórmula consiste en promediar las coordenadas correspondientes de ambos puntos.",
+              "mathContent": "M = \\left( \\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2} \\right)",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 3: Sustituir los valores",
+              "text": "Reemplazamos las variables con los números identificados en el primer paso.",
+              "mathContent": "M = \\left( \\frac{2 + 8}{2}, \\frac{1 + 5}{2} \\right)",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 4: Realizar las sumas",
+              "text": "Calculamos los numeradores para cada componente de la coordenada.",
+              "mathContent": "M = \\left( \\frac{10}{2}, \\frac{6}{2} \\right)",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 5: Resultado final",
+              "text": "Dividimos cada resultado entre 2 para obtener la ubicación exacta del punto medio.",
+              "mathContent": "M = (5, 3)",
+              "icon": "star"
+            }
+          ]
+        },
+        {
+          "id": "challenge_1775872860408",
+          "questionText": "¿Cómo se calcula la distancia entre dos puntos que tienen la misma ordenada?",
+          "options": [
+            "Es la suma de sus abscisas: $x_1 + x_2$",
+            "Es cero, porque están a la misma altura.",
+            "Es el valor absoluto de la diferencia de sus ordenadas: $|y_2 - y_1|$",
+            "Es el valor absoluto de la diferencia de sus abscisas: $|x_2 - x_1|$"
+          ],
+          "correctAnswerIndex": 3,
+          "category": "General",
+          "moduleName": "Módulo",
+          "explanationSteps": [
+            {
+              "title": "Paso 1: Identificar las coordenadas",
+              "text": "Cuando dos puntos tienen la misma ordenada ($y$), significa que están a la misma altura en el plano cartesiano, formando un segmento horizontal.",
+              "mathContent": "A(x_1, y), \\quad B(x_2, y)",
+              "icon": "pin"
+            },
+            {
+              "title": "Paso 2: Simplificar la fórmula general",
+              "text": "Si aplicamos la fórmula general de distancia, notaremos que la diferencia de las ordenadas es cero.",
+              "mathContent": "d = \\sqrt{(x_2 - x_1)^2 + (y - y)^2} = \\sqrt{(x_2 - x_1)^2 + 0^2}",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 3: Aplicar el valor absoluto",
+              "text": "La distancia es simplemente la diferencia entre las abscisas. Usamos valor absoluto porque una distancia siempre debe ser positiva, sin importar cuál punto restemos primero.",
+              "mathContent": "d = |x_2 - x_1|",
+              "icon": "fx"
+            },
+            {
+              "title": "Ejemplo práctico",
+              "text": "Para calcular la distancia entre $P_1(-2, 4)$ y $P_2(5, 4)$, simplemente restamos los valores de $x$.",
+              "mathContent": "d = |5 - (-2)| = |5 + 2| = 7",
+              "icon": "star"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lesson_1775872963203",
+      "title": "Nueva Lección",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [],
+      "challenges": []
     }
   ]
 }
