@@ -3639,7 +3639,7 @@
     },
     {
       "id": "lesson_1775872963203",
-      "title": "Nueva Lección",
+      "title": "Puntos, distancia y punto medio",
       "type": "practice",
       "isCompleted": false,
       "isLocked": false,
@@ -3792,6 +3792,145 @@
               "icon": "star"
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "lesson_1775873847922",
+      "title": "Nueva Lección",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1776031037437",
+          "questionText": "Analiza: ¿Qué ocurre para calcular la distancia si dos puntos tienen la misma abscisa?",
+          "options": [
+            "La distancia es el valor absoluto de la diferencia de sus ordenadas: $|y_2 - y_1|$",
+            "La distancia es el valor absoluto de la diferencia de sus abscisas: $|x_2 - x_1|$",
+            "La distancia es cero, porque no hay desplazamiento horizontal.",
+            "Se forma un segmento oblicuo y se debe usar el Teorema de Pitágoras completo."
+          ],
+          "correctAnswerIndex": 0,
+          "category": "General",
+          "moduleName": "Módulo",
+          "explanationSteps": [
+            {
+              "title": "Paso 1: Identificar las coordenadas",
+              "text": "Cuando dos puntos tienen la misma abscisa ($x$), significa que están ubicados sobre la misma línea vertical en el plano cartesiano.",
+              "mathContent": "A(x, y_1), \\quad B(x, y_2)",
+              "icon": "pin"
+            },
+            {
+              "title": "Paso 2: Simplificar la fórmula general",
+              "text": "Al aplicar la fórmula de la distancia, la diferencia de las abscisas es cero ($x - x = 0$), por lo que el término horizontal desaparece.",
+              "mathContent": "d = \\sqrt{(x - x)^2 + (y_2 - y_1)^2} = \\sqrt{0^2 + (y_2 - y_1)^2}",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 3: Aplicar el valor absoluto",
+              "text": "La distancia se reduce simplemente a la diferencia entre las ordenadas. Usamos valor absoluto para garantizar que el resultado sea siempre positivo.",
+              "mathContent": "d = |y_2 - y_1|",
+              "icon": "fx"
+            },
+            {
+              "title": "Ejemplo práctico",
+              "text": "Para hallar la distancia entre $P_1(3, -2)$ y $P_2(3, 5)$, restamos los valores de $y$.",
+              "mathContent": "d = |5 - (-2)| = |5 + 2| = 7",
+              "icon": "star"
+            }
+          ]
+        },
+        {
+          "id": "challenge_1776031112293",
+          "questionText": "Analiza: ¿Cómo se interpreta un segmento que es simétrico respecto del origen?",
+          "options": [
+            "Su punto medio es igual a la suma de sus extremos.",
+            "Sus extremos tienen coordenadas con signos opuestos, por ejemplo $(x, y)$ y $(-x, -y)$, y su punto medio es el origen $(0,0)$.",
+            "Es un segmento que siempre es paralelo al eje X o al eje Y.",
+            "Sus extremos tienen las mismas coordenadas y su longitud es cero."
+          ],
+          "correctAnswerIndex": 1,
+          "category": "General",
+          "moduleName": "Módulo",
+          "explanationSteps": [
+            {
+              "title": "Paso 1: Definir la simetría central",
+              "text": "Dos puntos son simétricos respecto al origen si tienen coordenadas opuestas. Si un extremo es $A(x, y)$, el otro debe ser obligatoriamente $B(-x, -y)$.",
+              "mathContent": "A(x, y) \\quad \\text{y} \\quad B(-x, -y)",
+              "icon": "pin"
+            },
+            {
+              "title": "Paso 2: Calcular el punto medio",
+              "text": "Al aplicar la fórmula del punto medio, sumamos las coordenadas opuestas y dividimos entre dos.",
+              "mathContent": "M = \\left( \\frac{x + (-x)}{2}, \\frac{y + (-y)}{2} \\right) = \\left( \\frac{0}{2}, \\frac{0}{2} \\right) = (0, 0)",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 3: Consecuencia geométrica",
+              "text": "El origen siempre es el punto medio de cualquier segmento cuyos extremos sean simétricos respecto a él. Esto implica que el origen biseca al segmento.",
+              "mathContent": "M = (0, 0)",
+              "icon": "star"
+            },
+            {
+              "title": "Paso 4: Relación de distancias",
+              "text": "La distancia desde el origen a cualquiera de los extremos es la misma. El origen se encuentra exactamente a la mitad del camino.",
+              "mathContent": "d(A, O) = d(B, O) = \\sqrt{x^2 + y^2}",
+              "icon": "fx"
+            },
+            {
+              "title": "Ejemplo práctico",
+              "text": "Si un extremo es $(3, 4)$, su simétrico es $(-3, -4)$. El segmento que los une pasa por $(0,0)$ y tiene una longitud total de 10 unidades.",
+              "mathContent": "d(A, B) = 2\\sqrt{3^2 + 4^2} = 10",
+              "icon": "star"
+            }
+          ]
+        },
+        {
+          "id": "challenge_1776031202606",
+          "questionText": "Analiza: ¿Por qué el punto medio nunca puede quedar fuera del segmento?",
+          "options": [
+            "Porque la fórmula de la distancia siempre utiliza valores absolutos que impiden que el punto salga de la recta.",
+            "Porque las raíces cuadradas siempre generan puntos en el primer cuadrante.",
+            "Porque sus coordenadas se calculan promediando las coordenadas de los extremos, y un promedio siempre resulta en un valor estrictamente intermedio.",
+            "Porque si quedara fuera, se convertiría en un triángulo en lugar de un segmento."
+          ],
+          "correctAnswerIndex": 2,
+          "category": "General",
+          "moduleName": "Módulo",
+          "explanationSteps": [
+            {
+              "title": "Paso 1: Definición de combinación convexa",
+              "text": "Matemáticamente, el punto medio es el promedio exacto de los extremos. Esto lo define como una combinación lineal donde los pesos son iguales (50% de cada punto).",
+              "mathContent": "M = \\frac{1}{2}A + \\frac{1}{2}B",
+              "icon": "pin"
+            },
+            {
+              "title": "Paso 2: Análisis por componentes",
+              "text": "Si analizamos una sola dimensión (por ejemplo, el eje $x$), el valor del punto medio $\\frac{x_1 + x_2}{2}$ siempre es mayor o igual al valor menor y menor o igual al valor mayor.",
+              "mathContent": "x_{min} \\leq \\frac{x_1 + x_2}{2} \\leq x_{max}",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 3: Propiedad de los promedios",
+              "text": "Un promedio nunca puede ser superior al dato más alto ni inferior al dato más bajo. Por lo tanto, el punto resultante no puede 'escapar' de los límites impuestos por los extremos.",
+              "mathContent": "\\text{Si } x_1 < x_2 \\implies x_1 < \\frac{x_1 + x_2}{2} < x_2",
+              "icon": "fx"
+            },
+            {
+              "title": "Paso 4: Interpretación geométrica",
+              "text": "Geométricamente, el segmento es el conjunto de todos los puntos que están 'entre' $A$ y $B$. Como el punto medio minimiza simultáneamente la distancia a ambos extremos de forma equitativa, debe residir en la línea recta que los une.",
+              "mathContent": "d(A, M) + d(M, B) = d(A, B)",
+              "icon": "star"
+            },
+            {
+              "title": "Conclusión",
+              "text": "El punto medio es, por definición, el centro de gravedad del segmento. Para que quedara fuera, tendría que dejar de ser un promedio, lo que contradice su naturaleza algebraica.",
+              "icon": "star"
+            }
+          ],
+          "questionLatex": ""
         }
       ]
     }
