@@ -3933,6 +3933,2613 @@
           "questionLatex": ""
         }
       ]
+    },
+    {
+      "id": "lesson_1783453533643_0_mymb2",
+      "title": "Cómo usar esta guía",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "Bienvenida y objetivo del curso",
+          "subtitle": "Geometría Analítica • Introducción",
+          "content": "Este curso te lleva desde los conceptos más básicos del plano cartesiano hasta los problemas combinados de nivel de examen parcial que mezclan rectas, circunferencias, tangentes y lugares geométricos. La meta no es memorizar fórmulas sueltas, sino entender por qué funciona cada método: cuando el procedimiento se entiende, los ejercicios dejan de parecer distintos entre sí, porque cambian los detalles pero la lógica central es siempre la misma.",
+          "formulaLatex": "",
+          "proTip": "Antes de resolver cualquier problema, dibuja un esbozo del plano con los puntos y figuras involucrados. Un boceto impreciso ya te ayuda a anticipar si la respuesta tiene sentido y muchas veces revela el método más corto.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "La idea constante de todo el curso es esta: la geometría analítica es el lenguaje que conecta figuras geométricas con ecuaciones algebraicas. Cada figura —una recta, una mediatriz, una circunferencia— tiene dos caras: una cara geométrica, que se dibuja y se ve, y una cara algebraica, que se escribe y se manipula. Saber pasar de una a otra sin perder información es la competencia central que se evalúa en cualquier examen del tema."
+            },
+            {
+              "type": "note",
+              "content": "Si dominas estas tres ideas, ya tienes gran parte del camino resuelto: 1) representar figuras como ecuaciones, 2) manipular esas ecuaciones con cuidado algebraico, 3) interpretar el resultado geométricamente."
+            }
+          ]
+        },
+        {
+          "title": "Ruta pedagógica del curso",
+          "subtitle": "Geometría Analítica • Cómo está organizado",
+          "content": "La secuencia está pensada para que cada tema prepare al siguiente. Primero puntos y rectas, donde se aprenden distancia y pendiente, operaciones que se usarán en todos los capítulos posteriores. Luego lugares geométricos y mediatrices, que introducen la idea de caracterizar un conjunto de puntos por una propiedad común en vez de por una fórmula explícita. Después la circunferencia, el lugar geométrico más importante del curso. Y al final, problemas combinados que mezclan todo lo anterior, tal como aparecen en un examen real.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Cada lección de teoría sigue la misma estructura: explicación detallada, ejemplos resueltos paso a paso, consejos de experto, errores comunes a evitar, y ejercicios de práctica en tres niveles de dificultad creciente. Esta repetición no es casual: familiarizarte con el formato te permite concentrar tu energía en el contenido matemático."
+            },
+            {
+              "type": "note",
+              "content": "Estructura recomendada por tema: teoría breve + ejemplo guiado + práctica fácil + práctica media + desafío tipo parcial."
+            }
+          ]
+        },
+        {
+          "title": "Lenguaje y notación",
+          "subtitle": "Geometría Analítica • Convenciones del curso",
+          "content": "A lo largo del curso usaremos la notación estándar de coordenadas cartesianas. Un punto del plano se escribe P = (x, y). La distancia entre dos puntos P₁ y P₂ se denota d(P₁, P₂), o simplemente d. El radio de una circunferencia siempre se denota r > 0, y su centro C = (h, k). Cuando trabajemos con familias de circunferencias usaremos la letra griega λ para el parámetro que varía.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "También usaremos con frecuencia la letra $m$ para la pendiente de una recta, y las letras $A, B, C, D, E, F$ para los coeficientes de ecuaciones generales. Cuando dos rectas distintas aparezcan en un mismo problema, distinguiremos sus pendientes como $m_1$ y $m_2$, y de forma análoga los coeficientes: $A_1, B_1, C_1$ para la primera recta y $A_2, B_2, C_2$ para la segunda."
+            },
+            {
+              "type": "note",
+              "content": "Error común: no confundas la circunferencia con el disco. La circunferencia es únicamente la curva (el borde); el disco es la región interior incluyendo el borde. En este curso, 'circunferencia' se refiere siempre a la curva: sus puntos son exactamente los que satisfacen la ecuación con signo de igualdad."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "lesson_1783453533643_1_36bqb",
+      "title": "Puntos, distancia, pendiente y rectas",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "El plano cartesiano",
+          "subtitle": "Geometría Analítica • Plano cartesiano",
+          "content": "El plano cartesiano es el espacio donde cada punto queda determinado por un par ordenado (x, y). El primer elemento x se llama abscisa y mide la distancia horizontal al eje vertical, con signo positivo hacia la derecha. El segundo elemento y se llama ordenada y mide la distancia vertical al eje horizontal, con signo positivo hacia arriba.",
+          "formulaLatex": "",
+          "proTip": "Antes de resolver cualquier problema de geometría analítica, dibuja un esbozo del plano con los puntos y figuras involucrados.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Los dos ejes dividen el plano en cuatro cuadrantes: Cuadrante I ($x>0, y>0$), Cuadrante II ($x<0, y>0$), Cuadrante III ($x<0, y<0$) y Cuadrante IV ($x>0, y<0$). Identificar en qué cuadrante está un punto es un primer paso útil para verificar la coherencia de tus resultados."
+            }
+          ]
+        },
+        {
+          "title": "Distancia entre dos puntos",
+          "subtitle": "Geometría Analítica • Distancia",
+          "content": "Dados P₁ = (x₁, y₁) y P₂ = (x₂, y₂), su distancia se obtiene del teorema de Pitágoras aplicado al triángulo rectángulo que se forma al trazar segmentos horizontal y vertical entre ellos. El cateto horizontal mide |x₂ − x₁| y el vertical |y₂ − y₁|; la hipotenusa es la distancia buscada.",
+          "formulaLatex": "d(P_1,P_2)=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Como la distancia se obtiene elevando al cuadrado, los signos negativos dentro del radical desaparecen automáticamente: no importa si restamos $P_1$ de $P_2$ o al revés, el resultado es el mismo. Esta fórmula es la base de casi todo lo que sigue: la mediatriz, la circunferencia y las condiciones de tangencia se construyen a partir de ella."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Hallar la distancia entre } A=(1,2) \\text{ y } B=(4,6)",
+              "steps": [
+                {
+                  "title": "Identificar coordenadas",
+                  "text": "Tomamos las coordenadas de A y B.",
+                  "mathContent": "A=(1,2),\\quad B=(4,6)",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Aplicar la fórmula",
+                  "text": "Sustituimos en la fórmula de distancia.",
+                  "mathContent": "d=\\sqrt{(4-1)^2+(6-2)^2}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Calcular",
+                  "text": "Operamos bajo la raíz.",
+                  "mathContent": "d=\\sqrt{9+16}=\\sqrt{25}",
+                  "icon": "check"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "La distancia entre A y B es 5 unidades.",
+                  "mathContent": "d(A,B)=5",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Hallar la distancia entre } C=(-3,5) \\text{ y } D=(2,-7)",
+              "steps": [
+                {
+                  "title": "Restar coordenadas con cuidado",
+                  "text": "Cuidado con los signos negativos.",
+                  "mathContent": "2-(-3)=5,\\quad -7-5=-12",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Aplicar la fórmula",
+                  "text": "Elevamos al cuadrado cada diferencia.",
+                  "mathContent": "d=\\sqrt{5^2+(-12)^2}=\\sqrt{25+144}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "La distancia es 13 unidades.",
+                  "mathContent": "d=\\sqrt{169}=13",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "content": "Error común: al calcular x₂ − x₁, ten cuidado con los signos cuando alguna coordenada es negativa. Escribe el paso completo, por ejemplo $2-(-3)=2+3=5$. Omitir ese paso es la fuente de muchos errores, especialmente bajo presión de un examen cronometrado."
+            }
+          ]
+        },
+        {
+          "title": "Punto medio de un segmento",
+          "subtitle": "Geometría Analítica • Punto medio",
+          "content": "El punto medio M de un segmento con extremos P₁ = (x₁, y₁) y P₂ = (x₂, y₂) tiene coordenadas iguales al promedio de las coordenadas respectivas. Geométricamente, M divide al segmento en dos partes iguales, y los tres puntos son colineales por construcción.",
+          "formulaLatex": "M=\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Punto medio de } A=(-2,4) \\text{ y } B=(6,-8)",
+              "steps": [
+                {
+                  "title": "Promediar x",
+                  "text": "Sumamos las abscisas y dividimos entre 2.",
+                  "mathContent": "\\frac{-2+6}{2}=2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Promediar y",
+                  "text": "Sumamos las ordenadas y dividimos entre 2.",
+                  "mathContent": "\\frac{4+(-8)}{2}=-2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "El punto medio es (2, −2).",
+                  "mathContent": "M=(2,-2)",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{El punto medio es } M=(3,1) \\text{ y un extremo es } A=(-1,5). \\text{Hallar } B",
+              "steps": [
+                {
+                  "title": "Plantear cada coordenada",
+                  "text": "Aplicamos la fórmula del punto medio en x y en y por separado.",
+                  "mathContent": "\\frac{-1+x_2}{2}=3,\\quad \\frac{5+y_2}{2}=1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Despejar",
+                  "text": "Resolvemos cada ecuación lineal.",
+                  "mathContent": "x_2=7,\\quad y_2=-3",
+                  "icon": "check"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "El otro extremo es B = (7, −3).",
+                  "mathContent": "B=(7,-3)",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Pendiente de una recta",
+          "subtitle": "Geometría Analítica • Pendiente",
+          "content": "La pendiente m de una recta que pasa por P₁ y P₂ es el cociente entre el cambio vertical y el cambio horizontal. También se interpreta como la tangente del ángulo de inclinación que forma la recta con el eje x positivo.",
+          "formulaLatex": "m=\\frac{y_2-y_1}{x_2-x_1}\\quad (x_1\\neq x_2)",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "Interpretación de la pendiente: $m>0$ recta creciente, $m<0$ recta decreciente, $m=0$ recta horizontal, $m$ indefinida recta vertical (cuando $x_1=x_2$)."
+            },
+            {
+              "type": "text",
+              "content": "Una propiedad fundamental es la relación entre pendientes de rectas paralelas y perpendiculares. Dos rectas no verticales son paralelas si y solo si tienen la misma pendiente. Son perpendiculares si y solo si el producto de sus pendientes es $-1$. Esta segunda relación se usará constantemente en mediatrices y tangentes."
+            },
+            {
+              "type": "formula",
+              "content": "\\text{Paralelas: } m_1=m_2 \\qquad \\text{Perpendiculares: } m_1\\cdot m_2=-1"
+            },
+            {
+              "type": "example",
+              "content": "\\text{¿Son paralelas, perpendiculares u oblicuas las rectas } AB \\text{ y } CD \\text{, con } A=(1,3), B=(4,9), C=(0,5), D=(2,-1)?",
+              "steps": [
+                {
+                  "title": "Pendiente de AB",
+                  "text": "Aplicamos la fórmula de pendiente.",
+                  "mathContent": "m_1=\\frac{9-3}{4-1}=2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Pendiente de CD",
+                  "text": "Aplicamos la fórmula de pendiente.",
+                  "mathContent": "m_2=\\frac{-1-5}{2-0}=-3",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Comparar",
+                  "text": "Ni son iguales ni su producto es −1.",
+                  "mathContent": "m_1\\cdot m_2=-6\\neq-1,\\ \\ m_1\\neq m_2",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Conclusión",
+                  "text": "Las rectas son oblicuas.",
+                  "mathContent": "",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Ecuaciones de la recta",
+          "subtitle": "Geometría Analítica • Formas de la recta",
+          "content": "Una recta puede expresarse de varias formas equivalentes; cada una es más cómoda según la información disponible. Conocerlas todas y saber pasar de una a otra te permite elegir la más eficiente en cada situación.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Forma punto-pendiente: si conoces la pendiente $m$ y un punto $P_1=(x_1,y_1)$, la ecuación se obtiene despejando de la definición de pendiente."
+            },
+            {
+              "type": "formula",
+              "content": "y-y_1=m(x-x_1)"
+            },
+            {
+              "type": "text",
+              "content": "Forma pendiente-ordenada al origen: al despejar $y$ en la forma anterior obtienes esta, donde $b$ es la intersección con el eje y."
+            },
+            {
+              "type": "formula",
+              "content": "y=mx+b"
+            },
+            {
+              "type": "text",
+              "content": "Forma general: reorganiza todos los términos en un solo lado igualado a cero. Es muy útil en fórmulas de distancia y sistemas de ecuaciones."
+            },
+            {
+              "type": "formula",
+              "content": "Ax+By+C=0 \\quad (A \\text{ y } B \\text{ no ambos nulos})"
+            },
+            {
+              "type": "text",
+              "content": "Forma simétrica o de interceptos: si $a$ es la intersección con el eje x y $b$ con el eje y, la ecuación queda simétrica, muy rápida para trazar la recta a mano."
+            },
+            {
+              "type": "formula",
+              "content": "\\frac{x}{a}+\\frac{y}{b}=1 \\quad (a\\neq0,\\ b\\neq0)"
+            },
+            {
+              "type": "example",
+              "content": "\\text{Recta con intercepto } a=4 \\text{ y } b=-3. \\text{ Forma general}",
+              "steps": [
+                {
+                  "title": "Escribir forma simétrica",
+                  "text": "Sustituimos a y b.",
+                  "mathContent": "\\frac{x}{4}+\\frac{y}{-3}=1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Multiplicar por 12",
+                  "text": "Eliminamos denominadores.",
+                  "mathContent": "3x-4y=12",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Forma general",
+                  "text": "Igualamos a cero.",
+                  "mathContent": "3x-4y-12=0",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Rectas paralelas y perpendiculares a una recta dada",
+          "subtitle": "Geometría Analítica • Paralelismo y perpendicularidad",
+          "content": "Un problema muy frecuente es hallar la recta paralela o perpendicular a una recta dada que pasa por un punto específico. El procedimiento es siempre igual: identificar la pendiente original, calcular la pendiente buscada según la relación correspondiente, y usar la forma punto-pendiente.",
+          "formulaLatex": "",
+          "proTip": "Para obtener la pendiente de una recta en forma general Ax+By+C=0, despeja y: obtendrás m = −A/B. Este atajo evita operaciones innecesarias y reduce errores de signo.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Paralela a } y=3x-5 \\text{ que pasa por } (1,7)",
+              "steps": [
+                {
+                  "title": "Pendiente original",
+                  "text": "La recta dada tiene pendiente 3.",
+                  "mathContent": "m=3",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Misma pendiente",
+                  "text": "La paralela usa la misma pendiente.",
+                  "mathContent": "y-7=3(x-1)",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "Simplificamos.",
+                  "mathContent": "y=3x+4",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Perpendicular a } 2x-4y+1=0 \\text{ que pasa por } (2,-1)",
+              "steps": [
+                {
+                  "title": "Pendiente de la recta dada",
+                  "text": "Despejamos y.",
+                  "mathContent": "y=\\tfrac{1}{2}x+\\tfrac14 \\Rightarrow m_1=\\tfrac12",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Pendiente perpendicular",
+                  "text": "Tomamos el recíproco negativo.",
+                  "mathContent": "m_2=-\\frac{1}{m_1}=-2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Ecuación final",
+                  "text": "Usamos punto-pendiente.",
+                  "mathContent": "y+1=-2(x-2)\\Rightarrow y=-2x+3",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Distancia de un punto a una recta",
+          "subtitle": "Geometría Analítica • Distancia punto-recta",
+          "content": "Dado el punto P₀ = (x₀, y₀) y la recta ℓ: Ax + By + C = 0, la distancia entre P₀ y ℓ es la longitud del segmento perpendicular desde P₀ hasta ℓ. Esta fórmula es fundamental en el estudio de tangentes, ya que la condición de que una recta sea tangente a una circunferencia de radio r es precisamente que d(centro, recta) = r.",
+          "formulaLatex": "d(P_0,\\ell)=\\frac{|Ax_0+By_0+C|}{\\sqrt{A^2+B^2}}",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Distancia de } P_0=(3,4) \\text{ a } \\ell: 3x+4y-25=0",
+              "steps": [
+                {
+                  "title": "Sustituir",
+                  "text": "Reemplazamos en la fórmula.",
+                  "mathContent": "d=\\frac{|3(3)+4(4)-25|}{\\sqrt{3^2+4^2}}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "El punto está sobre la recta.",
+                  "mathContent": "d=\\frac{|0|}{5}=0",
+                  "icon": "check"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Distancia de } Q=(1,-2) \\text{ a } 5x-12y+3=0",
+              "steps": [
+                {
+                  "title": "Sustituir y calcular",
+                  "text": "Aplicamos la fórmula directamente.",
+                  "mathContent": "d=\\frac{|5(1)-12(-2)+3|}{\\sqrt{25+144}}=\\frac{32}{13}",
+                  "icon": "fx"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "lesson_1783453533643_2_1ahp8",
+      "title": "Práctica: Rectas — Nivel fácil",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_2_0_tl9ir",
+          "questionText": "Calcula la distancia entre A y B.",
+          "questionLatex": "A=(0,0),\\ B=(5,12)",
+          "options": [
+            "13",
+            "17",
+            "7",
+            "√119"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "d=\\sqrt{5^2+12^2}=\\sqrt{169}=13",
+          "explanationSteps": [
+            {
+              "title": "Aplicar fórmula",
+              "text": "Usamos distancia entre dos puntos.",
+              "mathContent": "d=\\sqrt{25+144}",
+              "icon": "fx"
+            },
+            {
+              "title": "Resultado",
+              "text": "La distancia es 13.",
+              "mathContent": "d=13",
+              "icon": "star"
+            }
+          ],
+          "category": "Distancia entre puntos",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_2_1_xl9e8",
+          "questionText": "Halla el punto medio del segmento con esos extremos.",
+          "questionLatex": "(-4,6) \\text{ y } (2,-2)",
+          "options": [
+            "(-1, 2)",
+            "(1, -2)",
+            "(-3, 4)",
+            "(3, -4)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "M=\\left(\\frac{-4+2}{2},\\frac{6-2}{2}\\right)=(-1,2)",
+          "explanationSteps": [],
+          "category": "Punto medio",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_2_2_3a032",
+          "questionText": "Determina la pendiente de la recta que pasa por esos puntos.",
+          "questionLatex": "(1,3) \\text{ y } (4,9)",
+          "options": [
+            "2",
+            "3",
+            "1/2",
+            "-2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "m=\\frac{9-3}{4-1}=2",
+          "explanationSteps": [],
+          "category": "Pendiente",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_2_3_qoblx",
+          "questionText": "Escribe en forma pendiente-ordenada la recta que pasa por (2, 5) con pendiente −1.",
+          "questionLatex": "",
+          "options": [
+            "y = -x + 7",
+            "y = -x + 3",
+            "y = x + 7",
+            "y = -x - 7"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "y-5=-1(x-2)\\Rightarrow y=-x+7",
+          "explanationSteps": [],
+          "category": "Ecuaciones de la recta",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_2_4_hs98l",
+          "questionText": "¿Son paralelas las rectas y = 2x − 3 e y = 2x + 7?",
+          "questionLatex": "",
+          "options": [
+            "Sí, ambas tienen pendiente 2",
+            "No, sus pendientes son distintas",
+            "Son perpendiculares",
+            "Son la misma recta"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Ambas tienen } m=2 \\text{, por lo tanto son paralelas.}",
+          "explanationSteps": [],
+          "category": "Rectas paralelas",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_3_unpww",
+      "title": "Práctica: Rectas — Nivel medio",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_3_0_nby0f",
+          "questionText": "Encuentra la ecuación de la recta perpendicular a y=(1/3)x+2 que pasa por (1,4).",
+          "questionLatex": "",
+          "options": [
+            "y = -3x + 7",
+            "y = 3x + 1",
+            "y = -3x - 7",
+            "y = (1/3)x + 4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "m_1=\\tfrac13 \\Rightarrow m_2=-3;\\quad y-4=-3(x-1)\\Rightarrow y=-3x+7",
+          "explanationSteps": [],
+          "category": "Perpendicularidad",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_3_1_zju2q",
+          "questionText": "La distancia de P=(a,0) a la recta 4x−3y+1=0 es 2. Halla los valores de a.",
+          "questionLatex": "",
+          "options": [
+            "a = 9/4 o a = -11/4",
+            "a = 9/4 solamente",
+            "a = 2 o a = -2",
+            "a = -9/4 o a = 11/4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\frac{|4a+1|}{5}=2\\Rightarrow |4a+1|=10\\Rightarrow a=\\tfrac94 \\text{ o } a=-\\tfrac{11}{4}",
+          "explanationSteps": [],
+          "category": "Distancia punto-recta",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_3_2_hke8r",
+          "questionText": "Un extremo de un segmento es A=(3,−1) y su punto medio es M=(0,4). Halla el otro extremo.",
+          "questionLatex": "",
+          "options": [
+            "(-3, 9)",
+            "(3, -9)",
+            "(-3, -9)",
+            "(6, -6)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "B=2M-A=(2(0)-3,\\ 2(4)-(-1))=(-3,9)",
+          "explanationSteps": [],
+          "category": "Punto medio",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_3_3_649gm",
+          "questionText": "Escribe en forma general la recta con interceptos a=3 y b=−6.",
+          "questionLatex": "",
+          "options": [
+            "2x - y - 6 = 0",
+            "2x + y - 6 = 0",
+            "x - 2y - 6 = 0",
+            "2x - y + 6 = 0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\frac{x}{3}+\\frac{y}{-6}=1 \\Rightarrow 2x-y=6 \\Rightarrow 2x-y-6=0",
+          "explanationSteps": [],
+          "category": "Ecuaciones de la recta",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_3_4_tvn8n",
+          "questionText": "Halla la recta que pasa por la intersección de y=x+1 e y=−x+5, con pendiente 3.",
+          "questionLatex": "",
+          "options": [
+            "y = 3x - 3",
+            "y = 3x + 3",
+            "y = 3x - 6",
+            "y = -3x + 3"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Intersección: } (2,3).\\quad y-3=3(x-2)\\Rightarrow y=3x-3",
+          "explanationSteps": [
+            {
+              "title": "Hallar intersección",
+              "text": "Igualamos las dos rectas.",
+              "mathContent": "x+1=-x+5\\Rightarrow x=2,\\ y=3",
+              "icon": "fx"
+            },
+            {
+              "title": "Aplicar punto-pendiente",
+              "text": "Usamos el punto (2,3) y m=3.",
+              "mathContent": "y-3=3(x-2)",
+              "icon": "fx"
+            },
+            {
+              "title": "Resultado",
+              "text": "Simplificamos.",
+              "mathContent": "y=3x-3",
+              "icon": "star"
+            }
+          ],
+          "category": "Ecuaciones de la recta",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_4_968o0",
+      "title": "Práctica: Rectas — Nivel avanzado",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_4_0_sofor",
+          "questionText": "Halla el punto de la recta y=2x+1 más cercano al origen.",
+          "questionLatex": "",
+          "options": [
+            "(-2/5, 1/5)",
+            "(2/5, -1/5)",
+            "(-1/2, 0)",
+            "(0, 1)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Perpendicular por el origen: } y=-\\tfrac12 x. \\text{Intersección: } x=-\\tfrac25,\\ y=\\tfrac15",
+          "explanationSteps": [],
+          "category": "Problemas combinados",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_4_1_ny4ys",
+          "questionText": "Los puntos (0,0), (2,4) y (−1,−2) son colineales.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Pendiente desde (0,0): } \\tfrac{4}{2}=2 \\text{ y } \\tfrac{-2}{-1}=2. \\text{ Misma pendiente} \\Rightarrow \\text{colineales.}",
+          "category": "Colinealidad",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_4_2_z6ehb",
+          "questionText": "A=(1,1), B=(4,2), C=(3,5) son tres vértices de un paralelogramo ABCD (AB ∥ DC). Halla D.",
+          "questionLatex": "",
+          "options": [
+            "(0, 4)",
+            "(2, 4)",
+            "(0, 6)",
+            "(6, 4)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Diagonales de un paralelogramo comparten punto medio: }D=2\\cdot\\text{punto medio}(AC)-B=(0,4)",
+          "explanationSteps": [],
+          "category": "Problemas combinados",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_4_3_fjndo",
+          "questionText": "Las rectas ℓ₁: 2x−y+k=0 y ℓ₂: 4x−2y+3=0 son paralelas. ¿Para qué valores de k?",
+          "questionLatex": "",
+          "options": [
+            "Para cualquier k, excepto k = 3/2 (donde serían la misma recta)",
+            "Solo para k = 3/2",
+            "Solo para k = 0",
+            "No existe ningún valor de k"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\ell_2 \\text{ equivale a } 2x-y+\\tfrac32=0. \\text{La pendiente de ambas es siempre } 2, \\text{así que son paralelas para cualquier } k\\neq\\tfrac32 \\text{(si } k=\\tfrac32 \\text{ serían la misma recta).}",
+          "explanationSteps": [],
+          "category": "Rectas paralelas",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_4_4_bbrg0",
+          "questionText": "Una recta tiene pendiente 3/4. La distancia entre sus interceptos con los ejes es 5. Halla su ecuación.",
+          "questionLatex": "",
+          "options": [
+            "3x - 4y - 12 = 0 (o 3x - 4y + 12 = 0)",
+            "4x - 3y - 12 = 0",
+            "3x - 4y - 5 = 0",
+            "3x + 4y - 12 = 0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Con } a=4,\\ b=-3 \\text{ (o } a=-4,\\ b=3\\text{): } y=\\tfrac34x-3 \\Rightarrow 3x-4y-12=0",
+          "explanationSteps": [],
+          "category": "Problemas combinados",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_5_64ur3",
+      "title": "Mediatrices y lugares geométricos",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "Concepto de lugar geométrico",
+          "subtitle": "Geometría Analítica • Lugares geométricos",
+          "content": "Un lugar geométrico es el conjunto de todos los puntos del plano que satisfacen una determinada propiedad o condición. La estrategia es siempre la misma: se toma un punto genérico P = (x, y), se escribe la condición que debe cumplir en lenguaje algebraico, y se simplifica hasta obtener una ecuación reconocible.",
+          "formulaLatex": "",
+          "proTip": "Siempre empieza un lugar geométrico con la frase: 'Sea P=(x,y) un punto que satisface...'. Esto evita confundir las coordenadas del punto variable con las de los puntos fijos del problema.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, la condición 'distancia al origen igual a r' produce $x^2+y^2=r^2$, que es la circunferencia de radio r centrada en el origen. Esa misma idea recorre todo este capítulo y reaparecerá con más detalle al estudiar la circunferencia."
+            },
+            {
+              "type": "note",
+              "content": "Esquema general para cualquier lugar geométrico: (1) nombrar el punto genérico P=(x,y), (2) escribir la condición en términos de distancias u otras propiedades, (3) desarrollar algebraicamente y simplificar."
+            }
+          ]
+        },
+        {
+          "title": "La mediatriz de un segmento",
+          "subtitle": "Geometría Analítica • Mediatriz",
+          "content": "La mediatriz de un segmento AB es el lugar geométrico de todos los puntos del plano equidistantes de A y de B: P pertenece a la mediatriz si y solo si d(P,A) = d(P,B). Geométricamente, es una recta que pasa por el punto medio de AB y es perpendicular a él; esta propiedad doble sirve como método alternativo para hallar su ecuación.",
+          "formulaLatex": "P\\in\\text{mediatriz}(AB) \\iff d(P,A)=d(P,B)",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Mediatriz del segmento } A=(1,3),\\ B=(5,7)",
+              "steps": [
+                {
+                  "title": "Plantear la condición",
+                  "text": "Igualamos las distancias al cuadrado.",
+                  "mathContent": "(x-1)^2+(y-3)^2=(x-5)^2+(y-7)^2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Expandir y simplificar",
+                  "text": "Los términos cuadráticos se cancelan.",
+                  "mathContent": "-2x+10-6y=-10x-14y+74",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Despejar",
+                  "text": "Agrupamos términos semejantes.",
+                  "mathContent": "8x+8y=64",
+                  "icon": "check"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "La mediatriz es la recta x+y=8.",
+                  "mathContent": "x+y=8",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "content": "Verificación cruzada: la recta obtenida debe pasar por el punto medio de AB y su pendiente debe ser el negativo recíproco de la pendiente de AB. En el ejemplo, el punto medio es (3,5) — que sí satisface x+y=8 — y $m_{AB}=1$ mientras que la mediatriz tiene pendiente $-1$, así que $1\\cdot(-1)=-1$. ✓"
+            }
+          ]
+        },
+        {
+          "title": "Caracterización algebraica y aplicaciones del punto medio",
+          "subtitle": "Geometría Analítica • Baricentro y paralelogramos",
+          "content": "Dados A=(a₁,a₂) y B=(b₁,b₂), la condición d(P,A)=d(P,B) al desarrollarse produce siempre una ecuación lineal en x e y, nunca cuadrática, porque los términos x² y y² se cancelan al restar los dos lados. Esto confirma, de forma algebraica, que la mediatriz es siempre una recta.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "El punto medio tiene aplicaciones más allá de la mediatriz. El baricentro (centroide) de un triángulo con vértices A, B, C es el punto donde se cortan las tres medianas, y sus coordenadas son el promedio de las tres coordenadas correspondientes."
+            },
+            {
+              "type": "formula",
+              "content": "G=\\left(\\frac{x_1+x_2+x_3}{3},\\ \\frac{y_1+y_2+y_3}{3}\\right)"
+            },
+            {
+              "type": "example",
+              "content": "\\text{Baricentro de } A=(0,0),\\ B=(6,0),\\ C=(3,9)",
+              "steps": [
+                {
+                  "title": "Promediar",
+                  "text": "Sumamos las tres coordenadas x y las tres y.",
+                  "mathContent": "G=\\left(\\tfrac{0+6+3}{3},\\tfrac{0+0+9}{3}\\right)",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "El baricentro es (3, 3).",
+                  "mathContent": "G=(3,3)",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "content": "Otra aplicación: en todo paralelogramo, las diagonales se cortan en su punto medio. Esto permite verificar si un cuadrilátero es un paralelogramo comprobando que los puntos medios de sus dos diagonales coinciden en un único punto."
+            }
+          ]
+        },
+        {
+          "title": "Otros lugares geométricos relevantes",
+          "subtitle": "Geometría Analítica • Bisectriz y circunferencia",
+          "content": "Además de la mediatriz, existen otros lugares geométricos frecuentes que conviene reconocer de inmediato. La bisectriz de un ángulo es el lugar geométrico de los puntos equidistantes de los dos lados del ángulo.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Si los lados de un ángulo son las rectas ℓ₁ y ℓ₂, un punto P=(x,y) pertenece a la bisectriz si $d(P,\\ell_1)=d(P,\\ell_2)$. Usando la fórmula de distancia punto-recta, esto produce dos rectas (las bisectrices del par de ángulos opuestos por el vértice)."
+            },
+            {
+              "type": "text",
+              "content": "La circunferencia es el lugar geométrico de los puntos a distancia constante r de un punto fijo C. Su estudio completo ocupa el próximo capítulo, pero la idea es la misma: tomar P=(x,y), exigir d(P,C)=r, y desarrollar algebraicamente hasta obtener la ecuación de la curva."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "lesson_1783453533643_6_if6gx",
+      "title": "Práctica: Mediatrices — Nivel fácil",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_6_0_rs0l2",
+          "questionText": "Halla la ecuación de la mediatriz del segmento con esos extremos.",
+          "questionLatex": "(0,0) \\text{ y } (4,0)",
+          "options": [
+            "x = 2",
+            "x = 4",
+            "y = 2",
+            "x + y = 2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Segmento horizontal de longitud 4; su mediatriz es } x=2",
+          "explanationSteps": [],
+          "category": "Mediatriz",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_6_1_lo76k",
+          "questionText": "Halla la ecuación de la mediatriz del segmento con esos extremos.",
+          "questionLatex": "(-3,2) \\text{ y } (1,6)",
+          "options": [
+            "x + y = 3",
+            "x - y = 3",
+            "x + y = -3",
+            "2x + y = 3"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "(x+3)^2+(y-2)^2=(x-1)^2+(y-6)^2 \\Rightarrow 8x+8y=24 \\Rightarrow x+y=3",
+          "explanationSteps": [],
+          "category": "Mediatriz",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_6_2_ycppk",
+          "questionText": "Calcula el baricentro del triángulo con esos vértices.",
+          "questionLatex": "(1,1),\\ (5,1),\\ (3,7)",
+          "options": [
+            "(3, 3)",
+            "(2, 3)",
+            "(3, 2)",
+            "(9, 9)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "G=\\left(\\tfrac{1+5+3}{3},\\tfrac{1+1+7}{3}\\right)=(3,3)",
+          "explanationSteps": [],
+          "category": "Baricentro",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_7_a9dty",
+      "title": "Práctica: Mediatrices — Nivel medio",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_7_0_zpmsz",
+          "questionText": "Un punto P=(x,y) es equidistante de A=(2,0) y B=(0,4). Halla el lugar geométrico de P.",
+          "questionLatex": "",
+          "options": [
+            "x - 2y + 3 = 0",
+            "x + 2y - 3 = 0",
+            "2x - y + 3 = 0",
+            "x - 2y - 3 = 0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "(x-2)^2+y^2=x^2+(y-4)^2 \\Rightarrow -4x+4=-8y+16 \\Rightarrow x-2y+3=0",
+          "explanationSteps": [],
+          "category": "Lugares geométricos",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_7_1_4167b",
+          "questionText": "Encuentra el punto de la mediatriz de A=(1,1) y B=(7,5) que está sobre el eje x.",
+          "questionLatex": "",
+          "options": [
+            "(6, 0)",
+            "(4, 0)",
+            "(2, 0)",
+            "(0, 0)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Mediatriz: pasa por (4,3) con pendiente } -\\tfrac32. \\text{Con } y=0 \\Rightarrow x=6",
+          "explanationSteps": [
+            {
+              "title": "Punto medio y pendiente perpendicular",
+              "text": "Hallamos el punto medio y la pendiente perpendicular a AB.",
+              "mathContent": "M=(4,3),\\ m_{AB}=\\tfrac23 \\Rightarrow m_\\perp=-\\tfrac32",
+              "icon": "fx"
+            },
+            {
+              "title": "Ecuación de la mediatriz",
+              "text": "Usamos punto-pendiente.",
+              "mathContent": "y-3=-\\tfrac32(x-4)",
+              "icon": "fx"
+            },
+            {
+              "title": "Evaluar en y=0",
+              "text": "Despejamos x.",
+              "mathContent": "x=6",
+              "icon": "star"
+            }
+          ],
+          "category": "Mediatriz",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_7_2_bhkpe",
+          "questionText": "Los puntos (0,0), (4,0), (5,3) y (1,3) son vértices de un paralelogramo.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Punto medio de ambas diagonales es } (2.5,\\ 1.5) \\Rightarrow \\text{sí es un paralelogramo.}",
+          "category": "Punto medio",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_8_rcug3",
+      "title": "Práctica: Mediatrices — Nivel avanzado",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_8_0_bkqwl",
+          "questionText": "Halla el lugar geométrico de los puntos cuya suma de distancias a A=(−3,0) y B=(3,0) es 8.",
+          "questionLatex": "",
+          "options": [
+            "x²/16 + y²/7 = 1",
+            "x²/16 + y²/9 = 1",
+            "x²/7 + y²/16 = 1",
+            "x²/9 + y²/16 = 1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Es una elipse con } 2a=8\\Rightarrow a=4,\\ c=3,\\ b^2=a^2-c^2=7 \\Rightarrow \\frac{x^2}{16}+\\frac{y^2}{7}=1",
+          "explanationSteps": [],
+          "category": "Lugares geométricos avanzados",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_8_1_3w8sp",
+          "questionText": "Las mediatrices de dos lados de un triángulo son x+y=4 y x−y=0. Halla el circuncentro.",
+          "questionLatex": "",
+          "options": [
+            "(2, 2)",
+            "(4, 0)",
+            "(0, 4)",
+            "(2, -2)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Resolviendo el sistema: } x=y,\\ x+y=4 \\Rightarrow x=y=2",
+          "explanationSteps": [],
+          "category": "Circuncentro",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_8_2_ulp0e",
+          "questionText": "Un punto P se mueve de modo que su distancia a (3,0) es el doble de su distancia a (0,0). Halla la ecuación.",
+          "questionLatex": "",
+          "options": [
+            "(x+1)² + y² = 4",
+            "(x-1)² + y² = 4",
+            "x² + (y+1)² = 4",
+            "(x+1)² + y² = 2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\sqrt{(x-3)^2+y^2}=2\\sqrt{x^2+y^2} \\Rightarrow x^2+y^2+2x-3=0 \\Rightarrow (x+1)^2+y^2=4",
+          "explanationSteps": [],
+          "category": "Lugares geométricos avanzados",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_9_0x5ub",
+      "title": "Circunferencia: centro, radio y forma general",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "Definición geométrica y ecuación canónica",
+          "subtitle": "Geometría Analítica • Definición de circunferencia",
+          "content": "Una circunferencia es el lugar geométrico de todos los puntos del plano que se encuentran a una distancia fija r > 0 de un punto fijo C llamado centro. El proceso para hallar su ecuación es el habitual para lugares geométricos: tomamos P=(x,y) genérico, exigimos d(P,C)=r, y elevamos al cuadrado para eliminar la raíz.",
+          "formulaLatex": "(x-h)^2+(y-k)^2=r^2",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "La forma resultante $(x-h)^2+(y-k)^2=r^2$ se llama ecuación canónica o estándar. A partir de ella se leen directamente el centro $C=(h,k)$ y el radio $r$ sin ningún cálculo adicional. Cuando el centro está en el origen, la ecuación se reduce a $x^2+y^2=r^2$."
+            },
+            {
+              "type": "note",
+              "content": "Lectura directa de $(x-h)^2+(y-k)^2=r^2$: centro $C=(h,k)$, radio $r=\\sqrt{\\text{lado derecho}}$. Atención: si la ecuación dice $(x+3)^2$, significa $h=-3$."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Identificar centro y radio de } (x-2)^2+(y+5)^2=49",
+              "steps": [
+                {
+                  "title": "Reescribir",
+                  "text": "Expresamos cada término como resta.",
+                  "mathContent": "(x-2)^2+(y-(-5))^2=7^2",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Leer centro y radio",
+                  "text": "Comparamos con la forma canónica.",
+                  "mathContent": "C=(2,-5),\\quad r=7",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Circunferencia con centro } (-3,4) \\text{ y radio } 6",
+              "steps": [
+                {
+                  "title": "Sustituir en la forma canónica",
+                  "text": "Reemplazamos h, k y r.",
+                  "mathContent": "(x-(-3))^2+(y-4)^2=6^2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "Simplificamos.",
+                  "mathContent": "(x+3)^2+(y-4)^2=36",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "content": "Error común: al identificar el centro, no confundas el signo. Si la ecuación tiene $(x+3)^2$, el valor de h es −3, no +3. Para verificar, sustituye las coordenadas del centro: el lado izquierdo debe dar cero."
+            }
+          ]
+        },
+        {
+          "title": "La forma general y completar el cuadrado",
+          "subtitle": "Geometría Analítica • Forma general",
+          "content": "Si expandimos la ecuación canónica obtenemos la forma general, donde los coeficientes de x² e y² son iguales a 1 y no hay término cruzado xy. Los coeficientes D, E, F se relacionan con el centro y el radio por D=−2h, E=−2k, F=h²+k²−r².",
+          "formulaLatex": "(D/2)^2+(E/2)^2-F>0 \\ \\text{(condición de circunferencia real)}",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "x^2+y^2+Dx+Ey+F=0"
+            },
+            {
+              "type": "text",
+              "content": "Dado D, E, F, podemos recuperar el centro y el radio completando el cuadrado. La técnica: (1) agrupar términos en x, en y, y la constante aparte; (2) completar el cuadrado en x sumando y restando $(D/2)^2$; (3) hacer lo mismo en y con $(E/2)^2$; (4) reescribir cada grupo como cuadrado perfecto."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Centro y radio de } x^2+y^2-6x+4y-3=0",
+              "steps": [
+                {
+                  "title": "Agrupar",
+                  "text": "Separamos términos en x, en y y la constante.",
+                  "mathContent": "(x^2-6x)+(y^2+4y)=3",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Completar el cuadrado",
+                  "text": "Sumamos 9 y 4 a ambos lados.",
+                  "mathContent": "(x^2-6x+9)+(y^2+4y+4)=3+9+4",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Forma canónica",
+                  "text": "Reescribimos como cuadrados perfectos.",
+                  "mathContent": "(x-3)^2+(y+2)^2=16",
+                  "icon": "check"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "Centro (3,−2), radio 4.",
+                  "mathContent": "C=(3,-2),\\ r=4",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{¿Es } 2x^2+2y^2-8x+12y+10=0 \\text{ una circunferencia?}",
+              "steps": [
+                {
+                  "title": "Normalizar",
+                  "text": "Dividimos todo entre 2 (coeficiente de x² debe ser 1).",
+                  "mathContent": "x^2+y^2-4x+6y+5=0",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Completar el cuadrado",
+                  "text": "Sumamos 4 y 9.",
+                  "mathContent": "(x-2)^2+(y+3)^2=-5+4+9=8",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Verificar",
+                  "text": "8 es positivo, así que sí es una circunferencia real.",
+                  "mathContent": "r^2=8>0",
+                  "icon": "check"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "Centro (2,−3), radio 2√2.",
+                  "mathContent": "C=(2,-3),\\ r=2\\sqrt2",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Casos especiales",
+          "subtitle": "Geometría Analítica • Circunferencia degenerada",
+          "content": "Al completar el cuadrado pueden aparecer dos casos degenerados que conviene reconocer de inmediato: si el resultado es (x−h)²+(y−k)²=0, la única solución es el punto (h,k) — la 'circunferencia' degenera en un punto de radio cero. Si el resultado es (x−h)²+(y−k)²=c con c<0, el conjunto solución es vacío, pues una suma de cuadrados nunca puede ser negativa.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "Clasificación según $r^2=(D/2)^2+(E/2)^2-F$: si $r^2>0$ → circunferencia real; si $r^2=0$ → un solo punto; si $r^2<0$ → conjunto vacío (circunferencia imaginaria)."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "lesson_1783453533643_10_syl5n",
+      "title": "Práctica: Circunferencia — Nivel fácil",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_10_0_ew5j8",
+          "questionText": "Escribe la ecuación canónica de la circunferencia con C=(0,0) y r=7.",
+          "questionLatex": "",
+          "options": [
+            "x² + y² = 49",
+            "x² + y² = 7",
+            "(x)² + (y)² = 14",
+            "x² + y² = 14"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "x^2+y^2=7^2=49",
+          "explanationSteps": [],
+          "category": "Ecuación canónica",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_10_1_jpa5d",
+          "questionText": "Identifica el centro y radio de (x−4)²+(y+1)²=25.",
+          "questionLatex": "",
+          "options": [
+            "Centro (4, -1), radio 5",
+            "Centro (-4, 1), radio 5",
+            "Centro (4, 1), radio 25",
+            "Centro (4, -1), radio 25"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "C=(4,-1),\\ r=\\sqrt{25}=5",
+          "explanationSteps": [],
+          "category": "Ecuación canónica",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_10_2_argr7",
+          "questionText": "Escribe la ecuación de la circunferencia con C=(−2,3) y r=√10.",
+          "questionLatex": "",
+          "options": [
+            "(x+2)² + (y-3)² = 10",
+            "(x-2)² + (y+3)² = 10",
+            "(x+2)² + (y-3)² = √10",
+            "(x-2)² + (y-3)² = 10"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "(x-(-2))^2+(y-3)^2=(\\sqrt{10})^2=10",
+          "explanationSteps": [],
+          "category": "Ecuación canónica",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_11_nannn",
+      "title": "Práctica: Circunferencia — Nivel medio",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_11_0_feefl",
+          "questionText": "Pasa a forma canónica y halla centro y radio de x²+y²+4x−8y+11=0.",
+          "questionLatex": "",
+          "options": [
+            "(x+2)² + (y-4)² = 9, centro (-2,4), radio 3",
+            "(x+2)² + (y-4)² = 11, centro (-2,4), radio √11",
+            "(x-2)² + (y+4)² = 9, centro (2,-4), radio 3",
+            "(x+2)² + (y-4)² = 20, centro (-2,4), radio √20"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "(x^2+4x+4)+(y^2-8y+16)=-11+4+16=9 \\Rightarrow (x+2)^2+(y-4)^2=9",
+          "explanationSteps": [],
+          "category": "Completar el cuadrado",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_11_1_wrtna",
+          "questionText": "Determina qué es x²+y²−2x−4y+5=0.",
+          "questionLatex": "",
+          "options": [
+            "Un punto: (1, 2)",
+            "Una circunferencia de radio 1",
+            "El conjunto vacío",
+            "Una circunferencia de radio 5"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "(x-1)^2+(y-2)^2=-5+1+4=0 \\Rightarrow \\text{radio } 0 \\text{, es el punto } (1,2)",
+          "explanationSteps": [],
+          "category": "Casos especiales",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_11_2_hwrbg",
+          "questionText": "La circunferencia pasa por (0,0) y tiene centro (3,4). Halla su ecuación.",
+          "questionLatex": "",
+          "options": [
+            "(x-3)² + (y-4)² = 25",
+            "(x-3)² + (y-4)² = 5",
+            "(x+3)² + (y+4)² = 25",
+            "(x-3)² + (y-4)² = 49"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "r=d((3,4),(0,0))=\\sqrt{9+16}=5 \\Rightarrow (x-3)^2+(y-4)^2=25",
+          "explanationSteps": [],
+          "category": "Ecuación canónica",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_12_cdy03",
+      "title": "Práctica: Circunferencia — Nivel avanzado",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_12_0_0a9u1",
+          "questionText": "Halla la circunferencia con centro en y=2x, radio 5, que pasa por (1,0).",
+          "questionLatex": "",
+          "options": [
+            "(x+2)² + (y+4)² = 25 (u otra: (x-2.4)² + (y-4.8)² = 25)",
+            "(x-2)² + (y-4)² = 25",
+            "(x+1)² + (y+2)² = 25",
+            "(x-1)² + (y-2)² = 25"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Centro } (h,2h): (h-1)^2+4h^2=25 \\Rightarrow 5h^2-2h-24=0 \\Rightarrow h=-2 \\text{ o } h=2.4",
+          "explanationSteps": [
+            {
+              "title": "Plantear la ecuación",
+              "text": "El centro está sobre y=2x y dista 5 de (1,0).",
+              "mathContent": "(h-1)^2+(2h)^2=25",
+              "icon": "fx"
+            },
+            {
+              "title": "Resolver la cuadrática",
+              "text": "Aplicamos la fórmula general.",
+              "mathContent": "5h^2-2h-24=0 \\Rightarrow h=-2 \\text{ o } h=2.4",
+              "icon": "chart"
+            },
+            {
+              "title": "Dos soluciones válidas",
+              "text": "Ambas cumplen la condición.",
+              "mathContent": "(x+2)^2+(y+4)^2=25 \\text{ o } (x-2.4)^2+(y-4.8)^2=25",
+              "icon": "star"
+            }
+          ],
+          "category": "Familias con condición",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_12_1_mgbkj",
+          "questionText": "Determina para qué valores de k la ecuación x²+y²+4x−2y+k=0 es una circunferencia real.",
+          "questionLatex": "",
+          "options": [
+            "k < 5",
+            "k > 5",
+            "k < 4",
+            "k ≤ 5"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "(D/2)^2+(E/2)^2-F>0 \\Rightarrow 4+1-k>0 \\Rightarrow k<5",
+          "explanationSteps": [],
+          "category": "Casos especiales",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_12_2_blr70",
+          "questionText": "Una circunferencia tiene como diámetro el segmento de extremos A=(1,3) y B=(5,7). Halla su ecuación.",
+          "questionLatex": "",
+          "options": [
+            "(x-3)² + (y-5)² = 8",
+            "(x-3)² + (y-5)² = 32",
+            "(x-3)² + (y-5)² = 4",
+            "(x-1)² + (y-3)² = 8"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Centro} = \\text{punto medio} = (3,5). \\ r=\\tfrac12 d(A,B)=\\tfrac12\\sqrt{32}=2\\sqrt2 \\Rightarrow r^2=8",
+          "explanationSteps": [],
+          "category": "Circunferencia y diámetro",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_13_hu1f5",
+      "title": "Circunferencia por tres puntos y familias",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "Unicidad: la circunferencia por tres puntos",
+          "subtitle": "Geometría Analítica • Tres puntos",
+          "content": "Por dos puntos pasan infinitas circunferencias. Por tres puntos no colineales pasa exactamente una. La demostración se basa en las mediatrices: el centro de cualquier circunferencia que pase por dos puntos debe estar sobre su mediatriz, porque el centro es equidistante de ambos. Con tres puntos tenemos dos mediatrices distintas que, si los puntos no son colineales, se cortan en exactamente un punto: ese es el centro de la única circunferencia buscada.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "La condición 'tres puntos no colineales' es esencial. Antes de intentar hallar la circunferencia, verifica que los tres puntos no pertenezcan a una misma recta comprobando que la pendiente de AB es diferente a la de AC. Si son colineales, las mediatrices resultan paralelas y no hay circunferencia que los contenga."
+            }
+          ]
+        },
+        {
+          "title": "Método sistemático con la forma general",
+          "subtitle": "Geometría Analítica • Sistema de ecuaciones",
+          "content": "La forma general x²+y²+Dx+Ey+F=0 tiene tres coeficientes desconocidos D, E y F. Si tres puntos deben satisfacerla, se obtiene un sistema de tres ecuaciones lineales en tres incógnitas, ya que los términos x² e y² se calculan numéricamente al sustituir cada punto. Resolver ese sistema da los coeficientes exactos de la circunferencia buscada.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Circunferencia por } P_1=(1,0),\\ P_2=(0,1),\\ P_3=(-1,0)",
+              "steps": [
+                {
+                  "title": "Sustituir cada punto",
+                  "text": "Obtenemos un sistema de 3 ecuaciones.",
+                  "mathContent": "D+F=-1,\\quad E+F=-1,\\quad -D+F=-1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Resolver el sistema",
+                  "text": "Sumando la primera y la tercera.",
+                  "mathContent": "2F=-2 \\Rightarrow F=-1,\\ D=0,\\ E=0",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "La circunferencia es la unitaria.",
+                  "mathContent": "x^2+y^2=1,\\quad C=(0,0),\\ r=1",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Circunferencia por } A=(2,0),\\ B=(0,4),\\ C=(3,3)",
+              "steps": [
+                {
+                  "title": "Plantear el sistema",
+                  "text": "Sustituimos cada punto en la forma general.",
+                  "mathContent": "2D+F=-4,\\quad 4E+F=-16,\\quad 3D+3E+F=-18",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Eliminar F",
+                  "text": "Restamos pares de ecuaciones.",
+                  "mathContent": "D+3E=-14,\\quad 3D-E=-2",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Resolver",
+                  "text": "Obtenemos D=-2, E=-4, F=0.",
+                  "mathContent": "D=-2,\\ E=-4,\\ F=0",
+                  "icon": "check"
+                },
+                {
+                  "title": "Forma canónica",
+                  "text": "Completamos el cuadrado.",
+                  "mathContent": "(x-1)^2+(y-2)^2=5",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Método de las mediatrices",
+          "subtitle": "Geometría Analítica • Método geométrico alternativo",
+          "content": "Un método alternativo, más geométrico, consiste en hallar las mediatrices de dos de los segmentos formados por los tres puntos, y resolver el sistema para hallar el centro. Una vez conocido el centro, el radio se calcula como la distancia a cualquiera de los tres puntos originales. Suele ser más rápido cuando los segmentos son horizontales o verticales.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Centro de la circunferencia por } A=(0,0),\\ B=(4,0),\\ C=(0,6)",
+              "steps": [
+                {
+                  "title": "Mediatriz de AB",
+                  "text": "Segmento horizontal de longitud 4.",
+                  "mathContent": "x=2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Mediatriz de AC",
+                  "text": "Segmento vertical de longitud 6.",
+                  "mathContent": "y=3",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Intersección",
+                  "text": "El centro es (2,3).",
+                  "mathContent": "C=(2,3)",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Radio",
+                  "text": "Distancia del centro a A.",
+                  "mathContent": "r=\\sqrt{4+9}=\\sqrt{13}",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Familias de circunferencias",
+          "subtitle": "Geometría Analítica • Parámetro λ",
+          "content": "Una familia de circunferencias depende de uno o más parámetros. La familia más simple es la de circunferencias concéntricas, donde el centro está fijo y el radio varía según un parámetro λ.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "(x-h)^2+(y-k)^2=\\lambda,\\quad \\lambda>0"
+            },
+            {
+              "type": "text",
+              "content": "Cada valor de $\\lambda>0$ da una circunferencia distinta con el mismo centro. Para $\\lambda=0$ se obtiene el punto (h,k); para $\\lambda<0$, el conjunto vacío. Otra familia importante es la de circunferencias que pasan por dos puntos fijos: todas tienen sus centros sobre la mediatriz del segmento que los une."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Circunferencia de la familia } (x-2)^2+(y-3)^2=\\lambda \\text{ que pasa por } (5,7)",
+              "steps": [
+                {
+                  "title": "Sustituir el punto",
+                  "text": "Reemplazamos x=5, y=7.",
+                  "mathContent": "(5-2)^2+(7-3)^2=\\lambda",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Calcular λ",
+                  "text": "Sumamos los cuadrados.",
+                  "mathContent": "9+16=25=\\lambda",
+                  "icon": "check"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "Radio 5.",
+                  "mathContent": "(x-2)^2+(y-3)^2=25",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "content": "Cuando el enunciado dice 'hallar la circunferencia concéntrica con C que pasa por P', el trabajo es inmediato: el centro ya está dado, solo falta calcular r=d(C,P) y escribir la ecuación, sin plantear ningún sistema."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "lesson_1783453533643_14_b5b4z",
+      "title": "Práctica: Familias — Nivel fácil",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_14_0_vx3bx",
+          "questionText": "Los puntos (1,1), (3,1) y (2,3) no son colineales. Halla la circunferencia que pasa por los tres.",
+          "questionLatex": "",
+          "options": [
+            "(x-2)² + (y-7/4)² = 25/16",
+            "(x-2)² + (y-2)² = 4",
+            "(x-2)² + (y-1)² = 5",
+            "(x-2)² + (y-7/4)² = 25/4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Sistema: } D=-4,\\ E=-7/2,\\ F=11/2 \\Rightarrow \\text{centro } (2,\\ 7/4),\\ r=5/4",
+          "explanationSteps": [],
+          "category": "Circunferencia por tres puntos",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_14_1_at9c3",
+          "questionText": "Halla la circunferencia concéntrica con (x−1)²+(y+2)²=9 que pasa por (4,2).",
+          "questionLatex": "",
+          "options": [
+            "(x-1)² + (y+2)² = 25",
+            "(x-1)² + (y+2)² = 9",
+            "(x-4)² + (y-2)² = 25",
+            "(x-1)² + (y+2)² = 16"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "r^2=(4-1)^2+(2-(-2))^2=9+16=25",
+          "explanationSteps": [],
+          "category": "Familias concéntricas",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_14_2_xt5fm",
+          "questionText": "Escribe la ecuación de la circunferencia con centro (2,5) que pasa por (−1,1).",
+          "questionLatex": "",
+          "options": [
+            "(x-2)² + (y-5)² = 25",
+            "(x-2)² + (y-5)² = 5",
+            "(x+2)² + (y+5)² = 25",
+            "(x-2)² + (y-5)² = 16"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "r^2=(2-(-1))^2+(5-1)^2=9+16=25",
+          "explanationSteps": [],
+          "category": "Ecuación canónica",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_15_2kj6i",
+      "title": "Práctica: Familias — Nivel medio",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_15_0_mjhbg",
+          "questionText": "Encuentra la circunferencia por A=(0,0), B=(6,0), C=(0,8) usando mediatrices.",
+          "questionLatex": "",
+          "options": [
+            "(x-3)² + (y-4)² = 25",
+            "(x-3)² + (y-4)² = 5",
+            "(x-6)² + (y-8)² = 25",
+            "(x-3)² + (y-4)² = 49"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Mediatriz de AB: } x=3.\\ \\text{Mediatriz de AC: } y=4. \\ r=\\sqrt{9+16}=5",
+          "explanationSteps": [],
+          "category": "Método de las mediatrices",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_15_1_5gsx0",
+          "questionText": "Halla la relación entre D y F para que x²+y²+Dy+F=0 pase por (3,4) y (−3,4).",
+          "questionLatex": "",
+          "options": [
+            "4D + F = -25",
+            "3D + F = -25",
+            "4D + F = 25",
+            "D + 4F = -25"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "9+16+4D+F=0 \\Rightarrow 4D+F=-25 \\ \\text{(infinitas circunferencias cumplen esta relación)}",
+          "explanationSteps": [],
+          "category": "Familias de circunferencias",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_15_2_niyhw",
+          "questionText": "Determina si existe k tal que (k,2) esté en x²+y²−4x+6y=0.",
+          "questionLatex": "",
+          "options": [
+            "No existe tal k (no hay solución real)",
+            "k = 2",
+            "k = 4",
+            "k = 0 o k = 4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "k^2+4-4k+12=0 \\Rightarrow k^2-4k+16=0,\\ \\text{discriminante} = -48 < 0",
+          "explanationSteps": [],
+          "category": "Pertenencia a una circunferencia",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_16_jf7ip",
+      "title": "Práctica: Familias — Nivel avanzado",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_16_0_ton6u",
+          "questionText": "Encuentra todas las circunferencias con centro en y=x que pasan por (4,0) y (0,4).",
+          "questionLatex": "",
+          "options": [
+            "Cualquier centro (h, h), con r² = (h-4)² + h²",
+            "Solo la circunferencia con centro (2,2)",
+            "Solo la circunferencia con centro (0,0)",
+            "No existe ninguna circunferencia así"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "y=x \\text{ es la mediatriz de (4,0)-(0,4), así que todo centro sobre ella es equidistante de ambos puntos: infinitas soluciones.",
+          "explanationSteps": [],
+          "category": "Familias de circunferencias",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_16_1_33gev",
+          "questionText": "Halla el radio de la circunferencia circunscrita al triángulo (0,0), (4,0), (2,6).",
+          "questionLatex": "",
+          "options": [
+            "10/3",
+            "20/3",
+            "5/3",
+            "10/9"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "D=-4,\\ E=-16/3,\\ F=0 \\Rightarrow r^2=4+\\tfrac{64}{9}=\\tfrac{100}{9} \\Rightarrow r=\\tfrac{10}{3}",
+          "explanationSteps": [],
+          "category": "Circunferencia circunscrita",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_16_2_k16it",
+          "questionText": "Encuentra la ecuación de la circunferencia que pasa por (1,2), (3,0) y (−1,0).",
+          "questionLatex": "",
+          "options": [
+            "(x-1)² + y² = 4",
+            "(x-1)² + y² = 2",
+            "x² + (y-1)² = 4",
+            "(x-1)² + y² = 9"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "D=-2,\\ E=0,\\ F=-3 \\Rightarrow (x-1)^2+y^2=4",
+          "explanationSteps": [],
+          "category": "Circunferencia por tres puntos",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_17_ftnmn",
+      "title": "Tangentes y problemas combinados",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "Posiciones relativas de recta y circunferencia",
+          "subtitle": "Geometría Analítica • Recta y circunferencia",
+          "content": "Dada una recta ℓ y una circunferencia de centro C y radio r, su posición relativa queda determinada por la distancia d = d(C, ℓ). Basta calcular esa única distancia para clasificar la situación sin resolver ningún sistema.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "Clasificación por d = d(C, ℓ): $d<r$ → secante (2 puntos de intersección); $d=r$ → tangente (1 punto de tangencia); $d>r$ → exterior (0 puntos de intersección)."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Posición de } 3x+4y-10=0 \\text{ con } (x-1)^2+(y-2)^2=9",
+              "steps": [
+                {
+                  "title": "Identificar centro y radio",
+                  "text": "C=(1,2), r=3.",
+                  "mathContent": "",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Calcular la distancia",
+                  "text": "Aplicamos la fórmula punto-recta.",
+                  "mathContent": "d=\\frac{|3(1)+4(2)-10|}{5}=\\frac15",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Comparar con r",
+                  "text": "d < r, así que la recta es secante.",
+                  "mathContent": "\\tfrac15 < 3",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Recta tangente en un punto de la circunferencia",
+          "subtitle": "Geometría Analítica • Tangente en un punto",
+          "content": "Si P₀=(x₀,y₀) pertenece a la circunferencia (x−h)²+(y−k)²=r², la tangente en P₀ es perpendicular al radio CP₀. Existe una fórmula compacta que evita pasar por la pendiente del radio, sustituyendo un factor (x−h) por (x₀−h) y un (y−k) por (y₀−k) en la ecuación de la circunferencia.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "(x_0-h)(x-h)+(y_0-k)(y-k)=r^2"
+            },
+            {
+              "type": "text",
+              "content": "Para la circunferencia centrada en el origen $x^2+y^2=r^2$, la tangente en $(x_0,y_0)$ es aún más simple:"
+            },
+            {
+              "type": "formula",
+              "content": "x_0\\cdot x+y_0\\cdot y=r^2"
+            },
+            {
+              "type": "example",
+              "content": "\\text{Tangente a } x^2+y^2=25 \\text{ en } (3,4)",
+              "steps": [
+                {
+                  "title": "Verificar el punto",
+                  "text": "3²+4²=25, el punto está en la circunferencia.",
+                  "mathContent": "",
+                  "icon": "check"
+                },
+                {
+                  "title": "Aplicar la fórmula directa",
+                  "text": "Sustituimos x₀=3, y₀=4.",
+                  "mathContent": "3x+4y=25",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Tangente a } (x-2)^2+(y+1)^2=10 \\text{ en } (5,0)",
+              "steps": [
+                {
+                  "title": "Verificar el punto",
+                  "text": "(5-2)²+(0+1)²=10.",
+                  "mathContent": "",
+                  "icon": "check"
+                },
+                {
+                  "title": "Aplicar la fórmula compacta",
+                  "text": "Sustituimos en la fórmula general.",
+                  "mathContent": "3(x-2)+1(y+1)=10",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Simplificar",
+                  "text": "Resultado final.",
+                  "mathContent": "3x+y=15",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Recta tangente desde un punto exterior",
+          "subtitle": "Geometría Analítica • Tangentes desde un punto exterior",
+          "content": "Desde un punto P exterior a una circunferencia parten exactamente dos rectas tangentes. Para encontrarlas, se plantea la condición d(C,ℓ)=r donde ℓ es la recta de pendiente m que pasa por P; al resolver la ecuación (usualmente cuadrática en m) se obtienen los dos valores buscados.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "L=\\sqrt{(x_0-h)^2+(y_0-k)^2-r^2}=\\sqrt{d(P,C)^2-r^2}"
+            },
+            {
+              "type": "text",
+              "content": "Esa fórmula da la longitud del segmento de tangencia desde un punto exterior P hasta el punto de tangencia, usando el teorema de Pitágoras en el triángulo formado por P, C y el punto de tangencia."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Tangentes desde } P=(7,1) \\text{ a } x^2+y^2=25",
+              "steps": [
+                {
+                  "title": "Plantear la recta por P",
+                  "text": "Recta con pendiente m que pasa por P.",
+                  "mathContent": "mx-y+(1-7m)=0",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Condición de tangencia",
+                  "text": "La distancia al centro debe ser 5.",
+                  "mathContent": "(1-7m)^2=25(m^2+1)",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Resolver la cuadrática",
+                  "text": "Aplicamos la fórmula general.",
+                  "mathContent": "12m^2-7m-12=0 \\Rightarrow m=\\tfrac{7\\pm25}{24}",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "Dos pendientes: 4/3 y −3/4.",
+                  "mathContent": "m_1=\\tfrac43,\\ m_2=-\\tfrac34",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "content": "Consejo de experto: nota que $m_1\\cdot m_2=-1$ en el ejemplo. Las dos tangentes desde un punto exterior son siempre simétricas respecto a la recta que une ese punto con el centro; es una buena verificación rápida."
+            }
+          ]
+        },
+        {
+          "title": "Posiciones relativas de dos circunferencias",
+          "subtitle": "Geometría Analítica • Dos circunferencias",
+          "content": "Dadas dos circunferencias con centros C₁, C₂ y radios r₁, r₂, su posición relativa depende de la distancia d=d(C₁,C₂) comparada con la suma y la diferencia de los radios. Hay seis casos posibles.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "Resumen (d = distancia entre centros): $d>r_1+r_2$ → exteriores disjuntas; $d=r_1+r_2$ → tangentes exteriores; $|r_1-r_2|<d<r_1+r_2$ → secantes; $d=|r_1-r_2|$ → tangentes interiores; $d<|r_1-r_2|$ → una dentro de la otra; $d=0,\\ r_1\\neq r_2$ → concéntricas."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Posición de } (x-1)^2+(y+2)^2=4 \\text{ y } (x+3)^2+(y-1)^2=9",
+              "steps": [
+                {
+                  "title": "Identificar centros y radios",
+                  "text": "C₁=(1,−2), r₁=2; C₂=(−3,1), r₂=3.",
+                  "mathContent": "",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Calcular la distancia entre centros",
+                  "text": "Aplicamos la fórmula de distancia.",
+                  "mathContent": "d=\\sqrt{16+9}=5",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Comparar con r₁+r₂",
+                  "text": "d es igual a la suma de los radios.",
+                  "mathContent": "r_1+r_2=5=d",
+                  "icon": "check"
+                },
+                {
+                  "title": "Conclusión",
+                  "text": "Las circunferencias son tangentes exteriores.",
+                  "mathContent": "",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Estrategias para problemas combinados",
+          "subtitle": "Geometría Analítica • Síntesis del curso",
+          "content": "En los exámenes, los problemas más difíciles mezclan rectas, circunferencias y condiciones de tangencia en un mismo enunciado. La solución raramente requiere una técnica nueva: requiere aplicar en el orden correcto las técnicas ya vistas en los capítulos anteriores.",
+          "formulaLatex": "",
+          "proTip": "La mayoría de los errores en examen no están en la idea general, sino en un detalle de signo o al completar el cuadrado. La verificación final vale tanto como la resolución misma.",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "Orden sugerido: (1) identificar los objetos involucrados; (2) extraer la información (centros, radios, puntos); (3) plantear las condiciones algebraicas (tangencia, pertenencia, distancia); (4) resolver el sistema; (5) verificar geométricamente la coherencia del resultado."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Intersección de } y=x+1 \\text{ con } x^2+y^2=25",
+              "steps": [
+                {
+                  "title": "Sustituir",
+                  "text": "Reemplazamos y=x+1 en la circunferencia.",
+                  "mathContent": "x^2+(x+1)^2=25",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Simplificar",
+                  "text": "Obtenemos una ecuación cuadrática.",
+                  "mathContent": "x^2+x-12=0 \\Rightarrow (x+4)(x-3)=0",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "Dos puntos de intersección.",
+                  "mathContent": "(-4,-3) \\text{ y } (3,4)",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "lesson_1783453533643_18_y1qog",
+      "title": "Práctica: Tangentes — Nivel fácil",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_18_0_7353k",
+          "questionText": "Determina la posición relativa de 2x−y+1=0 respecto a x²+y²=5.",
+          "questionLatex": "",
+          "options": [
+            "Secante",
+            "Tangente",
+            "Exterior",
+            "No se puede determinar"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "C=(0,0),\\ r=\\sqrt5.\\ d=\\tfrac{|1|}{\\sqrt5}\\approx0.45<\\sqrt5",
+          "explanationSteps": [],
+          "category": "Recta y circunferencia",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_18_1_3ucuy",
+          "questionText": "Halla la tangente a x²+y²=10 en el punto (1,3).",
+          "questionLatex": "",
+          "options": [
+            "x + 3y = 10",
+            "x + 3y = 5",
+            "3x + y = 10",
+            "x - 3y = 10"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Verificamos: } 1+9=10.\\ \\text{Tangente: } x_0x+y_0y=r^2 \\Rightarrow x+3y=10",
+          "explanationSteps": [],
+          "category": "Tangente en un punto",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_18_2_l29zf",
+          "questionText": "Determina la posición relativa de (x−2)²+(y−3)²=4 y (x+1)²+(y−3)²=9.",
+          "questionLatex": "",
+          "options": [
+            "Secantes",
+            "Tangentes exteriores",
+            "Una dentro de la otra",
+            "Exteriores disjuntas"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "C_1=(2,3),\\ C_2=(-1,3),\\ d=3.\\ |r_2-r_1|=1<3<5=r_1+r_2 \\Rightarrow \\text{secantes}",
+          "explanationSteps": [],
+          "category": "Dos circunferencias",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_19_g0zos",
+      "title": "Práctica: Tangentes — Nivel medio",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_19_0_q1h2y",
+          "questionText": "Halla los puntos de intersección de y=2x−1 con x²+y²=10.",
+          "questionLatex": "",
+          "options": [
+            "(9/5, 13/5) y (-1, -3)",
+            "(9/5, -13/5) y (1, 3)",
+            "(1, 1) y (-1, -3)",
+            "(9/5, 13/5) solamente"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "5x^2-4x-9=0 \\Rightarrow x=\\tfrac95 \\text{ o } x=-1",
+          "explanationSteps": [
+            {
+              "title": "Sustituir",
+              "text": "Reemplazamos y=2x-1 en la circunferencia.",
+              "mathContent": "x^2+(2x-1)^2=10",
+              "icon": "fx"
+            },
+            {
+              "title": "Resolver la cuadrática",
+              "text": "Obtenemos dos soluciones para x.",
+              "mathContent": "5x^2-4x-9=0 \\Rightarrow x=\\tfrac95,\\ x=-1",
+              "icon": "chart"
+            },
+            {
+              "title": "Hallar y",
+              "text": "Sustituimos cada x en la recta.",
+              "mathContent": "(\\tfrac95,\\tfrac{13}5) \\text{ y } (-1,-3)",
+              "icon": "star"
+            }
+          ],
+          "category": "Problemas combinados",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_19_1_qq6hq",
+          "questionText": "Halla las tangentes desde el punto (6,0) a la circunferencia x²+y²=9.",
+          "questionLatex": "",
+          "options": [
+            "y = ±(√3/3)(x - 6)",
+            "y = ±(1/3)(x - 6)",
+            "y = ±3(x - 6)",
+            "y = ±√3(x - 6)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "27m^2=9 \\Rightarrow m^2=\\tfrac13 \\Rightarrow m=\\pm\\tfrac{\\sqrt3}{3}",
+          "explanationSteps": [],
+          "category": "Tangentes desde un punto exterior",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_19_2_2s7ty",
+          "questionText": "Una recta de pendiente m es tangente a x²+y²=16 y pasa por (0,−6). Halla m.",
+          "questionLatex": "",
+          "options": [
+            "m = ±√5/2",
+            "m = ±2/√5",
+            "m = ±5/2",
+            "m = ±3/2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\frac{6}{\\sqrt{m^2+1}}=4 \\Rightarrow m^2=\\tfrac54 \\Rightarrow m=\\pm\\tfrac{\\sqrt5}{2}",
+          "explanationSteps": [],
+          "category": "Tangentes desde un punto exterior",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_20_9cz4j",
+      "title": "Práctica: Tangentes — Nivel avanzado",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_20_0_hlvg3",
+          "questionText": "Halla la circunferencia tangente externamente a (x−3)²+(y−4)²=4, con centro en el eje x y radio 3.",
+          "questionLatex": "",
+          "options": [
+            "x² + y² = 9 (o (x-6)² + y² = 9)",
+            "(x-3)² + y² = 9",
+            "x² + (y-3)² = 9",
+            "(x-5)² + y² = 9"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "d=\\sqrt{(h-3)^2+16}=5 \\Rightarrow (h-3)^2=9 \\Rightarrow h=0 \\text{ o } h=6",
+          "explanationSteps": [],
+          "category": "Problemas combinados",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_20_1_h8bt3",
+          "questionText": "La recta 3x+4y=k es tangente a la circunferencia centrada en (2,1) de radio 5. Halla k.",
+          "questionLatex": "",
+          "options": [
+            "k = -15 o k = 35",
+            "k = 15 o k = -35",
+            "k = 10 solamente",
+            "k = -10 o k = 25"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\frac{|10-k|}{5}=5 \\Rightarrow |10-k|=25 \\Rightarrow k=-15 \\text{ o } k=35",
+          "explanationSteps": [],
+          "category": "Tangencia con parámetro",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_20_2_yupxv",
+          "questionText": "Determina la posición relativa de x²+y²=4 y x²+y²−6x−8y+24=0.",
+          "questionLatex": "",
+          "options": [
+            "Exteriores disjuntas",
+            "Tangentes interiores",
+            "Secantes",
+            "Una dentro de la otra"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Segunda circunferencia: centro (3,4), radio 1. } d=5,\\ r_1+r_2=3 < 5 \\Rightarrow \\text{exteriores disjuntas}",
+          "explanationSteps": [],
+          "category": "Dos circunferencias",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_21_f0vt7",
+      "title": "Examen: Práctica fácil (banco general)",
+      "type": "exam",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_21_0_3dxk5",
+          "questionText": "Calcula d((−1,2),(3,5)).",
+          "questionLatex": "",
+          "options": [
+            "5",
+            "7",
+            "√29",
+            "4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "d=\\sqrt{4^2+3^2}=5",
+          "explanationSteps": [],
+          "category": "Práctica fácil",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_21_1_u4dq3",
+          "questionText": "El punto medio de PQ es (0,3) y P=(−4,1). Halla Q.",
+          "questionLatex": "",
+          "options": [
+            "(4, 5)",
+            "(-4, 5)",
+            "(4, -5)",
+            "(-8, 2)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Q=2M-P=(4,5)",
+          "explanationSteps": [],
+          "category": "Práctica fácil",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_21_2_22qhp",
+          "questionText": "Escribe la ecuación de la recta que pasa por (2,−3) con pendiente 5.",
+          "questionLatex": "",
+          "options": [
+            "y = 5x - 13",
+            "y = 5x + 13",
+            "y = 5x - 7",
+            "y = -5x - 13"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "y-(-3)=5(x-2)\\Rightarrow y=5x-13",
+          "explanationSteps": [],
+          "category": "Práctica fácil",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_21_3_cwbkx",
+          "questionText": "Identifica centro y radio de (x+1)²+(y−4)²=16.",
+          "questionLatex": "",
+          "options": [
+            "Centro (-1, 4), radio 4",
+            "Centro (1, -4), radio 4",
+            "Centro (-1, 4), radio 16",
+            "Centro (1, 4), radio 4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "C=(-1,4),\\ r=4",
+          "explanationSteps": [],
+          "category": "Práctica fácil",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_21_4_dfn26",
+          "questionText": "¿Es (3,4) un punto interior, exterior o sobre la circunferencia x²+y²=25?",
+          "questionLatex": "",
+          "options": [
+            "Está sobre la circunferencia",
+            "Es un punto interior",
+            "Es un punto exterior",
+            "No se puede determinar"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "3^2+4^2=25 \\Rightarrow \\text{está sobre la curva}",
+          "explanationSteps": [],
+          "category": "Práctica fácil",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_21_5_ow765",
+          "questionText": "Escribe la ecuación de la mediatriz del segmento (0,0)–(6,0).",
+          "questionLatex": "",
+          "options": [
+            "x = 3",
+            "y = 3",
+            "x = 6",
+            "x + y = 3"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Segmento horizontal de longitud 6; mediatriz } x=3",
+          "explanationSteps": [],
+          "category": "Práctica fácil",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_22_zzy5t",
+      "title": "Examen: Práctica media (banco general)",
+      "type": "exam",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_22_0_buhp7",
+          "questionText": "Halla la perpendicular a 3x−y+2=0 que pasa por (1,−1).",
+          "questionLatex": "",
+          "options": [
+            "y = -(1/3)x - 2/3",
+            "y = (1/3)x - 2/3",
+            "y = -3x - 2/3",
+            "y = -(1/3)x + 2/3"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "m_1=3 \\Rightarrow m_2=-\\tfrac13;\\quad y+1=-\\tfrac13(x-1)",
+          "explanationSteps": [],
+          "category": "Práctica media",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_22_1_gfpql",
+          "questionText": "Pasa a forma canónica x²+y²−10x+2y+10=0.",
+          "questionLatex": "",
+          "options": [
+            "(x-5)² + (y+1)² = 16, centro (5,-1), radio 4",
+            "(x-5)² + (y+1)² = 10, centro (5,-1), radio √10",
+            "(x+5)² + (y-1)² = 16, centro (-5,1), radio 4",
+            "(x-5)² + (y+1)² = 26, centro (5,-1), radio √26"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "(x-5)^2+(y+1)^2=-10+25+1=16",
+          "explanationSteps": [],
+          "category": "Práctica media",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_22_2_eqeko",
+          "questionText": "Encuentra la circunferencia que pasa por (0,0), (6,0) y (0,8).",
+          "questionLatex": "",
+          "options": [
+            "(x-3)² + (y-4)² = 25",
+            "(x-3)² + (y-4)² = 5",
+            "(x-6)² + (y-8)² = 25",
+            "(x-3)² + (y-4)² = 49"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Centro }(3,4),\\ r=5",
+          "explanationSteps": [],
+          "category": "Práctica media",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_22_3_6kqc6",
+          "questionText": "Halla la tangente a (x−3)²+(y−4)²=25 en el punto (6,8).",
+          "questionLatex": "",
+          "options": [
+            "3x + 4y = 41",
+            "3x + 4y = 25",
+            "4x + 3y = 41",
+            "3x - 4y = 41"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "3(x-3)+4(y-4)=25 \\Rightarrow 3x+4y=41",
+          "explanationSteps": [],
+          "category": "Práctica media",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_22_4_lh388",
+          "questionText": "Determina la posición relativa de (x−1)²+(y−1)²=4 y (x−5)²+(y−1)²=9.",
+          "questionLatex": "",
+          "options": [
+            "Secantes",
+            "Tangentes exteriores",
+            "Exteriores disjuntas",
+            "Una dentro de la otra"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "d=4;\\ |r_2-r_1|=1<4<5=r_1+r_2 \\Rightarrow \\text{secantes}",
+          "explanationSteps": [],
+          "category": "Práctica media",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_22_5_65iiu",
+          "questionText": "Calcula la distancia del punto (5,−3) a la recta 4x+3y−1=0.",
+          "questionLatex": "",
+          "options": [
+            "12/5",
+            "8/5",
+            "5",
+            "1/5"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "d=\\frac{|20-9-1|}{5}=\\frac{12}{5}",
+          "explanationSteps": [],
+          "category": "Práctica media",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_23_jhn3s",
+      "title": "Examen: Práctica avanzada (banco general)",
+      "type": "exam",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_23_0_xgilw",
+          "questionText": "Encuentra las tangentes desde el origen a (x−5)²+(y−5)²=25.",
+          "questionLatex": "",
+          "options": [
+            "y = x y y = 0",
+            "y = -x y y = 0",
+            "y = x y x = 0",
+            "y = 2x y y = 0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Por simetría respecto a } y=x \\text{, las tangentes son } y=x \\text{ y el eje } x\\ (y=0)",
+          "explanationSteps": [],
+          "category": "Práctica avanzada",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_23_1_u8eb1",
+          "questionText": "Halla la circunferencia circunscrita al triángulo (0,0), (4,0), (0,6).",
+          "questionLatex": "",
+          "options": [
+            "(x-2)² + (y-3)² = 13",
+            "(x-2)² + (y-3)² = √13",
+            "(x-4)² + (y-6)² = 13",
+            "(x-2)² + (y-3)² = 26"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Centro }(2,3),\\ r=\\sqrt{13}",
+          "explanationSteps": [],
+          "category": "Práctica avanzada",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_23_2_xuvxh",
+          "questionText": "Una circunferencia tiene centro en y=2x−1 y es tangente a x=0 e y=0 en puntos distintos. Halla su ecuación.",
+          "questionLatex": "",
+          "options": [
+            "(x-1)² + (y-1)² = 1",
+            "(x-1)² + (y-1)² = 2",
+            "(x+1)² + (y+1)² = 1",
+            "(x-1)² + (y-1)² = 4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Centro } (1,1) \\text{ está en } y=2x-1 \\text{ y equidista 1 de ambos ejes} \\Rightarrow r=1",
+          "explanationSteps": [],
+          "category": "Práctica avanzada",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_23_3_dnss7",
+          "questionText": "El punto medio de la cuerda de x²+y²=r² cortada por Ax+By+C=0 es (−AC/(A²+B²), −BC/(A²+B²)).",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Se demuestra que ese punto es el pie de la perpendicular desde el centro a la recta, y por simetría es el punto medio de la cuerda.}",
+          "category": "Práctica avanzada",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_23_4_lzvkx",
+          "questionText": "Halla el lugar geométrico donde la longitud de la tangente a x²+y²=4 es igual a la distancia al punto (4,0).",
+          "questionLatex": "",
+          "options": [
+            "x = 5/2",
+            "x = 6",
+            "x = 4",
+            "x = 2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\sqrt{x^2+y^2-4}=\\sqrt{(x-4)^2+y^2} \\Rightarrow x^2-4=x^2-8x+16 \\Rightarrow x=\\tfrac52",
+          "explanationSteps": [],
+          "category": "Práctica avanzada",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
+    },
+    {
+      "id": "lesson_1783453533643_24_6kv9m",
+      "title": "Cierre: cómo revisar tus respuestas",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [
+        {
+          "title": "Qué revisar al corregir tus respuestas",
+          "subtitle": "Geometría Analítica • Checklist final",
+          "content": "Cuando termines un ejercicio, revisa siempre estos puntos antes de dar por válida la respuesta. La mayor parte de los errores en examen no está en la idea general, sino en un detalle de signo, en completar el cuadrado incorrectamente, o en confundir el centro con un punto de la circunferencia. La verificación final vale tanto como la resolución misma.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "1) ¿Verificaste que los puntos obtenidos satisfacen las ecuaciones dadas? 2) ¿Comprobaste el signo del centro en la forma canónica? 3) ¿Revisaste que r² > 0 al completar el cuadrado? 4) ¿Confirmaste la posición relativa calculando la distancia entre centros? 5) ¿Verificaste la perpendicularidad comprobando que m₁·m₂ = −1?"
+            },
+            {
+              "type": "text",
+              "content": "El camino desde un par de puntos hasta las familias de circunferencias y las condiciones de tangencia es gradual pero continuo. Cada herramienta aprendida en un capítulo reaparece en los siguientes: la fórmula de distancia en la mediatriz, la mediatriz en la circunferencia por tres puntos, la distancia punto-recta en las tangentes. Todo está conectado, y esa conexión es lo que convierte una colección de fórmulas en una comprensión real de la geometría analítica."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "lesson_1783453533643_25_n6usi",
+      "title": "Flashcards: Errores comunes del curso",
+      "type": "flashcards",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "challenge_1783453533643_25_0_z5ugf",
+          "questionText": "La circunferencia es lo mismo que el disco (la región interior).",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "\\text{Falso. La circunferencia es solo la curva (el borde); el disco incluye el interior.}",
+          "category": "Errores comunes",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_25_1_zs1sn",
+          "questionText": "Si la ecuación de una circunferencia tiene el término (x+3)², entonces h = -3.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Verdadero. La forma canónica siempre resta: } (x-h)^2, \\text{ así que } (x+3)^2=(x-(-3))^2.",
+          "category": "Errores comunes",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_25_2_p4prp",
+          "questionText": "Dos rectas no verticales son perpendiculares si el producto de sus pendientes es igual a 1.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "\\text{Falso. La condición correcta es } m_1\\cdot m_2=-1.",
+          "category": "Errores comunes",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_25_3_nibf9",
+          "questionText": "La mediatriz de un segmento siempre resulta en una ecuación lineal, nunca cuadrática.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Verdadero. Los términos } x^2 \\text{ y } y^2 \\text{ se cancelan al igualar las dos distancias al cuadrado.}",
+          "category": "Errores comunes",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_25_4_gv5tt",
+          "questionText": "Si al completar el cuadrado obtienes (x−h)²+(y−k)²=c con c<0, la ecuación representa una circunferencia de radio imaginario pero sí tiene puntos reales.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "\\text{Falso. Si } c<0 \\text{ el conjunto solución es vacío: ningún punto real la satisface.}",
+          "category": "Errores comunes",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_25_5_1qty7",
+          "questionText": "Por tres puntos colineales pasa exactamente una circunferencia.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "\\text{Falso. Si los tres puntos son colineales, sus mediatrices resultan paralelas y no existe circunferencia que los contenga.}",
+          "category": "Errores comunes",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_25_6_k0h8q",
+          "questionText": "La condición de tangencia entre una recta y una circunferencia es que la distancia del centro a la recta sea igual al radio.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Verdadero: } d(C,\\ell)=r \\text{ es exactamente la condición de tangencia.}",
+          "category": "Errores comunes",
+          "moduleName": "Geometría Analítica"
+        },
+        {
+          "id": "challenge_1783453533643_25_7_qhsl4",
+          "questionText": "Las dos tangentes trazadas desde un punto exterior a una circunferencia son siempre simétricas respecto a la recta que une ese punto con el centro.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Verdadero, y por eso el producto de sus pendientes suele verificarse con } m_1\\cdot m_2=-1 \\text{ cuando son perpendiculares entre sí; en general son reflejo una de la otra.}",
+          "category": "Errores comunes",
+          "moduleName": "Geometría Analítica"
+        }
+      ]
     }
   ]
 }
