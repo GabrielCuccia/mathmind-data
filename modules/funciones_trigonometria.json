@@ -1,0 +1,4031 @@
+{
+  "id": "funciones_trigonometria",
+  "title": "Funciones y Trigonometría",
+  "subtitle": "Análisis de Funciones",
+  "description": "Módulo completo sobre funciones, exponenciales, logarítmicas y trigonométricas",
+  "semesterNumber": 1,
+  "isLocked": false,
+  "lessons": [
+    {
+      "id": "intro_notacion_theory",
+      "title": "Introducción: Notación y Enfoque del Curso",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "Cómo Aprovechar este Curso",
+          "subtitle": "Fundamentos • Introducción",
+          "content": "El objetivo de este curso es llevarte desde el concepto más básico de función hasta las identidades hiperbólicas, pasando por las operaciones entre funciones, la función exponencial, el logaritmo y las funciones trigonométricas inversas. La meta no es memorizar definiciones sueltas, sino entender cómo cada familia de funciones se relaciona con las demás: el logaritmo existe porque la exponencial es inyectiva, las funciones trigonométricas inversas existen porque restringimos el dominio de las trigonométricas para hacerlas inyectivas, y las funciones hiperbólicas comparten una estructura algebraica notablemente parecida a la de las trigonométricas.",
+          "formulaLatex": "",
+          "proTip": "Si dominas tres ideas, ya tienes gran parte del camino resuelto: 1) determinar el dominio y el rango de una función a partir de su regla, 2) reconocer cuándo una función es inyectiva y por tanto invertible, y 3) usar la relación entre una función y su inversa (exponencial y logaritmo, trigonométrica y arco, hiperbólica y su inversa) para resolver ecuaciones.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "En todo el curso trabajaremos con una idea constante: una función es una regla de correspondencia, y gran parte del álgebra de funciones consiste en rastrear cuidadosamente el dominio a medida que combinamos, invertimos o componemos funciones. Dominar ese rastreo del dominio es la habilidad más subestimada, y a la vez más examinada, de todo este tema."
+            },
+            {
+              "type": "text",
+              "content": "La secuencia de las lecciones está organizada para que cada tema prepare al siguiente: primero verás las funciones básicas (dominio, rango, valor absoluto, parte entera) y sus transformaciones; después las operaciones algebraicas y la composición; luego la función exponencial, la inyectividad y las funciones inversas en general, lo que te preparará para el logaritmo; y finalmente las funciones trigonométricas e hiperbólicas y sus inversas."
+            },
+            {
+              "type": "note",
+              "content": "Conviene avanzar por niveles: teoría breve, ejemplo guiado, práctica fácil, práctica media y un desafío final tipo examen. Esa misma estructura se repite en cada tema del curso."
+            }
+          ]
+        },
+        {
+          "title": "Lenguaje y Notación",
+          "subtitle": "Fundamentos • Notación",
+          "content": "A lo largo del curso escribiremos $f: A \\to B$ para indicar que $f$ es una función con dominio $A$ y codominio $B$. El dominio de $f$ se denota $\\text{dom}(f)$ y el rango (el conjunto de valores que realmente toma $f$) se denota $\\text{rango}(f)$. La inversa de una función $f$, cuando existe, se denota $f^{-1}$, y no debe confundirse con $1/f$: son conceptos completamente distintos.",
+          "formulaLatex": "f: A \\to B",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Para la composición de funciones escribiremos $(f\\circ g)(x) = f(g(x))$, leyéndose 'f compuesta con g' o 'f de g de x'."
+            },
+            {
+              "type": "formula",
+              "content": "(f \\circ g)(x) = f(g(x))"
+            },
+            {
+              "type": "note",
+              "content": "Es fundamental notar que, en general, $(f\\circ g)(x) \\neq (g\\circ f)(x)$: el orden de composición importa."
+            },
+            {
+              "type": "note",
+              "content": "Un error muy frecuente es escribir $f^{-1}(x)$ pensando en $1/f(x)$. Son dos objetos distintos: $f^{-1}$ deshace lo que hace $f$, mientras que $1/f(x)$ es el recíproco numérico. Por ejemplo, si $f(x) = x+2$, entonces $f^{-1}(x) = x - 2$, pero $1/f(x) = 1/(x+2)$: son expresiones completamente diferentes."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "dominio_rango_theory",
+      "title": "Dominio y Rango de una Función",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [
+        {
+          "title": "Definición de Función, Dominio y Rango",
+          "subtitle": "Funciones • Dominio y Rango",
+          "content": "Una función $f$ es una regla de correspondencia que asigna a cada elemento $x$ de un conjunto (el dominio) exactamente un elemento $y$ de otro conjunto (el codominio). El conjunto de todos los valores $y$ que realmente se alcanzan se llama rango (o recorrido) de la función. Cuando una función se define mediante una fórmula sin especificar explícitamente su dominio, se entiende que el dominio es el dominio natural: el conjunto más amplio de números reales para los cuales la fórmula produce un resultado real bien definido.",
+          "formulaLatex": "",
+          "proTip": "Piensa en el dominio como una 'lista de permisos': cada operación (raíz, fracción, logaritmo) impone su propia condición, y el dominio final es donde se cumplen todas a la vez.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Restricciones típicas al hallar el dominio natural: los denominadores deben ser distintos de cero; los radicandos de raíces de índice par ($\\sqrt{\\ }$, $\\sqrt[4]{\\ }$, …) deben ser $\\geq 0$; y los argumentos de logaritmos deben ser estrictamente $>0$."
+            }
+          ]
+        },
+        {
+          "title": "Dominio y Rango de Funciones Básicas",
+          "subtitle": "Funciones • Ejemplos Resueltos",
+          "content": "Determinar el dominio de una función consiste en identificar todas las restricciones que impone su fórmula y combinarlas. Determinar el rango, en cambio, suele requerir analizar el comportamiento de la función (crecimiento, valores extremos) y no siempre tiene un procedimiento puramente mecánico.",
+          "formulaLatex": "",
+          "proTip": "Cuando la fórmula combina varias restricciones (por ejemplo, una raíz sobre un denominador), resuelve cada restricción por separado y luego intersecta los resultados. Trabajar una condición a la vez reduce muchísimo los errores.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Hallar el dominio de } f(x) = \\sqrt{x-3}",
+              "steps": [
+                {
+                  "title": "Detectar la restricción",
+                  "text": "Tenemos una raíz cuadrada, así que el radicando no puede ser negativo.",
+                  "icon": "pin",
+                  "mathContent": "x - 3 \\geq 0"
+                },
+                {
+                  "title": "Despejar x",
+                  "text": "Sumamos 3 a ambos lados para despejar x.",
+                  "icon": "fx",
+                  "mathContent": "x \\geq 3"
+                },
+                {
+                  "title": "Escribir el dominio",
+                  "text": "Todo número mayor o igual a 3 sirve.",
+                  "icon": "star",
+                  "mathContent": "\\text{dom}(f) = [3, \\infty)"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Hallar el dominio de } f(x) = \\frac{1}{x-2}",
+              "steps": [
+                {
+                  "title": "Detectar la restricción",
+                  "text": "Como x-2 está en el denominador, no puede valer cero.",
+                  "icon": "pin",
+                  "mathContent": "x - 2 \\neq 0"
+                },
+                {
+                  "title": "Escribir el dominio",
+                  "text": "Excluimos únicamente el punto x=2.",
+                  "icon": "star",
+                  "mathContent": "\\text{dom}(f) = \\mathbb{R}\\setminus\\{2\\}"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Hallar dominio y rango de } f(x) = \\sqrt{4-x^2}",
+              "steps": [
+                {
+                  "title": "Restricción del radicando",
+                  "text": "El radicando no puede ser negativo.",
+                  "icon": "pin",
+                  "mathContent": "4 - x^2 \\geq 0"
+                },
+                {
+                  "title": "Resolver la desigualdad",
+                  "text": "Esto equivale a x² ≤ 4, un intervalo simétrico alrededor de 0.",
+                  "icon": "fx",
+                  "mathContent": "-2 \\leq x \\leq 2"
+                },
+                {
+                  "title": "Analizar el rango",
+                  "text": "Geométricamente esta función traza la mitad superior de una circunferencia de radio 2: el mínimo es 0 (en los extremos) y el máximo es 2 (en x=0).",
+                  "icon": "chart",
+                  "mathContent": "\\text{rango}(f) = [0,2]"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Hallar el dominio de } f(x) = \\frac{\\sqrt{x-1}}{x-4}",
+              "steps": [
+                {
+                  "title": "Restricción de la raíz",
+                  "text": "El radicando debe ser no negativo.",
+                  "icon": "pin",
+                  "mathContent": "x - 1 \\geq 0 \\Rightarrow x \\geq 1"
+                },
+                {
+                  "title": "Restricción del denominador",
+                  "text": "El denominador no puede anularse.",
+                  "icon": "pin",
+                  "mathContent": "x - 4 \\neq 0 \\Rightarrow x \\neq 4"
+                },
+                {
+                  "title": "Combinar ambas condiciones",
+                  "text": "Tomamos la intersección y excluimos el punto prohibido.",
+                  "icon": "star",
+                  "mathContent": "\\text{dom}(f) = [1,4)\\cup(4,\\infty)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "valor_absoluto_parte_entera_theory",
+      "title": "Valor Absoluto y Función Parte Entera",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [
+        {
+          "title": "La Función Valor Absoluto",
+          "subtitle": "Funciones • Valor Absoluto",
+          "content": "La función valor absoluto se define por casos, según el signo del argumento. Su dominio es todo $\\mathbb{R}$ y su rango es $[0,\\infty)$, ya que $|x|$ nunca es negativo. Geométricamente, su gráfica tiene forma de V, con vértice en el origen.",
+          "formulaLatex": "|x| = \\begin{cases} x & \\text{si } x \\geq 0 \\\\ -x & \\text{si } x < 0 \\end{cases}",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "function_plot",
+              "content": "abs(x) | [-6, 6]"
+            },
+            {
+              "type": "text",
+              "content": "Propiedades útiles: $|x|\\geq 0$ para todo $x$; $|x|=|-x|$; $|xy|=|x|\\cdot|y|$; $|x/y|=|x|/|y|$ (con $y\\neq0$); y la desigualdad triangular $|x+y|\\leq|x|+|y|$."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Hallar dominio y rango de } f(x)=|x-3|+2",
+              "steps": [
+                {
+                  "title": "Dominio",
+                  "text": "El valor absoluto acepta cualquier número real como entrada, así que no hay restricciones.",
+                  "icon": "pin",
+                  "mathContent": "\\text{dom}(f)=\\mathbb{R}"
+                },
+                {
+                  "title": "Ubicar el mínimo",
+                  "text": "El valor absoluto |x-3| vale 0 exactamente en x=3, y ese es su valor más pequeño posible.",
+                  "icon": "fx",
+                  "mathContent": "f(3) = |0| + 2 = 2"
+                },
+                {
+                  "title": "Rango",
+                  "text": "Como |x-3| crece sin límite al alejarse de x=3, f también crece sin límite desde ese mínimo.",
+                  "icon": "star",
+                  "mathContent": "\\text{rango}(f)=[2,\\infty)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "La Función Parte Entera (Función Piso)",
+          "subtitle": "Funciones • Parte Entera",
+          "content": "La función parte entera, denotada $\\lfloor x \\rfloor$ (también llamada función piso), asigna a cada número real $x$ el mayor entero menor o igual que $x$. Su dominio es todo $\\mathbb{R}$, y su rango es el conjunto de los números enteros $\\mathbb{Z}$. Su gráfica tiene forma de escalera, con saltos en cada número entero.",
+          "formulaLatex": "\\lfloor x \\rfloor = \\text{mayor entero} \\leq x",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lfloor 3.7 \\rfloor, \\lfloor 5 \\rfloor \\text{ y } \\lfloor -2.3 \\rfloor",
+              "steps": [
+                {
+                  "title": "Casos positivos",
+                  "text": "Buscamos el mayor entero que no supere al número dado.",
+                  "icon": "fx",
+                  "mathContent": "\\lfloor 3.7 \\rfloor = 3, \\quad \\lfloor 5 \\rfloor = 5"
+                },
+                {
+                  "title": "Caso negativo",
+                  "text": "Para negativos no enteros, se redondea hacia el entero más negativo, no hacia cero.",
+                  "icon": "star",
+                  "mathContent": "\\lfloor -2.3 \\rfloor = -3"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "content": "Un error común es pensar que $\\lfloor -2.3 \\rfloor = -2$, truncando hacia cero. La función parte entera siempre redondea hacia abajo en la recta real, así que $\\lfloor -2.3\\rfloor=-3$, no $-2$."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "transformaciones_theory",
+      "title": "Traslaciones y Transformaciones de Funciones",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [
+        {
+          "title": "Traslaciones y Transformaciones Básicas",
+          "subtitle": "Funciones • Transformaciones",
+          "content": "A partir de una función conocida $f(x)$, se pueden construir nuevas funciones mediante transformaciones simples que desplazan, reflejan o escalan su gráfica, sin necesidad de volver a analizar la función desde cero.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Traslación vertical $f(x)+k$: sube si $k>0$, baja si $k<0$. Traslación horizontal $f(x-h)$: se desplaza a la derecha si $h>0$, a la izquierda si $h<0$. Reflexión vertical $-f(x)$: se refleja respecto al eje x. Reflexión horizontal $f(-x)$: se refleja respecto al eje y. Escalamiento vertical $a\\cdot f(x)$: se estira si $|a|>1$, se comprime si $|a|<1$."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Describir } g(x)=|x-2|+3 \\text{ como transformación de } f(x)=|x|",
+              "steps": [
+                {
+                  "title": "Traslación horizontal",
+                  "text": "El término (x-2) mueve la gráfica 2 unidades hacia la derecha.",
+                  "icon": "pin",
+                  "mathContent": "f(x-2) = |x-2|"
+                },
+                {
+                  "title": "Traslación vertical",
+                  "text": "El +3 al final sube toda la gráfica 3 unidades.",
+                  "icon": "fx",
+                  "mathContent": "g(x) = f(x-2)+3"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "El vértice, que estaba en (0,0), ahora queda en (2,3).",
+                  "icon": "star",
+                  "mathContent": "\\text{vértice}: (0,0)\\to(2,3)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Combinación de Transformaciones",
+          "subtitle": "Funciones • Transformaciones Compuestas",
+          "content": "Cuando una función combina varias transformaciones a la vez, conviene aplicarlas en un orden consistente: primero las reflexiones y escalamientos (que modifican la 'forma' de la curva), y después las traslaciones (que solo cambian su posición).",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Transformar } f(x)=\\sqrt{x} \\text{ en } g(x) = -2\\sqrt{x+1}-4",
+              "steps": [
+                {
+                  "title": "Reflexión y escalamiento",
+                  "text": "El factor -2 refleja la gráfica verticalmente y la estira por un factor de 2.",
+                  "icon": "pin",
+                  "mathContent": "-2\\sqrt{x}"
+                },
+                {
+                  "title": "Traslación horizontal",
+                  "text": "El (x+1) desplaza la gráfica 1 unidad a la izquierda.",
+                  "icon": "fx",
+                  "mathContent": "-2\\sqrt{x+1}"
+                },
+                {
+                  "title": "Traslación vertical",
+                  "text": "El -4 final baja toda la gráfica 4 unidades.",
+                  "icon": "star",
+                  "mathContent": "g(x) = -2\\sqrt{x+1}-4"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "funciones_practica_1",
+      "title": "Práctica: Dominio y Rango (Nivel 1)",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "func_n1_01",
+          "questionText": "Halla el dominio de la función:",
+          "questionLatex": "f(x) = \\sqrt{x+5}",
+          "options": [
+            "[-5, \\infty)",
+            "(-5, \\infty)",
+            "(-\\infty, -5]",
+            "[5, \\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "x+5\\geq0 \\Rightarrow \\text{dom}(f)=[-5,\\infty)",
+          "explanationSteps": [
+            {
+              "title": "Mira qué exige la raíz",
+              "text": "Tenemos una raíz cuadrada, así que lo que está adentro no puede ser negativo. Planteamos la condición.",
+              "icon": "pin",
+              "mathContent": "x+5 \\geq 0"
+            },
+            {
+              "title": "Despeja x con calma",
+              "text": "Restamos 5 en ambos lados, como en cualquier inecuación lineal.",
+              "icon": "fx",
+              "mathContent": "x \\geq -5"
+            },
+            {
+              "title": "Escribe el resultado",
+              "text": "Como sí se permite x=-5 (el radicando da 0, que es válido), el intervalo es cerrado en ese extremo.",
+              "icon": "star",
+              "mathContent": "\\text{dom}(f) = [-5, \\infty)"
+            }
+          ],
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "func_n1_02",
+          "questionText": "Halla el dominio de la función:",
+          "questionLatex": "f(x) = \\frac{3}{x+1}",
+          "options": [
+            "\\mathbb{R}\\setminus\\{-1\\}",
+            "\\mathbb{R}\\setminus\\{1\\}",
+            "(-1,\\infty)",
+            "\\mathbb{R}\\setminus\\{0\\}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{dom}(f)=\\mathbb{R}\\setminus\\{-1\\}",
+          "explanationSteps": [
+            {
+              "title": "Ubica el peligro",
+              "text": "Aquí no hay raíces ni logaritmos, solo una fracción. El único riesgo es que el denominador se haga cero.",
+              "icon": "pin",
+              "mathContent": "x+1 \\neq 0"
+            },
+            {
+              "title": "Encuentra el valor prohibido",
+              "text": "Despejamos para saber exactamente qué valor de x hay que excluir.",
+              "icon": "fx",
+              "mathContent": "x \\neq -1"
+            },
+            {
+              "title": "Redacta el dominio",
+              "text": "Todos los reales sirven, menos ese único punto.",
+              "icon": "star",
+              "mathContent": "\\text{dom}(f)=\\mathbb{R}\\setminus\\{-1\\}"
+            }
+          ],
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "func_n1_03",
+          "questionText": "Calcula el valor de la función parte entera en cada caso:",
+          "questionLatex": "\\lfloor 7.9 \\rfloor \\text{ y } \\lfloor -4.1 \\rfloor",
+          "options": [
+            "7 \\text{ y } -5",
+            "8 \\text{ y } -4",
+            "7 \\text{ y } -4",
+            "8 \\text{ y } -5"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\lfloor7.9\\rfloor=7, \\;\\lfloor-4.1\\rfloor=-5",
+          "explanationSteps": [
+            {
+              "title": "Caso positivo",
+              "text": "Buscamos el mayor entero que no se pase de 7.9. Ese es 7, no 8 (8 ya se pasa).",
+              "icon": "fx",
+              "mathContent": "\\lfloor 7.9 \\rfloor = 7"
+            },
+            {
+              "title": "Caso negativo, con cuidado",
+              "text": "Aquí es donde muchos se confunden: no se trunca hacia cero. Buscamos el mayor entero que sea ≤ -4.1, y ese es -5, porque -4 es mayor que -4.1.",
+              "icon": "info",
+              "mathContent": "\\lfloor -4.1 \\rfloor = -5"
+            },
+            {
+              "title": "Conclusión",
+              "text": "La función piso siempre redondea hacia abajo en la recta numérica, sin importar el signo.",
+              "icon": "star",
+              "mathContent": "\\lfloor 7.9\\rfloor=7, \\;\\lfloor-4.1\\rfloor=-5"
+            }
+          ],
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "func_n1_04",
+          "questionText": "Halla el dominio y el rango de:",
+          "questionLatex": "f(x) = |x+1| - 3",
+          "options": [
+            "\\text{dom}=\\mathbb{R}, \\;\\text{rango}=[-3,\\infty)",
+            "\\text{dom}=\\mathbb{R}, \\;\\text{rango}=(-3,\\infty)",
+            "\\text{dom}=[-1,\\infty), \\;\\text{rango}=[-3,\\infty)",
+            "\\text{dom}=\\mathbb{R}, \\;\\text{rango}=[3,\\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{dom}=\\mathbb{R}, \\;\\text{rango}=[-3,\\infty)",
+          "explanationSteps": [
+            {
+              "title": "Dominio",
+              "text": "El valor absoluto no impone ninguna restricción: acepta cualquier x real.",
+              "icon": "pin",
+              "mathContent": "\\text{dom}(f)=\\mathbb{R}"
+            },
+            {
+              "title": "Encuentra el mínimo",
+              "text": "|x+1| vale su mínimo, 0, exactamente cuando x=-1. Ahí f alcanza su valor más bajo.",
+              "icon": "fx",
+              "mathContent": "f(-1) = |0| - 3 = -3"
+            },
+            {
+              "title": "Describe el rango",
+              "text": "Desde ese mínimo de -3, la función solo puede crecer (nunca bajar más), así que el rango empieza en -3 y sube sin límite.",
+              "icon": "star",
+              "mathContent": "\\text{rango}(f)=[-3,\\infty)"
+            }
+          ],
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "func_n1_05",
+          "questionText": "Describe la transformación que lleva de $f(x)=x^2$ a $g(x)=(x-4)^2$:",
+          "questionLatex": "",
+          "options": [
+            "Traslación 4 unidades a la derecha",
+            "Traslación 4 unidades a la izquierda",
+            "Traslación 4 unidades hacia arriba",
+            "Reflexión respecto al eje x"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "g(x)=f(x-4): \\text{traslación 4 unidades a la derecha}",
+          "explanationSteps": [
+            {
+              "title": "Identifica dónde está el cambio",
+              "text": "El cambio está dentro del paréntesis, en la variable x, no sumado al final. Eso indica una traslación horizontal.",
+              "icon": "pin",
+              "mathContent": "g(x) = f(x-4)"
+            },
+            {
+              "title": "Determina la dirección",
+              "text": "Cuando la fórmula es f(x-h) con h positivo, la gráfica se mueve hacia la derecha (aunque parezca contraintuitivo).",
+              "icon": "fx",
+              "mathContent": "h = 4 > 0 \\Rightarrow \\text{derecha}"
+            },
+            {
+              "title": "Conclusión",
+              "text": "El vértice de la parábola pasa de (0,0) a (4,0): 4 unidades a la derecha.",
+              "icon": "star",
+              "mathContent": "(0,0) \\to (4,0)"
+            }
+          ],
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "funciones_practica_2",
+      "title": "Práctica: Dominio y Rango (Nivel 2)",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "func_n2_01",
+          "questionText": "Halla el dominio de la función:",
+          "questionLatex": "f(x) = \\sqrt{9-x^2}",
+          "options": [
+            "[-3,3]",
+            "(-3,3)",
+            "[0,3]",
+            "(-\\infty,-3]\\cup[3,\\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{dom}(f)=[-3,3]",
+          "explanationSteps": [
+            {
+              "title": "Plantea la restricción",
+              "text": "El radicando de una raíz cuadrada nunca puede ser negativo.",
+              "icon": "pin",
+              "mathContent": "9-x^2 \\geq 0"
+            },
+            {
+              "title": "Reordena la desigualdad",
+              "text": "Pasamos x² al otro lado para compararlo con 9.",
+              "icon": "fx",
+              "mathContent": "x^2 \\leq 9"
+            },
+            {
+              "title": "Resuelve pensando en valor absoluto",
+              "text": "x² ≤ 9 significa que x está a lo más a 3 unidades de cero, en ambas direcciones.",
+              "icon": "star",
+              "mathContent": "-3 \\leq x \\leq 3"
+            }
+          ],
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "func_n2_02",
+          "questionText": "Halla el dominio de la función:",
+          "questionLatex": "f(x) = \\frac{1}{\\sqrt{x-1}}",
+          "options": [
+            "(1,\\infty)",
+            "[1,\\infty)",
+            "(-\\infty,1)",
+            "\\mathbb{R}\\setminus\\{1\\}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{dom}(f)=(1,\\infty)",
+          "explanationSteps": [
+            {
+              "title": "Detecta las dos condiciones a la vez",
+              "text": "Aquí la raíz está en el denominador, así que no basta con que el radicando sea ≥ 0: debe ser estrictamente mayor que 0, porque además no puede dividirse entre cero.",
+              "icon": "pin",
+              "mathContent": "x-1 > 0"
+            },
+            {
+              "title": "Despeja x",
+              "text": "Sumamos 1 en ambos lados.",
+              "icon": "fx",
+              "mathContent": "x > 1"
+            },
+            {
+              "title": "Escribe el dominio",
+              "text": "A diferencia de una raíz sola, aquí el intervalo es abierto: x=1 no se permite.",
+              "icon": "star",
+              "mathContent": "\\text{dom}(f)=(1,\\infty)"
+            }
+          ],
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "func_n2_03",
+          "questionText": "Halla el rango de la función:",
+          "questionLatex": "f(x) = -|x|+5",
+          "options": [
+            "(-\\infty,5]",
+            "[5,\\infty)",
+            "(-\\infty,0]",
+            "[0,5]"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{rango}(f)=(-\\infty,5]",
+          "explanationSteps": [
+            {
+              "title": "Recuerda el comportamiento base",
+              "text": "Sabemos que |x| siempre es ≥ 0, sin importar el valor de x.",
+              "icon": "pin",
+              "mathContent": "|x| \\geq 0"
+            },
+            {
+              "title": "Aplica el signo negativo",
+              "text": "Al multiplicar por -1, la desigualdad se invierte: -|x| siempre es ≤ 0.",
+              "icon": "fx",
+              "mathContent": "-|x| \\leq 0"
+            },
+            {
+              "title": "Suma el +5 y concluye",
+              "text": "El máximo de f ocurre en x=0, donde f(0)=5; desde ahí la función solo puede bajar sin límite.",
+              "icon": "star",
+              "mathContent": "\\text{rango}(f)=(-\\infty,5]"
+            }
+          ],
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "func_n2_04",
+          "questionText": "Describe las transformaciones que llevan de $f(x)=x^3$ a $g(x)=2(x+3)^3-1$:",
+          "questionLatex": "",
+          "options": [
+            "Estiramiento vertical ×2, traslación 3 a la izquierda y 1 hacia abajo",
+            "Estiramiento vertical ×2, traslación 3 a la derecha y 1 hacia arriba",
+            "Compresión vertical, traslación 3 a la izquierda y 1 hacia arriba",
+            "Reflexión vertical, traslación 3 a la derecha y 1 hacia abajo"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Estiramiento} \\times 2, \\; 3 \\text{ izq.}, \\;1 \\text{ abajo}",
+          "explanationSteps": [
+            {
+              "title": "Mira el factor que multiplica",
+              "text": "El 2 que multiplica a todo estira verticalmente la gráfica, haciéndola crecer al doble de rápido.",
+              "icon": "pin",
+              "mathContent": "2\\cdot f(x)"
+            },
+            {
+              "title": "Mira el interior del paréntesis",
+              "text": "El (x+3) mueve la gráfica horizontalmente: como es +3, el desplazamiento es hacia la izquierda.",
+              "icon": "fx",
+              "mathContent": "f(x+3)"
+            },
+            {
+              "title": "Mira lo que se suma al final",
+              "text": "El -1 al final baja toda la curva 1 unidad.",
+              "icon": "star",
+              "mathContent": "2(x+3)^3 - 1"
+            }
+          ],
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "func_n2_05",
+          "questionText": "Halla el dominio de la función:",
+          "questionLatex": "f(x) = \\frac{\\sqrt{x}}{x-4}",
+          "options": [
+            "[0,4)\\cup(4,\\infty)",
+            "[0,\\infty)",
+            "(4,\\infty)",
+            "[0,4]"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{dom}(f)=[0,4)\\cup(4,\\infty)",
+          "explanationSteps": [
+            {
+              "title": "Primera condición: la raíz",
+              "text": "El radicando debe ser no negativo.",
+              "icon": "pin",
+              "mathContent": "x \\geq 0"
+            },
+            {
+              "title": "Segunda condición: el denominador",
+              "text": "El denominador no puede ser cero.",
+              "icon": "pin",
+              "mathContent": "x \\neq 4"
+            },
+            {
+              "title": "Combina ambas",
+              "text": "Tomamos todos los x≥0, pero le hacemos un 'hueco' justo en x=4.",
+              "icon": "star",
+              "mathContent": "\\text{dom}(f)=[0,4)\\cup(4,\\infty)"
+            }
+          ],
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "funciones_practica_3",
+      "title": "Práctica: Dominio y Rango (Nivel 3)",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "func_n3_01",
+          "questionText": "Halla el dominio de la función:",
+          "questionLatex": "f(x) = \\frac{\\sqrt{x-1}}{x^2-4}",
+          "options": [
+            "[1,2)\\cup(2,\\infty)",
+            "[1,\\infty)\\setminus\\{2,-2\\}",
+            "(-\\infty,-2)\\cup[1,2)\\cup(2,\\infty)",
+            "[1,4)\\cup(4,\\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{dom}(f)=[1,2)\\cup(2,\\infty)",
+          "explanationSteps": [
+            {
+              "title": "Restricción de la raíz",
+              "text": "El radicando debe ser no negativo, así que necesitamos x≥1.",
+              "icon": "pin",
+              "mathContent": "x-1 \\geq 0 \\Rightarrow x\\geq1"
+            },
+            {
+              "title": "Restricción del denominador",
+              "text": "x²-4 no puede ser cero, y eso pasa en x=2 y en x=-2.",
+              "icon": "pin",
+              "mathContent": "x^2-4\\neq0 \\Rightarrow x\\neq\\pm2"
+            },
+            {
+              "title": "Combina con cuidado",
+              "text": "Como ya exigimos x≥1, el valor x=-2 queda automáticamente descartado por la primera condición; solo hace falta quitar x=2.",
+              "icon": "star",
+              "mathContent": "\\text{dom}(f)=[1,2)\\cup(2,\\infty)"
+            }
+          ],
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "func_n3_02",
+          "questionText": "Halla el rango de la función (piensa geométricamente):",
+          "questionLatex": "f(x) = \\sqrt{9-x^2}",
+          "options": [
+            "[0,3]",
+            "[-3,3]",
+            "[0,9]",
+            "(0,3]"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{rango}(f)=[0,3]",
+          "explanationSteps": [
+            {
+              "title": "Recuerda la forma de la gráfica",
+              "text": "Esta función traza la mitad superior de una circunferencia de radio 3, centrada en el origen.",
+              "icon": "chart",
+              "mathContent": "x^2+y^2=9, \\; y\\geq0"
+            },
+            {
+              "title": "Ubica el mínimo",
+              "text": "En los extremos del dominio (x=±3) la altura es 0.",
+              "icon": "pin",
+              "mathContent": "f(\\pm3)=0"
+            },
+            {
+              "title": "Ubica el máximo",
+              "text": "En el centro (x=0) la altura es máxima, igual al radio.",
+              "icon": "star",
+              "mathContent": "f(0)=3"
+            }
+          ],
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "func_n3_03",
+          "questionText": "Un objeto cuesta $\\lfloor x \\rfloor + 1$ dólares por cada x horas de renta (x>0). ¿Cuánto cuesta rentarlo por 2.5 y por 5 horas?",
+          "questionLatex": "",
+          "options": [
+            "3 \\text{ y } 6",
+            "2 \\text{ y } 5",
+            "3 \\text{ y } 5",
+            "2 \\text{ y } 6"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "3 \\text{ dólares y } 6 \\text{ dólares}",
+          "explanationSteps": [
+            {
+              "title": "Calcula para x=2.5",
+              "text": "Primero aplicamos la función piso: el mayor entero ≤2.5 es 2. Luego sumamos 1.",
+              "icon": "fx",
+              "mathContent": "\\lfloor2.5\\rfloor+1=2+1=3"
+            },
+            {
+              "title": "Calcula para x=5",
+              "text": "Como 5 ya es entero, la función piso lo deja igual. Luego sumamos 1.",
+              "icon": "fx",
+              "mathContent": "\\lfloor5\\rfloor+1=5+1=6"
+            },
+            {
+              "title": "Interpreta el resultado",
+              "text": "El costo es de 3 dólares para 2.5 horas y de 6 dólares para 5 horas.",
+              "icon": "star",
+              "mathContent": "3 \\text{ y } 6 \\text{ dólares}"
+            }
+          ],
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "func_n3_04",
+          "questionText": "Describe las transformaciones completas que llevan de $f(x)=\\sqrt{x}$ a $g(x)=-3\\sqrt{-x+2}+5$:",
+          "questionLatex": "",
+          "options": [
+            "Reflexión horizontal, traslación 2 a la derecha, reflexión vertical con estiramiento ×3, traslación 5 hacia arriba",
+            "Reflexión vertical, traslación 2 a la izquierda, estiramiento ×3, traslación 5 hacia abajo",
+            "Traslación 2 a la derecha, reflexión vertical, compresión ×3, traslación 5 hacia arriba",
+            "Reflexión horizontal, traslación 2 a la izquierda, estiramiento ×3, traslación 5 hacia abajo"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Reflexión horiz., 2 der., reflexión vert.} \\times3, \\;5 \\text{ arriba}",
+          "explanationSteps": [
+            {
+              "title": "Reescribe el interior",
+              "text": "Sacamos factor común -1 dentro de la raíz para ver el orden claro de las transformaciones.",
+              "icon": "pin",
+              "mathContent": "-x+2 = -(x-2)"
+            },
+            {
+              "title": "Transformación horizontal",
+              "text": "El signo negativo dentro (el -x) refleja la gráfica respecto al eje y; el (x-2) la desplaza 2 unidades a la derecha.",
+              "icon": "fx",
+              "mathContent": "\\sqrt{-(x-2)}"
+            },
+            {
+              "title": "Transformación vertical",
+              "text": "El -3 al frente refleja verticalmente y estira la gráfica por un factor de 3.",
+              "icon": "fx",
+              "mathContent": "-3\\sqrt{-(x-2)}"
+            },
+            {
+              "title": "Último paso",
+              "text": "El +5 final sube toda la gráfica 5 unidades.",
+              "icon": "star",
+              "mathContent": "g(x)=-3\\sqrt{-(x-2)}+5"
+            }
+          ],
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "func_n3_05",
+          "questionText": "Halla el dominio de la función:",
+          "questionLatex": "f(x) = \\sqrt{x+2}+\\sqrt{4-x}",
+          "options": [
+            "[-2,4]",
+            "(-2,4)",
+            "[-4,2]",
+            "(-\\infty,4]"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{dom}(f)=[-2,4]",
+          "explanationSteps": [
+            {
+              "title": "Primera raíz",
+              "text": "El primer radicando debe ser no negativo.",
+              "icon": "pin",
+              "mathContent": "x+2\\geq0 \\Rightarrow x\\geq-2"
+            },
+            {
+              "title": "Segunda raíz",
+              "text": "El segundo radicando también debe ser no negativo.",
+              "icon": "pin",
+              "mathContent": "4-x\\geq0 \\Rightarrow x\\leq4"
+            },
+            {
+              "title": "Intersección",
+              "text": "Tomamos los valores de x que cumplen ambas condiciones a la vez.",
+              "icon": "star",
+              "mathContent": "\\text{dom}(f)=[-2,4]"
+            }
+          ],
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "funciones_flashcards",
+      "title": "Flashcards: Funciones y Notación (V/F)",
+      "type": "flashcards",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "tf_func_01",
+          "questionText": "El dominio de $f(x)=\\sqrt{x-3}$ incluye al número 3.",
+          "questionLatex": "\\text{dom}(f)=[3,\\infty)",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Verdadero. Como el radicando debe ser mayor o igual a cero (no estrictamente mayor), x=3 sí pertenece al dominio, ya que ahí la raíz vale 0.",
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_func_02",
+          "questionText": "$f^{-1}(x)$ significa lo mismo que $1/f(x)$.",
+          "questionLatex": "f^{-1}(x) \\overset{?}{=} \\frac{1}{f(x)}",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Falso. $f^{-1}$ es la función inversa que deshace lo que hace f, mientras que $1/f(x)$ es simplemente el recíproco numérico del valor f(x). Son conceptos completamente distintos.",
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_func_03",
+          "questionText": "$\\lfloor -2.3 \\rfloor = -2$.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Falso. La función piso siempre redondea hacia abajo en la recta numérica, así que $\\lfloor-2.3\\rfloor=-3$, no $-2$.",
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_func_04",
+          "questionText": "El rango de la función valor absoluto $f(x)=|x|$ es $[0,\\infty)$.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Verdadero. El valor absoluto nunca es negativo, y toma todos los valores desde 0 hacia arriba.",
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_func_05",
+          "questionText": "La composición de funciones siempre es conmutativa: $(f\\circ g)(x) = (g\\circ f)(x)$ para cualesquiera f y g.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Falso. En general el orden de composición sí importa; solo coinciden en casos particulares, no como regla general.",
+          "category": "Dominio, Rango y Transformaciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "operaciones_funciones_theory",
+      "title": "Operaciones entre Funciones",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [
+        {
+          "title": "Suma, Resta, Producto y Cociente de Funciones",
+          "subtitle": "Operaciones • Álgebra de Funciones",
+          "content": "Dadas dos funciones $f$ y $g$, se pueden construir nuevas funciones combinándolas algebraicamente punto por punto.",
+          "formulaLatex": "(f+g)(x) = f(x)+g(x), \\quad (f-g)(x)=f(x)-g(x)",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "(f\\cdot g)(x) = f(x)\\cdot g(x), \\quad (f/g)(x) = \\frac{f(x)}{g(x)} \\; (g(x)\\neq 0)"
+            },
+            {
+              "type": "example",
+              "content": "\\text{Si } f(x)=x^2+1, \\; g(x)=x-3, \\text{ hallar las cuatro operaciones}",
+              "steps": [
+                {
+                  "title": "Suma",
+                  "text": "Sumamos las dos expresiones término a término.",
+                  "icon": "fx",
+                  "mathContent": "(f+g)(x)=x^2+1+x-3=x^2+x-2"
+                },
+                {
+                  "title": "Resta",
+                  "text": "Restamos con cuidado de distribuir el signo negativo.",
+                  "icon": "fx",
+                  "mathContent": "(f-g)(x)=x^2+1-(x-3)=x^2-x+4"
+                },
+                {
+                  "title": "Producto",
+                  "text": "Multiplicamos ambas expresiones y expandimos.",
+                  "icon": "fx",
+                  "mathContent": "(f\\cdot g)(x)=(x^2+1)(x-3)=x^3-3x^2+x-3"
+                },
+                {
+                  "title": "Cociente",
+                  "text": "Dividimos, recordando excluir donde el denominador se anula.",
+                  "icon": "star",
+                  "mathContent": "(f/g)(x)=\\frac{x^2+1}{x-3}, \\; x\\neq3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Dominio de las Operaciones entre Funciones",
+          "subtitle": "Operaciones • Dominio",
+          "content": "El dominio de $f+g$, $f-g$ y $f\\cdot g$ es la intersección de los dominios de f y g: solo tiene sentido evaluar la combinación donde ambas funciones están definidas. El dominio de $f/g$ es esa misma intersección, excluyendo además los puntos donde $g(x)=0$.",
+          "formulaLatex": "",
+          "proTip": "Antes de operar algebraicamente dos funciones, halla primero el dominio de cada una por separado. El dominio de la combinación nunca puede ser más amplio que la intersección de los dominios originales, sin importar cómo se simplifique la expresión final.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Si } f(x)=\\sqrt{x}, \\; g(x)=\\sqrt{4-x}, \\text{ hallar dom}(f+g) \\text{ y dom}(f/g)",
+              "steps": [
+                {
+                  "title": "Dominios individuales",
+                  "text": "Hallamos primero el dominio de cada función por separado.",
+                  "icon": "pin",
+                  "mathContent": "\\text{dom}(f)=[0,\\infty), \\;\\text{dom}(g)=(-\\infty,4]"
+                },
+                {
+                  "title": "Intersección para f+g",
+                  "text": "Tomamos los valores comunes a ambos dominios.",
+                  "icon": "fx",
+                  "mathContent": "\\text{dom}(f+g)=[0,4]"
+                },
+                {
+                  "title": "Excluir ceros de g para f/g",
+                  "text": "Además, quitamos donde g se anula, que es en x=4.",
+                  "icon": "star",
+                  "mathContent": "\\text{dom}(f/g)=[0,4)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "composicion_funciones_theory",
+      "title": "Composición de Funciones",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [
+        {
+          "title": "Composición de Funciones",
+          "subtitle": "Operaciones • Composición",
+          "content": "La composición $(f\\circ g)(x)=f(g(x))$ consiste en aplicar primero g, y luego aplicar f al resultado. Es una operación fundamentalmente distinta de las operaciones algebraicas: en lugar de combinar los valores de f y g, se usa la salida de g como entrada de f.",
+          "formulaLatex": "(f \\circ g)(x) = f(g(x))",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Si } f(x)=\\sqrt{x}, \\; g(x)=x-1, \\text{ hallar } (f\\circ g)(x) \\text{ y } (g\\circ f)(x)",
+              "steps": [
+                {
+                  "title": "f compuesta con g",
+                  "text": "Sustituimos g(x) dentro de f, es decir, reemplazamos la x de f por (x-1).",
+                  "icon": "fx",
+                  "mathContent": "(f\\circ g)(x)=\\sqrt{x-1}"
+                },
+                {
+                  "title": "g compuesta con f",
+                  "text": "Ahora al revés: sustituimos f(x) dentro de g.",
+                  "icon": "fx",
+                  "mathContent": "(g\\circ f)(x)=\\sqrt{x}-1"
+                },
+                {
+                  "title": "Compara los resultados",
+                  "text": "Son claramente distintas, lo que confirma que la composición no es conmutativa en general.",
+                  "icon": "star",
+                  "mathContent": "(f\\circ g)(x)\\neq(g\\circ f)(x)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Dominio de una Composición",
+          "subtitle": "Operaciones • Dominio de Composiciones",
+          "content": "El dominio de $(f\\circ g)(x)$ consiste en los valores de x que están en el dominio de g, y para los cuales además g(x) está en el dominio de f. No basta con hallar el dominio de la expresión simplificada de f(g(x)): hay que verificar también la restricción impuesta por el dominio original de f.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Si } f(x)=1/x, \\; g(x)=x-2, \\text{ hallar el dominio de ambas composiciones}",
+              "steps": [
+                {
+                  "title": "Dominio de f∘g",
+                  "text": "Necesitamos que x esté en dom(g)=ℝ y que g(x)=x-2 no sea cero (para poder aplicar f).",
+                  "icon": "pin",
+                  "mathContent": "\\text{dom}(f\\circ g)=\\mathbb{R}\\setminus\\{2\\}"
+                },
+                {
+                  "title": "Dominio de g∘f",
+                  "text": "Aquí basta con que x esté en dom(f), es decir, x≠0.",
+                  "icon": "star",
+                  "mathContent": "\\text{dom}(g\\circ f)=\\mathbb{R}\\setminus\\{0\\}"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "content": "Un error frecuente es simplificar primero la expresión de f(g(x)) y hallar el dominio solo de esa expresión final, ignorando las restricciones originales de f y g. Esto puede dar un dominio incorrecto (demasiado amplio) si alguna restricción se cancela algebraicamente en el proceso."
+            }
+          ]
+        },
+        {
+          "title": "Descomponer una Función en Composición de Funciones Simples",
+          "subtitle": "Operaciones • Descomposición",
+          "content": "El proceso inverso a componer también es una habilidad útil, especialmente más adelante en cálculo: dada una función h(x) complicada, expresarla como $h(x)=f(g(x))$ para funciones f y g más simples. No hay una única forma correcta de hacerlo, pero conviene elegir g(x) como la parte 'interior' de la expresión.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Expresar } h(x)=\\sqrt{x^2+1} \\text{ como composición } f(g(x))",
+              "steps": [
+                {
+                  "title": "Identifica la parte interior",
+                  "text": "Lo que está 'atrapado' dentro de la operación exterior es x²+1.",
+                  "icon": "pin",
+                  "mathContent": "g(x) = x^2+1"
+                },
+                {
+                  "title": "Identifica la operación exterior",
+                  "text": "Lo último que se aplica es la raíz cuadrada.",
+                  "icon": "fx",
+                  "mathContent": "f(u) = \\sqrt{u}"
+                },
+                {
+                  "title": "Verifica",
+                  "text": "Al sustituir g dentro de f recuperamos exactamente h.",
+                  "icon": "star",
+                  "mathContent": "f(g(x))=\\sqrt{x^2+1}=h(x)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "operaciones_composicion_practica_1",
+      "title": "Práctica: Operaciones y Composición (Nivel 1)",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "op_n1_01",
+          "questionText": "Si $f(x)=2x+1$ y $g(x)=x^2-3$, halla $(f+g)(x)$ y $(f-g)(x)$:",
+          "questionLatex": "",
+          "options": [
+            "x^2+2x-2 \\;\\text{ y }\\; -x^2+2x+4",
+            "x^2+2x+2 \\;\\text{ y }\\; -x^2-2x+4",
+            "x^2-2x-2 \\;\\text{ y }\\; x^2+2x+4",
+            "x^2+2x-4 \\;\\text{ y }\\; -x^2+2x+2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "x^2+2x-2 \\;\\text{ y }\\; -x^2+2x+4",
+          "explanationSteps": [
+            {
+              "title": "Suma",
+              "text": "Juntamos ambas expresiones y agrupamos términos semejantes.",
+              "icon": "fx",
+              "mathContent": "(f+g)(x)=(2x+1)+(x^2-3)=x^2+2x-2"
+            },
+            {
+              "title": "Resta, con cuidado del signo",
+              "text": "Al restar g, distribuimos el signo negativo a los dos términos de g.",
+              "icon": "fx",
+              "mathContent": "(f-g)(x)=(2x+1)-(x^2-3)=-x^2+2x+4"
+            }
+          ],
+          "category": "Operaciones y Composición de Funciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "op_n1_02",
+          "questionText": "Si $f(x)=x^2$ y $g(x)=x+2$, halla $(f\\circ g)(x)$ y $(g\\circ f)(x)$:",
+          "questionLatex": "",
+          "options": [
+            "(x+2)^2 \\;\\text{ y }\\; x^2+2",
+            "x^2+2 \\;\\text{ y }\\; (x+2)^2",
+            "(x+2)^2 \\;\\text{ y }\\; x^2+4",
+            "x^2+4x \\;\\text{ y }\\; x^2+2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "(x+2)^2 \\;\\text{ y }\\; x^2+2",
+          "explanationSteps": [
+            {
+              "title": "f compuesta con g",
+              "text": "Sustituimos g(x)=x+2 en el lugar de la x de f.",
+              "icon": "fx",
+              "mathContent": "(f\\circ g)(x)=f(x+2)=(x+2)^2"
+            },
+            {
+              "title": "g compuesta con f",
+              "text": "Ahora sustituimos f(x)=x² en el lugar de la x de g.",
+              "icon": "fx",
+              "mathContent": "(g\\circ f)(x)=g(x^2)=x^2+2"
+            }
+          ],
+          "category": "Operaciones y Composición de Funciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "op_n1_03",
+          "questionText": "Expresa $h(x)=(x+3)^5$ como composición de dos funciones simples:",
+          "questionLatex": "",
+          "options": [
+            "g(x)=x+3, \\; f(u)=u^5",
+            "g(x)=x^5, \\; f(u)=u+3",
+            "g(x)=x+5, \\; f(u)=u^3",
+            "g(x)=x^3, \\; f(u)=u+5"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "g(x)=x+3, \\; f(u)=u^5",
+          "explanationSteps": [
+            {
+              "title": "Busca la parte interior",
+              "text": "Lo que está dentro del paréntesis, antes de elevar a la potencia, es x+3.",
+              "icon": "pin",
+              "mathContent": "g(x)=x+3"
+            },
+            {
+              "title": "Busca la operación exterior",
+              "text": "Lo último que se hace es elevar a la quinta potencia.",
+              "icon": "fx",
+              "mathContent": "f(u)=u^5"
+            },
+            {
+              "title": "Confirma",
+              "text": "Sustituyendo, f(g(x))=(x+3)^5, que es exactamente h(x).",
+              "icon": "star",
+              "mathContent": "f(g(x))=(x+3)^5"
+            }
+          ],
+          "category": "Operaciones y Composición de Funciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "operaciones_composicion_practica_2",
+      "title": "Práctica: Operaciones y Composición (Nivel 2)",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "op_n2_01",
+          "questionText": "Si $f(x)=\\sqrt{x+2}$ y $g(x)=x-5$, halla el dominio de $(f\\circ g)(x)$:",
+          "questionLatex": "",
+          "options": [
+            "[3,\\infty)",
+            "[-2,\\infty)",
+            "[5,\\infty)",
+            "(-\\infty,3]"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{dom}(f\\circ g)=[3,\\infty)",
+          "explanationSteps": [
+            {
+              "title": "Sustituye g dentro de f",
+              "text": "Primero escribimos la composición.",
+              "icon": "fx",
+              "mathContent": "(f\\circ g)(x)=\\sqrt{(x-5)+2}=\\sqrt{x-3}"
+            },
+            {
+              "title": "Aplica la restricción de la raíz",
+              "text": "El radicando final debe ser no negativo.",
+              "icon": "pin",
+              "mathContent": "x-3\\geq0"
+            },
+            {
+              "title": "Despeja x",
+              "text": "Sumamos 3 a ambos lados.",
+              "icon": "star",
+              "mathContent": "x\\geq3 \\Rightarrow \\text{dom}=[3,\\infty)"
+            }
+          ],
+          "category": "Operaciones y Composición de Funciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "op_n2_02",
+          "questionText": "Si $f(x)=\\frac{1}{x-1}$ y $g(x)=2x$, halla el dominio de $(f/g)(x)$:",
+          "questionLatex": "",
+          "options": [
+            "\\mathbb{R}\\setminus\\{0,1\\}",
+            "\\mathbb{R}\\setminus\\{1\\}",
+            "\\mathbb{R}\\setminus\\{0\\}",
+            "(1,\\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{dom}(f/g)=\\mathbb{R}\\setminus\\{0,1\\}",
+          "explanationSteps": [
+            {
+              "title": "Dominio de f",
+              "text": "f exige que x sea distinto de 1.",
+              "icon": "pin",
+              "mathContent": "x\\neq1"
+            },
+            {
+              "title": "Dominio de g",
+              "text": "g está definida en todos los reales, sin restricción.",
+              "icon": "pin",
+              "mathContent": "\\text{dom}(g)=\\mathbb{R}"
+            },
+            {
+              "title": "Condición extra del cociente",
+              "text": "Como estamos dividiendo entre g, también necesitamos que g(x) no sea cero, es decir, x≠0.",
+              "icon": "fx",
+              "mathContent": "g(x)=2x\\neq0 \\Rightarrow x\\neq0"
+            },
+            {
+              "title": "Combina todo",
+              "text": "Excluimos ambos valores prohibidos del conjunto de los reales.",
+              "icon": "star",
+              "mathContent": "\\text{dom}(f/g)=\\mathbb{R}\\setminus\\{0,1\\}"
+            }
+          ],
+          "category": "Operaciones y Composición de Funciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "op_n2_03",
+          "questionText": "Si $f(x)=x^2-4$ y $g(x)=\\sqrt{x}$, halla $(f\\circ g)(x)$ y su dominio:",
+          "questionLatex": "",
+          "options": [
+            "x-4, \\; [0,\\infty)",
+            "x^2-4, \\; [0,\\infty)",
+            "x-4, \\; \\mathbb{R}",
+            "\\sqrt{x^2-4}, \\;[2,\\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "(f\\circ g)(x)=x-4, \\; \\text{dom}=[0,\\infty)",
+          "explanationSteps": [
+            {
+              "title": "Sustituye y simplifica",
+              "text": "Al elevar la raíz al cuadrado, esta se cancela.",
+              "icon": "fx",
+              "mathContent": "(f\\circ g)(x)=(\\sqrt{x})^2-4=x-4"
+            },
+            {
+              "title": "No olvides el dominio original de g",
+              "text": "Aunque la expresión simplificada 'x-4' parece aceptar cualquier x, primero necesitamos que x esté en el dominio de g, es decir, x≥0.",
+              "icon": "info",
+              "mathContent": "\\text{dom}(g)=[0,\\infty)"
+            },
+            {
+              "title": "Conclusión",
+              "text": "El dominio de la composición queda restringido a los reales no negativos.",
+              "icon": "star",
+              "mathContent": "\\text{dom}(f\\circ g)=[0,\\infty)"
+            }
+          ],
+          "category": "Operaciones y Composición de Funciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "operaciones_composicion_practica_3",
+      "title": "Práctica: Operaciones y Composición (Nivel 3)",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "op_n3_01",
+          "questionText": "Si $f(x)=\\sqrt{x-3}$ y $g(x)=\\sqrt{7-x}$, halla el dominio de $(f+g)(x)$ y de $(f/g)(x)$:",
+          "questionLatex": "",
+          "options": [
+            "[3,7] \\;\\text{ y }\\; [3,7)",
+            "[3,7) \\;\\text{ y }\\; [3,7]",
+            "(3,7) \\;\\text{ y }\\; (3,7)",
+            "[3,7] \\;\\text{ y }\\; (3,7]"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "[3,7] \\;\\text{ y }\\; [3,7)",
+          "explanationSteps": [
+            {
+              "title": "Dominios individuales",
+              "text": "Calculamos por separado dónde vive cada raíz.",
+              "icon": "pin",
+              "mathContent": "\\text{dom}(f)=[3,\\infty), \\;\\text{dom}(g)=(-\\infty,7]"
+            },
+            {
+              "title": "Intersección para la suma",
+              "text": "f+g solo existe donde ambas funciones existen a la vez.",
+              "icon": "fx",
+              "mathContent": "\\text{dom}(f+g)=[3,7]"
+            },
+            {
+              "title": "Excluir el cero de g para el cociente",
+              "text": "Como g(7)=0, ese punto se debe quitar cuando dividimos entre g.",
+              "icon": "star",
+              "mathContent": "\\text{dom}(f/g)=[3,7)"
+            }
+          ],
+          "category": "Operaciones y Composición de Funciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "op_n3_02",
+          "questionText": "Si $f(x)=1/x$ y $g(x)=1/x$, halla $(f\\circ g)(x)$ y compáralo con la función identidad:",
+          "questionLatex": "",
+          "options": [
+            "x, \\text{ para } x\\neq 0 \\text{ (casi la identidad, pero sin el 0)}",
+            "x, \\text{ para todo } x\\in\\mathbb{R}",
+            "1/x^2, \\text{ para } x\\neq0",
+            "x^2, \\text{ para } x\\neq0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "(f\\circ g)(x)=x, \\; x\\neq0",
+          "explanationSteps": [
+            {
+              "title": "Sustituye g dentro de f",
+              "text": "El recíproco de un recíproco regresa al número original.",
+              "icon": "fx",
+              "mathContent": "(f\\circ g)(x)=\\frac{1}{1/x}=x"
+            },
+            {
+              "title": "Revisa el dominio, no solo la fórmula",
+              "text": "Aunque la expresión final es 'x', para llegar ahí necesitamos que x≠0 (por g) y que g(x)≠0 (por f), y ambas cosas excluyen justo x=0.",
+              "icon": "info",
+              "mathContent": "x\\neq0"
+            },
+            {
+              "title": "Compara con la identidad verdadera",
+              "text": "La función identidad real tiene dominio todo ℝ; esta composición es casi igual, pero le falta el punto x=0.",
+              "icon": "star",
+              "mathContent": "(f\\circ g)(x)=x, \\;x\\neq0"
+            }
+          ],
+          "category": "Operaciones y Composición de Funciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "op_n3_03",
+          "questionText": "Expresa $h(x)=\\frac{1}{\\sqrt{x^2-1}}$ como composición de tres funciones simples:",
+          "questionLatex": "",
+          "options": [
+            "g_1(x)=x^2-1,\\; g_2(u)=\\sqrt{u},\\; g_3(v)=1/v",
+            "g_1(x)=x^2,\\; g_2(u)=u-1,\\; g_3(v)=1/\\sqrt{v}",
+            "g_1(x)=1/x,\\; g_2(u)=u^2-1,\\; g_3(v)=\\sqrt{v}",
+            "g_1(x)=\\sqrt{x},\\; g_2(u)=u^2-1,\\; g_3(v)=1/v"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "g_1(x)=x^2-1,\\; g_2(u)=\\sqrt{u},\\; g_3(v)=1/v",
+          "explanationSteps": [
+            {
+              "title": "Capa más interior",
+              "text": "Lo primero que se calcula, antes que nada, es x²-1.",
+              "icon": "pin",
+              "mathContent": "g_1(x)=x^2-1"
+            },
+            {
+              "title": "Segunda capa",
+              "text": "A ese resultado se le aplica la raíz cuadrada.",
+              "icon": "fx",
+              "mathContent": "g_2(u)=\\sqrt{u}"
+            },
+            {
+              "title": "Última capa",
+              "text": "Finalmente, se toma el recíproco de ese resultado.",
+              "icon": "fx",
+              "mathContent": "g_3(v)=1/v"
+            },
+            {
+              "title": "Verifica el orden",
+              "text": "Encadenando las tres funciones en ese orden se reconstruye exactamente h(x).",
+              "icon": "star",
+              "mathContent": "g_3(g_2(g_1(x)))=\\frac{1}{\\sqrt{x^2-1}}"
+            }
+          ],
+          "category": "Operaciones y Composición de Funciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "operaciones_flashcards",
+      "title": "Flashcards: Operaciones y Composición (V/F)",
+      "type": "flashcards",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "tf_op_01",
+          "questionText": "La composición de funciones es conmutativa en general: da igual el orden.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Falso. En general $(f\\circ g)(x)\\neq(g\\circ f)(x)$; el orden importa muchísimo.",
+          "category": "Operaciones y Composición de Funciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_op_02",
+          "questionText": "Simplificar primero la expresión de $f(g(x))$ y hallar el dominio de esa expresión final siempre da el dominio correcto de la composición.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Falso. Simplificar puede ocultar restricciones que venían del dominio original de f o de g; siempre hay que revisar esas condiciones antes de simplificar.",
+          "category": "Operaciones y Composición de Funciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_op_03",
+          "questionText": "El dominio de $f/g$ excluye, además de la intersección de los dominios de f y g, los puntos donde $g(x)=0$.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Verdadero. No podemos dividir entre cero, así que esos puntos siempre se quitan del dominio del cociente.",
+          "category": "Operaciones y Composición de Funciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_op_04",
+          "questionText": "Al descomponer $h(x)=f(g(x))$, conviene elegir g(x) como la parte más 'exterior' de la expresión.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Falso. Conviene elegir g(x) como la parte más 'interior', es decir, lo primero que se calcularía al evaluar h.",
+          "category": "Operaciones y Composición de Funciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_op_05",
+          "questionText": "$(f+g)(x)$ solo está definida donde tanto f como g están definidas al mismo tiempo.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Verdadero. El dominio de la suma es la intersección de ambos dominios.",
+          "category": "Operaciones y Composición de Funciones",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "exponencial_inyectividad_theory",
+      "title": "Función Exponencial y Funciones Inyectivas",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [
+        {
+          "title": "La Función Exponencial Natural y General",
+          "subtitle": "Exponencial • Definición",
+          "content": "La función exponencial general tiene la forma $f(x)=a^x$, con base $a>0$ y $a\\neq1$. Cuando la base es el número $e\\approx2.71828\\ldots$, se llama función exponencial natural, $f(x)=e^x$. En ambos casos, el dominio es todo $\\mathbb{R}$ y el rango es $(0,\\infty)$: una exponencial nunca es cero ni negativa. Si $a>1$, la función es creciente; si $0<a<1$, es decreciente. En ambos casos, la gráfica pasa por el punto (0,1), ya que $a^0=1$ para cualquier base a.",
+          "formulaLatex": "f(x) = a^x, \\quad a>0,\\; a\\neq1",
+          "proTip": "Leyes de los exponentes que usarás todo el tiempo: $a^{x+y}=a^x\\cdot a^y$, $a^{x-y}=a^x/a^y$, $(a^x)^y=a^{xy}$, y $a^{-x}=1/a^x$.",
+          "blocks": [
+            {
+              "type": "function_plot",
+              "content": "2^x | [-4, 4]"
+            },
+            {
+              "type": "example",
+              "content": "\\text{Comparar } f(x)=2^x \\text{ y } g(x)=(1/2)^x",
+              "steps": [
+                {
+                  "title": "Comportamiento de f",
+                  "text": "Su base es 2, que es mayor que 1, así que f es creciente.",
+                  "icon": "chart",
+                  "mathContent": "f \\text{ es creciente}"
+                },
+                {
+                  "title": "Comportamiento de g",
+                  "text": "Su base es 1/2, que es menor que 1, así que g es decreciente.",
+                  "icon": "chart",
+                  "mathContent": "g \\text{ es decreciente}"
+                },
+                {
+                  "title": "Relación entre ambas",
+                  "text": "De hecho, g es exactamente el reflejo horizontal de f respecto al eje y.",
+                  "icon": "star",
+                  "mathContent": "g(x)=(1/2)^x=2^{-x}=f(-x)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Funciones Inyectivas",
+          "subtitle": "Exponencial • Inyectividad",
+          "content": "Una función f es inyectiva (o uno a uno) si a entradas distintas siempre corresponden salidas distintas: $f(x_1)=f(x_2)$ implica necesariamente $x_1=x_2$. Geométricamente, esto se verifica con la prueba de la recta horizontal: si ninguna recta horizontal corta la gráfica más de una vez, la función es inyectiva.",
+          "formulaLatex": "",
+          "proTip": "Toda función exponencial $f(x)=a^x$ (con $a>0$, $a\\neq1$) es inyectiva en todo su dominio $\\mathbb{R}$, ya sea creciente o decreciente. Esta propiedad es la que permite definir su inversa sin restringir el dominio, a diferencia de lo que ocurre con $x^2$ o con las funciones trigonométricas.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{¿Es } f(x)=x^2 \\text{ inyectiva en } \\mathbb{R}? \\text{ ¿Y en } [0,\\infty)?",
+              "steps": [
+                {
+                  "title": "Busca un contraejemplo en ℝ",
+                  "text": "Si encontramos dos entradas distintas con la misma salida, la función no es inyectiva ahí.",
+                  "icon": "pin",
+                  "mathContent": "f(2)=4, \\;f(-2)=4"
+                },
+                {
+                  "title": "Conclusión en ℝ",
+                  "text": "Como 2≠-2 pero dan la misma salida, f no es inyectiva en todo ℝ.",
+                  "icon": "info",
+                  "mathContent": "\\text{No inyectiva en } \\mathbb{R}"
+                },
+                {
+                  "title": "Ahora restringe el dominio",
+                  "text": "Si nos quedamos solo con x≥0, ya no hay pareja negativa que 'compita', así que la función sí se vuelve inyectiva ahí.",
+                  "icon": "star",
+                  "mathContent": "\\text{Inyectiva en } [0,\\infty)"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": "De manera similar, $f(x)=\\sin x$ no es inyectiva en $\\mathbb{R}$ (por ejemplo $\\sin 0=\\sin \\pi=0$), pero al restringir a $[-\\pi/2,\\pi/2]$ es estrictamente creciente y sí es inyectiva. Esta restricción es precisamente la que permite definir $\\arcsin x$ más adelante."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "funciones_inversas_theory",
+      "title": "Funciones Inversas",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [
+        {
+          "title": "Función Inversa: Definición y Condición de Existencia",
+          "subtitle": "Inversas • Definición",
+          "content": "Si f es inyectiva, existe una función $f^{-1}$, llamada inversa de f, que 'deshace' lo que hace f: $f^{-1}(f(x))=x$ para todo x en el dominio de f, y $f(f^{-1}(x))=x$ para todo x en el dominio de $f^{-1}$.",
+          "formulaLatex": "f^{-1}(f(x)) = x, \\quad f(f^{-1}(x)) = x",
+          "proTip": "Solo las funciones inyectivas tienen inversa en el sentido estricto. Si f no es inyectiva, se puede restringir su dominio a una parte donde sí lo sea, y definir la inversa solamente en esa parte restringida.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Relación clave entre f y $f^{-1}$: $\\text{dom}(f^{-1})=\\text{rango}(f)$ y $\\text{rango}(f^{-1})=\\text{dom}(f)$. La gráfica de $f^{-1}$ es siempre el reflejo de la gráfica de f respecto de la recta $y=x$."
+            }
+          ]
+        },
+        {
+          "title": "Método para Hallar la Inversa de una Función",
+          "subtitle": "Inversas • Procedimiento",
+          "content": "Procedimiento para hallar $f^{-1}(x)$: escribe $y=f(x)$; intercambia x e y (esto refleja la idea de invertir la correspondencia); despeja y en términos de x; el resultado es $f^{-1}(x)=y$.",
+          "formulaLatex": "",
+          "proTip": "Al hallar una inversa, siempre verifica el dominio del resultado usando el rango de la función original. Olvidar esta restricción es un error muy común, especialmente con funciones que involucran raíces cuadradas.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Hallar la inversa de } f(x)=3x-5",
+              "steps": [
+                {
+                  "title": "Escribe y=f(x)",
+                  "text": "Planteamos la ecuación de partida.",
+                  "icon": "pin",
+                  "mathContent": "y=3x-5"
+                },
+                {
+                  "title": "Intercambia x e y",
+                  "text": "Este es el paso que 'invierte' la relación.",
+                  "icon": "fx",
+                  "mathContent": "x=3y-5"
+                },
+                {
+                  "title": "Despeja y",
+                  "text": "Resolvemos la ecuación para y, como cualquier ecuación lineal.",
+                  "icon": "check",
+                  "mathContent": "y=\\frac{x+5}{3}"
+                },
+                {
+                  "title": "Resultado final",
+                  "text": "Esa expresión despejada es la función inversa.",
+                  "icon": "star",
+                  "mathContent": "f^{-1}(x)=\\frac{x+5}{3}"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Hallar la inversa de } f(x)=\\sqrt{x-2}, \\; x\\geq2",
+              "steps": [
+                {
+                  "title": "Intercambia y despeja",
+                  "text": "Elevamos al cuadrado ambos lados después de intercambiar x e y.",
+                  "icon": "fx",
+                  "mathContent": "x=\\sqrt{y-2} \\Rightarrow y=x^2+2"
+                },
+                {
+                  "title": "No olvides el dominio de la inversa",
+                  "text": "El rango de f original es [0,∞) (porque una raíz nunca da negativo), y ese rango se convierte en el dominio de la inversa.",
+                  "icon": "star",
+                  "mathContent": "f^{-1}(x)=x^2+2, \\; x\\geq0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Verificación de Funciones Inversas",
+          "subtitle": "Inversas • Comprobación",
+          "content": "Para confirmar que dos funciones f y g son realmente inversas entre sí, basta verificar que ambas composiciones devuelven la identidad: $(f\\circ g)(x)=x$ y $(g\\circ f)(x)=x$, dentro de los dominios correspondientes.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Verificar que } f(x)=3x-5 \\text{ y } g(x)=(x+5)/3 \\text{ son inversas}",
+              "steps": [
+                {
+                  "title": "Primera composición",
+                  "text": "Sustituimos g dentro de f y simplificamos.",
+                  "icon": "fx",
+                  "mathContent": "f(g(x))=3\\cdot\\frac{x+5}{3}-5=x"
+                },
+                {
+                  "title": "Segunda composición",
+                  "text": "Ahora sustituimos f dentro de g y simplificamos.",
+                  "icon": "fx",
+                  "mathContent": "g(f(x))=\\frac{(3x-5)+5}{3}=x"
+                },
+                {
+                  "title": "Conclusión",
+                  "text": "Como ambas composiciones dan exactamente x, confirmamos que f y g son inversas entre sí.",
+                  "icon": "star",
+                  "mathContent": "f \\text{ y } g \\text{ son inversas}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "inversas_practica_1",
+      "title": "Práctica: Exponencial e Inversas (Nivel 1)",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "inv_n1_01",
+          "questionText": "Halla la inversa de:",
+          "questionLatex": "f(x) = 4x+7",
+          "options": [
+            "\\frac{x-7}{4}",
+            "\\frac{x+7}{4}",
+            "4x-7",
+            "\\frac{7-x}{4}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "f^{-1}(x)=\\frac{x-7}{4}",
+          "explanationSteps": [
+            {
+              "title": "Plantea y=f(x)",
+              "text": "Escribimos la ecuación original.",
+              "icon": "pin",
+              "mathContent": "y=4x+7"
+            },
+            {
+              "title": "Intercambia x e y",
+              "text": "Este es el paso clave para invertir.",
+              "icon": "fx",
+              "mathContent": "x=4y+7"
+            },
+            {
+              "title": "Despeja y",
+              "text": "Restamos 7 y luego dividimos entre 4.",
+              "icon": "star",
+              "mathContent": "y=\\frac{x-7}{4}"
+            }
+          ],
+          "category": "Función Exponencial y Funciones Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "inv_n1_02",
+          "questionText": "¿Es la función $f(x)=5-2x$ inyectiva?",
+          "questionLatex": "",
+          "options": [
+            "Sí, es inyectiva en todo su dominio",
+            "No, no es inyectiva",
+            "Solo es inyectiva para x≥0",
+            "Solo es inyectiva para x<0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Sí, es inyectiva en todo } \\mathbb{R}",
+          "explanationSteps": [
+            {
+              "title": "Observa la pendiente",
+              "text": "Es una función lineal con pendiente -2, distinta de cero.",
+              "icon": "pin",
+              "mathContent": "m=-2\\neq0"
+            },
+            {
+              "title": "Relaciona pendiente e inyectividad",
+              "text": "Toda función lineal con pendiente distinta de cero es estrictamente creciente o decreciente, así que nunca repite valores.",
+              "icon": "chart",
+              "mathContent": "f \\text{ es estrictamente decreciente}"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Por lo tanto, f es inyectiva en todo su dominio, sin necesidad de restringirlo.",
+              "icon": "star",
+              "mathContent": "f \\text{ es inyectiva en } \\mathbb{R}"
+            }
+          ],
+          "category": "Función Exponencial y Funciones Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "inv_n1_03",
+          "questionText": "Evalúa y compara:",
+          "questionLatex": "3^{-2} \\text{ y } \\left(\\frac{1}{3}\\right)^2",
+          "options": [
+            "\\text{Ambos son } 1/9",
+            "\\text{Ambos son } -1/9",
+            "3^{-2}=1/9, \\;(1/3)^2=9",
+            "3^{-2}=9, \\;(1/3)^2=1/9"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Ambos valen } 1/9",
+          "explanationSteps": [
+            {
+              "title": "Calcula el primero",
+              "text": "Un exponente negativo indica tomar el recíproco de la base elevada al positivo.",
+              "icon": "fx",
+              "mathContent": "3^{-2}=\\frac{1}{3^2}=\\frac{1}{9}"
+            },
+            {
+              "title": "Calcula el segundo",
+              "text": "Elevamos 1/3 al cuadrado directamente.",
+              "icon": "fx",
+              "mathContent": "\\left(\\frac13\\right)^2=\\frac{1}{9}"
+            },
+            {
+              "title": "Compara",
+              "text": "Ambas expresiones representan exactamente la misma cantidad.",
+              "icon": "star",
+              "mathContent": "3^{-2}=\\left(\\frac13\\right)^2=\\frac19"
+            }
+          ],
+          "category": "Función Exponencial y Funciones Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "inversas_practica_2",
+      "title": "Práctica: Exponencial e Inversas (Nivel 2)",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "inv_n2_01",
+          "questionText": "Halla la inversa de:",
+          "questionLatex": "f(x) = \\frac{2x-1}{3}",
+          "options": [
+            "\\frac{3x+1}{2}",
+            "\\frac{3x-1}{2}",
+            "\\frac{2x+1}{3}",
+            "\\frac{x+1}{2}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "f^{-1}(x)=\\frac{3x+1}{2}",
+          "explanationSteps": [
+            {
+              "title": "Plantea y despeja el paso inicial",
+              "text": "Escribimos y=f(x) e intercambiamos x e y.",
+              "icon": "pin",
+              "mathContent": "y=\\frac{2x-1}{3} \\Rightarrow x=\\frac{2y-1}{3}"
+            },
+            {
+              "title": "Elimina el denominador",
+              "text": "Multiplicamos ambos lados por 3.",
+              "icon": "fx",
+              "mathContent": "3x=2y-1"
+            },
+            {
+              "title": "Despeja y",
+              "text": "Sumamos 1 y dividimos entre 2.",
+              "icon": "star",
+              "mathContent": "y=\\frac{3x+1}{2}"
+            }
+          ],
+          "category": "Función Exponencial y Funciones Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "inv_n2_02",
+          "questionText": "Halla la inversa de:",
+          "questionLatex": "f(x) = x^3+1",
+          "options": [
+            "\\sqrt[3]{x-1}",
+            "\\sqrt[3]{x+1}",
+            "(x-1)^3",
+            "\\sqrt[3]{x}-1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "f^{-1}(x)=\\sqrt[3]{x-1}",
+          "explanationSteps": [
+            {
+              "title": "Intercambia x e y",
+              "text": "Planteamos la ecuación invertida.",
+              "icon": "pin",
+              "mathContent": "x=y^3+1"
+            },
+            {
+              "title": "Aísla el cubo",
+              "text": "Restamos 1 en ambos lados.",
+              "icon": "fx",
+              "mathContent": "y^3=x-1"
+            },
+            {
+              "title": "Aplica raíz cúbica",
+              "text": "Sacamos raíz cúbica en ambos lados para despejar y por completo.",
+              "icon": "star",
+              "mathContent": "y=\\sqrt[3]{x-1}"
+            }
+          ],
+          "category": "Función Exponencial y Funciones Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "inv_n2_03",
+          "questionText": "¿En qué intervalo debe restringirse $f(x)=(x-2)^2$ para ser inyectiva, y cuál es su inversa ahí?",
+          "questionLatex": "",
+          "options": [
+            "x\\geq2; \\; f^{-1}(x)=2+\\sqrt{x}",
+            "x\\leq2; \\; f^{-1}(x)=2-\\sqrt{x}",
+            "x\\geq0; \\; f^{-1}(x)=\\sqrt{x}+2",
+            "x\\geq2; \\;f^{-1}(x)=\\sqrt{x-2}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "x\\geq2; \\;f^{-1}(x)=2+\\sqrt{x}",
+          "explanationSteps": [
+            {
+              "title": "Piensa en la parábola",
+              "text": "f(x)=(x-2)² es una parábola con vértice en x=2; a cada lado del vértice se repiten los valores, así que hay que elegir un solo lado.",
+              "icon": "pin",
+              "mathContent": "\\text{Restringimos a } x\\geq2"
+            },
+            {
+              "title": "Halla la inversa en esa mitad",
+              "text": "Intercambiamos y despejamos, tomando la raíz positiva porque y≥2.",
+              "icon": "fx",
+              "mathContent": "x=(y-2)^2 \\Rightarrow y=2+\\sqrt{x}"
+            },
+            {
+              "title": "Confirma el dominio de la inversa",
+              "text": "El rango de f restringida es [0,∞), que pasa a ser el dominio de la inversa.",
+              "icon": "star",
+              "mathContent": "f^{-1}(x)=2+\\sqrt{x}, \\;x\\geq0"
+            }
+          ],
+          "category": "Función Exponencial y Funciones Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "inversas_practica_3",
+      "title": "Práctica: Exponencial e Inversas (Nivel 3)",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "inv_n3_01",
+          "questionText": "Halla la inversa de $f(x)=\\sqrt{2x+3}$, indicando el dominio de la inversa:",
+          "questionLatex": "",
+          "options": [
+            "f^{-1}(x)=\\frac{x^2-3}{2}, \\;x\\geq0",
+            "f^{-1}(x)=\\frac{x^2+3}{2}, \\;x\\geq0",
+            "f^{-1}(x)=\\frac{x^2-3}{2}, \\;x\\in\\mathbb{R}",
+            "f^{-1}(x)=2x^2-3, \\;x\\geq0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "f^{-1}(x)=\\frac{x^2-3}{2}, \\;x\\geq0",
+          "explanationSteps": [
+            {
+              "title": "Identifica el rango de f",
+              "text": "Como f es una raíz cuadrada, nunca da valores negativos.",
+              "icon": "pin",
+              "mathContent": "\\text{rango}(f)=[0,\\infty)"
+            },
+            {
+              "title": "Intercambia y despeja",
+              "text": "Elevamos al cuadrado tras intercambiar x e y.",
+              "icon": "fx",
+              "mathContent": "x=\\sqrt{2y+3} \\Rightarrow x^2=2y+3"
+            },
+            {
+              "title": "Termina de despejar y",
+              "text": "Restamos 3 y dividimos entre 2.",
+              "icon": "check",
+              "mathContent": "y=\\frac{x^2-3}{2}"
+            },
+            {
+              "title": "Asigna el dominio correcto",
+              "text": "El rango de f se convierte en el dominio de su inversa.",
+              "icon": "star",
+              "mathContent": "f^{-1}(x)=\\frac{x^2-3}{2}, \\;x\\geq0"
+            }
+          ],
+          "category": "Función Exponencial y Funciones Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "inv_n3_02",
+          "questionText": "Verifica que $f(x)=\\frac{x+1}{x-1}$ es su propia inversa (es decir, $f=f^{-1}$):",
+          "questionLatex": "",
+          "options": [
+            "f(f(x))=x, \\text{ por lo tanto } f=f^{-1}",
+            "f(f(x))=1/x, \\text{ no es su propia inversa}",
+            "f(f(x))=x^2, \\text{ no es su propia inversa}",
+            "f(f(x))=-x, \\text{ no es su propia inversa}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "f(f(x))=x \\Rightarrow f=f^{-1}",
+          "explanationSteps": [
+            {
+              "title": "Sustituye f dentro de sí misma",
+              "text": "Reemplazamos la x de f por la expresión completa de f(x).",
+              "icon": "fx",
+              "mathContent": "f(f(x))=\\frac{\\frac{x+1}{x-1}+1}{\\frac{x+1}{x-1}-1}"
+            },
+            {
+              "title": "Simplifica numerador y denominador por separado",
+              "text": "Sumamos y restamos usando el mismo denominador común (x-1).",
+              "icon": "fx",
+              "mathContent": "=\\frac{\\frac{2x}{x-1}}{\\frac{2}{x-1}}"
+            },
+            {
+              "title": "Simplifica la fracción compuesta",
+              "text": "Los denominadores (x-1) se cancelan, y queda una división simple.",
+              "icon": "check",
+              "mathContent": "=\\frac{2x}{2}=x"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Como f(f(x))=x, confirmamos que f es efectivamente su propia inversa.",
+              "icon": "star",
+              "mathContent": "f=f^{-1}"
+            }
+          ],
+          "category": "Función Exponencial y Funciones Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "inv_n3_03",
+          "questionText": "Halla la inversa de $f(x)=e^{x+1}$, usando las propiedades de los exponentes:",
+          "questionLatex": "",
+          "options": [
+            "f^{-1}(x)=\\ln(x)-1",
+            "f^{-1}(x)=\\ln(x)+1",
+            "f^{-1}(x)=\\ln(x-1)",
+            "f^{-1}(x)=\\ln(x+1)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "f^{-1}(x)=\\ln(x)-1",
+          "explanationSteps": [
+            {
+              "title": "Intercambia x e y",
+              "text": "Planteamos la ecuación invertida.",
+              "icon": "pin",
+              "mathContent": "x=e^{y+1}"
+            },
+            {
+              "title": "Aplica logaritmo natural",
+              "text": "El logaritmo natural deshace la exponencial de base e.",
+              "icon": "fx",
+              "mathContent": "\\ln x=y+1"
+            },
+            {
+              "title": "Despeja y",
+              "text": "Restamos 1 para aislar y por completo.",
+              "icon": "star",
+              "mathContent": "y=\\ln x-1"
+            }
+          ],
+          "category": "Función Exponencial y Funciones Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "inversas_flashcards",
+      "title": "Flashcards: Exponencial e Inversas (V/F)",
+      "type": "flashcards",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "tf_inv_01",
+          "questionText": "Toda función tiene inversa, sea o no inyectiva.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Falso. Solo las funciones inyectivas tienen una inversa en el sentido estricto de función.",
+          "category": "Función Exponencial y Funciones Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_inv_02",
+          "questionText": "$\\text{dom}(f^{-1}) = \\text{rango}(f)$.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Verdadero. Lo que la función original 'produce' como salida es exactamente lo que la inversa recibe como entrada.",
+          "category": "Función Exponencial y Funciones Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_inv_03",
+          "questionText": "La gráfica de $f^{-1}$ es el reflejo de la gráfica de f respecto de la recta $y=x$.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Verdadero. Esta es una propiedad geométrica general de cualquier función y su inversa.",
+          "category": "Función Exponencial y Funciones Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_inv_04",
+          "questionText": "Toda función exponencial $f(x)=a^x$ (con $a>0$, $a\\neq1$) es inyectiva en todo $\\mathbb{R}$.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Verdadero. Ya sea creciente o decreciente, nunca repite un valor de salida.",
+          "category": "Función Exponencial y Funciones Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_inv_05",
+          "questionText": "Si $f(g(x))=x$ para todo x, eso ya basta para asegurar que g es la inversa de f, sin necesidad de comprobar $g(f(x))=x$.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Falso. Para confirmar que dos funciones son inversas entre sí, hace falta verificar ambas composiciones.",
+          "category": "Función Exponencial y Funciones Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "logaritmos_theory",
+      "title": "Logaritmos como Inversas de las Exponenciales",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [
+        {
+          "title": "Definición del Logaritmo Natural",
+          "subtitle": "Logaritmos • Logaritmo Natural",
+          "content": "Como la función exponencial natural $f(x)=e^x$ es inyectiva en todo $\\mathbb{R}$, tiene una función inversa bien definida: el logaritmo natural, denotado $\\ln x$. El dominio de $\\ln x$ es $(0,\\infty)$, que coincide con el rango de $e^x$; y el rango de $\\ln x$ es todo $\\mathbb{R}$, que coincide con el dominio de $e^x$. Su gráfica es el reflejo de la gráfica de $e^x$ respecto de la recta $y=x$.",
+          "formulaLatex": "\\ln x = y \\iff e^y = x \\quad (x>0)",
+          "proTip": "",
+          "blocks": []
+        },
+        {
+          "title": "Definición del Logaritmo General",
+          "subtitle": "Logaritmos • Logaritmo en Base a",
+          "content": "De manera completamente análoga, para cualquier base $a>0$ con $a\\neq1$, la función exponencial general $f(x)=a^x$ es inyectiva y tiene una inversa: el logaritmo en base a, denotado $\\log_a x$.",
+          "formulaLatex": "\\log_a x = y \\iff a^y = x \\quad (x>0)",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\log_a x = \\frac{\\ln x}{\\ln a}"
+            },
+            {
+              "type": "text",
+              "content": "Esta es la fórmula de cambio de base: te permite expresar cualquier logaritmo en términos del logaritmo natural, muy útil cuando tu calculadora solo tiene la tecla 'ln'."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\log_2 8",
+              "steps": [
+                {
+                  "title": "Usa la definición",
+                  "text": "Buscamos el exponente y tal que 2 elevado a esa potencia dé 8.",
+                  "icon": "pin",
+                  "mathContent": "2^y=8=2^3 \\Rightarrow y=3"
+                },
+                {
+                  "title": "Verifica con cambio de base",
+                  "text": "Confirmamos el resultado usando logaritmo natural.",
+                  "icon": "check",
+                  "mathContent": "\\log_2 8=\\frac{\\ln 8}{\\ln 2}\\approx\\frac{2.079}{0.693}\\approx3"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "propiedades_logaritmos_theory",
+      "title": "Propiedades y Ecuaciones con Logaritmos",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [
+        {
+          "title": "Propiedades de los Logaritmos",
+          "subtitle": "Logaritmos • Propiedades",
+          "content": "Las propiedades de los logaritmos se derivan directamente de las leyes de los exponentes, ya que el logaritmo es la función inversa de la exponencial.",
+          "formulaLatex": "\\log_a(xy) = \\log_a x + \\log_a y",
+          "proTip": "Propiedades completas que conviene memorizar: $\\log_a(x/y)=\\log_a x-\\log_a y$; $\\log_a(x^r)=r\\log_a x$; $\\log_a 1=0$; $\\log_a a=1$; $a^{\\log_a x}=x$; $\\log_a(a^x)=x$.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Simplificar } \\ln(e^3\\cdot e^5)",
+              "steps": [
+                {
+                  "title": "Aplica la propiedad del producto",
+                  "text": "El logaritmo de un producto se convierte en la suma de los logaritmos.",
+                  "icon": "fx",
+                  "mathContent": "\\ln(e^3\\cdot e^5)=\\ln(e^3)+\\ln(e^5)"
+                },
+                {
+                  "title": "Simplifica cada término",
+                  "text": "Como ln y e son inversas, ln(e^k) es simplemente k.",
+                  "icon": "star",
+                  "mathContent": "=3+5=8"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "content": "Un error muy común es escribir $\\log_a(x+y)=\\log_a x+\\log_a y$. Esta identidad es falsa: la propiedad de la suma de logaritmos corresponde al producto xy dentro del logaritmo, no a la suma x+y. No existe una fórmula simple para $\\log_a(x+y)$ en términos de $\\log_a x$ y $\\log_a y$."
+            }
+          ]
+        },
+        {
+          "title": "Ecuaciones Exponenciales y Logarítmicas",
+          "subtitle": "Logaritmos • Resolución de Ecuaciones",
+          "content": "Como la exponencial y el logaritmo son funciones inversas entre sí, se pueden usar para 'deshacer' una a la otra al resolver ecuaciones: aplicar logaritmo a ambos lados elimina una exponencial, y aplicar la exponencial a ambos lados elimina un logaritmo.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Resolver } e^{2x}=7",
+              "steps": [
+                {
+                  "title": "Aplica ln a ambos lados",
+                  "text": "Usamos que ln(e^u)=u para 'bajar' el exponente.",
+                  "icon": "fx",
+                  "mathContent": "\\ln(e^{2x})=\\ln 7 \\Rightarrow 2x=\\ln 7"
+                },
+                {
+                  "title": "Despeja x",
+                  "text": "Dividimos entre 2 para terminar.",
+                  "icon": "star",
+                  "mathContent": "x=\\frac{\\ln 7}{2}"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Resolver } \\ln(x+1)=3",
+              "steps": [
+                {
+                  "title": "Aplica la exponencial a ambos lados",
+                  "text": "Usamos que e^{ln u}=u para eliminar el logaritmo.",
+                  "icon": "fx",
+                  "mathContent": "e^{\\ln(x+1)}=e^3 \\Rightarrow x+1=e^3"
+                },
+                {
+                  "title": "Despeja x",
+                  "text": "Restamos 1 en ambos lados.",
+                  "icon": "star",
+                  "mathContent": "x=e^3-1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Dominio de Funciones Logarítmicas Compuestas",
+          "subtitle": "Logaritmos • Dominio",
+          "content": "El dominio de una función logarítmica compuesta se determina exigiendo que el argumento del logaritmo sea estrictamente positivo.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Hallar el dominio de } f(x)=\\log(x^2-4)",
+              "steps": [
+                {
+                  "title": "Plantea la restricción",
+                  "text": "El argumento del logaritmo debe ser mayor que cero.",
+                  "icon": "pin",
+                  "mathContent": "x^2-4>0"
+                },
+                {
+                  "title": "Resuelve la desigualdad",
+                  "text": "Esto equivale a decir que x² es mayor que 4.",
+                  "icon": "fx",
+                  "mathContent": "x^2>4 \\Rightarrow x>2 \\text{ o } x<-2"
+                },
+                {
+                  "title": "Escribe el dominio",
+                  "text": "Unimos las dos ramas que cumplen la condición.",
+                  "icon": "star",
+                  "mathContent": "\\text{dom}(f)=(-\\infty,-2)\\cup(2,\\infty)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "logaritmos_practica_1",
+      "title": "Práctica: Logaritmos (Nivel 1)",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "log_n1_01",
+          "questionText": "Calcula:",
+          "questionLatex": "\\log_3 27",
+          "options": [
+            "3",
+            "9",
+            "27",
+            "1/3"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\log_3 27=3",
+          "explanationSteps": [
+            {
+              "title": "Piensa en la pregunta escondida",
+              "text": "log₃27 pregunta: ¿a qué potencia hay que elevar 3 para obtener 27?",
+              "icon": "pin",
+              "mathContent": "3^{?}=27"
+            },
+            {
+              "title": "Encuentra el exponente",
+              "text": "Sabemos que 3 al cubo da 27.",
+              "icon": "fx",
+              "mathContent": "3^3=27"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Ese exponente es la respuesta.",
+              "icon": "star",
+              "mathContent": "\\log_3 27=3"
+            }
+          ],
+          "category": "Logaritmos",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "log_n1_02",
+          "questionText": "Halla el dominio de:",
+          "questionLatex": "f(x)=\\ln(x+4)",
+          "options": [
+            "(-4,\\infty)",
+            "[-4,\\infty)",
+            "(4,\\infty)",
+            "(-\\infty,-4)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{dom}(f)=(-4,\\infty)",
+          "explanationSteps": [
+            {
+              "title": "Recuerda la regla de los logaritmos",
+              "text": "El argumento de cualquier logaritmo debe ser estrictamente positivo.",
+              "icon": "pin",
+              "mathContent": "x+4>0"
+            },
+            {
+              "title": "Despeja x",
+              "text": "Restamos 4 en ambos lados.",
+              "icon": "fx",
+              "mathContent": "x>-4"
+            },
+            {
+              "title": "Escribe el dominio",
+              "text": "Como la desigualdad es estricta, el intervalo es abierto en -4.",
+              "icon": "star",
+              "mathContent": "\\text{dom}(f)=(-4,\\infty)"
+            }
+          ],
+          "category": "Logaritmos",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "log_n1_03",
+          "questionText": "Resuelve:",
+          "questionLatex": "e^x=12",
+          "options": [
+            "x=\\ln 12",
+            "x=12",
+            "x=e^{12}",
+            "x=\\log 12"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "x=\\ln 12",
+          "explanationSteps": [
+            {
+              "title": "Aplica ln a ambos lados",
+              "text": "El logaritmo natural es exactamente la herramienta que deshace la exponencial de base e.",
+              "icon": "fx",
+              "mathContent": "\\ln(e^x)=\\ln 12"
+            },
+            {
+              "title": "Simplifica el lado izquierdo",
+              "text": "ln y e se cancelan entre sí.",
+              "icon": "star",
+              "mathContent": "x=\\ln 12"
+            }
+          ],
+          "category": "Logaritmos",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "logaritmos_practica_2",
+      "title": "Práctica: Logaritmos (Nivel 2)",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "log_n2_01",
+          "questionText": "Resuelve:",
+          "questionLatex": "\\ln(2x-1)=4",
+          "options": [
+            "x=\\frac{e^4+1}{2}",
+            "x=\\frac{e^4-1}{2}",
+            "x=2e^4+1",
+            "x=e^4+1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "x=\\frac{e^4+1}{2}",
+          "explanationSteps": [
+            {
+              "title": "Aplica exponencial a ambos lados",
+              "text": "Usamos que e elevado a un ln se cancela.",
+              "icon": "fx",
+              "mathContent": "e^{\\ln(2x-1)}=e^4 \\Rightarrow 2x-1=e^4"
+            },
+            {
+              "title": "Despeja x",
+              "text": "Sumamos 1 y dividimos entre 2.",
+              "icon": "star",
+              "mathContent": "x=\\frac{e^4+1}{2}"
+            }
+          ],
+          "category": "Logaritmos",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "log_n2_02",
+          "questionText": "Simplifica usando propiedades de logaritmos:",
+          "questionLatex": "\\log_5(25x^3)",
+          "options": [
+            "2+3\\log_5 x",
+            "5+3\\log_5 x",
+            "2\\log_5 x+3",
+            "6\\log_5 x"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "2+3\\log_5 x",
+          "explanationSteps": [
+            {
+              "title": "Separa el producto",
+              "text": "El logaritmo de un producto es la suma de los logaritmos de cada factor.",
+              "icon": "fx",
+              "mathContent": "\\log_5(25x^3)=\\log_5(25)+\\log_5(x^3)"
+            },
+            {
+              "title": "Simplifica cada parte",
+              "text": "log₅25=2 (porque 5²=25), y log₅(x³)=3log₅x por la propiedad de la potencia.",
+              "icon": "star",
+              "mathContent": "=2+3\\log_5 x"
+            }
+          ],
+          "category": "Logaritmos",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "log_n2_03",
+          "questionText": "Halla el dominio de:",
+          "questionLatex": "f(x)=\\log(9-x^2)",
+          "options": [
+            "(-3,3)",
+            "[-3,3]",
+            "(-\\infty,-3)\\cup(3,\\infty)",
+            "(0,3)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{dom}(f)=(-3,3)",
+          "explanationSteps": [
+            {
+              "title": "Plantea la condición del logaritmo",
+              "text": "El argumento debe ser estrictamente positivo.",
+              "icon": "pin",
+              "mathContent": "9-x^2>0"
+            },
+            {
+              "title": "Resuelve",
+              "text": "Esto equivale a x²<9.",
+              "icon": "fx",
+              "mathContent": "x^2<9 \\Rightarrow -3<x<3"
+            },
+            {
+              "title": "Escribe el resultado",
+              "text": "El intervalo es abierto en ambos extremos.",
+              "icon": "star",
+              "mathContent": "\\text{dom}(f)=(-3,3)"
+            }
+          ],
+          "category": "Logaritmos",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "logaritmos_practica_3",
+      "title": "Práctica: Logaritmos (Nivel 3)",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "log_n3_01",
+          "questionText": "Resuelve, aplicando logaritmo natural a ambos lados:",
+          "questionLatex": "e^{x+1}=3^x",
+          "options": [
+            "x=\\frac{1}{\\ln3-1}",
+            "x=\\frac{1}{\\ln3+1}",
+            "x=\\ln3-1",
+            "x=\\frac{\\ln3}{1-\\ln3}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "x=\\frac{1}{\\ln3-1}",
+          "explanationSteps": [
+            {
+              "title": "Aplica ln a ambos lados",
+              "text": "Como ln(e^u)=u, el lado izquierdo se simplifica de inmediato.",
+              "icon": "fx",
+              "mathContent": "\\ln(e^{x+1})=\\ln(3^x) \\Rightarrow x+1=x\\ln3"
+            },
+            {
+              "title": "Agrupa los términos con x",
+              "text": "Pasamos todos los términos con x a un lado.",
+              "icon": "fx",
+              "mathContent": "1=x\\ln3-x=x(\\ln3-1)"
+            },
+            {
+              "title": "Despeja x",
+              "text": "Dividimos entre (ln3-1).",
+              "icon": "star",
+              "mathContent": "x=\\frac{1}{\\ln3-1}"
+            }
+          ],
+          "category": "Logaritmos",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "log_n3_02",
+          "questionText": "Halla el dominio de:",
+          "questionLatex": "f(x)=\\ln(x-1)+\\ln(5-x)",
+          "options": [
+            "(1,5)",
+            "[1,5]",
+            "(-\\infty,5)",
+            "(1,\\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{dom}(f)=(1,5)",
+          "explanationSteps": [
+            {
+              "title": "Primera condición",
+              "text": "El primer argumento debe ser positivo.",
+              "icon": "pin",
+              "mathContent": "x-1>0 \\Rightarrow x>1"
+            },
+            {
+              "title": "Segunda condición",
+              "text": "El segundo argumento también debe ser positivo.",
+              "icon": "pin",
+              "mathContent": "5-x>0 \\Rightarrow x<5"
+            },
+            {
+              "title": "Intersección",
+              "text": "Combinamos ambas condiciones para obtener el dominio final.",
+              "icon": "star",
+              "mathContent": "\\text{dom}(f)=(1,5)"
+            }
+          ],
+          "category": "Logaritmos",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "log_n3_03",
+          "questionText": "Resuelve, verificando que la solución esté en el dominio correcto:",
+          "questionLatex": "\\ln(x)+\\ln(x-3)=\\ln(10)",
+          "options": [
+            "x=5",
+            "x=-2",
+            "x=5 \\text{ o } x=-2",
+            "x=10"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "x=5",
+          "explanationSteps": [
+            {
+              "title": "Combina los logaritmos",
+              "text": "Usamos la propiedad de la suma para juntar ambos logaritmos en uno solo.",
+              "icon": "fx",
+              "mathContent": "\\ln[x(x-3)]=\\ln(10)"
+            },
+            {
+              "title": "Iguala los argumentos",
+              "text": "Si los logaritmos son iguales, los argumentos también lo son.",
+              "icon": "fx",
+              "mathContent": "x(x-3)=10 \\Rightarrow x^2-3x-10=0"
+            },
+            {
+              "title": "Resuelve la cuadrática",
+              "text": "Factorizamos para encontrar las dos posibles soluciones.",
+              "icon": "chart",
+              "mathContent": "(x-5)(x+2)=0 \\Rightarrow x=5 \\text{ o } x=-2"
+            },
+            {
+              "title": "Filtra por el dominio",
+              "text": "Necesitamos x>0 y x-3>0 (o sea x>3), así que x=-2 queda descartada; solo x=5 es válida.",
+              "icon": "star",
+              "mathContent": "x=5"
+            }
+          ],
+          "category": "Logaritmos",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "logaritmos_flashcards",
+      "title": "Flashcards: Logaritmos (V/F)",
+      "type": "flashcards",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "tf_log_01",
+          "questionText": "$\\log_a(x+y) = \\log_a x + \\log_a y$.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Falso. La propiedad de la suma de logaritmos corresponde al producto xy dentro del logaritmo, no a la suma x+y. No existe una fórmula simple para log(x+y).",
+          "category": "Logaritmos",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_log_02",
+          "questionText": "$\\ln x$ es la función inversa de $e^x$.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Verdadero. Por eso ln(e^x)=x y e^{ln x}=x.",
+          "category": "Logaritmos",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_log_03",
+          "questionText": "El dominio de cualquier función logarítmica $\\log_a x$ es $(0,\\infty)$.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Verdadero. El argumento de un logaritmo siempre debe ser estrictamente positivo.",
+          "category": "Logaritmos",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_log_04",
+          "questionText": "$a^{\\log_a x} = x$ para todo $x>0$.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Verdadero. Esta es una consecuencia directa de que la exponencial y el logaritmo son funciones inversas entre sí.",
+          "category": "Logaritmos",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_log_05",
+          "questionText": "Para resolver $e^{2x}=7$, basta con dividir ambos lados entre 2, sin necesidad de usar logaritmos.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Falso. Como x está en el exponente, se necesita aplicar el logaritmo natural a ambos lados para poder despejarla.",
+          "category": "Logaritmos",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "trigonometricas_inversas_theory",
+      "title": "Funciones Trigonométricas Inversas",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [
+        {
+          "title": "Repaso: Restringiendo el Dominio",
+          "subtitle": "Trigonometría • Restricción de Dominio",
+          "content": "Las seis funciones trigonométricas —seno, coseno, tangente, cotangente, secante y cosecante— son todas periódicas, por lo que ninguna de ellas es inyectiva en todo su dominio natural. Por eso, para definir sus inversas, es necesario restringir primero el dominio a un intervalo donde la función sí sea inyectiva.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "function_plot",
+              "content": "sin(x) | [-6.28, 6.28]"
+            },
+            {
+              "type": "text",
+              "content": "Dominios restringidos usados para definir las inversas: $\\sin x$ en $[-\\pi/2,\\pi/2]$ con rango $[-1,1]$; $\\cos x$ en $[0,\\pi]$ con rango $[-1,1]$; $\\tan x$ en $(-\\pi/2,\\pi/2)$ con rango $\\mathbb{R}$."
+            }
+          ]
+        },
+        {
+          "title": "Funciones Trigonométricas Inversas",
+          "subtitle": "Trigonometría • Arcoseno, Arcocoseno, Arcotangente",
+          "content": "Restringidas a los intervalos anteriores, las funciones trigonométricas son inyectivas y admiten inversa. Estas inversas se denotan arcsen, arccos y arctan (o también sen⁻¹, cos⁻¹, tan⁻¹).",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Dominios y rangos de las inversas: $\\arcsin x$ tiene dominio $[-1,1]$ y rango $[-\\pi/2,\\pi/2]$; $\\arccos x$ tiene dominio $[-1,1]$ y rango $[0,\\pi]$; $\\arctan x$ tiene dominio $\\mathbb{R}$ y rango $(-\\pi/2,\\pi/2)$."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\arcsin(1/2) \\text{ y } \\arccos(-1/2)",
+              "steps": [
+                {
+                  "title": "Piensa en arcsen(1/2)",
+                  "text": "Buscamos el único ángulo dentro de [-π/2,π/2] cuyo seno sea 1/2.",
+                  "icon": "fx",
+                  "mathContent": "\\arcsin(1/2)=\\pi/6"
+                },
+                {
+                  "title": "Piensa en arccos(-1/2)",
+                  "text": "Buscamos el único ángulo dentro de [0,π] cuyo coseno sea -1/2.",
+                  "icon": "star",
+                  "mathContent": "\\arccos(-1/2)=2\\pi/3"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "content": "Recuerda que $\\arcsin x$ no significa $1/\\sin x$. Es la función inversa del seno (restringido), y su valor es siempre un ángulo en $[-\\pi/2,\\pi/2]$, nunca fuera de ese rango."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "hiperbolicas_theory",
+      "title": "Funciones Hiperbólicas e Identidades",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [
+        {
+          "title": "Funciones Hiperbólicas: Definición",
+          "subtitle": "Hiperbólicas • Definiciones",
+          "content": "Las funciones hiperbólicas se definen a partir de la exponencial natural, y reciben su nombre porque parametrizan la hipérbola $x^2-y^2=1$ de forma análoga a como el seno y el coseno parametrizan la circunferencia $x^2+y^2=1$. El dominio de senh x, cosh x y tanh x es todo $\\mathbb{R}$. El rango de senh x es $\\mathbb{R}$; el de cosh x es $[1,\\infty)$; y el de tanh x es $(-1,1)$.",
+          "formulaLatex": "\\sinh x = \\frac{e^x-e^{-x}}{2}, \\quad \\cosh x = \\frac{e^x+e^{-x}}{2}",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\tanh x = \\frac{\\sinh x}{\\cosh x}"
+            },
+            {
+              "type": "function_plot",
+              "content": "tanh(x) | [-4, 4]"
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\sinh(0) \\text{ y } \\cosh(0)",
+              "steps": [
+                {
+                  "title": "Sustituye x=0 en senh",
+                  "text": "Aplicamos la definición directamente.",
+                  "icon": "fx",
+                  "mathContent": "\\sinh(0)=\\frac{e^0-e^0}{2}=\\frac{1-1}{2}=0"
+                },
+                {
+                  "title": "Sustituye x=0 en cosh",
+                  "text": "Igual que antes, pero ahora sumando en vez de restar.",
+                  "icon": "star",
+                  "mathContent": "\\cosh(0)=\\frac{e^0+e^0}{2}=\\frac{1+1}{2}=1"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Estos valores son análogos a $\\sin 0=0$ y $\\cos 0=1$ en trigonometría circular."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Expresar } \\tanh x \\text{ en términos de } e^{2x}",
+              "steps": [
+                {
+                  "title": "Multiplica por e^x/e^x",
+                  "text": "Multiplicamos numerador y denominador por eˣ para simplificar los exponentes negativos.",
+                  "icon": "fx",
+                  "mathContent": "\\tanh x=\\frac{e^x-e^{-x}}{e^x+e^{-x}}\\cdot\\frac{e^x}{e^x}"
+                },
+                {
+                  "title": "Simplifica",
+                  "text": "Esto deja explícito el término e^(2x), muy útil para calcular límites cuando x tiende a infinito.",
+                  "icon": "star",
+                  "mathContent": "\\tanh x=\\frac{e^{2x}-1}{e^{2x}+1}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Identidades Hiperbólicas",
+          "subtitle": "Hiperbólicas • Identidades",
+          "content": "Las funciones hiperbólicas satisfacen identidades muy parecidas a las trigonométricas, pero con algunos signos distintos, reflejando la diferencia entre la hipérbola y la circunferencia.",
+          "formulaLatex": "\\cosh^2 x - \\sinh^2 x = 1",
+          "proTip": "Para recordar el signo de las identidades hiperbólicas, piensa que provienen de sustituir $e^x$ y $e^{-x}$ y expandir: los términos cruzados que se cancelan o se duplican determinan el signo final. Compáralas siempre con su análogo trigonométrico para verificar que tengan sentido.",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Identidades fundamentales: $\\sinh(2x)=2\\sinh x\\cosh x$; $\\cosh(2x)=\\cosh^2x+\\sinh^2x=2\\cosh^2x-1=1+2\\sinh^2x$; $\\tanh^2x+\\text{sech}^2x=1$ (análoga a $\\sin^2x+\\cos^2x=1$)."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Verificar } \\cosh^2x-\\sinh^2x=1",
+              "steps": [
+                {
+                  "title": "Sustituye las definiciones",
+                  "text": "Escribimos ambos cuadrados usando exponenciales.",
+                  "icon": "fx",
+                  "mathContent": "\\cosh^2x-\\sinh^2x=\\frac{(e^x+e^{-x})^2-(e^x-e^{-x})^2}{4}"
+                },
+                {
+                  "title": "Expande y simplifica",
+                  "text": "Los términos cruzados 2e^xe^{-x} se cancelan o se duplican, dejando solo un número.",
+                  "icon": "star",
+                  "mathContent": "=\\frac{4}{4}=1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "hiperbolicas_inversas_theory",
+      "title": "Funciones Hiperbólicas Inversas",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [
+        {
+          "title": "Funciones Hiperbólicas Inversas",
+          "subtitle": "Hiperbólicas • Inversas Logarítmicas",
+          "content": "A diferencia de las trigonométricas, las funciones hiperbólicas senh x y tanh x ya son inyectivas en todo su dominio, así que sus inversas se definen sin restringir el dominio. La función cosh x sí requiere restringirse a $x\\geq0$ para ser inyectiva. Todas las inversas hiperbólicas pueden expresarse mediante logaritmos naturales.",
+          "formulaLatex": "\\text{argsenh } x = \\ln(x+\\sqrt{x^2+1}), \\quad \\text{dominio } \\mathbb{R}",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "También: $\\text{argcosh } x=\\ln(x+\\sqrt{x^2-1})$, dominio $x\\geq1$; y $\\text{argtanh } x=\\frac{1}{2}\\ln\\left(\\frac{1+x}{1-x}\\right)$, dominio $(-1,1)$."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular argsenh}(0) \\text{ usando la fórmula logarítmica}",
+              "steps": [
+                {
+                  "title": "Sustituye x=0",
+                  "text": "Aplicamos la fórmula directamente en x=0.",
+                  "icon": "fx",
+                  "mathContent": "\\text{argsenh}(0)=\\ln(0+\\sqrt{0+1})=\\ln(1)"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "Esto coincide perfectamente con que senh(0)=0: la inversa 'deshace' ese valor.",
+                  "icon": "star",
+                  "mathContent": "\\text{argsenh}(0)=0"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "trig_hiperbolicas_practica_1",
+      "title": "Práctica: Trigonométricas e Hiperbólicas (Nivel 1)",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "th_n1_01",
+          "questionText": "Calcula:",
+          "questionLatex": "\\arcsin\\left(\\frac{\\sqrt2}{2}\\right) \\text{ y } \\arctan(1)",
+          "options": [
+            "\\pi/4 \\text{ y } \\pi/4",
+            "\\pi/3 \\text{ y } \\pi/4",
+            "\\pi/4 \\text{ y } \\pi/3",
+            "\\pi/6 \\text{ y } \\pi/4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\pi/4 \\text{ y } \\pi/4",
+          "explanationSteps": [
+            {
+              "title": "Piensa en arcsen(√2/2)",
+              "text": "Buscamos el ángulo en [-π/2,π/2] cuyo seno es √2/2; ese ángulo es π/4.",
+              "icon": "fx",
+              "mathContent": "\\arcsin(\\sqrt2/2)=\\pi/4"
+            },
+            {
+              "title": "Piensa en arctan(1)",
+              "text": "Buscamos el ángulo en (-π/2,π/2) cuya tangente es 1; ese ángulo también es π/4.",
+              "icon": "star",
+              "mathContent": "\\arctan(1)=\\pi/4"
+            }
+          ],
+          "category": "Trigonométricas e Hiperbólicas Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "th_n1_02",
+          "questionText": "Calcula:",
+          "questionLatex": "\\sinh(0)+\\cosh(0)",
+          "options": [
+            "1",
+            "0",
+            "2",
+            "-1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\sinh(0)+\\cosh(0)=1",
+          "explanationSteps": [
+            {
+              "title": "Recuerda los valores base",
+              "text": "senh(0)=0 y cosh(0)=1, tal como vimos en la teoría.",
+              "icon": "pin",
+              "mathContent": "\\sinh(0)=0, \\;\\cosh(0)=1"
+            },
+            {
+              "title": "Suma",
+              "text": "Sumamos ambos valores.",
+              "icon": "star",
+              "mathContent": "0+1=1"
+            }
+          ],
+          "category": "Trigonométricas e Hiperbólicas Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "th_n1_03",
+          "questionText": "Calcula usando la fórmula logarítmica:",
+          "questionLatex": "\\text{argsenh}(0)",
+          "options": [
+            "0",
+            "1",
+            "\\ln 2",
+            "-1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{argsenh}(0)=0",
+          "explanationSteps": [
+            {
+              "title": "Aplica la fórmula",
+              "text": "Sustituimos x=0 en la definición logarítmica de argsenh.",
+              "icon": "fx",
+              "mathContent": "\\text{argsenh}(0)=\\ln(0+\\sqrt{0^2+1})"
+            },
+            {
+              "title": "Simplifica",
+              "text": "La raíz de 1 es 1, y ln(1)=0.",
+              "icon": "star",
+              "mathContent": "=\\ln(1)=0"
+            }
+          ],
+          "category": "Trigonométricas e Hiperbólicas Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "trig_hiperbolicas_practica_2",
+      "title": "Práctica: Trigonométricas e Hiperbólicas (Nivel 2)",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "th_n2_01",
+          "questionText": "Calcula:",
+          "questionLatex": "\\arccos\\left(-\\frac{\\sqrt3}{2}\\right)",
+          "options": [
+            "5\\pi/6",
+            "2\\pi/3",
+            "\\pi/6",
+            "7\\pi/6"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\arccos(-\\sqrt3/2)=5\\pi/6",
+          "explanationSteps": [
+            {
+              "title": "Recuerda el rango de arccos",
+              "text": "arccos siempre da un ángulo dentro de [0,π].",
+              "icon": "pin",
+              "mathContent": "\\arccos x \\in [0,\\pi]"
+            },
+            {
+              "title": "Busca el ángulo correcto",
+              "text": "Necesitamos el ángulo en ese rango cuyo coseno sea -√3/2; ese ángulo es 5π/6.",
+              "icon": "fx",
+              "mathContent": "\\cos(5\\pi/6)=-\\sqrt3/2"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Por lo tanto, ese es el valor de arccos(-√3/2).",
+              "icon": "star",
+              "mathContent": "\\arccos(-\\sqrt3/2)=5\\pi/6"
+            }
+          ],
+          "category": "Trigonométricas e Hiperbólicas Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "th_n2_02",
+          "questionText": "Verifica la identidad $\\tanh^2x+\\text{sech}^2x=1$ a partir de $\\cosh^2x-\\sinh^2x=1$:",
+          "questionLatex": "",
+          "options": [
+            "Dividiendo entre $\\cosh^2x$ se obtiene $1-\\tanh^2x=\\text{sech}^2x$",
+            "Dividiendo entre $\\sinh^2x$ se obtiene el resultado",
+            "Multiplicando por $\\cosh^2x$ se obtiene el resultado",
+            "Esa identidad no se puede derivar de $\\cosh^2x-\\sinh^2x=1$"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Dividir entre } \\cosh^2x \\text{ da } \\tanh^2x+\\text{sech}^2x=1",
+          "explanationSteps": [
+            {
+              "title": "Parte de la identidad base",
+              "text": "Ya sabemos que cosh²x - senh²x = 1 es siempre cierta.",
+              "icon": "pin",
+              "mathContent": "\\cosh^2x-\\sinh^2x=1"
+            },
+            {
+              "title": "Divide todo entre cosh²x",
+              "text": "Dividimos cada término de la ecuación entre cosh²x.",
+              "icon": "fx",
+              "mathContent": "1-\\tanh^2x=\\frac{1}{\\cosh^2x}=\\text{sech}^2x"
+            },
+            {
+              "title": "Reordena",
+              "text": "Pasamos -tanh²x sumando al otro lado para dejarlo en la forma pedida.",
+              "icon": "star",
+              "mathContent": "\\tanh^2x+\\text{sech}^2x=1"
+            }
+          ],
+          "category": "Trigonométricas e Hiperbólicas Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "th_n2_03",
+          "questionText": "Calcula usando la fórmula logarítmica:",
+          "questionLatex": "\\text{argcosh}(1)",
+          "options": [
+            "0",
+            "1",
+            "\\ln 2",
+            "-1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{argcosh}(1)=0",
+          "explanationSteps": [
+            {
+              "title": "Aplica la fórmula",
+              "text": "Sustituimos x=1 en la definición de argcosh.",
+              "icon": "fx",
+              "mathContent": "\\text{argcosh}(1)=\\ln(1+\\sqrt{1^2-1})"
+            },
+            {
+              "title": "Simplifica dentro de la raíz",
+              "text": "1-1=0, y la raíz de 0 es 0.",
+              "icon": "fx",
+              "mathContent": "=\\ln(1+0)=\\ln(1)"
+            },
+            {
+              "title": "Conclusión",
+              "text": "El logaritmo natural de 1 es 0.",
+              "icon": "star",
+              "mathContent": "\\text{argcosh}(1)=0"
+            }
+          ],
+          "category": "Trigonométricas e Hiperbólicas Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "trig_hiperbolicas_practica_3",
+      "title": "Desafío: Trigonométricas e Hiperbólicas (Nivel 3)",
+      "type": "exam",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "th_n3_01",
+          "questionText": "Demuestra la identidad $\\sinh(2x)=2\\sinh x\\cosh x$ a partir de las definiciones exponenciales:",
+          "questionLatex": "",
+          "options": [
+            "Ambos lados se reducen a $\\frac{e^{2x}-e^{-2x}}{2}$",
+            "Ambos lados se reducen a $\\frac{e^{2x}+e^{-2x}}{2}$",
+            "No son iguales en general",
+            "Solo son iguales si x=0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\sinh(2x)=2\\sinh x\\cosh x",
+          "explanationSteps": [
+            {
+              "title": "Escribe el lado derecho con exponenciales",
+              "text": "Sustituimos las definiciones de senh y cosh.",
+              "icon": "fx",
+              "mathContent": "2\\sinh x\\cosh x=2\\cdot\\frac{e^x-e^{-x}}{2}\\cdot\\frac{e^x+e^{-x}}{2}"
+            },
+            {
+              "title": "Multiplica las fracciones",
+              "text": "Es un producto de la forma (a-b)(a+b), que es una diferencia de cuadrados.",
+              "icon": "fx",
+              "mathContent": "=\\frac{(e^x-e^{-x})(e^x+e^{-x})}{2}=\\frac{e^{2x}-e^{-2x}}{2}"
+            },
+            {
+              "title": "Compara con el lado izquierdo",
+              "text": "Esa expresión es exactamente la definición de senh(2x).",
+              "icon": "star",
+              "mathContent": "\\sinh(2x)=\\frac{e^{2x}-e^{-2x}}{2}"
+            }
+          ],
+          "category": "Trigonométricas e Hiperbólicas Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "th_n3_02",
+          "questionText": "Resuelve la ecuación $\\cosh x=2$ usando la definición exponencial:",
+          "questionLatex": "",
+          "options": [
+            "x=\\pm\\ln(2+\\sqrt3)",
+            "x=\\ln 2",
+            "x=\\pm\\ln 2",
+            "x=\\ln(2+\\sqrt3) \\text{ solamente}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "x=\\pm\\ln(2+\\sqrt3)",
+          "explanationSteps": [
+            {
+              "title": "Escribe la ecuación con exponenciales",
+              "text": "Sustituimos la definición de cosh y multiplicamos por 2.",
+              "icon": "fx",
+              "mathContent": "\\frac{e^x+e^{-x}}{2}=2 \\Rightarrow e^x+e^{-x}=4"
+            },
+            {
+              "title": "Sustituye u=e^x",
+              "text": "Esto convierte la ecuación en una cuadrática disfrazada.",
+              "icon": "fx",
+              "mathContent": "u+\\frac1u=4 \\Rightarrow u^2-4u+1=0"
+            },
+            {
+              "title": "Resuelve la cuadrática",
+              "text": "Usamos la fórmula general.",
+              "icon": "chart",
+              "mathContent": "u=\\frac{4\\pm\\sqrt{16-4}}{2}=2\\pm\\sqrt3"
+            },
+            {
+              "title": "Regresa a x, con ambas soluciones válidas",
+              "text": "Como 2+√3 y 2-√3 son ambos positivos, los dos sirven como valor de e^x.",
+              "icon": "star",
+              "mathContent": "x=\\ln(2+\\sqrt3) \\text{ o } x=\\ln(2-\\sqrt3)=-\\ln(2+\\sqrt3)"
+            }
+          ],
+          "category": "Trigonométricas e Hiperbólicas Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "th_n3_03",
+          "questionText": "Calcula, prestando atención al rango de arctan:",
+          "questionLatex": "\\arctan\\left(\\tan\\left(\\frac{3\\pi}{4}\\right)\\right)",
+          "options": [
+            "-\\pi/4",
+            "3\\pi/4",
+            "\\pi/4",
+            "-3\\pi/4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "-\\pi/4",
+          "explanationSteps": [
+            {
+              "title": "Calcula el valor interior primero",
+              "text": "tan(3π/4) vale -1 (el ángulo 3π/4 está en el segundo cuadrante).",
+              "icon": "pin",
+              "mathContent": "\\tan(3\\pi/4)=-1"
+            },
+            {
+              "title": "Ahora aplica arctan",
+              "text": "Buscamos el ángulo dentro del rango de arctan, que es (-π/2,π/2), cuya tangente sea -1.",
+              "icon": "fx",
+              "mathContent": "\\arctan(-1)=-\\pi/4"
+            },
+            {
+              "title": "Ojo con la trampa",
+              "text": "Aunque el ángulo original era 3π/4, ese valor está fuera del rango de arctan, así que la respuesta NO es 3π/4, sino -π/4.",
+              "icon": "star",
+              "mathContent": "\\arctan(\\tan(3\\pi/4))=-\\pi/4"
+            }
+          ],
+          "category": "Trigonométricas e Hiperbólicas Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "trig_hiperbolicas_flashcards",
+      "title": "Flashcards: Trigonométricas e Hiperbólicas (V/F)",
+      "type": "flashcards",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "tf_th_01",
+          "questionText": "$\\arcsin x = 1/\\sin x$.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Falso. arcsin x es la función inversa del seno restringido, no su recíproco.",
+          "category": "Trigonométricas e Hiperbólicas Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_th_02",
+          "questionText": "El rango de $\\cosh x$ es $[1,\\infty)$.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Verdadero. cosh x nunca es menor que 1.",
+          "category": "Trigonométricas e Hiperbólicas Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_th_03",
+          "questionText": "$\\cosh^2 x - \\sinh^2 x = 1$ para todo x real.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Verdadero. Es la identidad hiperbólica fundamental, análoga a $\\sin^2x+\\cos^2x=1$.",
+          "category": "Trigonométricas e Hiperbólicas Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_th_04",
+          "questionText": "$\\sinh x$ es inyectiva en todo su dominio, sin necesidad de restringirlo.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "Verdadero. A diferencia del seno circular, senh x no repite valores en ningún punto de ℝ.",
+          "category": "Trigonométricas e Hiperbólicas Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "tf_th_05",
+          "questionText": "$\\arctan(\\tan(3\\pi/4)) = 3\\pi/4$.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "Falso. Como 3π/4 está fuera del rango de arctan, el resultado correcto es -π/4.",
+          "category": "Trigonométricas e Hiperbólicas Inversas",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "banco_practica_facil",
+      "title": "Banco de Práctica: Nivel Fácil",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "banco_facil_01",
+          "questionText": "Halla el dominio de:",
+          "questionLatex": "f(x)=\\sqrt{x-6}",
+          "options": [
+            "[6,\\infty)",
+            "(6,\\infty)",
+            "(-\\infty,6]",
+            "[0,6]"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{dom}(f)=[6,\\infty)",
+          "explanationSteps": [
+            {
+              "title": "Plantea la restricción",
+              "text": "El radicando de la raíz debe ser no negativo.",
+              "icon": "pin",
+              "mathContent": "x-6\\geq0"
+            },
+            {
+              "title": "Despeja y concluye",
+              "text": "Sumamos 6 en ambos lados.",
+              "icon": "star",
+              "mathContent": "x\\geq6 \\Rightarrow \\text{dom}(f)=[6,\\infty)"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "banco_facil_02",
+          "questionText": "Calcula:",
+          "questionLatex": "\\lfloor6.2\\rfloor \\text{ y } \\lfloor-1.5\\rfloor",
+          "options": [
+            "6 \\text{ y } -2",
+            "6 \\text{ y } -1",
+            "7 \\text{ y } -1",
+            "5 \\text{ y } -2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "6 \\text{ y } -2",
+          "explanationSteps": [
+            {
+              "title": "Caso positivo",
+              "text": "El mayor entero que no supera a 6.2 es 6.",
+              "icon": "fx",
+              "mathContent": "\\lfloor6.2\\rfloor=6"
+            },
+            {
+              "title": "Caso negativo",
+              "text": "Recuerda: se redondea hacia abajo, así que el mayor entero ≤ -1.5 es -2 (no -1).",
+              "icon": "star",
+              "mathContent": "\\lfloor-1.5\\rfloor=-2"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "banco_facil_03",
+          "questionText": "Si $f(x)=x+3$ y $g(x)=2x$, halla $(f\\circ g)(x)$:",
+          "questionLatex": "",
+          "options": [
+            "2x+3",
+            "2x+6",
+            "x+6",
+            "2(x+3)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "(f\\circ g)(x)=2x+3",
+          "explanationSteps": [
+            {
+              "title": "Sustituye g dentro de f",
+              "text": "Reemplazamos la x de f por 2x.",
+              "icon": "star",
+              "mathContent": "(f\\circ g)(x)=f(2x)=2x+3"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "banco_facil_04",
+          "questionText": "Halla la inversa de:",
+          "questionLatex": "f(x)=5x-2",
+          "options": [
+            "\\frac{x+2}{5}",
+            "\\frac{x-2}{5}",
+            "5x+2",
+            "\\frac{2-x}{5}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "f^{-1}(x)=\\frac{x+2}{5}",
+          "explanationSteps": [
+            {
+              "title": "Intercambia x e y",
+              "text": "Planteamos y=5x-2 y luego intercambiamos.",
+              "icon": "pin",
+              "mathContent": "x=5y-2"
+            },
+            {
+              "title": "Despeja y",
+              "text": "Sumamos 2 y dividimos entre 5.",
+              "icon": "star",
+              "mathContent": "y=\\frac{x+2}{5}"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "banco_facil_05",
+          "questionText": "Calcula:",
+          "questionLatex": "\\log_2 16",
+          "options": [
+            "4",
+            "2",
+            "8",
+            "16"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\log_2 16=4",
+          "explanationSteps": [
+            {
+              "title": "Piensa en la pregunta escondida",
+              "text": "¿A qué potencia hay que elevar 2 para obtener 16?",
+              "icon": "pin",
+              "mathContent": "2^{?}=16"
+            },
+            {
+              "title": "Encuentra el exponente",
+              "text": "2 elevado a la 4 da 16.",
+              "icon": "star",
+              "mathContent": "2^4=16 \\Rightarrow \\log_2 16=4"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "banco_facil_06",
+          "questionText": "Calcula:",
+          "questionLatex": "\\arcsin(0) \\text{ y } \\arccos(1)",
+          "options": [
+            "0 \\text{ y } 0",
+            "\\pi/2 \\text{ y } 0",
+            "0 \\text{ y } \\pi/2",
+            "\\pi \\text{ y } 0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "0 \\text{ y } 0",
+          "explanationSteps": [
+            {
+              "title": "arcsen(0)",
+              "text": "Buscamos el ángulo en [-π/2,π/2] cuyo seno es 0; ese ángulo es 0.",
+              "icon": "fx",
+              "mathContent": "\\arcsin(0)=0"
+            },
+            {
+              "title": "arccos(1)",
+              "text": "Buscamos el ángulo en [0,π] cuyo coseno es 1; ese ángulo también es 0.",
+              "icon": "star",
+              "mathContent": "\\arccos(1)=0"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "banco_practica_media",
+      "title": "Banco de Práctica: Nivel Medio",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "banco_media_01",
+          "questionText": "Halla el dominio de:",
+          "questionLatex": "f(x)=\\frac{\\sqrt{x}}{x-3}",
+          "options": [
+            "[0,3)\\cup(3,\\infty)",
+            "[0,\\infty)",
+            "(3,\\infty)",
+            "[0,3]"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{dom}(f)=[0,3)\\cup(3,\\infty)",
+          "explanationSteps": [
+            {
+              "title": "Restricción de la raíz",
+              "text": "Necesitamos x≥0.",
+              "icon": "pin",
+              "mathContent": "x\\geq0"
+            },
+            {
+              "title": "Restricción del denominador",
+              "text": "Necesitamos x≠3.",
+              "icon": "pin",
+              "mathContent": "x\\neq3"
+            },
+            {
+              "title": "Combina",
+              "text": "Unimos ambas condiciones.",
+              "icon": "star",
+              "mathContent": "\\text{dom}(f)=[0,3)\\cup(3,\\infty)"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "banco_media_02",
+          "questionText": "Describe las transformaciones de $f(x)=x^2$ a $g(x)=-(x+1)^2+4$:",
+          "questionLatex": "",
+          "options": [
+            "Reflexión vertical, traslación 1 a la izquierda y 4 hacia arriba",
+            "Reflexión horizontal, traslación 1 a la derecha y 4 hacia abajo",
+            "Reflexión vertical, traslación 1 a la derecha y 4 hacia arriba",
+            "Estiramiento vertical, traslación 1 a la izquierda y 4 hacia abajo"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{Reflexión vertical, 1 izq., 4 arriba}",
+          "explanationSteps": [
+            {
+              "title": "Mira el signo negativo",
+              "text": "El signo negativo al frente refleja la parábola verticalmente (ahora abre hacia abajo).",
+              "icon": "pin",
+              "mathContent": "-f(x+1)"
+            },
+            {
+              "title": "Mira el interior del paréntesis",
+              "text": "El (x+1) desplaza la gráfica 1 unidad a la izquierda.",
+              "icon": "fx",
+              "mathContent": "-(x+1)^2"
+            },
+            {
+              "title": "Mira el término final",
+              "text": "El +4 sube toda la gráfica 4 unidades.",
+              "icon": "star",
+              "mathContent": "g(x)=-(x+1)^2+4"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "banco_media_03",
+          "questionText": "Si $f(x)=\\frac{1}{x+2}$, halla el dominio de $(f\\circ f)(x)$:",
+          "questionLatex": "",
+          "options": [
+            "x\\neq-2 \\text{ y } x\\neq-5/2",
+            "x\\neq2 \\text{ y } x\\neq5/2",
+            "x\\neq-2",
+            "x\\neq-5/2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "x\\neq-2 \\text{ y } x\\neq-5/2",
+          "explanationSteps": [
+            {
+              "title": "Primera condición",
+              "text": "Para poder evaluar f una vez, necesitamos que x esté en su dominio.",
+              "icon": "pin",
+              "mathContent": "x\\neq-2"
+            },
+            {
+              "title": "Escribe la composición",
+              "text": "Sustituimos f dentro de f.",
+              "icon": "fx",
+              "mathContent": "(f\\circ f)(x)=\\frac{1}{\\frac{1}{x+2}+2}"
+            },
+            {
+              "title": "Encuentra la segunda condición",
+              "text": "El denominador interno tampoco puede anularse.",
+              "icon": "chart",
+              "mathContent": "\\frac{1}{x+2}+2\\neq0 \\Rightarrow \\frac{1}{x+2}\\neq-2 \\Rightarrow x+2\\neq-\\frac12 \\Rightarrow x\\neq-\\frac52"
+            },
+            {
+              "title": "Combina ambas restricciones",
+              "text": "Excluimos los dos valores prohibidos.",
+              "icon": "star",
+              "mathContent": "\\text{dom}(f\\circ f)=\\mathbb{R}\\setminus\\{-2,-5/2\\}"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "banco_media_04",
+          "questionText": "Resuelve:",
+          "questionLatex": "\\ln(3x)=5",
+          "options": [
+            "x=e^5/3",
+            "x=3e^5",
+            "x=e^{5/3}",
+            "x=e^5-3"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "x=\\frac{e^5}{3}",
+          "explanationSteps": [
+            {
+              "title": "Aplica exponencial a ambos lados",
+              "text": "Esto elimina el logaritmo natural.",
+              "icon": "fx",
+              "mathContent": "3x=e^5"
+            },
+            {
+              "title": "Despeja x",
+              "text": "Dividimos entre 3.",
+              "icon": "star",
+              "mathContent": "x=\\frac{e^5}{3}"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "banco_media_05",
+          "questionText": "Halla la inversa de $f(x)=\\frac{x+4}{2}$ y verifica componiendo ambas funciones:",
+          "questionLatex": "",
+          "options": [
+            "f^{-1}(x)=2x-4",
+            "f^{-1}(x)=2x+4",
+            "f^{-1}(x)=\\frac{x-4}{2}",
+            "f^{-1}(x)=\\frac{x+4}{2}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "f^{-1}(x)=2x-4",
+          "explanationSteps": [
+            {
+              "title": "Intercambia y despeja",
+              "text": "Planteamos y=(x+4)/2, intercambiamos y despejamos.",
+              "icon": "fx",
+              "mathContent": "x=\\frac{y+4}{2} \\Rightarrow y=2x-4"
+            },
+            {
+              "title": "Verifica componiendo",
+              "text": "Sustituimos la inversa dentro de la función original y debe dar x.",
+              "icon": "check",
+              "mathContent": "f(f^{-1}(x))=\\frac{(2x-4)+4}{2}=x"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "banco_media_06",
+          "questionText": "Calcula $\\cosh(0)-\\sinh(0)$ y verifica con una identidad hiperbólica:",
+          "questionLatex": "",
+          "options": [
+            "1",
+            "0",
+            "-1",
+            "2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\cosh(0)-\\sinh(0)=1",
+          "explanationSteps": [
+            {
+              "title": "Sustituye los valores conocidos",
+              "text": "Ya sabemos que cosh(0)=1 y senh(0)=0.",
+              "icon": "fx",
+              "mathContent": "\\cosh(0)-\\sinh(0)=1-0=1"
+            },
+            {
+              "title": "Verifica con la identidad general",
+              "text": "En general, cosh x - senh x = e^{-x}; en x=0 esto da e^0=1, justo lo que obtuvimos.",
+              "icon": "check",
+              "mathContent": "\\cosh x-\\sinh x=e^{-x} \\Rightarrow e^0=1"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "banco_practica_avanzada",
+      "title": "Examen: Práctica Avanzada Integradora",
+      "type": "exam",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "banco_avanzada_01",
+          "questionText": "Halla el dominio de:",
+          "questionLatex": "f(x)=\\ln(x+2)+\\sqrt{4-x}",
+          "options": [
+            "(-2,4]",
+            "[-2,4]",
+            "(-2,4)",
+            "(-4,2]"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\text{dom}(f)=(-2,4]",
+          "explanationSteps": [
+            {
+              "title": "Condición del logaritmo",
+              "text": "El argumento del logaritmo debe ser estrictamente positivo.",
+              "icon": "pin",
+              "mathContent": "x+2>0 \\Rightarrow x>-2"
+            },
+            {
+              "title": "Condición de la raíz",
+              "text": "El radicando debe ser no negativo (puede ser cero).",
+              "icon": "pin",
+              "mathContent": "4-x\\geq0 \\Rightarrow x\\leq4"
+            },
+            {
+              "title": "Combina",
+              "text": "Unimos ambas condiciones: abierto en -2, cerrado en 4.",
+              "icon": "star",
+              "mathContent": "\\text{dom}(f)=(-2,4]"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "banco_avanzada_02",
+          "questionText": "Si $f(x)=\\sqrt{x-1}$ y $g(x)=x^2+1$, halla $(f\\circ g)(x)$ y su dominio, y compáralo con $(g\\circ f)(x)$:",
+          "questionLatex": "",
+          "options": [
+            "(f\\circ g)(x)=|x|, \\;\\text{dom }\\mathbb{R}; \\;(g\\circ f)(x)=x, \\;\\text{dom }x\\geq1",
+            "(f\\circ g)(x)=x, \\;\\text{dom }\\mathbb{R}; \\;(g\\circ f)(x)=|x|",
+            "\\text{Ambas composiciones son iguales a } x",
+            "(f\\circ g)(x)=x^2, \\;(g\\circ f)(x)=x"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "(f\\circ g)(x)=|x|; \\;(g\\circ f)(x)=x \\;(x\\geq1)",
+          "explanationSteps": [
+            {
+              "title": "Calcula f∘g",
+              "text": "Sustituimos g dentro de f y simplificamos la raíz de un cuadrado.",
+              "icon": "fx",
+              "mathContent": "(f\\circ g)(x)=\\sqrt{(x^2+1)-1}=\\sqrt{x^2}=|x|"
+            },
+            {
+              "title": "Dominio de f∘g",
+              "text": "Como x²+1 siempre es ≥1, la resta nunca es negativa, así que no hay restricción: el dominio es todo ℝ.",
+              "icon": "pin",
+              "mathContent": "\\text{dom}(f\\circ g)=\\mathbb{R}"
+            },
+            {
+              "title": "Calcula g∘f",
+              "text": "Ahora sustituimos f dentro de g; la raíz y el cuadrado sí se cancelan limpiamente aquí.",
+              "icon": "fx",
+              "mathContent": "(g\\circ f)(x)=(\\sqrt{x-1})^2+1=x"
+            },
+            {
+              "title": "Compara ambos dominios",
+              "text": "Aunque parezca simplificarse igual, g∘f solo existe donde f existe, es decir, x≥1; en cambio f∘g es |x|, válida para todo real. Por eso son distintas.",
+              "icon": "star",
+              "mathContent": "(f\\circ g)(x)=|x| \\neq (g\\circ f)(x)=x, \\;x\\geq1"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "banco_avanzada_03",
+          "questionText": "Resuelve, aplicando logaritmo a ambos lados:",
+          "questionLatex": "2^{x+1}=5^x",
+          "options": [
+            "x=\\frac{\\ln2}{\\ln5-\\ln2}",
+            "x=\\frac{\\ln5}{\\ln2-\\ln5}",
+            "x=\\ln2-\\ln5",
+            "x=\\frac{\\ln2+\\ln5}{2}"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "x=\\frac{\\ln2}{\\ln5-\\ln2}",
+          "explanationSteps": [
+            {
+              "title": "Aplica ln a ambos lados",
+              "text": "Bajamos ambos exponentes usando la propiedad de la potencia.",
+              "icon": "fx",
+              "mathContent": "(x+1)\\ln2=x\\ln5"
+            },
+            {
+              "title": "Distribuye y agrupa",
+              "text": "Expandimos el lado izquierdo y juntamos los términos con x.",
+              "icon": "fx",
+              "mathContent": "x\\ln2+\\ln2=x\\ln5 \\Rightarrow \\ln2=x(\\ln5-\\ln2)"
+            },
+            {
+              "title": "Despeja x",
+              "text": "Dividimos entre (ln5-ln2).",
+              "icon": "star",
+              "mathContent": "x=\\frac{\\ln2}{\\ln5-\\ln2}"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "banco_avanzada_04",
+          "questionText": "Demuestra que $\\cosh(2x)=2\\cosh^2x-1$ a partir de $\\cosh^2x-\\sinh^2x=1$:",
+          "questionLatex": "",
+          "options": [
+            "Sustituyendo $\\sinh^2x=\\cosh^2x-1$ en $\\cosh(2x)=\\cosh^2x+\\sinh^2x$",
+            "Sustituyendo $\\cosh^2x=\\sinh^2x+1$ en la fórmula de senh(2x)",
+            "No se puede demostrar de esta manera",
+            "Se necesita usar senh(2x) en vez de cosh(2x)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "\\cosh(2x)=2\\cosh^2x-1",
+          "explanationSteps": [
+            {
+              "title": "Parte de la identidad de la suma",
+              "text": "Ya sabemos, de la teoría, que cosh(2x)=cosh²x+senh²x.",
+              "icon": "pin",
+              "mathContent": "\\cosh(2x)=\\cosh^2x+\\sinh^2x"
+            },
+            {
+              "title": "Despeja senh² de la identidad fundamental",
+              "text": "De cosh²x-senh²x=1 podemos aislar senh²x.",
+              "icon": "fx",
+              "mathContent": "\\sinh^2x=\\cosh^2x-1"
+            },
+            {
+              "title": "Sustituye y simplifica",
+              "text": "Reemplazamos senh²x en la primera fórmula.",
+              "icon": "star",
+              "mathContent": "\\cosh(2x)=\\cosh^2x+(\\cosh^2x-1)=2\\cosh^2x-1"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        },
+        {
+          "id": "banco_avanzada_05",
+          "questionText": "Halla la inversa de $f(x)=\\frac{e^x}{1+e^x}$, indicando su dominio y rango:",
+          "questionLatex": "",
+          "options": [
+            "f^{-1}(x)=\\ln\\left(\\frac{x}{1-x}\\right), \\;\\text{dom }(0,1), \\;\\text{rango }\\mathbb{R}",
+            "f^{-1}(x)=\\ln\\left(\\frac{1-x}{x}\\right), \\;\\text{dom }(0,1)",
+            "f^{-1}(x)=\\ln(x)+\\ln(1-x), \\;\\text{dom }\\mathbb{R}",
+            "f^{-1}(x)=\\ln\\left(\\frac{x}{1+x}\\right), \\;\\text{dom }(0,\\infty)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "f^{-1}(x)=\\ln\\left(\\frac{x}{1-x}\\right), \\;\\text{dom }(0,1)",
+          "explanationSteps": [
+            {
+              "title": "Plantea y=f(x)",
+              "text": "Escribimos la ecuación de partida.",
+              "icon": "pin",
+              "mathContent": "y=\\frac{e^x}{1+e^x}"
+            },
+            {
+              "title": "Despeja e^x",
+              "text": "Multiplicamos ambos lados por (1+e^x) y agrupamos los términos con e^x.",
+              "icon": "fx",
+              "mathContent": "y(1+e^x)=e^x \\Rightarrow y=e^x(1-y) \\Rightarrow e^x=\\frac{y}{1-y}"
+            },
+            {
+              "title": "Aplica logaritmo natural",
+              "text": "Tomamos ln en ambos lados para despejar x.",
+              "icon": "fx",
+              "mathContent": "x=\\ln\\left(\\frac{y}{1-y}\\right)"
+            },
+            {
+              "title": "Identifica dominio y rango",
+              "text": "El rango de f original es (0,1) —eso se convierte en el dominio de la inversa— y el rango de la inversa es todo ℝ.",
+              "icon": "star",
+              "mathContent": "f^{-1}(x)=\\ln\\left(\\frac{x}{1-x}\\right), \\;\\text{dom }(0,1), \\;\\text{rango }\\mathbb{R}"
+            }
+          ],
+          "category": "Práctica Integradora",
+          "moduleName": "Funciones, Exponenciales y Trigonometría"
+        }
+      ]
+    },
+    {
+      "id": "guia_autocorreccion_theory",
+      "title": "Guía de Autocorrección y Cierre del Curso",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [
+        {
+          "title": "Qué Revisar al Corregir tus Respuestas",
+          "subtitle": "Cierre • Lista de Verificación",
+          "content": "Cuando termines un ejercicio, revisa siempre estos puntos antes de dar por válida tu respuesta.",
+          "formulaLatex": "",
+          "proTip": "El camino desde el concepto de dominio y rango hasta las identidades hiperbólicas es gradual pero continuo. Todo está conectado, y esa conexión es precisamente lo que convierte una colección de definiciones en una comprensión real del álgebra de funciones. ¡Felicidades por llegar hasta aquí!",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "1) ¿Verificaste todas las restricciones de dominio (denominadores, raíces pares, argumentos de logaritmos) por separado antes de combinarlas? 2) ¿Comprobaste que la función fuera inyectiva antes de afirmar que tiene una inversa? 3) ¿Verificaste el dominio de $f^{-1}$ usando el rango de la función original? 4) ¿Distinguiste correctamente entre $f^{-1}(x)$ y $1/f(x)$? 5) ¿Confirmaste que una función trigonométrica inversa devuelve un ángulo dentro de su rango restringido?"
+            },
+            {
+              "type": "note",
+              "content": "En examen, la mayor parte de los errores no está en la idea general, sino en un detalle: olvidar una restricción de dominio, confundir la inversa con el recíproco, o aplicar una propiedad de logaritmos a una suma en lugar de a un producto. Por eso la verificación final vale tanto como la resolución misma."
+            },
+            {
+              "type": "text",
+              "content": "Este curso te llevó de manejar funciones aisladas a comprender la red de relaciones que las conecta: la exponencial y el logaritmo son inversas entre sí; las trigonométricas y sus arcos correspondientes también; y las funciones hiperbólicas comparten con las trigonométricas una estructura algebraica casi idéntica, con signos distintos que provienen de la diferencia entre la hipérbola y la circunferencia."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    }
+  ]
+}
