@@ -1,0 +1,4639 @@
+{
+  "id": "limites_continuidad",
+  "title": "Limites Continuidad",
+  "subtitle": "Módulo de Limites Continuidad",
+  "description": "Contenido completo del módulo de Limites Continuidad",
+  "semesterNumber": 1,
+  "isLocked": false,
+  "lessons": [
+    {
+      "id": "glc1_intro_theory",
+      "title": "Cómo usar esta guía",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "Bienvenida y objetivo del curso",
+          "subtitle": "Límites y Continuidad • Introducción",
+          "content": "El objetivo de este curso es llevarte desde la idea intuitiva de límite hasta el teorema del valor intermedio, pasando por las técnicas algebraicas que resuelven la mayoría de los límites de un primer curso de cálculo sin necesidad de derivadas. La meta no es memorizar procedimientos sueltos, sino entender qué pregunta responde cada límite y por qué la técnica elegida es la adecuada para esa pregunta.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "La idea constante de todo el curso es esta: un límite describe el comportamiento de una función cerca de un punto (o cerca del infinito), no necesariamente lo que ocurre exactamente en ese punto. Esa distinción —entre 'cerca de' y 'exactamente en'— es la que separa el concepto de límite del simple valor de una función, y es también la que hace posible definir la continuidad de manera rigurosa."
+            },
+            {
+              "type": "note",
+              "content": "Si dominas estas tres ideas, ya tienes gran parte del camino resuelto: 1) reconocer si un límite se resuelve por sustitución directa o necesita una técnica algebraica adicional, 2) distinguir entre el comportamiento cerca de un punto finito y el comportamiento cuando x crece o decrece sin límite, 3) e interpretar el resultado en términos de continuidad, asíntotas o existencia de raíces."
+            }
+          ]
+        },
+        {
+          "title": "Ruta pedagógica del curso",
+          "subtitle": "Límites y Continuidad • Cómo está organizado",
+          "content": "La secuencia está organizada para que cada tema prepare al siguiente. Primero verás los teoremas básicos de límites y las técnicas algebraicas —factorización, racionalización, límites laterales, teorema del encaje— porque son la base de cualquier cálculo posterior. Después estudiarás los límites especiales de funciones trigonométricas, exponenciales, logarítmicas e hiperbólicas, que se resuelven con sustituciones ingeniosas en lugar de derivadas. Luego pasarás a los límites al infinito y a los límites infinitos, que se traducen directamente en asíntotas horizontales, verticales y oblicuas. Finalmente llegarás a la continuidad, que reúne todo lo anterior en una sola definición, y al teorema del valor intermedio, una de las aplicaciones más elegantes de la continuidad.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Cada lección de teoría sigue la misma estructura: explicación detallada, ejemplos resueltos paso a paso, consejos de experto, errores comunes a evitar, y ejercicios de práctica en tres niveles de dificultad creciente."
+            },
+            {
+              "type": "note",
+              "content": "Estructura recomendada por tema: teoría breve + ejemplo guiado + práctica fácil + práctica media + desafío tipo parcial."
+            }
+          ]
+        },
+        {
+          "title": "Lenguaje y notación",
+          "subtitle": "Límites y Continuidad • Convenciones del curso",
+          "content": "A lo largo del curso escribiremos $\\lim_{x\\to a}f(x)=L$ para indicar que f(x) se aproxima a L cuando x se aproxima a a, sin que x sea necesariamente igual a a. Los límites laterales se escriben $\\lim_{x\\to a^-}f(x)$ (por la izquierda) y $\\lim_{x\\to a^+}f(x)$ (por la derecha). Cuando x crece o decrece sin límite, escribiremos $\\lim_{x\\to\\infty}f(x)$ y $\\lim_{x\\to-\\infty}f(x)$.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Usaremos también el símbolo ∞ para describir límites infinitos, como en $\\lim_{x\\to a}f(x)=\\infty$, que indica que f(x) crece sin límite cuando x se acerca a a. Es importante recordar que ∞ no es un número: cuando decimos que un límite 'es' ∞, en realidad estamos describiendo un comportamiento (crecer sin cota), no asignando un valor numérico."
+            },
+            {
+              "type": "note",
+              "content": "Error común: pensar que $\\lim_{x\\to a}f(x)=\\infty$ significa que el límite existe. En el sentido estricto usado en cálculo, un límite existe solo cuando es un número real finito. Cuando escribimos que el límite es ∞, estamos describiendo por qué no existe, no dando un valor numérico."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "glc2_teoremas_theory",
+      "title": "Teoremas de límites: técnicas básicas",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "Definición intuitiva de límite",
+          "subtitle": "Límites y Continuidad • Idea de límite",
+          "content": "Decimos que $\\lim_{x\\to a}f(x)=L$ si los valores de f(x) se acercan tanto como queramos a L a medida que x se acerca a a, sin necesidad de que x sea igual a a, e incluso sin que f esté definida en a. Esta última observación es esencial: el límite describe el comportamiento alrededor de a, no el valor de f en a.",
+          "formulaLatex": "\\lim_{x\\to a}f(x)=L \\iff \\lim_{x\\to a^-}f(x)=L \\text{ y } \\lim_{x\\to a^+}f(x)=L",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Los límites laterales precisan esta idea desde un solo lado. $\\lim_{x\\to a^-}f(x)$ considera solamente valores de x menores que a (acercándose por la izquierda), mientras que $\\lim_{x\\to a^+}f(x)$ considera solamente valores mayores que a (acercándose por la derecha)."
+            }
+          ]
+        },
+        {
+          "title": "Teoremas y propiedades algebraicas de los límites",
+          "subtitle": "Límites y Continuidad • Propiedades algebraicas",
+          "content": "Si $\\lim_{x\\to a}f(x)=L$ y $\\lim_{x\\to a}g(x)=M$, ambos existiendo como números finitos, entonces se cumplen varias propiedades que permiten calcular límites complicados a partir de límites más simples ya conocidos.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "Propiedades algebraicas: lim[f(x)±g(x)]=L±M; lim[f(x)·g(x)]=L·M; lim[f(x)/g(x)]=L/M (si M≠0); lim[c·f(x)]=c·L; lim[f(x)ⁿ]=Lⁿ; lim[ⁿ√f(x)]=ⁿ√L."
+            },
+            {
+              "type": "text",
+              "content": "Estas propiedades son la base de casi todos los cálculos de este capítulo: permiten descomponer un límite complicado en límites más simples, resolverlos por separado, y combinarlos al final."
+            }
+          ]
+        },
+        {
+          "title": "Sustitución directa",
+          "subtitle": "Límites y Continuidad • El primer intento siempre",
+          "content": "Para funciones polinómicas, y para funciones racionales en puntos donde el denominador no se anula, el límite se calcula simplemente evaluando la función en el punto: $\\lim_{x\\to a}f(x)=f(a)$. Esto es válido porque estas funciones son continuas en todo su dominio, un concepto que precisaremos en el capítulo 6.",
+          "formulaLatex": "",
+          "proTip": "Antes de aplicar cualquier técnica algebraica, intenta siempre la sustitución directa primero. Si el resultado es un número real (no una forma 0/0 ni una división entre cero), ya terminaste: ese número es el límite.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to2}(3x^2-5x+1)",
+              "steps": [
+                {
+                  "title": "Sustituye x=2 directamente",
+                  "text": "El polinomio está definido en todo punto, así que no hay ningún obstáculo.",
+                  "mathContent": "3(4)-5(2)+1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "Simplifica la aritmética.",
+                  "mathContent": "12-10+1=3",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to1}\\frac{x^2+2}{x+3}",
+              "steps": [
+                {
+                  "title": "Verifica que el denominador no se anule en x=1",
+                  "text": "1+3=4≠0, así que la sustitución directa es válida.",
+                  "mathContent": "",
+                  "icon": "info"
+                },
+                {
+                  "title": "Sustituye x=1",
+                  "text": "Reemplaza directamente.",
+                  "mathContent": "\\frac{1+2}{1+3}=\\frac34",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Formas 0/0: factorización y racionalización",
+          "subtitle": "Límites y Continuidad • Técnicas algebraicas",
+          "content": "Cuando la sustitución directa produce la forma indeterminada 0/0, el límite puede existir de todas formas: la forma 0/0 solo significa que ese método en particular no da información, no que el límite no exista. Dos técnicas algebraicas resuelven la mayoría de estos casos: factorizar y cancelar el factor común, o racionalizar multiplicando por el conjugado.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to3}\\frac{x^2-9}{x-3}",
+              "steps": [
+                {
+                  "title": "Verifica la forma",
+                  "text": "Sustituyendo x=3 obtienes 0/0.",
+                  "mathContent": "",
+                  "icon": "info"
+                },
+                {
+                  "title": "Factoriza el numerador",
+                  "text": "x²−9 es una diferencia de cuadrados.",
+                  "mathContent": "\\frac{(x-3)(x+3)}{x-3}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Cancela el factor común",
+                  "text": "Válido porque x nunca es exactamente 3 en el límite, solo se acerca.",
+                  "mathContent": "=x+3\\ (\\text{para }x\\neq3)",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Evalúa el límite de la expresión simplificada",
+                  "text": "Sustituye x=3.",
+                  "mathContent": "\\lim_{x\\to3}(x+3)=6",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to0}\\frac{\\sqrt{x+4}-2}{x}",
+              "steps": [
+                {
+                  "title": "Verifica la forma",
+                  "text": "Sustituyendo x=0: (2−2)/0=0/0.",
+                  "mathContent": "",
+                  "icon": "info"
+                },
+                {
+                  "title": "Multiplica por el conjugado",
+                  "text": "El conjugado de √(x+4)−2 es √(x+4)+2.",
+                  "mathContent": "\\frac{[\\sqrt{x+4}-2][\\sqrt{x+4}+2]}{x[\\sqrt{x+4}+2]}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Simplifica el numerador (diferencia de cuadrados)",
+                  "text": "(√(x+4))²−2² = x+4−4 = x.",
+                  "mathContent": "=\\frac{x}{x[\\sqrt{x+4}+2]}",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Cancela x",
+                  "text": "Válido porque x≠0 en el límite.",
+                  "mathContent": "=\\frac{1}{\\sqrt{x+4}+2}",
+                  "icon": "check"
+                },
+                {
+                  "title": "Evalúa en x=0",
+                  "text": "Sustituye directamente en la expresión simplificada.",
+                  "mathContent": "\\frac{1}{\\sqrt4+2}=\\frac14",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "content": "Guía rápida: si numerador y/o denominador son polinomios factorizables, factoriza y cancela. Si aparece una raíz cuadrada sumada o restada, racionaliza con el conjugado. Si aparecen fracciones dentro de fracciones, combina en una sola fracción y luego factoriza."
+            },
+            {
+              "type": "note",
+              "content": "Error común: cancelar el factor (x−a) es válido únicamente porque, en el límite, x nunca es exactamente igual a a; solo se acerca. Por eso la cancelación no cambia el valor del límite, aunque sí cambia el dominio de la expresión simplificada."
+            }
+          ]
+        },
+        {
+          "title": "Límites laterales y existencia del límite",
+          "subtitle": "Límites y Continuidad • Existencia del límite",
+          "content": "El límite (bilateral) $\\lim_{x\\to a}f(x)$ existe si y solo si ambos límites laterales existen y son iguales. Si los límites laterales difieren, o si alguno no existe, el límite bilateral tampoco existe. Esta idea es particularmente importante para funciones definidas por partes.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Determinar si existe } \\lim_{x\\to0}\\frac{|x|}{x}",
+              "steps": [
+                {
+                  "title": "Analiza el caso x>0",
+                  "text": "Para x positivo, |x|=x.",
+                  "mathContent": "\\frac{|x|}{x}=\\frac{x}{x}=1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Analiza el caso x<0",
+                  "text": "Para x negativo, |x|=−x.",
+                  "mathContent": "\\frac{|x|}{x}=\\frac{-x}{x}=-1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Compara ambos límites laterales",
+                  "text": "Por la izquierda da −1, por la derecha da 1.",
+                  "mathContent": "\\lim_{x\\to0^-}=-1,\\quad \\lim_{x\\to0^+}=1",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Conclusión",
+                  "text": "Como los límites laterales son distintos, el límite bilateral no existe.",
+                  "mathContent": "",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Teorema del encaje (o del sándwich)",
+          "subtitle": "Límites y Continuidad • Teorema del encaje",
+          "content": "El teorema del encaje permite calcular límites de funciones difíciles de manejar directamente, acotándolas entre dos funciones más simples que comparten el mismo límite. Si g(x)≤f(x)≤h(x) para todo x cerca de a (excepto posiblemente en a), y ambas funciones límite g y h tienden al mismo valor L, entonces f también tiende a L.",
+          "formulaLatex": "",
+          "proTip": "El teorema del encaje es especialmente útil cuando la función contiene un factor acotado pero oscilante, como sen(1/x) o cos(1/x), multiplicado por un factor que tiende a cero. Busca ese patrón antes de intentar otras técnicas.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to0}x^2\\sin(1/x)",
+              "steps": [
+                {
+                  "title": "Acota la función oscilante",
+                  "text": "El seno siempre está entre −1 y 1, sin importar el argumento.",
+                  "mathContent": "-1\\leq\\sin(1/x)\\leq1",
+                  "icon": "info"
+                },
+                {
+                  "title": "Multiplica por x² (que es no negativo)",
+                  "text": "Multiplicar por algo no negativo no invierte las desigualdades.",
+                  "mathContent": "-x^2\\leq x^2\\sin(1/x)\\leq x^2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Calcula el límite de ambas cotas",
+                  "text": "Tanto −x² como x² tienden a 0.",
+                  "mathContent": "\\lim_{x\\to0}(-x^2)=0,\\quad \\lim_{x\\to0}x^2=0",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Aplica el teorema del encaje",
+                  "text": "Como la función está atrapada entre dos funciones que tienden a 0, ella también tiende a 0.",
+                  "mathContent": "\\lim_{x\\to0}x^2\\sin(1/x)=0",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "glc2_practice_n1",
+      "title": "Práctica: Técnicas básicas — Nivel fácil",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc2_n1_01",
+          "questionText": "Calcula lim x→3 (2x²−x+4).",
+          "questionLatex": "",
+          "options": [
+            "19",
+            "17",
+            "21",
+            "16"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Intenta sustitución directa primero",
+              "text": "Es un polinomio, así que está definido en todo punto.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Sustituye x=3",
+              "text": "Reemplaza en cada término.",
+              "mathContent": "2(3)^2-3+4=2(9)-3+4",
+              "icon": "fx"
+            },
+            {
+              "title": "Resultado",
+              "text": "Simplifica la aritmética.",
+              "mathContent": "18-3+4=19",
+              "icon": "star"
+            }
+          ],
+          "category": "Sustitución directa",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc2_n1_02",
+          "questionText": "Calcula lim x→−1 (x+5)/(x²+2).",
+          "questionLatex": "",
+          "options": [
+            "4/3",
+            "6/3",
+            "4/1",
+            "-4/3"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica que el denominador no se anule",
+              "text": "(−1)²+2=3≠0, así que puedes sustituir directamente.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Sustituye x=−1",
+              "text": "Reemplaza en numerador y denominador.",
+              "mathContent": "\\frac{-1+5}{1+2}",
+              "icon": "fx"
+            },
+            {
+              "title": "Resultado",
+              "text": "Simplifica la fracción.",
+              "mathContent": "\\frac43",
+              "icon": "star"
+            }
+          ],
+          "category": "Sustitución directa",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc2_n1_03",
+          "questionText": "Calcula lim x→4 (x²−16)/(x−4).",
+          "questionLatex": "",
+          "options": [
+            "8",
+            "0",
+            "4",
+            "16"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica la forma con sustitución directa",
+              "text": "Al sustituir x=4: (16−16)/0 = 0/0, indeterminada.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Factoriza el numerador",
+              "text": "x²−16 es diferencia de cuadrados.",
+              "mathContent": "\\frac{(x-4)(x+4)}{x-4}",
+              "icon": "fx"
+            },
+            {
+              "title": "Cancela el factor común",
+              "text": "Válido porque x≠4 en el límite.",
+              "mathContent": "=x+4",
+              "icon": "chart"
+            },
+            {
+              "title": "Evalúa en x=4",
+              "text": "Sustituye en la expresión simplificada.",
+              "mathContent": "4+4=8",
+              "icon": "star"
+            }
+          ],
+          "category": "Factorización",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc2_n1_04",
+          "questionText": "Calcula lim x→2 (x³−8)/(x−2).",
+          "questionLatex": "",
+          "options": [
+            "12",
+            "8",
+            "6",
+            "4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica la forma",
+              "text": "Al sustituir x=2: (8−8)/0=0/0.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Factoriza el numerador como diferencia de cubos",
+              "text": "x³−8=(x−2)(x²+2x+4).",
+              "mathContent": "\\frac{(x-2)(x^2+2x+4)}{x-2}",
+              "icon": "fx"
+            },
+            {
+              "title": "Cancela el factor común",
+              "text": "Simplifica.",
+              "mathContent": "=x^2+2x+4",
+              "icon": "chart"
+            },
+            {
+              "title": "Evalúa en x=2",
+              "text": "Sustituye en la expresión simplificada.",
+              "mathContent": "4+4+4=12",
+              "icon": "star"
+            }
+          ],
+          "category": "Factorización",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc2_n1_05",
+          "questionText": "Calcula lim x→0 (x²+3x)/x.",
+          "questionLatex": "",
+          "options": [
+            "3",
+            "0",
+            "1",
+            "No existe"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica la forma",
+              "text": "Al sustituir x=0: 0/0.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Factoriza x del numerador",
+              "text": "Ambos términos comparten x.",
+              "mathContent": "\\frac{x(x+3)}{x}",
+              "icon": "fx"
+            },
+            {
+              "title": "Cancela x",
+              "text": "Válido porque x≠0 en el límite.",
+              "mathContent": "=x+3",
+              "icon": "chart"
+            },
+            {
+              "title": "Evalúa en x=0",
+              "text": "Sustituye.",
+              "mathContent": "0+3=3",
+              "icon": "star"
+            }
+          ],
+          "category": "Factorización",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc2_practice_n2",
+      "title": "Práctica: Técnicas básicas — Nivel medio",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc2_n2_06",
+          "questionText": "Calcula lim x→9 (√x−3)/(x−9).",
+          "questionLatex": "",
+          "options": [
+            "1/6",
+            "1/3",
+            "1/9",
+            "0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica la forma",
+              "text": "Al sustituir x=9: (3−3)/0=0/0.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Multiplica por el conjugado de √x−3",
+              "text": "El conjugado es √x+3.",
+              "mathContent": "\\frac{(\\sqrt x-3)(\\sqrt x+3)}{(x-9)(\\sqrt x+3)}",
+              "icon": "fx"
+            },
+            {
+              "title": "Simplifica el numerador (diferencia de cuadrados)",
+              "text": "(√x)²−3²=x−9.",
+              "mathContent": "=\\frac{x-9}{(x-9)(\\sqrt x+3)}",
+              "icon": "chart"
+            },
+            {
+              "title": "Cancela (x−9)",
+              "text": "Válido porque x≠9 en el límite.",
+              "mathContent": "=\\frac{1}{\\sqrt x+3}",
+              "icon": "check"
+            },
+            {
+              "title": "Evalúa en x=9",
+              "text": "Sustituye en la expresión simplificada.",
+              "mathContent": "\\frac{1}{3+3}=\\frac16",
+              "icon": "star"
+            }
+          ],
+          "category": "Racionalización",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc2_n2_07",
+          "questionText": "Calcula lim x→1 [√(x+3)−2]/(x−1).",
+          "questionLatex": "",
+          "options": [
+            "1/4",
+            "1/2",
+            "1/3",
+            "0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica la forma",
+              "text": "Al sustituir x=1: (2−2)/0=0/0.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Multiplica por el conjugado",
+              "text": "El conjugado de √(x+3)−2 es √(x+3)+2.",
+              "mathContent": "\\frac{[\\sqrt{x+3}-2][\\sqrt{x+3}+2]}{(x-1)[\\sqrt{x+3}+2]}",
+              "icon": "fx"
+            },
+            {
+              "title": "Simplifica el numerador",
+              "text": "(√(x+3))²−2²=x+3−4=x−1.",
+              "mathContent": "=\\frac{x-1}{(x-1)[\\sqrt{x+3}+2]}",
+              "icon": "chart"
+            },
+            {
+              "title": "Cancela (x−1)",
+              "text": "Válido porque x≠1 en el límite.",
+              "mathContent": "=\\frac{1}{\\sqrt{x+3}+2}",
+              "icon": "check"
+            },
+            {
+              "title": "Evalúa en x=1",
+              "text": "Sustituye en la expresión simplificada.",
+              "mathContent": "\\frac{1}{2+2}=\\frac14",
+              "icon": "star"
+            }
+          ],
+          "category": "Racionalización",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc2_n2_08",
+          "questionText": "¿Existe lim x→2 f(x) si f(x)=x+1 para x<2 y f(x)=2x−1 para x≥2?",
+          "questionLatex": "",
+          "options": [
+            "Sí, existe y vale 3",
+            "No existe",
+            "Sí, existe y vale 2",
+            "Sí, existe y vale 4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Calcula el límite por la izquierda",
+              "text": "Usa la primera pieza de la función, x+1, ya que se aplica para x<2.",
+              "mathContent": "\\lim_{x\\to2^-}(x+1)=2+1=3",
+              "icon": "fx"
+            },
+            {
+              "title": "Calcula el límite por la derecha",
+              "text": "Usa la segunda pieza, 2x−1, ya que se aplica para x≥2.",
+              "mathContent": "\\lim_{x\\to2^+}(2x-1)=2(2)-1=3",
+              "icon": "fx"
+            },
+            {
+              "title": "Compara ambos límites laterales",
+              "text": "¡Son exactamente iguales!",
+              "mathContent": "",
+              "icon": "check"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Como los límites laterales coinciden, el límite bilateral existe y vale 3.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Límites laterales",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc2_n2_09",
+          "questionText": "Calcula lim x→0 x⁴cos(1/x) usando el teorema del encaje.",
+          "questionLatex": "",
+          "options": [
+            "0",
+            "1",
+            "No existe",
+            "∞"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Acota la función oscilante",
+              "text": "El coseno siempre está entre −1 y 1.",
+              "mathContent": "-1\\leq\\cos(1/x)\\leq1",
+              "icon": "info"
+            },
+            {
+              "title": "Multiplica por x⁴ (siempre no negativo)",
+              "text": "No invierte las desigualdades.",
+              "mathContent": "-x^4\\leq x^4\\cos(1/x)\\leq x^4",
+              "icon": "fx"
+            },
+            {
+              "title": "Calcula el límite de ambas cotas",
+              "text": "Ambas tienden a 0.",
+              "mathContent": "\\lim_{x\\to0}(-x^4)=0,\\ \\lim_{x\\to0}x^4=0",
+              "icon": "chart"
+            },
+            {
+              "title": "Aplica el teorema del encaje",
+              "text": "La función atrapada entre dos funciones que tienden a 0 también tiende a 0.",
+              "mathContent": "=0",
+              "icon": "star"
+            }
+          ],
+          "category": "Teorema del encaje",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc2_n2_10",
+          "questionText": "Calcula lim x→−2 (x²+5x+6)/(x²−4).",
+          "questionLatex": "",
+          "options": [
+            "-1/4",
+            "1/4",
+            "0",
+            "No existe"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica la forma",
+              "text": "Al sustituir x=−2: (4−10+6)/(4−4)=0/0.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Factoriza el numerador",
+              "text": "Busca dos números que sumen 5 y multipliquen 6: son 2 y 3.",
+              "mathContent": "x^2+5x+6=(x+2)(x+3)",
+              "icon": "fx"
+            },
+            {
+              "title": "Factoriza el denominador",
+              "text": "Diferencia de cuadrados.",
+              "mathContent": "x^2-4=(x-2)(x+2)",
+              "icon": "fx"
+            },
+            {
+              "title": "Cancela el factor común (x+2)",
+              "text": "Válido porque x≠−2 en el límite.",
+              "mathContent": "\\frac{x+3}{x-2}",
+              "icon": "chart"
+            },
+            {
+              "title": "Evalúa en x=−2",
+              "text": "Sustituye en la expresión simplificada.",
+              "mathContent": "\\frac{-2+3}{-2-2}=\\frac{1}{-4}=-\\frac14",
+              "icon": "star"
+            }
+          ],
+          "category": "Factorización",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc2_practice_n3",
+      "title": "Práctica: Técnicas básicas — Nivel avanzado",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc2_n3_11",
+          "questionText": "Calcula lim h→0 [(x+h)²−x²]/h, en términos de x.",
+          "questionLatex": "",
+          "options": [
+            "2x",
+            "x",
+            "2x + h",
+            "x²"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Expande el numerador",
+              "text": "Desarrolla el binomio al cuadrado.",
+              "mathContent": "(x+h)^2-x^2=x^2+2xh+h^2-x^2",
+              "icon": "info"
+            },
+            {
+              "title": "Simplifica cancelando x²",
+              "text": "Los términos x² se cancelan entre sí.",
+              "mathContent": "=2xh+h^2",
+              "icon": "fx"
+            },
+            {
+              "title": "Factoriza h del numerador",
+              "text": "Ambos términos comparten h.",
+              "mathContent": "\\frac{h(2x+h)}{h}",
+              "icon": "chart"
+            },
+            {
+              "title": "Cancela h",
+              "text": "Válido porque h≠0 en el límite.",
+              "mathContent": "=2x+h",
+              "icon": "check"
+            },
+            {
+              "title": "Evalúa el límite cuando h→0",
+              "text": "El término h simplemente desaparece.",
+              "mathContent": "\\lim_{h\\to0}(2x+h)=2x",
+              "icon": "star"
+            }
+          ],
+          "category": "Cociente incremental",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc2_n3_12",
+          "questionText": "Halla a y b para que f sea continua en x=1, con f(x)=ax+b (x<1), f(1)=3, f(x)=x²+2 (x>1).",
+          "questionLatex": "",
+          "options": [
+            "a + b = 3 (infinitas soluciones cumplen esta relación)",
+            "a = 3, b = 0 únicamente",
+            "a + b = 0",
+            "No existen valores de a y b"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Recuerda qué exige la continuidad",
+              "text": "Los dos límites laterales deben existir y coincidir con f(1)=3.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Calcula el límite por la derecha",
+              "text": "Usa la pieza x²+2, válida para x>1.",
+              "mathContent": "\\lim_{x\\to1^+}(x^2+2)=1+2=3",
+              "icon": "fx"
+            },
+            {
+              "title": "Observa que el lado derecho ya es automáticamente continuo",
+              "text": "Ese límite ya coincide con f(1)=3 sin importar a y b.",
+              "mathContent": "",
+              "icon": "check"
+            },
+            {
+              "title": "Calcula el límite por la izquierda",
+              "text": "Usa la pieza ax+b, válida para x<1.",
+              "mathContent": "\\lim_{x\\to1^-}(ax+b)=a+b",
+              "icon": "fx"
+            },
+            {
+              "title": "Iguala ese límite a f(1)=3",
+              "text": "Esta es la única condición real que falta imponer.",
+              "mathContent": "a+b=3",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Cualquier par (a,b) que cumpla a+b=3 hace la función continua en x=1; hay infinitas soluciones posibles.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Continuidad y límites laterales",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc2_n3_13",
+          "questionText": "Calcula lim x→0 [1/(x√(x+1)) − 1/x], combinando fracciones.",
+          "questionLatex": "",
+          "options": [
+            "-1/2",
+            "1/2",
+            "0",
+            "-1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Combina ambas fracciones con un común denominador",
+              "text": "El denominador común es x√(x+1).",
+              "mathContent": "\\frac{1}{x\\sqrt{x+1}}-\\frac1x=\\frac{1-\\sqrt{x+1}}{x\\sqrt{x+1}}",
+              "icon": "info"
+            },
+            {
+              "title": "Verifica la forma",
+              "text": "Al sustituir x=0: (1−1)/0=0/0.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Racionaliza el numerador con el conjugado",
+              "text": "Multiplica por 1+√(x+1) arriba y abajo.",
+              "mathContent": "\\frac{[1-\\sqrt{x+1}][1+\\sqrt{x+1}]}{x\\sqrt{x+1}[1+\\sqrt{x+1}]}",
+              "icon": "fx"
+            },
+            {
+              "title": "Simplifica el numerador (diferencia de cuadrados)",
+              "text": "1²−(√(x+1))²=1−(x+1)=−x.",
+              "mathContent": "=\\frac{-x}{x\\sqrt{x+1}[1+\\sqrt{x+1}]}",
+              "icon": "chart"
+            },
+            {
+              "title": "Cancela x",
+              "text": "Válido porque x≠0 en el límite.",
+              "mathContent": "=\\frac{-1}{\\sqrt{x+1}[1+\\sqrt{x+1}]}",
+              "icon": "check"
+            },
+            {
+              "title": "Evalúa en x=0",
+              "text": "Sustituye en la expresión simplificada.",
+              "mathContent": "\\frac{-1}{1\\cdot2}=-\\frac12",
+              "icon": "star"
+            }
+          ],
+          "category": "Fracciones combinadas",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc2_n3_14",
+          "questionText": "Calcula lim x→4 (√x−2)/(x−4) racionalizando.",
+          "questionLatex": "",
+          "options": [
+            "1/4",
+            "1/2",
+            "0",
+            "1/16"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica la forma",
+              "text": "Al sustituir x=4: (2−2)/0=0/0.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Multiplica por el conjugado de √x−2",
+              "text": "El conjugado es √x+2.",
+              "mathContent": "\\frac{(\\sqrt x-2)(\\sqrt x+2)}{(x-4)(\\sqrt x+2)}",
+              "icon": "fx"
+            },
+            {
+              "title": "Simplifica el numerador",
+              "text": "(√x)²−2²=x−4.",
+              "mathContent": "=\\frac{x-4}{(x-4)(\\sqrt x+2)}",
+              "icon": "chart"
+            },
+            {
+              "title": "Cancela (x−4)",
+              "text": "Válido porque x≠4 en el límite.",
+              "mathContent": "=\\frac{1}{\\sqrt x+2}",
+              "icon": "check"
+            },
+            {
+              "title": "Evalúa en x=4",
+              "text": "Sustituye en la expresión simplificada.",
+              "mathContent": "\\frac{1}{2+2}=\\frac14",
+              "icon": "star"
+            }
+          ],
+          "category": "Racionalización",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc2_n3_15",
+          "questionText": "Usa el teorema del encaje para calcular lim x→0 x²e^(sen(1/x)).",
+          "questionLatex": "",
+          "options": [
+            "0",
+            "1",
+            "e",
+            "No existe"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Acota la función oscilante dentro del exponente",
+              "text": "El seno siempre está entre −1 y 1.",
+              "mathContent": "-1\\leq\\sin(1/x)\\leq1",
+              "icon": "info"
+            },
+            {
+              "title": "Aplica la exponencial a la desigualdad",
+              "text": "Como eˣ es creciente, conserva el orden de la desigualdad.",
+              "mathContent": "e^{-1}\\leq e^{\\sin(1/x)}\\leq e^{1}",
+              "icon": "pin"
+            },
+            {
+              "title": "Multiplica por x² (no negativo)",
+              "text": "No invierte las desigualdades, y ambos extremos son ahora constantes positivas multiplicadas por x².",
+              "mathContent": "e^{-1}x^2\\leq x^2e^{\\sin(1/x)}\\leq e^1x^2",
+              "icon": "fx"
+            },
+            {
+              "title": "Calcula el límite de ambas cotas",
+              "text": "Ambas tienden a 0, ya que son constantes por x².",
+              "mathContent": "\\lim_{x\\to0}e^{-1}x^2=0,\\ \\lim_{x\\to0}e^1x^2=0",
+              "icon": "chart"
+            },
+            {
+              "title": "Aplica el teorema del encaje",
+              "text": "La función queda atrapada entre dos funciones que tienden a 0.",
+              "mathContent": "=0",
+              "icon": "star"
+            }
+          ],
+          "category": "Teorema del encaje",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc3_trig_exp_theory",
+      "title": "Límites trig., exponenciales e hiperbólicos",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "El límite fundamental trigonométrico",
+          "subtitle": "Límites y Continuidad • Límite fundamental",
+          "content": "El límite más importante de este capítulo, y uno de los más usados en todo el cálculo, es lim x→0 (sen x)/x = 1. Este resultado se demuestra comparando el área de un triángulo, un sector circular y otro triángulo en una circunferencia de radio 1, y aplicando el teorema del encaje. Aquí lo tomamos como punto de partida, ya que su demostración geométrica completa excede el alcance de esta guía.",
+          "formulaLatex": "\\lim_{x\\to0}\\frac{\\sin x}{x}=1",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "A partir de este límite fundamental se derivan casi todos los demás límites trigonométricos especiales. Consecuencia inmediata: lim x→0 (tan x)/x = 1."
+            }
+          ]
+        },
+        {
+          "title": "Otros límites trigonométricos derivados",
+          "subtitle": "Límites y Continuidad • Ajustando el argumento",
+          "content": "Muchos límites trigonométricos se resuelven manipulando algebraicamente la expresión hasta que aparezca (sen u)/u con el mismo u en numerador y argumento, y aplicando entonces el límite fundamental mediante una sustitución.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to0}\\frac{\\sin(3x)}{x}",
+              "steps": [
+                {
+                  "title": "Multiplica y divide por 3",
+                  "text": "Esto ajusta el argumento para que coincida con el denominador.",
+                  "mathContent": "\\frac{\\sin(3x)}{x}=3\\cdot\\frac{\\sin(3x)}{3x}",
+                  "icon": "info"
+                },
+                {
+                  "title": "Sustituye u=3x",
+                  "text": "Cuando x→0, también u→0.",
+                  "mathContent": "\\frac{\\sin(3x)}{3x}\\to1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "Multiplica por el factor 3 que separaste.",
+                  "mathContent": "\\lim_{x\\to0}\\frac{\\sin(3x)}{x}=3\\cdot1=3",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to0}\\frac{\\sin(5x)}{\\sin(2x)}",
+              "steps": [
+                {
+                  "title": "Divide numerador y denominador entre x",
+                  "text": "Esto prepara ambos para usar el límite fundamental por separado.",
+                  "mathContent": "\\frac{\\sin(5x)/x}{\\sin(2x)/x}",
+                  "icon": "info"
+                },
+                {
+                  "title": "Ajusta cada uno a su propio límite fundamental",
+                  "text": "Multiplica y divide cada uno por su argumento.",
+                  "mathContent": "=\\frac{5\\cdot[\\sin(5x)/(5x)]}{2\\cdot[\\sin(2x)/(2x)]}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Ambos corchetes tienden a 1",
+                  "text": "Por el límite fundamental.",
+                  "mathContent": "",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "Solo quedan los factores 5 y 2.",
+                  "mathContent": "\\frac{5\\cdot1}{2\\cdot1}=\\frac52",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to0}\\frac{1-\\cos x}{x^2}",
+              "steps": [
+                {
+                  "title": "Multiplica numerador y denominador por (1+cos x)",
+                  "text": "Esto crea una diferencia de cuadrados en el numerador.",
+                  "mathContent": "\\frac{(1-\\cos x)(1+\\cos x)}{x^2(1+\\cos x)}",
+                  "icon": "info"
+                },
+                {
+                  "title": "Usa la identidad pitagórica",
+                  "text": "1−cos²x = sen²x.",
+                  "mathContent": "=\\frac{\\sin^2x}{x^2(1+\\cos x)}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Reescribe como el cuadrado del límite fundamental",
+                  "text": "Separa sen²x/x² como (sen x/x)².",
+                  "mathContent": "=\\left(\\frac{\\sin x}{x}\\right)^2\\cdot\\frac{1}{1+\\cos x}",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Evalúa cada parte",
+                  "text": "El primer factor tiende a 1² y el segundo a 1/(1+1).",
+                  "mathContent": "1^2\\cdot\\frac{1}{2}=\\frac12",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Límites exponenciales fundamentales",
+          "subtitle": "Límites y Continuidad • Exponenciales especiales",
+          "content": "La función exponencial también tiene límites especiales que conviene conocer de memoria, análogos al límite fundamental trigonométrico. El primero de estos límites es, de hecho, equivalente a la definición de la derivada de eˣ en x=0, aunque aquí lo usamos de forma puramente algebraica, sin invocar derivadas.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\lim_{x\\to0}\\frac{e^x-1}{x}=1 \\qquad \\lim_{x\\to0}\\frac{a^x-1}{x}=\\ln a\\ (a>0,\\ a\\neq1)"
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to0}\\frac{e^{3x}-1}{x}",
+              "steps": [
+                {
+                  "title": "Multiplica y divide por 3",
+                  "text": "Igual que con el límite trigonométrico.",
+                  "mathContent": "\\frac{e^{3x}-1}{x}=3\\cdot\\frac{e^{3x}-1}{3x}",
+                  "icon": "info"
+                },
+                {
+                  "title": "Aplica el límite fundamental exponencial",
+                  "text": "El corchete tiende a 1.",
+                  "mathContent": "",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "Multiplica por el factor 3.",
+                  "mathContent": "\\lim_{x\\to0}\\frac{e^{3x}-1}{x}=3\\cdot1=3",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to0}\\frac{2^x-1}{x}",
+              "steps": [
+                {
+                  "title": "Aplica directamente la fórmula con base a=2",
+                  "text": "No hace falta ningún ajuste adicional.",
+                  "mathContent": "\\lim_{x\\to0}\\frac{2^x-1}{x}=\\ln2",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Límites logarítmicos fundamentales",
+          "subtitle": "Límites y Continuidad • Logaritmo especial",
+          "content": "De manera análoga, el logaritmo natural tiene su propio límite fundamental, que es recíproco al exponencial en cierto sentido.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\lim_{x\\to0}\\frac{\\ln(1+x)}{x}=1"
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to1}\\frac{x-1}{\\ln x}",
+              "steps": [
+                {
+                  "title": "Sustituye t=x−1",
+                  "text": "Así, x=1+t, y cuando x→1, t→0.",
+                  "mathContent": "",
+                  "icon": "info"
+                },
+                {
+                  "title": "Reescribe la expresión en términos de t",
+                  "text": "El límite se transforma en el recíproco del límite fundamental logarítmico.",
+                  "mathContent": "\\frac{x-1}{\\ln x}=\\frac{t}{\\ln(1+t)}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Aplica el límite fundamental (invertido)",
+                  "text": "Como ln(1+t)/t→1, su recíproco t/ln(1+t) también tiende a 1.",
+                  "mathContent": "\\lim_{t\\to0}\\frac{t}{\\ln(1+t)}=\\frac11=1",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to0}\\frac{\\ln(1+2x)}{3x}",
+              "steps": [
+                {
+                  "title": "Multiplica y divide por 2 en el numerador",
+                  "text": "Esto ajusta el argumento del logaritmo para que coincida.",
+                  "mathContent": "\\frac{\\ln(1+2x)}{3x}=\\frac23\\cdot\\frac{\\ln(1+2x)}{2x}",
+                  "icon": "info"
+                },
+                {
+                  "title": "Sustituye u=2x",
+                  "text": "Cuando x→0, u→0, y el corchete tiende a 1.",
+                  "mathContent": "",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "Multiplica por el factor 2/3 que separaste.",
+                  "mathContent": "\\frac23\\cdot1=\\frac23",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "content": "Nota la simetría entre los tres límites fundamentales de esta sección: (sen x)/x→1, (eˣ−1)/x→1, ln(1+x)/x→1. Los tres describen, en el fondo, que cerca de x=0 la función correspondiente se comporta casi como la función identidad x."
+            }
+          ]
+        },
+        {
+          "title": "Límites de funciones hiperbólicas",
+          "subtitle": "Límites y Continuidad • Hiperbólicas especiales",
+          "content": "Las funciones hiperbólicas, definidas a partir de exponenciales, satisfacen límites especiales muy similares a los trigonométricos, con las mismas constantes.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "formula",
+              "content": "\\lim_{x\\to0}\\frac{\\sinh x}{x}=1 \\qquad \\lim_{x\\to0}\\frac{\\cosh x-1}{x^2}=\\frac12"
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to0}\\frac{\\sinh x}{x} \\text{ usando senh } x=\\frac{e^x-e^{-x}}{2}",
+              "steps": [
+                {
+                  "title": "Separa en dos límites exponenciales conocidos",
+                  "text": "Divide la definición entre x.",
+                  "mathContent": "\\frac{\\sinh x}{x}=\\frac12\\left[\\frac{e^x-1}{x}-\\frac{e^{-x}-1}{x}\\right]",
+                  "icon": "info"
+                },
+                {
+                  "title": "El primer término tiende a 1",
+                  "text": "Es el límite exponencial fundamental.",
+                  "mathContent": "",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Para el segundo, sustituye u=−x",
+                  "text": "Esto lo convierte en el mismo límite fundamental, con un signo extra.",
+                  "mathContent": "\\frac{e^{-x}-1}{x}=-\\frac{e^u-1}{u}\\to-1",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Combina ambos resultados",
+                  "text": "Resta el segundo del primero, dentro del factor 1/2.",
+                  "mathContent": "\\frac12[1-(-1)]=1",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to\\infty}\\tanh x",
+              "steps": [
+                {
+                  "title": "Escribe tanh x en términos de exponenciales",
+                  "text": "Usa la definición.",
+                  "mathContent": "\\tanh x=\\frac{e^x-e^{-x}}{e^x+e^{-x}}",
+                  "icon": "info"
+                },
+                {
+                  "title": "Divide numerador y denominador entre eˣ",
+                  "text": "Esto simplifica el comportamiento en el infinito.",
+                  "mathContent": "\\tanh x=\\frac{1-e^{-2x}}{1+e^{-2x}}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Evalúa cuando x→∞",
+                  "text": "e^(−2x) tiende a 0 (no hay forma indeterminada).",
+                  "mathContent": "\\lim_{x\\to\\infty}\\tanh x=\\frac{1-0}{1+0}=1",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "glc3_practice_n1",
+      "title": "Práctica: Trig., exp. e hiperbólicos — Nivel fácil",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc3_n1_01",
+          "questionText": "Calcula lim x→0 sen(7x)/x.",
+          "questionLatex": "",
+          "options": [
+            "7",
+            "1",
+            "0",
+            "14"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Multiplica y divide por 7",
+              "text": "Ajusta el argumento para usar el límite fundamental.",
+              "mathContent": "\\frac{\\sin(7x)}{x}=7\\cdot\\frac{\\sin(7x)}{7x}",
+              "icon": "info"
+            },
+            {
+              "title": "El corchete tiende a 1",
+              "text": "Por el límite fundamental trigonométrico.",
+              "mathContent": "",
+              "icon": "fx"
+            },
+            {
+              "title": "Resultado",
+              "text": "Multiplica por 7.",
+              "mathContent": "7\\cdot1=7",
+              "icon": "star"
+            }
+          ],
+          "category": "Límite trigonométrico",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc3_n1_02",
+          "questionText": "Calcula lim x→0 (e^(2x)−1)/x.",
+          "questionLatex": "",
+          "options": [
+            "2",
+            "1",
+            "0",
+            "e²"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Multiplica y divide por 2",
+              "text": "Ajusta el argumento.",
+              "mathContent": "\\frac{e^{2x}-1}{x}=2\\cdot\\frac{e^{2x}-1}{2x}",
+              "icon": "info"
+            },
+            {
+              "title": "El corchete tiende a 1",
+              "text": "Por el límite exponencial fundamental.",
+              "mathContent": "",
+              "icon": "fx"
+            },
+            {
+              "title": "Resultado",
+              "text": "Multiplica por 2.",
+              "mathContent": "2\\cdot1=2",
+              "icon": "star"
+            }
+          ],
+          "category": "Límite exponencial",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc3_n1_03",
+          "questionText": "Calcula lim x→0 ln(1+4x)/x.",
+          "questionLatex": "",
+          "options": [
+            "4",
+            "1",
+            "0",
+            "ln 4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Multiplica y divide por 4",
+              "text": "Ajusta el argumento del logaritmo.",
+              "mathContent": "\\frac{\\ln(1+4x)}{x}=4\\cdot\\frac{\\ln(1+4x)}{4x}",
+              "icon": "info"
+            },
+            {
+              "title": "El corchete tiende a 1",
+              "text": "Por el límite logarítmico fundamental.",
+              "mathContent": "",
+              "icon": "fx"
+            },
+            {
+              "title": "Resultado",
+              "text": "Multiplica por 4.",
+              "mathContent": "4\\cdot1=4",
+              "icon": "star"
+            }
+          ],
+          "category": "Límite logarítmico",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc3_practice_n2",
+      "title": "Práctica: Trig., exp. e hiperbólicos — Nivel medio",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc3_n2_04",
+          "questionText": "Calcula lim x→0 sen(4x)/sen(6x).",
+          "questionLatex": "",
+          "options": [
+            "2/3",
+            "4/6",
+            "3/2",
+            "1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Divide numerador y denominador entre x",
+              "text": "Prepara ambos para el límite fundamental por separado.",
+              "mathContent": "\\frac{\\sin(4x)/x}{\\sin(6x)/x}",
+              "icon": "info"
+            },
+            {
+              "title": "Ajusta cada uno a su propio límite fundamental",
+              "text": "Multiplica y divide cada uno por su argumento.",
+              "mathContent": "\\frac{4\\cdot[\\sin(4x)/(4x)]}{6\\cdot[\\sin(6x)/(6x)]}",
+              "icon": "fx"
+            },
+            {
+              "title": "Ambos corchetes tienden a 1",
+              "text": "Por el límite fundamental.",
+              "mathContent": "",
+              "icon": "chart"
+            },
+            {
+              "title": "Resultado",
+              "text": "Solo quedan los factores 4 y 6, que se simplifican.",
+              "mathContent": "\\frac46=\\frac23",
+              "icon": "star"
+            }
+          ],
+          "category": "Límite trigonométrico",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc3_n2_05",
+          "questionText": "Calcula lim x→0 (1−cos(2x))/x².",
+          "questionLatex": "",
+          "options": [
+            "2",
+            "1/2",
+            "1",
+            "4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Multiplica numerador y denominador por (1+cos(2x))",
+              "text": "Crea una diferencia de cuadrados.",
+              "mathContent": "\\frac{(1-\\cos2x)(1+\\cos2x)}{x^2(1+\\cos2x)}",
+              "icon": "info"
+            },
+            {
+              "title": "Usa la identidad pitagórica",
+              "text": "1−cos²(2x)=sen²(2x).",
+              "mathContent": "=\\frac{\\sin^2(2x)}{x^2(1+\\cos2x)}",
+              "icon": "fx"
+            },
+            {
+              "title": "Reescribe con el límite fundamental ajustado",
+              "text": "Separa sen²(2x)/x² como 4·[sen(2x)/(2x)]².",
+              "mathContent": "=4\\left(\\frac{\\sin2x}{2x}\\right)^2\\cdot\\frac{1}{1+\\cos2x}",
+              "icon": "chart"
+            },
+            {
+              "title": "Evalúa cada parte",
+              "text": "El corchete tiende a 1² y el coseno a 1.",
+              "mathContent": "4\\cdot1\\cdot\\frac{1}{1+1}=\\frac42=2",
+              "icon": "star"
+            }
+          ],
+          "category": "Límite trigonométrico",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc3_n2_06",
+          "questionText": "Calcula lim x→0 senh(3x)/x.",
+          "questionLatex": "",
+          "options": [
+            "3",
+            "1",
+            "0",
+            "senh(3)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Multiplica y divide por 3",
+              "text": "Ajusta el argumento.",
+              "mathContent": "\\frac{\\sinh(3x)}{x}=3\\cdot\\frac{\\sinh(3x)}{3x}",
+              "icon": "info"
+            },
+            {
+              "title": "El corchete tiende a 1",
+              "text": "Por el límite hiperbólico fundamental.",
+              "mathContent": "",
+              "icon": "fx"
+            },
+            {
+              "title": "Resultado",
+              "text": "Multiplica por 3.",
+              "mathContent": "3\\cdot1=3",
+              "icon": "star"
+            }
+          ],
+          "category": "Límite hiperbólico",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc3_practice_n3",
+      "title": "Práctica: Trig., exp. e hiperbólicos — Nivel avanzado",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc3_n3_07",
+          "questionText": "Calcula lim x→0 [x sen x/(1−cos x)].",
+          "questionLatex": "",
+          "options": [
+            "2",
+            "1",
+            "1/2",
+            "0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Multiplica por (1+cos x)/(1+cos x)",
+              "text": "Esto convierte el denominador en una diferencia de cuadrados.",
+              "mathContent": "\\frac{x\\sin x(1+\\cos x)}{(1-\\cos x)(1+\\cos x)}",
+              "icon": "info"
+            },
+            {
+              "title": "Usa la identidad pitagórica en el denominador",
+              "text": "1−cos²x=sen²x.",
+              "mathContent": "=\\frac{x\\sin x(1+\\cos x)}{\\sin^2x}",
+              "icon": "fx"
+            },
+            {
+              "title": "Cancela un factor de sen x",
+              "text": "Simplifica sen x del numerador con uno de los sen x del denominador.",
+              "mathContent": "=\\frac{x(1+\\cos x)}{\\sin x}",
+              "icon": "chart"
+            },
+            {
+              "title": "Reescribe usando el límite fundamental (invertido)",
+              "text": "Separa x/sen x como el recíproco de sen x/x.",
+              "mathContent": "=\\frac{x}{\\sin x}\\cdot(1+\\cos x)",
+              "icon": "check"
+            },
+            {
+              "title": "Evalúa cada parte cuando x→0",
+              "text": "x/sen x tiende a 1, y (1+cos x) tiende a 2.",
+              "mathContent": "1\\cdot2=2",
+              "icon": "star"
+            }
+          ],
+          "category": "Combinación trigonométrica",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc3_n3_08",
+          "questionText": "Calcula lim x→0 (3ˣ−2ˣ)/x.",
+          "questionLatex": "",
+          "options": [
+            "ln(3/2)",
+            "ln 3 - ln 2",
+            "ln 6",
+            "1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Separa la resta en dos límites exponenciales fundamentales",
+              "text": "Suma y resta 1 para formar dos cocientes conocidos.",
+              "mathContent": "\\frac{3^x-2^x}{x}=\\frac{3^x-1}{x}-\\frac{2^x-1}{x}",
+              "icon": "info"
+            },
+            {
+              "title": "Aplica el límite exponencial fundamental a cada uno",
+              "text": "Cada uno tiende al logaritmo natural de su base.",
+              "mathContent": "\\to\\ln3-\\ln2",
+              "icon": "fx"
+            },
+            {
+              "title": "Usa propiedades de logaritmos para simplificar",
+              "text": "La resta de logaritmos es el logaritmo del cociente.",
+              "mathContent": "\\ln3-\\ln2=\\ln\\left(\\frac32\\right)",
+              "icon": "star"
+            }
+          ],
+          "category": "Límites exponenciales combinados",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc3_n3_09",
+          "questionText": "Calcula lim x→−∞ tanh x, e interpreta el resultado.",
+          "questionLatex": "",
+          "options": [
+            "-1, hay una asíntota horizontal y=-1",
+            "0, no hay asíntota",
+            "1, hay una asíntota horizontal y=1",
+            "-∞, no existe"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Escribe tanh x en términos de exponenciales",
+              "text": "Usa la definición.",
+              "mathContent": "\\tanh x=\\frac{e^x-e^{-x}}{e^x+e^{-x}}",
+              "icon": "info"
+            },
+            {
+              "title": "Para x→−∞, conviene dividir entre e⁻ˣ en vez de eˣ",
+              "text": "Esto evita trabajar con exponenciales que crecen sin control.",
+              "mathContent": "\\tanh x=\\frac{e^{2x}-1}{e^{2x}+1}",
+              "icon": "fx"
+            },
+            {
+              "title": "Evalúa cuando x→−∞",
+              "text": "e^(2x) tiende a 0 en ese caso.",
+              "mathContent": "\\lim_{x\\to-\\infty}\\tanh x=\\frac{0-1}{0+1}=-1",
+              "icon": "chart"
+            },
+            {
+              "title": "Interpreta el resultado",
+              "text": "Como el límite existe y es finito cuando x→−∞, la recta y=−1 es una asíntota horizontal de tanh x en esa dirección.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Límites hiperbólicos al infinito",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc4_infinito_theory",
+      "title": "Límites al infinito y límites infinitos",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "Límites al infinito: idea y notación",
+          "subtitle": "Límites y Continuidad • Comportamiento lejano",
+          "content": "$\\lim_{x\\to\\infty}f(x)=L$ significa que f(x) se acerca tanto como queramos a L a medida que x crece sin límite. De manera análoga se define $\\lim_{x\\to-\\infty}f(x)=L$ cuando x decrece sin límite. Estos límites describen el comportamiento de la función 'en los extremos', muy lejos del origen, y son la base para hallar asíntotas horizontales en el próximo capítulo.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "La técnica algebraica estándar para calcular límites al infinito de funciones racionales es dividir el numerador y el denominador entre la mayor potencia de x que aparezca en el denominador."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to\\infty}\\frac{3x^2+2x-1}{5x^2-x+4}",
+              "steps": [
+                {
+                  "title": "Divide cada término entre x² (la mayor potencia)",
+                  "text": "Tanto arriba como abajo.",
+                  "mathContent": "\\frac{3+2/x-1/x^2}{5-1/x+4/x^2}",
+                  "icon": "info"
+                },
+                {
+                  "title": "Evalúa qué pasa cuando x→∞",
+                  "text": "Todos los términos con 1/x y 1/x² tienden a 0.",
+                  "mathContent": "",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "Solo quedan los coeficientes líderes.",
+                  "mathContent": "\\frac{3}{5}",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Comportamiento en el infinito de exponenciales y logaritmos",
+          "subtitle": "Límites y Continuidad • Jerarquía de crecimiento",
+          "content": "Antes de pasar a las funciones racionales, conviene fijar el comportamiento en el infinito de las funciones exponenciales y logarítmicas, ya que aparecen constantemente combinadas con polinomios en los ejercicios de examen.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "lim x→∞ eˣ=∞; lim x→−∞ eˣ=0; lim x→∞ e⁻ˣ=0; lim x→∞ ln x=∞ (muy lentamente); lim x→0⁺ ln x=−∞."
+            },
+            {
+              "type": "text",
+              "content": "Un hecho notable es que la función exponencial crece más rápido que cualquier potencia de x, mientras que el logaritmo crece más lento que cualquier potencia de x, por pequeña que sea esa potencia. Esta jerarquía de crecimiento —logaritmo, luego potencias, luego exponencial— es útil para anticipar el resultado de un límite antes de calcularlo en detalle."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Analizar } \\lim_{x\\to\\infty}xe^{-x}",
+              "steps": [
+                {
+                  "title": "Observa la forma",
+                  "text": "x→∞ pero e⁻ˣ→0: forma ∞·0, no resuelta por sustitución simple.",
+                  "mathContent": "",
+                  "icon": "info"
+                },
+                {
+                  "title": "Aplica la jerarquía de crecimiento",
+                  "text": "La exponencial decae mucho más rápido de lo que x crece, así que la exponencial 'gana'.",
+                  "mathContent": "",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Resultado",
+                  "text": "El límite es 0.",
+                  "mathContent": "\\lim_{x\\to\\infty}xe^{-x}=0",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "content": "Este tipo de límite (∞·0) se puede confirmar rigurosamente con la regla de L'Hôpital, que se estudia en la guía de derivadas; aquí basta con reconocer que la exponencial 'gana'."
+            }
+          ]
+        },
+        {
+          "title": "Reglas para límites al infinito de funciones racionales",
+          "subtitle": "Límites y Continuidad • Comparar grados",
+          "content": "Comparando el grado del numerador (n) con el grado del denominador (m) de una función racional, se puede predecir el resultado del límite al infinito sin hacer el cálculo completo.",
+          "formulaLatex": "",
+          "proTip": "Cuando la expresión incluye una raíz cuadrada en el denominador, recuerda que √(x²)=|x|, no x. Este detalle es crucial al dividir entre x para límites cuando x→−∞, y es la causa de que muchas funciones tengan asíntotas horizontales distintas en +∞ y en −∞.",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "Si n<m (numerador de menor grado), el límite es 0. Si n=m (mismo grado), el límite es el cociente de los coeficientes líderes. Si n>m (numerador de mayor grado), el límite es +∞ o −∞ según los signos."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Calcular } \\lim_{x\\to\\infty}\\frac{2x+1}{\\sqrt{x^2+1}} \\text{ y } \\lim_{x\\to-\\infty}\\frac{2x+1}{\\sqrt{x^2+1}}",
+              "steps": [
+                {
+                  "title": "Para x→∞, divide entre x (positivo)",
+                  "text": "Usa que √(x²+1)=x√(1+1/x²) cuando x>0.",
+                  "mathContent": "\\frac{2+1/x}{\\sqrt{1+1/x^2}}\\to\\frac21=2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Para x→−∞, divide entre x (negativo) con cuidado",
+                  "text": "Aquí √(x²+1)=−x√(1+1/x²) cuando x<0, lo que introduce un signo adicional.",
+                  "mathContent": "",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Resultado para x→−∞",
+                  "text": "El signo extra cambia el resultado.",
+                  "mathContent": "\\lim_{x\\to-\\infty}\\frac{2x+1}{\\sqrt{x^2+1}}=-2",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "content": "Esta función tiene dos asíntotas horizontales distintas: y=2 y y=−2, como veremos en el capítulo 5."
+            }
+          ]
+        },
+        {
+          "title": "Límites infinitos",
+          "subtitle": "Límites y Continuidad • Cuando f(x) explota",
+          "content": "Un límite infinito describe lo que ocurre cuando x se acerca a un valor finito a, pero f(x) crece o decrece sin límite. Esto ocurre típicamente cuando el denominador de una función racional se anula en a, mientras que el numerador no se anula allí.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Analizar } f(x)=\\frac{1}{x-2} \\text{ cerca de } x=2",
+              "steps": [
+                {
+                  "title": "Analiza el lado derecho (x→2⁺)",
+                  "text": "x−2 es positivo y muy pequeño, así que 1/(x−2) crece sin límite hacia +∞.",
+                  "mathContent": "",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Analiza el lado izquierdo (x→2⁻)",
+                  "text": "x−2 es negativo y muy pequeño, así que 1/(x−2) decrece sin límite hacia −∞.",
+                  "mathContent": "",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Compara ambos lados",
+                  "text": "Los límites laterales ni siquiera coinciden como comportamiento.",
+                  "mathContent": "",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Conclusión",
+                  "text": "El límite bilateral no existe, y la recta x=2 es una asíntota vertical.",
+                  "mathContent": "",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Álgebra de límites infinitos",
+          "subtitle": "Límites y Continuidad • Combinando finito e infinito",
+          "content": "Cuando se combinan límites finitos e infinitos, algunas operaciones producen un resultado predecible, mientras que otras son indeterminadas y requieren un análisis más cuidadoso (típicamente con la regla de L'Hôpital, estudiada en una guía posterior).",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "Operaciones NO indeterminadas (c finito y distinto de cero): c+∞=∞; ∞+∞=∞; c·∞=±∞ (según el signo de c). Formas indeterminadas: ∞−∞, 0·∞, ∞/∞, 0/0."
+            },
+            {
+              "type": "note",
+              "content": "Esta guía resuelve los límites al infinito de funciones racionales mediante técnicas puramente algebraicas (dividir entre la mayor potencia de x). Las formas indeterminadas más generales, como ∞−∞ entre funciones no racionales, suelen requerir la regla de L'Hôpital."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "glc4_practice_n1",
+      "title": "Práctica: Infinito — Nivel fácil",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc4_n1_01",
+          "questionText": "Calcula lim x→∞ (4x+3)/(2x−5).",
+          "questionLatex": "",
+          "options": [
+            "2",
+            "4",
+            "0",
+            "-5/3"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Compara los grados de numerador y denominador",
+              "text": "Ambos son grado 1, así que el límite es el cociente de coeficientes líderes.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Divide cada término entre x",
+              "text": "Simplifica la expresión.",
+              "mathContent": "\\frac{4+3/x}{2-5/x}",
+              "icon": "fx"
+            },
+            {
+              "title": "Evalúa cuando x→∞",
+              "text": "Los términos con 1/x tienden a 0.",
+              "mathContent": "\\frac42=2",
+              "icon": "star"
+            }
+          ],
+          "category": "Límites al infinito",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc4_n1_02",
+          "questionText": "Calcula lim x→∞ (x+1)/(x²+3).",
+          "questionLatex": "",
+          "options": [
+            "0",
+            "1",
+            "∞",
+            "1/3"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Compara los grados",
+              "text": "El numerador es grado 1, el denominador grado 2: numerador de menor grado.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Divide entre la mayor potencia (x²)",
+              "text": "Tanto arriba como abajo.",
+              "mathContent": "\\frac{1/x+1/x^2}{1+3/x^2}",
+              "icon": "fx"
+            },
+            {
+              "title": "Evalúa cuando x→∞",
+              "text": "Todo el numerador tiende a 0, el denominador tiende a 1.",
+              "mathContent": "\\frac01=0",
+              "icon": "star"
+            }
+          ],
+          "category": "Límites al infinito",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc4_n1_03",
+          "questionText": "Calcula lim x→2⁺ 1/(x−2).",
+          "questionLatex": "",
+          "options": [
+            "+∞",
+            "-∞",
+            "0",
+            "1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Analiza el signo del denominador",
+              "text": "Para x ligeramente mayor que 2, x−2 es positivo y muy cercano a 0.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Piensa qué pasa al dividir 1 entre algo positivo muy pequeño",
+              "text": "El cociente crece sin límite.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Resultado",
+              "text": "El límite es +∞.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Límites infinitos",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc4_n1_04",
+          "questionText": "Calcula lim x→∞ x²e⁻ˣ usando la jerarquía de crecimiento.",
+          "questionLatex": "",
+          "options": [
+            "0",
+            "∞",
+            "1",
+            "e"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Reconoce la forma",
+              "text": "x² crece sin límite y e⁻ˣ tiende a 0: forma ∞·0.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Aplica la jerarquía de crecimiento",
+              "text": "La exponencial decae mucho más rápido de lo que cualquier potencia de x crece.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "La exponencial 'gana' y domina el producto.",
+              "mathContent": "\\lim_{x\\to\\infty}x^2e^{-x}=0",
+              "icon": "star"
+            }
+          ],
+          "category": "Jerarquía de crecimiento",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc4_practice_n2",
+      "title": "Práctica: Infinito — Nivel medio",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc4_n2_05",
+          "questionText": "Calcula lim x→∞ (5x³−x)/(2x²+7).",
+          "questionLatex": "",
+          "options": [
+            "+∞",
+            "5/2",
+            "0",
+            "-∞"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Compara los grados",
+              "text": "Numerador grado 3, denominador grado 2: numerador de mayor grado.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Recuerda la regla para este caso",
+              "text": "Cuando el numerador tiene mayor grado, el límite es infinito (con signo según los coeficientes).",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Determina el signo",
+              "text": "El coeficiente líder del numerador (5) es positivo, así que el límite es +∞.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Límites al infinito",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc4_n2_06",
+          "questionText": "Calcula lim x→−∞ (3x+2)/√(4x²+1).",
+          "questionLatex": "",
+          "options": [
+            "-3/2",
+            "3/2",
+            "0",
+            "-2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Ten cuidado con √(x²) cuando x es negativo",
+              "text": "Para x→−∞, √(4x²+1) = |x|√(4+1/x²) = −x√(4+1/x²) (porque x es negativo).",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Divide numerador y denominador entre x (negativo)",
+              "text": "Esto introduce un cambio de signo importante en el denominador.",
+              "mathContent": "\\frac{3+2/x}{-\\sqrt{4+1/x^2}}",
+              "icon": "fx"
+            },
+            {
+              "title": "Evalúa cuando x→−∞",
+              "text": "Los términos con 1/x tienden a 0.",
+              "mathContent": "\\frac{3}{-\\sqrt4}=\\frac{3}{-2}",
+              "icon": "chart"
+            },
+            {
+              "title": "Resultado",
+              "text": "Simplifica el signo.",
+              "mathContent": "-\\frac32",
+              "icon": "star"
+            }
+          ],
+          "category": "Límites al infinito con raíces",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc4_n2_07",
+          "questionText": "Analiza f(x)=(x+1)/(x²−1) cerca de x=1 por ambos lados.",
+          "questionLatex": "",
+          "options": [
+            "Por la izquierda -∞, por la derecha +∞",
+            "Por ambos lados +∞",
+            "Por ambos lados -∞",
+            "El límite existe y vale 1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Simplifica la función primero",
+              "text": "x²−1=(x−1)(x+1), así que puedes cancelar (x+1) con el numerador.",
+              "mathContent": "f(x)=\\frac{x+1}{(x-1)(x+1)}=\\frac{1}{x-1}\\ (x\\neq-1)",
+              "icon": "info"
+            },
+            {
+              "title": "Analiza el lado derecho (x→1⁺)",
+              "text": "x−1 es positivo y pequeño, así que 1/(x−1) crece sin límite.",
+              "mathContent": "",
+              "icon": "fx"
+            },
+            {
+              "title": "Analiza el lado izquierdo (x→1⁻)",
+              "text": "x−1 es negativo y pequeño, así que 1/(x−1) decrece sin límite.",
+              "mathContent": "",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Por la izquierda tiende a −∞, por la derecha a +∞: hay una asíntota vertical en x=1.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Límites infinitos",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc4_n2_08",
+          "questionText": "Calcula lim x→∞ (ln x)/√x usando la jerarquía de crecimiento.",
+          "questionLatex": "",
+          "options": [
+            "0",
+            "∞",
+            "1",
+            "1/2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Reconoce la forma",
+              "text": "Tanto ln x como √x tienden a infinito: forma ∞/∞.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Aplica la jerarquía de crecimiento",
+              "text": "El logaritmo crece más lento que cualquier potencia positiva de x, incluida √x=x^(1/2).",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Como el denominador crece mucho más rápido, el cociente tiende a 0.",
+              "mathContent": "\\lim_{x\\to\\infty}\\frac{\\ln x}{\\sqrt x}=0",
+              "icon": "star"
+            }
+          ],
+          "category": "Jerarquía de crecimiento",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc4_practice_n3",
+      "title": "Práctica: Infinito — Nivel avanzado",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc4_n3_09",
+          "questionText": "Calcula lim x→∞ [√(x²+3x)−x].",
+          "questionLatex": "",
+          "options": [
+            "3/2",
+            "0",
+            "∞",
+            "3"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Reconoce la forma",
+              "text": "Ambos términos crecen sin límite: forma ∞−∞.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Multiplica y divide por el conjugado",
+              "text": "El conjugado de √(x²+3x)−x es √(x²+3x)+x.",
+              "mathContent": "\\frac{[\\sqrt{x^2+3x}-x][\\sqrt{x^2+3x}+x]}{\\sqrt{x^2+3x}+x}",
+              "icon": "fx"
+            },
+            {
+              "title": "Simplifica el numerador (diferencia de cuadrados)",
+              "text": "(x²+3x)−x²=3x.",
+              "mathContent": "=\\frac{3x}{\\sqrt{x^2+3x}+x}",
+              "icon": "chart"
+            },
+            {
+              "title": "Divide numerador y denominador entre x",
+              "text": "Para x>0, √(x²+3x)=x√(1+3/x).",
+              "mathContent": "=\\frac{3}{\\sqrt{1+3/x}+1}",
+              "icon": "check"
+            },
+            {
+              "title": "Evalúa cuando x→∞",
+              "text": "3/x tiende a 0.",
+              "mathContent": "\\frac{3}{\\sqrt1+1}=\\frac{3}{2}",
+              "icon": "star"
+            }
+          ],
+          "category": "Racionalización al infinito",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc4_n3_10",
+          "questionText": "Calcula lim x→∞ (2x²+1)/(x+3), e interpreta el resultado.",
+          "questionLatex": "",
+          "options": [
+            "∞ (numerador de mayor grado; sugiere una asíntota oblicua)",
+            "2 (asíntota horizontal y=2)",
+            "0",
+            "1/2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Compara los grados",
+              "text": "Numerador grado 2, denominador grado 1: el numerador supera al denominador en exactamente 1 grado.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Recuerda qué implica esa diferencia de grados",
+              "text": "Cuando el numerador tiene un grado más que el denominador, el límite al infinito es infinito, pero la función tiene una asíntota oblicua (no horizontal).",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "El límite es ∞, y esto anticipa que en el capítulo de asíntotas encontraremos una recta oblicua que la función se acerca a seguir.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Interpretación de límites al infinito",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc4_n3_11",
+          "questionText": "Calcula lim x→0⁺ (1/x − 1/x²), identificando qué término domina.",
+          "questionLatex": "",
+          "options": [
+            "-∞",
+            "+∞",
+            "0",
+            "1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Combina en una sola fracción",
+              "text": "Usa un común denominador x².",
+              "mathContent": "\\frac1x-\\frac{1}{x^2}=\\frac{x-1}{x^2}",
+              "icon": "info"
+            },
+            {
+              "title": "Analiza el signo del numerador cerca de x=0⁺",
+              "text": "x−1 es cercano a −1 (negativo) cuando x está cerca de 0.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Analiza el denominador",
+              "text": "x² es siempre positivo y tiende a 0.",
+              "mathContent": "",
+              "icon": "fx"
+            },
+            {
+              "title": "Identifica cuál término domina",
+              "text": "1/x² crece mucho más rápido que 1/x cerca de 0, así que el término −1/x² domina la expresión.",
+              "mathContent": "",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Un numerador negativo dividido entre algo positivo que tiende a 0 da −∞.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Dominancia de términos",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc5_asintotas_theory",
+      "title": "Asíntotas verticales, horizontales y oblicuas",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "Asíntota vertical",
+          "subtitle": "Límites y Continuidad • Rectas verticales",
+          "content": "Una recta x=a es una asíntota vertical de la gráfica de f si al menos uno de los límites laterales en a es +∞ o −∞. En una función racional simplificada (sin factores comunes cancelados entre numerador y denominador), las asíntotas verticales ocurren exactamente en los ceros del denominador.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Hallar las asíntotas verticales de } f(x)=\\frac{x+1}{x-3}",
+              "steps": [
+                {
+                  "title": "Encuentra dónde se anula el denominador",
+                  "text": "x−3=0 cuando x=3.",
+                  "mathContent": "",
+                  "icon": "info"
+                },
+                {
+                  "title": "Verifica que el numerador no se anule ahí también",
+                  "text": "En x=3, el numerador da 4≠0.",
+                  "mathContent": "",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Conclusión",
+                  "text": "Como el denominador se anula y el numerador no, x=3 es una asíntota vertical.",
+                  "mathContent": "",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "content": "Error común: antes de declarar una asíntota vertical, verifica que el numerador no se anule también en ese punto. Si numerador y denominador se anulan simultáneamente, puede tratarse de una discontinuidad evitable (un 'hueco') en lugar de una asíntota vertical, dependiendo de si el factor se cancela por completo."
+            }
+          ]
+        },
+        {
+          "title": "Asíntota horizontal",
+          "subtitle": "Límites y Continuidad • Rectas horizontales",
+          "content": "Una recta y=L es una asíntota horizontal de la gráfica de f si $\\lim_{x\\to\\infty}f(x)=L$ o $\\lim_{x\\to-\\infty}f(x)=L$. Una misma función puede tener una asíntota horizontal distinta para cada dirección, la misma en ambas direcciones, o ninguna.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Hallar la asíntota horizontal de } f(x)=\\frac{2x^2+1}{x^2+5}",
+              "steps": [
+                {
+                  "title": "Compara los grados",
+                  "text": "Numerador y denominador son ambos grado 2: mismo grado.",
+                  "mathContent": "",
+                  "icon": "info"
+                },
+                {
+                  "title": "Toma el cociente de los coeficientes líderes",
+                  "text": "2 sobre 1.",
+                  "mathContent": "\\lim_{x\\to\\pm\\infty}\\frac{2x^2+1}{x^2+5}=\\frac21=2",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Conclusión",
+                  "text": "La recta y=2 es asíntota horizontal en ambas direcciones.",
+                  "mathContent": "",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Hallar las asíntotas horizontales de } f(x)=\\frac{x}{\\sqrt{x^2+1}}",
+              "steps": [
+                {
+                  "title": "Analiza x→∞ (dividiendo entre x positivo)",
+                  "text": "√(x²+1)=x√(1+1/x²) para x>0.",
+                  "mathContent": "\\lim_{x\\to\\infty}f(x)=1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Analiza x→−∞ (dividiendo entre x negativo)",
+                  "text": "Aquí √(x²+1)=−x√(1+1/x²), introduciendo un signo extra.",
+                  "mathContent": "\\lim_{x\\to-\\infty}f(x)=-1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Conclusión",
+                  "text": "Esta función tiene dos asíntotas horizontales distintas: y=1 e y=−1.",
+                  "mathContent": "",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Asíntota oblicua",
+          "subtitle": "Límites y Continuidad • Rectas inclinadas",
+          "content": "Una asíntota oblicua (o inclinada) es una recta y=mx+b, con m≠0, a la que la gráfica de f se acerca cuando x→∞ o x→−∞. En una función racional, esto ocurre cuando el grado del numerador es exactamente uno más que el grado del denominador. La asíntota se encuentra dividiendo el numerador entre el denominador: el cociente de la división (sin el residuo) es la ecuación de la asíntota.",
+          "formulaLatex": "",
+          "proTip": "Una función racional nunca tiene asíntota horizontal y asíntota oblicua al mismo tiempo (en la misma dirección): si el grado del numerador supera al del denominador en exactamente uno, hay asíntota oblicua; si son iguales, hay horizontal; si el numerador tiene grado dos o más por encima, no hay ninguna de las dos (el límite es infinito).",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Hallar la asíntota oblicua de } f(x)=\\frac{x^2+1}{x-1}",
+              "steps": [
+                {
+                  "title": "Divide el numerador entre el denominador",
+                  "text": "Verifica: (x−1)(x+1)=x²−1, así que x²+1=(x−1)(x+1)+2.",
+                  "mathContent": "",
+                  "icon": "info"
+                },
+                {
+                  "title": "Escribe f(x) como cociente más residuo sobre denominador",
+                  "text": "El cociente es la parte que da la asíntota.",
+                  "mathContent": "f(x)=x+1+\\frac{2}{x-1}",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Analiza qué pasa con el término residual",
+                  "text": "2/(x−1) tiende a 0 cuando x→±∞.",
+                  "mathContent": "",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Conclusión",
+                  "text": "La asíntota oblicua es y=x+1. Esta función también tiene una asíntota vertical en x=1.",
+                  "mathContent": "",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Hallar la asíntota oblicua de } f(x)=\\frac{2x^2-3x-5}{x+1}",
+              "steps": [
+                {
+                  "title": "Realiza la división larga",
+                  "text": "Divide 2x²−3x−5 entre x+1.",
+                  "mathContent": "",
+                  "icon": "info"
+                },
+                {
+                  "title": "Verifica el resultado de la división",
+                  "text": "(x+1)(2x−5)=2x²−5x+2x−5=2x²−3x−5.",
+                  "mathContent": "",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Observa que el residuo es cero",
+                  "text": "Esto significa que f(x)=2x−5 exactamente, para todo x≠−1.",
+                  "mathContent": "",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Conclusión",
+                  "text": "y=2x−5 es la asíntota oblicua, y de hecho la función coincide con ella en todo punto donde está definida.",
+                  "mathContent": "",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Relación entre asíntotas y discontinuidades",
+          "subtitle": "Límites y Continuidad • Conexión con continuidad",
+          "content": "Una asíntota vertical siempre corresponde a una discontinuidad infinita de la función en ese punto (un tipo de discontinuidad que estudiaremos en el capítulo 6). Las asíntotas horizontales y oblicuas, en cambio, no están relacionadas con discontinuidades: describen el comportamiento de la función muy lejos del origen, no en un punto específico donde la función podría fallar en estar definida.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": []
+        },
+        {
+          "title": "Método para hallar todas las asíntotas",
+          "subtitle": "Límites y Continuidad • Procedimiento completo",
+          "content": "Para analizar completamente las asíntotas de una función racional, conviene seguir un procedimiento ordenado que evita pasar por alto casos especiales como factores cancelables.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "Procedimiento: 1) Simplificar la función, verificando si hay factores comunes entre numerador y denominador (posibles huecos, no asíntotas). 2) Hallar las asíntotas verticales en los ceros restantes del denominador. 3) Comparar los grados de numerador y denominador para decidir si hay asíntota horizontal, oblicua, o ninguna. 4) Calcular la ecuación de la asíntota horizontal u oblicua según corresponda."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Hallar todas las asíntotas de } f(x)=\\frac{2x^2-8}{x^2-x-6}",
+              "steps": [
+                {
+                  "title": "Factoriza numerador y denominador",
+                  "text": "Numerador: 2(x−2)(x+2). Denominador: (x−3)(x+2).",
+                  "mathContent": "",
+                  "icon": "info"
+                },
+                {
+                  "title": "Busca factores comunes cancelables",
+                  "text": "El factor (x+2) aparece en ambos.",
+                  "mathContent": "f(x)=\\frac{2(x-2)(x+2)}{(x-3)(x+2)}=\\frac{2(x-2)}{x-3}\\ (x\\neq-2)",
+                  "icon": "fx"
+                },
+                {
+                  "title": "El factor cancelado indica un hueco, no una asíntota",
+                  "text": "Hay un hueco en x=−2.",
+                  "mathContent": "",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Halla la asíntota vertical con el denominador simplificado",
+                  "text": "Se anula en x=3, y el numerador allí no es cero.",
+                  "mathContent": "",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Compara los grados tras simplificar",
+                  "text": "Ambos son grado 1: mismo grado, así que hay asíntota horizontal.",
+                  "mathContent": "",
+                  "icon": "check"
+                },
+                {
+                  "title": "Conclusión",
+                  "text": "Asíntota vertical en x=3, hueco en x=−2, y asíntota horizontal y=2 (cociente de coeficientes líderes).",
+                  "mathContent": "",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "glc5_practice_n1",
+      "title": "Práctica: Asíntotas — Nivel fácil",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc5_n1_01",
+          "questionText": "Halla la asíntota vertical de f(x)=3/(x+5).",
+          "questionLatex": "",
+          "options": [
+            "x = -5",
+            "x = 5",
+            "x = 3",
+            "y = 0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Encuentra dónde se anula el denominador",
+              "text": "x+5=0 cuando x=−5.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Verifica que el numerador no se anule ahí",
+              "text": "El numerador es constante (3), nunca es cero.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "x=−5 es una asíntota vertical.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Asíntotas verticales",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc5_n1_02",
+          "questionText": "Halla la asíntota horizontal de f(x)=(4x+1)/(2x−3).",
+          "questionLatex": "",
+          "options": [
+            "y = 2",
+            "y = 4",
+            "y = 1/2",
+            "No tiene"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Compara los grados",
+              "text": "Ambos, numerador y denominador, son grado 1: mismo grado.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Toma el cociente de coeficientes líderes",
+              "text": "4 sobre 2.",
+              "mathContent": "\\frac42=2",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "y=2 es asíntota horizontal.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Asíntotas horizontales",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc5_n1_03",
+          "questionText": "Halla la asíntota oblicua de f(x)=(x²−3)/x.",
+          "questionLatex": "",
+          "options": [
+            "y = x",
+            "y = x - 3",
+            "y = x²",
+            "No tiene"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Divide el numerador entre el denominador",
+              "text": "x² entre x da x, y sobra −3.",
+              "mathContent": "\\frac{x^2-3}{x}=x-\\frac3x",
+              "icon": "info"
+            },
+            {
+              "title": "Analiza el término residual",
+              "text": "3/x tiende a 0 cuando x→±∞.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "La asíntota oblicua es y=x.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Asíntotas oblicuas",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc5_practice_n2",
+      "title": "Práctica: Asíntotas — Nivel medio",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc5_n2_04",
+          "questionText": "Halla todas las asíntotas de f(x)=(x²−1)/(x+2).",
+          "questionLatex": "",
+          "options": [
+            "Vertical x=-2, oblicua y=x-2",
+            "Horizontal y=1, vertical x=-2",
+            "Vertical x=1, oblicua y=x+2",
+            "Solo oblicua y=x"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica si hay factores cancelables",
+              "text": "x²−1=(x−1)(x+1), y el denominador es x+2: no comparten ningún factor.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Halla la asíntota vertical",
+              "text": "El denominador se anula en x=−2, y el numerador allí es 4−1=3≠0.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Compara los grados para decidir el tipo de asíntota horizontal/oblicua",
+              "text": "Numerador grado 2, denominador grado 1: exactamente una unidad más, así que hay asíntota oblicua.",
+              "mathContent": "",
+              "icon": "chart"
+            },
+            {
+              "title": "Realiza la división para hallar la asíntota oblicua",
+              "text": "Divide x²−1 entre x+2.",
+              "mathContent": "\\frac{x^2-1}{x+2}=x-2+\\frac{3}{x+2}",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Vertical en x=−2, oblicua y=x−2.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Todas las asíntotas",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc5_n2_05",
+          "questionText": "Halla las asíntotas horizontales (ambas direcciones) de f(x)=3x/√(x²+4).",
+          "questionLatex": "",
+          "options": [
+            "y=3 y y=-3",
+            "y=3 solamente",
+            "y=1 y y=-1",
+            "No tiene ninguna"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Analiza x→∞ dividiendo entre x positivo",
+              "text": "√(x²+4)=x√(1+4/x²) para x>0.",
+              "mathContent": "\\lim_{x\\to\\infty}\\frac{3x}{\\sqrt{x^2+4}}=\\lim_{x\\to\\infty}\\frac{3}{\\sqrt{1+4/x^2}}=3",
+              "icon": "fx"
+            },
+            {
+              "title": "Analiza x→−∞ dividiendo entre x negativo",
+              "text": "Aquí √(x²+4)=−x√(1+4/x²), introduciendo un signo extra.",
+              "mathContent": "\\lim_{x\\to-\\infty}\\frac{3x}{\\sqrt{x^2+4}}=-3",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Dos asíntotas horizontales distintas: y=3 e y=−3.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Asíntotas horizontales con raíces",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc5_n2_06",
+          "questionText": "Halla todas las asíntotas de f(x)=(x²+2x−3)/(x²−9).",
+          "questionLatex": "",
+          "options": [
+            "Hueco en x=-3, vertical x=3, horizontal y=1",
+            "Vertical en x=3 y x=-3, horizontal y=1",
+            "Hueco en x=3, vertical x=-3, horizontal y=1",
+            "Solo horizontal y=1, sin hueco ni vertical"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Factoriza numerador y denominador",
+              "text": "Numerador: (x−1)(x+3). Denominador: (x−3)(x+3).",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Identifica el factor cancelable",
+              "text": "Ambos comparten (x+3).",
+              "mathContent": "f(x)=\\frac{(x-1)(x+3)}{(x-3)(x+3)}=\\frac{x-1}{x-3}\\ (x\\neq-3)",
+              "icon": "fx"
+            },
+            {
+              "title": "El factor cancelado da un hueco",
+              "text": "Hay un hueco en x=−3, no una asíntota ahí.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Halla la asíntota vertical con el denominador simplificado",
+              "text": "Se anula en x=3, y el numerador allí (3−1=2) no es cero.",
+              "mathContent": "",
+              "icon": "chart"
+            },
+            {
+              "title": "Compara los grados para la horizontal",
+              "text": "Tras simplificar, ambos son grado 1: mismo grado.",
+              "mathContent": "\\frac11=1",
+              "icon": "check"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Hueco en x=−3, vertical en x=3, horizontal y=1.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Todas las asíntotas",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc5_practice_n3",
+      "title": "Práctica: Asíntotas — Nivel avanzado",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc5_n3_07",
+          "questionText": "Halla la asíntota oblicua y la vertical de f(x)=(2x²+3x−1)/(x−2).",
+          "questionLatex": "",
+          "options": [
+            "Oblicua y=2x+7, vertical x=2",
+            "Oblicua y=2x+3, vertical x=2",
+            "Horizontal y=2, vertical x=2",
+            "Oblicua y=2x-7, vertical x=-2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica la asíntota vertical primero",
+              "text": "El denominador se anula en x=2, y el numerador allí (8+6−1=13) no es cero.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Compara los grados",
+              "text": "Numerador grado 2, denominador grado 1: una unidad más, así que hay asíntota oblicua.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Realiza la división larga",
+              "text": "Divide 2x²+3x−1 entre x−2.",
+              "mathContent": "\\frac{2x^2+3x-1}{x-2}=2x+7+\\frac{13}{x-2}",
+              "icon": "fx"
+            },
+            {
+              "title": "Analiza el término residual",
+              "text": "13/(x−2) tiende a 0 cuando x→±∞.",
+              "mathContent": "",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Asíntota oblicua y=2x+7, y asíntota vertical x=2.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Asíntotas oblicuas",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc5_n3_08",
+          "questionText": "Propón una función racional con asíntota horizontal y=0 y asíntota vertical x=1.",
+          "questionLatex": "",
+          "options": [
+            "f(x) = 1/(x-1)",
+            "f(x) = x/(x-1)",
+            "f(x) = (x-1)/x",
+            "f(x) = 1/(x+1)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Piensa en qué garantiza la asíntota horizontal y=0",
+              "text": "Necesitas que el numerador tenga menor grado que el denominador, para que el límite al infinito sea 0.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Piensa en qué garantiza la asíntota vertical x=1",
+              "text": "El denominador debe anularse en x=1, y el numerador no.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Propón la función más simple que cumpla ambas condiciones",
+              "text": "Un numerador constante (grado 0) y un denominador (x−1) (grado 1).",
+              "mathContent": "f(x)=\\frac{1}{x-1}",
+              "icon": "fx"
+            },
+            {
+              "title": "Verifica ambas condiciones",
+              "text": "El denominador se anula solo en x=1 (numerador≠0 ahí, así que es asíntota vertical), y el grado del numerador (0) es menor que el del denominador (1), así que el límite al infinito es 0.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Construcción de funciones",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc5_n3_09",
+          "questionText": "Determina si f(x)=(x³−1)/(x²−1) tiene hueco, asíntota vertical, o ambas cosas, en x=1 y en x=−1.",
+          "questionLatex": "",
+          "options": [
+            "Hueco en x=1, asíntota vertical en x=-1",
+            "Asíntota vertical en x=1, hueco en x=-1",
+            "Hueco en ambos puntos",
+            "Asíntota vertical en ambos puntos"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Factoriza el numerador",
+              "text": "x³−1 es diferencia de cubos.",
+              "mathContent": "x^3-1=(x-1)(x^2+x+1)",
+              "icon": "info"
+            },
+            {
+              "title": "Factoriza el denominador",
+              "text": "x²−1 es diferencia de cuadrados.",
+              "mathContent": "x^2-1=(x-1)(x+1)",
+              "icon": "fx"
+            },
+            {
+              "title": "Identifica el factor cancelable",
+              "text": "Ambos comparten (x−1).",
+              "mathContent": "f(x)=\\frac{x^2+x+1}{x+1}\\ (x\\neq1)",
+              "icon": "chart"
+            },
+            {
+              "title": "Analiza x=1",
+              "text": "El factor (x−1) se canceló por completo: es un hueco, no una asíntota.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Analiza x=−1",
+              "text": "El denominador simplificado (x+1) se anula en x=−1, y el numerador simplificado allí (1−1+1=1) no es cero.",
+              "mathContent": "",
+              "icon": "check"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Hueco en x=1, asíntota vertical en x=−1.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Huecos y asíntotas",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc6_continuidad_theory",
+      "title": "Continuidad y teorema del valor intermedio",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": false,
+      "theorySections": [
+        {
+          "title": "Definición de continuidad en un punto",
+          "subtitle": "Límites y Continuidad • Continuidad puntual",
+          "content": "Una función f es continua en x=a si se cumplen simultáneamente tres condiciones: que f(a) esté definida, que el límite cuando x tiende a a exista, y que ese límite sea igual a f(a). Si cualquiera de estas tres condiciones falla, f es discontinua en a.",
+          "formulaLatex": "f \\text{ continua en } a \\iff f(a) \\text{ definida, }\\lim_{x\\to a}f(x) \\text{ existe, y } \\lim_{x\\to a}f(x)=f(a)",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Intuitivamente, una función es continua en un punto si su gráfica no tiene 'saltos', 'huecos' ni 'explosiones' en ese punto: se puede dibujar sin levantar el lápiz del papel."
+            }
+          ]
+        },
+        {
+          "title": "Tipos de discontinuidad",
+          "subtitle": "Límites y Continuidad • Clasificar discontinuidades",
+          "content": "Cuando alguna de las tres condiciones de continuidad falla, la discontinuidad resultante se clasifica según cuál condición específicamente no se cumple.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "Evitable (removible): el límite existe pero no coincide con f(a), o f(a) no está definida. Ejemplo típico: f(x)=(x²−9)/(x−3) en x=3. De salto: los límites laterales existen pero son distintos. Ejemplo: f(x)=|x|/x en x=0. Infinita: al menos un límite lateral es +∞ o −∞. Ejemplo: f(x)=1/(x−2) en x=2."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Clasificar la discontinuidad de } f(x)=\\frac{x^2-9}{x-3}\\text{ en } x=3",
+              "steps": [
+                {
+                  "title": "Verifica si f(3) está definida",
+                  "text": "El denominador se anula, así que f(3) no está definida.",
+                  "mathContent": "",
+                  "icon": "info"
+                },
+                {
+                  "title": "Calcula el límite cuando x→3",
+                  "text": "Factoriza y cancela.",
+                  "mathContent": "\\lim_{x\\to3}\\frac{(x-3)(x+3)}{x-3}=\\lim_{x\\to3}(x+3)=6",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Compara: el límite existe, pero f(3) no está definida",
+                  "text": "Esto encaja exactamente en el tipo evitable.",
+                  "mathContent": "",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Conclusión",
+                  "text": "Discontinuidad evitable: bastaría con definir f(3)=6 para que la función fuera continua allí.",
+                  "mathContent": "",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Clasificar la discontinuidad en } x=0 \\text{ de } f(x)=x+1\\ (x<0),\\ f(x)=x-1\\ (x\\geq0)",
+              "steps": [
+                {
+                  "title": "Calcula el límite por la izquierda",
+                  "text": "Usa la pieza x+1.",
+                  "mathContent": "\\lim_{x\\to0^-}(x+1)=1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Calcula el límite por la derecha",
+                  "text": "Usa la pieza x−1.",
+                  "mathContent": "\\lim_{x\\to0^+}(x-1)=-1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Compara ambos límites laterales",
+                  "text": "Ambos existen como números finitos, pero son distintos (1≠−1).",
+                  "mathContent": "",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Conclusión",
+                  "text": "Discontinuidad de salto: la gráfica 'salta' de una altura a otra en x=0, sin importar cómo se defina f(0).",
+                  "mathContent": "",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Continuidad en un intervalo",
+          "subtitle": "Límites y Continuidad • Funciones continuas en su dominio",
+          "content": "Una función es continua en un intervalo abierto (a,b) si es continua en cada punto de ese intervalo. Para un intervalo cerrado [a,b], además se exige continuidad lateral en los extremos.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "text",
+              "content": "Las funciones polinómicas son continuas en todo ℝ. Las funciones racionales son continuas en todo su dominio (donde el denominador no se anula). Las funciones trigonométricas, exponenciales y logarítmicas también son continuas en todo su dominio natural. Además, la suma, el producto, el cociente (donde esté definido) y la composición de funciones continuas son también funciones continuas."
+            },
+            {
+              "type": "note",
+              "content": "Para verificar la continuidad de una función construida a partir de piezas más simples, no hace falta volver a la definición por límites cada vez: basta con saber que las funciones básicas son continuas en su dominio, y que las operaciones algebraicas y la composición preservan la continuidad."
+            }
+          ]
+        },
+        {
+          "title": "Teorema del valor intermedio",
+          "subtitle": "Límites y Continuidad • TVI",
+          "content": "El teorema del valor intermedio (TVI) es una de las consecuencias más útiles de la continuidad. Establece que si f es continua en el intervalo cerrado [a,b], entonces f toma todos los valores entre f(a) y f(b) en algún punto del intervalo.",
+          "formulaLatex": "f \\text{ continua en } [a,b],\\ N \\text{ entre } f(a) \\text{ y } f(b) \\Rightarrow \\exists\\, c\\in[a,b]:\\ f(c)=N",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "El caso particular más usado del TVI es la existencia de raíces: si f es continua en [a,b] y f(a), f(b) tienen signos opuestos, entonces existe al menos una raíz de f en (a,b). Este resultado es precisamente el fundamento teórico del método de bisección."
+            },
+            {
+              "type": "example",
+              "content": "\\text{Demostrar que } x^3-x-1=0 \\text{ tiene una raíz en } [1,2]",
+              "steps": [
+                {
+                  "title": "Verifica que la función es continua",
+                  "text": "f(x)=x³−x−1 es polinómica, así que es continua en todo ℝ.",
+                  "mathContent": "",
+                  "icon": "info"
+                },
+                {
+                  "title": "Evalúa en ambos extremos",
+                  "text": "Sustituye x=1 y x=2.",
+                  "mathContent": "f(1)=1-1-1=-1,\\quad f(2)=8-2-1=5",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Observa el cambio de signo",
+                  "text": "f(1) es negativo y f(2) es positivo.",
+                  "mathContent": "",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Aplica el TVI",
+                  "text": "Como f es continua y cambia de signo, existe c∈(1,2) con f(c)=0.",
+                  "mathContent": "",
+                  "icon": "star"
+                }
+              ]
+            },
+            {
+              "type": "example",
+              "content": "\\text{Demostrar que } e^x+x=0 \\text{ tiene solución en } (-1,0)",
+              "steps": [
+                {
+                  "title": "Define la función y verifica continuidad",
+                  "text": "f(x)=eˣ+x es continua en todo ℝ, por ser suma de funciones continuas.",
+                  "mathContent": "",
+                  "icon": "info"
+                },
+                {
+                  "title": "Evalúa en ambos extremos",
+                  "text": "Sustituye x=−1 y x=0.",
+                  "mathContent": "f(-1)=e^{-1}-1\\approx-0.632,\\quad f(0)=e^0+0=1",
+                  "icon": "fx"
+                },
+                {
+                  "title": "Observa el cambio de signo",
+                  "text": "f(−1) es negativo y f(0) es positivo.",
+                  "mathContent": "",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Conclusión",
+                  "text": "Por el TVI, existe c∈(−1,0) con f(c)=0.",
+                  "mathContent": "",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Aplicaciones del teorema del valor intermedio",
+          "subtitle": "Límites y Continuidad • Puntos fijos",
+          "content": "Además de garantizar raíces, el TVI permite demostrar resultados elegantes sobre funciones continuas sin necesidad de resolver ninguna ecuación explícitamente.",
+          "formulaLatex": "",
+          "proTip": "Cuando un problema pide 'demostrar que existe' una solución sin pedir su valor exacto, es una señal fuerte de que se espera una aplicación del TVI: define una función continua adecuada, evalúa sus extremos, y verifica el cambio de signo.",
+          "blocks": [
+            {
+              "type": "example",
+              "content": "\\text{Demostrar que toda función continua } f:[0,1]\\to[0,1] \\text{ tiene un punto fijo}",
+              "steps": [
+                {
+                  "title": "Define una función auxiliar",
+                  "text": "g(x)=f(x)−x, continua por ser diferencia de funciones continuas.",
+                  "mathContent": "",
+                  "icon": "info"
+                },
+                {
+                  "title": "Evalúa g en los extremos usando que f mapea a [0,1]",
+                  "text": "Como f(0)∈[0,1], g(0)=f(0)≥0. Como f(1)∈[0,1], g(1)=f(1)−1≤0.",
+                  "mathContent": "",
+                  "icon": "pin"
+                },
+                {
+                  "title": "Considera los casos frontera",
+                  "text": "Si g(0)=0 o g(1)=0, ya hay un punto fijo en un extremo.",
+                  "mathContent": "",
+                  "icon": "chart"
+                },
+                {
+                  "title": "Aplica el TVI en el caso general",
+                  "text": "Si g(0)>0 y g(1)<0, por el TVI existe c∈(0,1) con g(c)=0, es decir, f(c)=c.",
+                  "mathContent": "",
+                  "icon": "star"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "glc6_practice_n1",
+      "title": "Práctica: Continuidad — Nivel fácil",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc6_n1_01",
+          "questionText": "¿f(x)=(x²−4)/(x−2) es continua en x=2? Clasifica si hay discontinuidad.",
+          "questionLatex": "",
+          "options": [
+            "No, hay discontinuidad evitable (el límite es 4, pero f(2) no está definida)",
+            "Sí, es continua",
+            "No, hay discontinuidad de salto",
+            "No, hay discontinuidad infinita"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica si f(2) está definida",
+              "text": "El denominador se anula en x=2, así que f(2) no está definida.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Calcula el límite cuando x→2",
+              "text": "Factoriza y cancela.",
+              "mathContent": "\\lim_{x\\to2}\\frac{(x-2)(x+2)}{x-2}=\\lim_{x\\to2}(x+2)=4",
+              "icon": "fx"
+            },
+            {
+              "title": "Compara: el límite existe pero f(2) no está definida",
+              "text": "Esto encaja en el tipo evitable.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Discontinuidad evitable.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Continuidad y discontinuidades",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc6_n1_02",
+          "questionText": "La función f(x)=|x−3| es continua en x=3.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica que f(3) esté definida",
+              "text": "f(3)=|3−3|=0.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Calcula el límite por ambos lados",
+              "text": "Cerca de x=3, |x−3| se acerca a 0 sin importar la dirección.",
+              "mathContent": "\\lim_{x\\to3^-}|x-3|=0,\\quad \\lim_{x\\to3^+}|x-3|=0",
+              "icon": "fx"
+            },
+            {
+              "title": "Compara el límite con f(3)",
+              "text": "Ambos valen 0.",
+              "mathContent": "",
+              "icon": "check"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Se cumplen las tres condiciones de continuidad: verdadero.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Continuidad y discontinuidades",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc6_n1_03",
+          "questionText": "Clasifica la discontinuidad de f(x)=1/(x+1) en x=−1.",
+          "questionLatex": "",
+          "options": [
+            "Infinita",
+            "Evitable",
+            "De salto",
+            "No es discontinua"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Analiza qué pasa cerca de x=−1",
+              "text": "El denominador se anula ahí, y el numerador (1) no se anula.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Calcula los límites laterales",
+              "text": "Uno de los dos (o ambos) debe ser infinito.",
+              "mathContent": "\\lim_{x\\to-1^-}\\frac{1}{x+1}=-\\infty,\\quad \\lim_{x\\to-1^+}\\frac{1}{x+1}=+\\infty",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Como al menos un límite lateral es infinito, la discontinuidad es infinita.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Tipos de discontinuidad",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc6_practice_n2",
+      "title": "Práctica: Continuidad — Nivel medio",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc6_n2_04",
+          "questionText": "Halla k para que f(x)=x+k (x<2), f(x)=x² (x≥2) sea continua en x=2.",
+          "questionLatex": "",
+          "options": [
+            "k = 2",
+            "k = 4",
+            "k = 0",
+            "k = -2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Calcula el límite por la izquierda",
+              "text": "Usa la pieza x+k.",
+              "mathContent": "\\lim_{x\\to2^-}(x+k)=2+k",
+              "icon": "fx"
+            },
+            {
+              "title": "Calcula el límite por la derecha (y f(2))",
+              "text": "Usa la pieza x², que también da f(2).",
+              "mathContent": "\\lim_{x\\to2^+}x^2=4=f(2)",
+              "icon": "fx"
+            },
+            {
+              "title": "Iguala ambos límites laterales",
+              "text": "Para que la función sea continua, deben coincidir.",
+              "mathContent": "2+k=4",
+              "icon": "chart"
+            },
+            {
+              "title": "Despeja k",
+              "text": "Resta 2.",
+              "mathContent": "k=2",
+              "icon": "star"
+            }
+          ],
+          "category": "Continuidad de funciones a trozos",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc6_n2_05",
+          "questionText": "El TVI permite demostrar que cos x = x tiene al menos una solución en [0,1].",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Define una función auxiliar",
+              "text": "g(x)=cos x − x, para transformar la ecuación en la búsqueda de una raíz.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Verifica que g sea continua",
+              "text": "Es diferencia de funciones continuas (coseno y polinomio), así que es continua en [0,1].",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Evalúa g en los extremos",
+              "text": "Sustituye x=0 y x=1.",
+              "mathContent": "g(0)=\\cos0-0=1,\\quad g(1)=\\cos1-1\\approx-0.460",
+              "icon": "fx"
+            },
+            {
+              "title": "Observa el cambio de signo",
+              "text": "g(0) es positivo y g(1) es negativo.",
+              "mathContent": "",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Por el TVI, existe al menos un c∈(0,1) con g(c)=0, es decir, cos c = c. Verdadero.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Aplicaciones del TVI",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc6_n2_06",
+          "questionText": "Clasifica todas las discontinuidades de f(x)=(x²−1)/(x²−3x+2).",
+          "questionLatex": "",
+          "options": [
+            "Evitable en x=1, infinita (vertical) en x=2",
+            "Infinita en x=1, evitable en x=2",
+            "Evitable en ambos puntos",
+            "Infinita en ambos puntos"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Factoriza numerador y denominador",
+              "text": "Numerador: (x−1)(x+1). Denominador: (x−2)(x−1).",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Identifica el factor cancelable",
+              "text": "Ambos comparten (x−1).",
+              "mathContent": "f(x)=\\frac{x+1}{x-2}\\ (x\\neq1)",
+              "icon": "fx"
+            },
+            {
+              "title": "Analiza x=1",
+              "text": "El factor se cancela por completo: es una discontinuidad evitable (el límite existe y vale (1+1)/(1-2)=-2, pero f(1) no está definida).",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Analiza x=2",
+              "text": "El denominador simplificado se anula ahí, y el numerador simplificado (2+1=3) no es cero: discontinuidad infinita.",
+              "mathContent": "",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Evitable en x=1, infinita en x=2.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Tipos de discontinuidad",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc6_practice_n3",
+      "title": "Práctica: Continuidad — Nivel avanzado",
+      "type": "practice",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc6_n3_07",
+          "questionText": "Demuestra, usando el TVI, que 2ˣ=3x tiene una solución en (0,1).",
+          "questionLatex": "",
+          "options": [
+            "g(0)=1>0 y g(1)=-1<0, con g(x)=2ˣ-3x continua: hay una raíz en (0,1)",
+            "g(0)=0 y g(1)=0, así que hay infinitas soluciones",
+            "No se puede aplicar el TVI aquí",
+            "g(0)=-1<0 y g(1)=1>0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Define una función auxiliar",
+              "text": "g(x)=2ˣ−3x, para convertir la ecuación en la búsqueda de una raíz.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Verifica que g sea continua",
+              "text": "Es diferencia de una exponencial y un polinomio, ambas continuas: g es continua en [0,1].",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Evalúa g en los extremos",
+              "text": "Sustituye x=0 y x=1.",
+              "mathContent": "g(0)=2^0-0=1,\\quad g(1)=2^1-3=-1",
+              "icon": "fx"
+            },
+            {
+              "title": "Observa el cambio de signo",
+              "text": "g(0)=1 es positivo y g(1)=−1 es negativo.",
+              "mathContent": "",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Por el TVI, existe c∈(0,1) con g(c)=0, es decir, 2^c=3c.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Aplicaciones del TVI",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc6_n3_08",
+          "questionText": "f continua en [0,2] con f(0)=3, f(2)=−1. Demuestra que existe c∈(0,2) con f(c)=0.",
+          "questionLatex": "",
+          "options": [
+            "Por el TVI, como f(0)>0 y f(2)<0 y f es continua, existe c con f(c)=0 (fundamento del método de bisección)",
+            "No se puede garantizar sin conocer f explícitamente",
+            "Solo se garantiza si f es polinómica",
+            "f(c)=0 solo si c=1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Observa los datos que ya tienes",
+              "text": "f es continua en [0,2], f(0)=3 (positivo) y f(2)=−1 (negativo).",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Aplica directamente el TVI",
+              "text": "Como f es continua y cambia de signo entre los extremos del intervalo, N=0 está entre f(0) y f(2).",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión sobre la existencia",
+              "text": "Existe c∈(0,2) con f(c)=0.",
+              "mathContent": "",
+              "icon": "chart"
+            },
+            {
+              "title": "Relaciona esto con el método de bisección",
+              "text": "Esta es exactamente la garantía teórica que permite al método de bisección funcionar: sin el TVI, no podríamos asegurar que haya una raíz para aproximar.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "TVI y bisección",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc6_n3_09",
+          "questionText": "¿Existe una función continua en [0,1] con f(0)=0, f(1)=1, que nunca tome el valor 1/2?",
+          "questionLatex": "",
+          "options": [
+            "No, el TVI lo prohíbe",
+            "Sí, siempre que f sea suficientemente irregular",
+            "Sí, si f es discontinua en algún punto interior",
+            "Depende de si f es polinómica"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Piensa en lo que exige la continuidad de f en [0,1]",
+              "text": "Si f es continua ahí, el TVI se aplica directamente.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Aplica el TVI con N=1/2",
+              "text": "Como f(0)=0 y f(1)=1, y 1/2 está entre 0 y 1, el TVI garantiza que existe c∈[0,1] con f(c)=1/2.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "No puede existir tal función continua: el TVI obliga a que f tome el valor 1/2 en algún punto. Si existiera una función así, no sería continua.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Aplicaciones del TVI",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc7_exam_facil",
+      "title": "Examen: Práctica fácil (banco general)",
+      "type": "exam",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc7_facil_01",
+          "questionText": "Calcula lim x→2 (x²+3x−1).",
+          "questionLatex": "",
+          "options": [
+            "9",
+            "7",
+            "11",
+            "5"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Intenta sustitución directa",
+              "text": "Es un polinomio, está definido en todo punto.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Sustituye x=2",
+              "text": "Reemplaza en cada término.",
+              "mathContent": "4+6-1",
+              "icon": "fx"
+            },
+            {
+              "title": "Resultado",
+              "text": "Suma los valores.",
+              "mathContent": "=9",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica fácil",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc7_facil_02",
+          "questionText": "Calcula lim x→5 (x²−25)/(x−5).",
+          "questionLatex": "",
+          "options": [
+            "10",
+            "5",
+            "0",
+            "25"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica la forma",
+              "text": "Al sustituir x=5: 0/0.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Factoriza el numerador",
+              "text": "Diferencia de cuadrados.",
+              "mathContent": "\\frac{(x-5)(x+5)}{x-5}",
+              "icon": "fx"
+            },
+            {
+              "title": "Cancela el factor común",
+              "text": "Válido porque x≠5 en el límite.",
+              "mathContent": "=x+5",
+              "icon": "chart"
+            },
+            {
+              "title": "Evalúa en x=5",
+              "text": "Sustituye en la expresión simplificada.",
+              "mathContent": "5+5=10",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica fácil",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc7_facil_03",
+          "questionText": "Calcula lim x→0 sen(2x)/x.",
+          "questionLatex": "",
+          "options": [
+            "2",
+            "1",
+            "0",
+            "4"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Multiplica y divide por 2",
+              "text": "Ajusta el argumento para usar el límite fundamental.",
+              "mathContent": "2\\cdot\\frac{\\sin(2x)}{2x}",
+              "icon": "info"
+            },
+            {
+              "title": "El corchete tiende a 1",
+              "text": "Por el límite fundamental trigonométrico.",
+              "mathContent": "",
+              "icon": "fx"
+            },
+            {
+              "title": "Resultado",
+              "text": "Multiplica por 2.",
+              "mathContent": "2\\cdot1=2",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica fácil",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc7_facil_04",
+          "questionText": "Calcula lim x→∞ (3x+1)/(6x−2).",
+          "questionLatex": "",
+          "options": [
+            "1/2",
+            "3/6",
+            "1",
+            "0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Compara los grados",
+              "text": "Ambos son grado 1: mismo grado.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Divide entre x",
+              "text": "Simplifica ambos.",
+              "mathContent": "\\frac{3+1/x}{6-2/x}",
+              "icon": "fx"
+            },
+            {
+              "title": "Evalúa cuando x→∞",
+              "text": "Los términos con 1/x tienden a 0.",
+              "mathContent": "\\frac36=\\frac12",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica fácil",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc7_facil_05",
+          "questionText": "Halla la asíntota vertical de f(x)=2/(x−4).",
+          "questionLatex": "",
+          "options": [
+            "x = 4",
+            "x = 2",
+            "x = -4",
+            "y = 0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Encuentra dónde se anula el denominador",
+              "text": "x−4=0 en x=4.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Verifica que el numerador no se anule ahí",
+              "text": "El numerador es constante (2), nunca es cero.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "x=4 es asíntota vertical.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica fácil",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc7_facil_06",
+          "questionText": "¿f(x)=(x²−1)/(x−1) es continua en x=1?",
+          "questionLatex": "",
+          "options": [
+            "No, discontinuidad evitable (el límite es 2, pero f(1) no está definida)",
+            "Sí, es continua",
+            "No, discontinuidad de salto",
+            "No, discontinuidad infinita"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica si f(1) está definida",
+              "text": "El denominador se anula en x=1, así que f(1) no está definida.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Calcula el límite cuando x→1",
+              "text": "Factoriza y cancela.",
+              "mathContent": "\\lim_{x\\to1}\\frac{(x-1)(x+1)}{x-1}=\\lim_{x\\to1}(x+1)=2",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "El límite existe pero f(1) no está definida: discontinuidad evitable.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica fácil",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc7_exam_media",
+      "title": "Examen: Práctica media (banco general)",
+      "type": "exam",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc7_media_01",
+          "questionText": "Calcula lim x→0 [√(x+9)−3]/x.",
+          "questionLatex": "",
+          "options": [
+            "1/6",
+            "1/3",
+            "1/9",
+            "0"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica la forma",
+              "text": "Al sustituir x=0: (3−3)/0=0/0.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Multiplica por el conjugado",
+              "text": "El conjugado de √(x+9)−3 es √(x+9)+3.",
+              "mathContent": "\\frac{[\\sqrt{x+9}-3][\\sqrt{x+9}+3]}{x[\\sqrt{x+9}+3]}",
+              "icon": "fx"
+            },
+            {
+              "title": "Simplifica el numerador",
+              "text": "(√(x+9))²−3²=x+9−9=x.",
+              "mathContent": "=\\frac{x}{x[\\sqrt{x+9}+3]}",
+              "icon": "chart"
+            },
+            {
+              "title": "Cancela x",
+              "text": "Válido porque x≠0 en el límite.",
+              "mathContent": "=\\frac{1}{\\sqrt{x+9}+3}",
+              "icon": "check"
+            },
+            {
+              "title": "Evalúa en x=0",
+              "text": "Sustituye en la expresión simplificada.",
+              "mathContent": "\\frac{1}{3+3}=\\frac16",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica media",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc7_media_02",
+          "questionText": "Calcula lim x→0 (1−cos(3x))/x².",
+          "questionLatex": "",
+          "options": [
+            "9/2",
+            "1/2",
+            "3",
+            "9"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Multiplica por (1+cos(3x))/(1+cos(3x))",
+              "text": "Crea una diferencia de cuadrados.",
+              "mathContent": "\\frac{(1-\\cos3x)(1+\\cos3x)}{x^2(1+\\cos3x)}",
+              "icon": "info"
+            },
+            {
+              "title": "Usa la identidad pitagórica",
+              "text": "1−cos²(3x)=sen²(3x).",
+              "mathContent": "=\\frac{\\sin^2(3x)}{x^2(1+\\cos3x)}",
+              "icon": "fx"
+            },
+            {
+              "title": "Reescribe con el límite fundamental ajustado",
+              "text": "Separa sen²(3x)/x² como 9·[sen(3x)/(3x)]².",
+              "mathContent": "=9\\left(\\frac{\\sin3x}{3x}\\right)^2\\cdot\\frac1{1+\\cos3x}",
+              "icon": "chart"
+            },
+            {
+              "title": "Evalúa cada parte",
+              "text": "El corchete tiende a 1² y el coseno a 1.",
+              "mathContent": "9\\cdot1\\cdot\\frac{1}{2}=\\frac92",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica media",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc7_media_03",
+          "questionText": "Calcula lim x→∞ (2x²−x)/√(x⁴+1).",
+          "questionLatex": "",
+          "options": [
+            "2",
+            "1",
+            "0",
+            "-1"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Analiza el grado dentro de la raíz",
+              "text": "√(x⁴+1) se comporta como x² cuando x→∞ (ya que √(x⁴)=x² para x grande y positivo).",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Divide numerador y denominador entre x²",
+              "text": "Usa que √(x⁴+1)=x²√(1+1/x⁴) para x>0.",
+              "mathContent": "\\frac{2-1/x}{\\sqrt{1+1/x^4}}",
+              "icon": "fx"
+            },
+            {
+              "title": "Evalúa cuando x→∞",
+              "text": "Los términos con 1/x y 1/x⁴ tienden a 0.",
+              "mathContent": "\\frac{2}{\\sqrt1}=2",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica media",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc7_media_04",
+          "questionText": "Halla todas las asíntotas de f(x)=(x²+1)/(x−2).",
+          "questionLatex": "",
+          "options": [
+            "Vertical x=2, oblicua y=x+2",
+            "Horizontal y=1, vertical x=2",
+            "Vertical x=-2, oblicua y=x-2",
+            "Solo oblicua y=x"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica la asíntota vertical",
+              "text": "El denominador se anula en x=2, y el numerador allí (4+1=5) no es cero.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Compara los grados",
+              "text": "Numerador grado 2, denominador grado 1: una unidad más, así que hay asíntota oblicua.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Realiza la división",
+              "text": "Divide x²+1 entre x−2.",
+              "mathContent": "\\frac{x^2+1}{x-2}=x+2+\\frac{5}{x-2}",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Vertical en x=2, oblicua y=x+2.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica media",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc7_media_05",
+          "questionText": "Clasifica la discontinuidad de f(x)=(x²−4)/(x−2) en x=2.",
+          "questionLatex": "",
+          "options": [
+            "Evitable (el límite es 4, pero f(2) no está definida)",
+            "De salto",
+            "Infinita",
+            "No es discontinua"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Verifica si f(2) está definida",
+              "text": "El denominador se anula: f(2) no está definida.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Calcula el límite cuando x→2",
+              "text": "Factoriza y cancela.",
+              "mathContent": "\\lim_{x\\to2}\\frac{(x-2)(x+2)}{x-2}=4",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "El límite existe pero f(2) no está definida: discontinuidad evitable.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica media",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc7_media_06",
+          "questionText": "Usando el TVI se puede demostrar que x⁵−3x+1=0 tiene una raíz en (0,1).",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Define g(x)=x⁵−3x+1 y verifica continuidad",
+              "text": "Es un polinomio, así que es continuo en todo ℝ.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Evalúa g en los extremos",
+              "text": "Sustituye x=0 y x=1.",
+              "mathContent": "g(0)=1,\\quad g(1)=1-3+1=-1",
+              "icon": "fx"
+            },
+            {
+              "title": "Observa el cambio de signo",
+              "text": "g(0)=1 (positivo) y g(1)=−1 (negativo).",
+              "mathContent": "",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Por el TVI, existe una raíz en (0,1). Verdadero.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica media",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc7_exam_avanzada",
+      "title": "Examen: Práctica avanzada (banco general)",
+      "type": "exam",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc7_avz_01",
+          "questionText": "Calcula lim x→0 [tan x − sen x]/x³.",
+          "questionLatex": "",
+          "options": [
+            "1/2",
+            "1",
+            "0",
+            "2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Factoriza sen x del numerador",
+              "text": "tan x − sen x = sen x (1/cos x − 1).",
+              "mathContent": "\\tan x-\\sin x=\\sin x\\left(\\frac{1}{\\cos x}-1\\right)",
+              "icon": "info"
+            },
+            {
+              "title": "Combina la resta dentro del paréntesis",
+              "text": "Usa un común denominador.",
+              "mathContent": "\\frac{1}{\\cos x}-1=\\frac{1-\\cos x}{\\cos x}",
+              "icon": "fx"
+            },
+            {
+              "title": "Reescribe la expresión completa",
+              "text": "Sustituye de vuelta.",
+              "mathContent": "\\frac{\\sin x(1-\\cos x)}{x^3\\cos x}",
+              "icon": "chart"
+            },
+            {
+              "title": "Separa en límites fundamentales conocidos",
+              "text": "sen x/x tiende a 1, y (1−cos x)/x² tiende a 1/2.",
+              "mathContent": "=\\frac{\\sin x}{x}\\cdot\\frac{1-\\cos x}{x^2}\\cdot\\frac{1}{\\cos x}",
+              "icon": "check"
+            },
+            {
+              "title": "Evalúa cada parte",
+              "text": "1 · (1/2) · (1/1).",
+              "mathContent": "=\\frac12",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica avanzada",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc7_avz_02",
+          "questionText": "Calcula lim x→∞ [√(x²+x)−√(x²−x)].",
+          "questionLatex": "",
+          "options": [
+            "1",
+            "0",
+            "∞",
+            "2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Reconoce la forma",
+              "text": "Ambos términos crecen sin límite: forma ∞−∞.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Multiplica y divide por el conjugado adecuado",
+              "text": "El conjugado de √(x²+x)−√(x²−x) es √(x²+x)+√(x²−x).",
+              "mathContent": "\\frac{(x^2+x)-(x^2-x)}{\\sqrt{x^2+x}+\\sqrt{x^2-x}}",
+              "icon": "fx"
+            },
+            {
+              "title": "Simplifica el numerador",
+              "text": "(x²+x)−(x²−x)=2x.",
+              "mathContent": "=\\frac{2x}{\\sqrt{x^2+x}+\\sqrt{x^2-x}}",
+              "icon": "chart"
+            },
+            {
+              "title": "Divide numerador y denominador entre x",
+              "text": "Para x>0, √(x²+x)=x√(1+1/x).",
+              "mathContent": "=\\frac{2}{\\sqrt{1+1/x}+\\sqrt{1-1/x}}",
+              "icon": "check"
+            },
+            {
+              "title": "Evalúa cuando x→∞",
+              "text": "1/x tiende a 0 en ambas raíces.",
+              "mathContent": "\\frac{2}{1+1}=1",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica avanzada",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc7_avz_03",
+          "questionText": "Halla todas las asíntotas de f(x)=(2x³−x)/(x²−1).",
+          "questionLatex": "",
+          "options": [
+            "Vertical en x=1 y x=-1 (sin huecos), oblicua y=2x",
+            "Hueco en x=1, vertical en x=-1, oblicua y=2x",
+            "Hueco en x=1 y x=-1, sin asíntotas verticales",
+            "Vertical en x=1 y x=-1, horizontal y=2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Factoriza numerador y denominador",
+              "text": "Numerador: x(2x²−1). Denominador: (x−1)(x+1).",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Busca factores comunes cancelables",
+              "text": "x(2x²−1) no comparte ningún factor lineal con (x−1)(x+1): 2x²−1=0 solo en x=±1/√2, que no son ±1.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión sobre los huecos",
+              "text": "No hay ningún factor cancelable, así que no hay huecos.",
+              "mathContent": "",
+              "icon": "chart"
+            },
+            {
+              "title": "Verifica ambas asíntotas verticales",
+              "text": "En x=1: numerador=2−1=1≠0. En x=−1: numerador=−2+1=−1≠0. Ambos son asíntotas verticales genuinas.",
+              "mathContent": "",
+              "icon": "check"
+            },
+            {
+              "title": "Halla la asíntota oblicua con división larga",
+              "text": "El numerador tiene grado 3, el denominador grado 2: una unidad más.",
+              "mathContent": "\\frac{2x^3-x}{x^2-1}=2x+\\frac{x}{x^2-1}",
+              "icon": "fx"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Vertical en x=1 y x=−1 (sin huecos), oblicua y=2x.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica avanzada",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc7_avz_04",
+          "questionText": "¿f(x)=(x³−8)/(x²−4) tiene discontinuidad evitable en x=2?",
+          "questionLatex": "",
+          "options": [
+            "Sí, el límite existe y vale 3, pero f(2) no está definida",
+            "No, tiene una asíntota vertical en x=2",
+            "Sí, pero el límite vale 2",
+            "No es discontinua en x=2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Factoriza el numerador (diferencia de cubos)",
+              "text": "x³−8=(x−2)(x²+2x+4).",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Factoriza el denominador (diferencia de cuadrados)",
+              "text": "x²−4=(x−2)(x+2).",
+              "mathContent": "",
+              "icon": "fx"
+            },
+            {
+              "title": "Cancela el factor común",
+              "text": "Ambos comparten (x−2).",
+              "mathContent": "f(x)=\\frac{x^2+2x+4}{x+2}\\ (x\\neq2)",
+              "icon": "chart"
+            },
+            {
+              "title": "Calcula el límite con la expresión simplificada",
+              "text": "Sustituye x=2.",
+              "mathContent": "\\frac{4+4+4}{4}=\\frac{12}{4}=3",
+              "icon": "check"
+            },
+            {
+              "title": "Conclusión",
+              "text": "El límite existe (vale 3) pero f(2) no está definida en la función original: discontinuidad evitable.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica avanzada",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc7_avz_05",
+          "questionText": "Usa el TVI para demostrar que todo polinomio de grado impar tiene al menos una raíz real.",
+          "questionLatex": "",
+          "options": [
+            "Un polinomio de grado impar tiende a +∞ en un extremo y a −∞ en el otro; por ser continuo, el TVI garantiza una raíz entre ambos",
+            "Todo polinomio tiene raíces complejas, no reales",
+            "Solo se puede garantizar para polinomios de grado 1",
+            "El TVI no aplica a polinomios"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Piensa en el comportamiento en los extremos de un polinomio de grado impar",
+              "text": "Cuando x→+∞ y x→−∞, un polinomio de grado impar tiende a +∞ de un lado y a −∞ del otro (dependiendo del signo del coeficiente líder).",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Recuerda que todo polinomio es continuo",
+              "text": "Los polinomios son continuos en todo ℝ, sin excepción.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Elige un intervalo [−M, M] suficientemente grande",
+              "text": "Para M grande, el polinomio será positivo en un extremo y negativo en el otro (o viceversa).",
+              "mathContent": "",
+              "icon": "chart"
+            },
+            {
+              "title": "Aplica el TVI en ese intervalo",
+              "text": "Como el polinomio es continuo y cambia de signo entre −M y M, debe existir una raíz en ese intervalo.",
+              "mathContent": "",
+              "icon": "check"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Todo polinomio de grado impar tiene al menos una raíz real.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Práctica avanzada",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    },
+    {
+      "id": "glc8_cierre_theory",
+      "title": "Cierre: cómo revisar tus respuestas",
+      "type": "theory",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [
+        {
+          "title": "Qué revisar al corregir tus respuestas",
+          "subtitle": "Límites y Continuidad • Checklist final",
+          "content": "Cuando termines un ejercicio, revisa siempre estos puntos antes de dar por válida la respuesta. La mayor parte de los errores en examen no está en la idea general, sino en un detalle: olvidar verificar el signo de √(x²)=|x| en límites al infinito, confundir una asíntota vertical con un hueco, o aplicar el TVI sin haber verificado la continuidad de la función. Por eso la verificación final vale tanto como la resolución misma.",
+          "formulaLatex": "",
+          "proTip": "",
+          "blocks": [
+            {
+              "type": "note",
+              "content": "1) ¿Intentaste primero la sustitución directa antes de aplicar una técnica algebraica más elaborada? 2) ¿Verificaste si había factores comunes cancelables antes de declarar una asíntota vertical? 3) ¿Comprobaste ambos límites laterales antes de afirmar que un límite bilateral existe o no existe? 4) ¿Distinguiste correctamente entre discontinuidad evitable, de salto e infinita? 5) ¿Verificaste las hipótesis de continuidad antes de aplicar el teorema del valor intermedio?"
+            },
+            {
+              "type": "text",
+              "content": "El camino desde los teoremas básicos de límites hasta el teorema del valor intermedio es gradual pero continuo. Las técnicas de factorización y racionalización reaparecen al simplificar asíntotas; el concepto de límite lateral reaparece al clasificar discontinuidades; y la propia noción de límite reaparece, de manera central, en la definición formal de continuidad. Todo está conectado, y esa conexión es precisamente lo que convierte una colección de técnicas en una comprensión real del cálculo de límites."
+            }
+          ]
+        }
+      ],
+      "challenges": []
+    },
+    {
+      "id": "glc8_flashcards",
+      "title": "Flashcards: Errores comunes del curso",
+      "type": "flashcards",
+      "isCompleted": false,
+      "isLocked": true,
+      "theorySections": [],
+      "challenges": [
+        {
+          "id": "glc8_tf_01",
+          "questionText": "Si lim x→a f(x)=∞, entonces el límite existe (es igual a infinito).",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Recuerda la definición estricta de 'existir' en cálculo",
+              "text": "Un límite existe solo cuando es un número real finito.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Piensa en qué describe realmente el símbolo ∞ aquí",
+              "text": "No es un valor numérico: describe un comportamiento (la función crece sin cota), no asigna un número.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Cuando decimos que el límite 'es' ∞, en realidad estamos explicando por qué NO existe. Falso.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Errores comunes",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc8_tf_02",
+          "questionText": "Cancelar el factor (x−a) en un límite es válido porque, en el límite, x nunca es exactamente igual a a.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Recuerda qué significa 'x se acerca a a'",
+              "text": "En la definición de límite, x toma valores cada vez más cercanos a a, pero nunca llega a ser exactamente a.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Piensa en por qué esto permite cancelar",
+              "text": "Como x≠a siempre durante el proceso del límite, dividir entre (x−a) nunca es una división entre cero real.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Verdadero: por eso la cancelación no cambia el valor del límite (aunque sí cambia el dominio de la expresión simplificada).",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Errores comunes",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc8_tf_03",
+          "questionText": "Si numerador y denominador se anulan en el mismo punto, siempre hay una asíntota vertical ahí.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Piensa en un ejemplo concreto",
+              "text": "f(x)=(x²−9)/(x−3): tanto numerador como denominador se anulan en x=3.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Factoriza y simplifica",
+              "text": "(x−3)(x+3)/(x−3) = x+3 para x≠3.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Analiza qué pasa en ese punto",
+              "text": "El límite existe (vale 6), así que no hay una asíntota vertical ahí: es un hueco.",
+              "mathContent": "",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Falso: cuando numerador y denominador se anulan juntos, puede ser un hueco (si el factor se cancela por completo) en lugar de una asíntota vertical.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Errores comunes",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc8_tf_04",
+          "questionText": "Una función puede ser discontinua en un punto y aun así tener límite en ese punto.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Recuerda las tres condiciones de continuidad",
+              "text": "f(a) definida, el límite existe, y el límite es igual a f(a).",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Piensa en la discontinuidad evitable",
+              "text": "Ahí el límite existe perfectamente, pero falla otra condición: f(a) no está definida, o no coincide con el límite.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Ejemplo concreto",
+              "text": "f(x)=(x²−9)/(x−3) en x=3: el límite es 6, pero f(3) no está definida — discontinua, pero con límite.",
+              "mathContent": "",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Verdadero: la existencia del límite es solo una de las tres condiciones necesarias para la continuidad.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Errores comunes",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc8_tf_05",
+          "questionText": "Toda asíntota vertical corresponde a una discontinuidad infinita de la función en ese punto.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Recuerda la definición de asíntota vertical",
+              "text": "Ocurre cuando al menos un límite lateral es +∞ o −∞.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Recuerda la definición de discontinuidad infinita",
+              "text": "Es exactamente cuando al menos un límite lateral es +∞ o −∞.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Compara ambas definiciones",
+              "text": "Son la misma condición descrita desde dos perspectivas: una geométrica (la asíntota) y otra analítica (el tipo de discontinuidad).",
+              "mathContent": "",
+              "icon": "chart"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Verdadero: son dos formas de describir la misma situación.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Errores comunes",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc8_tf_06",
+          "questionText": "Una función racional puede tener asíntota horizontal y asíntota oblicua al mismo tiempo, en la misma dirección.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Recuerda qué determina cada tipo de asíntota",
+              "text": "Se decide comparando los grados del numerador y denominador: exactamente un caso aplica en cada dirección.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Piensa en las tres posibilidades mutuamente excluyentes",
+              "text": "Grados iguales → horizontal. Numerador un grado mayor → oblicua. Numerador dos o más grados mayor → ninguna (límite infinito).",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Como estas tres posibilidades son mutuamente excluyentes, una función racional nunca tiene ambas asíntotas en la misma dirección. Falso.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Errores comunes",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc8_tf_07",
+          "questionText": "El teorema del valor intermedio garantiza que la solución exista, pero no da su valor exacto.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 0,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Recuerda cómo funciona el TVI",
+              "text": "Solo exige verificar continuidad y un cambio de signo (o que N esté entre f(a) y f(b)).",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Piensa en lo que el teorema NO te dice",
+              "text": "No indica cuántas soluciones hay, ni dónde exactamente se encuentran dentro del intervalo.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Verdadero: el TVI es un teorema de existencia, no de cálculo explícito. Para aproximar el valor, se necesitan métodos numéricos como la bisección.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Errores comunes",
+          "moduleName": "Límites y Continuidad"
+        },
+        {
+          "id": "glc8_tf_08",
+          "questionText": "El logaritmo crece más rápido que cualquier potencia positiva de x cuando x→∞.",
+          "questionLatex": "",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "correctAnswerIndex": 1,
+          "explanationLatex": "",
+          "explanationSteps": [
+            {
+              "title": "Recuerda la jerarquía de crecimiento en el infinito",
+              "text": "De menor a mayor rapidez: logaritmos < potencias de x < exponenciales.",
+              "mathContent": "",
+              "icon": "info"
+            },
+            {
+              "title": "Piensa en dónde queda el logaritmo en esa jerarquía",
+              "text": "Está en el extremo más lento, no en el más rápido.",
+              "mathContent": "",
+              "icon": "pin"
+            },
+            {
+              "title": "Conclusión",
+              "text": "Falso: el logaritmo crece MÁS LENTO que cualquier potencia positiva de x, no más rápido.",
+              "mathContent": "",
+              "icon": "star"
+            }
+          ],
+          "category": "Errores comunes",
+          "moduleName": "Límites y Continuidad"
+        }
+      ]
+    }
+  ]
+}
