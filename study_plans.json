@@ -1,0 +1,13 @@
+{
+  "plans": [
+    {
+      "id": "matematicas1",
+      "title": "Matemáticas 1",
+      "description": "Plan de estudios del primer semestre universitario",
+      "isDefault": true,
+      "moduleIds": [
+        "funciones_trigonometria"
+      ]
+    }
+  ]
+}
