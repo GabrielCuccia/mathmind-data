@@ -6,7 +6,10 @@
       "description": "Plan de estudios del primer semestre universitario",
       "isDefault": true,
       "moduleIds": [
-        "funciones_trigonometria"
+        "funciones_trigonometria",
+        "geometria_analitica",
+        "limites_continuidad",
+        "calculo_diferencial"
       ]
     }
   ]
