@@ -4440,33 +4440,6 @@
       ]
     },
     {
-      "id": "gc8_cierre_theory",
-      "title": "Cierre: cómo revisar tus respuestas",
-      "type": "theory",
-      "isCompleted": false,
-      "isLocked": true,
-      "theorySections": [
-        {
-          "title": "Qué revisar al corregir tus respuestas",
-          "subtitle": "Cálculo Diferencial • Checklist final",
-          "content": "Cuando termines un ejercicio, revisa siempre estos puntos antes de dar por válida la respuesta. La mayor parte de los errores en examen no está en la idea general, sino en un detalle: olvidar la regla de la cadena dentro de una derivación implícita, aplicar L'Hôpital a una forma que no es indeterminada, o perder un signo al derivar una función trigonométrica. Por eso la verificación final vale tanto como la resolución misma.",
-          "formulaLatex": "",
-          "proTip": "",
-          "blocks": [
-            {
-              "type": "note",
-              "content": "1) ¿Identificaste correctamente la estructura de la función (suma, producto, cociente, composición) antes de derivar? 2) ¿Aplicaste la regla de la cadena en cada función compuesta, incluyendo dentro de la derivación implícita? 3) ¿Verificaste que la forma del límite era realmente indeterminada antes de usar L'Hôpital? 4) ¿Simplificaste el resultado final, factorizando cuando fue posible? 5) ¿Comprobaste las hipótesis (continuidad, derivabilidad, igualdad en los extremos) antes de aplicar Rolle o el TVM?"
-            },
-            {
-              "type": "text",
-              "content": "El camino desde las reglas básicas hasta la regla de L'Hôpital es gradual pero continuo. La regla de la cadena reaparece en la derivación implícita, en las funciones inversas y en la derivación logarítmica; el concepto de razón de cambio reaparece en el teorema del valor medio; y la propia derivada reaparece como herramienta central para resolver los límites más difíciles mediante la regla de L'Hôpital. Todo está conectado, y esa conexión es precisamente lo que convierte una colección de fórmulas en una comprensión real del cálculo diferencial."
-            }
-          ]
-        }
-      ],
-      "challenges": []
-    },
-    {
       "id": "gc8_flashcards",
       "title": "Flashcards: Errores comunes del curso",
       "type": "flashcards",
