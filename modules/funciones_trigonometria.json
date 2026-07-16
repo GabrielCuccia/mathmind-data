@@ -7,62 +7,6 @@
   "isLocked": false,
   "lessons": [
     {
-      "id": "intro_notacion_theory",
-      "title": "Introducción: Notación y Enfoque del Curso",
-      "type": "theory",
-      "isCompleted": false,
-      "isLocked": false,
-      "theorySections": [
-        {
-          "title": "Cómo Aprovechar este Curso",
-          "subtitle": "Fundamentos • Introducción",
-          "content": "El objetivo de este curso es llevarte desde el concepto más básico de función hasta las identidades hiperbólicas, pasando por las operaciones entre funciones, la función exponencial, el logaritmo y las funciones trigonométricas inversas. La meta no es memorizar definiciones sueltas, sino entender cómo cada familia de funciones se relaciona con las demás: el logaritmo existe porque la exponencial es inyectiva, las funciones trigonométricas inversas existen porque restringimos el dominio de las trigonométricas para hacerlas inyectivas, y las funciones hiperbólicas comparten una estructura algebraica notablemente parecida a la de las trigonométricas.",
-          "formulaLatex": "",
-          "proTip": "Si dominas tres ideas, ya tienes gran parte del camino resuelto: 1) determinar el dominio y el rango de una función a partir de su regla, 2) reconocer cuándo una función es inyectiva y por tanto invertible, y 3) usar la relación entre una función y su inversa (exponencial y logaritmo, trigonométrica y arco, hiperbólica y su inversa) para resolver ecuaciones.",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "En todo el curso trabajaremos con una idea constante: una función es una regla de correspondencia, y gran parte del álgebra de funciones consiste en rastrear cuidadosamente el dominio a medida que combinamos, invertimos o componemos funciones. Dominar ese rastreo del dominio es la habilidad más subestimada, y a la vez más examinada, de todo este tema."
-            },
-            {
-              "type": "text",
-              "content": "La secuencia de las lecciones está organizada para que cada tema prepare al siguiente: primero verás las funciones básicas (dominio, rango, valor absoluto, parte entera) y sus transformaciones; después las operaciones algebraicas y la composición; luego la función exponencial, la inyectividad y las funciones inversas en general, lo que te preparará para el logaritmo; y finalmente las funciones trigonométricas e hiperbólicas y sus inversas."
-            },
-            {
-              "type": "note",
-              "content": "Conviene avanzar por niveles: teoría breve, ejemplo guiado, práctica fácil, práctica media y un desafío final tipo examen. Esa misma estructura se repite en cada tema del curso."
-            }
-          ]
-        },
-        {
-          "title": "Lenguaje y Notación",
-          "subtitle": "Fundamentos • Notación",
-          "content": "A lo largo del curso escribiremos $f: A \\to B$ para indicar que $f$ es una función con dominio $A$ y codominio $B$. El dominio de $f$ se denota $\\text{dom}(f)$ y el rango (el conjunto de valores que realmente toma $f$) se denota $\\text{rango}(f)$. La inversa de una función $f$, cuando existe, se denota $f^{-1}$, y no debe confundirse con $1/f$: son conceptos completamente distintos.",
-          "formulaLatex": "f: A \\to B",
-          "proTip": "",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "Para la composición de funciones escribiremos $(f\\circ g)(x) = f(g(x))$, leyéndose 'f compuesta con g' o 'f de g de x'."
-            },
-            {
-              "type": "formula",
-              "content": "(f \\circ g)(x) = f(g(x))"
-            },
-            {
-              "type": "note",
-              "content": "Es fundamental notar que, en general, $(f\\circ g)(x) \\neq (g\\circ f)(x)$: el orden de composición importa."
-            },
-            {
-              "type": "note",
-              "content": "Un error muy frecuente es escribir $f^{-1}(x)$ pensando en $1/f(x)$. Son dos objetos distintos: $f^{-1}$ deshace lo que hace $f$, mientras que $1/f(x)$ es el recíproco numérico. Por ejemplo, si $f(x) = x+2$, entonces $f^{-1}(x) = x - 2$, pero $1/f(x) = 1/(x+2)$: son expresiones completamente diferentes."
-            }
-          ]
-        }
-      ],
-      "challenges": []
-    },
-    {
       "id": "dominio_rango_theory",
       "title": "Dominio y Rango de una Función",
       "type": "theory",
