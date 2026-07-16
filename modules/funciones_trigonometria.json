@@ -11,7 +11,7 @@
       "title": "Dominio y Rango de una Función",
       "type": "theory",
       "isCompleted": false,
-      "isLocked": true,
+      "isLocked": false,
       "theorySections": [
         {
           "title": "Definición de Función, Dominio y Rango",
