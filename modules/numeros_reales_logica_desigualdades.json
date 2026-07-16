@@ -111,7 +111,7 @@
           "questionText": "Clasifica los números $-7$, $5/3$, $\\sqrt{25}$ y $0.101101110\\ldots$ Elige la clasificación correcta:",
           "questionLatex": "",
           "options": [
-            "\\begin{aligned} \\\\ -7 \\text{ entero}; \\;5/3 \\text{ racional};\\n \\;\\sqrt{25} \\text{ natural};\\n \\;0.101101110\\ldots \\text{ irracional} \\end{aligned}",
+            "-7 \\text{ entero}; \\;5/3 \\text{ racional};\\n \\;\\sqrt{25} \\text{ natural};\\n \\;0.101101110\\ldots \\text{ irracional}",
             "-7 \\text{ natural}; \\;5/3 \\text{ racional}; \\;\\sqrt{25} \\text{ irracional}; \\;0.101101110\\ldots \\text{ racional}",
             "-7 \\text{ entero}; \\;5/3 \\text{ irracional}; \\;\\sqrt{25} \\text{ natural}; \\;0.101101110\\ldots \\text{ racional}",
             "-7 \\text{ racional}; \\;5/3 \\text{ entero}; \\;\\sqrt{25} \\text{ natural}; \\;0.101101110\\ldots \\text{ irracional}"
@@ -149,7 +149,7 @@
         },
         {
           "id": "nr_n1_02",
-          "questionText": "¿Es 0 un número natural?",
+          "questionText": "¿Es 0 un número natural",
           "questionLatex": "",
           "options": [
             "No, porque aquí ℕ empieza en 1",
