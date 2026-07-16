@@ -22,43 +22,43 @@
           "blocks": [
             {
               "type": "text",
-              "content": "Jerarquía: $\\mathbb{N}$ (naturales): 1, 2, 3, 4, …; $\\mathbb{Z}$ (enteros): …, −2, −1, 0, 1, 2, …; $\\mathbb{Q}$ (racionales): p/q con p, q enteros y q≠0; $\\text{Irr}$ (irracionales): reales que no se pueden escribir como fracción; $\\mathbb{R}$ (reales) $=\\mathbb{Q}\\cup\\text{Irr}$."
+              "content": "Jerarquía: $$\\mathbb{N}$$ (naturales): 1, 2, 3, 4, …; $$\\mathbb{Z}$$ (enteros): …, −2, −1, 0, 1, 2, …; $$\\mathbb{Q}$$ (racionales): p/q con p, q enteros y q≠0; $$\\text{Irr}$$ (irracionales): reales que no se pueden escribir como fracción; $$\\mathbb{R}$$ (reales) $$=\\mathbb{Q}\\cup\\text{Irr}$$."
             },
             {
               "type": "formula",
-              "content": "\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}, \\quad \\text{Irr}\\subset\\mathbb{R}, \\quad \\mathbb{Q}\\cap\\text{Irr}=\\varnothing"
+              "content": "$$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}, \\quad \\text{Irr}\\subset\\mathbb{R}, \\quad \\mathbb{Q}\\cap\\text{Irr}=\\varnothing$$"
             },
             {
               "type": "text",
-              "content": "Un número racional siempre tiene una expansión decimal finita o periódica (por ejemplo, 1/4 = 0.25 o 1/3 = 0.333…). Un número irracional, en cambio, tiene una expansión decimal infinita y no periódica, como $\\sqrt2=1.41421356\\ldots$ o $\\pi=3.14159265\\ldots$"
+              "content": "Un número racional siempre tiene una expansión decimal finita o periódica (por ejemplo, 1/4 = 0.25 o 1/3 = 0.333…). Un número irracional, en cambio, tiene una expansión decimal infinita y no periódica, como $$\\sqrt2=1.41421356\\ldots$$ o $$\\pi=3.14159265\\ldots$$"
             },
             {
               "type": "example",
-              "content": "\\text{Clasificar } -5, \\; 7/2, \\; \\sqrt9, \\; \\sqrt2 \\; \\text{y } 0.727272\\ldots",
+              "content": "$$\\text{Clasificar } -5, \\; 7/2, \\; \\sqrt9, \\; \\sqrt2 \\; \\text{y } 0.727272\\ldots$$",
               "steps": [
                 {
                   "title": "Revisa cada número por separado",
                   "text": "−5 es entero, pero no natural (es negativo).",
                   "icon": "pin",
-                  "mathContent": "-5 \\in \\mathbb{Z}"
+                  "mathContent": "$$-5 \\in \\mathbb{Z}$$"
                 },
                 {
                   "title": "Fracciones y decimales periódicos",
                   "text": "7/2 = 3.5 es racional, no entero; y 0.727272… es racional porque su decimal se repite (equivale a la fracción 8/11).",
                   "icon": "fx",
-                  "mathContent": "7/2 \\in \\mathbb{Q}, \\; 0.\\overline{72}\\in\\mathbb{Q}"
+                  "mathContent": "$$7/2 \\in \\mathbb{Q}, \\; 0.\\overline{72}\\in\\mathbb{Q}$$"
                 },
                 {
                   "title": "Raíces que se simplifican",
                   "text": "√9 = 3 es natural, entero y racional a la vez, porque la raíz da un resultado exacto.",
                   "icon": "fx",
-                  "mathContent": "\\sqrt9=3\\in\\mathbb{N}"
+                  "mathContent": "$$\\sqrt9=3\\in\\mathbb{N}$$"
                 },
                 {
                   "title": "Raíces que no se simplifican",
                   "text": "√2 no puede escribirse como ninguna fracción exacta p/q, así que es irracional.",
                   "icon": "star",
-                  "mathContent": "\\sqrt2 \\in \\text{Irr}"
+                  "mathContent": "$$\\sqrt2 \\in \\text{Irr}$$"
                 }
               ]
             }
@@ -73,23 +73,23 @@
           "blocks": [
             {
               "type": "text",
-              "content": "Una propiedad notable de $\\mathbb{R}$ es la densidad: entre cualesquiera dos números reales distintos, sin importar cuán cercanos estén, siempre existen infinitos números racionales e infinitos números irracionales."
+              "content": "Una propiedad notable de $$\\mathbb{R}$$ es la densidad: entre cualesquiera dos números reales distintos, sin importar cuán cercanos estén, siempre existen infinitos números racionales e infinitos números irracionales."
             },
             {
               "type": "example",
-              "content": "\\text{Hallar un racional y un irracional entre } 1.41 \\text{ y } 1.42",
+              "content": "$$\\text{Hallar un racional y un irracional entre } 1.41 \\text{ y } 1.42$$",
               "steps": [
                 {
                   "title": "Busca un racional sencillo",
                   "text": "Cualquier decimal exacto dentro del rango sirve, por ejemplo 1.415 (que equivale a la fracción 283/200).",
                   "icon": "fx",
-                  "mathContent": "1.415 = \\frac{283}{200}"
+                  "mathContent": "$$1.415 = \\frac{283}{200}$$"
                 },
                 {
                   "title": "Busca un irracional",
                   "text": "El propio √2 ≈ 1.41421356… cae justo entre 1.41 y 1.42, y sabemos que es irracional.",
                   "icon": "star",
-                  "mathContent": "\\sqrt2 \\approx 1.41421356\\ldots"
+                  "mathContent": "$$\\sqrt2 \\approx 1.41421356\\ldots$$"
                 }
               ]
             }
@@ -108,40 +108,40 @@
       "challenges": [
         {
           "id": "nr_n1_01",
-          "questionText": "Clasifica los números $-7$, $5/3$, $\\sqrt{25}$ y $0.101101110\\ldots$ Elige la clasificación correcta:",
+          "questionText": "Clasifica los números $$-7$$, $$5/3$$, $$\\sqrt{25}$$ y $$0.101101110\\ldots$$ Elige la clasificación correcta:",
           "questionLatex": "",
           "options": [
-            "-7 \\text{ entero}; \\;5/3 \\text{ racional};\\n \\;\\sqrt{25} \\text{ natural};\\n \\;0.101101110\\ldots \\text{ irracional}",
-            "-7 \\text{ natural}; \\;5/3 \\text{ racional}; \\;\\sqrt{25} \\text{ irracional}; \\;0.101101110\\ldots \\text{ racional}",
-            "-7 \\text{ entero}; \\;5/3 \\text{ irracional}; \\;\\sqrt{25} \\text{ natural}; \\;0.101101110\\ldots \\text{ racional}",
-            "-7 \\text{ racional}; \\;5/3 \\text{ entero}; \\;\\sqrt{25} \\text{ natural}; \\;0.101101110\\ldots \\text{ irracional}"
+            "$$-7 \\text{ entero}; \\;5/3 \\text{ racional}; \\;\\sqrt{25} \\text{ natural}; \\;0.101101110\\ldots \\text{ irracional}$$",
+            "$$-7 \\text{ natural}; \\;5/3 \\text{ racional}; \\;\\sqrt{25} \\text{ irracional}; \\;0.101101110\\ldots \\text{ racional}$$",
+            "$$-7 \\text{ entero}; \\;5/3 \\text{ irracional}; \\;\\sqrt{25} \\text{ natural}; \\;0.101101110\\ldots \\text{ racional}$$",
+            "$$-7 \\text{ racional}; \\;5/3 \\text{ entero}; \\;\\sqrt{25} \\text{ natural}; \\;0.101101110\\ldots \\text{ irracional}$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "-7 \\text{ entero}; \\;5/3 \\text{ racional}; \\;\\sqrt{25} \\text{ natural}; \\;0.101101110\\ldots \\text{ irracional}",
+          "explanationLatex": "$$-7 \\text{ entero}; \\;5/3 \\text{ racional}; \\;\\sqrt{25} \\text{ natural}; \\;0.101101110\\ldots \\text{ irracional}$$",
           "explanationSteps": [
             {
               "title": "Analiza -7",
               "text": "Es un número negativo sin parte decimal, así que pertenece a los enteros, pero no a los naturales (que en esta guía solo incluyen positivos).",
               "icon": "pin",
-              "mathContent": "-7 \\in \\mathbb{Z}"
+              "mathContent": "$$-7 \\in \\mathbb{Z}$$"
             },
             {
               "title": "Analiza 5/3",
               "text": "Es una fracción de enteros, así que es racional (su decimal es 1.666…, periódico).",
               "icon": "fx",
-              "mathContent": "5/3 \\in \\mathbb{Q}"
+              "mathContent": "$$5/3 \\in \\mathbb{Q}$$"
             },
             {
               "title": "Analiza √25",
               "text": "La raíz se simplifica exactamente a 5, un número natural.",
               "icon": "fx",
-              "mathContent": "\\sqrt{25}=5 \\in \\mathbb{N}"
+              "mathContent": "$$\\sqrt{25}=5 \\in \\mathbb{N}$$"
             },
             {
               "title": "Analiza el decimal raro",
               "text": "0.101101110… no repite el mismo bloque de dígitos una y otra vez (los bloques de ceros van creciendo), así que su expansión decimal es infinita y no periódica: es irracional.",
               "icon": "star",
-              "mathContent": "0.101101110\\ldots \\in \\text{Irr}"
+              "mathContent": "$$0.101101110\\ldots \\in \\text{Irr}$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -152,25 +152,25 @@
           "questionText": "¿Es 0 un número natural",
           "questionLatex": "",
           "options": [
-            "No, porque aquí ℕ empieza en 1",
-            "Sí, porque 0 no tiene signo",
-            "Sí, porque 0 es entero",
-            "No, porque 0 no es racional"
+            "$$No, porque aquí ℕ empieza en 1$$",
+            "$$Sí, porque 0 no tiene signo$$",
+            "$$Sí, porque 0 es entero$$",
+            "$$No, porque 0 no es racional$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\text{No, con la convención } \\mathbb{N}=\\{1,2,3,\\ldots\\}",
+          "explanationLatex": "$$\\text{No, con la convención } \\mathbb{N}=\\{1,2,3,\\ldots\\}$$",
           "explanationSteps": [
             {
               "title": "Recuerda la convención de esta guía",
               "text": "En este curso definimos ℕ = {1, 2, 3, 4, …}, empezando explícitamente en 1.",
               "icon": "pin",
-              "mathContent": "\\mathbb{N}=\\{1,2,3,\\ldots\\}"
+              "mathContent": "$$\\mathbb{N}=\\{1,2,3,\\ldots\\}$$"
             },
             {
               "title": "Conclusión",
               "text": "Como 0 no aparece en esa lista, no se considera natural bajo esta convención (aunque otras convenciones sí lo incluyen).",
               "icon": "star",
-              "mathContent": "0 \\notin \\mathbb{N}"
+              "mathContent": "$$0 \\notin \\mathbb{N}$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -178,28 +178,28 @@
         },
         {
           "id": "nr_n1_03",
-          "questionText": "¿$3/6$ y $0.5$ representan el mismo número racional?",
+          "questionText": "¿$$3/6$$ y $$0.5$$ representan el mismo número racional?",
           "questionLatex": "",
           "options": [
-            "Sí, ambos son iguales a 1/2",
-            "No, 3/6 es mayor",
-            "No, 0.5 no es una fracción válida",
-            "Sí, pero solo si se redondea"
+            "$$Sí, ambos son iguales a 1/2$$",
+            "$$No, 3/6 es mayor$$",
+            "$$No, 0.5 no es una fracción válida$$",
+            "$$Sí, pero solo si se redondea$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\text{Sí: } 3/6 = 1/2 = 0.5",
+          "explanationLatex": "$$\\text{Sí: } 3/6 = 1/2 = 0.5$$",
           "explanationSteps": [
             {
               "title": "Simplifica la fracción",
               "text": "3/6 se puede simplificar dividiendo numerador y denominador entre 3.",
               "icon": "fx",
-              "mathContent": "3/6 = 1/2"
+              "mathContent": "$$3/6 = 1/2$$"
             },
             {
               "title": "Compara con el decimal",
               "text": "1/2 en forma decimal es exactamente 0.5.",
               "icon": "star",
-              "mathContent": "1/2 = 0.5"
+              "mathContent": "$$1/2 = 0.5$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -207,34 +207,34 @@
         },
         {
           "id": "nr_n1_04",
-          "questionText": "Ordena de menor a mayor: $-3, \\; 1/2, \\; -1, \\; 2.5$",
+          "questionText": "Ordena de menor a mayor: $$-3, \\; 1/2, \\; -1, \\; 2.5$$",
           "questionLatex": "",
           "options": [
-            "-3, -1, 1/2, 2.5",
-            "-1, -3, 1/2, 2.5",
-            "-3, 1/2, -1, 2.5",
-            "2.5, 1/2, -1, -3"
+            "$$-3, -1, 1/2, 2.5$$",
+            "$$-1, -3, 1/2, 2.5$$",
+            "$$-3, 1/2, -1, 2.5$$",
+            "$$2.5, 1/2, -1, -3$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "-3, -1, 1/2, 2.5",
+          "explanationLatex": "$$-3, -1, 1/2, 2.5$$",
           "explanationSteps": [
             {
               "title": "Ubica los negativos primero",
               "text": "Entre -3 y -1, el más negativo (más a la izquierda en la recta) es -3.",
               "icon": "pin",
-              "mathContent": "-3 < -1"
+              "mathContent": "$$-3 < -1$$"
             },
             {
               "title": "Ubica los positivos",
               "text": "1/2 = 0.5 es menor que 2.5.",
               "icon": "fx",
-              "mathContent": "1/2 < 2.5"
+              "mathContent": "$$1/2 < 2.5$$"
             },
             {
               "title": "Junta el orden completo",
               "text": "Los negativos siempre van antes que los positivos en la recta real.",
               "icon": "star",
-              "mathContent": "-3 < -1 < 1/2 < 2.5"
+              "mathContent": "$$-3 < -1 < 1/2 < 2.5$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -245,31 +245,31 @@
           "questionText": "¿Cuál de las siguientes expresa correctamente la propiedad conmutativa de la suma y de la multiplicación?",
           "questionLatex": "",
           "options": [
-            "a+b=b+a \\;\\text{ y }\\; a\\cdot b=b\\cdot a",
-            "(a+b)+c=a+(b+c)",
-            "a\\cdot(b+c)=a\\cdot b+a\\cdot c",
-            "a+0=a \\;\\text{ y }\\; a\\cdot1=a"
+            "$$a+b=b+a \\;\\text{ y }\\; a\\cdot b=b\\cdot a$$",
+            "$$(a+b)+c=a+(b+c)$$",
+            "$$a\\cdot(b+c)=a\\cdot b+a\\cdot c$$",
+            "$$a+0=a \\;\\text{ y }\\; a\\cdot1=a$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "a+b=b+a \\;\\text{ y }\\; a\\cdot b=b\\cdot a",
+          "explanationLatex": "$$a+b=b+a \\;\\text{ y }\\; a\\cdot b=b\\cdot a$$",
           "explanationSteps": [
             {
               "title": "Recuerda qué significa 'conmutativa'",
               "text": "Conmutar significa que el orden de los elementos no afecta el resultado.",
               "icon": "pin",
-              "mathContent": "a+b \\overset{?}{=} b+a"
+              "mathContent": "$$a+b \\overset{?}{=} b+a$$"
             },
             {
               "title": "Aplica la misma idea a la multiplicación",
               "text": "La multiplicación también cumple esta propiedad de forma independiente.",
               "icon": "fx",
-              "mathContent": "a\\cdot b \\overset{?}{=} b\\cdot a"
+              "mathContent": "$$a\\cdot b \\overset{?}{=} b\\cdot a$$"
             },
             {
               "title": "Descarta las otras opciones",
               "text": "Las demás opciones corresponden a asociatividad, distributividad y elementos neutros, que son axiomas distintos.",
               "icon": "star",
-              "mathContent": "a+b=b+a, \\; a\\cdot b=b\\cdot a"
+              "mathContent": "$$a+b=b+a, \\; a\\cdot b=b\\cdot a$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -287,34 +287,34 @@
       "challenges": [
         {
           "id": "nr_n2_01",
-          "questionText": "Clasifica $\\sqrt2\\cdot\\sqrt2$ y $\\sqrt2+\\sqrt2$:",
+          "questionText": "Clasifica $$\\sqrt2\\cdot\\sqrt2$$ y $$\\sqrt2+\\sqrt2$$:",
           "questionLatex": "",
           "options": [
-            "\\sqrt2\\cdot\\sqrt2=2 \\text{ (racional)}; \\;\\sqrt2+\\sqrt2=2\\sqrt2 \\text{ (irracional)}",
-            "\\text{Ambos son irracionales}",
-            "\\text{Ambos son racionales}",
-            "\\sqrt2\\cdot\\sqrt2=2\\sqrt2; \\;\\sqrt2+\\sqrt2=2"
+            "$$\\sqrt2\\cdot\\sqrt2=2 \\text{ (racional)}; \\;\\sqrt2+\\sqrt2=2\\sqrt2 \\text{ (irracional)}$$",
+            "$$\\text{Ambos son irracionales}$$",
+            "$$\\text{Ambos son racionales}$$",
+            "$$\\sqrt2\\cdot\\sqrt2=2\\sqrt2; \\;\\sqrt2+\\sqrt2=2$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\sqrt2\\cdot\\sqrt2=2 \\text{ (racional)}; \\;\\sqrt2+\\sqrt2=2\\sqrt2 \\text{ (irracional)}",
+          "explanationLatex": "$$\\sqrt2\\cdot\\sqrt2=2 \\text{ (racional)}; \\;\\sqrt2+\\sqrt2=2\\sqrt2 \\text{ (irracional)}$$",
           "explanationSteps": [
             {
               "title": "Multiplica primero",
               "text": "Multiplicar una raíz cuadrada por sí misma la elimina, dando el número original.",
               "icon": "fx",
-              "mathContent": "\\sqrt2\\cdot\\sqrt2=2"
+              "mathContent": "$$\\sqrt2\\cdot\\sqrt2=2$$"
             },
             {
               "title": "Ahora suma",
               "text": "Sumar dos veces la misma raíz es como multiplicarla por 2, pero la raíz sigue presente.",
               "icon": "fx",
-              "mathContent": "\\sqrt2+\\sqrt2=2\\sqrt2"
+              "mathContent": "$$\\sqrt2+\\sqrt2=2\\sqrt2$$"
             },
             {
               "title": "Clasifica cada resultado",
               "text": "2 es un número racional (de hecho, natural); 2√2 sigue siendo irracional porque multiplicar un irracional por un racional distinto de cero no lo vuelve racional.",
               "icon": "star",
-              "mathContent": "2\\in\\mathbb{Q}; \\;2\\sqrt2\\in\\text{Irr}"
+              "mathContent": "$$2\\in\\mathbb{Q}; \\;2\\sqrt2\\in\\text{Irr}$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -325,31 +325,31 @@
           "questionText": "¿Cuál de los siguientes es un número racional estrictamente entre 0.333 y 0.334?",
           "questionLatex": "",
           "options": [
-            "0.3335",
-            "0.3325",
-            "0.332",
-            "1/4"
+            "$$0.3335$$",
+            "$$0.3325$$",
+            "$$0.332$$",
+            "$$1/4$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "0.3335",
+          "explanationLatex": "$$0.3335$$",
           "explanationSteps": [
             {
               "title": "Piensa en el rango",
               "text": "Necesitamos un número mayor que 0.333 pero menor que 0.334.",
               "icon": "pin",
-              "mathContent": "0.333 < x < 0.334"
+              "mathContent": "$$0.333 < x < 0.334$$"
             },
             {
               "title": "Prueba 0.3335",
               "text": "Este valor está claramente entre ambos límites, y es un decimal exacto, por lo tanto racional.",
               "icon": "fx",
-              "mathContent": "0.333 < 0.3335 < 0.334"
+              "mathContent": "$$0.333 < 0.3335 < 0.334$$"
             },
             {
               "title": "Descarta las demás opciones",
               "text": "0.3325 y 0.332 son menores que 0.333, y 1/4=0.25 está fuera de todo el rango.",
               "icon": "star",
-              "mathContent": "0.3335 \\text{ es la única correcta}"
+              "mathContent": "$$0.3335 \\text{ es la única correcta}$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -357,34 +357,34 @@
         },
         {
           "id": "nr_n2_03",
-          "questionText": "¿Qué axioma de cuerpo justifica cada paso de $3(x+2)=3x+6$?",
+          "questionText": "¿Qué axioma de cuerpo justifica cada paso de $$3(x+2)=3x+6$$?",
           "questionLatex": "",
           "options": [
-            "Distributividad, y luego aritmética simple (3·2=6)",
-            "Conmutatividad de la suma",
-            "Asociatividad de la multiplicación",
-            "El axioma del inverso multiplicativo"
+            "$$Distributividad, y luego aritmética simple (3·2=6)$$",
+            "$$Conmutatividad de la suma$$",
+            "$$Asociatividad de la multiplicación$$",
+            "$$El axioma del inverso multiplicativo$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\text{Distributividad, luego } 3\\cdot2=6",
+          "explanationLatex": "$$\\text{Distributividad, luego } 3\\cdot2=6$$",
           "explanationSteps": [
             {
               "title": "Identifica la estructura",
               "text": "Tenemos un número multiplicando una suma entre paréntesis: 3(x+2).",
               "icon": "pin",
-              "mathContent": "3(x+2)"
+              "mathContent": "$$3(x+2)$$"
             },
             {
               "title": "Aplica distributividad",
               "text": "El axioma de distributividad dice que a·(b+c)=a·b+a·c; aquí a=3, b=x, c=2.",
               "icon": "fx",
-              "mathContent": "3(x+2)=3x+3\\cdot2"
+              "mathContent": "$$3(x+2)=3x+3\\cdot2$$"
             },
             {
               "title": "Simplifica el número",
               "text": "3·2 es simplemente aritmética, y da 6.",
               "icon": "star",
-              "mathContent": "3x+3\\cdot2=3x+6"
+              "mathContent": "$$3x+3\\cdot2=3x+6$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -392,40 +392,40 @@
         },
         {
           "id": "nr_n2_04",
-          "questionText": "Demuestra que $(-1)\\cdot a=-a$ usando los axiomas de cuerpo y el resultado $a\\cdot0=0$:",
+          "questionText": "Demuestra que $$(-1)\\cdot a=-a$$ usando los axiomas de cuerpo y el resultado $$a\\cdot0=0$$:",
           "questionLatex": "",
           "options": [
-            "Se muestra que $a+(-1)\\cdot a=0$, y por unicidad del inverso aditivo, $(-1)\\cdot a=-a$",
-            "Se muestra que $(-1)\\cdot a = a$ directamente",
-            "No se puede demostrar sin usar números negativos",
-            "Se sigue directamente de la conmutatividad"
+            "$$Se muestra que a+(-1)\\cdot a=0, y por unicidad del inverso aditivo, (-1)\\cdot a=-a$$",
+            "$$Se muestra que (-1)\\cdot a = a directamente$$",
+            "$$No se puede demostrar sin usar números negativos$$",
+            "$$Se sigue directamente de la conmutatividad$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "a+(-1)a=0 \\Rightarrow (-1)a=-a \\text{ por unicidad del inverso}",
+          "explanationLatex": "$$a+(-1)a=0 \\Rightarrow (-1)a=-a \\text{ por unicidad del inverso}$$",
           "explanationSteps": [
             {
               "title": "Suma a más (-1)·a",
               "text": "Usamos que a=1·a (neutro multiplicativo) para reescribir la suma.",
               "icon": "pin",
-              "mathContent": "a+(-1)a = 1\\cdot a+(-1)\\cdot a"
+              "mathContent": "$$a+(-1)a = 1\\cdot a+(-1)\\cdot a$$"
             },
             {
               "title": "Aplica distributividad al revés",
               "text": "Factorizamos el término común a.",
               "icon": "fx",
-              "mathContent": "= (1+(-1))\\cdot a = 0\\cdot a"
+              "mathContent": "$$= (1+(-1))\\cdot a = 0\\cdot a$$"
             },
             {
               "title": "Usa el resultado ya conocido",
               "text": "Ya demostramos antes que cualquier número por 0 da 0.",
               "icon": "fx",
-              "mathContent": "0\\cdot a = 0"
+              "mathContent": "$$0\\cdot a = 0$$"
             },
             {
               "title": "Concluye por unicidad del inverso",
               "text": "Como a+(-1)a=0, y el inverso aditivo de a es único (se llama -a), forzosamente (-1)·a=-a.",
               "icon": "star",
-              "mathContent": "(-1)\\cdot a = -a"
+              "mathContent": "$$(-1)\\cdot a = -a$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -436,31 +436,31 @@
           "questionText": "¿Es cierto que la resta de números naturales siempre da un número natural?",
           "questionLatex": "",
           "options": [
-            "No; por ejemplo, 2−5=−3, que no es natural",
-            "Sí, siempre",
-            "Sí, siempre que ambos sean positivos",
-            "No, porque los naturales no se pueden restar"
+            "$$No; por ejemplo, 2−5=−3, que no es natural$$",
+            "$$Sí, siempre$$",
+            "$$Sí, siempre que ambos sean positivos$$",
+            "$$No, porque los naturales no se pueden restar$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\text{Falso: } 2-5=-3 \\notin \\mathbb{N}",
+          "explanationLatex": "$$\\text{Falso: } 2-5=-3 \\notin \\mathbb{N}$$",
           "explanationSteps": [
             {
               "title": "Busca un contraejemplo",
               "text": "Intentemos restar un número natural más grande de uno más pequeño.",
               "icon": "pin",
-              "mathContent": "2-5=-3"
+              "mathContent": "$$2-5=-3$$"
             },
             {
               "title": "Verifica si el resultado es natural",
               "text": "-3 es negativo, y los naturales (en esta guía) son solo 1,2,3,…, todos positivos.",
               "icon": "fx",
-              "mathContent": "-3 \\notin \\mathbb{N}"
+              "mathContent": "$$-3 \\notin \\mathbb{N}$$"
             },
             {
               "title": "Conclusión",
               "text": "Por lo tanto, la afirmación es falsa: la resta de naturales no siempre da un natural.",
               "icon": "star",
-              "mathContent": "\\text{Falso, por el contraejemplo } 2-5=-3"
+              "mathContent": "$$\\text{Falso, por el contraejemplo } 2-5=-3$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -478,40 +478,40 @@
       "challenges": [
         {
           "id": "nr_n3_01",
-          "questionText": "Demuestra que si $a<b$, entonces $-b<-a$ (usa los axiomas de orden):",
+          "questionText": "Demuestra que si $$a<b$$, entonces $$-b<-a$$ (usa los axiomas de orden):",
           "questionLatex": "",
           "options": [
-            "Sumando -a-b a ambos lados de a<b se obtiene -b<-a",
-            "Multiplicando por -1 sin cambios se obtiene -b<-a",
-            "No se puede demostrar con los axiomas de orden",
-            "Se sigue directamente de la tricotomía, sin más pasos"
+            "$$Sumando -a-b a ambos lados de a<b se obtiene -b<-a$$",
+            "$$Multiplicando por -1 sin cambios se obtiene -b<-a$$",
+            "$$No se puede demostrar con los axiomas de orden$$",
+            "$$Se sigue directamente de la tricotomía, sin más pasos$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "-b<-a, \\text{ sumando } -a-b \\text{ a ambos lados}",
+          "explanationLatex": "$$-b<-a, \\text{ sumando } -a-b \\text{ a ambos lados}$$",
           "explanationSteps": [
             {
               "title": "Parte de la hipótesis",
               "text": "Sabemos que a<b.",
               "icon": "pin",
-              "mathContent": "a<b"
+              "mathContent": "$$a<b$$"
             },
             {
               "title": "Suma -a a ambos lados",
               "text": "Usamos compatibilidad de < con la suma, sumando -a en ambos lados.",
               "icon": "fx",
-              "mathContent": "a+(-a) < b+(-a) \\Rightarrow 0 < b-a"
+              "mathContent": "$$a+(-a) < b+(-a) \\Rightarrow 0 < b-a$$"
             },
             {
               "title": "Suma -b a ambos lados",
               "text": "Ahora sumamos -b en ambos lados de la desigualdad recién obtenida.",
               "icon": "fx",
-              "mathContent": "0+(-b) < (b-a)+(-b) \\Rightarrow -b < -a"
+              "mathContent": "$$0+(-b) < (b-a)+(-b) \\Rightarrow -b < -a$$"
             },
             {
               "title": "Conclusión",
               "text": "Hemos llegado exactamente a lo que queríamos demostrar, usando solo compatibilidad con la suma.",
               "icon": "star",
-              "mathContent": "-b<-a"
+              "mathContent": "$$-b<-a$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -522,37 +522,37 @@
           "questionText": "¿Es cierto que la suma de dos números irracionales es siempre irracional?",
           "questionLatex": "",
           "options": [
-            "No; por ejemplo, √2+(−√2)=0, que es racional",
-            "Sí, siempre es irracional",
-            "Sí, excepto si ambos son negativos",
-            "No, porque los irracionales no se pueden sumar"
+            "$$No; por ejemplo, √2+(−√2)=0, que es racional$$",
+            "$$Sí, siempre es irracional$$",
+            "$$Sí, excepto si ambos son negativos$$",
+            "$$No, porque los irracionales no se pueden sumar$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\text{Falso: } \\sqrt2+(-\\sqrt2)=0 \\in \\mathbb{Q}",
+          "explanationLatex": "$$\\text{Falso: } \\sqrt2+(-\\sqrt2)=0 \\in \\mathbb{Q}$$",
           "explanationSteps": [
             {
               "title": "Busca un contraejemplo cuidadoso",
               "text": "Prueba con dos irracionales que sean 'opuestos' entre sí.",
               "icon": "pin",
-              "mathContent": "\\sqrt2 \\text{ y } -\\sqrt2, \\text{ ambos irracionales}"
+              "mathContent": "$$\\sqrt2 \\text{ y } -\\sqrt2, \\text{ ambos irracionales}$$"
             },
             {
               "title": "Súmalos",
               "text": "La suma de un número y su opuesto siempre da cero.",
               "icon": "fx",
-              "mathContent": "\\sqrt2+(-\\sqrt2)=0"
+              "mathContent": "$$\\sqrt2+(-\\sqrt2)=0$$"
             },
             {
               "title": "Clasifica el resultado",
               "text": "0 es un número racional (de hecho, entero), no irracional.",
               "icon": "fx",
-              "mathContent": "0 \\in \\mathbb{Q}"
+              "mathContent": "$$0 \\in \\mathbb{Q}$$"
             },
             {
               "title": "Conclusión",
               "text": "Este contraejemplo muestra que la afirmación general es falsa.",
               "icon": "star",
-              "mathContent": "\\text{La suma de irracionales NO siempre es irracional}"
+              "mathContent": "$$\\text{La suma de irracionales NO siempre es irracional}$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -560,34 +560,34 @@
         },
         {
           "id": "nr_n3_03",
-          "questionText": "Demuestra que $-(-a)=a$ usando los axiomas de cuerpo:",
+          "questionText": "Demuestra que $$-(-a)=a$$ usando los axiomas de cuerpo:",
           "questionLatex": "",
           "options": [
-            "Por unicidad del inverso aditivo: (-a) tiene como único inverso a a, así que -(-a)=a",
-            "Se sigue de la conmutatividad de la suma",
-            "Se sigue de la distributividad",
-            "No se puede demostrar en general"
+            "$$Por unicidad del inverso aditivo: (-a) tiene como único inverso a a, así que -(-a)=a$$",
+            "$$Se sigue de la conmutatividad de la suma$$",
+            "$$Se sigue de la distributividad$$",
+            "$$No se puede demostrar en general$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "-(-a)=a \\text{ por unicidad del inverso aditivo}",
+          "explanationLatex": "$$-(-a)=a \\text{ por unicidad del inverso aditivo}$$",
           "explanationSteps": [
             {
               "title": "Recuerda la definición de inverso aditivo",
               "text": "Por definición, -a es el número que sumado a a da 0.",
               "icon": "pin",
-              "mathContent": "a+(-a)=0"
+              "mathContent": "$$a+(-a)=0$$"
             },
             {
               "title": "Mira esa misma ecuación desde el otro lado",
               "text": "Esa ecuación también dice que a es el inverso aditivo de -a (la suma es conmutativa, así que da lo mismo el orden).",
               "icon": "fx",
-              "mathContent": "(-a)+a=0"
+              "mathContent": "$$(-a)+a=0$$"
             },
             {
               "title": "Usa la unicidad del inverso",
               "text": "El inverso aditivo de cualquier número es único; como a cumple ser el inverso de -a, y -(-a) también se define como el inverso de -a, deben ser iguales.",
               "icon": "star",
-              "mathContent": "-(-a)=a"
+              "mathContent": "$$-(-a)=a$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -598,31 +598,31 @@
           "questionText": "¿Por qué no existe un número racional cuyo cuadrado sea 2?",
           "questionLatex": "",
           "options": [
-            "Porque se puede demostrar por contradicción que llevaría a que un mismo número racional tuviera numerador y denominador ambos pares, lo cual contradice que la fracción esté simplificada",
-            "Porque 2 no es un número real",
-            "Porque las fracciones nunca se pueden elevar al cuadrado",
-            "Porque todos los racionales al cuadrado dan números negativos"
+            "$$Porque se puede demostrar por contradicción que llevaría a que un mismo número racional tuviera numerador y denominador ambos pares, lo cual contradice que la fracción esté simplificada$$",
+            "$$Porque 2 no es un número real$$",
+            "$$Porque las fracciones nunca se pueden elevar al cuadrado$$",
+            "$$Porque todos los racionales al cuadrado dan números negativos$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\text{Demostración por contradicción (se detalla en el capítulo de lógica)}",
+          "explanationLatex": "$$\\text{Demostración por contradicción (se detalla en el capítulo de lógica)}$$",
           "explanationSteps": [
             {
               "title": "Anticipa la idea general",
               "text": "Si existiera esa fracción p/q en su forma más simple (sin factores comunes), elevarla al cuadrado daría 2.",
               "icon": "pin",
-              "mathContent": "(p/q)^2=2 \\Rightarrow p^2=2q^2"
+              "mathContent": "$$(p/q)^2=2 \\Rightarrow p^2=2q^2$$"
             },
             {
               "title": "Seguir la cadena lógica",
               "text": "Esto forzaría a que p sea par, y luego (sustituyendo) que q también sea par.",
               "icon": "fx",
-              "mathContent": "p \\text{ par} \\Rightarrow q \\text{ par}"
+              "mathContent": "$$p \\text{ par} \\Rightarrow q \\text{ par}$$"
             },
             {
               "title": "Encuentra la contradicción",
               "text": "Pero si p y q son ambos pares, la fracción p/q no estaba realmente simplificada, contradiciendo la suposición inicial.",
               "icon": "star",
-              "mathContent": "\\text{Contradicción}"
+              "mathContent": "$$\\text{Contradicción}$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -630,34 +630,34 @@
         },
         {
           "id": "nr_n3_05",
-          "questionText": "Clasifica $(\\sqrt5)^2$ y determina si contradice que $\\sqrt5$ sea irracional:",
+          "questionText": "Clasifica $$(\\sqrt5)^2$$ y determina si contradice que $$\\sqrt5$$ sea irracional:",
           "questionLatex": "",
           "options": [
-            "(\\sqrt5)^2=5 \\text{ es racional, y esto NO contradice que } \\sqrt5 \\text{ sea irracional}",
-            "(\\sqrt5)^2=5 \\text{ es irracional, contradiciendo el resultado}",
-            "(\\sqrt5)^2 \\text{ no está definido}",
-            "(\\sqrt5)^2=\\sqrt5, \\text{ así que sigue siendo irracional}"
+            "$$(\\sqrt5)^2=5 \\text{ es racional, y esto NO contradice que } \\sqrt5 \\text{ sea irracional}$$",
+            "$$(\\sqrt5)^2=5 \\text{ es irracional, contradiciendo el resultado}$$",
+            "$$(\\sqrt5)^2 \\text{ no está definido}$$",
+            "$$(\\sqrt5)^2=\\sqrt5, \\text{ así que sigue siendo irracional}$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "(\\sqrt5)^2=5 \\in \\mathbb{Q}, \\text{ sin contradicción}",
+          "explanationLatex": "$$(\\sqrt5)^2=5 \\in \\mathbb{Q}, \\text{ sin contradicción}$$",
           "explanationSteps": [
             {
               "title": "Calcula el cuadrado",
               "text": "Elevar una raíz cuadrada al cuadrado simplemente la elimina.",
               "icon": "fx",
-              "mathContent": "(\\sqrt5)^2=5"
+              "mathContent": "$$(\\sqrt5)^2=5$$"
             },
             {
               "title": "Clasifica el resultado",
               "text": "5 es un entero, por lo tanto racional.",
               "icon": "pin",
-              "mathContent": "5 \\in \\mathbb{Q}"
+              "mathContent": "$$5 \\in \\mathbb{Q}$$"
             },
             {
               "title": "Resuelve la aparente paradoja",
               "text": "Que el cuadrado de un irracional sea racional no es ninguna contradicción: la irracionalidad es una propiedad del número √5 en sí, no de todo lo que se pueda construir a partir de él.",
               "icon": "star",
-              "mathContent": "\\text{No hay contradicción}"
+              "mathContent": "$$\\text{No hay contradicción}$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -688,7 +688,7 @@
         },
         {
           "id": "tf_nr_02",
-          "questionText": "$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}$.",
+          "questionText": "$$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}$$.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -714,7 +714,7 @@
         },
         {
           "id": "tf_nr_04",
-          "questionText": "Si $a\\cdot b=0$, entonces necesariamente $a=0$ y $b=0$ al mismo tiempo.",
+          "questionText": "Si $$a\\cdot b=0$$, entonces necesariamente $$a=0$$ y $$b=0$$ al mismo tiempo.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -750,61 +750,61 @@
         {
           "title": "El Orden en los Reales: Repaso y Propiedades Demostradas",
           "subtitle": "Desigualdades • Fundamento",
-          "content": "Recordemos los axiomas de orden: tricotomía, transitividad, y compatibilidad con la suma y con el producto. A partir de estos cuatro axiomas se puede demostrar cualquier propiedad algebraica de las desigualdades, sin necesidad de aceptarla como una regla arbitraria. La notación $a\\leq b$ significa 'a<b o a=b'; de manera análoga, $a\\geq b$ significa 'a>b o a=b'. Estas son abreviaturas lógicas construidas con el conector ∨.",
+          "content": "Recordemos los axiomas de orden: tricotomía, transitividad, y compatibilidad con la suma y con el producto. A partir de estos cuatro axiomas se puede demostrar cualquier propiedad algebraica de las desigualdades, sin necesidad de aceptarla como una regla arbitraria. La notación $$a\\leq b$$ significa 'a<b o a=b'; de manera análoga, $$a\\geq b$$ significa 'a>b o a=b'. Estas son abreviaturas lógicas construidas con el conector ∨.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Demostrar que si } a<b \\text{ y } c<d, \\text{ entonces } a+c<b+d",
+              "content": "$$\\text{Demostrar que si } a<b \\text{ y } c<d, \\text{ entonces } a+c<b+d$$",
               "steps": [
                 {
                   "title": "Aplica compatibilidad a la primera desigualdad",
                   "text": "Sumamos c a ambos lados de a<b.",
                   "icon": "pin",
-                  "mathContent": "a+c < b+c"
+                  "mathContent": "$$a+c < b+c$$"
                 },
                 {
                   "title": "Aplica compatibilidad a la segunda desigualdad",
                   "text": "Sumamos b a ambos lados de c<d.",
                   "icon": "fx",
-                  "mathContent": "b+c < b+d"
+                  "mathContent": "$$b+c < b+d$$"
                 },
                 {
                   "title": "Encadena con transitividad",
                   "text": "Como a+c<b+c y b+c<b+d, por transitividad se sigue directamente el resultado.",
                   "icon": "star",
-                  "mathContent": "a+c < b+c < b+d \\Rightarrow a+c<b+d"
+                  "mathContent": "$$a+c < b+c < b+d \\Rightarrow a+c<b+d$$"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Demostrar que si } 0<a<b, \\text{ entonces } 1/b<1/a",
+              "content": "$$\\text{Demostrar que si } 0<a<b, \\text{ entonces } 1/b<1/a$$",
               "steps": [
                 {
                   "title": "Parte de b-a>0",
                   "text": "Como a<b, sabemos que b-a es positivo.",
                   "icon": "pin",
-                  "mathContent": "b-a>0"
+                  "mathContent": "$$b-a>0$$"
                 },
                 {
                   "title": "Divide entre ab (positivo)",
                   "text": "Como a,b son positivos, su producto ab también lo es, así que dividir entre él preserva el signo.",
                   "icon": "fx",
-                  "mathContent": "\\frac{b-a}{ab}>0"
+                  "mathContent": "$$\\frac{b-a}{ab}>0$$"
                 },
                 {
                   "title": "Separa la fracción",
                   "text": "Distribuimos la división entre los dos términos del numerador.",
                   "icon": "fx",
-                  "mathContent": "\\frac1a-\\frac1b>0"
+                  "mathContent": "$$\\frac1a-\\frac1b>0$$"
                 },
                 {
                   "title": "Concluye",
                   "text": "Pasando 1/b al otro lado, obtenemos exactamente el resultado buscado.",
                   "icon": "star",
-                  "mathContent": "\\frac1b<\\frac1a"
+                  "mathContent": "$$\\frac1b<\\frac1a$$"
                 }
               ]
             },
@@ -833,37 +833,37 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Demostrar que } x^2\\geq0 \\text{ para todo } x\\in\\mathbb{R}",
+              "content": "$$\\text{Demostrar que } x^2\\geq0 \\text{ para todo } x\\in\\mathbb{R}$$",
               "steps": [
                 {
                   "title": "Aplica tricotomía",
                   "text": "Por tricotomía, exactamente uno de estos tres casos se cumple: x<0, x=0, o x>0.",
                   "icon": "pin",
-                  "mathContent": "x<0 \\;\\lor\\; x=0 \\;\\lor\\; x>0"
+                  "mathContent": "$$x<0 \\;\\lor\\; x=0 \\;\\lor\\; x>0$$"
                 },
                 {
                   "title": "Caso x=0",
                   "text": "Si x=0, entonces x²=0, que sí es ≥0.",
                   "icon": "fx",
-                  "mathContent": "x=0 \\Rightarrow x^2=0\\geq0"
+                  "mathContent": "$$x=0 \\Rightarrow x^2=0\\geq0$$"
                 },
                 {
                   "title": "Caso x>0",
                   "text": "Multiplicamos x>0 por sí mismo (compatibilidad del producto con c=x>0), obteniendo x²>0.",
                   "icon": "fx",
-                  "mathContent": "x>0 \\Rightarrow x^2>0"
+                  "mathContent": "$$x>0 \\Rightarrow x^2>0$$"
                 },
                 {
                   "title": "Caso x<0",
                   "text": "Aquí -x>0, y por el caso anterior (-x)²>0; como (-x)²=x², concluimos que x²>0 también en este caso.",
                   "icon": "fx",
-                  "mathContent": "x<0 \\Rightarrow (-x)^2=x^2>0"
+                  "mathContent": "$$x<0 \\Rightarrow (-x)^2=x^2>0$$"
                 },
                 {
                   "title": "Conclusión",
                   "text": "En los tres casos posibles, x²≥0, quedando demostrado para todo x real.",
                   "icon": "star",
-                  "mathContent": "x^2\\geq0 \\;\\forall x\\in\\mathbb{R}"
+                  "mathContent": "$$x^2\\geq0 \\;\\forall x\\in\\mathbb{R}$$"
                 }
               ]
             }
@@ -872,13 +872,13 @@
         {
           "title": "Notación de Intervalos y su Relación con las Desigualdades",
           "subtitle": "Desigualdades • Notación de Intervalos",
-          "content": "La notación de intervalos resume de forma compacta el conjunto de números reales que satisfacen una desigualdad, y se corresponde directamente con los conectores lógicos: una desigualdad compuesta como $-2<x<5$ es, en realidad, la conjunción $(x>-2)\\wedge(x<5)$.",
+          "content": "La notación de intervalos resume de forma compacta el conjunto de números reales que satisfacen una desigualdad, y se corresponde directamente con los conectores lógicos: una desigualdad compuesta como $$-2<x<5$$ es, en realidad, la conjunción $$(x>-2)\\wedge(x<5)$$.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "text",
-              "content": "Notación de intervalos y su forma algebraica: $(a,b)=\\{x\\in\\mathbb{R}: a<x \\wedge x<b\\}$; $[a,b]=\\{x\\in\\mathbb{R}: a\\leq x\\wedge x\\leq b\\}$; $(a,\\infty)=\\{x\\in\\mathbb{R}:x>a\\}$; $(-\\infty,b]=\\{x\\in\\mathbb{R}:x\\leq b\\}$."
+              "content": "Notación de intervalos y su forma algebraica: $$(a,b)=\\{x\\in\\mathbb{R}: a<x \\wedge x<b\\}$$; $$[a,b]=\\{x\\in\\mathbb{R}: a\\leq x\\wedge x\\leq b\\}$$; $$(a,\\infty)=\\{x\\in\\mathbb{R}:x>a\\}$$; $$(-\\infty,b]=\\{x\\in\\mathbb{R}:x\\leq b\\}$$."
             }
           ]
         }
@@ -895,31 +895,31 @@
         {
           "title": "Desigualdades como Proposiciones Abiertas",
           "subtitle": "Desigualdades • Proposiciones Abiertas",
-          "content": "Una desigualdad como $2x+3>7$ es una proposición abierta P(x): no tiene un valor de verdad fijo hasta que se sustituye un valor específico de x. 'Resolver' la desigualdad significa hallar el conjunto de verdad de esa proposición abierta: el conjunto de todos los valores de x para los cuales P(x) es verdadera.",
+          "content": "Una desigualdad como $$2x+3>7$$ es una proposición abierta P(x): no tiene un valor de verdad fijo hasta que se sustituye un valor específico de x. 'Resolver' la desigualdad significa hallar el conjunto de verdad de esa proposición abierta: el conjunto de todos los valores de x para los cuales P(x) es verdadera.",
           "formulaLatex": "",
           "proTip": "Pensar en una desigualdad como una proposición abierta ayuda a entender por qué la solución de una desigualdad compuesta, como −2<x<5, es la intersección de dos conjuntos de verdad (uno para cada desigualdad simple), y no su unión: se necesita que ambas condiciones sean verdaderas a la vez (conjunción ∧, no disyunción ∨).",
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Interpretar } x-1>0 \\text{ como proposición abierta y hallar su conjunto de verdad}",
+              "content": "$$\\text{Interpretar } x-1>0 \\text{ como proposición abierta y hallar su conjunto de verdad}$$",
               "steps": [
                 {
                   "title": "Define P(x)",
                   "text": "P(x): 'x-1>0'.",
                   "icon": "pin",
-                  "mathContent": "P(x): x-1>0"
+                  "mathContent": "$$P(x): x-1>0$$"
                 },
                 {
                   "title": "Halla para qué x es verdadera",
                   "text": "Despejamos la desigualdad como siempre.",
                   "icon": "fx",
-                  "mathContent": "x>1"
+                  "mathContent": "$$x>1$$"
                 },
                 {
                   "title": "Escribe el conjunto de verdad",
                   "text": "Ese conjunto de soluciones se escribe como un intervalo.",
                   "icon": "star",
-                  "mathContent": "\\{x: P(x)\\}=(1,\\infty)"
+                  "mathContent": "$$\\{x: P(x)\\}=(1,\\infty)$$"
                 }
               ]
             }
@@ -938,34 +938,34 @@
       "challenges": [
         {
           "id": "fd_n1_01",
-          "questionText": "Escribe el intervalo $(-3,4]$ como conjunción de dos desigualdades:",
+          "questionText": "Escribe el intervalo $$(-3,4]$$ como conjunción de dos desigualdades:",
           "questionLatex": "",
           "options": [
-            "x>-3 \\;\\wedge\\; x\\leq4",
-            "x\\geq-3 \\;\\wedge\\; x<4",
-            "x>-3 \\;\\vee\\; x\\leq4",
-            "x<-3 \\;\\wedge\\; x\\geq4"
+            "$$x>-3 \\;\\wedge\\; x\\leq4$$",
+            "$$x\\geq-3 \\;\\wedge\\; x<4$$",
+            "$$x>-3 \\;\\vee\\; x\\leq4$$",
+            "$$x<-3 \\;\\wedge\\; x\\geq4$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "(-3,4] = \\{x: x>-3 \\wedge x\\leq4\\}",
+          "explanationLatex": "$$(-3,4] = \\{x: x>-3 \\wedge x\\leq4\\}$$",
           "explanationSteps": [
             {
               "title": "Interpreta el paréntesis abierto",
               "text": "El paréntesis en -3 significa que -3 NO se incluye, así que la desigualdad ahí es estricta.",
               "icon": "pin",
-              "mathContent": "x>-3"
+              "mathContent": "$$x>-3$$"
             },
             {
               "title": "Interpreta el corchete cerrado",
               "text": "El corchete en 4 significa que 4 SÍ se incluye.",
               "icon": "fx",
-              "mathContent": "x\\leq4"
+              "mathContent": "$$x\\leq4$$"
             },
             {
               "title": "Combina con conjunción",
               "text": "Ambas condiciones deben cumplirse a la vez, así que se unen con ∧, no con ∨.",
               "icon": "star",
-              "mathContent": "x>-3 \\wedge x\\leq4"
+              "mathContent": "$$x>-3 \\wedge x\\leq4$$"
             }
           ],
           "category": "Fundamento Lógico de las Desigualdades",
@@ -973,40 +973,40 @@
         },
         {
           "id": "fd_n1_02",
-          "questionText": "Demuestra que si $a>0$, entonces $-a<0$ (usa los axiomas de orden):",
+          "questionText": "Demuestra que si $$a>0$$, entonces $$-a<0$$ (usa los axiomas de orden):",
           "questionLatex": "",
           "options": [
-            "Sumando -a a ambos lados de a>0 se obtiene 0>-a, es decir, -a<0",
-            "Se sigue directamente de la tricotomía sin más pasos",
-            "Multiplicando por -1 sin cambiar la desigualdad",
-            "No se puede demostrar con los axiomas de orden"
+            "$$Sumando -a a ambos lados de a>0 se obtiene 0>-a, es decir, -a<0$$",
+            "$$Se sigue directamente de la tricotomía sin más pasos$$",
+            "$$Multiplicando por -1 sin cambiar la desigualdad$$",
+            "$$No se puede demostrar con los axiomas de orden$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "-a<0, \\text{ sumando } -a \\text{ a ambos lados de } a>0",
+          "explanationLatex": "$$-a<0, \\text{ sumando } -a \\text{ a ambos lados de } a>0$$",
           "explanationSteps": [
             {
               "title": "Parte de la hipótesis",
               "text": "Sabemos que a>0.",
               "icon": "pin",
-              "mathContent": "a>0"
+              "mathContent": "$$a>0$$"
             },
             {
               "title": "Suma -a a ambos lados",
               "text": "Usamos la compatibilidad de la desigualdad con la suma.",
               "icon": "fx",
-              "mathContent": "a+(-a) > 0+(-a)"
+              "mathContent": "$$a+(-a) > 0+(-a)$$"
             },
             {
               "title": "Simplifica ambos lados",
               "text": "El lado izquierdo se cancela a 0, y el derecho queda como -a.",
               "icon": "fx",
-              "mathContent": "0 > -a"
+              "mathContent": "$$0 > -a$$"
             },
             {
               "title": "Reescribe el resultado",
               "text": "Decir '0>-a' es lo mismo que decir '-a<0'.",
               "icon": "star",
-              "mathContent": "-a<0"
+              "mathContent": "$$-a<0$$"
             }
           ],
           "category": "Fundamento Lógico de las Desigualdades",
@@ -1014,34 +1014,34 @@
         },
         {
           "id": "fd_n1_03",
-          "questionText": "Escribe $2\\leq x<6$ en notación de intervalo:",
+          "questionText": "Escribe $$2\\leq x<6$$ en notación de intervalo:",
           "questionLatex": "",
           "options": [
-            "[2,6)",
-            "(2,6]",
-            "[2,6]",
-            "(2,6)"
+            "$$[2,6)$$",
+            "$$(2,6]$$",
+            "$$[2,6]$$",
+            "$$(2,6)$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "2\\leq x<6 \\;\\Leftrightarrow\\; [2,6)",
+          "explanationLatex": "$$2\\leq x<6 \\;\\Leftrightarrow\\; [2,6)$$",
           "explanationSteps": [
             {
               "title": "Analiza el límite izquierdo",
               "text": "El símbolo ≤ significa que 2 sí se incluye, así que va con corchete.",
               "icon": "pin",
-              "mathContent": "[2,\\ldots"
+              "mathContent": "$$[2,\\ldots$$"
             },
             {
               "title": "Analiza el límite derecho",
               "text": "El símbolo < significa que 6 no se incluye, así que va con paréntesis.",
               "icon": "fx",
-              "mathContent": "\\ldots,6)"
+              "mathContent": "$$\\ldots,6)$$"
             },
             {
               "title": "Combina",
               "text": "Juntamos ambos extremos en la notación de intervalo.",
               "icon": "star",
-              "mathContent": "[2,6)"
+              "mathContent": "$$[2,6)$$"
             }
           ],
           "category": "Fundamento Lógico de las Desigualdades",
@@ -1059,40 +1059,40 @@
       "challenges": [
         {
           "id": "fd_n2_01",
-          "questionText": "Demuestra que si $a<b$ y $c>0$, entonces $a/c<b/c$:",
+          "questionText": "Demuestra que si $$a<b$$ y $$c>0$$, entonces $$a/c<b/c$$:",
           "questionLatex": "",
           "options": [
-            "Como c>0, también 1/c>0; multiplicando a<b por 1/c (compatibilidad del producto con positivos) se obtiene a/c<b/c",
-            "Se sigue directamente sin necesitar que c sea positivo",
-            "Se demuestra dividiendo ambos lados entre a",
-            "No se puede demostrar en general"
+            "$$Como c>0, también 1/c>0; multiplicando a<b por 1/c (compatibilidad del producto con positivos) se obtiene a/c<b/c$$",
+            "$$Se sigue directamente sin necesitar que c sea positivo$$",
+            "$$Se demuestra dividiendo ambos lados entre a$$",
+            "$$No se puede demostrar en general$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "a/c<b/c, \\text{ porque } 1/c>0",
+          "explanationLatex": "$$a/c<b/c, \\text{ porque } 1/c>0$$",
           "explanationSteps": [
             {
               "title": "Reescribe la división como multiplicación",
               "text": "Dividir entre c es lo mismo que multiplicar por su recíproco 1/c.",
               "icon": "pin",
-              "mathContent": "a/c = a\\cdot(1/c), \\;b/c=b\\cdot(1/c)"
+              "mathContent": "$$a/c = a\\cdot(1/c), \\;b/c=b\\cdot(1/c)$$"
             },
             {
               "title": "Verifica el signo del recíproco",
               "text": "Como c>0, su recíproco 1/c también es positivo.",
               "icon": "fx",
-              "mathContent": "c>0 \\Rightarrow 1/c>0"
+              "mathContent": "$$c>0 \\Rightarrow 1/c>0$$"
             },
             {
               "title": "Aplica compatibilidad del producto",
               "text": "Multiplicar ambos lados de a<b por un número positivo (1/c) preserva el sentido de la desigualdad.",
               "icon": "fx",
-              "mathContent": "a\\cdot(1/c) < b\\cdot(1/c)"
+              "mathContent": "$$a\\cdot(1/c) < b\\cdot(1/c)$$"
             },
             {
               "title": "Conclusión",
               "text": "Esto es exactamente a/c<b/c.",
               "icon": "star",
-              "mathContent": "a/c<b/c"
+              "mathContent": "$$a/c<b/c$$"
             }
           ],
           "category": "Fundamento Lógico de las Desigualdades",
@@ -1103,37 +1103,37 @@
           "questionText": "¿Es cierta la propiedad 'a<b implica a³<b³' para todo a,b reales (sin restricción de signo)?",
           "questionLatex": "",
           "options": [
-            "Sí, es cierta para todo a,b reales, a diferencia de a²<b²",
-            "No, falla igual que con los cuadrados",
-            "Solo es cierta si ambos son positivos",
-            "Solo es cierta si ambos son negativos"
+            "$$Sí, es cierta para todo a,b reales, a diferencia de a²<b²$$",
+            "$$No, falla igual que con los cuadrados$$",
+            "$$Solo es cierta si ambos son positivos$$",
+            "$$Solo es cierta si ambos son negativos$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\text{Cierta para todo } a,b \\text{ reales}",
+          "explanationLatex": "$$\\text{Cierta para todo } a,b \\text{ reales}$$",
           "explanationSteps": [
             {
               "title": "Recuerda por qué falla con cuadrados",
               "text": "El problema con a²<b² es que elevar al cuadrado 'olvida' el signo (por ejemplo, -3 y 1).",
               "icon": "pin",
-              "mathContent": "(-3)^2=9>1^2"
+              "mathContent": "$$(-3)^2=9>1^2$$"
             },
             {
               "title": "Piensa en la función cúbica",
               "text": "A diferencia de x², la función x³ es estrictamente creciente en TODOS los reales, sin excepción: nunca 'pliega' el orden.",
               "icon": "fx",
-              "mathContent": "x^3 \\text{ es estrictamente creciente en } \\mathbb{R}"
+              "mathContent": "$$x^3 \\text{ es estrictamente creciente en } \\mathbb{R}$$"
             },
             {
               "title": "Verifica con un ejemplo de signos mixtos",
               "text": "Prueba con -2 y 1: -2<1, y en efecto (-2)³=-8<1=1³.",
               "icon": "chart",
-              "mathContent": "-2<1 \\Rightarrow -8<1"
+              "mathContent": "$$-2<1 \\Rightarrow -8<1$$"
             },
             {
               "title": "Conclusión",
               "text": "La propiedad sí se cumple para todo a,b reales, sin necesitar positividad.",
               "icon": "star",
-              "mathContent": "\\text{Cierta para todo } a,b\\in\\mathbb{R}"
+              "mathContent": "$$\\text{Cierta para todo } a,b\\in\\mathbb{R}$$"
             }
           ],
           "category": "Fundamento Lógico de las Desigualdades",
@@ -1141,34 +1141,34 @@
         },
         {
           "id": "fd_n2_03",
-          "questionText": "Interpreta $|x|<3$ como una conjunción de dos desigualdades simples:",
+          "questionText": "Interpreta $$|x|<3$$ como una conjunción de dos desigualdades simples:",
           "questionLatex": "",
           "options": [
-            "x<3 \\;\\wedge\\; x>-3",
-            "x<3 \\;\\vee\\; x>-3",
-            "x<3 \\;\\wedge\\; x<-3",
-            "x>3 \\;\\wedge\\; x<-3"
+            "$$x<3 \\;\\wedge\\; x>-3$$",
+            "$$x<3 \\;\\vee\\; x>-3$$",
+            "$$x<3 \\;\\wedge\\; x<-3$$",
+            "$$x>3 \\;\\wedge\\; x<-3$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "|x|<3 \\;\\Leftrightarrow\\; x<3 \\wedge x>-3",
+          "explanationLatex": "$$|x|<3 \\;\\Leftrightarrow\\; x<3 \\wedge x>-3$$",
           "explanationSteps": [
             {
               "title": "Piensa en |x| como distancia",
               "text": "|x|<3 dice que la distancia entre x y 0 es menor que 3.",
               "icon": "pin",
-              "mathContent": "|x|<3"
+              "mathContent": "$$|x|<3$$"
             },
             {
               "title": "Traduce esa distancia a dos condiciones",
               "text": "Estar a menos de 3 unidades del cero significa estar por debajo de 3 Y por encima de -3 al mismo tiempo.",
               "icon": "fx",
-              "mathContent": "x<3 \\;\\wedge\\; x>-3"
+              "mathContent": "$$x<3 \\;\\wedge\\; x>-3$$"
             },
             {
               "title": "Confirma que es conjunción, no disyunción",
               "text": "Ambas condiciones deben cumplirse simultáneamente, por eso es ∧ y no ∨.",
               "icon": "star",
-              "mathContent": "-3<x<3"
+              "mathContent": "$$-3<x<3$$"
             }
           ],
           "category": "Fundamento Lógico de las Desigualdades",
@@ -1186,34 +1186,34 @@
       "challenges": [
         {
           "id": "fd_n3_01",
-          "questionText": "Demuestra que para todo $a,b$ reales, $a^2+b^2\\geq2ab$:",
+          "questionText": "Demuestra que para todo $$a,b$$ reales, $$a^2+b^2\\geq2ab$$:",
           "questionLatex": "",
           "options": [
-            "Partiendo de $(a-b)^2\\geq0$ y expandiendo, se llega directamente al resultado",
-            "Se demuestra dividiendo entre a y b",
-            "Solo es cierto si a y b son positivos",
-            "No se puede demostrar en general"
+            "$$Partiendo de (a-b)^2\\geq0 y expandiendo, se llega directamente al resultado$$",
+            "$$Se demuestra dividiendo entre a y b$$",
+            "$$Solo es cierto si a y b son positivos$$",
+            "$$No se puede demostrar en general$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "a^2+b^2\\geq2ab, \\text{ desde } (a-b)^2\\geq0",
+          "explanationLatex": "$$a^2+b^2\\geq2ab, \\text{ desde } (a-b)^2\\geq0$$",
           "explanationSteps": [
             {
               "title": "Parte de un cuadrado, que siempre es no negativo",
               "text": "Sabemos, por el resultado general, que cualquier cuadrado es ≥0.",
               "icon": "pin",
-              "mathContent": "(a-b)^2\\geq0"
+              "mathContent": "$$(a-b)^2\\geq0$$"
             },
             {
               "title": "Expande el binomio al cuadrado",
               "text": "Desarrollamos (a-b)² usando el producto notable.",
               "icon": "fx",
-              "mathContent": "a^2-2ab+b^2\\geq0"
+              "mathContent": "$$a^2-2ab+b^2\\geq0$$"
             },
             {
               "title": "Despeja el término cruzado",
               "text": "Sumamos 2ab a ambos lados.",
               "icon": "star",
-              "mathContent": "a^2+b^2\\geq2ab"
+              "mathContent": "$$a^2+b^2\\geq2ab$$"
             }
           ],
           "category": "Fundamento Lógico de las Desigualdades",
@@ -1221,34 +1221,34 @@
         },
         {
           "id": "fd_n3_02",
-          "questionText": "Demuestra que si $0<a<b$, entonces $a^2<ab<b^2$:",
+          "questionText": "Demuestra que si $$0<a<b$$, entonces $$a^2<ab<b^2$$:",
           "questionLatex": "",
           "options": [
-            "Multiplicando a<b por a>0 se obtiene a²<ab; multiplicando a<b por b>0 se obtiene ab<b²",
-            "Se sigue directamente de que a<b sin más pasos",
-            "Solo se puede probar una de las dos desigualdades",
-            "Se necesita que a y b sean negativos"
+            "$$Multiplicando a<b por a>0 se obtiene a²<ab; multiplicando a<b por b>0 se obtiene ab<b²$$",
+            "$$Se sigue directamente de que a<b sin más pasos$$",
+            "$$Solo se puede probar una de las dos desigualdades$$",
+            "$$Se necesita que a y b sean negativos$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "a^2<ab<b^2",
+          "explanationLatex": "$$a^2<ab<b^2$$",
           "explanationSteps": [
             {
               "title": "Multiplica por a (positivo)",
               "text": "Como a>0, multiplicar ambos lados de a<b por a preserva el sentido de la desigualdad.",
               "icon": "pin",
-              "mathContent": "a\\cdot a < a\\cdot b \\Rightarrow a^2<ab"
+              "mathContent": "$$a\\cdot a < a\\cdot b \\Rightarrow a^2<ab$$"
             },
             {
               "title": "Multiplica por b (positivo)",
               "text": "De manera similar, como b>0, multiplicamos a<b por b.",
               "icon": "fx",
-              "mathContent": "a\\cdot b < b\\cdot b \\Rightarrow ab<b^2"
+              "mathContent": "$$a\\cdot b < b\\cdot b \\Rightarrow ab<b^2$$"
             },
             {
               "title": "Une ambos resultados",
               "text": "Encadenamos las dos desigualdades obtenidas.",
               "icon": "star",
-              "mathContent": "a^2<ab<b^2"
+              "mathContent": "$$a^2<ab<b^2$$"
             }
           ],
           "category": "Fundamento Lógico de las Desigualdades",
@@ -1259,25 +1259,25 @@
           "questionText": "Escribe con cuantificadores 'todo número real tiene un cuadrado no negativo', y su negación:",
           "questionLatex": "",
           "options": [
-            "\\forall x\\in\\mathbb{R}, x^2\\geq0; \\;\\text{negación: } \\exists x\\in\\mathbb{R}, x^2<0",
-            "\\exists x\\in\\mathbb{R}, x^2\\geq0; \\;\\text{negación: } \\forall x, x^2<0",
-            "\\forall x\\in\\mathbb{R}, x^2>0; \\;\\text{negación: } \\exists x, x^2\\leq0",
-            "\\forall x\\in\\mathbb{R}, x^2\\geq0; \\;\\text{negación: } \\forall x, x^2<0"
+            "$$\\forall x\\in\\mathbb{R}, x^2\\geq0; \\;\\text{negación: } \\exists x\\in\\mathbb{R}, x^2<0$$",
+            "$$\\exists x\\in\\mathbb{R}, x^2\\geq0; \\;\\text{negación: } \\forall x, x^2<0$$",
+            "$$\\forall x\\in\\mathbb{R}, x^2>0; \\;\\text{negación: } \\exists x, x^2\\leq0$$",
+            "$$\\forall x\\in\\mathbb{R}, x^2\\geq0; \\;\\text{negación: } \\forall x, x^2<0$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\forall x, x^2\\geq0; \\;\\neg: \\exists x, x^2<0",
+          "explanationLatex": "$$\\forall x, x^2\\geq0; \\;\\neg: \\exists x, x^2<0$$",
           "explanationSteps": [
             {
               "title": "Escribe la proposición original",
               "text": "'Todo' se traduce como el cuantificador universal.",
               "icon": "pin",
-              "mathContent": "\\forall x\\in\\mathbb{R},\\; x^2\\geq0"
+              "mathContent": "$$\\forall x\\in\\mathbb{R},\\; x^2\\geq0$$"
             },
             {
               "title": "Aplica la regla de negación",
               "text": "Negar un 'para todo' da un 'existe', y se niega la desigualdad interna (≥ se vuelve <).",
               "icon": "fx",
-              "mathContent": "\\exists x\\in\\mathbb{R},\\; x^2<0"
+              "mathContent": "$$\\exists x\\in\\mathbb{R},\\; x^2<0$$"
             }
           ],
           "category": "Fundamento Lógico de las Desigualdades",
@@ -1295,7 +1295,7 @@
       "challenges": [
         {
           "id": "tf_fd_01",
-          "questionText": "Si $a<b$ y $c>0$, entonces $ac<bc$.",
+          "questionText": "Si $$a<b$$ y $$c>0$$, entonces $$ac<bc$$.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -1308,7 +1308,7 @@
         },
         {
           "id": "tf_fd_02",
-          "questionText": "$x^2\\geq0$ es cierto solo quando x es positivo.",
+          "questionText": "$$x^2\\geq0$$ es cierto solo quando x es positivo.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -1321,7 +1321,7 @@
         },
         {
           "id": "tf_fd_03",
-          "questionText": "La desigualdad compuesta $-2<x<5$ es lógicamente una conjunción, no una disyunción.",
+          "questionText": "La desigualdad compuesta $$-2<x<5$$ es lógicamente una conjunción, no una disyunción.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -1334,7 +1334,7 @@
         },
         {
           "id": "tf_fd_04",
-          "questionText": "Si $a<b$, entonces siempre $a^2<b^2$, sin importar los signos.",
+          "questionText": "Si $$a<b$$, entonces siempre $$a^2<b^2$$, sin importar los signos.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -1370,31 +1370,31 @@
         {
           "title": "Desigualdades Lineales: Método General",
           "subtitle": "Desigualdades • Método General",
-          "content": "Una desigualdad lineal tiene la incógnita elevada a la primera potencia, de la forma $ax+b<c$ (o con >, ≤, ≥). Se resuelve aplicando las mismas propiedades algebraicas demostradas en el capítulo anterior: sumar o restar el mismo número en ambos lados no cambia el sentido de la desigualdad, pero multiplicar o dividir por un número negativo sí lo invierte.",
+          "content": "Una desigualdad lineal tiene la incógnita elevada a la primera potencia, de la forma $$ax+b<c$$ (o con >, ≤, ≥). Se resuelve aplicando las mismas propiedades algebraicas demostradas en el capítulo anterior: sumar o restar el mismo número en ambos lados no cambia el sentido de la desigualdad, pero multiplicar o dividir por un número negativo sí lo invierte.",
           "formulaLatex": "",
           "proTip": "Recuerda siempre: sumar o restar nunca invierte el sentido de la desigualdad, pero multiplicar o dividir por un número negativo sí lo hace. Es el error de signo más común en todo este tema.",
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver } -3x+5\\leq11",
+              "content": "$$\\text{Resolver } -3x+5\\leq11$$",
               "steps": [
                 {
                   "title": "Aísla el término con x",
                   "text": "Restamos 5 en ambos lados.",
                   "icon": "pin",
-                  "mathContent": "-3x \\leq 6"
+                  "mathContent": "$$-3x \\leq 6$$"
                 },
                 {
                   "title": "Divide entre -3, invirtiendo el sentido",
                   "text": "Como dividimos entre un número negativo, la desigualdad cambia de dirección.",
                   "icon": "fx",
-                  "mathContent": "x \\geq -2"
+                  "mathContent": "$$x \\geq -2$$"
                 },
                 {
                   "title": "Escribe la solución",
                   "text": "El conjunto solución en notación de intervalo.",
                   "icon": "star",
-                  "mathContent": "[-2,\\infty)"
+                  "mathContent": "$$[-2,\\infty)$$"
                 }
               ]
             }
@@ -1409,31 +1409,31 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver } \\frac{2x-1}{3}-1 > \\frac{x+2}{6}",
+              "content": "$$\\text{Resolver } \\frac{2x-1}{3}-1 > \\frac{x+2}{6}$$",
               "steps": [
                 {
                   "title": "Elimina denominadores",
                   "text": "Multiplicamos todo por 6 (el mínimo común múltiplo de 3 y 6, que es positivo, así que no se invierte el signo).",
                   "icon": "pin",
-                  "mathContent": "2(2x-1)-6 > x+2"
+                  "mathContent": "$$2(2x-1)-6 > x+2$$"
                 },
                 {
                   "title": "Distribuye y simplifica",
                   "text": "Expandimos el paréntesis y agrupamos términos.",
                   "icon": "fx",
-                  "mathContent": "4x-2-6 > x+2 \\Rightarrow 4x-8>x+2"
+                  "mathContent": "$$4x-2-6 > x+2 \\Rightarrow 4x-8>x+2$$"
                 },
                 {
                   "title": "Agrupa las x de un lado",
                   "text": "Restamos x y sumamos 8 en ambos lados.",
                   "icon": "fx",
-                  "mathContent": "3x>10"
+                  "mathContent": "$$3x>10$$"
                 },
                 {
                   "title": "Despeja x",
                   "text": "Dividimos entre 3 (positivo, no se invierte).",
                   "icon": "star",
-                  "mathContent": "x>\\frac{10}{3}"
+                  "mathContent": "$$x>\\frac{10}{3}$$"
                 }
               ]
             }
@@ -1452,31 +1452,31 @@
         {
           "title": "Desigualdades Compuestas (Dobles)",
           "subtitle": "Desigualdades • Desigualdades Dobles",
-          "content": "Una desigualdad compuesta expresa una condición doble sobre la misma expresión, como $a<mx+b<c$. Se resuelve operando simultáneamente en los tres miembros, tal como corresponde a una conjunción lógica.",
+          "content": "Una desigualdad compuesta expresa una condición doble sobre la misma expresión, como $$a<mx+b<c$$. Se resuelve operando simultáneamente en los tres miembros, tal como corresponde a una conjunción lógica.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver } -5\\leq3x+1<10",
+              "content": "$$\\text{Resolver } -5\\leq3x+1<10$$",
               "steps": [
                 {
                   "title": "Resta 1 en los tres miembros",
                   "text": "Aplicamos la misma operación a los tres 'lados' de la desigualdad doble.",
                   "icon": "pin",
-                  "mathContent": "-6\\leq3x<9"
+                  "mathContent": "$$-6\\leq3x<9$$"
                 },
                 {
                   "title": "Divide entre 3 en los tres miembros",
                   "text": "Como 3 es positivo, no se invierte ningún signo.",
                   "icon": "fx",
-                  "mathContent": "-2\\leq x<3"
+                  "mathContent": "$$-2\\leq x<3$$"
                 },
                 {
                   "title": "Escribe la solución",
                   "text": "El resultado en notación de intervalo.",
                   "icon": "star",
-                  "mathContent": "[-2,3)"
+                  "mathContent": "$$[-2,3)$$"
                 }
               ]
             }
@@ -1491,25 +1491,25 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Una renta cuesta 5 dólares fijos más 2 por hora. ¿Hasta cuántas horas el costo no supera 25 dólares?}",
+              "content": "$$\\text{Una renta cuesta 5 dólares fijos más 2 por hora. ¿Hasta cuántas horas el costo no supera 25 dólares?}$$",
               "steps": [
                 {
                   "title": "Traduce a una desigualdad",
                   "text": "Sea x el número de horas; el costo total es 5+2x, y queremos que no supere 25.",
                   "icon": "pin",
-                  "mathContent": "5+2x\\leq25"
+                  "mathContent": "$$5+2x\\leq25$$"
                 },
                 {
                   "title": "Resuelve",
                   "text": "Restamos 5 y dividimos entre 2.",
                   "icon": "fx",
-                  "mathContent": "2x\\leq20 \\Rightarrow x\\leq10"
+                  "mathContent": "$$2x\\leq20 \\Rightarrow x\\leq10$$"
                 },
                 {
                   "title": "Interpreta en contexto",
                   "text": "Como x representa horas, también necesitamos x≥0. La bicicleta puede rentarse hasta 10 horas.",
                   "icon": "star",
-                  "mathContent": "0\\leq x\\leq10"
+                  "mathContent": "$$0\\leq x\\leq10$$"
                 }
               ]
             },
@@ -1533,27 +1533,27 @@
         {
           "id": "dl_n1_01",
           "questionText": "Resuelve:",
-          "questionLatex": "2x-5>9",
+          "questionLatex": "$$2x-5>9$$",
           "options": [
-            "(7,\\infty)",
-            "[7,\\infty)",
-            "(-\\infty,7)",
-            "(9,\\infty)"
+            "$$(7,\\infty)$$",
+            "$$[7,\\infty)$$",
+            "$$(-\\infty,7)$$",
+            "$$(9,\\infty)$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "x>7 \\Rightarrow (7,\\infty)",
+          "explanationLatex": "$$x>7 \\Rightarrow (7,\\infty)$$",
           "explanationSteps": [
             {
               "title": "Aísla el término con x",
               "text": "Sumamos 5 en ambos lados.",
               "icon": "pin",
-              "mathContent": "2x>14"
+              "mathContent": "$$2x>14$$"
             },
             {
               "title": "Despeja x",
               "text": "Dividimos entre 2 (positivo, no se invierte).",
               "icon": "star",
-              "mathContent": "x>7"
+              "mathContent": "$$x>7$$"
             }
           ],
           "category": "Desigualdades Lineales y Compuestas",
@@ -1562,27 +1562,27 @@
         {
           "id": "dl_n1_02",
           "questionText": "Resuelve:",
-          "questionLatex": "-4x+1\\leq13",
+          "questionLatex": "$$-4x+1\\leq13$$",
           "options": [
-            "[-3,\\infty)",
-            "(-3,\\infty)",
-            "(-\\infty,-3]",
-            "[3,\\infty)"
+            "$$[-3,\\infty)$$",
+            "$$(-3,\\infty)$$",
+            "$$(-\\infty,-3]$$",
+            "$$[3,\\infty)$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "x\\geq-3 \\Rightarrow [-3,\\infty)",
+          "explanationLatex": "$$x\\geq-3 \\Rightarrow [-3,\\infty)$$",
           "explanationSteps": [
             {
               "title": "Aísla el término con x",
               "text": "Restamos 1 en ambos lados.",
               "icon": "pin",
-              "mathContent": "-4x\\leq12"
+              "mathContent": "$$-4x\\leq12$$"
             },
             {
               "title": "Divide entre -4, invirtiendo el sentido",
               "text": "Como dividimos entre un negativo, la desigualdad cambia de dirección.",
               "icon": "star",
-              "mathContent": "x\\geq-3"
+              "mathContent": "$$x\\geq-3$$"
             }
           ],
           "category": "Desigualdades Lineales y Compuestas",
@@ -1591,27 +1591,27 @@
         {
           "id": "dl_n1_03",
           "questionText": "Resuelve:",
-          "questionLatex": "3(x-2)<12",
+          "questionLatex": "$$3(x-2)<12$$",
           "options": [
-            "(-\\infty,6)",
-            "(-\\infty,6]",
-            "(6,\\infty)",
-            "(-\\infty,4)"
+            "$$(-\\infty,6)$$",
+            "$$(-\\infty,6]$$",
+            "$$(6,\\infty)$$",
+            "$$(-\\infty,4)$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "x<6 \\Rightarrow (-\\infty,6)",
+          "explanationLatex": "$$x<6 \\Rightarrow (-\\infty,6)$$",
           "explanationSteps": [
             {
               "title": "Distribuye el 3",
               "text": "Expandimos el paréntesis.",
               "icon": "pin",
-              "mathContent": "3x-6<12"
+              "mathContent": "$$3x-6<12$$"
             },
             {
               "title": "Aísla x",
               "text": "Sumamos 6 y dividimos entre 3.",
               "icon": "star",
-              "mathContent": "3x<18 \\Rightarrow x<6"
+              "mathContent": "$$3x<18 \\Rightarrow x<6$$"
             }
           ],
           "category": "Desigualdades Lineales y Compuestas",
@@ -1630,33 +1630,33 @@
         {
           "id": "dl_n2_01",
           "questionText": "Resuelve:",
-          "questionLatex": "\\frac{x+1}{2}-3\\geq\\frac{x-2}{4}",
+          "questionLatex": "$$\\frac{x+1}{2}-3\\geq\\frac{x-2}{4}$$",
           "options": [
-            "[8,\\infty)",
-            "(-\\infty,8]",
-            "[4,\\infty)",
-            "[-8,\\infty)"
+            "$$[8,\\infty)$$",
+            "$$(-\\infty,8]$$",
+            "$$[4,\\infty)$$",
+            "$$[-8,\\infty)$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "x\\geq8 \\Rightarrow [8,\\infty)",
+          "explanationLatex": "$$x\\geq8 \\Rightarrow [8,\\infty)$$",
           "explanationSteps": [
             {
               "title": "Elimina denominadores",
               "text": "Multiplicamos toda la desigualdad por 4 (mínimo común múltiplo de 2 y 4).",
               "icon": "pin",
-              "mathContent": "2(x+1)-12 \\geq x-2"
+              "mathContent": "$$2(x+1)-12 \\geq x-2$$"
             },
             {
               "title": "Distribuye y simplifica",
               "text": "Expandimos y agrupamos.",
               "icon": "fx",
-              "mathContent": "2x+2-12\\geq x-2 \\Rightarrow 2x-10\\geq x-2"
+              "mathContent": "$$2x+2-12\\geq x-2 \\Rightarrow 2x-10\\geq x-2$$"
             },
             {
               "title": "Despeja x",
               "text": "Restamos x y sumamos 10 en ambos lados.",
               "icon": "star",
-              "mathContent": "x\\geq8"
+              "mathContent": "$$x\\geq8$$"
             }
           ],
           "category": "Desigualdades Lineales y Compuestas",
@@ -1665,27 +1665,27 @@
         {
           "id": "dl_n2_02",
           "questionText": "Resuelve la desigualdad compuesta:",
-          "questionLatex": "-7<2x+3\\leq9",
+          "questionLatex": "$$-7<2x+3\\leq9$$",
           "options": [
-            "(-5,3]",
-            "[-5,3)",
-            "(-5,3)",
-            "(5,3]"
+            "$$(-5,3]$$",
+            "$$[-5,3)$$",
+            "$$(-5,3)$$",
+            "$$(5,3]$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "-5<x\\leq3 \\Rightarrow (-5,3]",
+          "explanationLatex": "$$-5<x\\leq3 \\Rightarrow (-5,3]$$",
           "explanationSteps": [
             {
               "title": "Resta 3 en los tres miembros",
               "text": "Aplicamos la misma operación a toda la desigualdad doble.",
               "icon": "pin",
-              "mathContent": "-10<2x\\leq6"
+              "mathContent": "$$-10<2x\\leq6$$"
             },
             {
               "title": "Divide entre 2 en los tres miembros",
               "text": "Como 2 es positivo, no se invierte ningún signo.",
               "icon": "star",
-              "mathContent": "-5<x\\leq3"
+              "mathContent": "$$-5<x\\leq3$$"
             }
           ],
           "category": "Desigualdades Lineales y Compuestas",
@@ -1696,31 +1696,31 @@
           "questionText": "Una tienda vende camisetas a 15 dólares cada una, con envío fijo de 8 dólares. ¿Cuántas camisetas se pueden comprar con 100 dólares?",
           "questionLatex": "",
           "options": [
-            "6 camisetas",
-            "7 camisetas",
-            "5 camisetas",
-            "92 camisetas"
+            "$$6 camisetas$$",
+            "$$7 camisetas$$",
+            "$$5 camisetas$$",
+            "$$92 camisetas$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "n\\leq6.13\\ldots \\Rightarrow 6 \\text{ camisetas (entero)}",
+          "explanationLatex": "$$n\\leq6.13\\ldots \\Rightarrow 6 \\text{ camisetas (entero)}$$",
           "explanationSteps": [
             {
               "title": "Plantea la desigualdad",
               "text": "Sea n el número de camisetas; el costo total es 15n+8, y no debe superar 100.",
               "icon": "pin",
-              "mathContent": "15n+8\\leq100"
+              "mathContent": "$$15n+8\\leq100$$"
             },
             {
               "title": "Despeja n",
               "text": "Restamos 8 y dividimos entre 15.",
               "icon": "fx",
-              "mathContent": "15n\\leq92 \\Rightarrow n\\leq\\frac{92}{15}\\approx6.13"
+              "mathContent": "$$15n\\leq92 \\Rightarrow n\\leq\\frac{92}{15}\\approx6.13$$"
             },
             {
               "title": "Interpreta en contexto",
               "text": "Como n debe ser un número entero de camisetas, redondeamos hacia abajo.",
               "icon": "star",
-              "mathContent": "n\\leq6 \\text{ (entero)}"
+              "mathContent": "$$n\\leq6 \\text{ (entero)}$$"
             }
           ],
           "category": "Desigualdades Lineales y Compuestas",
@@ -1739,39 +1739,39 @@
         {
           "id": "dl_n3_01",
           "questionText": "Resuelve, verificando con un valor de prueba:",
-          "questionLatex": "5-2(x+1)\\geq3x-7",
+          "questionLatex": "$$5-2(x+1)\\geq3x-7$$",
           "options": [
-            "(-\\infty,2]",
-            "[2,\\infty)",
-            "(-\\infty,2)",
-            "(-\\infty,-2]"
+            "$$(-\\infty,2]$$",
+            "$$[2,\\infty)$$",
+            "$$(-\\infty,2)$$",
+            "$$(-\\infty,-2]$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "x\\leq2 \\Rightarrow (-\\infty,2]",
+          "explanationLatex": "$$x\\leq2 \\Rightarrow (-\\infty,2]$$",
           "explanationSteps": [
             {
               "title": "Distribuye el paréntesis",
               "text": "Expandimos -2(x+1).",
               "icon": "pin",
-              "mathContent": "5-2x-2\\geq3x-7 \\Rightarrow 3-2x\\geq3x-7"
+              "mathContent": "$$5-2x-2\\geq3x-7 \\Rightarrow 3-2x\\geq3x-7$$"
             },
             {
               "title": "Agrupa las x de un lado",
               "text": "Sumamos 2x y 7 en ambos lados.",
               "icon": "fx",
-              "mathContent": "10\\geq5x"
+              "mathContent": "$$10\\geq5x$$"
             },
             {
               "title": "Despeja x",
               "text": "Dividimos entre 5.",
               "icon": "fx",
-              "mathContent": "x\\leq2"
+              "mathContent": "$$x\\leq2$$"
             },
             {
               "title": "Verifica con un valor de prueba",
               "text": "Probamos x=0 (dentro de la solución): 5-2(1)=3, y 3(0)-7=-7; ¿3≥-7? Sí, se cumple, confirmando que x=0 sí pertenece a la solución.",
               "icon": "check",
-              "mathContent": "5-2(1)=3\\geq-7 \\;\\checkmark"
+              "mathContent": "$$5-2(1)=3\\geq-7 \\;\\checkmark$$"
             }
           ],
           "category": "Desigualdades Lineales y Compuestas",
@@ -1780,39 +1780,39 @@
         {
           "id": "dl_n3_02",
           "questionText": "Resuelve, con cuidado del signo al despejar:",
-          "questionLatex": "-3\\leq\\frac{2x-1}{-2}<4",
+          "questionLatex": "$$-3\\leq\\frac{2x-1}{-2}<4$$",
           "options": [
-            "(-3.5,3.5]",
-            "[-3.5,3.5)",
-            "(-3.5,3.5)",
-            "(3.5,-3.5]"
+            "$$(-3.5,3.5]$$",
+            "$$[-3.5,3.5)$$",
+            "$$(-3.5,3.5)$$",
+            "$$(3.5,-3.5]$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "-3.5<x\\leq3.5 \\Rightarrow (-3.5,3.5]",
+          "explanationLatex": "$$-3.5<x\\leq3.5 \\Rightarrow (-3.5,3.5]$$",
           "explanationSteps": [
             {
               "title": "Multiplica por -2, invirtiendo AMBOS signos y el orden",
               "text": "Como multiplicamos por un número negativo, ambas desigualdades cambian de dirección y el orden de los extremos se invierte.",
               "icon": "pin",
-              "mathContent": "6\\geq2x-1>-8"
+              "mathContent": "$$6\\geq2x-1>-8$$"
             },
             {
               "title": "Reescribe en orden creciente",
               "text": "Reordenamos para leerlo de izquierda a derecha de forma más natural.",
               "icon": "fx",
-              "mathContent": "-8<2x-1\\leq6"
+              "mathContent": "$$-8<2x-1\\leq6$$"
             },
             {
               "title": "Suma 1 en los tres miembros",
               "text": "Aplicamos la misma operación a toda la desigualdad doble.",
               "icon": "fx",
-              "mathContent": "-7<2x\\leq7"
+              "mathContent": "$$-7<2x\\leq7$$"
             },
             {
               "title": "Divide entre 2",
               "text": "Como 2 es positivo, no se invierte nada más.",
               "icon": "star",
-              "mathContent": "-3.5<x\\leq3.5"
+              "mathContent": "$$-3.5<x\\leq3.5$$"
             }
           ],
           "category": "Desigualdades Lineales y Compuestas",
@@ -1823,31 +1823,31 @@
           "questionText": "Un estudiante necesita un promedio de al menos 80 en tres exámenes. Obtuvo 75 y 82 en los dos primeros. ¿Qué calificación mínima necesita en el tercero?",
           "questionLatex": "",
           "options": [
-            "83",
-            "80",
-            "77",
-            "85"
+            "$$83$$",
+            "$$80$$",
+            "$$77$$",
+            "$$85$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "x\\geq83 \\Rightarrow \\text{mínimo } 83",
+          "explanationLatex": "$$x\\geq83 \\Rightarrow \\text{mínimo } 83$$",
           "explanationSteps": [
             {
               "title": "Plantea la desigualdad del promedio",
               "text": "El promedio de los tres exámenes debe ser al menos 80.",
               "icon": "pin",
-              "mathContent": "\\frac{75+82+x}{3}\\geq80"
+              "mathContent": "$$\\frac{75+82+x}{3}\\geq80$$"
             },
             {
               "title": "Elimina el denominador",
               "text": "Multiplicamos ambos lados por 3.",
               "icon": "fx",
-              "mathContent": "157+x\\geq240"
+              "mathContent": "$$157+x\\geq240$$"
             },
             {
               "title": "Despeja x",
               "text": "Restamos 157 en ambos lados.",
               "icon": "star",
-              "mathContent": "x\\geq83"
+              "mathContent": "$$x\\geq83$$"
             }
           ],
           "category": "Desigualdades Lineales y Compuestas",
@@ -1878,7 +1878,7 @@
         },
         {
           "id": "tf_dl_02",
-          "questionText": "Una desigualdad compuesta como $-2<x<5$ se resuelve operando en un solo miembro a la vez, nunca en los tres simultáneamente.",
+          "questionText": "Una desigualdad compuesta como $$-2<x<5$$ se resuelve operando en un solo miembro a la vez, nunca en los tres simultáneamente.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -1940,8 +1940,8 @@
         {
           "title": "Definición y Significado Geométrico",
           "subtitle": "Valor Absoluto • Definición",
-          "content": "El valor absoluto de un número real x, denotado $|x|$, se define por casos según el signo de x. Geométricamente, $|x|$ representa la distancia entre x y el origen en la recta real. Por eso $|x|$ nunca es negativo: una distancia siempre es no negativa.",
-          "formulaLatex": "|x| = \\begin{cases} x & \\text{si } x \\geq 0 \\\\ -x & \\text{si } x<0 \\end{cases}",
+          "content": "El valor absoluto de un número real x, denotado $$|x|$$, se define por casos según el signo de x. Geométricamente, $$|x|$$ representa la distancia entre x y el origen en la recta real. Por eso $$|x|$$ nunca es negativo: una distancia siempre es no negativa.",
+          "formulaLatex": "$$|x| = \\begin{cases} x & \\text{si } x \\geq 0 \\\\ -x & \\text{si } x<0 \\end{cases}$$",
           "proTip": "",
           "blocks": [
             {
@@ -1953,35 +1953,35 @@
         {
           "title": "Propiedades Algebraicas del Valor Absoluto",
           "subtitle": "Valor Absoluto • Propiedades",
-          "content": "A partir del resultado de que $x^2\\geq0$ para todo x, puede probarse que $|x|=\\sqrt{x^2}$, lo cual permite deducir algebraicamente todas las propiedades del valor absoluto.",
+          "content": "A partir del resultado de que $$x^2\\geq0$$ para todo x, puede probarse que $$|x|=\\sqrt{x^2}$$, lo cual permite deducir algebraicamente todas las propiedades del valor absoluto.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "text",
-              "content": "Propiedades: $|x|\\geq0$ para todo x; $|x|=|-x|$; $|xy|=|x|\\cdot|y|$; $|x/y|=|x|/|y|$ (con $y\\neq0$); y la desigualdad triangular $|x+y|\\leq|x|+|y|$."
+              "content": "Propiedades: $$|x|\\geq0$$ para todo x; $$|x|=|-x|$$; $$|xy|=|x|\\cdot|y|$$; $$|x/y|=|x|/|y|$$ (con $$y\\neq0$$); y la desigualdad triangular $$|x+y|\\leq|x|+|y|$$."
             },
             {
               "type": "example",
-              "content": "\\text{Verificar la desigualdad triangular con } x=5, \\;y=-8",
+              "content": "$$\\text{Verificar la desigualdad triangular con } x=5, \\;y=-8$$",
               "steps": [
                 {
                   "title": "Calcula el lado izquierdo",
                   "text": "Sumamos primero y luego tomamos valor absoluto.",
                   "icon": "fx",
-                  "mathContent": "|x+y|=|5+(-8)|=|-3|=3"
+                  "mathContent": "$$|x+y|=|5+(-8)|=|-3|=3$$"
                 },
                 {
                   "title": "Calcula el lado derecho",
                   "text": "Tomamos valor absoluto de cada uno por separado y luego sumamos.",
                   "icon": "fx",
-                  "mathContent": "|x|+|y|=|5|+|-8|=5+8=13"
+                  "mathContent": "$$|x|+|y|=|5|+|-8|=5+8=13$$"
                 },
                 {
                   "title": "Compara ambos lados",
                   "text": "3 es efectivamente menor o igual que 13, así que la desigualdad triangular se cumple aquí (la diferencia es grande porque x e y tienen signos opuestos).",
                   "icon": "star",
-                  "mathContent": "3\\leq13 \\;\\checkmark"
+                  "mathContent": "$$3\\leq13 \\;\\checkmark$$"
                 }
               ]
             }
@@ -2000,31 +2000,31 @@
         {
           "title": "Ecuaciones con Valor Absoluto",
           "subtitle": "Valor Absoluto • Ecuaciones",
-          "content": "Si $|u|=a$, entonces: si $a<0$, no hay solución (una distancia no puede ser negativa); si $a\\geq0$, las soluciones son $u=a$ y $u=-a$.",
+          "content": "Si $$|u|=a$$, entonces: si $$a<0$$, no hay solución (una distancia no puede ser negativa); si $$a\\geq0$$, las soluciones son $$u=a$$ y $$u=-a$$.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Resolver } |2x-3|=7",
+              "content": "$$\\text{Resolver } |2x-3|=7$$",
               "steps": [
                 {
                   "title": "Plantea el caso positivo",
                   "text": "El interior del valor absoluto puede ser igual a 7.",
                   "icon": "pin",
-                  "mathContent": "2x-3=7 \\Rightarrow x=5"
+                  "mathContent": "$$2x-3=7 \\Rightarrow x=5$$"
                 },
                 {
                   "title": "Plantea el caso negativo",
                   "text": "O el interior puede ser igual a -7.",
                   "icon": "fx",
-                  "mathContent": "2x-3=-7 \\Rightarrow x=-2"
+                  "mathContent": "$$2x-3=-7 \\Rightarrow x=-2$$"
                 },
                 {
                   "title": "Reúne ambas soluciones",
                   "text": "Ambos valores son válidos, así que la solución tiene dos elementos.",
                   "icon": "star",
-                  "mathContent": "\\{-2,5\\}"
+                  "mathContent": "$$\\{-2,5\\}$$"
                 }
               ]
             }
@@ -2033,57 +2033,57 @@
         {
           "title": "Desigualdades con Valor Absoluto: 'Menor Que' y 'Mayor Que'",
           "subtitle": "Valor Absoluto • Desigualdades",
-          "content": "Si $a>0$, la desigualdad $|u|<a$ equivale a la desigualdad compuesta $-a<u<a$: esto es la traducción algebraica de 'la distancia de u al origen es menor que a'. Por otro lado, $|u|>a$ equivale a $u<-a$ o $u>a$: aquí la solución es una unión de dos intervalos, porque basta con que u esté 'lejos' del origen en cualquiera de las dos direcciones.",
+          "content": "Si $$a>0$$, la desigualdad $$|u|<a$$ equivale a la desigualdad compuesta $$-a<u<a$$: esto es la traducción algebraica de 'la distancia de u al origen es menor que a'. Por otro lado, $$|u|>a$$ equivale a $$u<-a$$ o $$u>a$$: aquí la solución es una unión de dos intervalos, porque basta con que u esté 'lejos' del origen en cualquiera de las dos direcciones.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "formula",
-              "content": "|u|<a \\iff -a<u<a \\qquad (a>0)"
+              "content": "$$|u|<a \\iff -a<u<a \\qquad (a>0)$$"
             },
             {
               "type": "example",
-              "content": "\\text{Resolver } |x-4|<3",
+              "content": "$$\\text{Resolver } |x-4|<3$$",
               "steps": [
                 {
                   "title": "Convierte a desigualdad compuesta",
                   "text": "Usamos la equivalencia del tipo 'menor que'.",
                   "icon": "pin",
-                  "mathContent": "-3<x-4<3"
+                  "mathContent": "$$-3<x-4<3$$"
                 },
                 {
                   "title": "Suma 4 en los tres miembros",
                   "text": "Despejamos x en la desigualdad doble.",
                   "icon": "star",
-                  "mathContent": "1<x<7"
+                  "mathContent": "$$1<x<7$$"
                 }
               ]
             },
             {
               "type": "formula",
-              "content": "|u|>a \\iff u<-a \\;\\text{o}\\; u>a \\qquad (a>0)"
+              "content": "$$|u|>a \\iff u<-a \\;\\text{o}\\; u>a \\qquad (a>0)$$"
             },
             {
               "type": "example",
-              "content": "\\text{Resolver } |3x+1|\\geq5",
+              "content": "$$\\text{Resolver } |3x+1|\\geq5$$",
               "steps": [
                 {
                   "title": "Plantea la rama 'mayor o igual'",
                   "text": "El interior puede ser mayor o igual a 5.",
                   "icon": "pin",
-                  "mathContent": "3x+1\\geq5 \\Rightarrow x\\geq\\frac43"
+                  "mathContent": "$$3x+1\\geq5 \\Rightarrow x\\geq\\frac43$$"
                 },
                 {
                   "title": "Plantea la rama 'menor o igual' negativa",
                   "text": "O el interior puede ser menor o igual a -5.",
                   "icon": "fx",
-                  "mathContent": "3x+1\\leq-5 \\Rightarrow x\\leq-2"
+                  "mathContent": "$$3x+1\\leq-5 \\Rightarrow x\\leq-2$$"
                 },
                 {
                   "title": "Une ambas ramas",
                   "text": "Como es tipo 'mayor que', la solución es una unión, no una intersección.",
                   "icon": "star",
-                  "mathContent": "(-\\infty,-2]\\cup\\left[\\frac43,\\infty\\right)"
+                  "mathContent": "$$(-\\infty,-2]\\cup\\left[\\frac43,\\infty\\right)$$"
                 }
               ]
             },
@@ -2106,41 +2106,41 @@
         {
           "title": "El Valor Absoluto como Distancia",
           "subtitle": "Valor Absoluto • Interpretación Geométrica",
-          "content": "La expresión $|x-a|$ representa la distancia entre los números x y a en la recta real, no solo la distancia de x al origen. Esta interpretación es extremadamente útil para plantear y resolver desigualdades con valor absoluto de forma geométrica, sin pasar necesariamente por el álgebra de casos.",
+          "content": "La expresión $$|x-a|$$ representa la distancia entre los números x y a en la recta real, no solo la distancia de x al origen. Esta interpretación es extremadamente útil para plantear y resolver desigualdades con valor absoluto de forma geométrica, sin pasar necesariamente por el álgebra de casos.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "formula",
-              "content": "|x-a|<r \\iff x \\in (a-r, a+r)"
+              "content": "$$|x-a|<r \\iff x \\in (a-r, a+r)$$"
             },
             {
               "type": "example",
-              "content": "\\text{Interpretar } |x-5|\\leq2 \\text{ y resolver usando la idea de distancia}",
+              "content": "$$\\text{Interpretar } |x-5|\\leq2 \\text{ y resolver usando la idea de distancia}$$",
               "steps": [
                 {
                   "title": "Traduce a palabras",
                   "text": "Esta desigualdad dice: 'la distancia entre x y 5 es a lo sumo 2'.",
                   "icon": "pin",
-                  "mathContent": "\\text{dist}(x,5)\\leq2"
+                  "mathContent": "$$\\text{dist}(x,5)\\leq2$$"
                 },
                 {
                   "title": "Piensa en el centro y el radio",
                   "text": "El centro es 5, y el radio de tolerancia es 2.",
                   "icon": "fx",
-                  "mathContent": "x \\in [5-2, 5+2]"
+                  "mathContent": "$$x \\in [5-2, 5+2]$$"
                 },
                 {
                   "title": "Escribe la solución",
                   "text": "El intervalo resultante.",
                   "icon": "star",
-                  "mathContent": "[3,7]"
+                  "mathContent": "$$[3,7]$$"
                 }
               ]
             },
             {
               "type": "note",
-              "content": "Esta interpretación de $|x-a|$ como distancia es la misma idea que se usa más adelante, en cálculo, para definir con precisión el concepto de límite: la condición $|x-a|<\\delta$ describe que x está suficientemente cerca de a."
+              "content": "Esta interpretación de $$|x-a|$$ como distancia es la misma idea que se usa más adelante, en cálculo, para definir con precisión el concepto de límite: la condición $$|x-a|<\\delta$$ describe que x está suficientemente cerca de a."
             }
           ]
         }
@@ -2158,27 +2158,27 @@
         {
           "id": "va_n1_01",
           "questionText": "Calcula:",
-          "questionLatex": "|-8|, \\;|5| \\;\\text{y}\\; |0|",
+          "questionLatex": "$$|-8|, \\;|5| \\;\\text{y}\\; |0|$$",
           "options": [
-            "8, 5 \\text{ y } 0",
-            "-8, 5 \\text{ y } 0",
-            "8, -5 \\text{ y } 0",
-            "-8, -5 \\text{ y } 0"
+            "$$8, 5 \\text{ y } 0$$",
+            "$$-8, 5 \\text{ y } 0$$",
+            "$$8, -5 \\text{ y } 0$$",
+            "$$-8, -5 \\text{ y } 0$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "8, 5 \\text{ y } 0",
+          "explanationLatex": "$$8, 5 \\text{ y } 0$$",
           "explanationSteps": [
             {
               "title": "Recuerda la definición",
               "text": "El valor absoluto siempre da la distancia al cero, que nunca es negativa.",
               "icon": "pin",
-              "mathContent": "|x|\\geq0"
+              "mathContent": "$$|x|\\geq0$$"
             },
             {
               "title": "Aplica a cada número",
               "text": "El signo negativo se elimina; el cero se queda igual.",
               "icon": "star",
-              "mathContent": "|-8|=8, \\;|5|=5, \\;|0|=0"
+              "mathContent": "$$|-8|=8, \\;|5|=5, \\;|0|=0$$"
             }
           ],
           "category": "Valor Absoluto y sus Desigualdades",
@@ -2187,27 +2187,27 @@
         {
           "id": "va_n1_02",
           "questionText": "Resuelve:",
-          "questionLatex": "|x|=6",
+          "questionLatex": "$$|x|=6$$",
           "options": [
-            "\\{-6,6\\}",
-            "\\{6\\}",
-            "\\{-6\\}",
-            "\\varnothing"
+            "$$\\{-6,6\\}$$",
+            "$$\\{6\\}$$",
+            "$$\\{-6\\}$$",
+            "$$\\varnothing$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\{-6,6\\}",
+          "explanationLatex": "$$\\{-6,6\\}$$",
           "explanationSteps": [
             {
               "title": "Recuerda la regla de las ecuaciones con valor absoluto",
               "text": "Si |u|=a con a≥0, entonces u=a o u=-a.",
               "icon": "pin",
-              "mathContent": "x=6 \\;\\text{o}\\; x=-6"
+              "mathContent": "$$x=6 \\;\\text{o}\\; x=-6$$"
             },
             {
               "title": "Escribe el conjunto solución",
               "text": "Ambos valores son soluciones válidas.",
               "icon": "star",
-              "mathContent": "\\{-6,6\\}"
+              "mathContent": "$$\\{-6,6\\}$$"
             }
           ],
           "category": "Valor Absoluto y sus Desigualdades",
@@ -2216,27 +2216,27 @@
         {
           "id": "va_n1_03",
           "questionText": "Resuelve:",
-          "questionLatex": "|x-2|<5",
+          "questionLatex": "$$|x-2|<5$$",
           "options": [
-            "(-3,7)",
-            "[-3,7]",
-            "(-7,3)",
-            "(3,7)"
+            "$$(-3,7)$$",
+            "$$[-3,7]$$",
+            "$$(-7,3)$$",
+            "$$(3,7)$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "-3<x<7 \\Rightarrow (-3,7)",
+          "explanationLatex": "$$-3<x<7 \\Rightarrow (-3,7)$$",
           "explanationSteps": [
             {
               "title": "Convierte a desigualdad compuesta",
               "text": "Usa la equivalencia |u|<a ⟺ -a<u<a.",
               "icon": "pin",
-              "mathContent": "-5<x-2<5"
+              "mathContent": "$$-5<x-2<5$$"
             },
             {
               "title": "Suma 2 en los tres miembros",
               "text": "Despejamos x.",
               "icon": "star",
-              "mathContent": "-3<x<7"
+              "mathContent": "$$-3<x<7$$"
             }
           ],
           "category": "Valor Absoluto y sus Desigualdades",
@@ -2245,33 +2245,33 @@
         {
           "id": "va_n1_04",
           "questionText": "Resuelve:",
-          "questionLatex": "|x+3|>1",
+          "questionLatex": "$$|x+3|>1$$",
           "options": [
-            "(-\\infty,-4)\\cup(-2,\\infty)",
-            "(-4,-2)",
-            "(-\\infty,-2)\\cup(-4,\\infty)",
-            "[-4,-2]"
+            "$$(-\\infty,-4)\\cup(-2,\\infty)$$",
+            "$$(-4,-2)$$",
+            "$$(-\\infty,-2)\\cup(-4,\\infty)$$",
+            "$$[-4,-2]$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "(-\\infty,-4)\\cup(-2,\\infty)",
+          "explanationLatex": "$$(-\\infty,-4)\\cup(-2,\\infty)$$",
           "explanationSteps": [
             {
               "title": "Plantea la rama positiva",
               "text": "El interior puede ser mayor que 1.",
               "icon": "pin",
-              "mathContent": "x+3>1 \\Rightarrow x>-2"
+              "mathContent": "$$x+3>1 \\Rightarrow x>-2$$"
             },
             {
               "title": "Plantea la rama negativa",
               "text": "O el interior puede ser menor que -1.",
               "icon": "fx",
-              "mathContent": "x+3<-1 \\Rightarrow x<-4"
+              "mathContent": "$$x+3<-1 \\Rightarrow x<-4$$"
             },
             {
               "title": "Une con unión, no intersección",
               "text": "Como es tipo 'mayor que', las dos ramas se combinan con ∪.",
               "icon": "star",
-              "mathContent": "(-\\infty,-4)\\cup(-2,\\infty)"
+              "mathContent": "$$(-\\infty,-4)\\cup(-2,\\infty)$$"
             }
           ],
           "category": "Valor Absoluto y sus Desigualdades",
@@ -2279,34 +2279,34 @@
         },
         {
           "id": "va_n1_05",
-          "questionText": "Interpreta $|x-7|\\leq3$ como una condición de distancia y resuelve:",
+          "questionText": "Interpreta $$|x-7|\\leq3$$ como una condición de distancia y resuelve:",
           "questionLatex": "",
           "options": [
-            "La distancia entre x y 7 es a lo sumo 3; solución [4,10]",
-            "La distancia entre x y 3 es a lo sumo 7; solución [-4,10]",
-            "La distancia entre x y 7 es exactamente 3; solución {4,10}",
-            "No tiene interpretación de distancia"
+            "$$La distancia entre x y 7 es a lo sumo 3; solución [4,10]$$",
+            "$$La distancia entre x y 3 es a lo sumo 7; solución [-4,10]$$",
+            "$$La distancia entre x y 7 es exactamente 3; solución {4,10}$$",
+            "$$No tiene interpretación de distancia$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "[4,10]",
+          "explanationLatex": "$$[4,10]$$",
           "explanationSteps": [
             {
               "title": "Traduce a palabras",
               "text": "|x-7|≤3 significa que x está a una distancia de 7 no mayor que 3.",
               "icon": "pin",
-              "mathContent": "\\text{dist}(x,7)\\leq3"
+              "mathContent": "$$\\text{dist}(x,7)\\leq3$$"
             },
             {
               "title": "Calcula el rango alrededor del centro",
               "text": "Centro en 7, con radio de tolerancia 3.",
               "icon": "fx",
-              "mathContent": "x \\in [7-3,7+3]"
+              "mathContent": "$$x \\in [7-3,7+3]$$"
             },
             {
               "title": "Escribe el intervalo",
               "text": "El resultado final.",
               "icon": "star",
-              "mathContent": "[4,10]"
+              "mathContent": "$$[4,10]$$"
             }
           ],
           "category": "Valor Absoluto y sus Desigualdades",
@@ -2325,27 +2325,27 @@
         {
           "id": "va_n2_01",
           "questionText": "Resuelve:",
-          "questionLatex": "|2x+5|=9",
+          "questionLatex": "$$|2x+5|=9$$",
           "options": [
-            "\\{-7,2\\}",
-            "\\{7,-2\\}",
-            "\\{-7,-2\\}",
-            "\\{7,2\\}"
+            "$$\\{-7,2\\}$$",
+            "$$\\{7,-2\\}$$",
+            "$$\\{-7,-2\\}$$",
+            "$$\\{7,2\\}$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\{-7,2\\}",
+          "explanationLatex": "$$\\{-7,2\\}$$",
           "explanationSteps": [
             {
               "title": "Rama positiva",
               "text": "El interior puede ser igual a 9.",
               "icon": "pin",
-              "mathContent": "2x+5=9 \\Rightarrow x=2"
+              "mathContent": "$$2x+5=9 \\Rightarrow x=2$$"
             },
             {
               "title": "Rama negativa",
               "text": "O el interior puede ser igual a -9.",
               "icon": "fx",
-              "mathContent": "2x+5=-9 \\Rightarrow x=-7"
+              "mathContent": "$$2x+5=-9 \\Rightarrow x=-7$$"
             }
           ],
           "category": "Valor Absoluto y sus Desigualdades",
@@ -2354,33 +2354,33 @@
         {
           "id": "va_n2_02",
           "questionText": "Resuelve:",
-          "questionLatex": "|3x-1|\\leq8",
+          "questionLatex": "$$|3x-1|\\leq8$$",
           "options": [
-            "\\left[-\\frac73,3\\right]",
-            "\\left[-3,\\frac73\\right]",
-            "\\left(-\\frac73,3\\right)",
-            "\\left[\\frac73,3\\right]"
+            "$$\\left[-\\frac73,3\\right]$$",
+            "$$\\left[-3,\\frac73\\right]$$",
+            "$$\\left(-\\frac73,3\\right)$$",
+            "$$\\left[\\frac73,3\\right]$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\left[-\\frac73,3\\right]",
+          "explanationLatex": "$$\\left[-\\frac73,3\\right]$$",
           "explanationSteps": [
             {
               "title": "Convierte a desigualdad compuesta",
               "text": "Usamos |u|≤a ⟺ -a≤u≤a.",
               "icon": "pin",
-              "mathContent": "-8\\leq3x-1\\leq8"
+              "mathContent": "$$-8\\leq3x-1\\leq8$$"
             },
             {
               "title": "Suma 1 en los tres miembros",
               "text": "Aislamos el término con x.",
               "icon": "fx",
-              "mathContent": "-7\\leq3x\\leq9"
+              "mathContent": "$$-7\\leq3x\\leq9$$"
             },
             {
               "title": "Divide entre 3",
               "text": "Despejamos x por completo.",
               "icon": "star",
-              "mathContent": "-\\frac73\\leq x\\leq3"
+              "mathContent": "$$-\\frac73\\leq x\\leq3$$"
             }
           ],
           "category": "Valor Absoluto y sus Desigualdades",
@@ -2389,33 +2389,33 @@
         {
           "id": "va_n2_03",
           "questionText": "Resuelve, expresando en notación de intervalos:",
-          "questionLatex": "|4x+3|>5",
+          "questionLatex": "$$|4x+3|>5$$",
           "options": [
-            "(-\\infty,-2)\\cup\\left(\\frac12,\\infty\\right)",
-            "\\left(-2,\\frac12\\right)",
-            "(-\\infty,-2)\\cup(2,\\infty)",
-            "\\left(-\\infty,\\frac12\\right)"
+            "$$(-\\infty,-2)\\cup\\left(\\frac12,\\infty\\right)$$",
+            "$$\\left(-2,\\frac12\\right)$$",
+            "$$(-\\infty,-2)\\cup(2,\\infty)$$",
+            "$$\\left(-\\infty,\\frac12\\right)$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "(-\\infty,-2)\\cup\\left(\\frac12,\\infty\\right)",
+          "explanationLatex": "$$(-\\infty,-2)\\cup\\left(\\frac12,\\infty\\right)$$",
           "explanationSteps": [
             {
               "title": "Rama positiva",
               "text": "El interior puede ser mayor que 5.",
               "icon": "pin",
-              "mathContent": "4x+3>5 \\Rightarrow x>\\frac12"
+              "mathContent": "$$4x+3>5 \\Rightarrow x>\\frac12$$"
             },
             {
               "title": "Rama negativa",
               "text": "O el interior puede ser menor que -5.",
               "icon": "fx",
-              "mathContent": "4x+3<-5 \\Rightarrow x<-2"
+              "mathContent": "$$4x+3<-5 \\Rightarrow x<-2$$"
             },
             {
               "title": "Une con unión",
               "text": "Es tipo 'mayor que', así que se combinan con ∪.",
               "icon": "star",
-              "mathContent": "(-\\infty,-2)\\cup\\left(\\frac12,\\infty\\right)"
+              "mathContent": "$$(-\\infty,-2)\\cup\\left(\\frac12,\\infty\\right)$$"
             }
           ],
           "category": "Valor Absoluto y sus Desigualdades",
@@ -2423,40 +2423,40 @@
         },
         {
           "id": "va_n2_04",
-          "questionText": "Verifica la propiedad $|xy|=|x||y|$ con $x=-4$, $y=3$:",
+          "questionText": "Verifica la propiedad $$|xy|=|x||y|$$ con $$x=-4$$, $$y=3$$:",
           "questionLatex": "",
           "options": [
-            "|xy|=12=|x||y|, \\text{ se cumple}",
-            "|xy|=-12\\neq|x||y|",
-            "|xy|=7=|x||y|",
-            "La propiedad no aplica con números negativos"
+            "$$|xy|=12=|x||y|, \\text{ se cumple}$$",
+            "$$|xy|=-12\\neq|x||y|$$",
+            "$$|xy|=7=|x||y|$$",
+            "$$La propiedad no aplica con números negativos$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "|xy|=12=|x||y|",
+          "explanationLatex": "$$|xy|=12=|x||y|$$",
           "explanationSteps": [
             {
               "title": "Calcula el producto primero",
               "text": "Multiplicamos x por y antes de aplicar valor absoluto.",
               "icon": "fx",
-              "mathContent": "xy=(-4)(3)=-12"
+              "mathContent": "$$xy=(-4)(3)=-12$$"
             },
             {
               "title": "Aplica valor absoluto al producto",
               "text": "El resultado nunca es negativo.",
               "icon": "fx",
-              "mathContent": "|xy|=|-12|=12"
+              "mathContent": "$$|xy|=|-12|=12$$"
             },
             {
               "title": "Calcula cada valor absoluto por separado y multiplica",
               "text": "Ahora comparamos con el otro lado de la propiedad.",
               "icon": "fx",
-              "mathContent": "|x||y|=|-4|\\cdot|3|=4\\cdot3=12"
+              "mathContent": "$$|x||y|=|-4|\\cdot|3|=4\\cdot3=12$$"
             },
             {
               "title": "Compara ambos resultados",
               "text": "Ambos lados dan 12, confirmando la propiedad.",
               "icon": "star",
-              "mathContent": "|xy|=|x||y|=12"
+              "mathContent": "$$|xy|=|x||y|=12$$"
             }
           ],
           "category": "Valor Absoluto y sus Desigualdades",
@@ -2465,33 +2465,33 @@
         {
           "id": "va_n2_05",
           "questionText": "Resuelve, despejando el valor absoluto primero:",
-          "questionLatex": "\\frac{|x|}{3}-1<2",
+          "questionLatex": "$$\\frac{|x|}{3}-1<2$$",
           "options": [
-            "(-9,9)",
-            "(-3,3)",
-            "(-\\infty,9)",
-            "[0,9)"
+            "$$(-9,9)$$",
+            "$$(-3,3)$$",
+            "$$(-\\infty,9)$$",
+            "$$[0,9)$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "-9<x<9 \\Rightarrow (-9,9)",
+          "explanationLatex": "$$-9<x<9 \\Rightarrow (-9,9)$$",
           "explanationSteps": [
             {
               "title": "Aísla el valor absoluto",
               "text": "Sumamos 1 en ambos lados.",
               "icon": "pin",
-              "mathContent": "\\frac{|x|}{3}<3"
+              "mathContent": "$$\\frac{|x|}{3}<3$$"
             },
             {
               "title": "Elimina el denominador",
               "text": "Multiplicamos ambos lados por 3.",
               "icon": "fx",
-              "mathContent": "|x|<9"
+              "mathContent": "$$|x|<9$$"
             },
             {
               "title": "Convierte a desigualdad compuesta",
               "text": "Aplicamos la regla del tipo 'menor que'.",
               "icon": "star",
-              "mathContent": "-9<x<9"
+              "mathContent": "$$-9<x<9$$"
             }
           ],
           "category": "Valor Absoluto y sus Desigualdades",
@@ -2510,39 +2510,39 @@
         {
           "id": "va_n3_01",
           "questionText": "Resuelve:",
-          "questionLatex": "2|x-1|+3\\geq9",
+          "questionLatex": "$$2|x-1|+3\\geq9$$",
           "options": [
-            "(-\\infty,-2]\\cup[4,\\infty)",
-            "[-2,4]",
-            "(-\\infty,-2]\\cup[2,\\infty)",
-            "(-\\infty,2]\\cup[4,\\infty)"
+            "$$(-\\infty,-2]\\cup[4,\\infty)$$",
+            "$$[-2,4]$$",
+            "$$(-\\infty,-2]\\cup[2,\\infty)$$",
+            "$$(-\\infty,2]\\cup[4,\\infty)$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "(-\\infty,-2]\\cup[4,\\infty)",
+          "explanationLatex": "$$(-\\infty,-2]\\cup[4,\\infty)$$",
           "explanationSteps": [
             {
               "title": "Aísla el valor absoluto",
               "text": "Restamos 3 y dividimos entre 2.",
               "icon": "pin",
-              "mathContent": "2|x-1|\\geq6 \\Rightarrow |x-1|\\geq3"
+              "mathContent": "$$2|x-1|\\geq6 \\Rightarrow |x-1|\\geq3$$"
             },
             {
               "title": "Aplica la regla del tipo 'mayor o igual'",
               "text": "Se convierte en dos ramas separadas por 'o'.",
               "icon": "fx",
-              "mathContent": "x-1\\geq3 \\;\\text{o}\\; x-1\\leq-3"
+              "mathContent": "$$x-1\\geq3 \\;\\text{o}\\; x-1\\leq-3$$"
             },
             {
               "title": "Despeja cada rama",
               "text": "Sumamos 1 en ambos casos.",
               "icon": "fx",
-              "mathContent": "x\\geq4 \\;\\text{o}\\; x\\leq-2"
+              "mathContent": "$$x\\geq4 \\;\\text{o}\\; x\\leq-2$$"
             },
             {
               "title": "Escribe la unión",
               "text": "Ambas ramas se combinan con ∪, ya que es tipo 'mayor que'.",
               "icon": "star",
-              "mathContent": "(-\\infty,-2]\\cup[4,\\infty)"
+              "mathContent": "$$(-\\infty,-2]\\cup[4,\\infty)$$"
             }
           ],
           "category": "Valor Absoluto y sus Desigualdades",
@@ -2550,40 +2550,40 @@
         },
         {
           "id": "va_n3_02",
-          "questionText": "Resuelve $|x-2|<|x+4|$, interpretando ambos lados como distancias:",
+          "questionText": "Resuelve $$|x-2|<|x+4|$$, interpretando ambos lados como distancias:",
           "questionLatex": "",
           "options": [
-            "(-1,\\infty)",
-            "(-\\infty,-1)",
-            "(-1,3)",
-            "(-4,2)"
+            "$$(-1,\\infty)$$",
+            "$$(-\\infty,-1)$$",
+            "$$(-1,3)$$",
+            "$$(-4,2)$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "x>-1 \\Rightarrow (-1,\\infty)",
+          "explanationLatex": "$$x>-1 \\Rightarrow (-1,\\infty)$$",
           "explanationSteps": [
             {
               "title": "Interpreta geométricamente",
               "text": "|x-2| es la distancia de x a 2; |x+4| es la distancia de x a -4. Buscamos dónde x está más cerca de 2 que de -4.",
               "icon": "pin",
-              "mathContent": "\\text{dist}(x,2)<\\text{dist}(x,-4)"
+              "mathContent": "$$\\text{dist}(x,2)<\\text{dist}(x,-4)$$"
             },
             {
               "title": "Encuentra el punto medio",
               "text": "El punto medio entre 2 y -4 es el punto donde ambas distancias son iguales.",
               "icon": "fx",
-              "mathContent": "\\text{punto medio} = \\frac{2+(-4)}{2}=-1"
+              "mathContent": "$$\\text{punto medio} = \\frac{2+(-4)}{2}=-1$$"
             },
             {
               "title": "Decide de qué lado del punto medio",
               "text": "Los puntos a la derecha del punto medio (-1) están más cerca de 2 que de -4.",
               "icon": "fx",
-              "mathContent": "x>-1"
+              "mathContent": "$$x>-1$$"
             },
             {
               "title": "Verifica algebraicamente (opcional)",
               "text": "Elevando ambos lados al cuadrado y simplificando se confirma exactamente x>-1.",
               "icon": "check",
-              "mathContent": "(x-2)^2<(x+4)^2 \\Rightarrow x>-1"
+              "mathContent": "$$(x-2)^2<(x+4)^2 \\Rightarrow x>-1$$"
             }
           ],
           "category": "Valor Absoluto y sus Desigualdades",
@@ -2591,34 +2591,34 @@
         },
         {
           "id": "va_n3_03",
-          "questionText": "Demuestra que $|x|=\\sqrt{x^2}$ para todo x real, usando la definición por casos:",
+          "questionText": "Demuestra que $$|x|=\\sqrt{x^2}$$ para todo x real, usando la definición por casos:",
           "questionLatex": "",
           "options": [
-            "En ambos casos (x≥0 y x<0) se verifica que la raíz principal de x² coincide exactamente con |x|",
-            "Solo es cierto cuando x es positivo",
-            "Se demuestra elevando |x| al cubo",
-            "No se puede demostrar usando casos"
+            "$$En ambos casos (x≥0 y x<0) se verifica que la raíz principal de x² coincide exactamente con |x|$$",
+            "$$Solo es cierto cuando x es positivo$$",
+            "$$Se demuestra elevando |x| al cubo$$",
+            "$$No se puede demostrar usando casos$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "|x|=\\sqrt{x^2} \\text{ en ambos casos}",
+          "explanationLatex": "$$|x|=\\sqrt{x^2} \\text{ en ambos casos}$$",
           "explanationSteps": [
             {
               "title": "Caso x≥0",
               "text": "Aquí |x|=x por definición, y la raíz cuadrada principal de x² también da x (porque x ya es no negativo).",
               "icon": "pin",
-              "mathContent": "|x|=x=\\sqrt{x^2}"
+              "mathContent": "$$|x|=x=\\sqrt{x^2}$$"
             },
             {
               "title": "Caso x<0",
               "text": "Aquí |x|=-x por definición. La raíz cuadrada principal siempre es no negativa; como -x>0 en este caso, y (-x)²=x², entonces √(x²)=-x.",
               "icon": "fx",
-              "mathContent": "|x|=-x=\\sqrt{x^2}"
+              "mathContent": "$$|x|=-x=\\sqrt{x^2}$$"
             },
             {
               "title": "Conclusión",
               "text": "En ambos casos posibles, |x| coincide exactamente con √(x²), quedando demostrado para todo x real.",
               "icon": "star",
-              "mathContent": "|x|=\\sqrt{x^2} \\;\\forall x\\in\\mathbb{R}"
+              "mathContent": "$$|x|=\\sqrt{x^2} \\;\\forall x\\in\\mathbb{R}$$"
             }
           ],
           "category": "Valor Absoluto y sus Desigualdades",
@@ -2627,39 +2627,39 @@
         {
           "id": "va_n3_04",
           "questionText": "Halla todos los valores de x tales que:",
-          "questionLatex": "|x^2-4|<5",
+          "questionLatex": "$$|x^2-4|<5$$",
           "options": [
-            "(-3,3)",
-            "(-1,3)",
-            "(-3,-1)\\cup(1,3)",
-            "(-9,9)"
+            "$$(-3,3)$$",
+            "$$(-1,3)$$",
+            "$$(-3,-1)\\cup(1,3)$$",
+            "$$(-9,9)$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "(-3,3)",
+          "explanationLatex": "$$(-3,3)$$",
           "explanationSteps": [
             {
               "title": "Convierte a desigualdad compuesta",
               "text": "Aplicamos la regla del tipo 'menor que'.",
               "icon": "pin",
-              "mathContent": "-5<x^2-4<5"
+              "mathContent": "$$-5<x^2-4<5$$"
             },
             {
               "title": "Suma 4 en los tres miembros",
               "text": "Simplificamos ambos lados.",
               "icon": "fx",
-              "mathContent": "-1<x^2<9"
+              "mathContent": "$$-1<x^2<9$$"
             },
             {
               "title": "Analiza la primera parte",
               "text": "Como x² nunca es negativo, la condición -1<x² se cumple automáticamente para TODO x real; no impone ninguna restricción real.",
               "icon": "info",
-              "mathContent": "-1<x^2 \\;\\text{siempre cierto}"
+              "mathContent": "$$-1<x^2 \\;\\text{siempre cierto}$$"
             },
             {
               "title": "Resuelve la segunda parte",
               "text": "Solo x²<9 es la restricción real, que da -3<x<3.",
               "icon": "star",
-              "mathContent": "x^2<9 \\Rightarrow -3<x<3"
+              "mathContent": "$$x^2<9 \\Rightarrow -3<x<3$$"
             }
           ],
           "category": "Valor Absoluto y sus Desigualdades",
@@ -2667,40 +2667,40 @@
         },
         {
           "id": "va_n3_05",
-          "questionText": "Un termómetro registra $T=36.8$, que puede diferir de la temperatura real R hasta en 0.5 grados. ¿Cuál es el rango posible de R?",
+          "questionText": "Un termómetro registra $$T=36.8$$, que puede diferir de la temperatura real R hasta en 0.5 grados. ¿Cuál es el rango posible de R?",
           "questionLatex": "",
           "options": [
-            "[36.3, 37.3]",
-            "[36.3, 36.8]",
-            "[35.8, 37.3]",
-            "[36.8, 37.3]"
+            "$$[36.3, 37.3]$$",
+            "$$[36.3, 36.8]$$",
+            "$$[35.8, 37.3]$$",
+            "$$[36.8, 37.3]$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "R\\in[36.3,37.3]",
+          "explanationLatex": "$$R\\in[36.3,37.3]$$",
           "explanationSteps": [
             {
               "title": "Plantea la desigualdad con valor absoluto",
               "text": "La diferencia entre lo que marca el termómetro y la temperatura real es, en valor absoluto, a lo sumo 0.5.",
               "icon": "pin",
-              "mathContent": "|36.8-R|\\leq0.5"
+              "mathContent": "$$|36.8-R|\\leq0.5$$"
             },
             {
               "title": "Convierte a desigualdad compuesta",
               "text": "Aplicamos la regla del tipo 'menor o igual que'.",
               "icon": "fx",
-              "mathContent": "-0.5\\leq36.8-R\\leq0.5"
+              "mathContent": "$$-0.5\\leq36.8-R\\leq0.5$$"
             },
             {
               "title": "Despeja R con cuidado del signo",
               "text": "Restamos 36.8 y luego multiplicamos por -1, invirtiendo el sentido de ambas desigualdades.",
               "icon": "fx",
-              "mathContent": "-37.3\\leq-R\\leq-36.3 \\Rightarrow 36.3\\leq R\\leq37.3"
+              "mathContent": "$$-37.3\\leq-R\\leq-36.3 \\Rightarrow 36.3\\leq R\\leq37.3$$"
             },
             {
               "title": "Escribe el rango final",
               "text": "La temperatura real está en este intervalo.",
               "icon": "star",
-              "mathContent": "R\\in[36.3,37.3]"
+              "mathContent": "$$R\\in[36.3,37.3]$$"
             }
           ],
           "category": "Valor Absoluto y sus Desigualdades",
@@ -2718,7 +2718,7 @@
       "challenges": [
         {
           "id": "tf_va_01",
-          "questionText": "$|x-a|$ representa la distancia entre x y a en la recta real.",
+          "questionText": "$$|x-a|$$ representa la distancia entre x y a en la recta real.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -2731,7 +2731,7 @@
         },
         {
           "id": "tf_va_02",
-          "questionText": "$|u|>a$ (con a>0) se resuelve de la misma manera que $|u|<a$, escribiendo $-a<u<a$.",
+          "questionText": "$$|u|>a$$ (con a>0) se resuelve de la misma manera que $$|u|<a$$, escribiendo $$-a<u<a$$.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -2744,7 +2744,7 @@
         },
         {
           "id": "tf_va_03",
-          "questionText": "$|x|=\\sqrt{x^2}$ para todo número real x.",
+          "questionText": "$$|x|=\\sqrt{x^2}$$ para todo número real x.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -2757,7 +2757,7 @@
         },
         {
           "id": "tf_va_04",
-          "questionText": "La ecuación $|u|=a$ con $a<0$ tiene exactamente una solución.",
+          "questionText": "La ecuación $$|u|=a$$ con $$a<0$$ tiene exactamente una solución.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -2770,7 +2770,7 @@
         },
         {
           "id": "tf_va_05",
-          "questionText": "$|x+y|\\leq|x|+|y|$ se cumple para todos los números reales x, y.",
+          "questionText": "$$|x+y|\\leq|x|+|y|$$ se cumple para todos los números reales x, y.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -2793,34 +2793,34 @@
       "challenges": [
         {
           "id": "banco_facil_01",
-          "questionText": "Clasifica $-4$, $9/2$ y $\\sqrt7$:",
+          "questionText": "Clasifica $$-4$$, $$9/2$$ y $$\\sqrt7$$:",
           "questionLatex": "",
           "options": [
-            "-4 \\text{ entero}; \\;9/2 \\text{ racional}; \\;\\sqrt7 \\text{ irracional}",
-            "-4 \\text{ natural}; \\;9/2 \\text{ entero}; \\;\\sqrt7 \\text{ racional}",
-            "-4 \\text{ racional}; \\;9/2 \\text{ irracional}; \\;\\sqrt7 \\text{ entero}",
-            "-4 \\text{ irracional}; \\;9/2 \\text{ racional}; \\;\\sqrt7 \\text{ entero}"
+            "$$-4 \\text{ entero}; \\;9/2 \\text{ racional}; \\;\\sqrt7 \\text{ irracional}$$",
+            "$$-4 \\text{ natural}; \\;9/2 \\text{ entero}; \\;\\sqrt7 \\text{ racional}$$",
+            "$$-4 \\text{ racional}; \\;9/2 \\text{ irracional}; \\;\\sqrt7 \\text{ entero}$$",
+            "$$-4 \\text{ irracional}; \\;9/2 \\text{ racional}; \\;\\sqrt7 \\text{ entero}$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "-4 \\text{ entero}; \\;9/2 \\text{ racional}; \\;\\sqrt7 \\text{ irracional}",
+          "explanationLatex": "$$-4 \\text{ entero}; \\;9/2 \\text{ racional}; \\;\\sqrt7 \\text{ irracional}$$",
           "explanationSteps": [
             {
               "title": "Clasifica -4",
               "text": "Es un entero negativo, sin decimales.",
               "icon": "pin",
-              "mathContent": "-4 \\in \\mathbb{Z}"
+              "mathContent": "$$-4 \\in \\mathbb{Z}$$"
             },
             {
               "title": "Clasifica 9/2",
               "text": "9/2=4.5, un decimal finito, así que es racional.",
               "icon": "fx",
-              "mathContent": "9/2=4.5 \\in \\mathbb{Q}"
+              "mathContent": "$$9/2=4.5 \\in \\mathbb{Q}$$"
             },
             {
               "title": "Clasifica √7",
               "text": "7 no es un cuadrado perfecto, así que su raíz no se simplifica a un entero: es irracional.",
               "icon": "star",
-              "mathContent": "\\sqrt7 \\in \\text{Irr}"
+              "mathContent": "$$\\sqrt7 \\in \\text{Irr}$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -2828,34 +2828,34 @@
         },
         {
           "id": "banco_facil_02",
-          "questionText": "¿Cuál es la tabla de verdad correcta de $p\\vee\\neg q$?",
+          "questionText": "¿Cuál es la tabla de verdad correcta de $$p\\vee\\neg q$$?",
           "questionLatex": "",
           "options": [
-            "Falsa solo cuando p es falsa y q es verdadera; verdadera en los otros tres casos",
-            "Verdadera solo cuando ambas son verdaderas",
-            "Falsa siempre que p sea falsa",
-            "Verdadera solo cuando p es verdadera"
+            "$$Falsa solo cuando p es falsa y q es verdadera; verdadera en los otros tres casos$$",
+            "$$Verdadera solo cuando ambas son verdaderas$$",
+            "$$Falsa siempre que p sea falsa$$",
+            "$$Verdadera solo cuando p es verdadera$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "p\\vee\\neg q \\text{ es falsa solo cuando } p=F, q=V",
+          "explanationLatex": "$$p\\vee\\neg q \\text{ es falsa solo cuando } p=F, q=V$$",
           "explanationSteps": [
             {
               "title": "Calcula ¬q en cada caso",
               "text": "¬q es lo contrario del valor de q.",
               "icon": "pin",
-              "mathContent": "\\neg q"
+              "mathContent": "$$\\neg q$$"
             },
             {
               "title": "Aplica la disyunción con p",
               "text": "p∨¬q es verdadera si al menos una de las dos partes lo es.",
               "icon": "fx",
-              "mathContent": "p \\vee \\neg q"
+              "mathContent": "$$p \\vee \\neg q$$"
             },
             {
               "title": "Encuentra el único caso falso",
               "text": "Solo falla cuando p=F y q=V (entonces ¬q=F, y F∨F=F); en los otros tres casos es verdadera.",
               "icon": "star",
-              "mathContent": "\\text{Falsa solo en (F,V)}"
+              "mathContent": "$$\\text{Falsa solo en (F,V)}$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -2863,28 +2863,28 @@
         },
         {
           "id": "banco_facil_03",
-          "questionText": "¿Qué axioma de cuerpo justifica que $a+0=a$?",
+          "questionText": "¿Qué axioma de cuerpo justifica que $$a+0=a$$?",
           "questionLatex": "",
           "options": [
-            "El axioma del elemento neutro aditivo, que define a 0 con esa propiedad",
-            "El axioma de conmutatividad",
-            "El axioma de distributividad",
-            "El axioma del inverso multiplicativo"
+            "$$El axioma del elemento neutro aditivo, que define a 0 con esa propiedad$$",
+            "$$El axioma de conmutatividad$$",
+            "$$El axioma de distributividad$$",
+            "$$El axioma del inverso multiplicativo$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\text{Es el axioma del neutro aditivo, por definición}",
+          "explanationLatex": "$$\\text{Es el axioma del neutro aditivo, por definición}$$",
           "explanationSteps": [
             {
               "title": "Recuerda la lista de axiomas de cuerpo",
               "text": "Uno de ellos establece la existencia de un elemento neutro para la suma.",
               "icon": "pin",
-              "mathContent": "\\exists\\, 0: a+0=a"
+              "mathContent": "$$\\exists\\, 0: a+0=a$$"
             },
             {
               "title": "Conclusión",
               "text": "Esta igualdad es, por definición, el axioma del neutro aditivo, no algo que haya que 'demostrar' aparte.",
               "icon": "star",
-              "mathContent": "\\text{Axioma del neutro aditivo}"
+              "mathContent": "$$\\text{Axioma del neutro aditivo}$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -2893,27 +2893,27 @@
         {
           "id": "banco_facil_04",
           "questionText": "Resuelve:",
-          "questionLatex": "5x-3>12",
+          "questionLatex": "$$5x-3>12$$",
           "options": [
-            "x>3",
-            "x>15",
-            "x<3",
-            "x>1"
+            "$$x>3$$",
+            "$$x>15$$",
+            "$$x<3$$",
+            "$$x>1$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "x>3",
+          "explanationLatex": "$$x>3$$",
           "explanationSteps": [
             {
               "title": "Aísla el término con x",
               "text": "Sumamos 3 en ambos lados.",
               "icon": "pin",
-              "mathContent": "5x>15"
+              "mathContent": "$$5x>15$$"
             },
             {
               "title": "Despeja x",
               "text": "Dividimos entre 5 (positivo, no se invierte).",
               "icon": "star",
-              "mathContent": "x>3"
+              "mathContent": "$$x>3$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -2922,27 +2922,27 @@
         {
           "id": "banco_facil_05",
           "questionText": "Resuelve:",
-          "questionLatex": "|x+1|=4",
+          "questionLatex": "$$|x+1|=4$$",
           "options": [
-            "\\{-5,3\\}",
-            "\\{5,-3\\}",
-            "\\{-5,-3\\}",
-            "\\{5,3\\}"
+            "$$\\{-5,3\\}$$",
+            "$$\\{5,-3\\}$$",
+            "$$\\{-5,-3\\}$$",
+            "$$\\{5,3\\}$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\{-5,3\\}",
+          "explanationLatex": "$$\\{-5,3\\}$$",
           "explanationSteps": [
             {
               "title": "Rama positiva",
               "text": "El interior puede ser igual a 4.",
               "icon": "pin",
-              "mathContent": "x+1=4 \\Rightarrow x=3"
+              "mathContent": "$$x+1=4 \\Rightarrow x=3$$"
             },
             {
               "title": "Rama negativa",
               "text": "O el interior puede ser igual a -4.",
               "icon": "fx",
-              "mathContent": "x+1=-4 \\Rightarrow x=-5"
+              "mathContent": "$$x+1=-4 \\Rightarrow x=-5$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -2950,34 +2950,34 @@
         },
         {
           "id": "banco_facil_06",
-          "questionText": "Calcula $|-3|+|4|$ y compáralo con $|-3+4|$:",
+          "questionText": "Calcula $$|-3|+|4|$$ y compáralo con $$|-3+4|$$:",
           "questionLatex": "",
           "options": [
-            "|-3|+|4|=7; \\;|-3+4|=1; \\;\\text{se cumple } 1\\leq7",
-            "|-3|+|4|=1; \\;|-3+4|=7",
-            "Ambos son iguales a 7",
-            "Ambos son iguales a 1"
+            "$$|-3|+|4|=7; \\;|-3+4|=1; \\;\\text{se cumple } 1\\leq7$$",
+            "$$|-3|+|4|=1; \\;|-3+4|=7$$",
+            "$$Ambos son iguales a 7$$",
+            "$$Ambos son iguales a 1$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "7 \\text{ y } 1; \\;1\\leq7",
+          "explanationLatex": "$$7 \\text{ y } 1; \\;1\\leq7$$",
           "explanationSteps": [
             {
               "title": "Calcula por separado y suma",
               "text": "Tomamos valor absoluto de cada número antes de sumar.",
               "icon": "fx",
-              "mathContent": "|-3|+|4|=3+4=7"
+              "mathContent": "$$|-3|+|4|=3+4=7$$"
             },
             {
               "title": "Calcula sumando primero",
               "text": "Ahora sumamos primero y luego tomamos valor absoluto.",
               "icon": "fx",
-              "mathContent": "|-3+4|=|1|=1"
+              "mathContent": "$$|-3+4|=|1|=1$$"
             },
             {
               "title": "Compara con la desigualdad triangular",
               "text": "1 es efectivamente menor o igual que 7, confirmando la propiedad.",
               "icon": "star",
-              "mathContent": "1\\leq7 \\;\\checkmark"
+              "mathContent": "$$1\\leq7 \\;\\checkmark$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -2995,40 +2995,40 @@
       "challenges": [
         {
           "id": "banco_media_01",
-          "questionText": "Demuestra que si $a<0$ y $b<0$, entonces $ab>0$:",
+          "questionText": "Demuestra que si $$a<0$$ y $$b<0$$, entonces $$ab>0$$:",
           "questionLatex": "",
           "options": [
-            "Como -a>0 y -b>0, su producto (-a)(-b)=ab es positivo por compatibilidad del producto con positivos",
-            "Se sigue directamente sin necesitar el signo de a y b",
-            "Es falso: el producto de dos negativos es negativo",
-            "Solo es cierto si además a=b"
+            "$$Como -a>0 y -b>0, su producto (-a)(-b)=ab es positivo por compatibilidad del producto con positivos$$",
+            "$$Se sigue directamente sin necesitar el signo de a y b$$",
+            "$$Es falso: el producto de dos negativos es negativo$$",
+            "$$Solo es cierto si además a=b$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "ab>0, \\text{ ya que } (-a)(-b)=ab>0",
+          "explanationLatex": "$$ab>0, \\text{ ya que } (-a)(-b)=ab>0$$",
           "explanationSteps": [
             {
               "title": "Convierte a y b en positivos",
               "text": "Si a<0, entonces -a>0 (por un resultado ya visto); igual para b.",
               "icon": "pin",
-              "mathContent": "-a>0, \\;-b>0"
+              "mathContent": "$$-a>0, \\;-b>0$$"
             },
             {
               "title": "Multiplica los dos positivos",
               "text": "El producto de dos números positivos es positivo.",
               "icon": "fx",
-              "mathContent": "(-a)(-b)>0"
+              "mathContent": "$$(-a)(-b)>0$$"
             },
             {
               "title": "Simplifica el producto de negativos",
               "text": "(-a)(-b) es algebraicamente igual a ab.",
               "icon": "fx",
-              "mathContent": "(-a)(-b)=ab"
+              "mathContent": "$$(-a)(-b)=ab$$"
             },
             {
               "title": "Conclusión",
               "text": "Por lo tanto, ab>0.",
               "icon": "star",
-              "mathContent": "ab>0"
+              "mathContent": "$$ab>0$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -3039,31 +3039,31 @@
           "questionText": "Niega: 'todo número racional puede escribirse como decimal finito':",
           "questionLatex": "",
           "options": [
-            "Existe un número racional que no puede escribirse como decimal finito (ej. 1/3=0.333…)",
-            "Ningún número racional puede escribirse como decimal finito",
-            "Todo número racional puede escribirse como decimal infinito",
-            "Existe un número irracional que es decimal finito"
+            "$$Existe un número racional que no puede escribirse como decimal finito (ej. 1/3=0.333…)$$",
+            "$$Ningún número racional puede escribirse como decimal finito$$",
+            "$$Todo número racional puede escribirse como decimal infinito$$",
+            "$$Existe un número irracional que es decimal finito$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\text{Existe un racional sin decimal finito (ej. } 1/3)",
+          "explanationLatex": "$$\\text{Existe un racional sin decimal finito (ej. } 1/3)$$",
           "explanationSteps": [
             {
               "title": "Identifica el cuantificador",
               "text": "Es un 'para todo': ∀x (x racional → x es decimal finito).",
               "icon": "pin",
-              "mathContent": "\\forall x [\\ldots]"
+              "mathContent": "$$\\forall x [\\ldots]$$"
             },
             {
               "title": "Niega el cuantificador universal",
               "text": "Se convierte en un 'existe', negando lo de adentro.",
               "icon": "fx",
-              "mathContent": "\\exists x [\\ldots \\wedge \\neg(\\ldots)]"
+              "mathContent": "$$\\exists x [\\ldots \\wedge \\neg(\\ldots)]$$"
             },
             {
               "title": "Encuentra un testigo concreto",
               "text": "1/3=0.333… es racional, pero su decimal es periódico, no finito.",
               "icon": "star",
-              "mathContent": "1/3 \\text{ es un contraejemplo}"
+              "mathContent": "$$1/3 \\text{ es un contraejemplo}$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -3072,27 +3072,27 @@
         {
           "id": "banco_media_03",
           "questionText": "Resuelve:",
-          "questionLatex": "-4<3x+2\\leq11",
+          "questionLatex": "$$-4<3x+2\\leq11$$",
           "options": [
-            "(-2,3]",
-            "[-2,3)",
-            "(-2,3)",
-            "(2,3]"
+            "$$(-2,3]$$",
+            "$$[-2,3)$$",
+            "$$(-2,3)$$",
+            "$$(2,3]$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "-2<x\\leq3 \\Rightarrow (-2,3]",
+          "explanationLatex": "$$-2<x\\leq3 \\Rightarrow (-2,3]$$",
           "explanationSteps": [
             {
               "title": "Resta 2 en los tres miembros",
               "text": "Aplicamos la misma operación a toda la desigualdad doble.",
               "icon": "pin",
-              "mathContent": "-6<3x\\leq9"
+              "mathContent": "$$-6<3x\\leq9$$"
             },
             {
               "title": "Divide entre 3",
               "text": "Como 3 es positivo, no se invierte nada.",
               "icon": "star",
-              "mathContent": "-2<x\\leq3"
+              "mathContent": "$$-2<x\\leq3$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -3101,33 +3101,33 @@
         {
           "id": "banco_media_04",
           "questionText": "Resuelve:",
-          "questionLatex": "|2x-5|\\geq7",
+          "questionLatex": "$$|2x-5|\\geq7$$",
           "options": [
-            "(-\\infty,-1]\\cup[6,\\infty)",
-            "[-1,6]",
-            "(-\\infty,-1)\\cup(6,\\infty)",
-            "(-\\infty,6]\\cup[-1,\\infty)"
+            "$$(-\\infty,-1]\\cup[6,\\infty)$$",
+            "$$[-1,6]$$",
+            "$$(-\\infty,-1)\\cup(6,\\infty)$$",
+            "$$(-\\infty,6]\\cup[-1,\\infty)$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "(-\\infty,-1]\\cup[6,\\infty)",
+          "explanationLatex": "$$(-\\infty,-1]\\cup[6,\\infty)$$",
           "explanationSteps": [
             {
               "title": "Rama positiva",
               "text": "El interior puede ser mayor o igual a 7.",
               "icon": "pin",
-              "mathContent": "2x-5\\geq7 \\Rightarrow x\\geq6"
+              "mathContent": "$$2x-5\\geq7 \\Rightarrow x\\geq6$$"
             },
             {
               "title": "Rama negativa",
               "text": "O el interior puede ser menor o igual a -7.",
               "icon": "fx",
-              "mathContent": "2x-5\\leq-7 \\Rightarrow x\\leq-1"
+              "mathContent": "$$2x-5\\leq-7 \\Rightarrow x\\leq-1$$"
             },
             {
               "title": "Une con unión",
               "text": "Es tipo 'mayor que', así que se combinan con ∪.",
               "icon": "star",
-              "mathContent": "(-\\infty,-1]\\cup[6,\\infty)"
+              "mathContent": "$$(-\\infty,-1]\\cup[6,\\infty)$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -3138,37 +3138,37 @@
           "questionText": "Un rectángulo tiene perímetro de a lo sumo 40 cm, y su base mide el doble de su altura. ¿Cuál es la altura posible?",
           "questionLatex": "",
           "options": [
-            "0<h\\leq\\frac{20}{3} \\text{ cm}",
-            "0<h\\leq20 \\text{ cm}",
-            "0<h\\leq40 \\text{ cm}",
-            "0<h\\leq\\frac{40}{3} \\text{ cm}"
+            "$$0<h\\leq\\frac{20}{3} \\text{ cm}$$",
+            "$$0<h\\leq20 \\text{ cm}$$",
+            "$$0<h\\leq40 \\text{ cm}$$",
+            "$$0<h\\leq\\frac{40}{3} \\text{ cm}$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "0<h\\leq\\frac{20}{3}\\text{ cm} \\approx 6.67\\text{ cm}",
+          "explanationLatex": "$$0<h\\leq\\frac{20}{3}\\text{ cm} \\approx 6.67\\text{ cm}$$",
           "explanationSteps": [
             {
               "title": "Plantea el perímetro en términos de la altura",
               "text": "Si h es la altura, la base es 2h; el perímetro es 2(base+altura).",
               "icon": "pin",
-              "mathContent": "P=2(2h+h)=6h"
+              "mathContent": "$$P=2(2h+h)=6h$$"
             },
             {
               "title": "Aplica la restricción",
               "text": "El perímetro no debe superar 40 cm.",
               "icon": "fx",
-              "mathContent": "6h\\leq40"
+              "mathContent": "$$6h\\leq40$$"
             },
             {
               "title": "Despeja h",
               "text": "Dividimos entre 6 y simplificamos la fracción.",
               "icon": "fx",
-              "mathContent": "h\\leq\\frac{40}{6}=\\frac{20}{3}"
+              "mathContent": "$$h\\leq\\frac{40}{6}=\\frac{20}{3}$$"
             },
             {
               "title": "No olvides el contexto",
               "text": "Como h es una altura, también debe ser positiva.",
               "icon": "star",
-              "mathContent": "0<h\\leq\\frac{20}{3}\\text{ cm}"
+              "mathContent": "$$0<h\\leq\\frac{20}{3}\\text{ cm}$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -3176,34 +3176,34 @@
         },
         {
           "id": "banco_media_06",
-          "questionText": "Demuestra por contrarrecíproco que si $n^2$ es impar, entonces $n$ es impar:",
+          "questionText": "Demuestra por contrarrecíproco que si $$n^2$$ es impar, entonces $$n$$ es impar:",
           "questionLatex": "",
           "options": [
-            "El contrarrecíproco es 'si n es par, entonces n² es par', que se demuestra fácilmente con n=2k",
-            "El contrarrecíproco es 'si n es impar, entonces n² es par'",
-            "No se puede usar contrarrecíproco en este caso",
-            "El contrarrecíproco invierte solo una parte de la proposición"
+            "$$El contrarrecíproco es 'si n es par, entonces n² es par', que se demuestra fácilmente con n=2k$$",
+            "$$El contrarrecíproco es 'si n es impar, entonces n² es par'$$",
+            "$$No se puede usar contrarrecíproco en este caso$$",
+            "$$El contrarrecíproco invierte solo una parte de la proposición$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\text{Contrarrecíproco: n par} \\Rightarrow n^2 \\text{ par}",
+          "explanationLatex": "$$\\text{Contrarrecíproco: n par} \\Rightarrow n^2 \\text{ par}$$",
           "explanationSteps": [
             {
               "title": "Plantea el contrarrecíproco correcto",
               "text": "Se niegan ambas partes y se intercambia el orden.",
               "icon": "pin",
-              "mathContent": "\\neg Q \\to \\neg P: \\text{'si } n \\text{ es par, entonces } n^2 \\text{ es par'}"
+              "mathContent": "$$\\neg Q \\to \\neg P: \\text{'si } n \\text{ es par, entonces } n^2 \\text{ es par'}$$"
             },
             {
               "title": "Demuestra ese contrarrecíproco directamente",
               "text": "Sustituimos n=2k y elevamos al cuadrado.",
               "icon": "fx",
-              "mathContent": "n=2k \\Rightarrow n^2=4k^2=2(2k^2)"
+              "mathContent": "$$n=2k \\Rightarrow n^2=4k^2=2(2k^2)$$"
             },
             {
               "title": "Conclusión",
               "text": "2(2k²) es claramente par, así que el contrarrecíproco es verdadero, y por tanto la proposición original también.",
               "icon": "star",
-              "mathContent": "n^2 \\text{ par} \\Rightarrow n \\text{ par (contrarrecíproco válido)}"
+              "mathContent": "$$n^2 \\text{ par} \\Rightarrow n \\text{ par (contrarrecíproco válido)}$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -3221,40 +3221,40 @@
       "challenges": [
         {
           "id": "banco_avanzada_01",
-          "questionText": "Demuestra que para todo $a,b\\geq0$, $\\frac{a+b}{2}\\geq\\sqrt{ab}$ (desigualdad de las medias):",
+          "questionText": "Demuestra que para todo $$a,b\\geq0$$, $$\\frac{a+b}{2}\\geq\\sqrt{ab}$$ (desigualdad de las medias):",
           "questionLatex": "",
           "options": [
-            "Partiendo de $(\\sqrt a-\\sqrt b)^2\\geq0$ y expandiendo, se llega directamente al resultado",
-            "Se demuestra elevando ambos lados al cuadrado sin más",
-            "Solo es cierta si a=b",
-            "No se puede demostrar en general"
+            "$$Partiendo de (\\sqrt a-\\sqrt b)^2\\geq0 y expandiendo, se llega directamente al resultado$$",
+            "$$Se demuestra elevando ambos lados al cuadrado sin más$$",
+            "$$Solo es cierta si a=b$$",
+            "$$No se puede demostrar en general$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\frac{a+b}{2}\\geq\\sqrt{ab}",
+          "explanationLatex": "$$\\frac{a+b}{2}\\geq\\sqrt{ab}$$",
           "explanationSteps": [
             {
               "title": "Parte de un cuadrado, que siempre es no negativo",
               "text": "Usamos las raíces de a y b, ambas bien definidas porque a,b≥0.",
               "icon": "pin",
-              "mathContent": "(\\sqrt a-\\sqrt b)^2\\geq0"
+              "mathContent": "$$(\\sqrt a-\\sqrt b)^2\\geq0$$"
             },
             {
               "title": "Expande el binomio al cuadrado",
               "text": "Desarrollamos usando el producto notable.",
               "icon": "fx",
-              "mathContent": "a-2\\sqrt{ab}+b\\geq0"
+              "mathContent": "$$a-2\\sqrt{ab}+b\\geq0$$"
             },
             {
               "title": "Despeja el término cruzado",
               "text": "Sumamos 2√(ab) a ambos lados.",
               "icon": "fx",
-              "mathContent": "a+b\\geq2\\sqrt{ab}"
+              "mathContent": "$$a+b\\geq2\\sqrt{ab}$$"
             },
             {
               "title": "Divide entre 2",
               "text": "Obtenemos exactamente la desigualdad de las medias.",
               "icon": "star",
-              "mathContent": "\\frac{a+b}{2}\\geq\\sqrt{ab}"
+              "mathContent": "$$\\frac{a+b}{2}\\geq\\sqrt{ab}$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -3262,46 +3262,46 @@
         },
         {
           "id": "banco_avanzada_02",
-          "questionText": "Resuelve $|x-3|+|x+2|\\leq10$, interpretando geométricamente como suma de distancias:",
+          "questionText": "Resuelve $$|x-3|+|x+2|\\leq10$$, interpretando geométricamente como suma de distancias:",
           "questionLatex": "",
           "options": [
-            "[-4.5, 5.5]",
-            "[-2, 3]",
-            "[-10, 10]",
-            "(-4.5, 5.5)"
+            "$$[-4.5, 5.5]$$",
+            "$$[-2, 3]$$",
+            "$$[-10, 10]$$",
+            "$$(-4.5, 5.5)$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "[-4.5,5.5]",
+          "explanationLatex": "$$[-4.5,5.5]$$",
           "explanationSteps": [
             {
               "title": "Identifica los puntos críticos",
               "text": "El valor absoluto cambia de comportamiento en x=3 y x=-2, así que analizamos tres regiones.",
               "icon": "pin",
-              "mathContent": "x=-2 \\;\\text{y}\\; x=3"
+              "mathContent": "$$x=-2 \\;\\text{y}\\; x=3$$"
             },
             {
               "title": "Analiza la región central, entre -2 y 3",
               "text": "Ahí ambos interiores tienen signos que dan una suma constante.",
               "icon": "fx",
-              "mathContent": "|x-3|+|x+2| = (3-x)+(x+2) = 5 \\leq 10 \\;\\text{(siempre cierto aquí)}"
+              "mathContent": "$$|x-3|+|x+2| = (3-x)+(x+2) = 5 \\leq 10 \\;\\text{(siempre cierto aquí)}$$"
             },
             {
               "title": "Analiza a la izquierda de -2",
               "text": "Ambos valores absolutos se abren con signo negativo.",
               "icon": "fx",
-              "mathContent": "(3-x)+(-x-2)=1-2x\\leq10 \\Rightarrow x\\geq-4.5"
+              "mathContent": "$$(3-x)+(-x-2)=1-2x\\leq10 \\Rightarrow x\\geq-4.5$$"
             },
             {
               "title": "Analiza a la derecha de 3",
               "text": "Ambos valores absolutos se abren con signo positivo.",
               "icon": "fx",
-              "mathContent": "(x-3)+(x+2)=2x-1\\leq10 \\Rightarrow x\\leq5.5"
+              "mathContent": "$$(x-3)+(x+2)=2x-1\\leq10 \\Rightarrow x\\leq5.5$$"
             },
             {
               "title": "Une las tres regiones",
               "text": "Combinando los tres casos, la solución completa es un solo intervalo.",
               "icon": "star",
-              "mathContent": "[-4.5,5.5]"
+              "mathContent": "$$[-4.5,5.5]$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -3312,43 +3312,43 @@
           "questionText": "Demuestra por contradicción que no existe un número racional cuyo cuadrado sea 3:",
           "questionLatex": "",
           "options": [
-            "Suponiendo √3=p/q irreducible, se llega a que 3 divide tanto a p como a q, contradiciendo la irreducibilidad",
-            "Se puede encontrar fácilmente ese racional",
-            "Solo es cierto para números negativos",
-            "No se puede adaptar la demostración de √2"
+            "$$Suponiendo √3=p/q irreducible, se llega a que 3 divide tanto a p como a q, contradiciendo la irreducibilidad$$",
+            "$$Se puede encontrar fácilmente ese racional$$",
+            "$$Solo es cierto para números negativos$$",
+            "$$No se puede adaptar la demostración de √2$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\text{Contradicción: 3 divide a p y a q simultáneamente}",
+          "explanationLatex": "$$\\text{Contradicción: 3 divide a p y a q simultáneamente}$$",
           "explanationSteps": [
             {
               "title": "Supón lo contrario",
               "text": "Por contradicción, supongamos que √3=p/q con p,q enteros sin factores comunes.",
               "icon": "pin",
-              "mathContent": "\\sqrt3=p/q \\text{ (irreducible)}"
+              "mathContent": "$$\\sqrt3=p/q \\text{ (irreducible)}$$"
             },
             {
               "title": "Eleva al cuadrado y despeja",
               "text": "Obtenemos una relación entre p² y q².",
               "icon": "fx",
-              "mathContent": "3=p^2/q^2 \\Rightarrow p^2=3q^2"
+              "mathContent": "$$3=p^2/q^2 \\Rightarrow p^2=3q^2$$"
             },
             {
               "title": "Deduce que 3 divide a p",
               "text": "Como 3 divide a p² y 3 es primo, 3 debe dividir a p también.",
               "icon": "fx",
-              "mathContent": "3\\mid p \\Rightarrow p=3m"
+              "mathContent": "$$3\\mid p \\Rightarrow p=3m$$"
             },
             {
               "title": "Sustituye y repite el argumento con q",
               "text": "Sustituyendo p=3m, se llega a que 3 también divide a q.",
               "icon": "fx",
-              "mathContent": "9m^2=3q^2 \\Rightarrow q^2=3m^2 \\Rightarrow 3\\mid q"
+              "mathContent": "$$9m^2=3q^2 \\Rightarrow q^2=3m^2 \\Rightarrow 3\\mid q$$"
             },
             {
               "title": "Encuentra la contradicción",
               "text": "Que 3 divida tanto a p como a q contradice que la fracción p/q fuera irreducible.",
               "icon": "star",
-              "mathContent": "\\text{Contradicción}"
+              "mathContent": "$$\\text{Contradicción}$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -3357,39 +3357,39 @@
         {
           "id": "banco_avanzada_04",
           "questionText": "Resuelve la desigualdad compuesta:",
-          "questionLatex": "-5\\leq\\frac{3-2x}{4}<2",
+          "questionLatex": "$$-5\\leq\\frac{3-2x}{4}<2$$",
           "options": [
-            "(-2.5, 11.5]",
-            "(-11, 6.5]",
-            "[-2.5, 11.5)",
-            "(-6.5, 11]"
+            "$$(-2.5, 11.5]$$",
+            "$$(-11, 6.5]$$",
+            "$$[-2.5, 11.5)$$",
+            "$$(-6.5, 11]$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "(-2.5, 11.5]",
+          "explanationLatex": "$$(-2.5, 11.5]$$",
           "explanationSteps": [
             {
               "title": "Multiplica los tres miembros por 4",
               "text": "Como 4 es positivo, no se invierte ningún signo.",
               "icon": "pin",
-              "mathContent": "-20\\leq3-2x<8"
+              "mathContent": "$$-20\\leq3-2x<8$$"
             },
             {
               "title": "Resta 3 en los tres miembros",
               "text": "Aislamos el término con x.",
               "icon": "fx",
-              "mathContent": "-23\\leq-2x<5"
+              "mathContent": "$$-23\\leq-2x<5$$"
             },
             {
               "title": "Divide entre -2, invirtiendo AMBOS signos y el orden",
               "text": "Al dividir entre un número negativo, cada desigualdad se invierte y el orden de los extremos se intercambia.",
               "icon": "fx",
-              "mathContent": "\\frac{-23}{-2}\\geq x>\\frac{5}{-2} \\;\\Rightarrow\\; 11.5\\geq x>-2.5"
+              "mathContent": "$$\\frac{-23}{-2}\\geq x>\\frac{5}{-2} \\;\\Rightarrow\\; 11.5\\geq x>-2.5$$"
             },
             {
               "title": "Reescribe en orden creciente",
               "text": "Ordenamos de menor a mayor para leerlo con más naturalidad.",
               "icon": "star",
-              "mathContent": "-2.5<x\\leq11.5"
+              "mathContent": "$$-2.5<x\\leq11.5$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -3400,31 +3400,31 @@
           "questionText": "Escribe con cuantificadores 'para todo número real x, existe un número real y tal que x+y=0', y di a qué axioma corresponde:",
           "questionLatex": "",
           "options": [
-            "\\forall x\\in\\mathbb{R}\\,\\exists y\\in\\mathbb{R}: x+y=0; \\text{ corresponde al axioma del inverso aditivo}",
-            "\\exists x\\in\\mathbb{R}\\,\\forall y\\in\\mathbb{R}: x+y=0; \\text{ axioma del neutro aditivo}",
-            "\\forall x\\in\\mathbb{R}\\,\\forall y\\in\\mathbb{R}: x+y=0; \\text{ axioma de conmutatividad}",
-            "\\forall x\\in\\mathbb{R}\\,\\exists y\\in\\mathbb{R}: xy=1; \\text{ axioma del inverso multiplicativo}"
+            "$$\\forall x\\in\\mathbb{R}\\,\\exists y\\in\\mathbb{R}: x+y=0; \\text{ corresponde al axioma del inverso aditivo}$$",
+            "$$\\exists x\\in\\mathbb{R}\\,\\forall y\\in\\mathbb{R}: x+y=0; \\text{ axioma del neutro aditivo}$$",
+            "$$\\forall x\\in\\mathbb{R}\\,\\forall y\\in\\mathbb{R}: x+y=0; \\text{ axioma de conmutatividad}$$",
+            "$$\\forall x\\in\\mathbb{R}\\,\\exists y\\in\\mathbb{R}: xy=1; \\text{ axioma del inverso multiplicativo}$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "\\forall x\\,\\exists y: x+y=0 \\text{ (inverso aditivo)}",
+          "explanationLatex": "$$\\forall x\\,\\exists y: x+y=0 \\text{ (inverso aditivo)}$$",
           "explanationSteps": [
             {
               "title": "Traduce 'para todo' y 'existe' en orden",
               "text": "El 'para todo x' va primero, y dentro de él, el 'existe y'.",
               "icon": "pin",
-              "mathContent": "\\forall x\\in\\mathbb{R}\\,\\exists y\\in\\mathbb{R}"
+              "mathContent": "$$\\forall x\\in\\mathbb{R}\\,\\exists y\\in\\mathbb{R}$$"
             },
             {
               "title": "Agrega la condición",
               "text": "La condición que deben cumplir x e y juntos.",
               "icon": "fx",
-              "mathContent": "x+y=0"
+              "mathContent": "$$x+y=0$$"
             },
             {
               "title": "Identifica el axioma correspondiente",
               "text": "Esta es exactamente la existencia del inverso aditivo -x para cada x.",
               "icon": "star",
-              "mathContent": "\\text{Axioma del inverso aditivo}"
+              "mathContent": "$$\\text{Axioma del inverso aditivo}$$"
             }
           ],
           "category": "Práctica Integradora",
