@@ -7,67 +7,6 @@
   "isLocked": false,
   "lessons": [
     {
-      "id": "gac1_intro_theory",
-      "title": "Cómo usar esta guía",
-      "type": "theory",
-      "isCompleted": false,
-      "isLocked": false,
-      "theorySections": [
-        {
-          "title": "Bienvenida y objetivo del curso",
-          "subtitle": "Geometría Analítica • Introducción",
-          "content": "Este curso te lleva desde los conceptos más básicos del plano cartesiano hasta los problemas combinados de nivel de examen parcial que mezclan rectas, circunferencias, tangentes y lugares geométricos. La meta no es memorizar fórmulas sueltas, sino entender por qué funciona cada método: cuando el procedimiento se entiende, los ejercicios dejan de parecer distintos entre sí, porque cambian los detalles pero la lógica central es siempre la misma.",
-          "formulaLatex": "",
-          "proTip": "Antes de resolver cualquier problema, dibuja un esbozo del plano con los puntos y figuras involucrados. Un boceto impreciso ya te ayuda a anticipar si la respuesta tiene sentido y muchas veces revela el método más corto.",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "La idea constante de todo el curso es esta: la geometría analítica es el lenguaje que conecta figuras geométricas con ecuaciones algebraicas. Cada figura —una recta, una mediatriz, una circunferencia— tiene dos caras: una cara geométrica, que se dibuja y se ve, y una cara algebraica, que se escribe y se manipula. Saber pasar de una a otra sin perder información es la competencia central que se evalúa en cualquier examen del tema."
-            },
-            {
-              "type": "note",
-              "content": "Si dominas estas tres ideas, ya tienes gran parte del camino resuelto: 1) representar figuras como ecuaciones, 2) manipular esas ecuaciones con cuidado algebraico, 3) interpretar el resultado geométricamente."
-            }
-          ]
-        },
-        {
-          "title": "Ruta pedagógica del curso",
-          "subtitle": "Geometría Analítica • Cómo está organizado",
-          "content": "La secuencia está pensada para que cada tema prepare al siguiente. Primero puntos y rectas, donde se aprenden distancia y pendiente, operaciones que se usarán en todos los capítulos posteriores. Luego lugares geométricos y mediatrices, que introducen la idea de caracterizar un conjunto de puntos por una propiedad común en vez de por una fórmula explícita. Después la circunferencia, el lugar geométrico más importante del curso. Y al final, problemas combinados que mezclan todo lo anterior, tal como aparecen en un examen real.",
-          "formulaLatex": "",
-          "proTip": "",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "Cada lección de teoría sigue la misma estructura: explicación detallada, ejemplos resueltos paso a paso, consejos de experto, errores comunes a evitar, y ejercicios de práctica en tres niveles de dificultad creciente. Esta repetición no es casual: familiarizarte con el formato te permite concentrar tu energía en el contenido matemático."
-            },
-            {
-              "type": "note",
-              "content": "Estructura recomendada por tema: teoría breve + ejemplo guiado + práctica fácil + práctica media + desafío tipo parcial."
-            }
-          ]
-        },
-        {
-          "title": "Lenguaje y notación",
-          "subtitle": "Geometría Analítica • Convenciones del curso",
-          "content": "A lo largo del curso usaremos la notación estándar de coordenadas cartesianas. Un punto del plano se escribe P = (x, y). La distancia entre dos puntos P₁ y P₂ se denota d(P₁, P₂), o simplemente d. El radio de una circunferencia siempre se denota r > 0, y su centro C = (h, k). Cuando trabajemos con familias de circunferencias usaremos la letra griega λ para el parámetro que varía.",
-          "formulaLatex": "",
-          "proTip": "",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "También usaremos con frecuencia la letra $m$ para la pendiente de una recta, y las letras $A, B, C, D, E, F$ para los coeficientes de ecuaciones generales. Cuando dos rectas distintas aparezcan en un mismo problema, distinguiremos sus pendientes como $m_1$ y $m_2$, y de forma análoga los coeficientes: $A_1, B_1, C_1$ para la primera recta y $A_2, B_2, C_2$ para la segunda."
-            },
-            {
-              "type": "note",
-              "content": "Error común: no confundas la circunferencia con el disco. La circunferencia es únicamente la curva (el borde); el disco es la región interior incluyendo el borde. En este curso, 'circunferencia' se refiere siempre a la curva: sus puntos son exactamente los que satisfacen la ecuación con signo de igualdad."
-            }
-          ]
-        }
-      ],
-      "challenges": []
-    },
-    {
       "id": "gac2_rectas_theory",
       "title": "Puntos, distancia, pendiente y rectas",
       "type": "theory",
