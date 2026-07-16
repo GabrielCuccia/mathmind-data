@@ -7,54 +7,6 @@
   "isLocked": false,
   "lessons": [
     {
-      "id": "intro_notacion_nr_theory",
-      "title": "Introducción: Cómo Aprovechar este Curso",
-      "type": "theory",
-      "isCompleted": false,
-      "isLocked": false,
-      "theorySections": [
-        {
-          "title": "Objetivo y Ruta del Curso",
-          "subtitle": "Fundamentos • Introducción",
-          "content": "El objetivo de este curso es construir, desde cero, la base lógica y algebraica sobre la que descansa todo el álgebra posterior: qué son los números reales, qué reglas de razonamiento nos permiten demostrar propiedades con certeza, y cómo esas dos cosas juntas explican por qué funcionan las reglas de las desigualdades y del valor absoluto. La meta no es memorizar una lista de propiedades, sino entender que cada regla que usamos al resolver una desigualdad —por ejemplo, invertir el signo al multiplicar por un número negativo— se puede demostrar rigurosamente a partir de un puñado de axiomas.",
-          "formulaLatex": "",
-          "proTip": "Si dominas tres ideas, ya tienes gran parte del camino resuelto: 1) reconocer los axiomas algebraicos y de orden de los números reales, 2) usar conectores y cuantificadores lógicos para escribir enunciados con precisión, y 3) aplicar esos axiomas para justificar cada paso al resolver una desigualdad o una expresión con valor absoluto.",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "En todo el curso trabajaremos con una idea constante: los números reales satisfacen un conjunto pequeño de axiomas algebraicos y de orden, y toda propiedad adicional —por complicada que parezca— se deduce de esos axiomas mediante razonamiento lógico válido. Aprender a reconocer esa cadena de deducción es lo que distingue a quien solo aplica reglas de quien entiende por qué esas reglas son ciertas."
-            },
-            {
-              "type": "text",
-              "content": "La secuencia está organizada para que cada tema prepare al siguiente: primero la clasificación de los números reales y sus axiomas algebraicos y de orden; después los fundamentos de lógica (proposiciones, conectores, cuantificadores y técnicas de demostración); con esa base, volveremos a las desigualdades para ver de dónde vienen realmente sus reglas, antes de practicar con desigualdades lineales y compuestas; y finalmente el valor absoluto y las desigualdades que lo involucran."
-            },
-            {
-              "type": "note",
-              "content": "Conviene avanzar por niveles: teoría breve, ejemplo guiado, práctica fácil, práctica media y un desafío final tipo examen. Esa misma estructura se repite en cada tema del curso."
-            }
-          ]
-        },
-        {
-          "title": "Lenguaje y Notación",
-          "subtitle": "Fundamentos • Notación",
-          "content": "A lo largo del curso usaremos la notación estándar de conjuntos numéricos: $\\mathbb{N}$ para los naturales, $\\mathbb{Z}$ para los enteros, $\\mathbb{Q}$ para los racionales, $\\text{Irr}$ para los irracionales, y $\\mathbb{R}$ para los reales. Para la lógica usaremos p y q para denotar proposiciones, los símbolos $\\neg, \\wedge, \\vee, \\to, \\leftrightarrow$ para los conectores lógicos, y $\\forall, \\exists$ para los cuantificadores universal y existencial respectivamente.",
-          "formulaLatex": "",
-          "proTip": "",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "Para las desigualdades usaremos $<, >, \\leq, \\geq$, y la notación de intervalos $(a,b), [a,b], (a,b], [a,b)$. El valor absoluto de un número x se denota $|x|$, y representa su distancia al cero en la recta real."
-            },
-            {
-              "type": "note",
-              "content": "Un error frecuente al iniciar el estudio de la lógica es confundir una proposición con una simple expresión algebraica. 'x + 3' no es una proposición (no tiene un valor de verdad definido), pero 'x + 3 = 7' sí es una proposición abierta, cuyo valor de verdad depende del valor de x. Esta distinción será clave en todo el capítulo dedicado al fundamento lógico de las desigualdades."
-            }
-          ]
-        }
-      ],
-      "challenges": []
-    },
-    {
       "id": "numeros_reales_clasificacion_theory",
       "title": "Clasificación de los Números Reales",
       "type": "theory",
