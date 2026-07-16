@@ -3,7 +3,7 @@
     {
       "id": "matematicas1",
       "title": "Matemáticas 1",
-      "description": "Plan de estudios del primer semestre universitario",
+      "description": "Plan de estudios Matematicas 1 Universidad Simon Bolivar",
       "isDefault": true,
       "moduleIds": [
         "numeros_reales_logica_desigualdades",
