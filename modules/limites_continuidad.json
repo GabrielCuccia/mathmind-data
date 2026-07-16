@@ -7,67 +7,6 @@
   "isLocked": false,
   "lessons": [
     {
-      "id": "glc1_intro_theory",
-      "title": "Cómo usar esta guía",
-      "type": "theory",
-      "isCompleted": false,
-      "isLocked": false,
-      "theorySections": [
-        {
-          "title": "Bienvenida y objetivo del curso",
-          "subtitle": "Límites y Continuidad • Introducción",
-          "content": "El objetivo de este curso es llevarte desde la idea intuitiva de límite hasta el teorema del valor intermedio, pasando por las técnicas algebraicas que resuelven la mayoría de los límites de un primer curso de cálculo sin necesidad de derivadas. La meta no es memorizar procedimientos sueltos, sino entender qué pregunta responde cada límite y por qué la técnica elegida es la adecuada para esa pregunta.",
-          "formulaLatex": "",
-          "proTip": "",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "La idea constante de todo el curso es esta: un límite describe el comportamiento de una función cerca de un punto (o cerca del infinito), no necesariamente lo que ocurre exactamente en ese punto. Esa distinción —entre 'cerca de' y 'exactamente en'— es la que separa el concepto de límite del simple valor de una función, y es también la que hace posible definir la continuidad de manera rigurosa."
-            },
-            {
-              "type": "note",
-              "content": "Si dominas estas tres ideas, ya tienes gran parte del camino resuelto: 1) reconocer si un límite se resuelve por sustitución directa o necesita una técnica algebraica adicional, 2) distinguir entre el comportamiento cerca de un punto finito y el comportamiento cuando x crece o decrece sin límite, 3) e interpretar el resultado en términos de continuidad, asíntotas o existencia de raíces."
-            }
-          ]
-        },
-        {
-          "title": "Ruta pedagógica del curso",
-          "subtitle": "Límites y Continuidad • Cómo está organizado",
-          "content": "La secuencia está organizada para que cada tema prepare al siguiente. Primero verás los teoremas básicos de límites y las técnicas algebraicas —factorización, racionalización, límites laterales, teorema del encaje— porque son la base de cualquier cálculo posterior. Después estudiarás los límites especiales de funciones trigonométricas, exponenciales, logarítmicas e hiperbólicas, que se resuelven con sustituciones ingeniosas en lugar de derivadas. Luego pasarás a los límites al infinito y a los límites infinitos, que se traducen directamente en asíntotas horizontales, verticales y oblicuas. Finalmente llegarás a la continuidad, que reúne todo lo anterior en una sola definición, y al teorema del valor intermedio, una de las aplicaciones más elegantes de la continuidad.",
-          "formulaLatex": "",
-          "proTip": "",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "Cada lección de teoría sigue la misma estructura: explicación detallada, ejemplos resueltos paso a paso, consejos de experto, errores comunes a evitar, y ejercicios de práctica en tres niveles de dificultad creciente."
-            },
-            {
-              "type": "note",
-              "content": "Estructura recomendada por tema: teoría breve + ejemplo guiado + práctica fácil + práctica media + desafío tipo parcial."
-            }
-          ]
-        },
-        {
-          "title": "Lenguaje y notación",
-          "subtitle": "Límites y Continuidad • Convenciones del curso",
-          "content": "A lo largo del curso escribiremos $\\lim_{x\\to a}f(x)=L$ para indicar que f(x) se aproxima a L cuando x se aproxima a a, sin que x sea necesariamente igual a a. Los límites laterales se escriben $\\lim_{x\\to a^-}f(x)$ (por la izquierda) y $\\lim_{x\\to a^+}f(x)$ (por la derecha). Cuando x crece o decrece sin límite, escribiremos $\\lim_{x\\to\\infty}f(x)$ y $\\lim_{x\\to-\\infty}f(x)$.",
-          "formulaLatex": "",
-          "proTip": "",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "Usaremos también el símbolo ∞ para describir límites infinitos, como en $\\lim_{x\\to a}f(x)=\\infty$, que indica que f(x) crece sin límite cuando x se acerca a a. Es importante recordar que ∞ no es un número: cuando decimos que un límite 'es' ∞, en realidad estamos describiendo un comportamiento (crecer sin cota), no asignando un valor numérico."
-            },
-            {
-              "type": "note",
-              "content": "Error común: pensar que $\\lim_{x\\to a}f(x)=\\infty$ significa que el límite existe. En el sentido estricto usado en cálculo, un límite existe solo cuando es un número real finito. Cuando escribimos que el límite es ∞, estamos describiendo por qué no existe, no dando un valor numérico."
-            }
-          ]
-        }
-      ],
-      "challenges": []
-    },
-    {
       "id": "glc2_teoremas_theory",
       "title": "Teoremas de límites: técnicas básicas",
       "type": "theory",
