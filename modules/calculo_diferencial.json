@@ -7,67 +7,6 @@
   "isLocked": false,
   "lessons": [
     {
-      "id": "gc1_intro_theory",
-      "title": "Cómo usar esta guía",
-      "type": "theory",
-      "isCompleted": false,
-      "isLocked": false,
-      "theorySections": [
-        {
-          "title": "Bienvenida y objetivo del curso",
-          "subtitle": "Cálculo Diferencial • Introducción",
-          "content": "Este curso te lleva desde las reglas más básicas de derivación hasta las aplicaciones más finas del cálculo diferencial: el teorema del valor medio y la regla de L'Hôpital para resolver límites indeterminados. La meta no es memorizar fórmulas sueltas, sino entender por qué funciona cada regla y cuándo conviene usarla. Cuando el procedimiento se entiende, los ejercicios de examen dejan de parecer distintos entre sí: cambian los detalles, pero la lógica central es siempre la misma.",
-          "formulaLatex": "",
-          "proTip": "",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "La idea constante de todo el curso es esta: derivar es medir la rapidez de cambio de una función, y cada nueva regla que aprendemos —cadena, producto, cociente, implícita— es simplemente una manera de calcular esa rapidez de cambio cuando la función tiene una estructura particular. Dominar esa estructura es la habilidad que se evalúa en cualquier examen de derivadas."
-            },
-            {
-              "type": "note",
-              "content": "Si dominas estas tres ideas, ya tienes gran parte del camino resuelto: 1) reconocer la estructura de la función (suma, producto, cociente, composición), 2) aplicar la regla de derivación correspondiente a esa estructura, 3) interpretar el resultado en términos de pendiente, razón de cambio o límite."
-            }
-          ]
-        },
-        {
-          "title": "Ruta pedagógica del curso",
-          "subtitle": "Cálculo Diferencial • Cómo está organizado",
-          "content": "La secuencia está pensada para que cada tema prepare al siguiente. Primero verás las reglas básicas —potencia, producto, cociente— aplicadas a polinomios, racionales, trigonométricas y exponenciales, porque son la base algebraica de todo lo demás. Después la regla de la cadena, las derivadas de orden superior y la derivación implícita, que amplían el alcance de las reglas básicas a funciones compuestas y curvas que no están despejadas explícitamente. Luego las funciones inversas —logarítmicas, trigonométricas inversas e hiperbólicas—, que requieren una idea nueva: derivar una función a partir de su inversa. Finalmente llegarás al teorema del valor medio y a la regla de L'Hôpital, las aplicaciones teóricas más importantes de la derivada en un primer curso de cálculo.",
-          "formulaLatex": "",
-          "proTip": "",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "Cada lección de teoría sigue la misma estructura: explicación detallada, ejemplos resueltos paso a paso, consejos de experto, errores comunes a evitar, y ejercicios de práctica en tres niveles de dificultad creciente."
-            },
-            {
-              "type": "note",
-              "content": "Estructura recomendada por tema: teoría breve + ejemplo guiado + práctica fácil + práctica media + desafío tipo parcial."
-            }
-          ]
-        },
-        {
-          "title": "Lenguaje y notación",
-          "subtitle": "Cálculo Diferencial • Convenciones del curso",
-          "content": "A lo largo del curso usaremos varias notaciones equivalentes para la derivada de una función y = f(x): f'(x), y', dy/dx, y Df(x). Todas denotan lo mismo: la razón de cambio instantánea de y respecto de x. Para derivadas de orden superior escribiremos f''(x), f'''(x), y en general f⁽ⁿ⁾(x) o dⁿy/dxⁿ para la derivada n-ésima.",
-          "formulaLatex": "f'(x),\\ y',\\ \\frac{dy}{dx},\\ Df(x)\\ \\text{(todas equivalentes)}",
-          "proTip": "",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "Cuando trabajemos con funciones compuestas, usaremos $u=g(x)$ como la función interior y $f(u)$ como la función exterior. En derivación implícita, $y$ se trata como una función desconocida de $x$, aunque no esté despejada, y su derivada se escribe $y'$ o $\\frac{dy}{dx}$."
-            },
-            {
-              "type": "note",
-              "content": "Error común: escribir (f·g)' = f'·g', es decir, derivar cada factor por separado y multiplicar. Esto es falso en general: la derivada de un producto sigue la regla del producto, no un producto de derivadas. Lo mismo ocurre con cocientes y potencias de funciones."
-            }
-          ]
-        }
-      ],
-      "challenges": []
-    },
-    {
       "id": "gc2_reglas_theory",
       "title": "Reglas de derivación",
       "type": "theory",
