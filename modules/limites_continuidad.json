@@ -4256,33 +4256,6 @@
       ]
     },
     {
-      "id": "glc8_cierre_theory",
-      "title": "Cierre: cómo revisar tus respuestas",
-      "type": "theory",
-      "isCompleted": false,
-      "isLocked": true,
-      "theorySections": [
-        {
-          "title": "Qué revisar al corregir tus respuestas",
-          "subtitle": "Límites y Continuidad • Checklist final",
-          "content": "Cuando termines un ejercicio, revisa siempre estos puntos antes de dar por válida la respuesta. La mayor parte de los errores en examen no está en la idea general, sino en un detalle: olvidar verificar el signo de √(x²)=|x| en límites al infinito, confundir una asíntota vertical con un hueco, o aplicar el TVI sin haber verificado la continuidad de la función. Por eso la verificación final vale tanto como la resolución misma.",
-          "formulaLatex": "",
-          "proTip": "",
-          "blocks": [
-            {
-              "type": "note",
-              "content": "1) ¿Intentaste primero la sustitución directa antes de aplicar una técnica algebraica más elaborada? 2) ¿Verificaste si había factores comunes cancelables antes de declarar una asíntota vertical? 3) ¿Comprobaste ambos límites laterales antes de afirmar que un límite bilateral existe o no existe? 4) ¿Distinguiste correctamente entre discontinuidad evitable, de salto e infinita? 5) ¿Verificaste las hipótesis de continuidad antes de aplicar el teorema del valor intermedio?"
-            },
-            {
-              "type": "text",
-              "content": "El camino desde los teoremas básicos de límites hasta el teorema del valor intermedio es gradual pero continuo. Las técnicas de factorización y racionalización reaparecen al simplificar asíntotas; el concepto de límite lateral reaparece al clasificar discontinuidades; y la propia noción de límite reaparece, de manera central, en la definición formal de continuidad. Todo está conectado, y esa conexión es precisamente lo que convierte una colección de técnicas en una comprensión real del cálculo de límites."
-            }
-          ]
-        }
-      ],
-      "challenges": []
-    },
-    {
       "id": "glc8_flashcards",
       "title": "Flashcards: Errores comunes del curso",
       "type": "flashcards",
