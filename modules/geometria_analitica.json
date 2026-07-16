@@ -4464,33 +4464,6 @@
       ]
     },
     {
-      "id": "gac8_cierre_theory",
-      "title": "Cierre: cómo revisar tus respuestas",
-      "type": "theory",
-      "isCompleted": false,
-      "isLocked": true,
-      "theorySections": [
-        {
-          "title": "Qué revisar al corregir tus respuestas",
-          "subtitle": "Geometría Analítica • Checklist final",
-          "content": "Cuando termines un ejercicio, revisa siempre estos puntos antes de dar por válida la respuesta. La mayor parte de los errores en examen no está en la idea general, sino en un detalle de signo, en completar el cuadrado incorrectamente, o en confundir el centro con un punto de la circunferencia. La verificación final vale tanto como la resolución misma.",
-          "formulaLatex": "",
-          "proTip": "",
-          "blocks": [
-            {
-              "type": "note",
-              "content": "1) ¿Verificaste que los puntos obtenidos satisfacen las ecuaciones dadas? 2) ¿Comprobaste el signo del centro en la forma canónica? 3) ¿Revisaste que r² > 0 al completar el cuadrado? 4) ¿Confirmaste la posición relativa calculando la distancia entre centros? 5) ¿Verificaste la perpendicularidad comprobando que m₁·m₂ = −1?"
-            },
-            {
-              "type": "text",
-              "content": "El camino desde un par de puntos hasta las familias de circunferencias y las condiciones de tangencia es gradual pero continuo. Cada herramienta aprendida en un capítulo reaparece en los siguientes: la fórmula de distancia en la mediatriz, la mediatriz en la circunferencia por tres puntos, la distancia punto-recta en las tangentes. Todo está conectado, y esa conexión es lo que convierte una colección de fórmulas en una comprensión real de la geometría analítica."
-            }
-          ]
-        }
-      ],
-      "challenges": []
-    },
-    {
       "id": "gac8_flashcards",
       "title": "Flashcards: Errores comunes del curso",
       "type": "flashcards",
