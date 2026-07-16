@@ -6,6 +6,7 @@
       "description": "Plan de estudios del primer semestre universitario",
       "isDefault": true,
       "moduleIds": [
+        "numeros_reales_logica_desigualdades",
         "funciones_trigonometria",
         "geometria_analitica",
         "limites_continuidad",
