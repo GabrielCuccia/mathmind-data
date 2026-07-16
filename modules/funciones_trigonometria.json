@@ -3939,37 +3939,6 @@
           "moduleName": "Funciones, Exponenciales y Trigonometría"
         }
       ]
-    },
-    {
-      "id": "guia_autocorreccion_theory",
-      "title": "Guía de Autocorrección y Cierre del Curso",
-      "type": "theory",
-      "isCompleted": false,
-      "isLocked": true,
-      "theorySections": [
-        {
-          "title": "Qué Revisar al Corregir tus Respuestas",
-          "subtitle": "Cierre • Lista de Verificación",
-          "content": "Cuando termines un ejercicio, revisa siempre estos puntos antes de dar por válida tu respuesta.",
-          "formulaLatex": "",
-          "proTip": "El camino desde el concepto de dominio y rango hasta las identidades hiperbólicas es gradual pero continuo. Todo está conectado, y esa conexión es precisamente lo que convierte una colección de definiciones en una comprensión real del álgebra de funciones. ¡Felicidades por llegar hasta aquí!",
-          "blocks": [
-            {
-              "type": "text",
-              "content": "1) ¿Verificaste todas las restricciones de dominio (denominadores, raíces pares, argumentos de logaritmos) por separado antes de combinarlas? 2) ¿Comprobaste que la función fuera inyectiva antes de afirmar que tiene una inversa? 3) ¿Verificaste el dominio de $f^{-1}$ usando el rango de la función original? 4) ¿Distinguiste correctamente entre $f^{-1}(x)$ y $1/f(x)$? 5) ¿Confirmaste que una función trigonométrica inversa devuelve un ángulo dentro de su rango restringido?"
-            },
-            {
-              "type": "note",
-              "content": "En examen, la mayor parte de los errores no está en la idea general, sino en un detalle: olvidar una restricción de dominio, confundir la inversa con el recíproco, o aplicar una propiedad de logaritmos a una suma en lugar de a un producto. Por eso la verificación final vale tanto como la resolución misma."
-            },
-            {
-              "type": "text",
-              "content": "Este curso te llevó de manejar funciones aisladas a comprender la red de relaciones que las conecta: la exponencial y el logaritmo son inversas entre sí; las trigonométricas y sus arcos correspondientes también; y las funciones hiperbólicas comparten con las trigonométricas una estructura algebraica casi idéntica, con signos distintos que provienen de la diferencia entre la hipérbola y la circunferencia."
-            }
-          ]
-        }
-      ],
-      "challenges": []
     }
   ]
 }
