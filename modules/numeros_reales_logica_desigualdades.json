@@ -112,9 +112,9 @@
           "questionLatex": "",
           "options": [
             "$$-7 \\text{ entero}$$\n$$5/3 \\text{ racional}$$\n$$\\sqrt{25} \\text{ natural}$$\n$$\\;0.101101110\\ldots \\text{ irracional}$$",
-            "$$-7 \\text{ natural}; \\;5/3 \\text{ racional}; \\;\\sqrt{25} \\text{ irracional}; \\;0.101101110\\ldots \\text{ racional}$$",
-            "$$-7 \\text{ entero}; \\;5/3 \\text{ irracional}; \\;\\sqrt{25} \\text{ natural}; \\;0.101101110\\ldots \\text{ racional}$$",
-            "$$-7 \\text{ racional}; \\;5/3 \\text{ entero}; \\;\\sqrt{25} \\text{ natural}; \\;0.101101110\\ldots \\text{ irracional}$$"
+            "$$-7 \\text{ natural}$$ \n$$5/3 \\text{ racional}$$ \n$$\\sqrt{25} \\text{ irracional}$$\n$$\\;0.101101110\\ldots \\text{ racional}$$",
+            "$$-7 \\text{ entero}$$\n$$5/3 \\text{ irracional}$$\n$$\\sqrt{25} \\text{ natural}$$ \n$$0.101101110\\ldots \\text{ racional}$$",
+            "$$-7 \\text{ racional}$$\n$$5/3 \\text{ entero}$$\n$$\\sqrt{25} \\text{ natural}$$\n$$0.101101110\\ldots \\text{ irracional}$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$-7 \\text{ entero}; \\;5/3 \\text{ racional}; \\;\\sqrt{25} \\text{ natural}; \\;0.101101110\\ldots \\text{ irracional}$$",
