@@ -11,7 +11,7 @@
       "title": "Clasificación de los Números Reales",
       "type": "theory",
       "isCompleted": false,
-      "isLocked": false,
+      "isLocked": true,
       "theorySections": [
         {
           "title": "Conjuntos Numéricos y sus Relaciones",
@@ -22,7 +22,7 @@
           "blocks": [
             {
               "type": "text",
-              "content": "Jerarquía: $$\\mathbb{N}$$ (naturales): 1, 2, 3, 4, …; $$\\mathbb{Z}$$ (enteros): …, −2, −1, 0, 1, 2, …; $$\\mathbb{Q}$$ (racionales): p/q con p, q enteros y q≠0; $$\\text{Irr}$$ (irracionales): reales que no se pueden escribir como fracción; $$\\mathbb{R}$$ (reales) $$=\\mathbb{Q}\\cup\\text{Irr}$$."
+              "content": "Jerarquía: $$\\mathbb{N}$$ (naturales): 1, 2, 3, 4, …; $$\\mathbb{Z}$$ (enteros): …, −2, −1, 0, 1, 2, …; $$\\mathbb{Q}$$ (racionales): $$\\frac{p}{q}$$ con $$p, q$$ enteros y $$q\\neq0$$; $$\\text{Irr}$$ (irracionales): reales que no se pueden escribir como fracción; $$\\mathbb{R}$$ (reales) $$=\\mathbb{Q}\\cup\\text{Irr}$$."
             },
             {
               "type": "formula",
@@ -30,11 +30,11 @@
             },
             {
               "type": "text",
-              "content": "Un número racional siempre tiene una expansión decimal finita o periódica (por ejemplo, 1/4 = 0.25 o 1/3 = 0.333…). Un número irracional, en cambio, tiene una expansión decimal infinita y no periódica, como $$\\sqrt2=1.41421356\\ldots$$ o $$\\pi=3.14159265\\ldots$$"
+              "content": "Un número racional siempre tiene una expansión decimal finita o periódica (por ejemplo, $$\\frac{1}{4} = 0.25$$ o $$\\frac{1}{3} = 0.333\\ldots$$). Un número irracional, en cambio, tiene una expansión decimal infinita y no periódica, como $$\\sqrt2=1.41421356\\ldots$$ o $$\\pi=3.14159265\\ldots$$"
             },
             {
               "type": "example",
-              "content": "$$\\text{Clasificar } -5, \\; 7/2, \\; \\sqrt9, \\; \\sqrt2 \\; \\text{y } 0.727272\\ldots$$",
+              "content": "$$\\text{Clasificar } -5, \\; \\frac{7}{2}, \\; \\sqrt9, \\; \\sqrt2 \\; \\text{y } 0.727272\\ldots$$",
               "steps": [
                 {
                   "title": "Revisa cada número por separado",
@@ -46,7 +46,7 @@
                   "title": "Fracciones y decimales periódicos",
                   "text": "7/2 = 3.5 es racional, no entero; y 0.727272… es racional porque su decimal se repite (equivale a la fracción 8/11).",
                   "icon": "fx",
-                  "mathContent": "$$7/2 \\in \\mathbb{Q}, \\; 0.\\overline{72}\\in\\mathbb{Q}$$"
+                  "mathContent": "$$\\frac{7}{2} \\in \\mathbb{Q}, \\; 0.\\overline{72}\\in\\mathbb{Q}$$"
                 },
                 {
                   "title": "Raíces que se simplifican",
@@ -108,16 +108,16 @@
       "challenges": [
         {
           "id": "nr_n1_01",
-          "questionText": "Clasifica los números $$-7$$, $$5/3$$, $$\\sqrt{25}$$ y $$0.101101110\\ldots$$ Elige la clasificación correcta:",
+          "questionText": "Clasifica los números $$-7$$, $$\\frac{5}{3}$$, $$\\sqrt{25}$$ y $$0.101101110\\ldots$$ Elige la clasificación correcta:",
           "questionLatex": "",
           "options": [
-            "$$-7 \\text{ entero}$$\n$$5/3 \\text{ racional}$$\n$$\\sqrt{25} \\text{ natural}$$\n$$\\;0.101101110\\ldots \\text{ irracional}$$",
-            "$$-7 \\text{ natural}$$ \n$$5/3 \\text{ racional}$$ \n$$\\sqrt{25} \\text{ irracional}$$\n$$\\;0.101101110\\ldots \\text{ racional}$$",
-            "$$-7 \\text{ entero}$$\n$$5/3 \\text{ irracional}$$\n$$\\sqrt{25} \\text{ natural}$$ \n$$0.101101110\\ldots \\text{ racional}$$",
-            "$$-7 \\text{ racional}$$\n$$5/3 \\text{ entero}$$\n$$\\sqrt{25} \\text{ natural}$$\n$$0.101101110\\ldots \\text{ irracional}$$"
+            "$$-7 \\text{ entero}$$\n$$\\frac{5}{3} \\text{ racional}$$\n$$\\sqrt{25} \\text{ natural}$$\n$$0.101101110\\ldots \\text{ irracional}$$",
+            "$$-7 \\text{ natural}$$\n$$\\frac{5}{3} \\text{ racional}$$\n$$\\sqrt{25} \\text{ irracional}$$\n$$0.101101110\\ldots \\text{ racional}$$",
+            "$$-7 \\text{ entero}$$\n$$\\frac{5}{3} \\text{ irracional}$$\n$$\\sqrt{25} \\text{ natural}$$\n$$0.101101110\\ldots \\text{ racional}$$",
+            "$$-7 \\text{ racional}$$\n$$\\frac{5}{3} \\text{ entero}$$\n$$\\sqrt{25} \\text{ natural}$$\n$$0.101101110\\ldots \\text{ irracional}$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "$$-7 \\text{ entero}; \\;5/3 \\text{ racional}; \\;\\sqrt{25} \\text{ natural}; \\;0.101101110\\ldots \\text{ irracional}$$",
+          "explanationLatex": "$$-7 \\text{ entero}$$\n$$\\frac{5}{3} \\text{ racional}$$\n$$\\sqrt{25} \\text{ natural}$$\n$$0.101101110\\ldots \\text{ irracional}$$",
           "explanationSteps": [
             {
               "title": "Analiza -7",
@@ -129,7 +129,7 @@
               "title": "Analiza 5/3",
               "text": "Es una fracción de enteros, así que es racional (su decimal es 1.666…, periódico).",
               "icon": "fx",
-              "mathContent": "$$5/3 \\in \\mathbb{Q}$$"
+              "mathContent": "$$\\frac{5}{3} \\in \\mathbb{Q}$$"
             },
             {
               "title": "Analiza √25",
@@ -149,13 +149,13 @@
         },
         {
           "id": "nr_n1_02",
-          "questionText": "¿Es 0 un número natural",
+          "questionText": "¿Es 0 un número natural, según la convención usada en este curso?",
           "questionLatex": "",
           "options": [
-            "$$No, porque aquí ℕ empieza en 1$$",
-            "$$Sí, porque 0 no tiene signo$$",
-            "$$Sí, porque 0 es entero$$",
-            "$$No, porque 0 no es racional$$"
+            "No, porque aquí ℕ empieza en 1",
+            "Sí, porque 0 no tiene signo",
+            "Sí, porque 0 es entero",
+            "No, porque 0 no es racional"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$\\text{No, con la convención } \\mathbb{N}=\\{1,2,3,\\ldots\\}$$",
@@ -178,28 +178,28 @@
         },
         {
           "id": "nr_n1_03",
-          "questionText": "¿$$3/6$$ y $$0.5$$ representan el mismo número racional?",
+          "questionText": "¿$$\\frac{3}{6}$$ y $$0.5$$ representan el mismo número racional?",
           "questionLatex": "",
           "options": [
-            "$$Sí, ambos son iguales a 1/2$$",
-            "$$No, 3/6 es mayor$$",
-            "$$No, 0.5 no es una fracción válida$$",
-            "$$Sí, pero solo si se redondea$$"
+            "Sí, ambos son iguales a $$\\frac{1}{2}$$",
+            "No, $$\\frac{3}{6}$$ es mayor",
+            "No, 0.5 no es una fracción válida",
+            "Sí, pero solo si se redondea"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "$$\\text{Sí: } 3/6 = 1/2 = 0.5$$",
+          "explanationLatex": "$$\\text{Sí: } \\frac{3}{6} = \\frac{1}{2} = 0.5$$",
           "explanationSteps": [
             {
               "title": "Simplifica la fracción",
               "text": "3/6 se puede simplificar dividiendo numerador y denominador entre 3.",
               "icon": "fx",
-              "mathContent": "$$3/6 = 1/2$$"
+              "mathContent": "$$\\frac{3}{6} = \\frac{1}{2}$$"
             },
             {
               "title": "Compara con el decimal",
               "text": "1/2 en forma decimal es exactamente 0.5.",
               "icon": "star",
-              "mathContent": "$$1/2 = 0.5$$"
+              "mathContent": "$$\\frac{1}{2} = 0.5$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -207,16 +207,16 @@
         },
         {
           "id": "nr_n1_04",
-          "questionText": "Ordena de menor a mayor: $$-3, \\; 1/2, \\; -1, \\; 2.5$$",
+          "questionText": "Ordena de menor a mayor: $$-3, \\; \\frac{1}{2}, \\; -1, \\; 2.5$$",
           "questionLatex": "",
           "options": [
-            "$$-3, -1, 1/2, 2.5$$",
-            "$$-1, -3, 1/2, 2.5$$",
-            "$$-3, 1/2, -1, 2.5$$",
-            "$$2.5, 1/2, -1, -3$$"
+            "$$-3, -1, \\frac{1}{2}, 2.5$$",
+            "$$-1, -3, \\frac{1}{2}, 2.5$$",
+            "$$-3, \\frac{1}{2}, -1, 2.5$$",
+            "$$2.5, \\frac{1}{2}, -1, -3$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "$$-3, -1, 1/2, 2.5$$",
+          "explanationLatex": "$$-3, -1, \\frac{1}{2}, 2.5$$",
           "explanationSteps": [
             {
               "title": "Ubica los negativos primero",
@@ -228,13 +228,13 @@
               "title": "Ubica los positivos",
               "text": "1/2 = 0.5 es menor que 2.5.",
               "icon": "fx",
-              "mathContent": "$$1/2 < 2.5$$"
+              "mathContent": "$$\\frac{1}{2} < 2.5$$"
             },
             {
               "title": "Junta el orden completo",
               "text": "Los negativos siempre van antes que los positivos en la recta real.",
               "icon": "star",
-              "mathContent": "$$-3 < -1 < 1/2 < 2.5$$"
+              "mathContent": "$$-3 < -1 < \\frac{1}{2} < 2.5$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -290,13 +290,13 @@
           "questionText": "Clasifica $$\\sqrt2\\cdot\\sqrt2$$ y $$\\sqrt2+\\sqrt2$$:",
           "questionLatex": "",
           "options": [
-            "$$\\sqrt2\\cdot\\sqrt2=2 \\text{ (racional)}; \\;\\sqrt2+\\sqrt2=2\\sqrt2 \\text{ (irracional)}$$",
+            "$$\\sqrt2\\cdot\\sqrt2=2 \\text{ (racional)}$$\n$$\\sqrt2+\\sqrt2=2\\sqrt2 \\text{ (irracional)}$$",
             "$$\\text{Ambos son irracionales}$$",
             "$$\\text{Ambos son racionales}$$",
-            "$$\\sqrt2\\cdot\\sqrt2=2\\sqrt2; \\;\\sqrt2+\\sqrt2=2$$"
+            "$$\\sqrt2\\cdot\\sqrt2=2\\sqrt2$$\n$$\\sqrt2+\\sqrt2=2$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "$$\\sqrt2\\cdot\\sqrt2=2 \\text{ (racional)}; \\;\\sqrt2+\\sqrt2=2\\sqrt2 \\text{ (irracional)}$$",
+          "explanationLatex": "$$\\sqrt2\\cdot\\sqrt2=2 \\text{ (racional)}$$\n$$\\sqrt2+\\sqrt2=2\\sqrt2 \\text{ (irracional)}$$",
           "explanationSteps": [
             {
               "title": "Multiplica primero",
@@ -314,7 +314,7 @@
               "title": "Clasifica cada resultado",
               "text": "2 es un número racional (de hecho, natural); 2√2 sigue siendo irracional porque multiplicar un irracional por un racional distinto de cero no lo vuelve racional.",
               "icon": "star",
-              "mathContent": "$$2\\in\\mathbb{Q}; \\;2\\sqrt2\\in\\text{Irr}$$"
+              "mathContent": "$$2\\in\\mathbb{Q}$$\n$$2\\sqrt2\\in\\text{Irr}$$"
             }
           ],
           "category": "Números Reales: Clasificación y Axiomas",
@@ -328,7 +328,7 @@
             "$$0.3335$$",
             "$$0.3325$$",
             "$$0.332$$",
-            "$$1/4$$"
+            "$$\\frac{1}{4}$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$0.3335$$",
@@ -360,10 +360,10 @@
           "questionText": "¿Qué axioma de cuerpo justifica cada paso de $$3(x+2)=3x+6$$?",
           "questionLatex": "",
           "options": [
-            "$$Distributividad, y luego aritmética simple (3·2=6)$$",
-            "$$Conmutatividad de la suma$$",
-            "$$Asociatividad de la multiplicación$$",
-            "$$El axioma del inverso multiplicativo$$"
+            "Distributividad, y luego aritmética simple $$(3\\cdot2=6)$$",
+            "Conmutatividad de la suma",
+            "Asociatividad de la multiplicación",
+            "El axioma del inverso multiplicativo"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$\\text{Distributividad, luego } 3\\cdot2=6$$",
@@ -395,10 +395,10 @@
           "questionText": "Demuestra que $$(-1)\\cdot a=-a$$ usando los axiomas de cuerpo y el resultado $$a\\cdot0=0$$:",
           "questionLatex": "",
           "options": [
-            "$$Se muestra que a+(-1)\\cdot a=0, y por unicidad del inverso aditivo, (-1)\\cdot a=-a$$",
-            "$$Se muestra que (-1)\\cdot a = a directamente$$",
-            "$$No se puede demostrar sin usar números negativos$$",
-            "$$Se sigue directamente de la conmutatividad$$"
+            "Se muestra que $$a+(-1)\\cdot a=0$$, y por unicidad del inverso aditivo, $$(-1)\\cdot a=-a$$",
+            "Se muestra que $$(-1)\\cdot a = a$$ directamente",
+            "No se puede demostrar sin usar números negativos",
+            "Se sigue directamente de la conmutatividad"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$a+(-1)a=0 \\Rightarrow (-1)a=-a \\text{ por unicidad del inverso}$$",
@@ -436,10 +436,10 @@
           "questionText": "¿Es cierto que la resta de números naturales siempre da un número natural?",
           "questionLatex": "",
           "options": [
-            "$$No; por ejemplo, 2−5=−3, que no es natural$$",
-            "$$Sí, siempre$$",
-            "$$Sí, siempre que ambos sean positivos$$",
-            "$$No, porque los naturales no se pueden restar$$"
+            "No; por ejemplo, $$2-5=-3$$, que no es natural",
+            "Sí, siempre",
+            "Sí, siempre que ambos sean positivos",
+            "No, porque los naturales no se pueden restar"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$\\text{Falso: } 2-5=-3 \\notin \\mathbb{N}$$",
@@ -481,10 +481,10 @@
           "questionText": "Demuestra que si $$a<b$$, entonces $$-b<-a$$ (usa los axiomas de orden):",
           "questionLatex": "",
           "options": [
-            "$$Sumando -a-b a ambos lados de a<b se obtiene -b<-a$$",
-            "$$Multiplicando por -1 sin cambios se obtiene -b<-a$$",
-            "$$No se puede demostrar con los axiomas de orden$$",
-            "$$Se sigue directamente de la tricotomía, sin más pasos$$"
+            "Sumando $$-a-b$$ a ambos lados de $$a<b$$ se obtiene $$-b<-a$$",
+            "Multiplicando por $$-1$$ sin cambios se obtiene $$-b<-a$$",
+            "No se puede demostrar con los axiomas de orden",
+            "Se sigue directamente de la tricotomía, sin más pasos"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$-b<-a, \\text{ sumando } -a-b \\text{ a ambos lados}$$",
@@ -522,10 +522,10 @@
           "questionText": "¿Es cierto que la suma de dos números irracionales es siempre irracional?",
           "questionLatex": "",
           "options": [
-            "$$No; por ejemplo, √2+(−√2)=0, que es racional$$",
-            "$$Sí, siempre es irracional$$",
-            "$$Sí, excepto si ambos son negativos$$",
-            "$$No, porque los irracionales no se pueden sumar$$"
+            "No; por ejemplo, $$\\sqrt2+(-\\sqrt2)=0$$, que es racional",
+            "Sí, siempre es irracional",
+            "Sí, excepto si ambos son negativos",
+            "No, porque los irracionales no se pueden sumar"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$\\text{Falso: } \\sqrt2+(-\\sqrt2)=0 \\in \\mathbb{Q}$$",
@@ -563,10 +563,10 @@
           "questionText": "Demuestra que $$-(-a)=a$$ usando los axiomas de cuerpo:",
           "questionLatex": "",
           "options": [
-            "$$Por unicidad del inverso aditivo: (-a) tiene como único inverso a a, así que -(-a)=a$$",
-            "$$Se sigue de la conmutatividad de la suma$$",
-            "$$Se sigue de la distributividad$$",
-            "$$No se puede demostrar en general$$"
+            "Por unicidad del inverso aditivo: $$(-a)$$ tiene como único inverso a $$a$$, así que $$-(-a)=a$$",
+            "Se sigue de la conmutatividad de la suma",
+            "Se sigue de la distributividad",
+            "No se puede demostrar en general"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$-(-a)=a \\text{ por unicidad del inverso aditivo}$$",
@@ -598,10 +598,10 @@
           "questionText": "¿Por qué no existe un número racional cuyo cuadrado sea 2?",
           "questionLatex": "",
           "options": [
-            "$$Porque se puede demostrar por contradicción que llevaría a que un mismo número racional tuviera numerador y denominador ambos pares, lo cual contradice que la fracción esté simplificada$$",
-            "$$Porque 2 no es un número real$$",
-            "$$Porque las fracciones nunca se pueden elevar al cuadrado$$",
-            "$$Porque todos los racionales al cuadrado dan números negativos$$"
+            "Porque se puede demostrar por contradicción que llevaría a que un mismo número racional tuviera numerador y denominador ambos pares, lo cual contradice que la fracción esté simplificada",
+            "Porque 2 no es un número real",
+            "Porque las fracciones nunca se pueden elevar al cuadrado",
+            "Porque todos los racionales al cuadrado dan números negativos"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$\\text{Demostración por contradicción (se detalla en el capítulo de lógica)}$$",
@@ -610,7 +610,7 @@
               "title": "Anticipa la idea general",
               "text": "Si existiera esa fracción p/q en su forma más simple (sin factores comunes), elevarla al cuadrado daría 2.",
               "icon": "pin",
-              "mathContent": "$$(p/q)^2=2 \\Rightarrow p^2=2q^2$$"
+              "mathContent": "$$\\frac{p}{q}^2=2 \\Rightarrow p^2=2q^2$$"
             },
             {
               "title": "Seguir la cadena lógica",
@@ -780,7 +780,7 @@
             },
             {
               "type": "example",
-              "content": "$$\\text{Demostrar que si } 0<a<b, \\text{ entonces } 1/b<1/a$$",
+              "content": "$$\\text{Demostrar que si } 0<a<b, \\text{ entonces } \\frac{1}{b}<\\frac{1}{a}$$",
               "steps": [
                 {
                   "title": "Parte de b-a>0",
@@ -976,10 +976,10 @@
           "questionText": "Demuestra que si $$a>0$$, entonces $$-a<0$$ (usa los axiomas de orden):",
           "questionLatex": "",
           "options": [
-            "$$Sumando -a a ambos lados de a>0 se obtiene 0>-a, es decir, -a<0$$",
-            "$$Se sigue directamente de la tricotomía sin más pasos$$",
-            "$$Multiplicando por -1 sin cambiar la desigualdad$$",
-            "$$No se puede demostrar con los axiomas de orden$$"
+            "Sumando $$-a$$ a ambos lados de $$a>0$$ se obtiene $$0>-a$$, es decir, $$-a<0$$",
+            "Se sigue directamente de la tricotomía sin más pasos",
+            "Multiplicando por $$-1$$ sin cambiar la desigualdad",
+            "No se puede demostrar con los axiomas de orden"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$-a<0, \\text{ sumando } -a \\text{ a ambos lados de } a>0$$",
@@ -1059,40 +1059,40 @@
       "challenges": [
         {
           "id": "fd_n2_01",
-          "questionText": "Demuestra que si $$a<b$$ y $$c>0$$, entonces $$a/c<b/c$$:",
+          "questionText": "Demuestra que si $$a<b$$ y $$c>0$$, entonces $$\\frac{a}{c}<\\frac{b}{c}$$:",
           "questionLatex": "",
           "options": [
-            "$$Como c>0, también 1/c>0; multiplicando a<b por 1/c (compatibilidad del producto con positivos) se obtiene a/c<b/c$$",
-            "$$Se sigue directamente sin necesitar que c sea positivo$$",
-            "$$Se demuestra dividiendo ambos lados entre a$$",
-            "$$No se puede demostrar en general$$"
+            "Como $$c>0$$, también $$\\frac{1}{c}>0$$; multiplicando $$a<b$$ por $$\\frac{1}{c}$$ (compatibilidad del producto con positivos) se obtiene $$\\frac{a}{c}<\\frac{b}{c}$$",
+            "Se sigue directamente sin necesitar que c sea positivo",
+            "Se demuestra dividiendo ambos lados entre a",
+            "No se puede demostrar en general"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "$$a/c<b/c, \\text{ porque } 1/c>0$$",
+          "explanationLatex": "$$\\frac{a}{c}<\\frac{b}{c}, \\text{ porque } \\frac{1}{c}>0$$",
           "explanationSteps": [
             {
               "title": "Reescribe la división como multiplicación",
               "text": "Dividir entre c es lo mismo que multiplicar por su recíproco 1/c.",
               "icon": "pin",
-              "mathContent": "$$a/c = a\\cdot(1/c), \\;b/c=b\\cdot(1/c)$$"
+              "mathContent": "$$\\frac{a}{c} = a\\cdot\\frac{1}{c}, \\;\\frac{b}{c}=b\\cdot\\frac{1}{c}$$"
             },
             {
               "title": "Verifica el signo del recíproco",
               "text": "Como c>0, su recíproco 1/c también es positivo.",
               "icon": "fx",
-              "mathContent": "$$c>0 \\Rightarrow 1/c>0$$"
+              "mathContent": "$$c>0 \\Rightarrow \\frac{1}{c}>0$$"
             },
             {
               "title": "Aplica compatibilidad del producto",
               "text": "Multiplicar ambos lados de a<b por un número positivo (1/c) preserva el sentido de la desigualdad.",
               "icon": "fx",
-              "mathContent": "$$a\\cdot(1/c) < b\\cdot(1/c)$$"
+              "mathContent": "$$a\\cdot\\frac{1}{c} < b\\cdot\\frac{1}{c}$$"
             },
             {
               "title": "Conclusión",
               "text": "Esto es exactamente a/c<b/c.",
               "icon": "star",
-              "mathContent": "$$a/c<b/c$$"
+              "mathContent": "$$\\frac{a}{c}<\\frac{b}{c}$$"
             }
           ],
           "category": "Fundamento Lógico de las Desigualdades",
@@ -1103,10 +1103,10 @@
           "questionText": "¿Es cierta la propiedad 'a<b implica a³<b³' para todo a,b reales (sin restricción de signo)?",
           "questionLatex": "",
           "options": [
-            "$$Sí, es cierta para todo a,b reales, a diferencia de a²<b²$$",
-            "$$No, falla igual que con los cuadrados$$",
-            "$$Solo es cierta si ambos son positivos$$",
-            "$$Solo es cierta si ambos son negativos$$"
+            "Sí, es cierta para todo $$a,b$$ reales, a diferencia de $$a^2<b^2$$",
+            "No, falla igual que con los cuadrados",
+            "Solo es cierta si ambos son positivos",
+            "Solo es cierta si ambos son negativos"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$\\text{Cierta para todo } a,b \\text{ reales}$$",
@@ -1189,10 +1189,10 @@
           "questionText": "Demuestra que para todo $$a,b$$ reales, $$a^2+b^2\\geq2ab$$:",
           "questionLatex": "",
           "options": [
-            "$$Partiendo de (a-b)^2\\geq0 y expandiendo, se llega directamente al resultado$$",
-            "$$Se demuestra dividiendo entre a y b$$",
-            "$$Solo es cierto si a y b son positivos$$",
-            "$$No se puede demostrar en general$$"
+            "Partiendo de $$(a-b)^2\\geq0$$ y expandiendo, se llega directamente al resultado",
+            "Se demuestra dividiendo entre a y b",
+            "Solo es cierto si a y b son positivos",
+            "No se puede demostrar en general"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$a^2+b^2\\geq2ab, \\text{ desde } (a-b)^2\\geq0$$",
@@ -1224,10 +1224,10 @@
           "questionText": "Demuestra que si $$0<a<b$$, entonces $$a^2<ab<b^2$$:",
           "questionLatex": "",
           "options": [
-            "$$Multiplicando a<b por a>0 se obtiene a²<ab; multiplicando a<b por b>0 se obtiene ab<b²$$",
-            "$$Se sigue directamente de que a<b sin más pasos$$",
-            "$$Solo se puede probar una de las dos desigualdades$$",
-            "$$Se necesita que a y b sean negativos$$"
+            "Multiplicando $$a<b$$ por $$a>0$$ se obtiene $$a^2<ab$$; multiplicando $$a<b$$ por $$b>0$$ se obtiene $$ab<b^2$$",
+            "Se sigue directamente de que $$a<b$$ sin más pasos",
+            "Solo se puede probar una de las dos desigualdades",
+            "Se necesita que a y b sean negativos"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$a^2<ab<b^2$$",
@@ -1259,13 +1259,13 @@
           "questionText": "Escribe con cuantificadores 'todo número real tiene un cuadrado no negativo', y su negación:",
           "questionLatex": "",
           "options": [
-            "$$\\forall x\\in\\mathbb{R}, x^2\\geq0; \\;\\text{negación: } \\exists x\\in\\mathbb{R}, x^2<0$$",
-            "$$\\exists x\\in\\mathbb{R}, x^2\\geq0; \\;\\text{negación: } \\forall x, x^2<0$$",
-            "$$\\forall x\\in\\mathbb{R}, x^2>0; \\;\\text{negación: } \\exists x, x^2\\leq0$$",
-            "$$\\forall x\\in\\mathbb{R}, x^2\\geq0; \\;\\text{negación: } \\forall x, x^2<0$$"
+            "$$\\forall x\\in\\mathbb{R}, x^2\\geq0$$\n$$\\text{negación: } \\exists x\\in\\mathbb{R}, x^2<0$$",
+            "$$\\exists x\\in\\mathbb{R}, x^2\\geq0$$\n$$\\text{negación: } \\forall x, x^2<0$$",
+            "$$\\forall x\\in\\mathbb{R}, x^2>0$$\n$$\\text{negación: } \\exists x, x^2\\leq0$$",
+            "$$\\forall x\\in\\mathbb{R}, x^2\\geq0$$\n$$\\text{negación: } \\forall x, x^2<0$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "$$\\forall x, x^2\\geq0; \\;\\neg: \\exists x, x^2<0$$",
+          "explanationLatex": "$$\\forall x, x^2\\geq0$$\n$$\\neg: \\exists x, x^2<0$$",
           "explanationSteps": [
             {
               "title": "Escribe la proposición original",
@@ -1696,10 +1696,10 @@
           "questionText": "Una tienda vende camisetas a 15 dólares cada una, con envío fijo de 8 dólares. ¿Cuántas camisetas se pueden comprar con 100 dólares?",
           "questionLatex": "",
           "options": [
-            "$$6 camisetas$$",
-            "$$7 camisetas$$",
-            "$$5 camisetas$$",
-            "$$92 camisetas$$"
+            "$$6$$ camisetas",
+            "$$7$$ camisetas",
+            "$$5$$ camisetas",
+            "$$92$$ camisetas"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$n\\leq6.13\\ldots \\Rightarrow 6 \\text{ camisetas (entero)}$$",
@@ -1959,7 +1959,7 @@
           "blocks": [
             {
               "type": "text",
-              "content": "Propiedades: $$|x|\\geq0$$ para todo x; $$|x|=|-x|$$; $$|xy|=|x|\\cdot|y|$$; $$|x/y|=|x|/|y|$$ (con $$y\\neq0$$); y la desigualdad triangular $$|x+y|\\leq|x|+|y|$$."
+              "content": "Propiedades: $$|x|\\geq0$$ para todo x; $$|x|=|-x|$$; $$|xy|=|x|\\cdot|y|$$; $$|\\frac{x}{y}|=\\frac{|x|}{|y|}$$ (con $$y\\neq0$$); y la desigualdad triangular $$|x+y|\\leq|x|+|y|$$."
             },
             {
               "type": "example",
@@ -2282,10 +2282,10 @@
           "questionText": "Interpreta $$|x-7|\\leq3$$ como una condición de distancia y resuelve:",
           "questionLatex": "",
           "options": [
-            "$$La distancia entre x y 7 es a lo sumo 3; solución [4,10]$$",
-            "$$La distancia entre x y 3 es a lo sumo 7; solución [-4,10]$$",
-            "$$La distancia entre x y 7 es exactamente 3; solución {4,10}$$",
-            "$$No tiene interpretación de distancia$$"
+            "La distancia entre $$x$$ y $$7$$ es a lo sumo $$3$$; solución $$[4,10]$$",
+            "La distancia entre $$x$$ y $$3$$ es a lo sumo $$7$$; solución $$[-4,10]$$",
+            "La distancia entre $$x$$ y $$7$$ es exactamente $$3$$; solución $$\\{4,10\\}$$",
+            "No tiene interpretación de distancia"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$[4,10]$$",
@@ -2356,10 +2356,10 @@
           "questionText": "Resuelve:",
           "questionLatex": "$$|3x-1|\\leq8$$",
           "options": [
-            "$$\\left[-\\frac73,3\\right]$$",
-            "$$\\left[-3,\\frac73\\right]$$",
-            "$$\\left(-\\frac73,3\\right)$$",
-            "$$\\left[\\frac73,3\\right]$$"
+            "\\left[-\\frac73,3\\right]",
+            "\\left[-3,\\frac73\\right]",
+            "\\left(-\\frac73,3\\right)",
+            "\\left[\\frac73,3\\right]"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$\\left[-\\frac73,3\\right]$$",
@@ -2391,10 +2391,10 @@
           "questionText": "Resuelve, expresando en notación de intervalos:",
           "questionLatex": "$$|4x+3|>5$$",
           "options": [
-            "$$(-\\infty,-2)\\cup\\left(\\frac12,\\infty\\right)$$",
-            "$$\\left(-2,\\frac12\\right)$$",
-            "$$(-\\infty,-2)\\cup(2,\\infty)$$",
-            "$$\\left(-\\infty,\\frac12\\right)$$"
+            "(-\\infty,-2)\\cup\\left(\\frac12,\\infty\\right)",
+            "\\left(-2,\\frac12\\right)",
+            "(-\\infty,-2)\\cup(2,\\infty)",
+            "\\left(-\\infty,\\frac12\\right)"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$(-\\infty,-2)\\cup\\left(\\frac12,\\infty\\right)$$",
@@ -2427,9 +2427,9 @@
           "questionLatex": "",
           "options": [
             "$$|xy|=12=|x||y|, \\text{ se cumple}$$",
-            "$$|xy|=-12\\neq|x||y|$$",
             "$$|xy|=7=|x||y|$$",
-            "$$La propiedad no aplica con números negativos$$"
+            "|xy|=7=|x||y|",
+            "La propiedad no aplica con números negativos"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$|xy|=12=|x||y|$$",
@@ -2594,10 +2594,10 @@
           "questionText": "Demuestra que $$|x|=\\sqrt{x^2}$$ para todo x real, usando la definición por casos:",
           "questionLatex": "",
           "options": [
-            "$$En ambos casos (x≥0 y x<0) se verifica que la raíz principal de x² coincide exactamente con |x|$$",
-            "$$Solo es cierto cuando x es positivo$$",
-            "$$Se demuestra elevando |x| al cubo$$",
-            "$$No se puede demostrar usando casos$$"
+            "En ambos casos ($$x\\geq0$$ y $$x<0$$) se verifica que la raíz principal de $$x^2$$ coincide exactamente con $$|x|$$",
+            "Solo es cierto cuando $$x$$ es positivo",
+            "Se demuestra elevando $$|x|$$ al cubo",
+            "No se puede demostrar usando casos"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$|x|=\\sqrt{x^2} \\text{ en ambos casos}$$",
@@ -2793,16 +2793,16 @@
       "challenges": [
         {
           "id": "banco_facil_01",
-          "questionText": "Clasifica $$-4$$, $$9/2$$ y $$\\sqrt7$$:",
+          "questionText": "Clasifica $$-4$$, $$\\frac{9}{2}$$ y $$\\sqrt7$$:",
           "questionLatex": "",
           "options": [
-            "$$-4 \\text{ entero}; \\;9/2 \\text{ racional}; \\;\\sqrt7 \\text{ irracional}$$",
-            "$$-4 \\text{ natural}; \\;9/2 \\text{ entero}; \\;\\sqrt7 \\text{ racional}$$",
-            "$$-4 \\text{ racional}; \\;9/2 \\text{ irracional}; \\;\\sqrt7 \\text{ entero}$$",
-            "$$-4 \\text{ irracional}; \\;9/2 \\text{ racional}; \\;\\sqrt7 \\text{ entero}$$"
+            "$$-4 \\text{ entero}$$\n$$\\frac{9}{2} \\text{ racional}$$\n$$\\sqrt7 \\text{ irracional}$$",
+            "$$-4 \\text{ natural}$$\n$$\\frac{9}{2} \\text{ entero}$$\n$$\\sqrt7 \\text{ racional}$$",
+            "$$-4 \\text{ racional}$$\n$$\\frac{9}{2} \\text{ irracional}$$\n$$\\sqrt7 \\text{ entero}$$",
+            "$$-4 \\text{ irracional}$$\n$$\\frac{9}{2} \\text{ racional}$$\n$$\\sqrt7 \\text{ entero}$$"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "$$-4 \\text{ entero}; \\;9/2 \\text{ racional}; \\;\\sqrt7 \\text{ irracional}$$",
+          "explanationLatex": "$$-4 \\text{ entero}$$\n$$\\frac{9}{2} \\text{ racional}$$\n$$\\sqrt7 \\text{ irracional}$$",
           "explanationSteps": [
             {
               "title": "Clasifica -4",
@@ -2814,7 +2814,7 @@
               "title": "Clasifica 9/2",
               "text": "9/2=4.5, un decimal finito, así que es racional.",
               "icon": "fx",
-              "mathContent": "$$9/2=4.5 \\in \\mathbb{Q}$$"
+              "mathContent": "$$\\frac{9}{2}=4.5 \\in \\mathbb{Q}$$"
             },
             {
               "title": "Clasifica √7",
@@ -2831,10 +2831,10 @@
           "questionText": "¿Cuál es la tabla de verdad correcta de $$p\\vee\\neg q$$?",
           "questionLatex": "",
           "options": [
-            "$$Falsa solo cuando p es falsa y q es verdadera; verdadera en los otros tres casos$$",
-            "$$Verdadera solo cuando ambas son verdaderas$$",
-            "$$Falsa siempre que p sea falsa$$",
-            "$$Verdadera solo cuando p es verdadera$$"
+            "Falsa solo cuando p es falsa y q es verdadera; verdadera en los otros tres casos",
+            "Verdadera solo cuando ambas son verdaderas",
+            "Falsa siempre que p sea falsa",
+            "Verdadera solo cuando p es verdadera"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$p\\vee\\neg q \\text{ es falsa solo cuando } p=F, q=V$$",
@@ -2866,10 +2866,10 @@
           "questionText": "¿Qué axioma de cuerpo justifica que $$a+0=a$$?",
           "questionLatex": "",
           "options": [
-            "$$El axioma del elemento neutro aditivo, que define a 0 con esa propiedad$$",
-            "$$El axioma de conmutatividad$$",
-            "$$El axioma de distributividad$$",
-            "$$El axioma del inverso multiplicativo$$"
+            "El axioma del elemento neutro aditivo, que define a 0 con esa propiedad",
+            "El axioma de conmutatividad",
+            "El axioma de distributividad",
+            "El axioma del inverso multiplicativo"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$\\text{Es el axioma del neutro aditivo, por definición}$$",
@@ -2953,13 +2953,13 @@
           "questionText": "Calcula $$|-3|+|4|$$ y compáralo con $$|-3+4|$$:",
           "questionLatex": "",
           "options": [
-            "$$|-3|+|4|=7; \\;|-3+4|=1; \\;\\text{se cumple } 1\\leq7$$",
-            "$$|-3|+|4|=1; \\;|-3+4|=7$$",
-            "$$Ambos son iguales a 7$$",
-            "$$Ambos son iguales a 1$$"
+            "$$|-3|+|4|=7$$\n$$|-3+4|=1$$\n$$\\text{se cumple } 1\\leq7$$",
+            "|-3|+|4|=1; \\;|-3+4|=7",
+            "Ambos son iguales a 7",
+            "Ambos son iguales a 1"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "$$7 \\text{ y } 1; \\;1\\leq7$$",
+          "explanationLatex": "$$7 \\text{ y } 1$$\n$$1\\leq7$$",
           "explanationSteps": [
             {
               "title": "Calcula por separado y suma",
@@ -2998,10 +2998,10 @@
           "questionText": "Demuestra que si $$a<0$$ y $$b<0$$, entonces $$ab>0$$:",
           "questionLatex": "",
           "options": [
-            "$$Como -a>0 y -b>0, su producto (-a)(-b)=ab es positivo por compatibilidad del producto con positivos$$",
-            "$$Se sigue directamente sin necesitar el signo de a y b$$",
-            "$$Es falso: el producto de dos negativos es negativo$$",
-            "$$Solo es cierto si además a=b$$"
+            "Como $$-a>0$$ y $$-b>0$$, su producto $$(-a)(-b)=ab$$ es positivo por compatibilidad del producto con positivos",
+            "Se sigue directamente sin necesitar el signo de a y b",
+            "Es falso: el producto de dos negativos es negativo",
+            "Solo es cierto si además $$a=b$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$ab>0, \\text{ ya que } (-a)(-b)=ab>0$$",
@@ -3039,13 +3039,13 @@
           "questionText": "Niega: 'todo número racional puede escribirse como decimal finito':",
           "questionLatex": "",
           "options": [
-            "$$Existe un número racional que no puede escribirse como decimal finito (ej. 1/3=0.333…)$$",
-            "$$Ningún número racional puede escribirse como decimal finito$$",
-            "$$Todo número racional puede escribirse como decimal infinito$$",
-            "$$Existe un número irracional que es decimal finito$$"
+            "Existe un número racional que no puede escribirse como decimal finito (ej. $$\\frac{1}{3}=0.333\\ldots$$)",
+            "Ningún número racional puede escribirse como decimal finito",
+            "Todo número racional puede escribirse como decimal infinito",
+            "Existe un número irracional que es decimal finito"
           ],
           "correctAnswerIndex": 0,
-          "explanationLatex": "$$\\text{Existe un racional sin decimal finito (ej. } 1/3)$$",
+          "explanationLatex": "$$\\text{Existe un racional sin decimal finito \\frac{ej. } 1}{3}$$",
           "explanationSteps": [
             {
               "title": "Identifica el cuantificador",
@@ -3063,7 +3063,7 @@
               "title": "Encuentra un testigo concreto",
               "text": "1/3=0.333… es racional, pero su decimal es periódico, no finito.",
               "icon": "star",
-              "mathContent": "$$1/3 \\text{ es un contraejemplo}$$"
+              "mathContent": "$$\\frac{1}{3} \\text{ es un contraejemplo}$$"
             }
           ],
           "category": "Práctica Integradora",
@@ -3179,10 +3179,10 @@
           "questionText": "Demuestra por contrarrecíproco que si $$n^2$$ es impar, entonces $$n$$ es impar:",
           "questionLatex": "",
           "options": [
-            "$$El contrarrecíproco es 'si n es par, entonces n² es par', que se demuestra fácilmente con n=2k$$",
-            "$$El contrarrecíproco es 'si n es impar, entonces n² es par'$$",
-            "$$No se puede usar contrarrecíproco en este caso$$",
-            "$$El contrarrecíproco invierte solo una parte de la proposición$$"
+            "El contrarrecíproco es 'si $$n$$ es par, entonces $$n^2$$ es par', que se demuestra fácilmente con $$n=2k$$",
+            "El contrarrecíproco es 'si $$n$$ es impar, entonces $$n^2$$ es par'",
+            "No se puede usar contrarrecíproco en este caso",
+            "El contrarrecíproco invierte solo una parte de la proposición"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$\\text{Contrarrecíproco: n par} \\Rightarrow n^2 \\text{ par}$$",
@@ -3224,10 +3224,10 @@
           "questionText": "Demuestra que para todo $$a,b\\geq0$$, $$\\frac{a+b}{2}\\geq\\sqrt{ab}$$ (desigualdad de las medias):",
           "questionLatex": "",
           "options": [
-            "$$Partiendo de (\\sqrt a-\\sqrt b)^2\\geq0 y expandiendo, se llega directamente al resultado$$",
-            "$$Se demuestra elevando ambos lados al cuadrado sin más$$",
-            "$$Solo es cierta si a=b$$",
-            "$$No se puede demostrar en general$$"
+            "Partiendo de $$(\\sqrt a-\\sqrt b)^2\\geq0$$ y expandiendo, se llega directamente al resultado",
+            "Se demuestra elevando ambos lados al cuadrado sin más",
+            "Solo es cierta si a=b",
+            "No se puede demostrar en general"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$\\frac{a+b}{2}\\geq\\sqrt{ab}$$",
@@ -3312,10 +3312,10 @@
           "questionText": "Demuestra por contradicción que no existe un número racional cuyo cuadrado sea 3:",
           "questionLatex": "",
           "options": [
-            "$$Suponiendo √3=p/q irreducible, se llega a que 3 divide tanto a p como a q, contradiciendo la irreducibilidad$$",
-            "$$Se puede encontrar fácilmente ese racional$$",
-            "$$Solo es cierto para números negativos$$",
-            "$$No se puede adaptar la demostración de √2$$"
+            "Suponiendo $$\\sqrt3=\\frac{p}{q}$$ irreducible, se llega a que 3 divide tanto a $$p$$ como a $$q$$, contradiciendo la irreducibilidad",
+            "Se puede encontrar fácilmente ese racional",
+            "Solo es cierto para números negativos",
+            "No se puede adaptar la demostración de √2"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$\\text{Contradicción: 3 divide a p y a q simultáneamente}$$",
@@ -3324,13 +3324,13 @@
               "title": "Supón lo contrario",
               "text": "Por contradicción, supongamos que √3=p/q con p,q enteros sin factores comunes.",
               "icon": "pin",
-              "mathContent": "$$\\sqrt3=p/q \\text{ (irreducible)}$$"
+              "mathContent": "$$\\sqrt3=\\frac{p}{q} \\text{ (irreducible)}$$"
             },
             {
               "title": "Eleva al cuadrado y despeja",
               "text": "Obtenemos una relación entre p² y q².",
               "icon": "fx",
-              "mathContent": "$$3=p^2/q^2 \\Rightarrow p^2=3q^2$$"
+              "mathContent": "$$3=\\frac{p^2}{q^2} \\Rightarrow p^2=3q^2$$"
             },
             {
               "title": "Deduce que 3 divide a p",
@@ -3400,10 +3400,10 @@
           "questionText": "Escribe con cuantificadores 'para todo número real x, existe un número real y tal que x+y=0', y di a qué axioma corresponde:",
           "questionLatex": "",
           "options": [
-            "$$\\forall x\\in\\mathbb{R}\\,\\exists y\\in\\mathbb{R}: x+y=0; \\text{ corresponde al axioma del inverso aditivo}$$",
-            "$$\\exists x\\in\\mathbb{R}\\,\\forall y\\in\\mathbb{R}: x+y=0; \\text{ axioma del neutro aditivo}$$",
-            "$$\\forall x\\in\\mathbb{R}\\,\\forall y\\in\\mathbb{R}: x+y=0; \\text{ axioma de conmutatividad}$$",
-            "$$\\forall x\\in\\mathbb{R}\\,\\exists y\\in\\mathbb{R}: xy=1; \\text{ axioma del inverso multiplicativo}$$"
+            "$$\\forall x\\in\\mathbb{R}\\,\\exists y\\in\\mathbb{R}: x+y=0$$\n$$\\text{ corresponde al axioma del inverso aditivo}$$",
+            "$$\\exists x\\in\\mathbb{R}\\,\\forall y\\in\\mathbb{R}: x+y=0$$\n$$\\text{ axioma del neutro aditivo}$$",
+            "$$\\forall x\\in\\mathbb{R}\\,\\forall y\\in\\mathbb{R}: x+y=0$$\n$$\\text{ axioma de conmutatividad}$$",
+            "$$\\forall x\\in\\mathbb{R}\\,\\exists y\\in\\mathbb{R}: xy=1$$\n$$\\text{ axioma del inverso multiplicativo}$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "$$\\forall x\\,\\exists y: x+y=0 \\text{ (inverso aditivo)}$$",
