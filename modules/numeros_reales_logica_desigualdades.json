@@ -11,7 +11,7 @@
       "title": "Clasificación de los Números Reales",
       "type": "theory",
       "isCompleted": false,
-      "isLocked": false,
+      "isLocked": true,
       "theorySections": [
         {
           "title": "Conjuntos Numéricos y sus Relaciones",
@@ -76,6 +76,10 @@
               "content": "Una propiedad notable de $$\\mathbb{R}$$ es la densidad: entre cualesquiera dos números reales distintos, sin importar cuán cercanos estén, siempre existen infinitos números racionales e infinitos números irracionales."
             },
             {
+              "type": "number_line",
+              "content": "points: -2(a), 3(b); range: -5,5,1"
+            },
+            {
               "type": "example",
               "content": "$$\\text{Hallar un racional y un irracional entre } 1.41 \\text{ y } 1.42$$",
               "steps": [
@@ -92,6 +96,10 @@
                   "mathContent": "$$\\sqrt2 \\approx 1.41421356\\ldots$$"
                 }
               ]
+            },
+            {
+              "type": "number_line",
+              "content": "points: 1.41(1.41), 1.42(1.42), 1.415(1.415 en Q), 1.4142(raiz de 2 en Irr); range: 1.40,1.43,0.01"
             }
           ]
         }
@@ -879,6 +887,10 @@
             {
               "type": "text",
               "content": "Notación de intervalos y su forma algebraica: $$(a,b)=\\{x\\in\\mathbb{R}: a<x \\wedge x<b\\}$$; $$[a,b]=\\{x\\in\\mathbb{R}: a\\leq x\\wedge x\\leq b\\}$$; $$(a,\\infty)=\\{x\\in\\mathbb{R}:x>a\\}$$; $$(-\\infty,b]=\\{x\\in\\mathbb{R}:x\\leq b\\}$$."
+            },
+            {
+              "type": "number_line",
+              "content": "interval: -2,5,[,)([-2, 5)); range: -5,7,1"
             }
           ]
         }
@@ -1397,6 +1409,10 @@
                   "mathContent": "$$[-2,\\infty)$$"
                 }
               ]
+            },
+            {
+              "type": "number_line",
+              "content": "interval: -2,0,[,+inf(x >= -2); range: -5,10,1"
             }
           ]
         },
@@ -1479,6 +1495,10 @@
                   "mathContent": "$$[-2,3)$$"
                 }
               ]
+            },
+            {
+              "type": "number_line",
+              "content": "interval: -2,3,[,)([-2, 3)); range: -5,6,1"
             }
           ]
         },
@@ -2060,6 +2080,10 @@
               ]
             },
             {
+              "type": "number_line",
+              "content": "interval: 1,7,(,)((1, 7)); range: -1,9,1"
+            },
+            {
               "type": "formula",
               "content": "$$|u|>a \\iff u<-a \\;\\text{o}\\; u>a \\qquad (a>0)$$"
             },
@@ -2086,6 +2110,14 @@
                   "mathContent": "$$(-\\infty,-2]\\cup\\left[\\frac43,\\infty\\right)$$"
                 }
               ]
+            },
+            {
+              "type": "number_line",
+              "content": "interval: 0,-2,-inf,](x <= -2); range: -6,6,1"
+            },
+            {
+              "type": "number_line",
+              "content": "interval: 1.33,0,[,+inf(x >= 4/3); range: -6,6,1"
             },
             {
               "type": "note",
@@ -2137,6 +2169,10 @@
                   "mathContent": "$$[3,7]$$"
                 }
               ]
+            },
+            {
+              "type": "number_line",
+              "content": "points: 5(centro = 5); interval: 3,7,[,]([3, 7]); range: 0,10,1"
             },
             {
               "type": "note",
