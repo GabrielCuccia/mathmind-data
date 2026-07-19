@@ -11,7 +11,7 @@
       "title": "Clasificación de los Números Reales",
       "type": "theory",
       "isCompleted": false,
-      "isLocked": true,
+      "isLocked": false,
       "theorySections": [
         {
           "title": "Conjuntos Numéricos y sus Relaciones",
