@@ -1,8 +1,8 @@
 {
   "id": "calculo_diferencial",
-  "title": "Calculo Diferencial",
-  "subtitle": "Módulo de Calculo Diferencial",
-  "description": "Contenido completo del módulo de Calculo Diferencial",
+  "title": "Cálculo Diferencial",
+  "subtitle": "Módulo de Cálculo Diferencial",
+  "description": "Contenido completo del módulo de Cálculo Diferencial: reglas de derivación, regla de la cadena y derivación implícita, derivadas de funciones inversas, teoremas de Rolle y del valor medio, y la regla de L'Hôpital.",
   "semesterNumber": 1,
   "isLocked": false,
   "lessons": [
@@ -17,7 +17,7 @@
           "title": "La derivada: definición y notación",
           "subtitle": "Cálculo Diferencial • Definición de derivada",
           "content": "La derivada de una función f en un punto x se define como el límite del cociente incremental, cuando el incremento h tiende a cero. Geométricamente, este límite representa la pendiente de la recta tangente a la gráfica de f en el punto (x, f(x)). Físicamente, representa la razón de cambio instantánea de f respecto de x: si f(t) es la posición de un objeto en el instante t, f'(t) es su velocidad instantánea.",
-          "formulaLatex": "f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}",
+          "formulaLatex": "$$f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}$$",
           "proTip": "",
           "blocks": [
             {
@@ -35,26 +35,26 @@
           "subtitle": "Cálculo Diferencial • Reglas fundamentales",
           "content": "Las siguientes reglas se aplican a cualquier función derivable y son la base de toda la guía. Se pueden demostrar todas a partir de la definición por límite, pero aquí las presentamos ya listas para usar.",
           "formulaLatex": "",
-          "proTip": "Antes de derivar, reescribe raíces y fracciones con exponentes: √x = x^(1/2), 1/x² = x⁻². Esto te permite aplicar la regla de la potencia directamente, en lugar de memorizar casos especiales.",
+          "proTip": "Antes de derivar, reescribe raíces y fracciones con exponentes: $$\\sqrt{x} = x^{\\frac{1}{2}}$$, $$\\dfrac{1}{x^2} = x^{-2}$$. Esto te permite aplicar la regla de la potencia directamente, en lugar de memorizar casos especiales.",
           "blocks": [
             {
               "type": "formula",
-              "content": "\\frac{d}{dx}[c]=0 \\qquad \\frac{d}{dx}[x^n]=nx^{n-1} \\qquad \\frac{d}{dx}[c\\cdot f(x)]=c\\cdot f'(x) \\qquad (f\\pm g)'=f'\\pm g'"
+              "content": "$$\\frac{d}{dx}[c]=0 \\qquad \\frac{d}{dx}[x^n]=nx^{n-1} \\qquad \\frac{d}{dx}[c\\cdot f(x)]=c\\cdot f'(x) \\qquad (f\\pm g)'=f'\\pm g'$$"
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } f(x)=5x^3-2x+7",
+              "content": "$$\\text{Derivar } f(x)=5x^3-2x+7$$",
               "steps": [
                 {
                   "title": "Deriva cada término por separado",
                   "text": "Usa la regla de la potencia en 5x³, la regla del múltiplo constante en −2x, y recuerda que la derivada de una constante es 0.",
-                  "mathContent": "5(3x^2)-2(1)+0",
+                  "mathContent": "$$5(3x^2)-2(1)+0$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Resultado",
                   "text": "La constante 7 desaparece por completo.",
-                  "mathContent": "f'(x)=15x^2-2",
+                  "mathContent": "$$f'(x)=15x^2-2$$",
                   "icon": "star"
                 }
               ]
@@ -64,42 +64,42 @@
         {
           "title": "Derivadas de funciones polinómicas",
           "subtitle": "Cálculo Diferencial • Polinomios",
-          "content": "Un polinomio es simplemente una suma de términos de la forma c·xⁿ. Aplicando la regla de la potencia y la regla de la suma término a término, la derivada de cualquier polinomio se obtiene de inmediato: cada término aₖxᵏ se convierte en k·aₖ·xᵏ⁻¹.",
+          "content": "Un polinomio es simplemente una suma de términos de la forma $$c\\cdot x^n$$. Aplicando la regla de la potencia y la regla de la suma término a término, la derivada de cualquier polinomio se obtiene de inmediato: cada término $$a_kx^k$$ se convierte en $$k\\cdot a_k\\cdot x^{k-1}$$.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Derivar } f(x)=4x^5-3x^3+2x^2-x+9",
+              "content": "$$\\text{Derivar } f(x)=4x^5-3x^3+2x^2-x+9$$",
               "steps": [
                 {
                   "title": "Aplica la regla de la potencia a cada término",
                   "text": "Multiplica cada coeficiente por su exponente, y resta 1 al exponente.",
-                  "mathContent": "f'(x)=20x^4-9x^2+4x-1",
+                  "mathContent": "$$f'(x)=20x^4-9x^2+4x-1$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } f(x)=3\\sqrt x+\\frac{5}{x^2}",
+              "content": "$$\\text{Derivar } f(x)=3\\sqrt x+\\frac{5}{x^2}$$",
               "steps": [
                 {
                   "title": "Reescribe con exponentes",
                   "text": "Convierte la raíz y la fracción en potencias antes de derivar.",
-                  "mathContent": "f(x)=3x^{1/2}+5x^{-2}",
+                  "mathContent": "$$f(x)=3x^{\\frac{1}{2}}+5x^{-2}$$",
                   "icon": "info"
                 },
                 {
                   "title": "Aplica la regla de la potencia",
                   "text": "Multiplica cada coeficiente por su exponente.",
-                  "mathContent": "f'(x)=\\tfrac32x^{-1/2}-10x^{-3}",
+                  "mathContent": "$$f'(x)=\\frac{3}{2}x^{\\frac{-1}{2}}-10x^{-3}$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Reescribe de vuelta si lo prefieres",
                   "text": "También puede expresarse con raíces y fracciones.",
-                  "mathContent": "f'(x)=\\frac{3}{2\\sqrt x}-\\frac{10}{x^3}",
+                  "mathContent": "$$f'(x)=\\frac{3}{2\\sqrt x}-\\frac{10}{x^3}$$",
                   "icon": "star"
                 }
               ]
@@ -115,7 +115,7 @@
           "blocks": [
             {
               "type": "formula",
-              "content": "(f\\cdot g)'=f'g+fg' \\qquad \\left(\\frac{f}{g}\\right)'=\\frac{f'g-fg'}{g^2}\\ (g\\neq0)"
+              "content": "$$(f\\cdot g)'=f'g+fg' \\qquad \\left(\\frac{f}{g}\\right)'=\\frac{f'g-fg'}{g^2}\\ (g\\neq0)$$"
             },
             {
               "type": "note",
@@ -123,48 +123,48 @@
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } h(x)=(x^2+1)(x^3-2x) \\text{ con la regla del producto}",
+              "content": "$$\\text{Derivar } h(x)=(x^2+1)(x^3-2x) \\text{ con la regla del producto}$$",
               "steps": [
                 {
                   "title": "Identifica las dos partes",
                   "text": "f(x)=x²+1, g(x)=x³−2x.",
-                  "mathContent": "f'(x)=2x,\\quad g'(x)=3x^2-2",
+                  "mathContent": "$$f'(x)=2x,\\quad g'(x)=3x^2-2$$",
                   "icon": "pin"
                 },
                 {
                   "title": "Aplica la regla del producto",
                   "text": "f'g + fg'.",
-                  "mathContent": "h'(x)=2x(x^3-2x)+(x^2+1)(3x^2-2)",
+                  "mathContent": "$$h'(x)=2x(x^3-2x)+(x^2+1)(3x^2-2)$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Expande y simplifica",
                   "text": "Distribuye y agrupa términos semejantes.",
-                  "mathContent": "h'(x)=5x^4-3x^2-2",
+                  "mathContent": "$$h'(x)=5x^4-3x^2-2$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } h(x)=\\frac{x^2-1}{x+3} \\text{ con la regla del cociente}",
+              "content": "$$\\text{Derivar } h(x)=\\frac{x^2-1}{x+3} \\text{ con la regla del cociente}$$",
               "steps": [
                 {
                   "title": "Identifica numerador y denominador",
                   "text": "f(x)=x²−1, g(x)=x+3.",
-                  "mathContent": "f'(x)=2x,\\quad g'(x)=1",
+                  "mathContent": "$$f'(x)=2x,\\quad g'(x)=1$$",
                   "icon": "pin"
                 },
                 {
                   "title": "Aplica la regla del cociente",
                   "text": "f'g − fg', todo sobre g².",
-                  "mathContent": "h'(x)=\\frac{2x(x+3)-(x^2-1)(1)}{(x+3)^2}",
+                  "mathContent": "$$h'(x)=\\frac{2x(x+3)-(x^2-1)(1)}{(x+3)^2}$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Simplifica el numerador",
                   "text": "Expande y agrupa.",
-                  "mathContent": "h'(x)=\\frac{x^2+6x+1}{(x+3)^2}",
+                  "mathContent": "$$h'(x)=\\frac{x^2+6x+1}{(x+3)^2}$$",
                   "icon": "star"
                 }
               ]
@@ -178,30 +178,30 @@
         {
           "title": "Derivadas de funciones racionales",
           "subtitle": "Cálculo Diferencial • Funciones racionales",
-          "content": "Una función racional es un cociente de polinomios, P(x)/Q(x). Su derivada se obtiene aplicando la regla del cociente directamente, recordando que el resultado solo es válido donde Q(x) ≠ 0. Vale la pena simplificar el numerador tras derivar, porque suele factorizarse de forma agradable.",
+          "content": "Una función racional es un cociente de polinomios, $$\\dfrac{P(x)}{Q(x)}$$. Su derivada se obtiene aplicando la regla del cociente directamente, recordando que el resultado solo es válido donde $$Q(x) \\neq 0$$. Vale la pena simplificar el numerador tras derivar, porque suele factorizarse de forma agradable.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Derivar } f(x)=\\frac{3x+2}{x^2-4}",
+              "content": "$$\\text{Derivar } f(x)=\\frac{3x+2}{x^2-4}$$",
               "steps": [
                 {
                   "title": "Identifica numerador y denominador",
                   "text": "f₁(x)=3x+2, g(x)=x²−4.",
-                  "mathContent": "f_1'(x)=3,\\quad g'(x)=2x",
+                  "mathContent": "$$f_1'(x)=3,\\quad g'(x)=2x$$",
                   "icon": "pin"
                 },
                 {
                   "title": "Aplica la regla del cociente",
                   "text": "Sustituye en la fórmula.",
-                  "mathContent": "f'(x)=\\frac{3(x^2-4)-(3x+2)(2x)}{(x^2-4)^2}",
+                  "mathContent": "$$f'(x)=\\frac{3(x^2-4)-(3x+2)(2x)}{(x^2-4)^2}$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Expande y simplifica el numerador",
                   "text": "Distribuye ambos productos y agrupa.",
-                  "mathContent": "f'(x)=\\frac{-3x^2-4x-12}{(x^2-4)^2}",
+                  "mathContent": "$$f'(x)=\\frac{-3x^2-4x-12}{(x^2-4)^2}$$",
                   "icon": "check"
                 },
                 {
@@ -223,40 +223,40 @@
           "blocks": [
             {
               "type": "note",
-              "content": "Derivadas de las funciones trigonométricas: d/dx[sen x]=cos x, d/dx[cos x]=−sen x, d/dx[tan x]=sec²x, d/dx[cot x]=−csc²x, d/dx[sec x]=sec x tan x, d/dx[csc x]=−csc x cot x."
+              "content": "Derivadas de las funciones trigonométricas:\n$$\\frac{d}{dx}[\\text{sen }x]=\\cos x$$\n$$\\frac{d}{dx}[\\cos x]=-\\text{sen }x$$\n$$\\frac{d}{dx}[\\tan x]=\\sec^2x$$\n$$\\frac{d}{dx}[\\cot x]=-\\csc^2x$$\n$$\\frac{d}{dx}[\\sec x]=\\sec x\\tan x$$\n$$\\frac{d}{dx}[\\csc x]=-\\csc x\\cot x$$"
             },
             {
               "type": "example",
-              "content": "\\text{Deducir la derivada de } \\tan x = \\frac{\\sin x}{\\cos x} \\text{ con la regla del cociente}",
+              "content": "$$\\text{Deducir la derivada de } \\tan x = \\frac{\\sin x}{\\cos x} \\text{ con la regla del cociente}$$",
               "steps": [
                 {
                   "title": "Aplica la regla del cociente",
                   "text": "f=sen x, g=cos x.",
-                  "mathContent": "(\\tan x)'=\\frac{\\cos x\\cos x-\\sin x(-\\sin x)}{\\cos^2x}",
+                  "mathContent": "$$(\\tan x)'=\\frac{\\cos x\\cos x-\\sin x(-\\sin x)}{\\cos^2x}$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Usa la identidad pitagórica",
                   "text": "sen²x+cos²x=1.",
-                  "mathContent": "=\\frac{\\cos^2x+\\sin^2x}{\\cos^2x}=\\frac{1}{\\cos^2x}",
+                  "mathContent": "$$=\\frac{\\cos^2x+\\sin^2x}{\\cos^2x}=\\frac{1}{\\cos^2x}$$",
                   "icon": "chart"
                 },
                 {
                   "title": "Resultado",
                   "text": "Esto confirma la fórmula conocida.",
-                  "mathContent": "(\\tan x)'=\\sec^2x",
+                  "mathContent": "$$(\\tan x)'=\\sec^2x$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } f(x)=x^2\\sin x \\text{ con la regla del producto}",
+              "content": "$$\\text{Derivar } f(x)=x^2\\sin x \\text{ con la regla del producto}$$",
               "steps": [
                 {
                   "title": "Identifica las partes y aplica el producto",
                   "text": "f₁=x², f₂=sen x.",
-                  "mathContent": "f'(x)=2x\\sin x+x^2\\cos x",
+                  "mathContent": "$$f'(x)=2x\\sin x+x^2\\cos x$$",
                   "icon": "star"
                 }
               ]
@@ -266,40 +266,40 @@
         {
           "title": "Derivadas de funciones exponenciales",
           "subtitle": "Cálculo Diferencial • Exponenciales",
-          "content": "La función exponencial natural eˣ tiene la propiedad única de ser igual a su propia derivada. Para una base a > 0 distinta de 1, aparece un factor adicional de ln a.",
+          "content": "La función exponencial natural $$e^x$$ tiene la propiedad única de ser igual a su propia derivada. Para una base $$a>0$$ distinta de $$1$$, aparece un factor adicional de $$\\ln a$$.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "formula",
-              "content": "\\frac{d}{dx}[e^x]=e^x \\qquad \\frac{d}{dx}[a^x]=a^x\\ln a\\ (a>0,\\ a\\neq1)"
+              "content": "$$\\frac{d}{dx}[e^x]=e^x \\qquad \\frac{d}{dx}[a^x]=a^x\\ln a\\ (a>0,\\ a\\neq1)$$"
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } f(x)=3e^x-2^x",
+              "content": "$$\\text{Derivar } f(x)=3e^x-2^x$$",
               "steps": [
                 {
                   "title": "Aplica ambas fórmulas exponenciales",
                   "text": "Recuerda el factor extra ln 2 para la base 2.",
-                  "mathContent": "f'(x)=3e^x-2^x\\ln2",
+                  "mathContent": "$$f'(x)=3e^x-2^x\\ln2$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } f(x)=x^2e^x \\text{ con la regla del producto}",
+              "content": "$$\\text{Derivar } f(x)=x^2e^x \\text{ con la regla del producto}$$",
               "steps": [
                 {
                   "title": "Aplica el producto",
                   "text": "f₁=x², f₂=eˣ.",
-                  "mathContent": "f'(x)=2xe^x+x^2e^x",
+                  "mathContent": "$$f'(x)=2xe^x+x^2e^x$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Factoriza eˣ",
                   "text": "Esto revela la estructura de la respuesta.",
-                  "mathContent": "f'(x)=e^x(2x+x^2)=x(x+2)e^x",
+                  "mathContent": "$$f'(x)=e^x(2x+x^2)=x(x+2)e^x$$",
                   "icon": "star"
                 }
               ]
@@ -323,13 +323,13 @@
       "challenges": [
         {
           "id": "gc2_n1_01",
-          "questionText": "Deriva f(x) = 7x⁴ − 5x² + 3.",
+          "questionText": "Deriva $$f(x) = 7x^4 - 5x^2 + 3$$.",
           "questionLatex": "",
           "options": [
-            "28x³ - 10x",
-            "28x³ - 10x + 3",
-            "7x³ - 10x",
-            "28x³ - 5x"
+            "$$28x^{3} - 10x$$",
+            "$$28x^{3} - 10x + 3$$",
+            "$$7x^{3} - 10x$$",
+            "$$28x^{3} - 5x$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -343,25 +343,25 @@
             {
               "title": "Aplica la regla de la potencia a 7x⁴",
               "text": "Multiplica el coeficiente por el exponente y resta 1 al exponente.",
-              "mathContent": "7\\cdot4\\,x^3=28x^3",
+              "mathContent": "$$7\\cdot4\\,x^3=28x^3$$",
               "icon": "fx"
             },
             {
               "title": "Aplica la regla de la potencia a −5x²",
               "text": "Mismo procedimiento.",
-              "mathContent": "-5\\cdot2\\,x^1=-10x",
+              "mathContent": "$$-5\\cdot2\\,x^1=-10x$$",
               "icon": "fx"
             },
             {
               "title": "La constante 3 desaparece",
               "text": "La derivada de cualquier número constante es siempre cero.",
-              "mathContent": "\\frac{d}{dx}[3]=0",
+              "mathContent": "$$\\frac{d}{dx}[3]=0$$",
               "icon": "pin"
             },
             {
               "title": "Resultado",
               "text": "Suma los términos obtenidos.",
-              "mathContent": "f'(x)=28x^3-10x",
+              "mathContent": "$$f'(x)=28x^3-10x$$",
               "icon": "star"
             }
           ],
@@ -370,13 +370,13 @@
         },
         {
           "id": "gc2_n1_02",
-          "questionText": "Deriva f(x) = 2√x − 4/x.",
+          "questionText": "Deriva $$f(x) = 2\\sqrt{x} - \\frac{4}{x}$$.",
           "questionLatex": "",
           "options": [
-            "1/√x + 4/x²",
-            "1/√x - 4/x²",
-            "2/√x + 4/x²",
-            "1/√x + 4/x"
+            "$$\\frac{1}{\\sqrt{x}} + \\frac{4}{x^{2}}$$",
+            "$$\\frac{1}{\\sqrt{x}} - \\frac{4}{x^{2}}$$",
+            "$$\\frac{2}{\\sqrt{x}} + \\frac{4}{x^{2}}$$",
+            "$$\\frac{1}{\\sqrt{x}} + \\frac{4}{x}$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -384,25 +384,25 @@
             {
               "title": "Reescribe con exponentes antes de derivar",
               "text": "Es más fácil aplicar la regla de la potencia si conviertes raíces y fracciones.",
-              "mathContent": "f(x)=2x^{1/2}-4x^{-1}",
+              "mathContent": "$$f(x)=2x^{\\frac{1}{2}}-4x^{-1}$$",
               "icon": "info"
             },
             {
               "title": "Deriva el primer término",
               "text": "Multiplica 2 por 1/2 y resta 1 al exponente.",
-              "mathContent": "2\\cdot\\tfrac12\\,x^{-1/2}=x^{-1/2}",
+              "mathContent": "$$2\\cdot\\frac{1}{2}\\,x^{\\frac{-1}{2}}=x^{\\frac{-1}{2}}$$",
               "icon": "fx"
             },
             {
               "title": "Deriva el segundo término",
               "text": "Ten cuidado: −4 por −1 da +4.",
-              "mathContent": "-4\\cdot(-1)\\,x^{-2}=4x^{-2}",
+              "mathContent": "$$-4\\cdot(-1)\\,x^{-2}=4x^{-2}$$",
               "icon": "fx"
             },
             {
               "title": "Reescribe el resultado en su forma original",
               "text": "x^(−1/2) es 1/√x, y x⁻² es 1/x².",
-              "mathContent": "f'(x)=\\frac{1}{\\sqrt x}+\\frac{4}{x^2}",
+              "mathContent": "$$f'(x)=\\frac{1}{\\sqrt x}+\\frac{4}{x^2}$$",
               "icon": "star"
             }
           ],
@@ -411,13 +411,13 @@
         },
         {
           "id": "gc2_n1_03",
-          "questionText": "Deriva f(x) = 6 sen x − 3 cos x.",
+          "questionText": "Deriva $$f(x) = 6\\,\\text{sen } x - 3\\cos x$$.",
           "questionLatex": "",
           "options": [
-            "6cos x + 3sen x",
-            "6cos x - 3sen x",
-            "-6sen x + 3cos x",
-            "6cos x + 3cos x"
+            "$$6cos x + 3sen x$$",
+            "$$6cos x - 3sen x$$",
+            "$$-6sen x + 3cos x$$",
+            "$$6cos x + 3cos x$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -431,19 +431,19 @@
             {
               "title": "Deriva el primer término",
               "text": "6 sen x se convierte en 6 cos x.",
-              "mathContent": "\\frac{d}{dx}[6\\sin x]=6\\cos x",
+              "mathContent": "$$\\frac{d}{dx}[6\\sin x]=6\\cos x$$",
               "icon": "fx"
             },
             {
               "title": "Deriva el segundo término con cuidado en el signo",
               "text": "−3 cos x se convierte en −3·(−sen x), y el doble signo negativo se vuelve positivo.",
-              "mathContent": "\\frac{d}{dx}[-3\\cos x]=-3(-\\sin x)=3\\sin x",
+              "mathContent": "$$\\frac{d}{dx}[-3\\cos x]=-3(-\\sin x)=3\\sin x$$",
               "icon": "pin"
             },
             {
               "title": "Resultado",
               "text": "Suma ambos términos.",
-              "mathContent": "f'(x)=6\\cos x+3\\sin x",
+              "mathContent": "$$f'(x)=6\\cos x+3\\sin x$$",
               "icon": "star"
             }
           ],
@@ -452,13 +452,13 @@
         },
         {
           "id": "gc2_n1_04",
-          "questionText": "Deriva f(x) = 5eˣ + 2x³.",
+          "questionText": "Deriva $$f(x) = 5e^x + 2x^3$$.",
           "questionLatex": "",
           "options": [
-            "6x² + 5eˣ",
-            "6x² + 5",
-            "3x² + 5eˣ",
-            "6x³ + 5eˣ"
+            "$$6x^{2} + 5e^{x}$$",
+            "$$6x^{2} + 5$$",
+            "$$3x^{2} + 5e^{x}$$",
+            "$$6x^{3} + 5e^{x}$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -466,25 +466,25 @@
             {
               "title": "Recuerda la propiedad especial de eˣ",
               "text": "La función exponencial natural es su propia derivada.",
-              "mathContent": "\\frac{d}{dx}[e^x]=e^x",
+              "mathContent": "$$\\frac{d}{dx}[e^x]=e^x$$",
               "icon": "info"
             },
             {
               "title": "Deriva el primer término",
               "text": "5eˣ se mantiene igual.",
-              "mathContent": "\\frac{d}{dx}[5e^x]=5e^x",
+              "mathContent": "$$\\frac{d}{dx}[5e^x]=5e^x$$",
               "icon": "fx"
             },
             {
               "title": "Deriva el segundo término con la regla de la potencia",
               "text": "Multiplica 2 por 3 y resta 1 al exponente.",
-              "mathContent": "\\frac{d}{dx}[2x^3]=6x^2",
+              "mathContent": "$$\\frac{d}{dx}[2x^3]=6x^2$$",
               "icon": "fx"
             },
             {
               "title": "Resultado",
               "text": "Suma ambos términos (puedes escribirlos en cualquier orden).",
-              "mathContent": "f'(x)=6x^2+5e^x",
+              "mathContent": "$$f'(x)=6x^2+5e^x$$",
               "icon": "star"
             }
           ],
@@ -493,13 +493,13 @@
         },
         {
           "id": "gc2_n1_05",
-          "questionText": "Deriva f(x) = x⁻³ + x⁻¹ − 8.",
+          "questionText": "Deriva $$f(x) = x^{-3} + x^{-1} - 8$$.",
           "questionLatex": "",
           "options": [
-            "-3x⁻⁴ - x⁻²",
-            "-3x⁻⁴ + x⁻²",
-            "3x⁻⁴ - x⁻²",
-            "-3x⁻⁴ - x⁻² - 8"
+            "$$-3x^{-4} - x^{-2}$$",
+            "$$-3x^{-4} + x^{-2}$$",
+            "$$3x^{-4} - x^{-2}$$",
+            "$$-3x^{-4} - x^{-2} - 8$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -513,13 +513,13 @@
             {
               "title": "Deriva x⁻³",
               "text": "Multiplica −3 por el exponente y resta 1.",
-              "mathContent": "-3x^{-4}",
+              "mathContent": "$$-3x^{-4}$$",
               "icon": "fx"
             },
             {
               "title": "Deriva x⁻¹",
               "text": "Multiplica −1 por el exponente y resta 1.",
-              "mathContent": "-1\\cdot x^{-2}=-x^{-2}",
+              "mathContent": "$$-1\\cdot x^{-2}=-x^{-2}$$",
               "icon": "fx"
             },
             {
@@ -531,7 +531,7 @@
             {
               "title": "Resultado",
               "text": "Suma los dos términos que sobrevivieron.",
-              "mathContent": "f'(x)=-3x^{-4}-x^{-2}",
+              "mathContent": "$$f'(x)=-3x^{-4}-x^{-2}$$",
               "icon": "star"
             }
           ],
@@ -550,13 +550,13 @@
       "challenges": [
         {
           "id": "gc2_n2_06",
-          "questionText": "Deriva f(x) = (2x+1)(x²−3) usando la regla del producto.",
+          "questionText": "Deriva $$f(x) = (2x+1)(x^2-3)$$ usando la regla del producto.",
           "questionLatex": "",
           "options": [
-            "6x² + 2x - 6",
-            "6x² - 2x - 6",
-            "4x² + 2x - 6",
-            "6x² + 2x + 6"
+            "$$6x^{2} + 2x - 6$$",
+            "$$6x^{2} - 2x - 6$$",
+            "$$4x^{2} + 2x - 6$$",
+            "$$6x^{2} + 2x + 6$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -564,31 +564,31 @@
             {
               "title": "Identifica las dos partes del producto",
               "text": "Llama f₁ y f₂ a cada factor.",
-              "mathContent": "f_1=2x+1,\\quad f_2=x^2-3",
+              "mathContent": "$$f_1=2x+1,\\quad f_2=x^2-3$$",
               "icon": "info"
             },
             {
               "title": "Deriva cada parte por separado",
               "text": "Aplica reglas básicas a cada una.",
-              "mathContent": "f_1'=2,\\quad f_2'=2x",
+              "mathContent": "$$f_1'=2,\\quad f_2'=2x$$",
               "icon": "pin"
             },
             {
               "title": "Aplica la fórmula de la regla del producto",
               "text": "f₁'f₂ + f₁f₂'.",
-              "mathContent": "f'=2(x^2-3)+(2x+1)(2x)",
+              "mathContent": "$$f'=2(x^2-3)+(2x+1)(2x)$$",
               "icon": "fx"
             },
             {
               "title": "Expande ambos productos",
               "text": "Distribuye con cuidado.",
-              "mathContent": "2x^2-6+4x^2+2x",
+              "mathContent": "$$2x^2-6+4x^2+2x$$",
               "icon": "chart"
             },
             {
               "title": "Agrupa términos semejantes",
               "text": "Suma los coeficientes de x².",
-              "mathContent": "f'(x)=6x^2+2x-6",
+              "mathContent": "$$f'(x)=6x^2+2x-6$$",
               "icon": "star"
             }
           ],
@@ -597,13 +597,13 @@
         },
         {
           "id": "gc2_n2_07",
-          "questionText": "Deriva f(x) = (x²+5)/(2x−1) usando la regla del cociente.",
+          "questionText": "Deriva $$f(x) = \\frac{x^2+5}{2x-1}$$ usando la regla del cociente.",
           "questionLatex": "",
           "options": [
-            "(2x² - 2x - 10)/(2x-1)²",
-            "(2x² + 2x - 10)/(2x-1)²",
-            "(2x² - 2x + 10)/(2x-1)²",
-            "(x² - 2x - 10)/(2x-1)²"
+            "$$(2x^{2} - 2x - 10)/(2x-1)^{2}$$",
+            "$$(2x^{2} + 2x - 10)/(2x-1)^{2}$$",
+            "$$(2x^{2} - 2x + 10)/(2x-1)^{2}$$",
+            "$$(x^{2} - 2x - 10)/(2x-1)^{2}$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -611,25 +611,25 @@
             {
               "title": "Identifica numerador y denominador",
               "text": "f=x²+5, g=2x−1.",
-              "mathContent": "f'=2x,\\quad g'=2",
+              "mathContent": "$$f'=2x,\\quad g'=2$$",
               "icon": "info"
             },
             {
               "title": "Aplica la fórmula del cociente",
               "text": "f'g − fg', todo sobre g².",
-              "mathContent": "f'_{total}=\\frac{2x(2x-1)-(x^2+5)(2)}{(2x-1)^2}",
+              "mathContent": "$$f'_{total}=\\frac{2x(2x-1)-(x^2+5)(2)}{(2x-1)^2}$$",
               "icon": "fx"
             },
             {
               "title": "Expande el numerador con cuidado",
               "text": "Distribuye cada producto por separado antes de restar.",
-              "mathContent": "2x(2x-1)=4x^2-2x, \\qquad (x^2+5)(2)=2x^2+10",
+              "mathContent": "$$2x(2x-1)=4x^2-2x, \\qquad (x^2+5)(2)=2x^2+10$$",
               "icon": "chart"
             },
             {
               "title": "Resta y simplifica",
               "text": "4x²−2x−(2x²+10) = 2x²−2x−10.",
-              "mathContent": "\\frac{2x^2-2x-10}{(2x-1)^2}",
+              "mathContent": "$$\\frac{2x^2-2x-10}{(2x-1)^2}$$",
               "icon": "star"
             }
           ],
@@ -638,13 +638,13 @@
         },
         {
           "id": "gc2_n2_08",
-          "questionText": "Deriva f(x) = x³ tan x.",
+          "questionText": "Deriva $$f(x) = x^3\\tan x$$.",
           "questionLatex": "",
           "options": [
-            "3x²tan x + x³sec²x",
-            "3x²tan x - x³sec²x",
-            "3x²sec²x + x³tan x",
-            "x²tan x + x³sec²x"
+            "$$3x^{2}\\tan x + x^{3}\\sec^{2}x$$",
+            "$$3x^{2}\\tan x - x^{3}\\sec^{2}x$$",
+            "$$3x^{2}\\sec^{2}x + x^{3}\\tan x$$",
+            "$$x^{2}\\tan x + x^{3}\\sec^{2}x$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -658,13 +658,13 @@
             {
               "title": "Deriva cada una",
               "text": "Usa la regla de la potencia y la derivada de tan x.",
-              "mathContent": "f_1'=3x^2,\\quad f_2'=\\sec^2x",
+              "mathContent": "$$f_1'=3x^2,\\quad f_2'=\\sec^2x$$",
               "icon": "pin"
             },
             {
               "title": "Aplica la regla del producto",
               "text": "f₁'f₂ + f₁f₂'.",
-              "mathContent": "f'(x)=3x^2\\tan x+x^3\\sec^2x",
+              "mathContent": "$$f'(x)=3x^2\\tan x+x^3\\sec^2x$$",
               "icon": "star"
             }
           ],
@@ -673,13 +673,13 @@
         },
         {
           "id": "gc2_n2_09",
-          "questionText": "Deriva f(x) = eˣ/x².",
+          "questionText": "Deriva $$f(x) = \\frac{e^x}{x^2}$$.",
           "questionLatex": "",
           "options": [
-            "eˣ(x-2)/x³",
-            "eˣ(x+2)/x³",
-            "eˣ/x³",
-            "eˣ(2-x)/x³"
+            "$$e^{x}(x-2)/x^{3}$$",
+            "$$e^{x}(x+2)/x^{3}$$",
+            "$$\\frac{e^{x}}{x^{3}}$$",
+            "$$e^{x}(2-x)/x^{3}$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -687,25 +687,25 @@
             {
               "title": "Identifica numerador y denominador",
               "text": "f=eˣ, g=x².",
-              "mathContent": "f'=e^x,\\quad g'=2x",
+              "mathContent": "$$f'=e^x,\\quad g'=2x$$",
               "icon": "info"
             },
             {
               "title": "Aplica la regla del cociente",
               "text": "f'g − fg', todo sobre g².",
-              "mathContent": "f'_{total}=\\frac{e^x\\cdot x^2-e^x\\cdot2x}{x^4}",
+              "mathContent": "$$f'_{total}=\\frac{e^x\\cdot x^2-e^x\\cdot2x}{x^4}$$",
               "icon": "fx"
             },
             {
               "title": "Factoriza eˣ y x en el numerador",
               "text": "Ambos términos comparten eˣ y un factor de x.",
-              "mathContent": "=\\frac{e^x\\cdot x(x-2)}{x^4}",
+              "mathContent": "$$=\\frac{e^x\\cdot x(x-2)}{x^4}$$",
               "icon": "chart"
             },
             {
               "title": "Cancela un factor de x",
               "text": "Simplifica x/x⁴ a 1/x³.",
-              "mathContent": "f'(x)=\\frac{e^x(x-2)}{x^3}",
+              "mathContent": "$$f'(x)=\\frac{e^x(x-2)}{x^3}$$",
               "icon": "star"
             }
           ],
@@ -714,13 +714,13 @@
         },
         {
           "id": "gc2_n2_10",
-          "questionText": "Deriva f(x) = 3ˣ + x sen x.",
+          "questionText": "Deriva $$f(x) = 3^x + x\\,\\text{sen }x$$.",
           "questionLatex": "",
           "options": [
-            "3ˣln3 + sen x + x cos x",
-            "3ˣ + sen x + x cos x",
-            "3ˣln3 + x cos x",
-            "3ˣln3 + sen x - x cos x"
+            "$$3^{x}ln3 + \\text{sen} x + x \\cos x$$",
+            "$$3^{x} + \\text{sen} x + x \\cos x$$",
+            "$$3^{x}ln3 + x \\cos x$$",
+            "$$3^{x}ln3 + \\text{sen} x - x \\cos x$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -734,19 +734,19 @@
             {
               "title": "Deriva la exponencial de base 3",
               "text": "Recuerda el factor extra ln 3.",
-              "mathContent": "\\frac{d}{dx}[3^x]=3^x\\ln3",
+              "mathContent": "$$\\frac{d}{dx}[3^x]=3^x\\ln3$$",
               "icon": "fx"
             },
             {
               "title": "Deriva x sen x con la regla del producto",
               "text": "f₁=x, f₂=sen x.",
-              "mathContent": "\\frac{d}{dx}[x\\sin x]=1\\cdot\\sin x+x\\cdot\\cos x",
+              "mathContent": "$$\\frac{d}{dx}[x\\sin x]=1\\cdot\\sin x+x\\cdot\\cos x$$",
               "icon": "fx"
             },
             {
               "title": "Resultado",
               "text": "Suma ambas partes.",
-              "mathContent": "f'(x)=3^x\\ln3+\\sin x+x\\cos x",
+              "mathContent": "$$f'(x)=3^x\\ln3+\\sin x+x\\cos x$$",
               "icon": "star"
             }
           ],
@@ -765,13 +765,13 @@
       "challenges": [
         {
           "id": "gc2_n3_11",
-          "questionText": "Deriva f(x) = (x²−1)(x+3)/(x−2), reescribiendo el numerador antes.",
+          "questionText": "Deriva $$f(x) = \\frac{(x^2-1)(x+3)}{x-2}$$, reescribiendo el numerador antes.",
           "questionLatex": "",
           "options": [
-            "(2x³-3x²-12x+5)/(x-2)²",
-            "(2x³+3x²-12x+5)/(x-2)²",
-            "(2x³-3x²+12x+5)/(x-2)²",
-            "(x³-3x²-12x+5)/(x-2)²"
+            "$$(2x^{3}-3x^{2}-12x+5)/(x-2)^{2}$$",
+            "$$(2x^{3}+3x^{2}-12x+5)/(x-2)^{2}$$",
+            "$$(2x^{3}-3x^{2}+12x+5)/(x-2)^{2}$$",
+            "$$(x^{3}-3x^{2}-12x+5)/(x-2)^{2}$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -779,31 +779,31 @@
             {
               "title": "Expande primero el numerador",
               "text": "Multiplica (x²−1)(x+3) para obtener un solo polinomio.",
-              "mathContent": "(x^2-1)(x+3)=x^3+3x^2-x-3",
+              "mathContent": "$$(x^2-1)(x+3)=x^3+3x^2-x-3$$",
               "icon": "info"
             },
             {
               "title": "Ahora tienes un cociente simple",
               "text": "f=x³+3x²−x−3, g=x−2.",
-              "mathContent": "f'=3x^2+6x-1,\\quad g'=1",
+              "mathContent": "$$f'=3x^2+6x-1,\\quad g'=1$$",
               "icon": "pin"
             },
             {
               "title": "Aplica la regla del cociente",
               "text": "f'g − fg', todo sobre g².",
-              "mathContent": "h'=\\frac{(3x^2+6x-1)(x-2)-(x^3+3x^2-x-3)}{(x-2)^2}",
+              "mathContent": "$$h'=\\frac{(3x^2+6x-1)(x-2)-(x^3+3x^2-x-3)}{(x-2)^2}$$",
               "icon": "fx"
             },
             {
               "title": "Expande el primer producto con cuidado",
               "text": "Distribuye término por término.",
-              "mathContent": "(3x^2+6x-1)(x-2)=3x^3+6x^2-x^2-12x-2x+... \\text{(agrupa cuidadosamente)}",
+              "mathContent": "$$(3x^2+6x-1)(x-2)=3x^3+6x^2-x^2-12x-2x+... \\text{(agrupa cuidadosamente)}$$",
               "icon": "chart"
             },
             {
               "title": "Resta el segundo polinomio completo y simplifica",
               "text": "Al restar y agrupar todos los términos semejantes obtienes un solo polinomio en el numerador.",
-              "mathContent": "h'(x)=\\frac{2x^3-3x^2-12x+5}{(x-2)^2}",
+              "mathContent": "$$h'(x)=\\frac{2x^3-3x^2-12x+5}{(x-2)^2}$$",
               "icon": "star"
             }
           ],
@@ -812,13 +812,13 @@
         },
         {
           "id": "gc2_n3_12",
-          "questionText": "Deriva f(x) = sec x · csc x, simplificando el resultado.",
+          "questionText": "Deriva $$f(x) = \\sec x \\cdot \\csc x$$, simplificando el resultado.",
           "questionLatex": "",
           "options": [
-            "sec²x - csc²x",
-            "sec²x + csc²x",
-            "sec x tan x - csc x cot x",
-            "tan x - cot x"
+            "$$\\sec^{2}x - \\csc^{2}x$$",
+            "$$\\sec^{2}x + \\csc^{2}x$$",
+            "$$\\sec x \\tan x - \\csc x \\cot x$$",
+            "$$\\tan x - \\cot x$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -826,31 +826,31 @@
             {
               "title": "Aplica la regla del producto",
               "text": "f₁=sec x, f₂=csc x.",
-              "mathContent": "f_1'=\\sec x\\tan x,\\quad f_2'=-\\csc x\\cot x",
+              "mathContent": "$$f_1'=\\sec x\\tan x,\\quad f_2'=-\\csc x\\cot x$$",
               "icon": "info"
             },
             {
               "title": "Sustituye en la fórmula del producto",
               "text": "f₁'f₂ + f₁f₂'.",
-              "mathContent": "f'=\\sec x\\tan x\\csc x-\\sec x\\csc x\\cot x",
+              "mathContent": "$$f'=\\sec x\\tan x\\csc x-\\sec x\\csc x\\cot x$$",
               "icon": "fx"
             },
             {
               "title": "Reescribe cada término en senos y cosenos para simplificar",
               "text": "sec x·tan x·csc x se simplifica bonito, igual que el otro término.",
-              "mathContent": "\\sec x\\tan x\\csc x=\\frac{1}{\\cos^2x}=\\sec^2x",
+              "mathContent": "$$\\sec x\\tan x\\csc x=\\frac{1}{\\cos^2x}=\\sec^2x$$",
               "icon": "chart"
             },
             {
               "title": "Simplifica el segundo término de la misma forma",
               "text": "sec x·csc x·cot x se reduce a csc²x.",
-              "mathContent": "\\sec x\\csc x\\cot x=\\frac{1}{\\sin^2x}=\\csc^2x",
+              "mathContent": "$$\\sec x\\csc x\\cot x=\\frac{1}{\\sin^2x}=\\csc^2x$$",
               "icon": "chart"
             },
             {
               "title": "Resultado simplificado",
               "text": "La resta de esos dos términos.",
-              "mathContent": "f'(x)=\\sec^2x-\\csc^2x",
+              "mathContent": "$$f'(x)=\\sec^2x-\\csc^2x$$",
               "icon": "star"
             }
           ],
@@ -859,13 +859,13 @@
         },
         {
           "id": "gc2_n3_13",
-          "questionText": "Deriva f(x) = (eˣ−e⁻ˣ)/(eˣ+e⁻ˣ) usando la regla del cociente.",
+          "questionText": "Deriva $$f(x) = \\frac{e^x-e^{-x}}{e^x+e^{-x}}$$ usando la regla del cociente.",
           "questionLatex": "",
           "options": [
-            "sech²x",
-            "tanh²x",
-            "1 - tanh x",
-            "cosh²x - sinh²x"
+            "$$\\text{sech}^{2}x$$",
+            "$$\\tanh^{2}x$$",
+            "$$1 - \\tanh x$$",
+            "$$\\cosh^{2}x - sinh^{2}x$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -879,13 +879,13 @@
             {
               "title": "Aplica la regla del cociente de todas formas",
               "text": "f=eˣ−e⁻ˣ, g=eˣ+e⁻ˣ. Nota que f'=g y g'=f (¡una propiedad muy especial de las exponenciales!).",
-              "mathContent": "f'=e^x+e^{-x}=g,\\quad g'=e^x-e^{-x}=f",
+              "mathContent": "$$f'=e^x+e^{-x}=g,\\quad g'=e^x-e^{-x}=f$$",
               "icon": "pin"
             },
             {
               "title": "Sustituye en la fórmula del cociente",
               "text": "f'g − fg², sobre g².",
-              "mathContent": "h'=\\frac{g\\cdot g-f\\cdot f}{g^2}=\\frac{g^2-f^2}{g^2}",
+              "mathContent": "$$h'=\\frac{g\\cdot g-f\\cdot f}{g^2}=\\frac{g^2-f^2}{g^2}$$",
               "icon": "fx"
             },
             {
@@ -897,7 +897,7 @@
             {
               "title": "Resultado",
               "text": "Esta expresión es precisamente sech²x, la derivada conocida de tanh x.",
-              "mathContent": "h'(x)=\\text{sech}^2x",
+              "mathContent": "$$h'(x)=\\text{\\text{sech}}^2x$$",
               "icon": "star"
             }
           ],
@@ -906,13 +906,13 @@
         },
         {
           "id": "gc2_n3_14",
-          "questionText": "Halla los valores de x donde la tangente a f(x)=x³−3x es horizontal.",
+          "questionText": "Halla los valores de $$x$$ donde la tangente a $$f(x)=x^3-3x$$ es horizontal.",
           "questionLatex": "",
           "options": [
-            "x = 1 y x = -1",
-            "x = 0",
-            "x = 3 y x = -3",
-            "x = 1 solamente"
+            "$$x = 1 y x = -1$$",
+            "$$x = 0$$",
+            "$$x = 3 y x = -3$$",
+            "$$x = 1 solamente$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -926,25 +926,25 @@
             {
               "title": "Deriva la función",
               "text": "Aplica la regla de la potencia a cada término.",
-              "mathContent": "f'(x)=3x^2-3",
+              "mathContent": "$$f'(x)=3x^2-3$$",
               "icon": "fx"
             },
             {
               "title": "Iguala la derivada a cero",
               "text": "Plantea la ecuación.",
-              "mathContent": "3x^2-3=0",
+              "mathContent": "$$3x^2-3=0$$",
               "icon": "fx"
             },
             {
               "title": "Resuelve para x",
               "text": "Divide entre 3 y despeja x².",
-              "mathContent": "x^2=1 \\Rightarrow x=\\pm1",
+              "mathContent": "$$x^2=1 \\Rightarrow x=\\pm1$$",
               "icon": "chart"
             },
             {
               "title": "Resultado",
               "text": "Hay tangentes horizontales en dos puntos.",
-              "mathContent": "x=1 \\text{ y } x=-1",
+              "mathContent": "$$x=1 \\text{ y } x=-1$$",
               "icon": "star"
             }
           ],
@@ -953,13 +953,13 @@
         },
         {
           "id": "gc2_n3_15",
-          "questionText": "Deriva f(x) = x²cos x − 2x sen x, e identifica qué regla se usa en cada término.",
+          "questionText": "Deriva $$f(x) = x^2\\cos x - 2x\\,\\text{sen }x$$, e identifica qué regla se usa en cada término.",
           "questionLatex": "",
           "options": [
-            "-(x²+2)sen x",
-            "-(x²-2)sen x",
-            "(x²+2)sen x",
-            "-(x²+2)cos x"
+            "$$-(x^{2}+2)\\text{sen} x$$",
+            "$$-(x^{2}-2)\\text{sen} x$$",
+            "$$(x^{2}+2)\\text{sen} x$$",
+            "$$-(x^{2}+2)\\cos x$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -973,31 +973,31 @@
             {
               "title": "Deriva el primer término",
               "text": "Aplica producto: f₁=x², f₂=cos x.",
-              "mathContent": "\\frac{d}{dx}[x^2\\cos x]=2x\\cos x-x^2\\sin x",
+              "mathContent": "$$\\frac{d}{dx}[x^2\\cos x]=2x\\cos x-x^2\\sin x$$",
               "icon": "fx"
             },
             {
               "title": "Deriva el segundo término",
               "text": "Aplica producto: f₁=2x, f₂=sen x.",
-              "mathContent": "\\frac{d}{dx}[2x\\sin x]=2\\sin x+2x\\cos x",
+              "mathContent": "$$\\frac{d}{dx}[2x\\sin x]=2\\sin x+2x\\cos x$$",
               "icon": "fx"
             },
             {
               "title": "Resta el segundo resultado del primero",
               "text": "Recuerda el signo menos original entre los dos términos.",
-              "mathContent": "f'(x)=(2x\\cos x-x^2\\sin x)-(2\\sin x+2x\\cos x)",
+              "mathContent": "$$f'(x)=(2x\\cos x-x^2\\sin x)-(2\\sin x+2x\\cos x)$$",
               "icon": "chart"
             },
             {
               "title": "Cancela los términos que se repiten con signos opuestos",
               "text": "2x cos x aparece en ambos con signos contrarios y se cancela.",
-              "mathContent": "f'(x)=-x^2\\sin x-2\\sin x",
+              "mathContent": "$$f'(x)=-x^2\\sin x-2\\sin x$$",
               "icon": "check"
             },
             {
               "title": "Factoriza el resultado final",
               "text": "Ambos términos comparten −sen x.",
-              "mathContent": "f'(x)=-(x^2+2)\\sin x",
+              "mathContent": "$$f'(x)=-(x^2+2)\\sin x$$",
               "icon": "star"
             }
           ],
@@ -1017,7 +1017,7 @@
           "title": "Regla de la cadena: enunciado e idea",
           "subtitle": "Cálculo Diferencial • Regla de la cadena",
           "content": "La regla de la cadena permite derivar funciones compuestas, es decir, funciones de la forma f(g(x)), donde una función está 'dentro' de otra. Si y=f(u) y u=g(x), la derivada de y respecto de x es el producto de la derivada exterior por la derivada interior.",
-          "formulaLatex": "\\frac{dy}{dx}=\\frac{dy}{du}\\cdot\\frac{du}{dx}=f'(g(x))\\cdot g'(x)",
+          "formulaLatex": "$$\\frac{dy}{dx}=\\frac{dy}{du}\\cdot\\frac{du}{dx}=f'(g(x))\\cdot g'(x)$$",
           "proTip": "Cuando derives una composición, identifica primero cuál es la 'capa exterior' (la última operación que aplicarías si evaluaras la función a mano) y derívala primero, dejando la función interior intacta. Multiplica después por la derivada de la función interior.",
           "blocks": [
             {
@@ -1026,30 +1026,30 @@
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } y=(3x^2+1)^5",
+              "content": "$$\\text{Derivar } y=(3x^2+1)^5$$",
               "steps": [
                 {
                   "title": "Identifica la capa exterior y la interior",
                   "text": "Exterior: algo elevado a la 5. Interior: 3x²+1.",
-                  "mathContent": "u=3x^2+1,\\quad u'=6x",
+                  "mathContent": "$$u=3x^2+1,\\quad u'=6x$$",
                   "icon": "info"
                 },
                 {
                   "title": "Deriva la capa exterior, dejando la interior intacta",
                   "text": "Baja el exponente 5 y resta 1.",
-                  "mathContent": "5u^4=5(3x^2+1)^4",
+                  "mathContent": "$$5u^4=5(3x^2+1)^4$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Multiplica por la derivada interior",
                   "text": "Este es el paso que muchos olvidan.",
-                  "mathContent": "y'=5(3x^2+1)^4\\cdot6x",
+                  "mathContent": "$$y'=5(3x^2+1)^4\\cdot6x$$",
                   "icon": "chart"
                 },
                 {
                   "title": "Resultado",
                   "text": "Simplifica multiplicando las constantes.",
-                  "mathContent": "y'=30x(3x^2+1)^4",
+                  "mathContent": "$$y'=30x(3x^2+1)^4$$",
                   "icon": "star"
                 }
               ]
@@ -1059,61 +1059,61 @@
         {
           "title": "Más ejemplos de la regla de la cadena",
           "subtitle": "Cálculo Diferencial • Cadena combinada",
-          "content": "La regla de la cadena se combina constantemente con las reglas trigonométricas y exponenciales, ya que casi nunca aparece sen x o eˣ solos, sino sen(u) o e^u con una expresión más compleja en el lugar de u.",
+          "content": "La regla de la cadena se combina constantemente con las reglas trigonométricas y exponenciales, ya que casi nunca aparece $$\\text{sen }x$$ o $$e^x$$ solos, sino $$\\text{sen}(u)$$ o $$e^u$$ con una expresión más compleja en el lugar de $$u$$.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Derivar } y=\\sin(5x)",
+              "content": "$$\\text{Derivar } y=\\sin(5x)$$",
               "steps": [
                 {
                   "title": "Deriva la capa exterior (sen) y multiplica por la interior",
                   "text": "La derivada de sen(u) es cos(u)·u'.",
-                  "mathContent": "y'=\\cos(5x)\\cdot5=5\\cos(5x)",
+                  "mathContent": "$$y'=\\cos(5x)\\cdot5=5\\cos(5x)$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } y=e^{x^2}",
+              "content": "$$\\text{Derivar } y=e^{x^2}$$",
               "steps": [
                 {
                   "title": "Deriva la exponencial y multiplica por la derivada del exponente",
                   "text": "La derivada de e^u es e^u·u'.",
-                  "mathContent": "y'=e^{x^2}\\cdot2x=2xe^{x^2}",
+                  "mathContent": "$$y'=e^{x^2}\\cdot2x=2xe^{x^2}$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } y=\\sqrt{x^2+1}",
+              "content": "$$\\text{Derivar } y=\\sqrt{x^2+1}$$",
               "steps": [
                 {
                   "title": "Reescribe la raíz como exponente",
                   "text": "Facilita aplicar la regla de la potencia junto con la cadena.",
-                  "mathContent": "y=(x^2+1)^{1/2}",
+                  "mathContent": "$$y=(x^2+1)^{\\frac{1}{2}}$$",
                   "icon": "info"
                 },
                 {
                   "title": "Aplica la cadena",
                   "text": "Deriva la potencia 1/2 y multiplica por la derivada interior 2x.",
-                  "mathContent": "y'=\\tfrac12(x^2+1)^{-1/2}\\cdot2x",
+                  "mathContent": "$$y'=\\frac{1}{2}(x^2+1)^{\\frac{-1}{2}}\\cdot2x$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Simplifica",
                   "text": "Cancela el 2 y reescribe con raíz.",
-                  "mathContent": "y'=\\frac{x}{\\sqrt{x^2+1}}",
+                  "mathContent": "$$y'=\\frac{x}{\\sqrt{x^2+1}}$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } y=x^2\\sin(3x) \\text{ combinando producto y cadena}",
+              "content": "$$\\text{Derivar } y=x^2\\sin(3x) \\text{ combinando producto y cadena}$$",
               "steps": [
                 {
                   "title": "Identifica la estructura de producto",
@@ -1124,19 +1124,19 @@
                 {
                   "title": "Deriva f₂ con la regla de la cadena",
                   "text": "cos(3x) por la derivada interior 3.",
-                  "mathContent": "f_2'=\\cos(3x)\\cdot3",
+                  "mathContent": "$$f_2'=\\cos(3x)\\cdot3$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Aplica la regla del producto completa",
                   "text": "f₁'f₂ + f₁f₂'.",
-                  "mathContent": "y'=2x\\sin(3x)+x^2\\cdot3\\cos(3x)",
+                  "mathContent": "$$y'=2x\\sin(3x)+x^2\\cdot3\\cos(3x)$$",
                   "icon": "chart"
                 },
                 {
                   "title": "Resultado",
                   "text": "Ordena los términos.",
-                  "mathContent": "y'=2x\\sin(3x)+3x^2\\cos(3x)",
+                  "mathContent": "$$y'=2x\\sin(3x)+3x^2\\cos(3x)$$",
                   "icon": "star"
                 }
               ]
@@ -1152,31 +1152,31 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Hallar } f',\\ f'',\\ f''' \\text{ de } f(x)=x^4-3x^2+x",
+              "content": "$$\\text{Hallar } f',\\ f'',\\ f''' \\text{ de } f(x)=x^4-3x^2+x$$",
               "steps": [
                 {
                   "title": "Deriva una vez",
                   "text": "Aplica la regla de la potencia a cada término.",
-                  "mathContent": "f'(x)=4x^3-6x+1",
+                  "mathContent": "$$f'(x)=4x^3-6x+1$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Deriva de nuevo para obtener la segunda derivada",
                   "text": "Deriva f'(x) término por término.",
-                  "mathContent": "f''(x)=12x^2-6",
+                  "mathContent": "$$f''(x)=12x^2-6$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Deriva una tercera vez",
                   "text": "Deriva f''(x).",
-                  "mathContent": "f'''(x)=24x",
+                  "mathContent": "$$f'''(x)=24x$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "note",
-              "content": "Para una potencia xⁿ, cada derivada reduce el exponente en 1 y multiplica por el exponente actual. Tras derivar n veces, xⁿ se convierte en la constante n! (n factorial), y toda derivada posterior es cero. Este patrón es útil para verificar cálculos con polinomios."
+              "content": "Para una potencia $$x^n$$, cada derivada reduce el exponente en $$1$$ y multiplica por el exponente actual. Tras derivar $$n$$ veces, $$x^n$$ se convierte en la constante $$n!$$ ($$n$$ factorial), y toda derivada posterior es cero. Este patrón es útil para verificar cálculos con polinomios."
             }
           ]
         },
@@ -1189,24 +1189,24 @@
           "blocks": [
             {
               "type": "example",
-              "content": "s(t)=t^3-6t^2+9t \\text{ (posición en metros). Hallar velocidad y aceleración en } t=1",
+              "content": "$$s(t)=t^3-6t^2+9t \\text{ (posición en metros). Hallar velocidad y aceleración en } t=1$$",
               "steps": [
                 {
                   "title": "Deriva una vez para obtener la velocidad",
                   "text": "v(t)=s'(t).",
-                  "mathContent": "v(t)=3t^2-12t+9",
+                  "mathContent": "$$v(t)=3t^2-12t+9$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Deriva de nuevo para obtener la aceleración",
                   "text": "a(t)=v'(t).",
-                  "mathContent": "a(t)=6t-12",
+                  "mathContent": "$$a(t)=6t-12$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Evalúa ambas en t=1",
                   "text": "Sustituye directamente.",
-                  "mathContent": "v(1)=3-12+9=0,\\quad a(1)=6-12=-6",
+                  "mathContent": "$$v(1)=3-12+9=0,\\quad a(1)=6-12=-6$$",
                   "icon": "chart"
                 },
                 {
@@ -1222,58 +1222,58 @@
         {
           "title": "Derivación implícita",
           "subtitle": "Cálculo Diferencial • Curvas no despejadas",
-          "content": "No todas las curvas están escritas como y=f(x). Muchas ecuaciones relacionan x e y de forma implícita, como x²+y²=25. Para hallar dy/dx en estos casos, derivamos ambos lados de la ecuación respecto de x, tratando a y como una función desconocida de x y aplicando la regla de la cadena cada vez que aparece y. Después, despejamos dy/dx algebraicamente.",
+          "content": "No todas las curvas están escritas como $$y=f(x)$$. Muchas ecuaciones relacionan $$x$$ e $$y$$ de forma implícita, como $$x^2+y^2=25$$. Para hallar $$\\dfrac{dy}{dx}$$ en estos casos, derivamos ambos lados de la ecuación respecto de $$x$$, tratando a $$y$$ como una función desconocida de $$x$$ y aplicando la regla de la cadena cada vez que aparece $$y$$. Después, despejamos $$\\dfrac{dy}{dx}$$ algebraicamente.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Hallar } \\frac{dy}{dx} \\text{ si } x^2+y^2=25",
+              "content": "$$\\text{Hallar } \\frac{dy}{dx} \\text{ si } x^2+y^2=25$$",
               "steps": [
                 {
                   "title": "Deriva ambos lados respecto de x",
                   "text": "El término y² requiere la regla de la cadena, porque y depende de x.",
-                  "mathContent": "2x+2y\\,y'=0",
+                  "mathContent": "$$2x+2y\\,y'=0$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Despeja y'",
                   "text": "Aísla y' en un lado de la ecuación.",
-                  "mathContent": "y'=-\\frac{x}{y}",
+                  "mathContent": "$$y'=-\\frac{x}{y}$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "note",
-              "content": "Error común: olvidar multiplicar por y' cada vez que se deriva un término en y. Recuerda: d/dx[y²]=2y·y', no simplemente 2y, porque y es una función de x, y estamos aplicando la regla de la cadena."
+              "content": "Error común: olvidar multiplicar por $$y'$$ cada vez que se deriva un término en $$y$$. Recuerda: $$\\frac{d}{dx}[y^2]=2y\\cdot y'$$, no simplemente $$2y$$, porque $$y$$ es una función de $$x$$, y estamos aplicando la regla de la cadena."
             },
             {
               "type": "example",
-              "content": "\\text{Hallar } \\frac{dy}{dx} \\text{ si } x^3+y^3=6xy \\text{ (folium de Descartes)}",
+              "content": "$$\\text{Hallar } \\frac{dy}{dx} \\text{ si } x^3+y^3=6xy \\text{ (folium de Descartes)}$$",
               "steps": [
                 {
                   "title": "Deriva término a término",
                   "text": "El lado derecho es un producto (6x por y), así que necesita la regla del producto.",
-                  "mathContent": "3x^2+3y^2y'=6y+6xy'",
+                  "mathContent": "$$3x^2+3y^2y'=6y+6xy'$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Agrupa todos los términos con y' de un lado",
                   "text": "Pasa los términos sin y' al otro lado.",
-                  "mathContent": "3y^2y'-6xy'=6y-3x^2",
+                  "mathContent": "$$3y^2y'-6xy'=6y-3x^2$$",
                   "icon": "chart"
                 },
                 {
                   "title": "Factoriza y' y despeja",
                   "text": "Saca y' como factor común.",
-                  "mathContent": "y'(3y^2-6x)=6y-3x^2",
+                  "mathContent": "$$y'(3y^2-6x)=6y-3x^2$$",
                   "icon": "check"
                 },
                 {
                   "title": "Resultado",
                   "text": "Divide para aislar y'.",
-                  "mathContent": "y'=\\frac{6y-3x^2}{3y^2-6x}=\\frac{2y-x^2}{y^2-2x}",
+                  "mathContent": "$$y'=\\frac{6y-3x^2}{3y^2-6x}=\\frac{2y-x^2}{y^2-2x}$$",
                   "icon": "star"
                 }
               ]
@@ -1293,13 +1293,13 @@
       "challenges": [
         {
           "id": "gc3_n1_01",
-          "questionText": "Deriva y = (2x−5)⁴.",
+          "questionText": "Deriva $$y = (2x-5)^4$$.",
           "questionLatex": "",
           "options": [
-            "8(2x-5)³",
-            "4(2x-5)³",
-            "8(2x-5)⁴",
-            "4(2x-5)³ · 2x"
+            "$$8(2x-5)^{3}$$",
+            "$$4(2x-5)^{3}$$",
+            "$$8(2x-5)^{4}$$",
+            "$$4(2x-5)^{3} \\cdot 2x$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -1307,25 +1307,25 @@
             {
               "title": "Identifica la capa exterior y la interior",
               "text": "Exterior: algo elevado a la 4. Interior: 2x−5.",
-              "mathContent": "u=2x-5,\\quad u'=2",
+              "mathContent": "$$u=2x-5,\\quad u'=2$$",
               "icon": "info"
             },
             {
               "title": "Deriva la capa exterior",
               "text": "Baja el 4 y resta 1 al exponente.",
-              "mathContent": "4(2x-5)^3",
+              "mathContent": "$$4(2x-5)^3$$",
               "icon": "fx"
             },
             {
               "title": "Multiplica por la derivada interior",
               "text": "No olvides este paso clave de la cadena.",
-              "mathContent": "y'=4(2x-5)^3\\cdot2",
+              "mathContent": "$$y'=4(2x-5)^3\\cdot2$$",
               "icon": "chart"
             },
             {
               "title": "Resultado",
               "text": "Simplifica el producto de constantes.",
-              "mathContent": "y'=8(2x-5)^3",
+              "mathContent": "$$y'=8(2x-5)^3$$",
               "icon": "star"
             }
           ],
@@ -1334,13 +1334,13 @@
         },
         {
           "id": "gc3_n1_02",
-          "questionText": "Deriva y = cos(3x²).",
+          "questionText": "Deriva $$y = \\cos(3x^2)$$.",
           "questionLatex": "",
           "options": [
-            "-6x sen(3x²)",
-            "-6x cos(3x²)",
-            "6x sen(3x²)",
-            "-sen(3x²) · 6x²"
+            "$$-6x \\text{sen}(3x^{2})$$",
+            "$$-6x \\cos(3x^{2})$$",
+            "$$6x \\text{sen}(3x^{2})$$",
+            "$$-\\text{sen}(3x^{2}) \\cdot 6x^{2}$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -1348,25 +1348,25 @@
             {
               "title": "Identifica interior y exterior",
               "text": "Exterior: coseno. Interior: 3x².",
-              "mathContent": "u=3x^2,\\quad u'=6x",
+              "mathContent": "$$u=3x^2,\\quad u'=6x$$",
               "icon": "info"
             },
             {
               "title": "Deriva la capa exterior",
               "text": "La derivada de cos(u) es −sen(u).",
-              "mathContent": "-\\sin(3x^2)",
+              "mathContent": "$$-\\sin(3x^2)$$",
               "icon": "fx"
             },
             {
               "title": "Multiplica por la derivada interior",
               "text": "Aplica la cadena.",
-              "mathContent": "y'=-\\sin(3x^2)\\cdot6x",
+              "mathContent": "$$y'=-\\sin(3x^2)\\cdot6x$$",
               "icon": "chart"
             },
             {
               "title": "Resultado",
               "text": "Ordena el resultado.",
-              "mathContent": "y'=-6x\\sin(3x^2)",
+              "mathContent": "$$y'=-6x\\sin(3x^2)$$",
               "icon": "star"
             }
           ],
@@ -1375,13 +1375,13 @@
         },
         {
           "id": "gc3_n1_03",
-          "questionText": "Deriva y = e^(−2x).",
+          "questionText": "Deriva $$y = e^{-2x}$$.",
           "questionLatex": "",
           "options": [
-            "-2e^(-2x)",
-            "2e^(-2x)",
-            "e^(-2x)",
-            "-2xe^(-2x)"
+            "$$-2e^{-2x}$$",
+            "$$2e^{-2x}$$",
+            "$$e^{-2x}$$",
+            "$$-2xe^{-2x}$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -1389,19 +1389,19 @@
             {
               "title": "Identifica la estructura",
               "text": "Exterior: eᵘ. Interior: u=−2x.",
-              "mathContent": "u=-2x,\\quad u'=-2",
+              "mathContent": "$$u=-2x,\\quad u'=-2$$",
               "icon": "info"
             },
             {
               "title": "Deriva la exponencial",
               "text": "La derivada de eᵘ es eᵘ·u'.",
-              "mathContent": "y'=e^{-2x}\\cdot(-2)",
+              "mathContent": "$$y'=e^{-2x}\\cdot(-2)$$",
               "icon": "fx"
             },
             {
               "title": "Resultado",
               "text": "Reordena el signo.",
-              "mathContent": "y'=-2e^{-2x}",
+              "mathContent": "$$y'=-2e^{-2x}$$",
               "icon": "star"
             }
           ],
@@ -1420,13 +1420,13 @@
       "challenges": [
         {
           "id": "gc3_n2_04",
-          "questionText": "Halla f'' de f(x) = x⁵ − 4x³ + 2x.",
+          "questionText": "Halla $$f''$$ de $$f(x) = x^5 - 4x^3 + 2x$$.",
           "questionLatex": "",
           "options": [
-            "20x³ - 24x",
-            "20x³ - 24x + 2",
-            "20x⁴ - 24x",
-            "5x³ - 24x"
+            "$$20x^{3} - 24x$$",
+            "$$20x^{3} - 24x + 2$$",
+            "$$20x^{4} - 24x$$",
+            "$$5x^{3} - 24x$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -1434,19 +1434,19 @@
             {
               "title": "Deriva una vez primero",
               "text": "Aplica la regla de la potencia a cada término.",
-              "mathContent": "f'(x)=5x^4-12x^2+2",
+              "mathContent": "$$f'(x)=5x^4-12x^2+2$$",
               "icon": "fx"
             },
             {
               "title": "Deriva de nuevo para obtener f''",
               "text": "Aplica la regla de la potencia otra vez sobre f'(x).",
-              "mathContent": "f''(x)=20x^3-24x",
+              "mathContent": "$$f''(x)=20x^3-24x$$",
               "icon": "fx"
             },
             {
               "title": "Resultado",
               "text": "La constante 2 de f'(x) desaparece al derivar de nuevo.",
-              "mathContent": "f''(x)=20x^3-24x",
+              "mathContent": "$$f''(x)=20x^3-24x$$",
               "icon": "star"
             }
           ],
@@ -1455,13 +1455,13 @@
         },
         {
           "id": "gc3_n2_05",
-          "questionText": "Deriva y = x sen(x²) usando producto y cadena.",
+          "questionText": "Deriva $$y = x\\,\\text{sen}(x^2)$$ usando producto y cadena.",
           "questionLatex": "",
           "options": [
-            "sen(x²) + 2x²cos(x²)",
-            "sen(x²) - 2x²cos(x²)",
-            "cos(x²) + 2x²sen(x²)",
-            "2x sen(x²) + x²cos(x²)"
+            "$$\\text{sen}(x^{2}) + 2x^{2}\\cos(x^{2})$$",
+            "$$\\text{sen}(x^{2}) - 2x^{2}\\cos(x^{2})$$",
+            "$$\\cos(x^{2}) + 2x^{2}\\text{sen}(x^{2})$$",
+            "$$2x \\text{sen}(x^{2}) + x^{2}\\cos(x^{2})$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -1475,19 +1475,19 @@
             {
               "title": "Deriva f₂ con la regla de la cadena",
               "text": "cos(x²) por la derivada interior 2x.",
-              "mathContent": "f_2'=\\cos(x^2)\\cdot2x",
+              "mathContent": "$$f_2'=\\cos(x^2)\\cdot2x$$",
               "icon": "fx"
             },
             {
               "title": "Aplica la regla del producto completa",
               "text": "f₁'f₂ + f₁f₂'.",
-              "mathContent": "y'=1\\cdot\\sin(x^2)+x\\cdot2x\\cos(x^2)",
+              "mathContent": "$$y'=1\\cdot\\sin(x^2)+x\\cdot2x\\cos(x^2)$$",
               "icon": "chart"
             },
             {
               "title": "Resultado",
               "text": "Simplifica el segundo término.",
-              "mathContent": "y'=\\sin(x^2)+2x^2\\cos(x^2)",
+              "mathContent": "$$y'=\\sin(x^2)+2x^2\\cos(x^2)$$",
               "icon": "star"
             }
           ],
@@ -1496,13 +1496,13 @@
         },
         {
           "id": "gc3_n2_06",
-          "questionText": "Un objeto se mueve según s(t)=t³−3t²+2. Halla su aceleración en t=2.",
+          "questionText": "Un objeto se mueve según $$s(t)=t^3-3t^2+2$$. Halla su aceleración en $$t=2$$.",
           "questionLatex": "",
           "options": [
-            "6",
-            "0",
-            "-6",
-            "12"
+            "$$6$$",
+            "$$0$$",
+            "$$-6$$",
+            "$$12$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -1516,19 +1516,19 @@
             {
               "title": "Deriva una vez para obtener la velocidad",
               "text": "v(t)=s'(t).",
-              "mathContent": "v(t)=3t^2-6t",
+              "mathContent": "$$v(t)=3t^2-6t$$",
               "icon": "fx"
             },
             {
               "title": "Deriva de nuevo para obtener la aceleración",
               "text": "a(t)=v'(t).",
-              "mathContent": "a(t)=6t-6",
+              "mathContent": "$$a(t)=6t-6$$",
               "icon": "fx"
             },
             {
               "title": "Evalúa en t=2",
               "text": "Sustituye directamente.",
-              "mathContent": "a(2)=6(2)-6=6",
+              "mathContent": "$$a(2)=6(2)-6=6$$",
               "icon": "star"
             }
           ],
@@ -1547,13 +1547,13 @@
       "challenges": [
         {
           "id": "gc3_n3_07",
-          "questionText": "Halla dy/dx si x²y + y³ = 10.",
+          "questionText": "Halla $$\\dfrac{dy}{dx}$$ si $$x^2y + y^3 = 10$$.",
           "questionLatex": "",
           "options": [
-            "-2xy/(x²+3y²)",
-            "2xy/(x²+3y²)",
-            "-2xy/(x²-3y²)",
-            "-xy/(x²+3y²)"
+            "$$-2xy/(x^{2}+3y^{2})$$",
+            "$$2xy/(x^{2}+3y^{2})$$",
+            "$$-2xy/(x^{2}-3y^{2})$$",
+            "$$-xy/(x^{2}+3y^{2})$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -1567,31 +1567,31 @@
             {
               "title": "Aplica la regla del producto a x²y",
               "text": "f₁=x², f₂=y.",
-              "mathContent": "\\frac{d}{dx}[x^2y]=2xy+x^2y'",
+              "mathContent": "$$\\frac{d}{dx}[x^2y]=2xy+x^2y'$$",
               "icon": "fx"
             },
             {
               "title": "Aplica la cadena a y³",
               "text": "La derivada de y³ es 3y²·y'.",
-              "mathContent": "\\frac{d}{dx}[y^3]=3y^2y'",
+              "mathContent": "$$\\frac{d}{dx}[y^3]=3y^2y'$$",
               "icon": "fx"
             },
             {
               "title": "Junta ambas derivadas",
               "text": "Iguala a la derivada de la constante 10 (que es cero).",
-              "mathContent": "2xy+x^2y'+3y^2y'=0",
+              "mathContent": "$$2xy+x^2y'+3y^2y'=0$$",
               "icon": "chart"
             },
             {
               "title": "Agrupa los términos con y' y factoriza",
               "text": "Deja todo lo demás del otro lado.",
-              "mathContent": "y'(x^2+3y^2)=-2xy",
+              "mathContent": "$$y'(x^2+3y^2)=-2xy$$",
               "icon": "check"
             },
             {
               "title": "Despeja y'",
               "text": "Divide para aislarla.",
-              "mathContent": "y'=\\frac{-2xy}{x^2+3y^2}",
+              "mathContent": "$$y'=\\frac{-2xy}{x^2+3y^2}$$",
               "icon": "star"
             }
           ],
@@ -1600,13 +1600,13 @@
         },
         {
           "id": "gc3_n3_08",
-          "questionText": "Halla dy/dx si sen(xy) = x + y.",
+          "questionText": "Halla $$\\dfrac{dy}{dx}$$ si $$\\text{sen}(xy) = x + y$$.",
           "questionLatex": "",
           "options": [
-            "(1 - y cos(xy))/(x cos(xy) - 1)",
-            "(1 + y cos(xy))/(x cos(xy) - 1)",
-            "(y cos(xy) - 1)/(1 - x cos(xy))",
-            "(1 - y cos(xy))/(x cos(xy) + 1)"
+            "$$(1 - y \\cos(xy))/(x \\cos(xy) - 1)$$",
+            "$$(1 + y \\cos(xy))/(x \\cos(xy) - 1)$$",
+            "$$(y \\cos(xy) - 1)/(1 - x \\cos(xy))$$",
+            "$$(1 - y \\cos(xy))/(x \\cos(xy) + 1)$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -1620,37 +1620,37 @@
             {
               "title": "Aplica la cadena al seno",
               "text": "La derivada de sen(u) es cos(u)·u', donde u=xy.",
-              "mathContent": "\\frac{d}{dx}[\\sin(xy)]=\\cos(xy)\\cdot\\frac{d}{dx}[xy]",
+              "mathContent": "$$\\frac{d}{dx}[\\sin(xy)]=\\cos(xy)\\cdot\\frac{d}{dx}[xy]$$",
               "icon": "fx"
             },
             {
               "title": "Deriva xy con la regla del producto",
               "text": "d/dx[xy] = y + xy'.",
-              "mathContent": "\\cos(xy)\\cdot(y+xy')",
+              "mathContent": "$$\\cos(xy)\\cdot(y+xy')$$",
               "icon": "fx"
             },
             {
               "title": "Deriva el lado derecho",
               "text": "x+y se convierte en 1+y'.",
-              "mathContent": "1+y'",
+              "mathContent": "$$1+y'$$",
               "icon": "pin"
             },
             {
               "title": "Iguala ambos lados y distribuye",
               "text": "Expande el coseno multiplicado.",
-              "mathContent": "y\\cos(xy)+x\\cos(xy)y'=1+y'",
+              "mathContent": "$$y\\cos(xy)+x\\cos(xy)y'=1+y'$$",
               "icon": "chart"
             },
             {
               "title": "Agrupa los términos con y' de un lado",
               "text": "Pasa los demás al otro lado.",
-              "mathContent": "y'(x\\cos(xy)-1)=1-y\\cos(xy)",
+              "mathContent": "$$y'(x\\cos(xy)-1)=1-y\\cos(xy)$$",
               "icon": "check"
             },
             {
               "title": "Despeja y'",
               "text": "Divide para aislarla.",
-              "mathContent": "y'=\\frac{1-y\\cos(xy)}{x\\cos(xy)-1}",
+              "mathContent": "$$y'=\\frac{1-y\\cos(xy)}{x\\cos(xy)-1}$$",
               "icon": "star"
             }
           ],
@@ -1659,13 +1659,13 @@
         },
         {
           "id": "gc3_n3_09",
-          "questionText": "Halla f'''(x) si f(x) = e^(2x), e identifica el patrón general.",
+          "questionText": "Halla $$f'''(x)$$ si $$f(x) = e^{2x}$$, e identifica el patrón general.",
           "questionLatex": "",
           "options": [
-            "8e^(2x), patrón f^(n)(x)=2ⁿe^(2x)",
-            "2e^(2x), patrón f^(n)(x)=2e^(2x)",
-            "6e^(2x), patrón f^(n)(x)=nⁿe^(2x)",
-            "8e^(2x), patrón f^(n)(x)=8ⁿe^(2x)"
+            "$$8e^{2x}$$, patrón $$f^{(n)}(x)=2^ne^{2x}$$",
+            "$$2e^{2x}$$, patrón $$f^{(n)}(x)=2e^{2x}$$",
+            "$$6e^{2x}$$, patrón $$f^{(n)}(x)=n^ne^{2x}$$",
+            "$$8e^{2x}$$, patrón $$f^{(n)}(x)=8^ne^{2x}$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -1673,25 +1673,25 @@
             {
               "title": "Deriva una vez",
               "text": "Aplica la cadena: la derivada de e^(2x) es e^(2x) por la derivada del exponente (2).",
-              "mathContent": "f'(x)=2e^{2x}",
+              "mathContent": "$$f'(x)=2e^{2x}$$",
               "icon": "fx"
             },
             {
               "title": "Deriva de nuevo",
               "text": "Cada vez que derivas, aparece otro factor de 2.",
-              "mathContent": "f''(x)=4e^{2x}",
+              "mathContent": "$$f''(x)=4e^{2x}$$",
               "icon": "fx"
             },
             {
               "title": "Deriva una tercera vez",
               "text": "El patrón de multiplicar por 2 continúa.",
-              "mathContent": "f'''(x)=8e^{2x}",
+              "mathContent": "$$f'''(x)=8e^{2x}$$",
               "icon": "chart"
             },
             {
               "title": "Identifica el patrón general",
               "text": "Cada derivada multiplica por 2 más, así que tras n derivadas el factor es 2ⁿ.",
-              "mathContent": "f^{(n)}(x)=2^ne^{2x}",
+              "mathContent": "$$f^{(n)}(x)=2^ne^{2x}$$",
               "icon": "star"
             }
           ],
@@ -1710,36 +1710,36 @@
         {
           "title": "Derivada de la función inversa",
           "subtitle": "Cálculo Diferencial • Función inversa",
-          "content": "Si f es una función invertible y derivable, y su inversa f⁻¹ también es derivable, existe una relación directa entre la derivada de f y la de f⁻¹. Geométricamente, la gráfica de f⁻¹ es el reflejo de la gráfica de f respecto de la recta y=x, por lo que las pendientes de ambas curvas en puntos correspondientes son recíprocas entre sí.",
-          "formulaLatex": "(f^{-1})'(x)=\\frac{1}{f'(f^{-1}(x))}\\ \\ \\text{(siempre que } f'(f^{-1}(x))\\neq0\\text{)}",
+          "content": "Si $$f$$ es una función invertible y derivable, y su inversa $$f^{-1}$$ también es derivable, existe una relación directa entre la derivada de $$f$$ y la de $$f^{-1}$$. Geométricamente, la gráfica de $$f^{-1}$$ es el reflejo de la gráfica de $$f$$ respecto de la recta $$y=x$$, por lo que las pendientes de ambas curvas en puntos correspondientes son recíprocas entre sí.",
+          "formulaLatex": "$$(f^{-1})'(x)=\\frac{1}{f'(f^{-1}(x))}\\ \\ \\text{(siempre que } f'(f^{-1}(x))\\neq0\\text{)}$$",
           "proTip": "",
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Si } f(x)=x^3+2, \\text{ hallar } (f^{-1})'(3)",
+              "content": "$$\\text{Si } f(x)=x^3+2, \\text{ hallar } (f^{-1})'(3)$$",
               "steps": [
                 {
                   "title": "Encuentra el punto donde f(x)=3",
                   "text": "Necesitas saber qué x produce ese valor, porque f⁻¹(3) es exactamente esa x.",
-                  "mathContent": "x^3+2=3\\Rightarrow x=1",
+                  "mathContent": "$$x^3+2=3\\Rightarrow x=1$$",
                   "icon": "info"
                 },
                 {
                   "title": "Eso te da f⁻¹(3)",
                   "text": "El valor de x que encontraste es f⁻¹(3).",
-                  "mathContent": "f^{-1}(3)=1",
+                  "mathContent": "$$f^{-1}(3)=1$$",
                   "icon": "pin"
                 },
                 {
                   "title": "Deriva f y evalúa en ese mismo punto",
                   "text": "Necesitas f'(1), no f'(3).",
-                  "mathContent": "f'(x)=3x^2\\Rightarrow f'(1)=3",
+                  "mathContent": "$$f'(x)=3x^2\\Rightarrow f'(1)=3$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Aplica la fórmula de la inversa",
                   "text": "Toma el recíproco.",
-                  "mathContent": "(f^{-1})'(3)=\\frac{1}{f'(1)}=\\frac13",
+                  "mathContent": "$$(f^{-1})'(3)=\\frac{1}{f'(1)}=\\frac{1}{3}$$",
                   "icon": "star"
                 }
               ]
@@ -1749,40 +1749,40 @@
         {
           "title": "Derivada de funciones logarítmicas",
           "subtitle": "Cálculo Diferencial • Logaritmos",
-          "content": "El logaritmo natural ln x es la función inversa de eˣ. Aplicando el teorema de la función inversa se obtiene su derivada, que es una de las más usadas de todo el curso. Combinada con la regla de la cadena, la derivada de ln(u), donde u es una función de x, es u'/u.",
+          "content": "El logaritmo natural $$\\ln x$$ es la función inversa de $$e^x$$. Aplicando el teorema de la función inversa se obtiene su derivada, que es una de las más usadas de todo el curso. Combinada con la regla de la cadena, la derivada de $$\\ln(u)$$, donde $$u$$ es una función de $$x$$, es $$\\dfrac{u'}{u}$$.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "formula",
-              "content": "\\frac{d}{dx}[\\ln x]=\\frac1x\\ (x>0) \\qquad \\frac{d}{dx}[\\log_ax]=\\frac{1}{x\\ln a}\\ (a>0,\\ a\\neq1) \\qquad \\frac{d}{dx}[\\ln u]=\\frac{u'}{u}"
+              "content": "$$\\frac{d}{dx}[\\ln x]=\\frac{1}{x}\\ (x>0) \\qquad \\frac{d}{dx}[\\log_ax]=\\frac{1}{x\\ln a}\\ (a>0,\\ a\\neq1) \\qquad \\frac{d}{dx}[\\ln u]=\\frac{u'}{u}$$"
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } y=\\ln(x^2+1)",
+              "content": "$$\\text{Derivar } y=\\ln(x^2+1)$$",
               "steps": [
                 {
                   "title": "Aplica la fórmula u'/u",
                   "text": "Con u=x²+1, u'=2x.",
-                  "mathContent": "y'=\\frac{2x}{x^2+1}",
+                  "mathContent": "$$y'=\\frac{2x}{x^2+1}$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } y=\\log_{10}(3x)",
+              "content": "$$\\text{Derivar } y=\\log_{10}(3x)$$",
               "steps": [
                 {
                   "title": "Aplica la fórmula para base a",
                   "text": "u=3x, u'=3, a=10.",
-                  "mathContent": "y'=\\frac{3}{3x\\ln10}",
+                  "mathContent": "$$y'=\\frac{3}{3x\\ln10}$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Simplifica cancelando el 3",
                   "text": "Reduce la fracción.",
-                  "mathContent": "y'=\\frac{1}{x\\ln10}",
+                  "mathContent": "$$y'=\\frac{1}{x\\ln10}$$",
                   "icon": "star"
                 }
               ]
@@ -1798,23 +1798,23 @@
           "blocks": [
             {
               "type": "note",
-              "content": "Derivadas (con u función de x): d/dx[arcsen u]=u'/√(1−u²), d/dx[arccos u]=−u'/√(1−u²), d/dx[arctan u]=u'/(1+u²), d/dx[arccot u]=−u'/(1+u²), d/dx[arcsec u]=u'/(|u|√(u²−1)), d/dx[arccsc u]=−u'/(|u|√(u²−1))."
+              "content": "Derivadas (con $$u$$ función de $$x$$):\n$$\\frac{d}{dx}[\\arcsin u]=\\frac{u'}{\\sqrt{1-u^2}}$$\n$$\\frac{d}{dx}[\\arccos u]=\\frac{-u'}{\\sqrt{1-u^2}}$$\n$$\\frac{d}{dx}[\\arctan u]=\\frac{u'}{1+u^2}$$\n$$\\frac{d}{dx}[\\text{arccot }u]=\\frac{-u'}{1+u^2}$$\n$$\\frac{d}{dx}[\\text{arcsec }u]=\\frac{u'}{|u|\\sqrt{u^2-1}}$$\n$$\\frac{d}{dx}[\\text{arccsc }u]=\\frac{-u'}{|u|\\sqrt{u^2-1}}$$"
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } y=\\arctan(2x)",
+              "content": "$$\\text{Derivar } y=\\arctan(2x)$$",
               "steps": [
                 {
                   "title": "Aplica la fórmula con u=2x",
                   "text": "u'=2.",
-                  "mathContent": "y'=\\frac{2}{1+(2x)^2}=\\frac{2}{1+4x^2}",
+                  "mathContent": "$$y'=\\frac{2}{1+(2x)^2}=\\frac{2}{1+4x^2}$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } y=\\arcsin\\left(\\frac{x}{3}\\right)",
+              "content": "$$\\text{Derivar } y=\\arcsin\\left(\\frac{x}{3}\\right)$$",
               "steps": [
                 {
                   "title": "Identifica u y u'",
@@ -1825,19 +1825,19 @@
                 {
                   "title": "Sustituye en la fórmula",
                   "text": "u' sobre la raíz de 1−u².",
-                  "mathContent": "y'=\\frac{1/3}{\\sqrt{1-(x/3)^2}}",
+                  "mathContent": "$$y'=\\frac{\\frac{1}{3}}{\\sqrt{1-\\frac{x}{3}^2}}$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Simplifica la raíz",
                   "text": "Saca 1/9 como factor común dentro de la raíz.",
-                  "mathContent": "\\sqrt{1-\\tfrac{x^2}{9}}=\\sqrt{\\tfrac{9-x^2}{9}}=\\tfrac{\\sqrt{9-x^2}}{3}",
+                  "mathContent": "$$\\sqrt{1-\\frac{x^2}{9}}=\\sqrt{\\frac{9-x^2}{9}}=\\frac{\\sqrt{9-x^2}}{3}$$",
                   "icon": "chart"
                 },
                 {
                   "title": "Resultado",
                   "text": "El 3 del denominador se cancela con el 1/3.",
-                  "mathContent": "y'=\\frac{1}{\\sqrt{9-x^2}}",
+                  "mathContent": "$$y'=\\frac{1}{\\sqrt{9-x^2}}$$",
                   "icon": "star"
                 }
               ]
@@ -1853,48 +1853,48 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Derivar } y=x^x\\ (x>0)",
+              "content": "$$\\text{Derivar } y=x^x\\ (x>0)$$",
               "steps": [
                 {
                   "title": "Toma logaritmo natural en ambos lados",
                   "text": "Esto baja el exponente usando propiedades de logaritmos.",
-                  "mathContent": "\\ln y=x\\ln x",
+                  "mathContent": "$$\\ln y=x\\ln x$$",
                   "icon": "info"
                 },
                 {
                   "title": "Deriva implícitamente ambos lados",
                   "text": "El lado izquierdo usa cadena, el derecho usa producto.",
-                  "mathContent": "\\frac{y'}{y}=\\ln x+x\\cdot\\frac1x=\\ln x+1",
+                  "mathContent": "$$\\frac{y'}{y}=\\ln x+x\\cdot\\frac{1}{x}=\\ln x+1$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Despeja y' multiplicando por y",
                   "text": "Sustituye y por su expresión original.",
-                  "mathContent": "y'=y(\\ln x+1)=x^x(\\ln x+1)",
+                  "mathContent": "$$y'=y(\\ln x+1)=x^x(\\ln x+1)$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } y=\\frac{x^2(x+1)^3}{\\sqrt{x-2}} \\text{ con derivación logarítmica}",
+              "content": "$$\\text{Derivar } y=\\frac{x^2(x+1)^3}{\\sqrt{x-2}} \\text{ con derivación logarítmica}$$",
               "steps": [
                 {
                   "title": "Toma logaritmo y usa propiedades",
                   "text": "Convierte el producto y la raíz en sumas y restas de logaritmos.",
-                  "mathContent": "\\ln y=2\\ln x+3\\ln(x+1)-\\tfrac12\\ln(x-2)",
+                  "mathContent": "$$\\ln y=2\\ln x+3\\ln(x+1)-\\frac{1}{2}\\ln(x-2)$$",
                   "icon": "info"
                 },
                 {
                   "title": "Deriva ambos lados",
                   "text": "Cada término logarítmico se deriva con la fórmula u'/u.",
-                  "mathContent": "\\frac{y'}{y}=\\frac2x+\\frac{3}{x+1}-\\frac{1}{2(x-2)}",
+                  "mathContent": "$$\\frac{y'}{y}=\\frac{2}{x}+\\frac{3}{x+1}-\\frac{1}{2(x-2)}$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Despeja y' multiplicando por y",
                   "text": "Sustituye y por la función original al final.",
-                  "mathContent": "y'=y\\left[\\frac2x+\\frac{3}{x+1}-\\frac{1}{2(x-2)}\\right]",
+                  "mathContent": "$$y'=y\\left[\\frac{2}{x}+\\frac{3}{x+1}-\\frac{1}{2(x-2)}\\right]$$",
                   "icon": "star"
                 }
               ]
@@ -1910,32 +1910,32 @@
           "blocks": [
             {
               "type": "formula",
-              "content": "\\sinh x=\\frac{e^x-e^{-x}}{2} \\qquad \\cosh x=\\frac{e^x+e^{-x}}{2} \\qquad \\tanh x=\\frac{\\sinh x}{\\cosh x}"
+              "content": "$$\\sinh x=\\frac{e^x-e^{-x}}{2} \\qquad \\cosh x=\\frac{e^x+e^{-x}}{2} \\qquad \\tanh x=\\frac{\\sinh x}{\\cosh x}$$"
             },
             {
               "type": "note",
-              "content": "Derivadas: d/dx[senh x]=cosh x, d/dx[cosh x]=senh x, d/dx[tanh x]=sech²x, d/dx[coth x]=−csch²x, d/dx[sech x]=−sech x tanh x, d/dx[csch x]=−csch x coth x."
+              "content": "Derivadas:\n$$\\frac{d}{dx}[\\text{senh }x]=\\cosh x$$\n$$\\frac{d}{dx}[\\cosh x]=\\text{senh }x$$\n$$\\frac{d}{dx}[\\tanh x]=\\text{sech}^2x$$\n$$\\frac{d}{dx}[\\coth x]=-\\text{csch}^2x$$\n$$\\frac{d}{dx}[\\text{sech }x]=-\\text{sech }x\\tanh x$$\n$$\\frac{d}{dx}[\\text{csch }x]=-\\text{csch }x\\coth x$$"
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } y=\\cosh(3x)",
+              "content": "$$\\text{Derivar } y=\\cosh(3x)$$",
               "steps": [
                 {
                   "title": "Aplica la cadena",
                   "text": "d/dx[cosh(u)]=senh(u)·u', con u=3x.",
-                  "mathContent": "y'=3\\sinh(3x)",
+                  "mathContent": "$$y'=3\\sinh(3x)$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } y=\\tanh(x^2)",
+              "content": "$$\\text{Derivar } y=\\tanh(x^2)$$",
               "steps": [
                 {
                   "title": "Aplica la cadena",
                   "text": "d/dx[tanh(u)]=sech²(u)·u', con u=x².",
-                  "mathContent": "y'=\\text{sech}^2(x^2)\\cdot2x=2x\\,\\text{sech}^2(x^2)",
+                  "mathContent": "$$y'=\\text{\\text{sech}}^2(x^2)\\cdot2x=2x\\,\\text{\\text{sech}}^2(x^2)$$",
                   "icon": "star"
                 }
               ]
@@ -1951,27 +1951,27 @@
           "blocks": [
             {
               "type": "formula",
-              "content": "\\text{argsenh } x=\\ln(x+\\sqrt{x^2+1}) \\qquad \\text{argcosh } x=\\ln(x+\\sqrt{x^2-1}),\\ x\\geq1"
+              "content": "$$\\text{\\text{argsenh} } x=\\ln(x+\\sqrt{x^2+1}) \\qquad \\text{\\text{argcosh} } x=\\ln(x+\\sqrt{x^2-1}),\\ x\\geq1$$"
             },
             {
               "type": "note",
-              "content": "Derivadas: d/dx[argsenh x]=1/√(x²+1), d/dx[argcosh x]=1/√(x²−1) (x>1), d/dx[argtanh x]=1/(1−x²) (|x|<1), d/dx[argcoth x]=1/(1−x²) (|x|>1)."
+              "content": "Derivadas:\n$$\\frac{d}{dx}[\\text{argsenh }x]=\\frac{1}{\\sqrt{x^2+1}}$$\n$$\\frac{d}{dx}[\\text{argcosh }x]=\\frac{1}{\\sqrt{x^2-1}} \\;(x>1)$$\n$$\\frac{d}{dx}[\\text{argtanh }x]=\\frac{1}{1-x^2} \\;(|x|<1)$$\n$$\\frac{d}{dx}[\\text{argcoth }x]=\\frac{1}{1-x^2} \\;(|x|>1)$$"
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } y=\\text{argsenh}(2x)",
+              "content": "$$\\text{Derivar } y=\\text{\\text{argsenh}}(2x)$$",
               "steps": [
                 {
                   "title": "Aplica la fórmula con u=2x",
                   "text": "u'=2.",
-                  "mathContent": "y'=\\frac{2}{\\sqrt{(2x)^2+1}}=\\frac{2}{\\sqrt{4x^2+1}}",
+                  "mathContent": "$$y'=\\frac{2}{\\sqrt{(2x)^2+1}}=\\frac{2}{\\sqrt{4x^2+1}}$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Derivar } y=\\text{argtanh}\\left(\\frac{x}{2}\\right)",
+              "content": "$$\\text{Derivar } y=\\text{\\text{argtanh}}\\left(\\frac{x}{2}\\right)$$",
               "steps": [
                 {
                   "title": "Identifica u y u'",
@@ -1982,13 +1982,13 @@
                 {
                   "title": "Sustituye en la fórmula",
                   "text": "u' sobre 1−u².",
-                  "mathContent": "y'=\\frac{1/2}{1-(x/2)^2}",
+                  "mathContent": "$$y'=\\frac{\\frac{1}{2}}{1-\\frac{x}{2}^2}$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Simplifica el denominador",
                   "text": "1−x²/4 = (4−x²)/4.",
-                  "mathContent": "y'=\\frac{1/2}{(4-x^2)/4}=\\frac{2}{4-x^2}",
+                  "mathContent": "$$y'=\\frac{\\frac{1}{2}}{(4-x^2)/4}=\\frac{2}{4-x^2}$$",
                   "icon": "star"
                 }
               ]
@@ -2008,13 +2008,13 @@
       "challenges": [
         {
           "id": "gc4_n1_01",
-          "questionText": "Deriva y = ln(5x³).",
+          "questionText": "Deriva $$y = \\ln(5x^3)$$.",
           "questionLatex": "",
           "options": [
-            "3/x",
-            "1/x",
-            "15x²/x³",
-            "3/x³"
+            "$$\\frac{3}{x}$$",
+            "$$\\frac{1}{x}$$",
+            "$$15\\frac{x^{2}}{x^{3}}$$",
+            "$$\\frac{3}{x^{3}}$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -2022,19 +2022,19 @@
             {
               "title": "Usa propiedades de logaritmos antes de derivar",
               "text": "ln(5x³) se puede separar en ln 5 + ln(x³) = ln 5 + 3 ln x, lo que simplifica mucho la derivada.",
-              "mathContent": "\\ln(5x^3)=\\ln5+3\\ln x",
+              "mathContent": "$$\\ln(5x^3)=\\ln5+3\\ln x$$",
               "icon": "info"
             },
             {
               "title": "Deriva cada parte",
               "text": "ln 5 es una constante (derivada 0); 3 ln x se deriva con la fórmula u'/u.",
-              "mathContent": "\\frac{d}{dx}[3\\ln x]=\\frac3x",
+              "mathContent": "$$\\frac{d}{dx}[3\\ln x]=\\frac{3}{x}$$",
               "icon": "fx"
             },
             {
               "title": "Resultado",
               "text": "Solo queda el término de 3 ln x.",
-              "mathContent": "y'=\\frac3x",
+              "mathContent": "$$y'=\\frac{3}{x}$$",
               "icon": "star"
             }
           ],
@@ -2043,13 +2043,13 @@
         },
         {
           "id": "gc4_n1_02",
-          "questionText": "Deriva y = arctan(x/4).",
+          "questionText": "Deriva $$y = \\arctan\\left(\\frac{x}{4}\\right)$$.",
           "questionLatex": "",
           "options": [
-            "4/(16+x²)",
-            "1/(4+x²)",
-            "4/(4+x²)",
-            "1/(16+x²)"
+            "$$4/(16+x^{2})$$",
+            "$$1/(4+x^{2})$$",
+            "$$4/(4+x^{2})$$",
+            "$$1/(16+x^{2})$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -2063,19 +2063,19 @@
             {
               "title": "Sustituye en la fórmula de arctan",
               "text": "u'/(1+u²).",
-              "mathContent": "y'=\\frac{1/4}{1+(x/4)^2}",
+              "mathContent": "$$y'=\\frac{\\frac{1}{4}}{1+\\frac{x}{4}^2}$$",
               "icon": "fx"
             },
             {
               "title": "Simplifica el denominador",
               "text": "1+x²/16 = (16+x²)/16.",
-              "mathContent": "1+\\tfrac{x^2}{16}=\\tfrac{16+x^2}{16}",
+              "mathContent": "$$1+\\frac{x^2}{16}=\\frac{16+x^2}{16}$$",
               "icon": "chart"
             },
             {
               "title": "Divide las fracciones",
               "text": "(1/4) dividido entre (16+x²)/16 es lo mismo que (1/4)·(16/(16+x²)).",
-              "mathContent": "y'=\\frac14\\cdot\\frac{16}{16+x^2}=\\frac{4}{16+x^2}",
+              "mathContent": "$$y'=\\frac{1}{4}\\cdot\\frac{16}{16+x^2}=\\frac{4}{16+x^2}$$",
               "icon": "star"
             }
           ],
@@ -2084,13 +2084,13 @@
         },
         {
           "id": "gc4_n1_03",
-          "questionText": "Deriva y = senh(2x) + cosh(x).",
+          "questionText": "Deriva $$y = \\text{senh}(2x) + \\cosh(x)$$.",
           "questionLatex": "",
           "options": [
-            "2cosh(2x) + senh(x)",
-            "2senh(2x) + cosh(x)",
-            "cosh(2x) + senh(x)",
-            "2cosh(2x) - senh(x)"
+            "$$2cosh(2x) + \\text{senh}(x)$$",
+            "$$2senh(2x) + \\cosh(x)$$",
+            "$$\\cosh(2x) + \\text{senh}(x)$$",
+            "$$2cosh(2x) - \\text{senh}(x)$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -2104,19 +2104,19 @@
             {
               "title": "Deriva senh(2x) con la regla de la cadena",
               "text": "u=2x, u'=2.",
-              "mathContent": "\\frac{d}{dx}[\\sinh(2x)]=\\cosh(2x)\\cdot2",
+              "mathContent": "$$\\frac{d}{dx}[\\sinh(2x)]=\\cosh(2x)\\cdot2$$",
               "icon": "fx"
             },
             {
               "title": "Deriva cosh(x) directamente",
               "text": "Sin cadena adicional, ya que la interior es simplemente x.",
-              "mathContent": "\\frac{d}{dx}[\\cosh x]=\\sinh x",
+              "mathContent": "$$\\frac{d}{dx}[\\cosh x]=\\sinh x$$",
               "icon": "fx"
             },
             {
               "title": "Resultado",
               "text": "Suma ambos términos.",
-              "mathContent": "y'=2\\cosh(2x)+\\sinh(x)",
+              "mathContent": "$$y'=2\\cosh(2x)+\\sinh(x)$$",
               "icon": "star"
             }
           ],
@@ -2135,13 +2135,13 @@
       "challenges": [
         {
           "id": "gc4_n2_04",
-          "questionText": "Si f(x)=2x⁵+x, halla (f⁻¹)'(3) usando que f(1)=3.",
+          "questionText": "Si $$f(x)=2x^5+x$$, halla $$(f^{-1})'(3)$$ usando que $$f(1)=3$$.",
           "questionLatex": "",
           "options": [
-            "1/11",
-            "1/3",
-            "11",
-            "1/6"
+            "$$\\frac{1}{11}$$",
+            "$$\\frac{1}{3}$$",
+            "$$11$$",
+            "$$\\frac{1}{6}$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -2155,19 +2155,19 @@
             {
               "title": "Deriva f(x)",
               "text": "Aplica la regla de la potencia a cada término.",
-              "mathContent": "f'(x)=10x^4+1",
+              "mathContent": "$$f'(x)=10x^4+1$$",
               "icon": "fx"
             },
             {
               "title": "Evalúa f' en el punto correcto (x=1, no x=3)",
               "text": "Este es el detalle clave: siempre evalúas f' en f⁻¹(3), no en 3.",
-              "mathContent": "f'(1)=10+1=11",
+              "mathContent": "$$f'(1)=10+1=11$$",
               "icon": "pin"
             },
             {
               "title": "Aplica la fórmula de la derivada inversa",
               "text": "Toma el recíproco.",
-              "mathContent": "(f^{-1})'(3)=\\frac{1}{f'(1)}=\\frac{1}{11}",
+              "mathContent": "$$(f^{-1})'(3)=\\frac{1}{f'(1)}=\\frac{1}{11}$$",
               "icon": "star"
             }
           ],
@@ -2176,12 +2176,12 @@
         },
         {
           "id": "gc4_n2_05",
-          "questionText": "Deriva y = arcsen(3x) + arccos(3x), y simplifica el resultado.",
+          "questionText": "Deriva $$y = \\arcsin(3x) + \\arccos(3x)$$, y simplifica el resultado.",
           "questionLatex": "",
           "options": [
-            "0",
-            "6/√(1-9x²)",
-            "3/√(1-9x²)",
+            "$$0$$",
+            "$$6/\\sqrt{1-9x^{2}}$$",
+            "$$3/\\sqrt{1-9x^{2}}$$",
             "No se puede simplificar"
           ],
           "correctAnswerIndex": 0,
@@ -2190,7 +2190,7 @@
             {
               "title": "Antes de derivar, piensa en una identidad útil",
               "text": "arcsen(u) + arccos(u) es siempre igual a π/2, sin importar el valor de u — es una constante.",
-              "mathContent": "\\arcsin u+\\arccos u=\\frac{\\pi}{2}",
+              "mathContent": "$$\\arcsin u+\\arccos u=\\frac{\\pi}{2}$$",
               "icon": "info"
             },
             {
@@ -2202,7 +2202,7 @@
             {
               "title": "Verifica derivando término a término también",
               "text": "arcsen(3x) da 3/√(1−9x²) y arccos(3x) da exactamente −3/√(1−9x²): se cancelan.",
-              "mathContent": "\\frac{3}{\\sqrt{1-9x^2}}-\\frac{3}{\\sqrt{1-9x^2}}=0",
+              "mathContent": "$$\\frac{3}{\\sqrt{1-9x^2}}-\\frac{3}{\\sqrt{1-9x^2}}=0$$",
               "icon": "chart"
             },
             {
@@ -2217,13 +2217,13 @@
         },
         {
           "id": "gc4_n2_06",
-          "questionText": "Deriva y = tanh(x³) usando la regla de la cadena.",
+          "questionText": "Deriva $$y = \\tanh(x^3)$$ usando la regla de la cadena.",
           "questionLatex": "",
           "options": [
-            "3x² sech²(x³)",
-            "3x² tanh²(x³)",
-            "sech²(x³)",
-            "3x sech²(x³)"
+            "$$3x^{2} \\text{sech}^{2}(x^{3})$$",
+            "$$3x^{2} \\tanh^{2}(x^{3})$$",
+            "$$\\text{sech}^{2}(x^{3})$$",
+            "$$3x \\text{sech}^{2}(x^{3})$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -2231,19 +2231,19 @@
             {
               "title": "Identifica la interior y la exterior",
               "text": "Exterior: tanh(u). Interior: u=x³.",
-              "mathContent": "u=x^3,\\quad u'=3x^2",
+              "mathContent": "$$u=x^3,\\quad u'=3x^2$$",
               "icon": "info"
             },
             {
               "title": "Aplica la derivada de tanh",
               "text": "d/dx[tanh(u)]=sech²(u)·u'.",
-              "mathContent": "y'=\\text{sech}^2(x^3)\\cdot3x^2",
+              "mathContent": "$$y'=\\text{\\text{sech}}^2(x^3)\\cdot3x^2$$",
               "icon": "fx"
             },
             {
               "title": "Resultado",
               "text": "Ordena el resultado.",
-              "mathContent": "y'=3x^2\\,\\text{sech}^2(x^3)",
+              "mathContent": "$$y'=3x^2\\,\\text{\\text{sech}}^2(x^3)$$",
               "icon": "star"
             }
           ],
@@ -2262,13 +2262,13 @@
       "challenges": [
         {
           "id": "gc4_n3_07",
-          "questionText": "Deriva y = (sen x)^x usando derivación logarítmica.",
+          "questionText": "Deriva $$y = (\\text{sen }x)^x$$ usando derivación logarítmica.",
           "questionLatex": "",
           "options": [
-            "(sen x)^x [ln(sen x) + x cot x]",
-            "(sen x)^x [ln(sen x) + x tan x]",
-            "x(sen x)^(x-1) cos x",
-            "(sen x)^x [x ln(sen x)]"
+            "$$(\\text{sen} x)^x [\\ln(\\text{sen} x) + x \\cot x]$$",
+            "$$(\\text{sen} x)^x [\\ln(\\text{sen} x) + x \\tan x]$$",
+            "$$x(\\text{sen} x)^{x-1} \\cos x$$",
+            "$$(\\text{sen} x)^x [x \\ln(\\text{sen} x)]$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -2276,25 +2276,25 @@
             {
               "title": "Toma logaritmo natural en ambos lados",
               "text": "Esto baja el exponente variable x.",
-              "mathContent": "\\ln y=x\\ln(\\sin x)",
+              "mathContent": "$$\\ln y=x\\ln(\\sin x)$$",
               "icon": "info"
             },
             {
               "title": "Deriva ambos lados implícitamente",
               "text": "El lado derecho es un producto: x por ln(sen x).",
-              "mathContent": "\\frac{y'}{y}=1\\cdot\\ln(\\sin x)+x\\cdot\\frac{\\cos x}{\\sin x}",
+              "mathContent": "$$\\frac{y'}{y}=1\\cdot\\ln(\\sin x)+x\\cdot\\frac{\\cos x}{\\sin x}$$",
               "icon": "fx"
             },
             {
               "title": "Reconoce cos x/sen x como cot x",
               "text": "Simplifica esa fracción trigonométrica.",
-              "mathContent": "\\frac{y'}{y}=\\ln(\\sin x)+x\\cot x",
+              "mathContent": "$$\\frac{y'}{y}=\\ln(\\sin x)+x\\cot x$$",
               "icon": "chart"
             },
             {
               "title": "Despeja y' multiplicando por y",
               "text": "Sustituye y por la función original.",
-              "mathContent": "y'=(\\sin x)^x[\\ln(\\sin x)+x\\cot x]",
+              "mathContent": "$$y'=(\\sin x)^x[\\ln(\\sin x)+x\\cot x]$$",
               "icon": "star"
             }
           ],
@@ -2303,13 +2303,13 @@
         },
         {
           "id": "gc4_n3_08",
-          "questionText": "Deriva y = [√(x+1)·(x−3)²]/(x+5)³ usando derivación logarítmica.",
+          "questionText": "Deriva $$y = \\dfrac{\\sqrt{x+1}\\cdot(x-3)^2}{(x+5)^3}$$ usando derivación logarítmica.",
           "questionLatex": "",
           "options": [
-            "y[1/(2(x+1)) + 2/(x-3) - 3/(x+5)]",
-            "y[1/(x+1) + 2/(x-3) - 3/(x+5)]",
-            "y[1/(2(x+1)) + 2/(x-3) + 3/(x+5)]",
-            "y[2(x+1) + 2/(x-3) - 3/(x+5)]"
+            "$$y[1/(2(x+1)) + 2/(x-3) - 3/(x+5)]$$",
+            "$$y[1/(x+1) + 2/(x-3) - 3/(x+5)]$$",
+            "$$y[1/(2(x+1)) + 2/(x-3) + 3/(x+5)]$$",
+            "$$y[2(x+1) + 2/(x-3) - 3/(x+5)]$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -2317,19 +2317,19 @@
             {
               "title": "Toma logaritmo y separa en sumas y restas",
               "text": "La raíz se convierte en exponente 1/2, y las potencias bajan como factores.",
-              "mathContent": "\\ln y=\\tfrac12\\ln(x+1)+2\\ln(x-3)-3\\ln(x+5)",
+              "mathContent": "$$\\ln y=\\frac{1}{2}\\ln(x+1)+2\\ln(x-3)-3\\ln(x+5)$$",
               "icon": "info"
             },
             {
               "title": "Deriva cada término logarítmico por separado",
               "text": "Cada uno sigue la fórmula u'/u.",
-              "mathContent": "\\frac{y'}{y}=\\frac{1}{2(x+1)}+\\frac{2}{x-3}-\\frac{3}{x+5}",
+              "mathContent": "$$\\frac{y'}{y}=\\frac{1}{2(x+1)}+\\frac{2}{x-3}-\\frac{3}{x+5}$$",
               "icon": "fx"
             },
             {
               "title": "Despeja y' multiplicando por y",
               "text": "y es la función original completa.",
-              "mathContent": "y'=y\\left[\\frac{1}{2(x+1)}+\\frac{2}{x-3}-\\frac{3}{x+5}\\right]",
+              "mathContent": "$$y'=y\\left[\\frac{1}{2(x+1)}+\\frac{2}{x-3}-\\frac{3}{x+5}\\right]$$",
               "icon": "star"
             }
           ],
@@ -2338,13 +2338,13 @@
         },
         {
           "id": "gc4_n3_09",
-          "questionText": "Deriva y = argcosh(x²) e indica su dominio de validez.",
+          "questionText": "Deriva $$y = \\text{argcosh}(x^2)$$ e indica su dominio de validez.",
           "questionLatex": "",
           "options": [
-            "2x/√(x⁴-1), válida para |x|>1",
-            "2x/√(x⁴+1), válida para todo x",
-            "x/√(x⁴-1), válida para |x|>1",
-            "2x/√(x⁴-1), válida para |x|<1"
+            "$$\\frac{2x}{\\sqrt{x^4-1}}$$, válida para $$|x|>1$$",
+            "$$\\frac{2x}{\\sqrt{x^4+1}}$$, válida para todo $$x$$",
+            "$$\\frac{x}{\\sqrt{x^4-1}}$$, válida para $$|x|>1$$",
+            "$$\\frac{2x}{\\sqrt{x^4-1}}$$, válida para $$|x|<1$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -2358,19 +2358,19 @@
             {
               "title": "Aplica la fórmula de argcosh",
               "text": "u'/√(u²−1).",
-              "mathContent": "y'=\\frac{2x}{\\sqrt{(x^2)^2-1}}=\\frac{2x}{\\sqrt{x^4-1}}",
+              "mathContent": "$$y'=\\frac{2x}{\\sqrt{(x^2)^2-1}}=\\frac{2x}{\\sqrt{x^4-1}}$$",
               "icon": "fx"
             },
             {
               "title": "Piensa en el dominio necesario",
               "text": "argcosh solo está definida para u≥1, y su derivada necesita u>1 estrictamente (para que la raíz no sea cero).",
-              "mathContent": "x^2>1",
+              "mathContent": "$$x^2>1$$",
               "icon": "pin"
             },
             {
               "title": "Traduce esa condición a x",
               "text": "x² > 1 significa que x está fuera del intervalo [−1,1].",
-              "mathContent": "|x|>1",
+              "mathContent": "$$|x|>1$$",
               "icon": "star"
             }
           ],
@@ -2395,7 +2395,7 @@
           "blocks": [
             {
               "type": "note",
-              "content": "Si f es continua en [a,b], derivable en (a,b), y f(a)=f(b), entonces existe c∈(a,b) tal que f'(c)=0."
+              "content": "Si $$f$$ es continua en $$[a,b]$$, derivable en $$(a,b)$$, y $$f(a)=f(b)$$, entonces existe $$c\\in(a,b)$$ tal que $$f'(c)=0$$."
             },
             {
               "type": "text",
@@ -2403,12 +2403,12 @@
             },
             {
               "type": "example",
-              "content": "\\text{Verificar Rolle para } f(x)=x^2-4x+3 \\text{ en } [1,3]",
+              "content": "$$\\text{Verificar Rolle para } f(x)=x^2-4x+3 \\text{ en } [1,3]$$",
               "steps": [
                 {
                   "title": "Verifica la hipótesis f(a)=f(b)",
                   "text": "Evalúa la función en ambos extremos del intervalo.",
-                  "mathContent": "f(1)=1-4+3=0,\\quad f(3)=9-12+3=0",
+                  "mathContent": "$$f(1)=1-4+3=0,\\quad f(3)=9-12+3=0$$",
                   "icon": "check"
                 },
                 {
@@ -2420,7 +2420,7 @@
                 {
                   "title": "Deriva la función e iguala a cero",
                   "text": "Resuelve la ecuación resultante.",
-                  "mathContent": "f'(x)=2x-4=0\\Rightarrow x=2",
+                  "mathContent": "$$f'(x)=2x-4=0\\Rightarrow x=2$$",
                   "icon": "fx"
                 },
                 {
@@ -2437,33 +2437,33 @@
           "title": "Teorema del valor medio para derivadas",
           "subtitle": "Cálculo Diferencial • TVM",
           "content": "El teorema del valor medio (TVM) generaliza el teorema de Rolle: en vez de exigir que f(a)=f(b), permite que los valores en los extremos sean distintos, y afirma que existe un punto intermedio donde la derivada iguala la pendiente promedio en todo el intervalo.",
-          "formulaLatex": "f'(c)=\\frac{f(b)-f(a)}{b-a}",
+          "formulaLatex": "$$f'(c)=\\frac{f(b)-f(a)}{b-a}$$",
           "proTip": "",
           "blocks": [
             {
               "type": "note",
-              "content": "Si f es continua en [a,b] y derivable en (a,b), existe c∈(a,b) tal que f'(c) = [f(b)−f(a)]/(b−a). El teorema de Rolle es simplemente el caso particular en que f(a)=f(b), pues entonces el lado derecho de la igualdad se anula."
+              "content": "Si $$f$$ es continua en $$[a,b]$$ y derivable en $$(a,b)$$, existe $$c\\in(a,b)$$ tal que $$f'(c) = \\dfrac{f(b)-f(a)}{b-a}$$. El teorema de Rolle es simplemente el caso particular en que $$f(a)=f(b)$$, pues entonces el lado derecho de la igualdad se anula."
             },
             {
               "type": "example",
-              "content": "\\text{Hallar el valor de } c \\text{ garantizado por el TVM para } f(x)=x^3 \\text{ en } [0,2]",
+              "content": "$$\\text{Hallar el valor de } c \\text{ garantizado por el TVM para } f(x)=x^3 \\text{ en } [0,2]$$",
               "steps": [
                 {
                   "title": "Calcula la tasa de cambio promedio",
                   "text": "Es la pendiente de la recta secante entre los extremos.",
-                  "mathContent": "\\frac{f(2)-f(0)}{2-0}=\\frac{8-0}{2}=4",
+                  "mathContent": "$$\\frac{f(2)-f(0)}{2-0}=\\frac{8-0}{2}=4$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Iguala la derivada a esa tasa promedio",
                   "text": "Plantea la ecuación f'(x)=4.",
-                  "mathContent": "f'(x)=3x^2=4",
+                  "mathContent": "$$f'(x)=3x^2=4$$",
                   "icon": "chart"
                 },
                 {
                   "title": "Resuelve para x",
                   "text": "Despeja x² y luego x.",
-                  "mathContent": "x^2=\\tfrac43\\Rightarrow x=\\frac{2}{\\sqrt3}\\approx1.1547",
+                  "mathContent": "$$x^2=\\frac{4}{3}\\Rightarrow x=\\frac{2}{\\sqrt3}\\approx1.1547$$",
                   "icon": "check"
                 },
                 {
@@ -2493,24 +2493,24 @@
             },
             {
               "type": "example",
-              "content": "\\text{Usar el TVM para justificar que } |\\sin b-\\sin a|\\leq|b-a| \\text{ para todo } b>a",
+              "content": "$$\\text{Usar el TVM para justificar que } |\\sin b-\\sin a|\\leq|b-a| \\text{ para todo } b>a$$",
               "steps": [
                 {
                   "title": "Aplica el TVM a f(x)=sen x en [a,b]",
                   "text": "Existe c tal que f'(c) es igual a la pendiente promedio.",
-                  "mathContent": "\\cos c=\\frac{\\sin b-\\sin a}{b-a}",
+                  "mathContent": "$$\\cos c=\\frac{\\sin b-\\sin a}{b-a}$$",
                   "icon": "info"
                 },
                 {
                   "title": "Usa una propiedad conocida del coseno",
                   "text": "El coseno siempre está acotado entre −1 y 1.",
-                  "mathContent": "|\\cos c|\\leq1",
+                  "mathContent": "$$|\\cos c|\\leq1$$",
                   "icon": "pin"
                 },
                 {
                   "title": "Conclusión",
                   "text": "Sustituyendo esa cota se obtiene la desigualdad buscada.",
-                  "mathContent": "|\\sin b-\\sin a|\\leq|b-a|",
+                  "mathContent": "$$|\\sin b-\\sin a|\\leq|b-a|$$",
                   "icon": "star"
                 }
               ]
@@ -2526,12 +2526,12 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Aproximar la raíz de } f(x)=x^3-x-2 \\text{ en } [1,2] \\text{ con cuatro iteraciones}",
+              "content": "$$\\text{Aproximar la raíz de } f(x)=x^3-x-2 \\text{ en } [1,2] \\text{ con cuatro iteraciones}$$",
               "steps": [
                 {
                   "title": "Verifica el cambio de signo inicial",
                   "text": "f(1) es negativo y f(2) es positivo, así que hay una raíz en el medio.",
-                  "mathContent": "f(1)=-2,\\quad f(2)=4",
+                  "mathContent": "$$f(1)=-2,\\quad f(2)=4$$",
                   "icon": "check"
                 },
                 {
@@ -2581,13 +2581,13 @@
       "challenges": [
         {
           "id": "gc5_n1_01",
-          "questionText": "Verifica el teorema de Rolle para f(x)=x²−6x+8 en [2,4].",
+          "questionText": "Verifica el teorema de Rolle para $$f(x)=x^2-6x+8$$ en $$[2,4]$$.",
           "questionLatex": "",
           "options": [
-            "Se cumple, con c=3",
+            "Se cumple, con $$c=3$$",
             "No se cumple",
-            "Se cumple, con c=2",
-            "Se cumple, con c=4"
+            "Se cumple, con $$c=2$$",
+            "Se cumple, con $$c=4$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -2595,7 +2595,7 @@
             {
               "title": "Verifica que f(2)=f(4)",
               "text": "Evalúa la función en ambos extremos.",
-              "mathContent": "f(2)=4-12+8=0,\\quad f(4)=16-24+8=0",
+              "mathContent": "$$f(2)=4-12+8=0,\\quad f(4)=16-24+8=0$$",
               "icon": "check"
             },
             {
@@ -2607,13 +2607,13 @@
             {
               "title": "Deriva la función",
               "text": "Aplica la regla de la potencia.",
-              "mathContent": "f'(x)=2x-6",
+              "mathContent": "$$f'(x)=2x-6$$",
               "icon": "fx"
             },
             {
               "title": "Iguala a cero y resuelve",
               "text": "Encuentra el candidato a c.",
-              "mathContent": "2x-6=0\\Rightarrow x=3",
+              "mathContent": "$$2x-6=0\\Rightarrow x=3$$",
               "icon": "chart"
             },
             {
@@ -2628,13 +2628,13 @@
         },
         {
           "id": "gc5_n1_02",
-          "questionText": "Halla el valor de c del TVM para f(x)=x² en [1,4].",
+          "questionText": "Halla el valor de $$c$$ del TVM para $$f(x)=x^2$$ en $$[1,4]$$.",
           "questionLatex": "",
           "options": [
-            "2.5",
-            "2",
-            "3",
-            "1.5"
+            "$$2.5$$",
+            "$$2$$",
+            "$$3$$",
+            "$$1.5$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -2642,7 +2642,7 @@
             {
               "title": "Calcula la pendiente promedio (secante)",
               "text": "Usa los valores en los extremos.",
-              "mathContent": "\\frac{f(4)-f(1)}{4-1}=\\frac{16-1}{3}=5",
+              "mathContent": "$$\\frac{f(4)-f(1)}{4-1}=\\frac{16-1}{3}=5$$",
               "icon": "fx"
             },
             {
@@ -2654,13 +2654,13 @@
             {
               "title": "Iguala la derivada a la pendiente promedio",
               "text": "Plantea la ecuación del TVM.",
-              "mathContent": "2x=5",
+              "mathContent": "$$2x=5$$",
               "icon": "chart"
             },
             {
               "title": "Despeja x",
               "text": "Divide entre 2.",
-              "mathContent": "x=2.5",
+              "mathContent": "$$x=2.5$$",
               "icon": "star"
             }
           ],
@@ -2669,12 +2669,12 @@
         },
         {
           "id": "gc5_n1_03",
-          "questionText": "Verifica que f(x)=x³−2x−1 tiene una raíz en [1,2].",
+          "questionText": "Verifica que $$f(x)=x^3-2x-1$$ tiene una raíz en $$[1,2]$$.",
           "questionLatex": "",
           "options": [
-            "Sí, porque f(1)=-2 y f(2)=3 cambian de signo",
-            "No, porque f(1) y f(2) tienen el mismo signo",
-            "Sí, porque f(1)=0",
+            "Sí, porque $$f(1)=-2$$ y $$f(2)=3$$ cambian de signo",
+            "No, porque $$f(1)$$ y $$f(2)$$ tienen el mismo signo",
+            "Sí, porque $$f(1)=0$$",
             "No se puede determinar sin más información"
           ],
           "correctAnswerIndex": 0,
@@ -2683,7 +2683,7 @@
             {
               "title": "Evalúa la función en ambos extremos",
               "text": "Sustituye x=1 y x=2.",
-              "mathContent": "f(1)=1-2-1=-2,\\quad f(2)=8-4-1=3",
+              "mathContent": "$$f(1)=1-2-1=-2,\\quad f(2)=8-4-1=3$$",
               "icon": "fx"
             },
             {
@@ -2720,13 +2720,13 @@
       "challenges": [
         {
           "id": "gc5_n2_04",
-          "questionText": "Halla el valor de c del TVM para f(x)=√x en [1,9].",
+          "questionText": "Halla el valor de $$c$$ del TVM para $$f(x)=\\sqrt{x}$$ en $$[1,9]$$.",
           "questionLatex": "",
           "options": [
-            "4",
-            "5",
-            "3",
-            "2"
+            "$$4$$",
+            "$$5$$",
+            "$$3$$",
+            "$$2$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -2734,25 +2734,25 @@
             {
               "title": "Calcula la pendiente promedio",
               "text": "Usa f(9)=3 y f(1)=1.",
-              "mathContent": "\\frac{3-1}{9-1}=\\frac{2}{8}=\\frac14",
+              "mathContent": "$$\\frac{3-1}{9-1}=\\frac{2}{8}=\\frac{1}{4}$$",
               "icon": "fx"
             },
             {
               "title": "Deriva f(x)=√x",
               "text": "Reescribe como x^(1/2) y aplica la regla de la potencia.",
-              "mathContent": "f'(x)=\\frac{1}{2\\sqrt x}",
+              "mathContent": "$$f'(x)=\\frac{1}{2\\sqrt x}$$",
               "icon": "pin"
             },
             {
               "title": "Iguala la derivada a la pendiente promedio",
               "text": "Plantea la ecuación.",
-              "mathContent": "\\frac{1}{2\\sqrt x}=\\frac14",
+              "mathContent": "$$\\frac{1}{2\\sqrt x}=\\frac{1}{4}$$",
               "icon": "chart"
             },
             {
               "title": "Despeja x",
               "text": "Primero despeja √x, luego eleva al cuadrado.",
-              "mathContent": "\\sqrt x=2\\Rightarrow x=4",
+              "mathContent": "$$\\sqrt x=2\\Rightarrow x=4$$",
               "icon": "star"
             }
           ],
@@ -2761,7 +2761,7 @@
         },
         {
           "id": "gc5_n2_05",
-          "questionText": "El TVM permite justificar que |cos b − cos a| ≤ |b − a| para todo a, b.",
+          "questionText": "El TVM permite justificar que $$|\\cos b - \\cos a| \\leq |b - a|$$ para todo $$a, b$$.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -2773,25 +2773,25 @@
             {
               "title": "Aplica el TVM a f(x)=cos x en el intervalo [a,b]",
               "text": "El TVM garantiza un punto c donde la derivada iguala la pendiente promedio.",
-              "mathContent": "-\\sin c=\\frac{\\cos b-\\cos a}{b-a}",
+              "mathContent": "$$-\\sin c=\\frac{\\cos b-\\cos a}{b-a}$$",
               "icon": "info"
             },
             {
               "title": "Usa que el seno está acotado",
               "text": "Para cualquier c, |sen c| ≤ 1.",
-              "mathContent": "|-\\sin c|\\leq1",
+              "mathContent": "$$|-\\sin c|\\leq1$$",
               "icon": "pin"
             },
             {
               "title": "Sustituye esa cota en la igualdad del TVM",
               "text": "Esto acota el cociente de la derecha.",
-              "mathContent": "\\left|\\frac{\\cos b-\\cos a}{b-a}\\right|\\leq1",
+              "mathContent": "$$\\left|\\frac{\\cos b-\\cos a}{b-a}\\right|\\leq1$$",
               "icon": "chart"
             },
             {
               "title": "Despeja la desigualdad final",
               "text": "Multiplica ambos lados por |b−a|.",
-              "mathContent": "|\\cos b-\\cos a|\\leq|b-a|",
+              "mathContent": "$$|\\cos b-\\cos a|\\leq|b-a|$$",
               "icon": "star"
             }
           ],
@@ -2800,13 +2800,13 @@
         },
         {
           "id": "gc5_n2_06",
-          "questionText": "Aplica dos iteraciones del método de bisección a f(x)=x²−2 en [1,2].",
+          "questionText": "Aplica dos iteraciones del método de bisección a $$f(x)=x^2-2$$ en $$[1,2]$$.",
           "questionLatex": "",
           "options": [
-            "Intervalo final [1.25, 1.5]",
-            "Intervalo final [1, 1.5]",
-            "Intervalo final [1.5, 2]",
-            "Intervalo final [1.25, 1.75]"
+            "Intervalo final $$[1.25, 1.5]$$",
+            "Intervalo final $$[1, 1.5]$$",
+            "Intervalo final $$[1.5, 2]$$",
+            "Intervalo final $$[1.25, 1.75]$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -2820,25 +2820,25 @@
             {
               "title": "Iteración 1: calcula el punto medio",
               "text": "m=(1+2)/2=1.5.",
-              "mathContent": "f(1.5)=2.25-2=0.25\\ (\\text{positivo})",
+              "mathContent": "$$f(1.5)=2.25-2=0.25\\ (\\text{positivo})$$",
               "icon": "fx"
             },
             {
               "title": "Actualiza el intervalo",
               "text": "Como f(1.5) tiene el mismo signo que f(2), reemplazamos b por 1.5.",
-              "mathContent": "\\text{nuevo intervalo: }[1,1.5]",
+              "mathContent": "$$\\text{nuevo intervalo: }[1,1.5]$$",
               "icon": "pin"
             },
             {
               "title": "Iteración 2: calcula el nuevo punto medio",
               "text": "m=(1+1.5)/2=1.25.",
-              "mathContent": "f(1.25)=1.5625-2=-0.4375\\ (\\text{negativo})",
+              "mathContent": "$$f(1.25)=1.5625-2=-0.4375\\ (\\text{negativo})$$",
               "icon": "fx"
             },
             {
               "title": "Actualiza el intervalo de nuevo",
               "text": "Como f(1.25) tiene el mismo signo que f(1), reemplazamos a por 1.25.",
-              "mathContent": "\\text{nuevo intervalo: }[1.25,1.5]",
+              "mathContent": "$$\\text{nuevo intervalo: }[1.25,1.5]$$",
               "icon": "chart"
             },
             {
@@ -2863,13 +2863,13 @@
       "challenges": [
         {
           "id": "gc5_n3_07",
-          "questionText": "Demuestra, usando monotonía, que x⁵+x−1=0 tiene una única raíz real.",
+          "questionText": "Demuestra, usando monotonía, que $$x^5+x-1=0$$ tiene una única raíz real.",
           "questionLatex": "",
           "options": [
-            "f'(x)=5x⁴+1>0 siempre, así que f es estrictamente creciente: a lo sumo una raíz; y f(0)<0<f(1) da la existencia",
-            "f'(x)=5x⁴+1 puede ser negativa, así que podría haber varias raíces",
+            "$$f'(x)=5x^4+1>0$$ siempre, así que $$f$$ es estrictamente creciente: a lo sumo una raíz; y $$f(0)<0<f(1)$$ da la existencia",
+            "$$f'(x)=5x^4+1$$ puede ser negativa, así que podría haber varias raíces",
             "No se puede saber sin resolver la ecuación directamente",
-            "f'(x)=5x⁴-1, que se anula en algunos puntos"
+            "$$f'(x)=5x^4-1$$, que se anula en algunos puntos"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -2877,13 +2877,13 @@
             {
               "title": "Define la función y deriva",
               "text": "f(x)=x⁵+x−1.",
-              "mathContent": "f'(x)=5x^4+1",
+              "mathContent": "$$f'(x)=5x^4+1$$",
               "icon": "info"
             },
             {
               "title": "Analiza el signo de la derivada",
               "text": "x⁴ nunca es negativo, así que 5x⁴ ≥ 0 siempre, y al sumar 1 el resultado es siempre positivo.",
-              "mathContent": "f'(x)=5x^4+1\\geq1>0\\ \\ \\forall x",
+              "mathContent": "$$f'(x)=5x^4+1\\geq1>0\\ \\ \\forall x$$",
               "icon": "pin"
             },
             {
@@ -2895,7 +2895,7 @@
             {
               "title": "Verifica que sí cruza el cero (existencia)",
               "text": "f(0)=−1 (negativo) y f(1)=1 (positivo), así que por el teorema del valor intermedio existe al menos una raíz.",
-              "mathContent": "f(0)=-1,\\quad f(1)=1",
+              "mathContent": "$$f(0)=-1,\\quad f(1)=1$$",
               "icon": "chart"
             },
             {
@@ -2910,13 +2910,13 @@
         },
         {
           "id": "gc5_n3_08",
-          "questionText": "Si f'(x)<2 para todo x, demuestra que f(x)−2x es decreciente.",
+          "questionText": "Si $$f'(x)<2$$ para todo $$x$$, demuestra que $$f(x)-2x$$ es decreciente.",
           "questionLatex": "",
           "options": [
-            "g'(x)=f'(x)-2<0 siempre, así que g es estrictamente decreciente",
-            "g'(x)=f'(x)+2, que podría ser positiva",
-            "No se puede concluir nada sobre g sin más datos",
-            "g(x)=f(x)-2x siempre es positiva"
+            "$$g'(x)=f'(x)-2<0$$ siempre, así que $$g$$ es estrictamente decreciente",
+            "$$g'(x)=f'(x)+2$$, que podría ser positiva",
+            "No se puede concluir nada sobre $$g$$ sin más datos",
+            "$$g(x)=f(x)-2x$$ siempre es positiva"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -2924,19 +2924,19 @@
             {
               "title": "Define una nueva función auxiliar",
               "text": "Llama g(x) a la expresión que quieres estudiar.",
-              "mathContent": "g(x)=f(x)-2x",
+              "mathContent": "$$g(x)=f(x)-2x$$",
               "icon": "info"
             },
             {
               "title": "Deriva g(x)",
               "text": "Usa la regla de la resta.",
-              "mathContent": "g'(x)=f'(x)-2",
+              "mathContent": "$$g'(x)=f'(x)-2$$",
               "icon": "fx"
             },
             {
               "title": "Usa el dato que te dieron sobre f'",
               "text": "Como f'(x)<2 para todo x, restar 2 siempre da un resultado negativo.",
-              "mathContent": "g'(x)=f'(x)-2<2-2=0",
+              "mathContent": "$$g'(x)=f'(x)-2<2-2=0$$",
               "icon": "pin"
             },
             {
@@ -2957,13 +2957,13 @@
         },
         {
           "id": "gc5_n3_09",
-          "questionText": "Aplica tres iteraciones de bisección a f(x)=cos x − x en [0,1].",
+          "questionText": "Aplica tres iteraciones de bisección a $$f(x)=\\cos x - x$$ en $$[0,1]$$.",
           "questionLatex": "",
           "options": [
-            "Intervalo final aproximado [0.625, 0.75]",
-            "Intervalo final [0.5, 0.75]",
-            "Intervalo final [0, 0.5]",
-            "Intervalo final [0.5, 0.625]"
+            "Intervalo final aproximado $$[0.625, 0.75]$$",
+            "Intervalo final $$[0.5, 0.75]$$",
+            "Intervalo final $$[0, 0.5]$$",
+            "Intervalo final $$[0.5, 0.625]$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3014,34 +3014,34 @@
         {
           "title": "Formas indeterminadas: idea general",
           "subtitle": "Cálculo Diferencial • ¿Qué es una forma indeterminada?",
-          "content": "Al calcular un límite, a veces la sustitución directa produce una expresión sin significado numérico claro, como 0/0 o ∞/∞. Estas expresiones se llaman formas indeterminadas: no dicen nada por sí mismas sobre el valor del límite, que puede ser cualquier número, infinito, o no existir, dependiendo de las funciones involucradas.",
+          "content": "Al calcular un límite, a veces la sustitución directa produce una expresión sin significado numérico claro, como $$\\frac{0}{0}$$ o $$\\frac{\\infty}{\\infty}$$. Estas expresiones se llaman formas indeterminadas: no dicen nada por sí mismas sobre el valor del límite, que puede ser cualquier número, infinito, o no existir, dependiendo de las funciones involucradas.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "note",
-              "content": "Las siete formas indeterminadas clásicas son: 0/0, ∞/∞, 0·∞, ∞−∞, 0⁰, ∞⁰, 1^∞."
+              "content": "Las siete formas indeterminadas clásicas son:\n$$\\frac{0}{0}, \\;\\frac{\\infty}{\\infty}, \\;0\\cdot\\infty, \\;\\infty-\\infty, \\;0^0, \\;\\infty^0, \\;1^\\infty$$"
             }
           ]
         },
         {
           "title": "La forma 0/0 y la regla de L'Hôpital",
           "subtitle": "Cálculo Diferencial • L'Hôpital básico",
-          "content": "La regla de L'Hôpital es la herramienta central de este capítulo. Si lim f(x)=0 y lim g(x)=0 cuando x→a (forma 0/0), y las funciones son derivables cerca de a con g'(x)≠0, entonces el límite del cociente es igual al límite del cociente de las derivadas, siempre que ese segundo límite exista.",
+          "content": "La regla de L'Hôpital es la herramienta central de este capítulo. Si $$\\lim f(x)=0$$ y $$\\lim g(x)=0$$ cuando $$x\\to a$$ (forma $$\\frac{0}{0}$$), y las funciones son derivables cerca de $$a$$ con $$g'(x)\\neq0$$, entonces el límite del cociente es igual al límite del cociente de las derivadas, siempre que ese segundo límite exista.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "formula",
-              "content": "\\lim_{x\\to a}\\frac{f(x)}{g(x)}=\\lim_{x\\to a}\\frac{f'(x)}{g'(x)}"
+              "content": "$$\\lim_{x\\to a}\\frac{f(x)}{g(x)}=\\lim_{x\\to a}\\frac{f'(x)}{g'(x)}$$"
             },
             {
               "type": "text",
-              "content": "La regla también es válida cuando x→a⁺, x→a⁻, o x→±∞."
+              "content": "La regla también es válida cuando $$x\\to a^+$$, $$x\\to a^-$$, o $$x\\to\\pm\\infty$$."
             },
             {
               "type": "example",
-              "content": "\\text{Calcular } \\lim_{x\\to0}\\frac{\\sin x}{x}",
+              "content": "$$\\text{Calcular } \\lim_{x\\to0}\\frac{\\sin x}{x}$$",
               "steps": [
                 {
                   "title": "Verifica la forma",
@@ -3052,20 +3052,20 @@
                 {
                   "title": "Deriva numerador y denominador por separado",
                   "text": "No derives el cociente entero, solo cada parte.",
-                  "mathContent": "\\frac{\\cos x}{1}",
+                  "mathContent": "$$\\frac{\\cos x}{1}$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Evalúa el nuevo límite",
                   "text": "Sustituye x=0.",
-                  "mathContent": "\\lim_{x\\to0}\\cos x=\\cos0=1",
+                  "mathContent": "$$\\lim_{x\\to0}\\cos x=\\cos0=1$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Calcular } \\lim_{x\\to2}\\frac{x^2-4}{x-2}",
+              "content": "$$\\text{Calcular } \\lim_{x\\to2}\\frac{x^2-4}{x-2}$$",
               "steps": [
                 {
                   "title": "Verifica la forma",
@@ -3076,7 +3076,7 @@
                 {
                   "title": "Aplica L'Hôpital",
                   "text": "Deriva numerador y denominador.",
-                  "mathContent": "\\lim_{x\\to2}\\frac{2x}{1}=4",
+                  "mathContent": "$$\\lim_{x\\to2}\\frac{2x}{1}=4$$",
                   "icon": "fx"
                 },
                 {
@@ -3089,7 +3089,7 @@
             },
             {
               "type": "note",
-              "content": "Error común: la regla de L'Hôpital solo se aplica cuando el límite es realmente una forma indeterminada (0/0 o ∞/∞). Aplicarla a un cociente que no es indeterminado produce un resultado incorrecto. Siempre verifica la forma antes de derivar numerador y denominador."
+              "content": "Error común: la regla de L'Hôpital solo se aplica cuando el límite es realmente una forma indeterminada ($$\\frac{0}{0}$$ o $$\\frac{\\infty}{\\infty}$$). Aplicarla a un cociente que no es indeterminado produce un resultado incorrecto. Siempre verifica la forma antes de derivar numerador y denominador."
             }
           ]
         },
@@ -3102,7 +3102,7 @@
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Calcular } \\lim_{x\\to\\infty}\\frac{3x^2+5x}{2x^2-1}",
+              "content": "$$\\text{Calcular } \\lim_{x\\to\\infty}\\frac{3x^2+5x}{2x^2-1}$$",
               "steps": [
                 {
                   "title": "Verifica la forma",
@@ -3113,7 +3113,7 @@
                 {
                   "title": "Aplica L'Hôpital una vez",
                   "text": "Deriva ambas partes.",
-                  "mathContent": "\\lim_{x\\to\\infty}\\frac{6x+5}{4x}",
+                  "mathContent": "$$\\lim_{x\\to\\infty}\\frac{6x+5}{4x}$$",
                   "icon": "fx"
                 },
                 {
@@ -3125,7 +3125,7 @@
                 {
                   "title": "Aplica L'Hôpital una segunda vez",
                   "text": "Deriva otra vez ambas partes.",
-                  "mathContent": "\\lim_{x\\to\\infty}\\frac64=\\frac32",
+                  "mathContent": "$$\\lim_{x\\to\\infty}\\frac{6}{4}=\\frac{3}{2}$$",
                   "icon": "star"
                 }
               ]
@@ -3136,7 +3136,7 @@
             },
             {
               "type": "example",
-              "content": "\\text{Calcular } \\lim_{x\\to\\infty}\\frac{\\ln x}{x}",
+              "content": "$$\\text{Calcular } \\lim_{x\\to\\infty}\\frac{\\ln x}{x}$$",
               "steps": [
                 {
                   "title": "Verifica la forma",
@@ -3147,13 +3147,13 @@
                 {
                   "title": "Aplica L'Hôpital",
                   "text": "Deriva numerador y denominador.",
-                  "mathContent": "\\lim_{x\\to\\infty}\\frac{1/x}{1}=\\lim_{x\\to\\infty}\\frac1x",
+                  "mathContent": "$$\\lim_{x\\to\\infty}\\frac{\\frac{1}{x}}{1}=\\lim_{x\\to\\infty}\\frac{1}{x}$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Evalúa el límite final",
                   "text": "1/x tiende a 0 cuando x crece sin límite.",
-                  "mathContent": "=0",
+                  "mathContent": "$$=0$$",
                   "icon": "star"
                 }
               ]
@@ -3163,48 +3163,48 @@
         {
           "title": "Formas de tipo producto y diferencia (0·∞, ∞−∞)",
           "subtitle": "Cálculo Diferencial • Reescribir antes de aplicar L'Hôpital",
-          "content": "Estas formas no son cocientes, así que no se puede aplicar L'Hôpital directamente. El primer paso siempre es reescribir la expresión algebraicamente como un cociente de la forma 0/0 o ∞/∞. Para 0·∞, se reescribe uno de los factores como un recíproco. Para ∞−∞, se combinan los dos términos en una sola fracción, lo que suele producir una forma 0/0.",
+          "content": "Estas formas no son cocientes, así que no se puede aplicar L'Hôpital directamente. El primer paso siempre es reescribir la expresión algebraicamente como un cociente de la forma $$\\frac{0}{0}$$ o $$\\frac{\\infty}{\\infty}$$. Para $$0\\cdot\\infty$$, se reescribe uno de los factores como un recíproco. Para $$\\infty-\\infty$$, se combinan los dos términos en una sola fracción, lo que suele producir una forma $$\\frac{0}{0}$$.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "example",
-              "content": "\\text{Calcular } \\lim_{x\\to0^+}x\\ln x \\text{ (forma } 0\\cdot\\infty\\text{)}",
+              "content": "$$\\text{Calcular } \\lim_{x\\to0^+}x\\ln x \\text{ (forma } 0\\cdot\\infty\\text{)}$$",
               "steps": [
                 {
                   "title": "Reescribe como un cociente",
                   "text": "Convierte x en 1/(1/x) para obtener una forma −∞/∞.",
-                  "mathContent": "x\\ln x=\\frac{\\ln x}{1/x}",
+                  "mathContent": "$$x\\ln x=\\frac{\\ln x}{\\frac{1}{x}}$$",
                   "icon": "info"
                 },
                 {
                   "title": "Aplica L'Hôpital",
                   "text": "Deriva numerador y denominador.",
-                  "mathContent": "\\lim_{x\\to0^+}\\frac{1/x}{-1/x^2}",
+                  "mathContent": "$$\\lim_{x\\to0^+}\\frac{\\frac{1}{x}}{\\frac{-1}{x^2}}$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Simplifica la fracción compuesta",
                   "text": "Dividir entre −1/x² es multiplicar por −x².",
-                  "mathContent": "\\frac{1}{x}\\cdot(-x^2)=-x",
+                  "mathContent": "$$\\frac{1}{x}\\cdot(-x^2)=-x$$",
                   "icon": "chart"
                 },
                 {
                   "title": "Evalúa el límite",
                   "text": "−x tiende a 0 cuando x→0⁺.",
-                  "mathContent": "=0",
+                  "mathContent": "$$=0$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Calcular } \\lim_{x\\to0}\\left(\\frac1x-\\frac{1}{\\sin x}\\right) \\text{ (forma } \\infty-\\infty\\text{)}",
+              "content": "$$\\text{Calcular } \\lim_{x\\to0}\\left(\\frac{1}{x}-\\frac{1}{\\sin x}\\right) \\text{ (forma } \\infty-\\infty\\text{)}$$",
               "steps": [
                 {
                   "title": "Combina en una sola fracción",
                   "text": "Usa un común denominador.",
-                  "mathContent": "\\frac1x-\\frac{1}{\\sin x}=\\frac{\\sin x-x}{x\\sin x}",
+                  "mathContent": "$$\\frac{1}{x}-\\frac{1}{\\sin x}=\\frac{\\sin x-x}{x\\sin x}$$",
                   "icon": "info"
                 },
                 {
@@ -3216,7 +3216,7 @@
                 {
                   "title": "Aplica L'Hôpital",
                   "text": "Deriva numerador y denominador.",
-                  "mathContent": "\\lim_{x\\to0}\\frac{\\cos x-1}{\\sin x+x\\cos x}",
+                  "mathContent": "$$\\lim_{x\\to0}\\frac{\\cos x-1}{\\sin x+x\\cos x}$$",
                   "icon": "fx"
                 },
                 {
@@ -3228,7 +3228,7 @@
                 {
                   "title": "Aplica L'Hôpital una segunda vez y evalúa",
                   "text": "Deriva de nuevo numerador y denominador, y sustituye x=0.",
-                  "mathContent": "\\lim_{x\\to0}\\frac{-\\sin x}{2\\cos x-x\\sin x}=\\frac{0}{2}=0",
+                  "mathContent": "$$\\lim_{x\\to0}\\frac{-\\sin x}{2\\cos x-x\\sin x}=\\frac{0}{2}=0$$",
                   "icon": "star"
                 }
               ]
@@ -3238,71 +3238,71 @@
         {
           "title": "Formas de tipo exponencial (0⁰, ∞⁰, 1^∞)",
           "subtitle": "Cálculo Diferencial • Logaritmo antes de exponenciar",
-          "content": "Estas tres formas indeterminadas surgen al calcular límites de expresiones f(x)^g(x). La técnica estándar es la misma derivación logarítmica del capítulo 4: se define y=f(x)^g(x), se toma ln y=g(x) ln f(x), y se calcula el límite de ln y (que se reduce a una forma 0·∞, ya conocida). Al final, se recupera el límite original mediante la exponencial.",
+          "content": "Estas tres formas indeterminadas surgen al calcular límites de expresiones $$f(x)^{g(x)}$$. La técnica estándar es la misma derivación logarítmica del capítulo 4: se define $$y=f(x)^{g(x)}$$, se toma $$\\ln y=g(x)\\ln f(x)$$, y se calcula el límite de $$\\ln y$$ (que se reduce a una forma $$0\\cdot\\infty$$, ya conocida). Al final, se recupera el límite original mediante la exponencial.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
             {
               "type": "formula",
-              "content": "\\lim f(x)^{g(x)}=e^{\\lim[g(x)\\ln f(x)]}"
+              "content": "$$\\lim f(x)^{g(x)}=e^{\\lim[g(x)\\ln f(x)]}$$"
             },
             {
               "type": "example",
-              "content": "\\text{Calcular } \\lim_{x\\to0^+}x^x \\text{ (forma } 0^0\\text{)}",
+              "content": "$$\\text{Calcular } \\lim_{x\\to0^+}x^x \\text{ (forma } 0^0\\text{)}$$",
               "steps": [
                 {
                   "title": "Define y y toma logaritmo",
                   "text": "Esto convierte el exponente en un producto.",
-                  "mathContent": "y=x^x \\Rightarrow \\ln y=x\\ln x",
+                  "mathContent": "$$y=x^x \\Rightarrow \\ln y=x\\ln x$$",
                   "icon": "info"
                 },
                 {
                   "title": "Usa el resultado ya conocido",
                   "text": "Ya calculamos que lim x→0⁺ x ln x = 0 en la sección anterior.",
-                  "mathContent": "\\lim_{x\\to0^+}\\ln y=0",
+                  "mathContent": "$$\\lim_{x\\to0^+}\\ln y=0$$",
                   "icon": "check"
                 },
                 {
                   "title": "Exponencia para recuperar el límite original",
                   "text": "Si ln y tiende a 0, entonces y tiende a e⁰.",
-                  "mathContent": "\\lim_{x\\to0^+}x^x=e^0=1",
+                  "mathContent": "$$\\lim_{x\\to0^+}x^x=e^0=1$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "example",
-              "content": "\\text{Calcular } \\lim_{x\\to\\infty}\\left(1+\\frac1x\\right)^x \\text{ (forma } 1^\\infty\\text{, definición de } e\\text{)}",
+              "content": "$$\\text{Calcular } \\lim_{x\\to\\infty}\\left(1+\\frac{1}{x}\\right)^x \\text{ (forma } 1^\\infty\\text{, definición de } e\\text{)}$$",
               "steps": [
                 {
                   "title": "Define y y toma logaritmo",
                   "text": "Convierte el exponente en un producto.",
-                  "mathContent": "y=\\left(1+\\tfrac1x\\right)^x \\Rightarrow \\ln y=x\\ln\\left(1+\\tfrac1x\\right)",
+                  "mathContent": "$$y=\\left(1+\\frac{1}{x}\\right)^x \\Rightarrow \\ln y=x\\ln\\left(1+\\frac{1}{x}\\right)$$",
                   "icon": "info"
                 },
                 {
                   "title": "Sustituye t=1/x para simplificar",
                   "text": "Cuando x→∞, t→0.",
-                  "mathContent": "\\ln y=\\frac{\\ln(1+t)}{t}",
+                  "mathContent": "$$\\ln y=\\frac{\\ln(1+t)}{t}$$",
                   "icon": "fx"
                 },
                 {
                   "title": "Aplica L'Hôpital respecto de t",
                   "text": "Es una forma 0/0 cuando t→0.",
-                  "mathContent": "\\lim_{t\\to0}\\frac{1/(1+t)}{1}=1",
+                  "mathContent": "$$\\lim_{t\\to0}\\frac{1/(1+t)}{1}=1$$",
                   "icon": "chart"
                 },
                 {
                   "title": "Exponencia para recuperar el límite original",
                   "text": "Como ln y→1, entonces y→e¹.",
-                  "mathContent": "\\lim_{x\\to\\infty}\\left(1+\\tfrac1x\\right)^x=e",
+                  "mathContent": "$$\\lim_{x\\to\\infty}\\left(1+\\frac{1}{x}\\right)^x=e$$",
                   "icon": "star"
                 }
               ]
             },
             {
               "type": "note",
-              "content": "Las formas exponenciales indeterminadas siempre se resuelven con el mismo esquema de tres pasos: (1) tomar logaritmo, (2) calcular el límite del logaritmo usando L'Hôpital sobre una forma 0/0 o ∞/∞, (3) exponenciar el resultado para volver al límite original."
+              "content": "Las formas exponenciales indeterminadas siempre se resuelven con el mismo esquema de tres pasos: (1) tomar logaritmo, (2) calcular el límite del logaritmo usando L'Hôpital sobre una forma $$\\frac{0}{0}$$ o $$\\frac{\\infty}{\\infty}$$, (3) exponenciar el resultado para volver al límite original."
             }
           ]
         }
@@ -3319,13 +3319,13 @@
       "challenges": [
         {
           "id": "gc6_n1_01",
-          "questionText": "Calcula lim x→0 (1−cos x)/x².",
+          "questionText": "Calcula $$\\lim_{x\\to0}\\dfrac{1-\\cos x}{x^2}$$.",
           "questionLatex": "",
           "options": [
-            "1/2",
-            "0",
-            "1",
-            "∞"
+            "$$\\frac{1}{2}$$",
+            "$$0$$",
+            "$$1$$",
+            "$$\\infty$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3339,19 +3339,19 @@
             {
               "title": "Aplica L'Hôpital",
               "text": "Deriva numerador y denominador.",
-              "mathContent": "\\lim_{x\\to0}\\frac{\\sin x}{2x}",
+              "mathContent": "$$\\lim_{x\\to0}\\frac{\\sin x}{2x}$$",
               "icon": "fx"
             },
             {
               "title": "Sigue siendo 0/0, aplica L'Hôpital otra vez",
               "text": "Deriva de nuevo.",
-              "mathContent": "\\lim_{x\\to0}\\frac{\\cos x}{2}",
+              "mathContent": "$$\\lim_{x\\to0}\\frac{\\cos x}{2}$$",
               "icon": "chart"
             },
             {
               "title": "Evalúa",
               "text": "Sustituye x=0.",
-              "mathContent": "=\\frac{1}{2}",
+              "mathContent": "$$=\\frac{1}{2}$$",
               "icon": "star"
             }
           ],
@@ -3360,13 +3360,13 @@
         },
         {
           "id": "gc6_n1_02",
-          "questionText": "Calcula lim x→1 (x³−1)/(x−1).",
+          "questionText": "Calcula $$\\lim_{x\\to1}\\dfrac{x^3-1}{x-1}$$.",
           "questionLatex": "",
           "options": [
-            "3",
-            "1",
-            "0",
-            "∞"
+            "$$3$$",
+            "$$1$$",
+            "$$0$$",
+            "$$\\infty$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3380,13 +3380,13 @@
             {
               "title": "Aplica L'Hôpital",
               "text": "Deriva numerador y denominador.",
-              "mathContent": "\\lim_{x\\to1}\\frac{3x^2}{1}",
+              "mathContent": "$$\\lim_{x\\to1}\\frac{3x^2}{1}$$",
               "icon": "fx"
             },
             {
               "title": "Evalúa",
               "text": "Sustituye x=1.",
-              "mathContent": "=3",
+              "mathContent": "$$=3$$",
               "icon": "star"
             }
           ],
@@ -3395,13 +3395,13 @@
         },
         {
           "id": "gc6_n1_03",
-          "questionText": "Calcula lim x→∞ (5x+1)/(x−3).",
+          "questionText": "Calcula $$\\lim_{x\\to\\infty}\\dfrac{5x+1}{x-3}$$.",
           "questionLatex": "",
           "options": [
-            "5",
-            "1",
-            "0",
-            "∞"
+            "$$5$$",
+            "$$1$$",
+            "$$0$$",
+            "$$\\infty$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3415,7 +3415,7 @@
             {
               "title": "Aplica L'Hôpital",
               "text": "Deriva ambas partes.",
-              "mathContent": "\\lim_{x\\to\\infty}\\frac51=5",
+              "mathContent": "$$\\lim_{x\\to\\infty}\\frac{5}{1}=5$$",
               "icon": "star"
             }
           ],
@@ -3434,13 +3434,13 @@
       "challenges": [
         {
           "id": "gc6_n2_04",
-          "questionText": "Calcula lim x→0⁺ x² ln x.",
+          "questionText": "Calcula $$\\lim_{x\\to0^+}x^2\\ln x$$.",
           "questionLatex": "",
           "options": [
-            "0",
-            "-∞",
-            "∞",
-            "1"
+            "$$0$$",
+            "$$-\\infty$$",
+            "$$\\infty$$",
+            "$$1$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3454,25 +3454,25 @@
             {
               "title": "Reescribe como cociente",
               "text": "Pasa x² al denominador como recíproco.",
-              "mathContent": "x^2\\ln x=\\frac{\\ln x}{1/x^2}",
+              "mathContent": "$$x^2\\ln x=\\frac{\\ln x}{\\frac{1}{x^2}}$$",
               "icon": "fx"
             },
             {
               "title": "Aplica L'Hôpital (forma −∞/∞)",
               "text": "Deriva numerador y denominador.",
-              "mathContent": "\\lim_{x\\to0^+}\\frac{1/x}{-2/x^3}",
+              "mathContent": "$$\\lim_{x\\to0^+}\\frac{\\frac{1}{x}}{\\frac{-2}{x^3}}$$",
               "icon": "chart"
             },
             {
               "title": "Simplifica la fracción compuesta",
               "text": "Multiplica por el recíproco.",
-              "mathContent": "\\frac1x\\cdot\\left(-\\frac{x^3}{2}\\right)=-\\frac{x^2}{2}",
+              "mathContent": "$$\\frac{1}{x}\\cdot\\left(-\\frac{x^3}{2}\\right)=-\\frac{x^2}{2}$$",
               "icon": "check"
             },
             {
               "title": "Evalúa el límite",
               "text": "−x²/2 tiende a 0.",
-              "mathContent": "=0",
+              "mathContent": "$$=0$$",
               "icon": "star"
             }
           ],
@@ -3481,13 +3481,13 @@
         },
         {
           "id": "gc6_n2_05",
-          "questionText": "Calcula lim x→∞ (ln x)²/x.",
+          "questionText": "Calcula $$\\lim_{x\\to\\infty}\\dfrac{(\\ln x)^2}{x}$$.",
           "questionLatex": "",
           "options": [
-            "0",
-            "1",
-            "∞",
-            "2"
+            "$$0$$",
+            "$$1$$",
+            "$$\\infty$$",
+            "$$2$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3501,19 +3501,19 @@
             {
               "title": "Aplica L'Hôpital una vez",
               "text": "Deriva (ln x)² con la cadena.",
-              "mathContent": "\\lim_{x\\to\\infty}\\frac{2\\ln x\\cdot(1/x)}{1}=\\lim_{x\\to\\infty}\\frac{2\\ln x}{x}",
+              "mathContent": "$$\\lim_{x\\to\\infty}\\frac{2\\ln x\\cdot\\frac{1}{x}}{1}=\\lim_{x\\to\\infty}\\frac{2\\ln x}{x}$$",
               "icon": "fx"
             },
             {
               "title": "Sigue siendo ∞/∞, aplica L'Hôpital otra vez",
               "text": "Deriva de nuevo.",
-              "mathContent": "\\lim_{x\\to\\infty}\\frac{2/x}{1}=\\lim_{x\\to\\infty}\\frac2x",
+              "mathContent": "$$\\lim_{x\\to\\infty}\\frac{\\frac{2}{x}}{1}=\\lim_{x\\to\\infty}\\frac{2}{x}$$",
               "icon": "chart"
             },
             {
               "title": "Evalúa el límite final",
               "text": "2/x tiende a 0.",
-              "mathContent": "=0",
+              "mathContent": "$$=0$$",
               "icon": "star"
             }
           ],
@@ -3522,13 +3522,13 @@
         },
         {
           "id": "gc6_n2_06",
-          "questionText": "Calcula lim x→(π/2)⁻ (sec x − tan x).",
+          "questionText": "Calcula $$\\lim_{x\\to(\\pi/2)^-}(\\sec x - \\tan x)$$.",
           "questionLatex": "",
           "options": [
-            "0",
-            "1",
-            "∞",
-            "-1"
+            "$$0$$",
+            "$$1$$",
+            "$$\\infty$$",
+            "$$-1$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3542,7 +3542,7 @@
             {
               "title": "Combina en una sola fracción",
               "text": "Reescribe usando senos y cosenos.",
-              "mathContent": "\\sec x-\\tan x=\\frac{1-\\sin x}{\\cos x}",
+              "mathContent": "$$\\sec x-\\tan x=\\frac{1-\\sin x}{\\cos x}$$",
               "icon": "fx"
             },
             {
@@ -3554,13 +3554,13 @@
             {
               "title": "Aplica L'Hôpital",
               "text": "Deriva numerador y denominador.",
-              "mathContent": "\\lim_{x\\to(\\pi/2)^-}\\frac{-\\cos x}{-\\sin x}=\\frac{\\cos x}{\\sin x}",
+              "mathContent": "$$\\lim_{x\\to\\frac{\\pi}{2}^-}\\frac{-\\cos x}{-\\sin x}=\\frac{\\cos x}{\\sin x}$$",
               "icon": "chart"
             },
             {
               "title": "Evalúa el límite",
               "text": "cot(π/2) = 0.",
-              "mathContent": "=0",
+              "mathContent": "$$=0$$",
               "icon": "star"
             }
           ],
@@ -3579,13 +3579,13 @@
       "challenges": [
         {
           "id": "gc6_n3_07",
-          "questionText": "Calcula lim x→0⁺ (1/x)^(sen x) (forma ∞⁰).",
+          "questionText": "Calcula $$\\lim_{x\\to0^+}\\left(\\frac{1}{x}\\right)^{\\text{sen }x}$$ (forma $$\\infty^0$$).",
           "questionLatex": "",
           "options": [
-            "1",
-            "0",
-            "∞",
-            "e"
+            "$$1$$",
+            "$$0$$",
+            "$$\\infty$$",
+            "$$e$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3593,7 +3593,7 @@
             {
               "title": "Define y y toma logaritmo",
               "text": "Esto baja el exponente sen x.",
-              "mathContent": "y=(1/x)^{\\sin x}\\Rightarrow \\ln y=\\sin x\\cdot\\ln(1/x)=-\\sin x\\ln x",
+              "mathContent": "$$y=\\frac{1}{x}^{\\sin x}\\Rightarrow \\ln y=\\sin x\\cdot\\ln\\left(\\frac{1}{x}\\right)=-\\sin x\\ln x$$",
               "icon": "info"
             },
             {
@@ -3605,13 +3605,13 @@
             {
               "title": "Usa que sen x se comporta como x cerca de 0",
               "text": "Esto simplifica el análisis del límite sin perder rigor.",
-              "mathContent": "-\\sin x\\ln x\\approx-x\\ln x\\to0",
+              "mathContent": "$$-\\sin x\\ln x\\approx-x\\ln x\\to0$$",
               "icon": "chart"
             },
             {
               "title": "Exponencia para recuperar el límite original",
               "text": "Si ln y→0, entonces y→e⁰.",
-              "mathContent": "\\lim_{x\\to0^+}(1/x)^{\\sin x}=e^0=1",
+              "mathContent": "$$\\lim_{x\\to0^+}\\frac{1}{x}^{\\sin x}=e^0=1$$",
               "icon": "star"
             }
           ],
@@ -3620,13 +3620,13 @@
         },
         {
           "id": "gc6_n3_08",
-          "questionText": "Calcula lim x→∞ (1+3/x)^(2x) (forma 1^∞).",
+          "questionText": "Calcula $$\\lim_{x\\to\\infty}\\left(1+\\frac{3}{x}\\right)^{2x}$$ (forma $$1^\\infty$$).",
           "questionLatex": "",
           "options": [
-            "e⁶",
-            "e³",
-            "e²",
-            "e"
+            "$$e^{6}$$",
+            "$$e^{3}$$",
+            "$$e^{2}$$",
+            "$$e$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3640,19 +3640,19 @@
             {
               "title": "Reescribe el exponente como un múltiplo de x",
               "text": "2x = 2·x, así que puedes pensar la expresión como una potencia al cuadrado.",
-              "mathContent": "\\left(1+\\frac3x\\right)^{2x}=\\left[\\left(1+\\frac3x\\right)^x\\right]^2",
+              "mathContent": "$$\\left(1+\\frac{3}{x}\\right)^{2x}=\\left[\\left(1+\\frac{3}{x}\\right)^x\\right]^2$$",
               "icon": "fx"
             },
             {
               "title": "Aplica el resultado estándar dentro del corchete",
               "text": "Con k=3, el interior tiende a e³.",
-              "mathContent": "\\left(1+\\frac3x\\right)^x\\to e^3",
+              "mathContent": "$$\\left(1+\\frac{3}{x}\\right)^x\\to e^3$$",
               "icon": "chart"
             },
             {
               "title": "Eleva al cuadrado ese resultado",
               "text": "Como todo estaba elevado al cuadrado.",
-              "mathContent": "(e^3)^2=e^6",
+              "mathContent": "$$(e^3)^2=e^6$$",
               "icon": "star"
             }
           ],
@@ -3661,13 +3661,13 @@
         },
         {
           "id": "gc6_n3_09",
-          "questionText": "Calcula lim x→0 (eˣ−1−x)/x², e indica cuántas veces se aplica L'Hôpital.",
+          "questionText": "Calcula $$\\lim_{x\\to0}\\dfrac{e^x-1-x}{x^2}$$, e indica cuántas veces se aplica L'Hôpital.",
           "questionLatex": "",
           "options": [
-            "1/2, aplicando L'Hôpital dos veces",
-            "1, aplicando L'Hôpital una vez",
-            "0, aplicando L'Hôpital una vez",
-            "1/2, aplicando L'Hôpital una vez"
+            "$$\\frac{1}{2}$$, aplicando L'Hôpital dos veces",
+            "$$1$$, aplicando L'Hôpital una vez",
+            "$$0$$, aplicando L'Hôpital una vez",
+            "$$\\frac{1}{2}$$, aplicando L'Hôpital una vez"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3681,7 +3681,7 @@
             {
               "title": "Aplica L'Hôpital la primera vez",
               "text": "Deriva numerador y denominador.",
-              "mathContent": "\\lim_{x\\to0}\\frac{e^x-1}{2x}",
+              "mathContent": "$$\\lim_{x\\to0}\\frac{e^x-1}{2x}$$",
               "icon": "fx"
             },
             {
@@ -3693,13 +3693,13 @@
             {
               "title": "Aplica L'Hôpital una segunda vez",
               "text": "Deriva de nuevo ambas partes.",
-              "mathContent": "\\lim_{x\\to0}\\frac{e^x}{2}",
+              "mathContent": "$$\\lim_{x\\to0}\\frac{e^x}{2}$$",
               "icon": "chart"
             },
             {
               "title": "Evalúa el límite final",
               "text": "Sustituye x=0.",
-              "mathContent": "=\\frac12",
+              "mathContent": "$$=\\frac{1}{2}$$",
               "icon": "star"
             }
           ],
@@ -3718,13 +3718,13 @@
       "challenges": [
         {
           "id": "gc7_facil_01",
-          "questionText": "Deriva f(x) = 8x³ − 2x + 1.",
+          "questionText": "Deriva $$f(x) = 8x^3 - 2x + 1$$.",
           "questionLatex": "",
           "options": [
-            "24x² - 2",
-            "24x² - 2x",
-            "8x² - 2",
-            "24x² - 2 + 1"
+            "$$24x^{2} - 2$$",
+            "$$24x^{2} - 2x$$",
+            "$$8x^{2} - 2$$",
+            "$$24x^{2} - 2 + 1$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3738,13 +3738,13 @@
             {
               "title": "Deriva 8x³",
               "text": "Multiplica 8 por 3 y resta 1 al exponente.",
-              "mathContent": "24x^2",
+              "mathContent": "$$24x^2$$",
               "icon": "fx"
             },
             {
               "title": "Deriva −2x",
               "text": "La derivada de un múltiplo de x es simplemente ese múltiplo.",
-              "mathContent": "-2",
+              "mathContent": "$$-2$$",
               "icon": "fx"
             },
             {
@@ -3756,7 +3756,7 @@
             {
               "title": "Resultado",
               "text": "Suma los términos.",
-              "mathContent": "f'(x)=24x^2-2",
+              "mathContent": "$$f'(x)=24x^2-2$$",
               "icon": "star"
             }
           ],
@@ -3765,13 +3765,13 @@
         },
         {
           "id": "gc7_facil_02",
-          "questionText": "Deriva f(x) = cos x + eˣ.",
+          "questionText": "Deriva $$f(x) = \\cos x + e^x$$.",
           "questionLatex": "",
           "options": [
-            "-sen x + eˣ",
-            "sen x + eˣ",
-            "-sen x - eˣ",
-            "-cos x + eˣ"
+            "$$-\\text{sen} x + e^{x}$$",
+            "$$\\text{sen} x + e^{x}$$",
+            "$$-\\text{sen} x - e^{x}$$",
+            "$$-\\cos x + e^{x}$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3785,13 +3785,13 @@
             {
               "title": "Deriva cada término",
               "text": "Aplica ambas reglas.",
-              "mathContent": "\\frac{d}{dx}[\\cos x]=-\\sin x,\\quad \\frac{d}{dx}[e^x]=e^x",
+              "mathContent": "$$\\frac{d}{dx}[\\cos x]=-\\sin x,\\quad \\frac{d}{dx}[e^x]=e^x$$",
               "icon": "fx"
             },
             {
               "title": "Resultado",
               "text": "Suma ambos resultados.",
-              "mathContent": "f'(x)=-\\sin x+e^x",
+              "mathContent": "$$f'(x)=-\\sin x+e^x$$",
               "icon": "star"
             }
           ],
@@ -3800,13 +3800,13 @@
         },
         {
           "id": "gc7_facil_03",
-          "questionText": "Deriva f(x) = (2x+3)⁴ usando la regla de la cadena.",
+          "questionText": "Deriva $$f(x) = (2x+3)^4$$ usando la regla de la cadena.",
           "questionLatex": "",
           "options": [
-            "8(2x+3)³",
-            "4(2x+3)³",
-            "8(2x+3)⁴",
-            "4(2x+3)³ · 2x"
+            "$$8(2x+3)^{3}$$",
+            "$$4(2x+3)^{3}$$",
+            "$$8(2x+3)^{4}$$",
+            "$$4(2x+3)^{3} \\cdot 2x$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3814,25 +3814,25 @@
             {
               "title": "Identifica interior y exterior",
               "text": "Exterior: algo elevado a la 4. Interior: 2x+3.",
-              "mathContent": "u=2x+3,\\quad u'=2",
+              "mathContent": "$$u=2x+3,\\quad u'=2$$",
               "icon": "info"
             },
             {
               "title": "Deriva la capa exterior",
               "text": "Baja el 4 y resta 1 al exponente.",
-              "mathContent": "4(2x+3)^3",
+              "mathContent": "$$4(2x+3)^3$$",
               "icon": "fx"
             },
             {
               "title": "Multiplica por la derivada interior",
               "text": "Aplica la cadena completa.",
-              "mathContent": "f'(x)=4(2x+3)^3\\cdot2",
+              "mathContent": "$$f'(x)=4(2x+3)^3\\cdot2$$",
               "icon": "chart"
             },
             {
               "title": "Resultado",
               "text": "Simplifica el producto de constantes.",
-              "mathContent": "f'(x)=8(2x+3)^3",
+              "mathContent": "$$f'(x)=8(2x+3)^3$$",
               "icon": "star"
             }
           ],
@@ -3841,13 +3841,13 @@
         },
         {
           "id": "gc7_facil_04",
-          "questionText": "Deriva f(x) = ln(x+1).",
+          "questionText": "Deriva $$f(x) = \\ln(x+1)$$.",
           "questionLatex": "",
           "options": [
-            "1/(x+1)",
-            "1/x",
-            "ln(x+1)",
-            "x/(x+1)"
+            "$$1/(x+1)$$",
+            "$$\\frac{1}{x}$$",
+            "$$\\ln(x+1)$$",
+            "$$x/(x+1)$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3861,7 +3861,7 @@
             {
               "title": "Sustituye",
               "text": "El numerador es la derivada de x+1, que es 1.",
-              "mathContent": "f'(x)=\\frac{1}{x+1}",
+              "mathContent": "$$f'(x)=\\frac{1}{x+1}$$",
               "icon": "star"
             }
           ],
@@ -3870,13 +3870,13 @@
         },
         {
           "id": "gc7_facil_05",
-          "questionText": "Verifica el teorema de Rolle para f(x)=x²−5x+6 en [2,3].",
+          "questionText": "Verifica el teorema de Rolle para $$f(x)=x^2-5x+6$$ en $$[2,3]$$.",
           "questionLatex": "",
           "options": [
-            "Se cumple, con c=2.5",
+            "Se cumple, con $$c=2.5$$",
             "No se cumple",
-            "Se cumple, con c=2",
-            "Se cumple, con c=3"
+            "Se cumple, con $$c=2$$",
+            "Se cumple, con $$c=3$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3884,7 +3884,7 @@
             {
               "title": "Verifica que f(2)=f(3)",
               "text": "Evalúa ambos extremos.",
-              "mathContent": "f(2)=4-10+6=0,\\quad f(3)=9-15+6=0",
+              "mathContent": "$$f(2)=4-10+6=0,\\quad f(3)=9-15+6=0$$",
               "icon": "check"
             },
             {
@@ -3896,7 +3896,7 @@
             {
               "title": "Deriva e iguala a cero",
               "text": "Encuentra el candidato a c.",
-              "mathContent": "f'(x)=2x-5=0\\Rightarrow x=2.5",
+              "mathContent": "$$f'(x)=2x-5=0\\Rightarrow x=2.5$$",
               "icon": "fx"
             },
             {
@@ -3911,13 +3911,13 @@
         },
         {
           "id": "gc7_facil_06",
-          "questionText": "Calcula lim x→0 (tan x)/x.",
+          "questionText": "Calcula $$\\lim_{x\\to0}\\dfrac{\\tan x}{x}$$.",
           "questionLatex": "",
           "options": [
-            "1",
-            "0",
-            "∞",
-            "tan(0)"
+            "$$1$$",
+            "$$0$$",
+            "$$\\infty$$",
+            "$$\\tan(0)$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3931,13 +3931,13 @@
             {
               "title": "Aplica L'Hôpital",
               "text": "Deriva numerador y denominador.",
-              "mathContent": "\\lim_{x\\to0}\\frac{\\sec^2x}{1}",
+              "mathContent": "$$\\lim_{x\\to0}\\frac{\\sec^2x}{1}$$",
               "icon": "fx"
             },
             {
               "title": "Evalúa",
               "text": "sec(0)=1, así que sec²(0)=1.",
-              "mathContent": "=1",
+              "mathContent": "$$=1$$",
               "icon": "star"
             }
           ],
@@ -3956,13 +3956,13 @@
       "challenges": [
         {
           "id": "gc7_media_01",
-          "questionText": "Deriva f(x) = x³e^(−x) usando producto y cadena.",
+          "questionText": "Deriva $$f(x) = x^3e^{-x}$$ usando producto y cadena.",
           "questionLatex": "",
           "options": [
-            "x²e⁻ˣ(3-x)",
-            "x²e⁻ˣ(3+x)",
-            "3x²e⁻ˣ",
-            "x³e⁻ˣ(3-x)"
+            "$$x^{2}e^{-x}(3-x)$$",
+            "$$x^{2}e^{-x}(3+x)$$",
+            "$$3x^{2}e^{-x}$$",
+            "$$x^{3}e^{-x}(3-x)$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -3976,19 +3976,19 @@
             {
               "title": "Deriva cada parte",
               "text": "f₂ necesita la cadena por el exponente negativo.",
-              "mathContent": "f_1'=3x^2,\\quad f_2'=-e^{-x}",
+              "mathContent": "$$f_1'=3x^2,\\quad f_2'=-e^{-x}$$",
               "icon": "pin"
             },
             {
               "title": "Aplica la regla del producto",
               "text": "f₁'f₂ + f₁f₂'.",
-              "mathContent": "f'(x)=3x^2e^{-x}+x^3(-e^{-x})",
+              "mathContent": "$$f'(x)=3x^2e^{-x}+x^3(-e^{-x})$$",
               "icon": "fx"
             },
             {
               "title": "Factoriza x²e⁻ˣ",
               "text": "Ambos términos lo comparten.",
-              "mathContent": "f'(x)=x^2e^{-x}(3-x)",
+              "mathContent": "$$f'(x)=x^2e^{-x}(3-x)$$",
               "icon": "star"
             }
           ],
@@ -3997,13 +3997,13 @@
         },
         {
           "id": "gc7_media_02",
-          "questionText": "Deriva f(x) = (x²+1)/(x−3) usando la regla del cociente.",
+          "questionText": "Deriva $$f(x) = \\dfrac{x^2+1}{x-3}$$ usando la regla del cociente.",
           "questionLatex": "",
           "options": [
-            "(x²-6x-1)/(x-3)²",
-            "(x²+6x-1)/(x-3)²",
-            "(x²-6x+1)/(x-3)²",
-            "(2x-1)/(x-3)²"
+            "$$(x^{2}-6x-1)/(x-3)^{2}$$",
+            "$$(x^{2}+6x-1)/(x-3)^{2}$$",
+            "$$(x^{2}-6x+1)/(x-3)^{2}$$",
+            "$$(2x-1)/(x-3)^{2}$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -4011,25 +4011,25 @@
             {
               "title": "Identifica numerador y denominador",
               "text": "f=x²+1, g=x−3.",
-              "mathContent": "f'=2x,\\quad g'=1",
+              "mathContent": "$$f'=2x,\\quad g'=1$$",
               "icon": "info"
             },
             {
               "title": "Aplica la regla del cociente",
               "text": "f'g − fg', todo sobre g².",
-              "mathContent": "f'_{total}=\\frac{2x(x-3)-(x^2+1)}{(x-3)^2}",
+              "mathContent": "$$f'_{total}=\\frac{2x(x-3)-(x^2+1)}{(x-3)^2}$$",
               "icon": "fx"
             },
             {
               "title": "Expande el numerador",
               "text": "Distribuye 2x(x−3).",
-              "mathContent": "2x^2-6x-x^2-1",
+              "mathContent": "$$2x^2-6x-x^2-1$$",
               "icon": "chart"
             },
             {
               "title": "Simplifica",
               "text": "Agrupa términos semejantes.",
-              "mathContent": "f'(x)=\\frac{x^2-6x-1}{(x-3)^2}",
+              "mathContent": "$$f'(x)=\\frac{x^2-6x-1}{(x-3)^2}$$",
               "icon": "star"
             }
           ],
@@ -4038,13 +4038,13 @@
         },
         {
           "id": "gc7_media_03",
-          "questionText": "Halla dy/dx si x²+xy+y²=7 (derivación implícita).",
+          "questionText": "Halla $$\\dfrac{dy}{dx}$$ si $$x^2+xy+y^2=7$$ (derivación implícita).",
           "questionLatex": "",
           "options": [
-            "-(2x+y)/(x+2y)",
-            "(2x+y)/(x+2y)",
-            "-(2x-y)/(x+2y)",
-            "-(2x+y)/(x-2y)"
+            "$$-(2x+y)/(x+2y)$$",
+            "$$(2x+y)/(x+2y)$$",
+            "$$-(2x-y)/(x+2y)$$",
+            "$$-(2x+y)/(x-2y)$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -4058,37 +4058,37 @@
             {
               "title": "Deriva x²",
               "text": "Regla de la potencia.",
-              "mathContent": "2x",
+              "mathContent": "$$2x$$",
               "icon": "fx"
             },
             {
               "title": "Deriva xy con la regla del producto",
               "text": "f₁=x, f₂=y.",
-              "mathContent": "y+xy'",
+              "mathContent": "$$y+xy'$$",
               "icon": "fx"
             },
             {
               "title": "Deriva y² con la cadena",
               "text": "2y·y'.",
-              "mathContent": "2yy'",
+              "mathContent": "$$2yy'$$",
               "icon": "fx"
             },
             {
               "title": "Junta todo e iguala a la derivada de 7 (que es 0)",
               "text": "Suma las tres partes derivadas.",
-              "mathContent": "2x+y+xy'+2yy'=0",
+              "mathContent": "$$2x+y+xy'+2yy'=0$$",
               "icon": "chart"
             },
             {
               "title": "Agrupa los términos con y' y factoriza",
               "text": "Deja lo demás del otro lado.",
-              "mathContent": "y'(x+2y)=-(2x+y)",
+              "mathContent": "$$y'(x+2y)=-(2x+y)$$",
               "icon": "check"
             },
             {
               "title": "Despeja y'",
               "text": "Divide para aislarla.",
-              "mathContent": "y'=\\frac{-(2x+y)}{x+2y}",
+              "mathContent": "$$y'=\\frac{-(2x+y)}{x+2y}$$",
               "icon": "star"
             }
           ],
@@ -4097,13 +4097,13 @@
         },
         {
           "id": "gc7_media_04",
-          "questionText": "Deriva y = arcsen(2x) − arctan(x).",
+          "questionText": "Deriva $$y = \\arcsin(2x) - \\arctan(x)$$.",
           "questionLatex": "",
           "options": [
-            "2/√(1-4x²) - 1/(1+x²)",
-            "2/√(1-4x²) + 1/(1+x²)",
-            "1/√(1-4x²) - 1/(1+x²)",
-            "2/√(1-4x²) - 1/(1-x²)"
+            "$$2/\\sqrt{1-4x^{2}} - 1/(1+x^{2})$$",
+            "$$2/\\sqrt{1-4x^{2}} + 1/(1+x^{2})$$",
+            "$$1/\\sqrt{1-4x^{2}} - 1/(1+x^{2})$$",
+            "$$2/\\sqrt{1-4x^{2}} - 1/(1-x^{2})$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -4117,19 +4117,19 @@
             {
               "title": "Deriva arcsen(2x)",
               "text": "u=2x, u'=2, sobre la raíz de 1−u².",
-              "mathContent": "\\frac{2}{\\sqrt{1-4x^2}}",
+              "mathContent": "$$\\frac{2}{\\sqrt{1-4x^2}}$$",
               "icon": "fx"
             },
             {
               "title": "Deriva arctan(x)",
               "text": "u=x, u'=1, sobre 1+u².",
-              "mathContent": "\\frac{1}{1+x^2}",
+              "mathContent": "$$\\frac{1}{1+x^2}$$",
               "icon": "fx"
             },
             {
               "title": "Resta ambos resultados",
               "text": "Recuerda el signo menos entre los dos términos originales.",
-              "mathContent": "y'=\\frac{2}{\\sqrt{1-4x^2}}-\\frac{1}{1+x^2}",
+              "mathContent": "$$y'=\\frac{2}{\\sqrt{1-4x^2}}-\\frac{1}{1+x^2}$$",
               "icon": "star"
             }
           ],
@@ -4138,13 +4138,13 @@
         },
         {
           "id": "gc7_media_05",
-          "questionText": "Halla el valor de c del TVM para f(x)=x²−2x en [0,3].",
+          "questionText": "Halla el valor de $$c$$ del TVM para $$f(x)=x^2-2x$$ en $$[0,3]$$.",
           "questionLatex": "",
           "options": [
-            "1.5",
-            "1",
-            "2",
-            "0.5"
+            "$$1.5$$",
+            "$$1$$",
+            "$$2$$",
+            "$$0.5$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -4152,7 +4152,7 @@
             {
               "title": "Calcula la pendiente promedio",
               "text": "Usa f(3) y f(0).",
-              "mathContent": "\\frac{f(3)-f(0)}{3-0}=\\frac{3-0}{3}=1",
+              "mathContent": "$$\\frac{f(3)-f(0)}{3-0}=\\frac{3-0}{3}=1$$",
               "icon": "fx"
             },
             {
@@ -4164,13 +4164,13 @@
             {
               "title": "Iguala la derivada a la pendiente promedio",
               "text": "Plantea la ecuación.",
-              "mathContent": "2x-2=1",
+              "mathContent": "$$2x-2=1$$",
               "icon": "chart"
             },
             {
               "title": "Despeja x",
               "text": "Suma 2 y divide entre 2.",
-              "mathContent": "x=1.5",
+              "mathContent": "$$x=1.5$$",
               "icon": "star"
             }
           ],
@@ -4179,13 +4179,13 @@
         },
         {
           "id": "gc7_media_06",
-          "questionText": "Calcula lim x→∞ (2x²+x)/(x²−5).",
+          "questionText": "Calcula $$\\lim_{x\\to\\infty}\\dfrac{2x^2+x}{x^2-5}$$.",
           "questionLatex": "",
           "options": [
-            "2",
-            "1",
-            "0",
-            "∞"
+            "$$2$$",
+            "$$1$$",
+            "$$0$$",
+            "$$\\infty$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -4199,19 +4199,19 @@
             {
               "title": "Aplica L'Hôpital",
               "text": "Deriva ambas partes.",
-              "mathContent": "\\lim_{x\\to\\infty}\\frac{4x+1}{2x}",
+              "mathContent": "$$\\lim_{x\\to\\infty}\\frac{4x+1}{2x}$$",
               "icon": "fx"
             },
             {
               "title": "Sigue siendo ∞/∞, aplica de nuevo",
               "text": "Deriva otra vez.",
-              "mathContent": "\\lim_{x\\to\\infty}\\frac42",
+              "mathContent": "$$\\lim_{x\\to\\infty}\\frac{4}{2}$$",
               "icon": "chart"
             },
             {
               "title": "Resultado",
               "text": "Simplifica la fracción final.",
-              "mathContent": "=2",
+              "mathContent": "$$=2$$",
               "icon": "star"
             }
           ],
@@ -4230,13 +4230,13 @@
       "challenges": [
         {
           "id": "gc7_avz_01",
-          "questionText": "Deriva y = x^(sen x) usando derivación logarítmica.",
+          "questionText": "Deriva $$y = x^{\\text{sen }x}$$ usando derivación logarítmica.",
           "questionLatex": "",
           "options": [
-            "x^(sen x)[cos x · ln x + sen x/x]",
-            "x^(sen x)[cos x + sen x/x]",
-            "x^(sen x)[sen x · ln x + cos x/x]",
-            "x^(sen x) · cos x · ln x"
+            "$$x^{\\text{sen }x}\\left[\\cos x\\cdot\\ln x + \\frac{\\text{sen }x}{x}\\right]$$",
+            "$$x^{\\text{sen }x}\\left[\\cos x + \\frac{\\text{sen }x}{x}\\right]$$",
+            "$$x^{\\text{sen }x}\\left[\\text{sen }x\\cdot\\ln x + \\frac{\\cos x}{x}\\right]$$",
+            "$$x^{\\text{sen }x}\\cdot\\cos x\\cdot\\ln x$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -4244,19 +4244,19 @@
             {
               "title": "Toma logaritmo natural en ambos lados",
               "text": "Esto baja el exponente sen x.",
-              "mathContent": "\\ln y=\\sin x\\ln x",
+              "mathContent": "$$\\ln y=\\sin x\\ln x$$",
               "icon": "info"
             },
             {
               "title": "Deriva implícitamente",
               "text": "El lado derecho es un producto: sen x por ln x.",
-              "mathContent": "\\frac{y'}{y}=\\cos x\\ln x+\\sin x\\cdot\\frac1x",
+              "mathContent": "$$\\frac{y'}{y}=\\cos x\\ln x+\\sin x\\cdot\\frac{1}{x}$$",
               "icon": "fx"
             },
             {
               "title": "Despeja y' multiplicando por y",
               "text": "Sustituye y por la expresión original.",
-              "mathContent": "y'=x^{\\sin x}\\left[\\cos x\\ln x+\\frac{\\sin x}{x}\\right]",
+              "mathContent": "$$y'=x^{\\sin x}\\left[\\cos x\\ln x+\\frac{\\sin x}{x}\\right]$$",
               "icon": "star"
             }
           ],
@@ -4265,13 +4265,13 @@
         },
         {
           "id": "gc7_avz_02",
-          "questionText": "Deriva y = argtanh(senh x), simplificando el resultado.",
+          "questionText": "Deriva $$y = \\text{argtanh}(\\text{senh }x)$$, simplificando el resultado.",
           "questionLatex": "",
           "options": [
-            "cosh x/(2 - cosh²x)",
-            "cosh x/(1 - cosh²x)",
-            "senh x/(2 - cosh²x)",
-            "1/(2 - cosh²x)"
+            "$$\\cosh x/(2 - \\cosh^{2}x)$$",
+            "$$\\cosh x/(1 - \\cosh^{2}x)$$",
+            "$$\\text{senh} x/(2 - \\cosh^{2}x)$$",
+            "$$1/(2 - \\cosh^{2}x)$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -4279,19 +4279,19 @@
             {
               "title": "Aplica la cadena con u=senh x",
               "text": "d/dx[argtanh u]=u'/(1−u²).",
-              "mathContent": "y'=\\frac{\\cosh x}{1-\\sinh^2x}",
+              "mathContent": "$$y'=\\frac{\\cosh x}{1-\\sinh^2x}$$",
               "icon": "info"
             },
             {
               "title": "Usa la identidad hiperbólica fundamental",
               "text": "cosh²x − senh²x = 1, así que senh²x = cosh²x − 1.",
-              "mathContent": "1-\\sinh^2x=1-(\\cosh^2x-1)=2-\\cosh^2x",
+              "mathContent": "$$1-\\sinh^2x=1-(\\cosh^2x-1)=2-\\cosh^2x$$",
               "icon": "chart"
             },
             {
               "title": "Sustituye esa simplificación",
               "text": "Reemplaza el denominador.",
-              "mathContent": "y'=\\frac{\\cosh x}{2-\\cosh^2x}",
+              "mathContent": "$$y'=\\frac{\\cosh x}{2-\\cosh^2x}$$",
               "icon": "star"
             }
           ],
@@ -4300,7 +4300,7 @@
         },
         {
           "id": "gc7_avz_03",
-          "questionText": "Usando el TVM se puede demostrar que ln(1+x) < x para todo x>0.",
+          "questionText": "Usando el TVM se puede demostrar que $$\\ln(1+x) < x$$ para todo $$x>0$$.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -4312,31 +4312,31 @@
             {
               "title": "Aplica el TVM a f(t)=ln(1+t) en el intervalo [0,x]",
               "text": "El TVM garantiza un punto c donde la derivada iguala la pendiente promedio.",
-              "mathContent": "f'(c)=\\frac{\\ln(1+x)-\\ln(1+0)}{x-0}=\\frac{\\ln(1+x)}{x}",
+              "mathContent": "$$f'(c)=\\frac{\\ln(1+x)-\\ln(1+0)}{x-0}=\\frac{\\ln(1+x)}{x}$$",
               "icon": "info"
             },
             {
               "title": "Calcula f'(c) directamente",
               "text": "La derivada de ln(1+t) es 1/(1+t).",
-              "mathContent": "f'(c)=\\frac{1}{1+c}",
+              "mathContent": "$$f'(c)=\\frac{1}{1+c}$$",
               "icon": "fx"
             },
             {
               "title": "Observa que c está entre 0 y x",
               "text": "Como c>0, el denominador 1+c es mayor que 1, así que la fracción es menor que 1.",
-              "mathContent": "\\frac{1}{1+c}<1\\ \\ (\\text{porque } c>0)",
+              "mathContent": "$$\\frac{1}{1+c}<1\\ \\ (\\text{porque } c>0)$$",
               "icon": "pin"
             },
             {
               "title": "Combina ambas expresiones de f'(c)",
               "text": "Igualas las dos formas de f'(c) y usas la cota anterior.",
-              "mathContent": "\\frac{\\ln(1+x)}{x}<1",
+              "mathContent": "$$\\frac{\\ln(1+x)}{x}<1$$",
               "icon": "chart"
             },
             {
               "title": "Despeja la desigualdad final",
               "text": "Multiplica ambos lados por x (positivo, ya que x>0).",
-              "mathContent": "\\ln(1+x)<x",
+              "mathContent": "$$\\ln(1+x)<x$$",
               "icon": "star"
             }
           ],
@@ -4345,13 +4345,13 @@
         },
         {
           "id": "gc7_avz_04",
-          "questionText": "Aplica tres iteraciones de bisección a f(x)=x³−5 en [1,2].",
+          "questionText": "Aplica tres iteraciones de bisección a $$f(x)=x^3-5$$ en $$[1,2]$$.",
           "questionLatex": "",
           "options": [
-            "Intervalo final [1.625, 1.75]",
-            "Intervalo final [1.5, 1.75]",
-            "Intervalo final [1.5, 1.625]",
-            "Intervalo final [1.75, 2]"
+            "Intervalo final $$[1.625, 1.75]$$",
+            "Intervalo final $$[1.5, 1.75]$$",
+            "Intervalo final $$[1.5, 1.625]$$",
+            "Intervalo final $$[1.75, 2]$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -4392,13 +4392,13 @@
         },
         {
           "id": "gc7_avz_05",
-          "questionText": "Calcula lim x→0⁺ (sen x)^x.",
+          "questionText": "Calcula $$\\lim_{x\\to0^+}(\\text{sen }x)^x$$.",
           "questionLatex": "",
           "options": [
-            "1",
-            "0",
-            "∞",
-            "e"
+            "$$1$$",
+            "$$0$$",
+            "$$\\infty$$",
+            "$$e$$"
           ],
           "correctAnswerIndex": 0,
           "explanationLatex": "",
@@ -4406,7 +4406,7 @@
             {
               "title": "Define y y toma logaritmo",
               "text": "Esto baja el exponente x.",
-              "mathContent": "y=(\\sin x)^x \\Rightarrow \\ln y=x\\ln(\\sin x)",
+              "mathContent": "$$y=(\\sin x)^x \\Rightarrow \\ln y=x\\ln(\\sin x)$$",
               "icon": "info"
             },
             {
@@ -4418,19 +4418,19 @@
             {
               "title": "Reescribe como cociente para aplicar L'Hôpital",
               "text": "Convierte x en 1/(1/x).",
-              "mathContent": "\\ln y=\\frac{\\ln(\\sin x)}{1/x}",
+              "mathContent": "$$\\ln y=\\frac{\\ln(\\sin x)}{\\frac{1}{x}}$$",
               "icon": "fx"
             },
             {
               "title": "Aplica L'Hôpital y simplifica",
               "text": "Deriva numerador y denominador, y usa que sen x se comporta como x cerca de 0.",
-              "mathContent": "\\lim_{x\\to0^+}\\frac{\\cos x/\\sin x}{-1/x^2}=\\lim_{x\\to0^+}(-x^2\\cot x)\\to0",
+              "mathContent": "$$\\lim_{x\\to0^+}\\frac{\\cos x/\\sin x}{\\frac{-1}{x^2}}=\\lim_{x\\to0^+}(-x^2\\cot x)\\to0$$",
               "icon": "chart"
             },
             {
               "title": "Exponencia para recuperar el límite original",
               "text": "Como ln y→0, entonces y→e⁰.",
-              "mathContent": "\\lim_{x\\to0^+}(\\sin x)^x=e^0=1",
+              "mathContent": "$$\\lim_{x\\to0^+}(\\sin x)^x=e^0=1$$",
               "icon": "star"
             }
           ],
@@ -4449,7 +4449,7 @@
       "challenges": [
         {
           "id": "gc8_tf_01",
-          "questionText": "La derivada de un producto es el producto de las derivadas: (f·g)' = f'·g'.",
+          "questionText": "La derivada de un producto es el producto de las derivadas: $$(f\\cdot g)' = f'\\cdot g'$$.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -4488,7 +4488,7 @@
         },
         {
           "id": "gc8_tf_02",
-          "questionText": "En la regla del cociente, el orden de la resta en el numerador es f'g − fg', no fg' − f'g.",
+          "questionText": "En la regla del cociente, el orden de la resta en el numerador es $$f'g - fg'$$, no $$fg' - f'g$$.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -4527,7 +4527,7 @@
         },
         {
           "id": "gc8_tf_03",
-          "questionText": "Al derivar un término con y en derivación implícita, como y², el resultado es simplemente 2y (sin multiplicar por y').",
+          "questionText": "Al derivar un término con $$y$$ en derivación implícita, como $$y^2$$, el resultado es simplemente $$2y$$ (sin multiplicar por $$y'$$).",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -4605,7 +4605,7 @@
         },
         {
           "id": "gc8_tf_05",
-          "questionText": "El teorema de Rolle es un caso particular del teorema del valor medio, cuando f(a) = f(b).",
+          "questionText": "El teorema de Rolle es un caso particular del teorema del valor medio, cuando $$f(a) = f(b)$$.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -4644,7 +4644,7 @@
         },
         {
           "id": "gc8_tf_06",
-          "questionText": "Si f'(x) = 0 en todo un intervalo, entonces f debe ser la función constante cero en ese intervalo.",
+          "questionText": "Si $$f'(x) = 0$$ en todo un intervalo, entonces $$f$$ debe ser la función constante cero en ese intervalo.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -4683,7 +4683,7 @@
         },
         {
           "id": "gc8_tf_07",
-          "questionText": "Las formas exponenciales indeterminadas (0⁰, ∞⁰, 1^∞) se resuelven tomando logaritmo antes de aplicar L'Hôpital.",
+          "questionText": "Las formas exponenciales indeterminadas ($$0^0$$, $$\\infty^0$$, $$1^\\infty$$) se resuelven tomando logaritmo antes de aplicar L'Hôpital.",
           "questionLatex": "",
           "options": [
             "Verdadero",
