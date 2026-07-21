@@ -61,10 +61,6 @@
                   "mathContent": "$$\\sqrt2 \\in \\text{Irr}$$"
                 }
               ]
-            },
-            {
-              "type": "venn_diagram",
-              "content": "preset: number_sets; title: Clasificación de Números Reales"
             }
           ]
         },
