@@ -16,7 +16,7 @@
         {
           "title": "Conjuntos Numéricos y sus Relaciones",
           "subtitle": "Números Reales • Clasificación",
-          "content": "Los números que usamos en matemáticas se organizan en una jerarquía de conjuntos, cada uno contenido en el siguiente.",
+          "content": "Piensa en cómo guardas tus cosas en casa: la ropa de invierno está dentro de un cajón, ese cajón está dentro de tu clóset, y el clóset está dentro de tu cuarto. Todo cabe dentro de algo más grande. Los números funcionan igual: los que usas para contar (1, 2, 3…) caben dentro de un grupo más grande que también incluye el cero y los negativos; ese grupo cabe dentro de otro que además incluye las fracciones; y así sucesivamente, hasta llegar a todos los números que existen en la recta numérica.\n\nFormalmente, esta idea de 'cajones dentro de cajones' se describe así: los números que usamos en matemáticas se organizan en una jerarquía de conjuntos, cada uno contenido en el siguiente.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
@@ -67,7 +67,7 @@
         {
           "title": "La Recta Real y la Densidad",
           "subtitle": "Números Reales • Recta Real",
-          "content": "Los números reales se representan geométricamente como puntos de una recta infinita, la recta real, donde cada punto corresponde a exactamente un número real y viceversa. Esta correspondencia es la base geométrica de todo el álgebra de desigualdades: 'a<b' significa precisamente que el punto a está a la izquierda del punto b.",
+          "content": "Imagina una carretera perfectamente recta e infinita, con un letrero de kilómetro en cada punto posible, incluyendo puntos con decimales como el 3.7 o el −12.05. Cada punto de esa carretera tiene un número que lo identifica, y cada número señala exactamente un punto. Esa carretera es la recta real, y es la razón por la que decir 'a es menor que b' es exactamente lo mismo que decir 'el punto a está más a la izquierda que el punto b'.\n\nFormalmente: los números reales se representan geométricamente como puntos de una recta infinita, la recta real, donde cada punto corresponde a exactamente un número real y viceversa. Esta correspondencia es la base geométrica de todo el álgebra de desigualdades: 'a<b' significa precisamente que el punto a está a la izquierda del punto b.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
@@ -758,7 +758,7 @@
         {
           "title": "El Orden en los Reales: Repaso y Propiedades Demostradas",
           "subtitle": "Desigualdades • Fundamento",
-          "content": "Recordemos los axiomas de orden: tricotomía, transitividad, y compatibilidad con la suma y con el producto. A partir de estos cuatro axiomas se puede demostrar cualquier propiedad algebraica de las desigualdades, sin necesidad de aceptarla como una regla arbitraria. La notación $$a\\leq b$$ significa 'a<b o a=b'; de manera análoga, $$a\\geq b$$ significa 'a>b o a=b'. Estas son abreviaturas lógicas construidas con el conector ∨.",
+          "content": "Cuando comparas cuánto dinero tienes con el de un amigo, das por sentadas ciertas cosas sin pensarlo: que exactamente una de las dos personas tiene más (o tienen lo mismo), que si tú tienes más que Ana y Ana tiene más que Luis entonces tú tienes más que Luis, y que si a los dos les regalan la misma cantidad de dinero, la comparación entre ustedes no cambia. Esas reglas tan naturales, que usas todo el tiempo sin notarlo, son exactamente los axiomas de orden de los números reales.\n\nFormalmente: recordemos los axiomas de orden: tricotomía, transitividad, y compatibilidad con la suma y con el producto. A partir de estos cuatro axiomas se puede demostrar cualquier propiedad algebraica de las desigualdades, sin necesidad de aceptarla como una regla arbitraria. La notación $$a\\leq b$$ significa 'a<b o a=b'; de manera análoga, $$a\\geq b$$ significa 'a>b o a=b'. Estas son abreviaturas lógicas construidas con el conector ∨.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
@@ -835,7 +835,7 @@
         {
           "title": "La Demostración Lógica de una Desigualdad Simple",
           "subtitle": "Desigualdades • x² Siempre No Negativo",
-          "content": "Un resultado fundamental, que se usa después en el estudio del valor absoluto, es que el cuadrado de cualquier número real es no negativo.",
+          "content": "Cuando multiplicas dos números con el mismo signo —dos positivos o dos negativos— el resultado siempre es positivo; solo obtienes algo negativo al multiplicar un positivo por un negativo. Elevar un número al cuadrado significa multiplicarlo por sí mismo, así que siempre estás multiplicando dos números con el MISMO signo (incluso si el número es negativo). Por eso, sin importar si empiezas con algo positivo, negativo o cero, su cuadrado nunca puede salir negativo.\n\nFormalmente: un resultado fundamental, que se usa después en el estudio del valor absoluto, es que el cuadrado de cualquier número real es no negativo.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
@@ -880,7 +880,7 @@
         {
           "title": "Notación de Intervalos y su Relación con las Desigualdades",
           "subtitle": "Desigualdades • Notación de Intervalos",
-          "content": "La notación de intervalos resume de forma compacta el conjunto de números reales que satisfacen una desigualdad, y se corresponde directamente con los conectores lógicos: una desigualdad compuesta como $$-2<x<5$$ es, en realidad, la conjunción $$(x>-2)\\wedge(x<5)$$.",
+          "content": "Cuando dices 'la temperatura estuvo entre 20 y 30 grados toda la semana', en realidad estás afirmando dos cosas a la vez: que fue mayor que 20 Y que fue menor que 30. La notación de intervalos es simplemente una forma más corta de escribir esa misma idea, sin repetir la palabra 'y' cada vez.\n\nFormalmente: la notación de intervalos resume de forma compacta el conjunto de números reales que satisfacen una desigualdad, y se corresponde directamente con los conectores lógicos: una desigualdad compuesta como $$-2<x<5$$ es, en realidad, la conjunción $$(x>-2)\\wedge(x<5)$$.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
@@ -907,7 +907,7 @@
         {
           "title": "Desigualdades como Proposiciones Abiertas",
           "subtitle": "Desigualdades • Proposiciones Abiertas",
-          "content": "Una desigualdad como $$2x+3>7$$ es una proposición abierta P(x): no tiene un valor de verdad fijo hasta que se sustituye un valor específico de x. 'Resolver' la desigualdad significa hallar el conjunto de verdad de esa proposición abierta: el conjunto de todos los valores de x para los cuales P(x) es verdadera.",
+          "content": "Piensa en la frase 'esa persona es mayor de edad'. No puedes decir si es verdadera o falsa hasta que sepas de quién se trata; en cuanto pones un nombre concreto, la frase se vuelve verdadera o falsa. Una desigualdad como $$2x+3>7$$ funciona igual: no es verdadera ni falsa hasta que le das un valor específico a x. 'Resolver' la desigualdad es, sencillamente, encontrar TODOS los valores de x que la hacen verdadera.\n\nFormalmente: una desigualdad como $$2x+3>7$$ es una proposición abierta P(x): no tiene un valor de verdad fijo hasta que se sustituye un valor específico de x. 'Resolver' la desigualdad significa hallar el conjunto de verdad de esa proposición abierta: el conjunto de todos los valores de x para los cuales P(x) es verdadera.",
           "formulaLatex": "",
           "proTip": "Pensar en una desigualdad como una proposición abierta ayuda a entender por qué la solución de una desigualdad compuesta, como −2<x<5, es la intersección de dos conjuntos de verdad (uno para cada desigualdad simple), y no su unión: se necesita que ambas condiciones sean verdaderas a la vez (conjunción ∧, no disyunción ∨).",
           "blocks": [
@@ -1320,7 +1320,7 @@
         },
         {
           "id": "tf_fd_02",
-          "questionText": "$$x^2\\geq0$$ es cierto solo quando x es positivo.",
+          "questionText": "$$x^2\\geq0$$ es cierto solo cuando x es positivo.",
           "questionLatex": "",
           "options": [
             "Verdadero",
@@ -1382,7 +1382,7 @@
         {
           "title": "Desigualdades Lineales: Método General",
           "subtitle": "Desigualdades • Método General",
-          "content": "Una desigualdad lineal tiene la incógnita elevada a la primera potencia, de la forma $$ax+b<c$$ (o con >, ≤, ≥). Se resuelve aplicando las mismas propiedades algebraicas demostradas en el capítulo anterior: sumar o restar el mismo número en ambos lados no cambia el sentido de la desigualdad, pero multiplicar o dividir por un número negativo sí lo invierte.",
+          "content": "Imagina una balanza de dos platos, inclinada hacia un lado —así se ve una desigualdad—. Si agregas o quitas el mismo peso de ambos platos, la balanza sigue inclinada exactamente igual. Pero si le das la vuelta a la balanza (el equivalente a multiplicar por un número negativo), lo que antes pesaba más ahora queda del lado que pesa menos: por eso la desigualdad se invierte.\n\nFormalmente: una desigualdad lineal tiene la incógnita elevada a la primera potencia, de la forma $$ax+b<c$$ (o con >, ≤, ≥). Se resuelve aplicando las mismas propiedades algebraicas demostradas en el capítulo anterior: sumar o restar el mismo número en ambos lados no cambia el sentido de la desigualdad, pero multiplicar o dividir por un número negativo sí lo invierte.",
           "formulaLatex": "",
           "proTip": "Recuerda siempre: sumar o restar nunca invierte el sentido de la desigualdad, pero multiplicar o dividir por un número negativo sí lo hace. Es el error de signo más común en todo este tema.",
           "blocks": [
@@ -1419,7 +1419,7 @@
         {
           "title": "Desigualdades con Fracciones y Paréntesis",
           "subtitle": "Desigualdades • Fracciones y Paréntesis",
-          "content": "Cuando la desigualdad incluye fracciones o paréntesis, conviene simplificar primero: eliminar denominadores multiplicando por su mínimo común múltiplo (con cuidado del signo si es negativo) y distribuir los paréntesis antes de agrupar términos semejantes.",
+          "content": "Antes de resolver una desigualdad con fracciones y paréntesis, conviene 'ordenar el escritorio' primero: igual que despejas espacio antes de ponerte a trabajar, aquí quitas las fracciones multiplicando por el número que las elimina todas a la vez, y abres los paréntesis distribuyendo. Una vez que la expresión queda despejada de ese desorden, resolverla es exactamente igual que cualquier desigualdad lineal simple.\n\nFormalmente: cuando la desigualdad incluye fracciones o paréntesis, conviene simplificar primero: eliminar denominadores multiplicando por su mínimo común múltiplo (con cuidado del signo si es negativo) y distribuir los paréntesis antes de agrupar términos semejantes.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
@@ -1468,7 +1468,7 @@
         {
           "title": "Desigualdades Compuestas (Dobles)",
           "subtitle": "Desigualdades • Desigualdades Dobles",
-          "content": "Una desigualdad compuesta expresa una condición doble sobre la misma expresión, como $$a<mx+b<c$$. Se resuelve operando simultáneamente en los tres miembros, tal como corresponde a una conjunción lógica.",
+          "content": "Piensa en un requisito como 'debes tener entre 18 y 65 años para aplicar a este empleo'. Esa condición doble se resuelve de una sola vez, sin partirla en dos: lo que le hagas a la parte de en medio de la desigualdad (sumar, restar, multiplicar, dividir), se lo haces exactamente igual a los tres 'pedazos' al mismo tiempo.\n\nFormalmente: una desigualdad compuesta expresa una condición doble sobre la misma expresión, como $$a<mx+b<c$$. Se resuelve operando simultáneamente en los tres miembros, tal como corresponde a una conjunción lógica.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
@@ -1505,7 +1505,7 @@
         {
           "title": "Traducción de Problemas Verbales y Verificación",
           "subtitle": "Desigualdades • Aplicaciones y Verificación",
-          "content": "Muchos problemas prácticos requieren traducir una condición expresada en palabras a una desigualdad algebraica antes de resolverla. Además, una buena práctica es verificar el resultado sustituyendo un valor de prueba dentro del intervalo solución, y otro fuera de él.",
+          "content": "Muchas situaciones cotidianas se pueden traducir a una desigualdad: 'no quiero gastar más de 50 dólares', 'necesito manejar al menos 100 km', y así. El primer paso siempre es identificar qué representa la incógnita y qué relación describe el problema. Y después de resolver, conviene hacer una prueba rápida: sustituye un número que SÍ debería cumplir la condición y otro que NO debería cumplirla, para confirmar que tu respuesta tiene sentido.\n\nFormalmente: muchos problemas prácticos requieren traducir una condición expresada en palabras a una desigualdad algebraica antes de resolverla. Además, una buena práctica es verificar el resultado sustituyendo un valor de prueba dentro del intervalo solución, y otro fuera de él.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
@@ -1960,7 +1960,7 @@
         {
           "title": "Definición y Significado Geométrico",
           "subtitle": "Valor Absoluto • Definición",
-          "content": "El valor absoluto de un número real x, denotado $$|x|$$, se define por casos según el signo de x. Geométricamente, $$|x|$$ representa la distancia entre x y el origen en la recta real. Por eso $$|x|$$ nunca es negativo: una distancia siempre es no negativa.",
+          "content": "Si caminas 5 cuadras hacia el norte desde tu casa, o 5 cuadras hacia el sur, en ambos casos caminaste la MISMA distancia: 5 cuadras. No importa la dirección; una distancia siempre se mide con un número positivo (o cero, si no te moviste). El valor absoluto de un número hace exactamente eso: te dice qué tan lejos está ese número del cero, sin importar si está a la izquierda (negativo) o a la derecha (positivo) en la recta real.\n\nFormalmente: el valor absoluto de un número real x, denotado $$|x|$$, se define por casos según el signo de x. Geométricamente, $$|x|$$ representa la distancia entre x y el origen en la recta real. Por eso $$|x|$$ nunca es negativo: una distancia siempre es no negativa.",
           "formulaLatex": "$$|x| = \\begin{cases} x & \\text{si } x \\geq 0 \\\\ -x & \\text{si } x<0 \\end{cases}$$",
           "proTip": "",
           "blocks": [
@@ -1973,7 +1973,7 @@
         {
           "title": "Propiedades Algebraicas del Valor Absoluto",
           "subtitle": "Valor Absoluto • Propiedades",
-          "content": "A partir del resultado de que $$x^2\\geq0$$ para todo x, puede probarse que $$|x|=\\sqrt{x^2}$$, lo cual permite deducir algebraicamente todas las propiedades del valor absoluto.",
+          "content": "Ya sabes que el cuadrado de cualquier número nunca es negativo, y que sacar raíz cuadrada siempre te devuelve una distancia (algo positivo o cero). Resulta entonces que elevar al cuadrado y luego sacar raíz cuadrada es, en el fondo, exactamente lo mismo que calcular el valor absoluto. Esa conexión es justo lo que nos deja demostrar todas las propiedades del valor absoluto con álgebra, en vez de solo memorizarlas.\n\nFormalmente: a partir del resultado de que $$x^2\\geq0$$ para todo x, puede probarse que $$|x|=\\sqrt{x^2}$$, lo cual permite deducir algebraicamente todas las propiedades del valor absoluto.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
@@ -2020,7 +2020,7 @@
         {
           "title": "Ecuaciones con Valor Absoluto",
           "subtitle": "Valor Absoluto • Ecuaciones",
-          "content": "Si $$|u|=a$$, entonces: si $$a<0$$, no hay solución (una distancia no puede ser negativa); si $$a\\geq0$$, las soluciones son $$u=a$$ y $$u=-a$$.",
+          "content": "Si te dicen que estás a exactamente 5 cuadras de tu casa, hay dos lugares posibles donde podrías estar: 5 cuadras para un lado, o 5 cuadras para el otro. Una ecuación con valor absoluto funciona igual: si esa 'distancia' es igual a un número positivo, hay dos valores posibles que la cumplen. Y si te piden una distancia negativa, eso es imposible, así que no hay ninguna solución.\n\nFormalmente: si $$|u|=a$$, entonces: si $$a<0$$, no hay solución (una distancia no puede ser negativa); si $$a\\geq0$$, las soluciones son $$u=a$$ y $$u=-a$$.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
@@ -2053,7 +2053,7 @@
         {
           "title": "Desigualdades con Valor Absoluto: 'Menor Que' y 'Mayor Que'",
           "subtitle": "Valor Absoluto • Desigualdades",
-          "content": "Si $$a>0$$, la desigualdad $$|u|<a$$ equivale a la desigualdad compuesta $$-a<u<a$$: esto es la traducción algebraica de 'la distancia de u al origen es menor que a'. Por otro lado, $$|u|>a$$ equivale a $$u<-a$$ o $$u>a$$: aquí la solución es una unión de dos intervalos, porque basta con que u esté 'lejos' del origen en cualquiera de las dos direcciones.",
+          "content": "Imagina que tu teléfono te avisa cuando estás a MENOS de 1 km de un restaurante: eso significa que quedas 'encerrado' en una sola zona alrededor del restaurante, ni muy a la izquierda ni muy a la derecha. Pero si te avisa cuando estás a MÁS de 1 km, eso puede pasar de dos maneras completamente distintas: muy lejos hacia un lado, o muy lejos hacia el otro. Esa diferencia —una sola zona encerrada, frente a dos zonas separadas— es exactamente la diferencia entre resolver $$|u|<a$$ y resolver $$|u|>a$$.\n\nFormalmente: si $$a>0$$, la desigualdad $$|u|<a$$ equivale a la desigualdad compuesta $$-a<u<a$$: esto es la traducción algebraica de 'la distancia de u al origen es menor que a'. Por otro lado, $$|u|>a$$ equivale a $$u<-a$$ o $$u>a$$: aquí la solución es una unión de dos intervalos, porque basta con que u esté 'lejos' del origen en cualquiera de las dos direcciones.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
@@ -2138,7 +2138,7 @@
         {
           "title": "El Valor Absoluto como Distancia",
           "subtitle": "Valor Absoluto • Interpretación Geométrica",
-          "content": "La expresión $$|x-a|$$ representa la distancia entre los números x y a en la recta real, no solo la distancia de x al origen. Esta interpretación es extremadamente útil para plantear y resolver desigualdades con valor absoluto de forma geométrica, sin pasar necesariamente por el álgebra de casos.",
+          "content": "Hasta ahora hemos hablado de qué tan lejos está un número del cero. Pero la misma idea de 'distancia' funciona entre dos números cualesquiera, no solo entre un número y el cero: la distancia entre tu casa y la de un amigo no depende de dónde esté 'el cero' en el mapa. La expresión $$|x-a|$$ es precisamente esa distancia entre x y a, y pensarlo así te permite resolver muchos problemas de un vistazo, sin álgebra de casos.\n\nFormalmente: la expresión $$|x-a|$$ representa la distancia entre los números x y a en la recta real, no solo la distancia de x al origen. Esta interpretación es extremadamente útil para plantear y resolver desigualdades con valor absoluto de forma geométrica, sin pasar necesariamente por el álgebra de casos.",
           "formulaLatex": "",
           "proTip": "",
           "blocks": [
