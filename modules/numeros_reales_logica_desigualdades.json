@@ -21,8 +21,8 @@
           "proTip": "",
           "blocks": [
             {
-              "type": "text",
-              "content": "Jerarquía: $$\\mathbb{N}$$ (naturales): 1, 2, 3, 4, …; $$\\mathbb{Z}$$ (enteros): …, −2, −1, 0, 1, 2, …; $$\\mathbb{Q}$$ (racionales): $$\\frac{p}{q}$$ con $$p, q$$ enteros y $$q\\neq0$$; $$\\text{Irr}$$ (irracionales): reales que no se pueden escribir como fracción; $$\\mathbb{R}$$ (reales) $$=\\mathbb{Q}\\cup\\text{Irr}$$."
+              "type": "number_hierarchy",
+              "content": "preset: number_sets; title: Clasificación de Números Reales"
             },
             {
               "type": "formula",
