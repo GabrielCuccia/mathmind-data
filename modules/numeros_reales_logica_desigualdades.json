@@ -21,6 +21,10 @@
           "proTip": "",
           "blocks": [
             {
+              "type": "illustrated_card",
+              "content": "{\"text\": \"Piensa en cajones dentro de cajones: la ropa cabe en el clóset, y el clóset en tu cuarto. Los números funcionan igual — cada grupo cabe dentro de uno más grande: los que cuentas (1, 2, 3…) caben en un grupo que también incluye el cero y los negativos; ese grupo cabe en otro que además tiene fracciones; y así hasta llegar a todos los números de la recta.\n\", \"image\": \"https://i.postimg.cc/pLk8qW7x/d5b59c8a-0c03-45d0-8179-83d15aad7bb4.png\"}"
+            },
+            {
               "type": "number_hierarchy",
               "content": "preset: number_sets; title: Clasificación de Números Reales"
             },
