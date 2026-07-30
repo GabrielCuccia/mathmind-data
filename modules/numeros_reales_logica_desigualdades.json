@@ -22,7 +22,7 @@
           "blocks": [
             {
               "type": "illustrated_card",
-              "content": "{\"title\":\"Piensa en cajones dentro de cajones\",\"text\":\"Guardas un conjunto de números en un cajón pequeño. Luego, tomas ese cajón entero y lo guardas dentro de uno mediano, y ese mediano dentro de uno gigante. Los números funcionan igual: cada cajón de números cabe completo dentro de otro más grande.\",\"image\":\"https://i.postimg.cc/tggzX7fM/7ad95729-0ef0-4fec-99ad-82da9af43ed6.png\"}"
+              "content": "{\"title\":\"Piensa en cajones dentro de cajones\",\"text\":\"Guardas un conjunto de números en un cajón pequeño. Luego, tomas ese cajón entero y lo guardas dentro de uno mediano, y ese mediano dentro de uno gigante. Los números funcionan igual: cada cajón de números cabe completo dentro de otro más grande.\",\"image\":\"https://i.postimg.cc/Zqm1jPCG/fdaa74c9-188c-465b-a46f-37e96c479603.png\"}"
             },
             {
               "type": "number_hierarchy",
