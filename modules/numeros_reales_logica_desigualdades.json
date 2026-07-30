@@ -22,7 +22,7 @@
           "blocks": [
             {
               "type": "illustrated_card",
-              "content": "{\"text\": \"Piensa en cajones dentro de cajones: la ropa cabe en el clóset, y el clóset en tu cuarto. Los números funcionan igual — cada grupo cabe dentro de uno más grande: los que cuentas (1, 2, 3…) caben en un grupo que también incluye el cero y los negativos; ese grupo cabe en otro que además tiene fracciones; y así hasta llegar a todos los números de la recta.\n\", \"image\": \"https://i.postimg.cc/pLk8qW7x/d5b59c8a-0c03-45d0-8179-83d15aad7bb4.png\"}"
+              "content": "{\"title\":\"Piensa en cajones dentro de cajones\",\"text\":\"Guardas un conjunto de números en un cajón pequeño. Luego, tomas ese cajón entero y lo guardas dentro de uno mediano, y ese mediano dentro de uno gigante. Los números funcionan igual: cada cajón de números cabe completo dentro de otro más grande.\",\"image\":\"https://i.postimg.cc/pLk8qW7x/d5b59c8a-0c03-45d0-8179-83d15aad7bb4.png\"}"
             },
             {
               "type": "number_hierarchy",
