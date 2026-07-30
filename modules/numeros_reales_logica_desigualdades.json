@@ -29,11 +29,7 @@
               "content": "preset: number_sets; title: Clasificación de Números Reales"
             },
             {
-              "type": "formula",
-              "content": "$$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}, \\quad \\text{Irr}\\subset\\mathbb{R}, \\quad \\mathbb{Q}\\cap\\text{Irr}=\\varnothing$$"
-            },
-            {
-              "type": "text",
+              "type": "note",
               "content": "Un número racional siempre tiene una expansión decimal finita o periódica (por ejemplo, $$\\frac{1}{4} = 0.25$$ o $$\\frac{1}{3} = 0.333\\ldots$$). Un número irracional, en cambio, tiene una expansión decimal infinita y no periódica, como $$\\sqrt2=1.41421356\\ldots$$ o $$\\pi=3.14159265\\ldots$$"
             },
             {
